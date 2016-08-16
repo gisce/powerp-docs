@@ -28,7 +28,11 @@ Markdown extensions:
 
 We have 4 categories:
 
-- base: Base components: used in distri & comer
-- distri: Distri components
-- comer: Comer components
-- facturacio: Base invoicing compoents used in distr & comer
+- **base**: Base components: used in distri & comer
+- **distri**: Distri components
+- **comer**: Comer components
+- **facturacio**: Base invoicing compoents used in distr & comer
+
+For images we use `_static` folder with a subfolder with the same name as Markdown file. eg:
+
+for `distri/atr.md` we have `distri/_static/atr/image1.png`
