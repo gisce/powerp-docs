@@ -1,0 +1,41 @@
+site_name: My Docs
+theme: readthedocs
+
+markdown_extensions:
+  - admonition
+
+pages:
+  - Home: index.md
+  - Base:
+    - Partners: base/partners.md
+    - PowerEmail: base/poweremail.md
+  - Distribuidora:
+    - Inicio: distri/index.md
+    - Telegestion: distri/telegestion.md
+    - Contadores: distri/contadores.md
+    - TPL: distri/tpl.md
+    - CUPS: distri/cups.md
+    - Pólizas: distri/polizas.md
+    - Gestion ATR: distri/atr.md
+    - Facturación: distri/facturacion.md
+    - Administración Pública:
+      - CNMC: distri/adm-pub/cnmc.md
+      - Gencat: distri/adm-pub/gencat.md
+    - Perfiles: distri/perfiles.md
+    - GIS - Instalaciones:
+      - Subestaciones: distri/subestaciones.md
+      - CTS: distri/cts.md
+      - LAT: distri/lat.md
+      - LBT: distri/lbt.md
+      - Instalaciones RE: distri/re.md
+      - Expedientes: distri/expedientes.md
+    - Calidad de servicio: distri/calidad.md
+  - Comercialitzadora:
+    - Inicio: comer/index.md
+    - CUPS: comer/cups.md
+    - Contratos: comer/contratos.md
+    - Gestión ATR: comer/atr.md
+    - Facturación: comer/facturacion.md
+    - SIPS: comer/sips.md
+    - Administración Pública:
+      - CNMC: comer/adm-pub/cnmc.md
