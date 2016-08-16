@@ -16,3 +16,10 @@ $ mkdocs serve
 ```
 
 With this a webserver is started reloading automatically when is needed
+
+[MKDocs Reference](http://www.mkdocs.org/)
+
+Markdown extensions:
+
+* Tables
+* Admonition
