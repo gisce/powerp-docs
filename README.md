@@ -23,3 +23,12 @@ Markdown extensions:
 
 * Tables
 * Admonition
+
+## Project structure
+
+We have 4 categories:
+
+- base: Base components: used in distri & comer
+- distri: Distri components
+- comer: Comer components
+- facturacio: Base invoicing compoents used in distr & comer
