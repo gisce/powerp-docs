@@ -15,10 +15,10 @@ $ pip install -r requirements.txt
 $ mkdocs serve
 ```
 
-With this a webserver is started reloading automatically when is needed
+With this a webserver is started reloading automatically when is needed.
 
-[Markdown Reference](https://pythonhosted.org/Markdown/index.html)
-[MKDocs Reference](http://www.mkdocs.org/)
+- [Markdown Reference](https://pythonhosted.org/Markdown/index.html)
+- [MKDocs Reference](http://www.mkdocs.org/)
 
 Markdown extensions:
 
