@@ -47,9 +47,7 @@ document.
 Per entrendre el funcionament del mòdul de switching, cal tenir clar alguns
 conceptes.
 
------
-Agent
------
+### Agent
 
 Qualsevol de les empreses que intervenen en un procés de switching és un agent.
 Qui comença un procés sempre és una comercialitzadora. Com a mínim intervenen
@@ -61,9 +59,7 @@ actualment) i *distribuídora* a la qual pertany el CUPS.
 Els fitxers s'intercanvien sempre entre dos agents, un dels qual es
 l'origen i l'altre el destinatari.
 
----------
-Processos
----------
+### Processos
 
 Un procés defineix el flux de passos i actuacions que realitzaràn tots els
 agents implicats.
@@ -77,9 +73,7 @@ Un procés defineix quin són els agents implicats i els possibles passos
 
 P.e.: **C1** és un procés que pot tenir fins a 10 passos
 
-------
-Passos
-------
+### Passos
 
 Un pas és qualsevol transició entre els estats en el qual es pugui trobar un
 procés. A cada pas, li correspon un format de fitxer. Per tant tenim un fitxer
@@ -90,9 +84,7 @@ opcional pot ser un pas de ``Rebuig``.
 
 Tots els passos d'un procés tenen definit l'origen i el destí.
 
------
-Casos
------
+### Casos
 
 GISCE-ERP modelitza un procés en concret com un cas de CRM del propi ERP.
 Concretament es crea una secció Switching en l'arbre de casos. Mitjançant el
@@ -135,9 +127,8 @@ les accions que s'han de realitzar per portar-lo a terme.
 A GISCE-ERP hi ha definit el Menú **Switching** que dóna accés als casos
 implicats en processos de switching i a la importació de fitxers XML.
 
+##### Opcions del menú Switching
 ![](_static/atr/MenuSwitching.png)
-
-   Opcions del menú Switching
 
 * **Tots els casos**: Llistat de qualsevol dels casos de la secció Switching.
   Inclou una estructura d'arbre amb una entrada de menú per accedir directament
@@ -146,7 +137,7 @@ implicats en processos de switching i a la importació de fitxers XML.
   passos actuals d'un procés concret. Un cop obert un pas, es pot accedir
   directament al cas amb l'assistent **Processar Pas Gestió ATR** accessible
   des del botó acció d'un llistat de passos i des de la fitxa d'un cas en
-  concret. (:ref:`wizardpas`)
+  concret.
 * **Casos pendents d'enviar**: Llistat de tots els casos que estan a l'espera
   d'enviar l'XML al destinatari i que ja no necessiten cap mes actuació per part
   nostre. Es llistaran els casos que tenen algún pas amb la marca
@@ -156,10 +147,8 @@ implicats en processos de switching i a la importació de fitxers XML.
 * **Importar XML**: Permet carregar un fitxer XML o un fitxer ZIP amb múltiples
   fitxers XML i generar el cas o afegir el pas al cas que correspongui.
 
-
+##### Assitent per accedir al cas des d'un pas
 ![](_static/atr/WizardProcessarPas.png)
-
-   Assitent per accedir al cas des d'un pas
 
 ## Formulari del Cas
 
@@ -207,17 +196,12 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
 
 ### Pestanya Contactes
 
-
-![](_static/PestanyaContactes.png)
-
-   Pestanya Contactes del cas
+![](_static/atr/PestanyaContactes.png)
 
 En aquesta pestanya tenim les dades dels agents implicats en un procés.
 Depenent de l'agent i del procés es mostraran mes o menys camps.
 
-^^^^^^^^^^^
-Destinatari
-^^^^^^^^^^^
+#### Destinatari
 
 Empresa amb la qual es mantindrà la comunicació. En el cas de les
 comercialitzadores és la distribuidora del CUPS afectat pel procés i en el cas
@@ -232,38 +216,28 @@ sol·licitant
 Amb el botó **Send Reminder** podem enviar un mail al destinatari per
 validar-ne el funcionament
 
-^^^^^^^^^^^^^^^^^^^^^^^^^
-Comercialitzadora Sortint
-^^^^^^^^^^^^^^^^^^^^^^^^^
+#### Comercialitzadora Sortint
 
 En alguns casos, és necessari intercanviar informació amb altres Agents com la
 comercialitzadora sortint. En el cas de la distribuidora, caldrà seleccionar la
 empresa comercialitzadora de la pólissa subjecte del procés.
 
----------------
-Pestanya Etapes
----------------
+# Pestanya Etapes
 
-![](_static/PestanyaEtapes.png)
-
-   Pestanya Etapes del cas
+![](_static/atr/PestanyaEtapes.png)
 
 Aquesta pestanya és merament informativa i ens dóna informació de quin o quins
  serien els possibles següents passos en el procés.
 
 ### Pestanya Switching
 
-
-.. figure:: /_static/PestanyaSwitching.png
-
-   Pestanya Etapes del cas
+![](_static/atr/PestanyaSwitching.png)
 
 Aquesta pestanya ens permet gestionar la informació del procés i els diferents
 passos que es van generant.
 
-^^^^^^^^^^^^^^
-Dades generals
-^^^^^^^^^^^^^^
+### Dades generals
+
 * **Procés**: (Obligatori) Procés afectat per aquest cas, pe. C1, C2 o M1
 * **Pas**: Pas en el qual es troba el procés des del nostre punt de vista.
   S'omple autoàticament
@@ -283,18 +257,15 @@ Dades generals
   s'ha de posar el valor *999999*. Si som una distribuïdora, serà el mateix
   valor que el camp ``Pólissa``.
 
-^^^^^^^^^^^^^^^^
-Detall de passos
-^^^^^^^^^^^^^^^^
+### Detall de passos
 
 Llistat amb tots els passos que s'han generat. Es poden crear, esborrar i
 obrir. Per generar qualsevol pas, el cas ha d'estar obert.
 
 Quan obres o crees un Pas, accedeixes al formulari del Pas.
 
-.. figure:: /_static/FormulariNouPas.png
-
-   Formulari de nou pas
+##### Formulari de nou pas
+![](_static/atr/FormulariNouPas.png)
 
 * **Cas**: S'omple automàticament amb les dades la descripció del Procés
 * **Procés**: Procés al que està associat el Pas. S'omple automàticament amb el
@@ -307,22 +278,19 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
   dades del pas es generaran automàticament segons les dades de CUPS i pólissa
   introduïts anteriorment.
 
-.. tip::
+!!! tip
+    Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
+    que no es guardi el cas, aquest pas no estarà emmagatzemat. Caldrà tancar el
+    formulari amb el botó **Tancar** i guardar el Cas
 
-   Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
-   que no es guardi el cas, aquest pas no estarà emmagatzemat. Caldrà tancar el
-   formulari amb el botó **Tancar** i guardar el Cas
-
-.. figure:: /_static/FormulariDades.png
-
-   Exemple de dades d'un pas. (C1) 01
+##### Exemple de dades d'un pas. (C1) 01
+![](_static/atr/FormulariDades.png)
 
 Cada parell Procés/Pas té el seu formulari de dades específic en funció de les
 dades que s'han d'omplir en el XML corresponent.
 
-.. figure:: /_static/FormulariDadesM101.png
-
-   Exemple de dades d'un pas. (M1) 01
+##### Exemple de dades d'un pas. (M1) 01
+![](_static/atr/FormulariDadesM101.png)
 
 
 No obstant això, hi ha algunes característiques comunes en tots els passos de
@@ -331,32 +299,27 @@ qualsevol procés.
 * **Per enviar**: Significa que encara no s'ha enviat el XML del pas al
   destinatari.Quan es crea un pas, es marca per enviar si l'emissor del pas és
   la nostra empresa. Es modifica automàticament quan s'envia l'XML per mail
-  mitjançant l'assitent :ref:`enviarxml` o quan s'exporta el fitxer ZIP i es
-  marca la casella corresponent a l'assistent :ref:`exportarxml`. Els pasos que
-  estan per enviar i els casos que tenen algun dels seus pasos per enviar, es
-  llisten de color **blau**.
+  mitjançant l'assitent [enviar xml](#formulari-power-email-dun-fitxer-xml-enviar-des-del-cas-corresponent)
+  o quan s'exporta el fitxer ZIP i es marca la casella corresponent a
+  l'assistent [exportar xml](#formulari-per-exportar-un-fitxer-xml). Els pasos
+  que estan per enviar i els casos que tenen algun dels seus pasos per enviar,
+  es llisten de color **blau**.
 
 * **Per validar**: En alguns passos generats automàticament cal validar que les
   dades són correctes. En aquests casos, quan es detecta que hi ha alguna
   incongruència que necessita la intervenció d'un operador, marca el pas per
   validar. Mitjançant aquest camp es pot desmarcar un cop arreglades les dades.
-  Es pot veure en detall a l'apartat :ref:`automatitzacio`. Els pasos que estan
+  Es pot veure en detall a l'apartat [automatització](#automatitzacio). Els pasos que estan
   pendents de validar, es llisten de color **vermell**.
 
-----------------
-Pestanya History
-----------------
+## Pestanya History
 
 Llistat amb totes les accions que s'han realitzat, com Obrir, Tancar,
 Historitzar, etc...
 
-.. figure:: /_static/PestanyaHistory.png
+![](_static/atr/PestanyaHistory.png)
 
-   Pestanya History
-
-----------------------
-Pestanya Communication
-----------------------
+## Pestanya Communication
 
 Llistat amb tots els mails enviats des del cas mitjançant el botó **Enviar XML**
 
@@ -364,30 +327,22 @@ Seleccionant una de les línies del llistat, pots accedir a les dades del
 missatge enviat com destinatari, compte utilitzat, text, adjunts, etc... Fins i
 tot, es pot tornar a enviar el correu mitjançant el botó **Enviar Correu**
 
-.. _enviarxml:
-.. figure:: /_static/FormulariPowerEmail.png
+##### Formulari Power Email d'un fitxer XML enviar des del cas corresponent
+![](_static/atr/FormulariPowerEmail.png)
 
-   Formulari Power Email d'un fitxer XML enviar des del cas corresponent
+## Generació i enviament de XML's
 
-------------------------------
-Generació i enviament de XML's
-------------------------------
-
-^^^^^^^^^^^^^^^^^^^^
-Generació del fitxer
-^^^^^^^^^^^^^^^^^^^^
+### Generació del fitxer
 
 El fitxers XML es generen a partir de la informació del pas actual, es a dir,
 el pas en el qual està el cas.
 Alguns agents, reclamen els XML's en format **ISO-8859-1** en comptes de UTF-8.
 GISCE-ERP permet configurar-les per a utilitzar aquesta codificació mitjançant
 el camp **Encoding XML switching** de la pestanya **Ventas y Compras** de la
-fitxa de l'empresa corresponent. (:ref:`xmlencoding`)
+fitxa de l'empresa corresponent.
 
-.. _xmlencoding:
-.. figure:: /_static/EncodingXML.png
-
-   Camp per modificar la codificació XML a la fitxa d'empresa
+##### Camp per modificar la codificació XML a la fitxa d'empresa
+![](_static/atr/EncodingXML.png)
 
 Per intercanviar XML's tenim dues opcions:
 
@@ -395,9 +350,7 @@ Per intercanviar XML's tenim dues opcions:
   només és un cas
 * **Enviar XML**: En via el XML per mail al destinatari
 
-^^^^^^^^^^^^
-Exportar XML
-^^^^^^^^^^^^
+### Exportar XML
 
 Es genera el fitxer XML d'un pas per poder-lo emmagatzemar en l'ordinador de
 l'usuari i enviar-lo al receptor per altres vies. Si s'utilitza aquesta opció,
@@ -405,15 +358,13 @@ no es podrà fer un seguiment de l'intercanvi de informació amb el destinatari
 automàticament si no s'utilitzen les utilitats d'historització del CRM
 (``Pestanya General``)
 
-.. _exportarxml:
-.. figure:: /_static/FormulariExportarXML.png
-
-   Formulari per exportar un fitxer XML
+##### Formulari per exportar un fitxer XML
+![](_static/atr/FormulariExportarXML.png)
 
 * **Passos**: Podrem escollir el pas del qual volem generar l'XML
 * **Marca com enviat**: Es marcaran com a enviats tots els passos que es
   generin. D'aquesta forma ja no sortiran en el llistat de casos **pendents
-  d'enviar** (:ref:`Llisat pendent d'enviar <pendentenviarlist>`).
+  d'enviar**.
 
 Prement al botó **Generar Fitxer** ens mostrarà un formulari per
 descarregar-nos el fitxer.
@@ -428,16 +379,13 @@ El nom del fitxer generat tindrà el format
 * *[NNNNNNNNNNNNNNN]*: Codi de sol·licitud
 * *[CCCCCCCCCCCCCCCCCCCCCC]*: CUPS
 
-.. tip::
+!!! tip
+    Si es vol que el camp destinitari *[DDDD]* contingui un nom d'empresa per
+    facilitar la seva gestió, es pot configurar el nom comercial de la fitxa
+    d'empresa segons es veu a la imatge següent
 
-   Si es vol que el camp destinitari *[DDDD]* contingui un nom d'empresa per
-   facilitar la seva gestió, es pot configurar el nom comercial de la fitxa
-   d'empresa segons es veu a la imatge :ref:`nomcomercial`
-
-.. _nomcomercial:
-.. figure:: /_static/NomComercial.png
-
-   Camp **Nom comercial** a fitxa de l'empresa
+##### Camp *Nom comercial* a fitxa de l'empresa
+![](_static/atr/NomComercial.png)
 
 Es pot exportar més d'un cas al mateix temps i es generarà un fitxer ZIP amb
 tots els fitxers XML a l'interior. Això ens permet carregar un sol fitxer en
@@ -456,13 +404,10 @@ El nom dels fitxers ZIP de cada empresa seguirà el format
 * *[YYYYMMMDDHHMMSS]*: Any, mes, dia, hora, minut i segon en el qual s'ha
   començat a generar el fitxer ZIP contenidor.
 
-^^^^^^^^^^
-Enviar XML
-^^^^^^^^^^
+### Enviar XML
 
-.. figure:: /_static/FormulariEmailXML.png
-
-   Formulari per enviar el XML del pas per mail des del Cas
+##### Formulari per enviar el XML del pas per mail des del Cas
+![](_static/atr/FormulariEmailXML.png)
 
 Es pot utilitzar el PowerEmail per enviar els XML's i historitzar tot
 l'intercanvi de informació generat.
@@ -476,17 +421,11 @@ l'intercanvi de informació generat.
 
 El mail es veurà a la pestanya ``Communication`` per referències posteriors.
 
-========
-Operació
-========
+# Operació
 
----------------------------------
-Creació d'un cas com a originador
----------------------------------
+## Creació d'un cas com a originador
 
-.. figure:: /_static/NouCas.png
-
-   Nou cas com a origen
+![](_static/atr/NouCas.png)
 
 Nosaltres som l'inici del procés. A partir d'una sol·licitut del Client omplim
 les dades necessàries del cas i generem el **Pas 1** del procés. En aquest
@@ -495,9 +434,7 @@ procés, nosaltres serem l'``Agent Sol·licitant``
 En alguns casos haurem de partir d'una pólissa ja existent. Per exemple, en el
 cas d'un C1, necessitem que el contracte ja estigui en esborrany.
 
-^^^^^^^^^^^^^^^
-Creació del cas
-^^^^^^^^^^^^^^^
+### Creació del cas
 
 Des del llistat de tots els casos, premem sobre el botó **Nou** i se'ns obrirà
 el formulari del cas. Haurem d'anar omplint les dades de les diferents
@@ -523,16 +460,13 @@ A la pestanya ``Switching``:
 * **Ref. Contracte**: La referència al contracte a la distribuidora. És
   obligatori i s'omplirà amb el valor que tingui a la Pólissa seleccionada
 
-.. tip::
-
-   Els camps ``CUPS``, ``Pòlissa`` i ``Ref. Contracte`` s'ompliran
-   automàticament un cop s'ha escollit el cups o la pólissa.
+!!! tip
+    Els camps ``CUPS``, ``Pòlissa`` i ``Ref. Contracte`` s'ompliran
+    automàticament un cop s'ha escollit el cups o la pólissa.
 
 Guardem el cas amb el botó **Guardar** i ens quedarà en estat ``Esborrany``
 
-^^^^^^^^^
-Obrir Cas
-^^^^^^^^^
+### Obrir Cas
 Per poder treballar amb el cas cal primer que l'obrim. per fer-ho podem prèmer
 al botó **Obrir** de la pestanya ``General``
 
@@ -548,9 +482,7 @@ quan guardem el cas
 
 Tanquem el formulari i Guardem el cas amb el botó **Guardar**
 
-^^^^^^^^^^^^^^^^^^
-Informació del cas
-^^^^^^^^^^^^^^^^^^
+### Informació del cas
 
 Tota la informació relativa a la sol·licitud es podrà editar a la informació
 del Pas.
@@ -566,9 +498,7 @@ Podrem editar els cognoms i el nom, afegir la informació que creiem convenient,
 modificar els paràmetres del pas, etc... Aquesta informació serà la que
 s'inclourà dins de l'XML.
 
-^^^^^^^^^^^^^^^
-Generació Pas 1
-^^^^^^^^^^^^^^^
+### Generació Pas 1
 
 Per generar l'XML podem utilitzar el formulari d'exportació amb el botó
 **Exportar XML**. Podrem descarregar el fitxer XML al nostre ordinador per
@@ -584,16 +514,12 @@ mòdul ``Power Email`` ens demanarà:
 * Podrem escriure el contingut del mail que creguem necessari a l'àrea de text
   que hi ha a sota
 
-------------------------------------------
-Creació d'un cas a partir d'un XML entrant
-------------------------------------------
+# Creació d'un cas a partir d'un XML entrant
 
 Rebem una petició a partir d'un XML enviat per un altre agent en un procés on
 nosaltres hi som implicats.
 
-^^^^^^^^^^^^^^^
-Creació del cas
-^^^^^^^^^^^^^^^
+### Creació del cas
 
 Premem sobre la opció ``Importar XML`` del menú de Switching i carreguem el
 fitxer. Si tot és correcte ens apareixerà un diàleg explicatiu amb el que ha
@@ -603,9 +529,7 @@ En el llistat de casos veurem que s'ha creat el nou Cas en estat ``Obert``.
 GISCE-ERP crea el cas en funció del fitxer XML rebut o afegeix el pas al procés
 corresponent.
 
-============================
-Notificacions a client Final
-============================
+# Notificacions a client Final
 
 Durant un procés de switching es dónen diverses situacions on és recomanable
 una notificació al client final per part de la Comercialitzadora entrant.
@@ -615,9 +539,10 @@ dins el propi cas.
 
 S'han definit dues notificacions:
 
---------------------
-Acceptació de procés
---------------------
+ * [Acceptació del procés](#acceptacio-de-proces).
+ * [Activació del procés](#activacio-del-proces-de-canvi-de-comercialitzadora).
+
+## Acceptació de procés
 
 Quan la comercialitzadora entrant rep un XML d'acceptació (C1-02, C2-02 o
 M1-02) es pot notificar al client que ja s'ha acceptat la seva petició de canvi
@@ -625,32 +550,24 @@ o modificació de dades i properament serà activada. Per fer-ho podem anar a
 l'acció **Switching: Notificació acceptació procés Mail Form** i omplir el
 compte de correu des del qual es vol enviar el correu a la fitxa PowerEmail.
 
-.. _poweraccept:
-.. figure:: /_static/PowerEmailAcceptacio.png
+##### Formulari notificació acceptació canvi
+![](_static/atr/PowerEmailAcceptacio.png)
 
-   Formulari notificació acceptació canvi
 
---------------------------------------------------
-Activació del procés de canvi de comercialitzadora
---------------------------------------------------
+## Activació del procés de canvi de comercialitzadora
 
 Quan la comercialitzadora rep un XML d'activació de canvi de comercialitzadora
 (C1-05, C2-05 o C2-07) es pot notificar al client que el procés de canvi s'ha
 acabat i que per tan ja és client de la nova comercialitzadora. Per fer-ho
 podem anar a l'acció **Switching: Notifiació activacio Polissa (Canvi
-Comercialitzador** i omplir el compte de correu des del qual es vol enviar el
+Comercialitzador)** i omplir el compte de correu des del qual es vol enviar el
 correu a la fitxa PowerEmail.
 
-.. _poweractive:
-.. figure:: /_static/PowerEmailActivacio.png
+##### Formulari notificació activació canvi de comercialitzadora
+![](_static/atr/PowerEmailActivacio.png)
 
-   Formulari notificació activació canvi de comercialitzadora
 
-.. _automatitzacio:
-
-==============
-Automatització
-==============
+# Automatització
 
 La gestió ATR, a més d'intercanviar informació entre diferents agents, implica
 modificacions el l'estat de les pólisses, els clients , etc... en els diferents
@@ -661,101 +578,78 @@ automatitzar.
 
 Aquesta automatització consisteix bàsicament en dos processos diferenciats:
 
-#. **Activació de canvis**: L'arribada d'un pas de gestió ATR implica un seguit
+1. **Activació de canvis**: L'arribada d'un pas de gestió ATR implica un seguit
    d'accions als diferents elements de l'ERP, p.e. pòlisses. Aquests procediments
-   s'agrupen en el botò `Activar contracte o canvi` ( :ref:`wizactivarcas` )
-   present a qualsevol procés ATR
+   s'agrupen en el botò `Activar contracte o canvi` present a qualsevol procés ATR
 
-#. **Creació de Processos ATR**: La petició d'una modificació o l'enviament
+2. **Creació de Processos ATR**: La petició d'una modificació o l'enviament
    d'informació a un altre agent implica la generació d'un procés ATR o un nou
    pas en un procés existent. Des d'una pòlissa es poden crear des del botó
-   `Generar cas Gestió ATR` ( :ref:`wizgeneraratr`)
+   `Generar cas Gestió ATR` ( [wizard genenrar cas ATR](#wizard-generar-cas-atr))
 
 
---------------------------------------------------------
-Activació automàtica de pas (Activar contracte o canvis)
---------------------------------------------------------
+# Activació automàtica de pas (Activar contracte o canvis)
 
 La informació d'un pas de gestió ATR ens permet en alguns casos aplicar els
 canvis al l'ERP sense la necessitat de fer els passos mecànics manualment.
 S'utilitza l'assistent que apareix en prèmer el Botò d'acció
-**Activar contracte o canvi** (:ref:`wizactivarcas`).
+**Activar contracte o canvi**.
 
 No tots els passos es poden activar automàticament. En el quadre adjunt es
 mostren els que es troben desenvolupats en aquests moments. En alguns casos no
 accepta tots els possibles valors del pas, p.e per M1 amb canvi de titular.
-
-.. _wizactivarcas:
-.. figure:: /_static/WizardActivarCanvis.png
 
    Activació d'un cas ATR
 
 En la taula següent es pot veure quan es poden activar els canvis associats
 a un cas de gestió ATR
 
-+---------+----------------+------------------------------------+-------------------+
-| Procés  | Distribuidora  | Comercialitzadora                  | Observacions      |
-+=========+================+========+========+========+=========+===================+
+
+| Procés  | Distribuidora  |  Comercialitzadora           | | | | Observacions      |
+|:-------:|:--------------:|:------:|:------:|:------:|:-------:|:------------------|
 | **Pas** | **01**         | **01** | **05** | **06** | **07**  |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **A3**  | `ad`_          |        | `ac`_  |        |         |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **B1**  |                |        | `bc`_  |        |         |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **C1**  |                |        | `ac`_  |        |         |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **C2**  |                |        | `ac`_  | `bc`_  | `ac`_   |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **D1**  |                | `dc`_  |        |        |         |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **M1**  |                |        |        |        | `mc`_   | No canvi titular  |
-+---------+----------------+--------+--------+--------+---------+-------------------+
+|         |                |        |        |        |         |                   |
 | **W1**  |                |        |        |        |         |                   |
-+---------+----------------+--------+--------+--------+---------+-------------------+
 
-.. _ac:
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-(ac) Activació de contracte (A3,C1,C2) a Comercialitzadora
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### (ac) Activació de contracte (A3,C1,C2) a Comercialitzadora
 
-TODO
+!!! TODO
+    Explicació
 
-.. _bc:
+### (bc) Baixa de contracte (B1,C1,C2) a Comercialitzadora
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-(bc) Baixa de contracte (B1,C1,C2) a Comercialitzadora
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+!!! TODO
+    Explicació
 
-TODO
+### (dc) Activació (D1) a Comercialitzadora
 
-.. _dc:
+!!! TODO
+    Explicació
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-(dc) Activació (D1) a Comercialitzadora
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### (mc) Modificació de contracte (M1) a Comercialitzadora
 
-TODO
+!!! TODO
+    Explicació
 
-.. _mc:
+### Nou contracte (A3) a Distribuidora
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-(mc) Modificació de contracte (M1) a Comercialitzadora
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+!!! TODO
+    Explicació
 
-TODO
-
-.. _ad:
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Nou contracte (A3) a Distribuidora
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-TODO
-
--------------------------------------------------------------------
-Creació de Procés automàtic des de pòlissa (Generar cas Gestió ATR)
--------------------------------------------------------------------
+# Creació de Procés automàtic des de pòlissa (Generar cas Gestió ATR)
 
 La creació d'un cas des d'una pòlissa permet generar automàticament el cas amb
 el pas normalment **01** des d'una pòlissa agafant la informació que ja conté.
@@ -765,40 +659,29 @@ el pas normalment **01** des d'una pòlissa agafant la informació que ja conté
 * La polissa ha d'estar en esborrany o activa en funció del procés.
 
 S'utilitza l'assistent que apareix en prèmer el Botò d'acció
-**Generar cas Gestió ATR** (:ref:`wizgeneraratr`) que ens permetrà escollir
+**Generar cas Gestió ATR** ([wizard genenrar cas ATR](#wizard-generar-cas-atr)) que ens permetrà escollir
 quin procés volem crear. En funció de l'estat de la pólissa ens permetrà
 escollir uns processos i altres no.
 
-.. _wizgeneraratr:
-.. figure:: /_static/WizardGenerarATR.png
+###### Wizard Generar Cas ATR
+![](_static/atr/WizardGenerarATR.png)
 
    Asistent generació Casos a partir de pólisses
 
-+--------+--------+---------------+------------+-------------------------------+
-| Procés | Orígen | estat pòlissa | Addicional | Observacions                  |
-+========+========+===============+============+===============================+
-| **A3** | comer  | Esborrany     | No         |                               |
-+--------+--------+---------------+------------+-------------------------------+
-| **B1** | comer  | Activa        | Si         | Es demana motiu de baixa      |
-+--------+--------+---------------+------------+-------------------------------+
-| **C1** | comer  | Esborrany     | No         |                               |
-+--------+--------+---------------+------------+-------------------------------+
-| **C2** | comer  | Esborrany     | No         |                               |
-+--------+--------+---------------+------------+-------------------------------+
-| **D1** | distri | Activa        | No         |                               |
-+--------+--------+---------------+------------+-------------------------------+
-| **M1** | comer  | Activa        | Si         | Es demana tipus de canvi i    |
-|        |        |               |            | dades necessàries             |
-+--------+--------+---------------+------------+-------------------------------+
-| **W1** | comer  | Activa        | No         | Només si el comptador té      |
-|        |        |               |            | alguna lectura d'aquest tipus |
-+--------+--------+---------------+------------+-------------------------------+
+| Procés | Orígen | Estat Pòlissa | Addicional | Observacions                                               |
+|:------:|--------|---------------|------------|------------------------------------------------------------|
+| **A3** | comer  | Esborrany     | No         |                                                            |
+| **B1** | comer  | Activa        | Si         | Es demana motiu de baixa                                   |
+| **C1** | comer  | Esborrany     | No         |                                                            |
+| **C2** | comer  | Esborrany     | No         |                                                            |
+| **D1** | distri | Activa        | No         |                                                            |
+| **M1** | comer  | Activa        | Si         | Es demana tipus de canvi i dades necessàries               |
+| **W1** | comer  | Activa        | No         | Només si el comptador té alguna lectura d'aquest tipus     |
 
 Un cop executat retorna un llistat amb una descripció del resultat de cada
-pólissa ( :ref:`wizgeneraratrres` ).
+pólissa.
 
-.. _wizgeneraratrres:
-.. figure:: /_static/WizardGenerarATRResultat.png
+![](_static/atr/WizardGenerarATRResultat.png)
 
    Resultat creació passos
 
@@ -807,15 +690,13 @@ pólissa ( :ref:`wizgeneraratrres` ).
     el cas que la distribuidora sigui **Unión Fenosa** o ``0F`` en els altres
     casos.
 
-^^^^^^^^^^^^^^^^^^^^
-Creació Cas A3/C1/C2
-^^^^^^^^^^^^^^^^^^^^
+### Creació Cas A3/C1/C2
 
 Un cas habitual és la entrada automatitzada de peticions de canvi de
 comercialitzadora, per exemple via web. També es pot donar el cas que
 l'encarregat de la gestió ATR no sigui el mateix que crea els contractes.
 
-Mitjançant l'assistent :ref:`wizgeneraratr` es pot crear un cas de canvi
+Mitjançant l'assistent [wizard genenrar cas ATR](#wizard-generar-cas-atr) es pot crear un cas de canvi
 de comercialitzadora o alta a partir d'una o vàries pólisses en esborrany.
 El seu funcionament és el següent:
 
@@ -826,47 +707,39 @@ El seu funcionament és el següent:
 
 * Genera només casos Oberts **C1**, **C2** i **A3** i el pas **01** agafant les
   dades de la pólissa. En alguns casos es pot escullir automàticament el cas
-  (veure :ref:`segonsformulari` )
+  (veure [generacio de casos segons dades del formulari](#segons-dades-formulari-generacio-casos-c1-c2-i-a3) )
 * Valida el format del **CUPS** afegint el sufix ``0F`` o ``1P`` depenent de
   l'empresa distribuidora (veure nota )
 * Marca el camp ``Per validar`` del cas en funció de si es poden separar
   correctament els noms i els cognoms automàticament (veure
-  :ref:`validanomtitular` ) o no. Si no es pot, es marca per validar.
+  [validació nom titular](atr.md#validacio-nom-titular) ) o no. Si no es pot, es marca per validar.
 * El **codi REE** del destinatari es calcula a partir del CUPS. Algunes
   distribuidores que han estat absorbides no mantenen el codi de la
   distribuidora original en el CUPS però el **codi REE** del destinari de les
   peticions si que ha de ser diferent. Podem veure'n la traducció que es
-  realitza a :ref:`appendixb`
+  realitza a [apèndix B](atr.md#apendix-b-traduccio-de-codi-ree)
 
-^^^^^^^^^^^^^^^^^^^^^^
-Creació Cas B1 (Baixa)
-^^^^^^^^^^^^^^^^^^^^^^
+### Creació Cas B1 (Baixa)
 
-TODO Explicació pas addicional (tipus canvi)
+!!! TODO
+    Explicació pas addicional (tipus canvi)
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Creació Cas D1 (Notificació canvi a TG)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Creació Cas D1 (Notificació canvi a TG)
 
-TODO Explicació
+!!! TODO
+    Explicació
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Creació Cas M1 (Canvis contracte)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Creació Cas M1 (Canvis contracte)
 
-TODO Explicació pas addicional (tipus canvi i dades)
+!!! TODO
+    Explicació pas addicional (tipus canvi i dades)
 
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Creació Cas W1 (Autolectures)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Creació Cas W1 (Autolectures)
 
-TODO Explicació
+!!! TODO
+    Explicació
 
-.. _validanomtitular:
-
-^^^^^^^^^^^^^^^^^^^^^
-Validació nom titular
-^^^^^^^^^^^^^^^^^^^^^
+### Validació nom titular
 
 Els casos de Gestió ATR necessiten els noms i cognoms separats. L'ERP
 emmagatzema aquesta informació en un sol camp i per tant s'hauran de
@@ -884,54 +757,37 @@ Es marcarà com a per validar si:
 Si el client és una empresa, només es comprova el nom i que sigui de menys
 de 50 caracters
 
-.. _segonsformulari:
-
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Segons dades Formulari: Generació casos C1, C2 i A3
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### Segons dades Formulari: Generació casos C1, C2 i A3
 
 Per automatitzar la creació de C1 , C2 i A3 quan una pòlissa en esborrany es
 genera des d'un sistema extern, p.e. Web, es poden utilitzar les observacions
 de la pòlissa. Aquest funcionament es pot utilitzar mitjançant el botó
-`Segons dades formulari` de l'assitent (:ref:`wizgeneraratr`) En funció del que
+`Segons dades formulari` de l'assitent ([wizard genenrar cas ATR](#wizard-generar-cas-atr)) En funció del que
 conté s'actúa de la següent forma:
 
 
- Contingut           | Acció                                  |
----------------------|-----------------------------------------
-``canvi_titular: 1`` | **C2 de canvi de titular** amb tipus  de canvi **Subrogació**
- ``proces: C1``      | **C1**                                
- ``proces: C2``      | Un **C2** de la mateixa forma que el cas ``canvi_titular: 1``              
- ``proces: A3``      | **A3**                                
+| Contingut            | Acció                                                          |
+|----------------------|----------------------------------------------------------------|
+| ``canvi_titular: 1`` | **C2 de canvi de titular** amb tipus  de canvi **Subrogació**  |
+| ``proces: C1``       | **C1**                                                         |
+| ``proces: C2``       | Un **C2** de la mateixa forma que el cas ``canvi_titular: 1``  |
+| ``proces: A3``       | **A3**                                                         |
 
 
------------------------
-Altres automatitzacions
------------------------
+# Altres automatitzacions
 
 També s'ha automatitzat la creació d'alguns processos i passos a partir
 d'altres procediments
 
-^^^^^^^^^^^^^^^^
-B1 i devolucions
-^^^^^^^^^^^^^^^^
+### B1 i devolucions
 
 S'ha integrat la generació de casos i processo B1 amb les devolucions i els
 talls.
 
-!!!note
-    Fucking todo
 
+# Apendix A: Exemple de procés C1
 
-===============================
-Apendix A: Exemple de procés C1
-===============================
-
-.. _appendixb:
-
-================================
-Apendix B: Traducció de codi REE
-================================
+# Apendix B: Traducció de codi REE
 
 El càlcul del codi REE de la distribuidora té algunes particularitats en el cas
 que el CUPS pertanyi a les distribuidores **ENDESA** (0031) o **FENOSA** (0390)
@@ -942,23 +798,18 @@ caràcter més.
 Aquestes distribuidores demanen que els casos generats portin en el codi REE de
 destinatari el de la distribuidora original.
 
-.. warning::
+!!! warning
+    És molt important que les distribuidores estiguin creades i tinguin com a
+    **Empresa principal** la empresa segons el CUPS. Si no és així, no es
+    validaran correctament els XML's de resposta
 
-   És molt important que les distribuidores estiguin creades i tinguin com a
-   **Empresa principal** la empresa segons el CUPS. Si no és així, no es
-   validaran correctament els XML's de resposta (veure
-   :ref:`empresaprincipal` )
-
-.. _empresaprincipal:
-.. figure:: /_static/EmpresaPrincipal.png
+![](_static/atr/EmpresaPrincipal.png)
 
    Empresa principal per distribuidores absorbides
 
 L'algoritme que es segueix és el següent i en aquest ordre:
 
--------------
-ENDESA (0031)
--------------
+# ENDESA 0031
 
 * Si el CUPS comença per **00314** s'utilitza la **província** a la que pertany per
   escollir la distribuidora
@@ -972,17 +823,14 @@ ENDESA (0031)
 * Si el CUPS comença per **003130**: **0029** (``FECSA Aragó``)
 * La resta, es fa seguint aquesta taula:
 
-===== ===================================
-CUPS  Distribuidora
-===== ===================================
-00311 0023 (Cia sevillana)
-00313 0120 (Aragonesa Act.)
-00315 0288 (Balears Gas y E.)
-00316 0393 (Unión Eléctrica Canarias SUP)
-===== ===================================
 
------------
-FENOSA 0039
------------
+| CUPS  | Distribuidora                        |
+|:-----:|:-------------------------------------|
+| 00311 | 0023 (Cia sevillana)                 |
+| 00313 | 0120 (Aragonesa Act.)                |
+| 00315 | 0288 (Balears Gas y E.)              |
+| 00316 | 0393 (Unión Eléctrica Canarias SUP)  |
+
+# FENOSA 0039
 
 * Si el CUPS comença per **03900**: **0022** (``Jallas``)
