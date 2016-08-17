@@ -3,6 +3,7 @@ theme: readthedocs
 
 markdown_extensions:
   - admonition
+  - mdx_grid_tables
 
 pages:
   - Home: index.md
