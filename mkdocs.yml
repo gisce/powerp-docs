@@ -14,6 +14,7 @@ pages:
     - Inicio: distri/index.md
     - Telegestion: distri/telegestion.md
     - Contadores: distri/contadores.md
+    - Cel·les i elements de tall: distri/celles.md
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
