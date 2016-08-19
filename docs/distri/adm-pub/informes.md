@@ -1,11 +1,16 @@
-## Circular 1/2005
+# Documentació dels moduls d'informes
 
+* [Circular 1/2005]()
+* [Circular 4/2014]()
+
+## Circular 1/2005
 
 El mòdul permet al GISCE-ERP la generació dels informes referents a la
 circular 1/2005 de la CNE. Aquests informes venen definits per la mateixa **CNE**.
 
-* [Anexo I: Instrucciones para completar la información solicitada en losformularios del Anexo II](https://sede.cne.gob.es/c/document_library/get_file?uuid=59598178-3f1c-47e5-98ee-b705b6c06397&groupId=10136)
-* [Anexo II: Formularios de envío de información de la CNE](https://sede.cne.gob.es/c/document_library/get_file?uuid=ce663590-4c7d-411a-b902-0f543c815b10&groupId=10136)
+* [Anexo I: Instrucciones para completar la información solicitada en los
+  formularios del Anexo II](https://sede.cne.gob.es/c/document_library/get_file?uuid=59598178-3f1c-47e5-98ee-b705b6c06397&groupId=10136)
+* [Anexo II: Formularios de envío de información de la  CNE](https://sede.cne.gob.es/c/document_library/get_file?uuid=ce663590-4c7d-411a-b902-0f543c815b10&groupId=10136)
 * [Anexo III: Tablas Circular 1/2005](https://sede.cne.gob.es/c/document_library/get_file?uuid=97fb83c3-dc74-40be-a5e2-fa8a813e29eb&groupId=10136)
 
 ### 1
@@ -24,7 +29,7 @@ Informe de sol·licituds de canvi de MR a ML i de comercialitzadora
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
-.. figure:: _static/informes/1_2005/wizard_informe_1.png
+![](_static/informes/1_2005/wizard_informe_1.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -54,7 +59,7 @@ retràs fins a la data de canvi efectiu.
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
-.. figure:: _static/informes/1_2005/wizard_informe_2.png
+![](_static/informes/1_2005/wizard_informe_2.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -66,9 +71,7 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any
   tipus de punt de mesura i tarifa d'accés.
 
 
-
-5A
-^^
+### 5A
 
 Informe de classifació dels consumidors en funció del número de canvis efectuats
 de MR a ML.
@@ -84,7 +87,7 @@ de MR a ML.
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
-.. figure:: _static/informes/1_2005/wizard_informe_5a.png
+![](_static/informes/1_2005/wizard_informe_5a.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -94,8 +97,7 @@ En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 * Les dades s'agrupen per diferent tipus de punt de mesura.
 
 
-5B
-^^
+### 5B
 
 Informe de classifació dels consumidors en funció del número de canvis efectuats
 de comercialitzadora.
@@ -111,7 +113,7 @@ de comercialitzadora.
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
-.. figure:: _static/informes/1_2005/wizard_informe_5b.png
+![](_static/informes/1_2005/wizard_informe_5b.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -123,8 +125,7 @@ En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
 
 
-7NA
-^^^
+### 7NA
 
 Informe de classificació dels consumidors en funció del comercialitzador,
 tipus de punt de subministre, tipus de tarifa d'accés i la provincia on s'ubica
@@ -145,7 +146,7 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de
 l'any, amb els quatre últims trimestres anteriors al primer trimestre de l'any
 com a periode d'energia:
 
-.. figure:: _static/informes/1_2005/wizard_informe_7.png
+![](_static/informes/1_2005/wizard_informe_7.png)
 
 * Les dades dels consumidors s'extreuen de les modificacions contractuals, on
   la data especificada a la secció 'trimestre' es troba entre les data inicial i
