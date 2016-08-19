@@ -18,28 +18,34 @@ nova pestanya Telegestió si el comptador es marca que es de telegestió.
 La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
 habitualment seguint tres passos:
 
-1. **Càrrega de lectures**: Els concentradors deixen les lectures en un
-   servidor FTP en format XML. GISCE-ERP recull aquests fitxers, els processa i
-   els carrega a la base de dades. Aquesta operació la podem realitzar
-   manualment des de la configuracio d'els FTP prement el botó de
-   :ref:`botoftp`. Si es produeix un error, es registra al llistat
-   :ref:`errorslectura`
-2. **Validació de lectures**: Per preparar les lectures abans d'ésser passades
-   a la facturació, cal validar-les. Per fer-ho podem anar a la opció del menú
-   [Validar Tancam o fer-ho des d'un comptador en concret. Si hi ha algun
-   error es genera un cas en el CRM, secció `Telegestió`
-3. **Lectura TG**: Per poder facturar, necessitem carregar les lectures al
-   sistema de facturació, igual que si ho haguéssim llegit manualment o amb
-   TPL. Per fer-ho anem al comptador en qüestió i premem al botó de lectures de
-   la fitxa o directament des del botó :ref:`botolectura`. Per entrar totes les
-   lectures de tots els comptadors d'un lot de facturació podem prémer en el
-   botó :ref:`lotbotolectura`.
+1.  **Càrrega de lectures**: Els concentradors deixen les lectures en un
+    servidor FTP en format XML. GISCE-ERP recull aquests fitxers, els processa i
+    els carrega a la base de dades. Aquesta operació la podem realitzar
+    manualment des de la configuracio d'els FTP prement el
+    [boto de connexió ftp](#configuracio-connexions-ftp). Si es produeix
+    un error, es registra al
+    [llistat d'errors de lectura](#registre-de-lectura-tg-reader-errors)
+
+2.  **Validació de lectures**: Per preparar les lectures abans d'ésser passades
+    a la facturació, cal validar-les. Per fer-ho podem anar a la opció del menú
+    [Validar Tancaments](#validar-tg-tancaments) o fer-ho des d'un comptador
+    en concret. Si hi ha algun error es genera un cas en el CRM,
+    secció [Telegestió i CRM](#telegestio-i-crm)
+
+3.  **Lectura TG**: Per poder facturar, necessitem carregar les lectures al
+    sistema de facturació, igual que si ho haguéssim llegit manualment o amb
+    TPL. Per fer-ho anem al comptador en qüestió i premem al botó de lectures de
+    la fitxa o directament des del botó
+    [Lectura des de TG](#lectura-des-de-tg-boto). Per entrar totes les lectures
+    de tots els comptadors d'un lot de facturació podem prémer en el botó
+    [importar lectures del lot](#importar-lectures-des-del-lot-de-facturacio).
 
 !!! note
     Es pot configurar el sistema de telegestió per no carregar les lectures de
     reactiva i així no facturar-la. No obstant, si la potència contractada és 
     superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
 
+```
 .. blockdiag::
 
  blockdiag {
@@ -49,6 +55,7 @@ habitualment seguint tres passos:
     validación -> "CRM (Telegestión)" [label = "errores", textcolor="#FF0000"]
 
  }
+```
 
 Actualment, GISCE-ERP és capaç de llegir els seguents fitxers XML
 estandaritzats:
@@ -82,22 +89,18 @@ info``:
   darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
   nova.
 
-.. note::
+!!! note
+    El nom del producte del comptador de telegestió és important. Per facilitar
+    el switching va bé que la marca i el model estiguin separats per un espai
 
-   El nom del producte del comptador de telegestió és important. Per facilitar
-   el switching va bé que la marca i el model estiguin separats per un espai
+!!! note
+    Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
+    Aquest prefix ha de ser el mateix que afegeix el comptador als números de
+    sèrie. (veure `nota prefix`_ )
 
-.. note::
-
-   Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
-   Aquest prefix ha de ser el mateix que afegeix el comptador als números de
-   sèrie. (veure `nota prefix`_ )
-
-.. _fitxaproductecomptadortg:
+##### Fitxa producte d'un comptador de telegestió
 
 ![](_static/telegestion/FitxaProducteComptadorTG.png)
-
-   Fitxa producte d'un comptador de telegestió
 
 Pestanya Telegestió
 -------------------
@@ -126,8 +129,8 @@ opció ``TG Comptador`` marcada
   de validació que no es tindran en compte. Al validar una lectura de
   telegestió, es poden generar un seguit d'excepcions que provocarà que la
   lectura no sigui vàlida. Si l'excepció és dins la llista, no es tindrà en
-  compte i validarà la lectura. Podem veure la llista de les possibles
-  excepcions a :ref:`llistaexceptval`
+  compte i validarà la lectura. Podem veure la llista de les
+  [possibles excepcions](#configuracio-excepcions)
 
 ## Gestió i configuració de Telegestió
 
@@ -137,8 +140,6 @@ infraestructura.
 ![](_static/telegestion/MenuInfraestructuraTG.png)
 
    El menú Infraestructura amb les opcions de telegestió
-
-.. _botoftp:
 
 ### Configuració > Connexions FTP
 
@@ -168,15 +169,12 @@ tornar-los a carregar.
   lectures i errors que vagi trobant. Si un fitxer no el processa, podrem veure
   l'error corresponent al registre de lectura.
 
-.. tip::
-   
-   Els directoris han de començar i acabar sempre amb la barra de directori
-   ("/"), p.e. ``/root/upload/``
-
-.. tip::
-
-   Els caracters ``,``, ``*``, ``?``, ``<``, ``>``, ``:``, ``\``, ``'``, ``"``
-   i ``|`` no estan permesos en el nom d'un directori
+!!! tip
+    Els directoris han de començar i acabar sempre amb la barra de directori
+    ("/"), p.e. **/root/upload/**
+!!! tip
+    Els caracters ``,``, ``*``, ``?``, ``<``, ``>``, ``:``, ``\``, ``'``, ``"``
+    i ``|`` no estan permesos en el nom d'un directori
 
 El procediment de lectura va de la següent forma:
 
@@ -187,8 +185,6 @@ El procediment de lectura va de la següent forma:
   YYYY és l'any i ``MM`` el mes de la data del fitxer importat.
 * Els fitxers que no pugui importar **no** els mourà. Si ningú els treu,
   donaran error el següent cop que es llegeixin
-
-.. _llistaexceptval:
 
 ### Configuració > Excepcions
 
@@ -219,11 +215,10 @@ Les excepcions que es gestionen actualment són:
 * **(CC) Comparison Month vs Day**: La lectura mensual absoluta no coincideix
   amb la lectura diaria del mateix dia.
 
-.. tip::
-
-   L'excepció ``(NC) No Communication`` depèn del paràmetre de configuració
-   ``tg_last_read_advice`` que per defecte és de 2 dies. Es pot configurar per
-   a què utilitzi un altre període.
+!!! tip
+    L'excepció **(NC) No Communication** depèn del paràmetre de configuració
+    **tg_last_read_advice** que per defecte és de 2 dies. Es pot configurar per
+    a què utilitzi un altre període.
 
 ### Configuració > Excepcions Comptador
 
@@ -264,9 +259,9 @@ la norma s'aniran afegint en aquestes llistes en properes actualitzacions.
 ### Casos Telegestió
 
 Permet un accés directe als casos generats pel sistema de telegestió (veure
-[Telegestió i CRM](telegestion.md#telegestio-i-crm)). Replica la mateixa estructura dels casos del CRM , creant
-accessos directes als casos oberts i als casos propis per facilitar-ne la
-gestió.
+[Telegestió i CRM](telegestion.md#telegestio-i-crm)). Replica la mateixa
+estructura dels casos del CRM , creant accessos directes als casos oberts i
+als casos propis per facilitar-ne la gestió.
 
 ### TG Concentrador
 
@@ -286,8 +281,6 @@ mitjançant el botó comptadors.
 Registre de lectures dels fitxers. Es mostren els fitxers que s'han carregat i
 si la seva càrrega ha estat correcte o no. Els fitxers erronis poden ser
 fitxers en un format no soportat o directoris a l'arrel del nostre FTP.
-
-.. _errorslectura:
 
 ### Registre de lectura > TG reader Errors
 
@@ -311,18 +304,20 @@ les validades de color **negre**
 
 ![](_static/telegestion/CierresTG.png)
 
-   Llista de lectures de Telegestió
+|Llista de lectures de Telegestió|
+|:------------------------------:|
 
 Des del llistat podem seleccionar un conjunt lectures i validar-les prement el
 botó **Acció**. S'ens obrirà un formulari on podrem escollir validar o
 invalidar els tancaments o lectures de telegestió. Cal tenir present que validar
 mitjançant aquest procediment no realitza cap de les comprovacions descrites en
-l'apartat [Validar TG Tancaments](telegestion.md#validar-tg-tancaments). Únicament marca el tancament com a vàlid o el
-desmarca.
+l'apartat [Validar TG Tancaments](#validar-tg-tancaments). Únicament marca el
+tancament com a vàlid o el desmarca.
 
 ![](_static/telegestion/ValidarTancamentTG.png)
 
-   Formulari de validació d'un tancament
+|Formulari de validació d'un tancament|
+|:-----------------------------------:|
 
 Podem veure la informació completa en el detall d'un tancament:
 
@@ -338,7 +333,7 @@ En el detall hi trobem:
   moment de realitzar la lectura. Pot canviar en el temps i així tenim
   traçabilitat.
 * **Tipus**: Indica si el tancament és Mensual i Diari.
-* **Valor**: ``Absolut`` (lectura del comptador) o ``Incremental`` (consum des
+* **Valor**: **Absolut** (lectura del comptador) o **Incremental** (consum des
   de la última incremental generada). Les incrementals només poden ser de tipus
   mensual
 * **Període**: Període al que correspon la lectura. 0 és un totalitzador del 1
@@ -351,17 +346,13 @@ En el detall hi trobem:
   mensuals)
 * **Vàlid**: Si està validad i quan es va validar
 
-.. note:: 
-   :name: nota prefix
-
-   Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
-   els números de sèrie en els concentradors afegeixen un prefix segons el
-   producte. p.e. per comptadors ZIV afegeixen el prefix ``ZIV``. Aquest
-   prefix es pot configurar en la gestió de productes omplint el camp ``Codi``
-   del producte associat al comptador de telegestió. (veure
-   :ref:`fitxaproductecomptadortg`)
-
-.. _botolectura:
+!!! note
+    Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
+    els números de sèrie en els concentradors afegeixen un prefix segons el
+    producte. p.e. per comptadors ZIV afegeixen el prefix **ZIV**. Aquest
+    prefix es pot configurar en la gestió de productes omplint el camp ``Codi``
+    del producte associat al comptador de telegestió. (veure la [Fitxa producte
+    d'un comptador de telegestió](#fitxa-producte-dun-comptador-de-telegestio))
 
 ### Lectura des de TG (Botó)
 
@@ -377,9 +368,8 @@ comptador.
 
 ![](_static/telegestion/ImportarLecturesTG.png)
 
-   Formulari per introduïr data de importació de lectura
-
-.. _botovalidar:
+|Formulari per introduïr data de importació de lectura|
+|:---------------------------------------------------:|
 
 ### Validar TG Tancaments
 
@@ -407,10 +397,10 @@ La **Validació** consisteix en:
   coincidesquin amb les lectures diaries absolutes corresponents al mateix dia
   de tancament.
 * Opcionalment es poden validar el valors de reactiva per fer comprovacions de
-  ``cosinus fi``
+  **cosinus fi**
 
 El procediment per validar les lectures és a través del wizard que es troba en
-``Infraestructura > Validar Cierres TG``.
+**Infraestructura > Validar Cierres TG**.
 
 ![](_static/telegestion/BotoValidacio.png)
 
@@ -425,8 +415,6 @@ comptador, es validaran **totes** les lectures pendents de validar.
 ![](_static/telegestion/ValidarTancamentsBotoTG.png)
 
    Formulari de validar tots els tancaments d'un comptador
-
-.. _lotbotolectura:
 
 ## Importar lectures des del Lot de Facturació
 
@@ -463,14 +451,14 @@ provocat el cas.
 
 Per accedir als casos que s'han generat deguts a telegestió podem accedir al
 menú del CRM com qualsevol altre cas i seleccionar la secció **Telegestió (TG)**
-: ``CRM & SRM > All Cases > Casos per secció``
+: **CRM & SRM > All Cases > Casos per secció**
 
 També hi podem accedir des del menú de telegestió, on a l'apartat
 corresponent ja tenim els casos filtrats per la secció de telegestió:
-``Infraestructura > Telegestió > Casos Telegestió``
+**Infraestructura > Telegestió > Casos Telegestió**
 
 Els casos de telegestió tenen tots dues referències per donar un accés ràpid a
-les dades. Aquestes referències les trobem a solapa ``Informació extra``
+les dades. Aquestes referències les trobem a solapa **Informació extra**
 
 ![](_static/telegestion/crm_cas_obert_referencies.png)
 
@@ -478,13 +466,13 @@ La primera referència es per accedir a la pòlissa i la referència 2 per acced
 al contador associat al cas. Si cliquem sobre la carpeta ens obrirà la
 referència pertinent.
 
-Per posar un exemple d'ús de les referències, el següent punt explica
-[com anar a les lectures d'un comptador des d'un cas](telegestion.md#lectures-dun-comptador-des-dun-cas)
+Per posar un exemple d'ús de les referències, el següent punt explica [com anar
+a les lectures d'un comptador des d'un cas](telegestion.md#lectures-dun-comptador-des-dun-cas)
 
 ### Lectures d'un comptador des d'un cas
 
 Per anar a les lectures d'un contador a partir d'un cas en concret, primer hem
-d'escollir el cas , obrir-lo i anar a la pestanya de ``Informació extra``.
+d'escollir el cas , obrir-lo i anar a la pestanya de **Informació extra**.
 Després cliquem sobre la carpeta de la referència 2.
 
 ![](_static/telegestion/crm_exemple_contador_obrir_carpeta.png)
@@ -493,7 +481,7 @@ Ens apareix una nova finestra amb les dades del comptador.
 
 ![](_static/telegestion/crm_pantalla_contador_sola.png)
 
-Ara cliquem sobre ``Mostrar en TG``
+Ara cliquem sobre **Mostrar en TG**
 
 ![](_static/telegestion/crm_pantalla_contador.png)
 
@@ -510,9 +498,8 @@ tancar la finestra actual del contador.
 
 ## Automatització de tasques
 
-S'han creat dues tasques planificades (``Administració > Configuració >
-Planificació > Accions planificades``) per ajudar a la telegestió.
-
+S'han creat dues tasques planificades (**Administració > Configuració
+>Planificació > Accions planificades**) per ajudar a la telegestió.
 ### TG Reader scheduler
 
 
