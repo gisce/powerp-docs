@@ -1,15 +1,11 @@
-***********
-Alta Tensió
-***********
+# Documentació del mòdul de Línes d'Alta Tensió
 
-Introducció
-===========
+## Introducció
 
 El mòdul d'alta tensió ens permet inventariar les línies i els trams d'alta
 tensió
 
-Crear una nou tram d'Alta Tensió
-================================
+## Crear una nou tram d'Alta Tensió
 
 Per crear un nou Tram d'Alta Tensió ho podem fer a través del llistat de
 tots els trams AT i després apretar el botó de **Nou**, igual que es fa amb la
@@ -28,11 +24,11 @@ parts:
 
 En l'apartat de **Dades Administratives** tenim els camps:
 
-  .. image:: _static/lat/formulari_administratiu.png
+![](_static/lat/formulari_administratiu.png)
 
   * **Propietari**: Per indicar si som propietaris o no. Es calcula
     automàticament segons la línia associada al tram i no es pot modificar.
-  * **% pagat per la compañia**: Per indicar quin percentatge ha pagat l'empresa
+  * **% Pagat per la compañia**: Per indicar quin percentatge ha pagat l'empresa
     per aquest element.
   * **Bloquejar APM**: Permet fixar a una data concreta la *Data APM*. D'aquesta
     forma es permet posar-hi una data fixa i que no es sobreescrigui
