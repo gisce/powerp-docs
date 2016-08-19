@@ -1,7 +1,7 @@
 # Documentació dels moduls d'informes
 
 * [Circular 1/2005](#circular-12005)
-* [Circular 4/2014]()
+* [Circular 4/2014](#circular-42014)
 
 ## Circular 1/2005
 
