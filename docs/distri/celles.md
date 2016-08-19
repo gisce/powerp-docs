@@ -1,37 +1,27 @@
-**************************
-Cel·les i elements de tall
-**************************
-
-
-Introducció
-===========
+# Introducció
 
 El mòdul de cel·les i elements de tall ens permetrà inventarià totes les cel·les
 i elements de tall que tenim a la nostra xarxa de distribució.
 
-Configuració
-============
+# Configuració
 
 Podem trobar totes les opcions de configuració del les cel·les i elements de
 tall a través de **Menú > Centres Transformadors > Manteniment > Cel·les i
 elements de tall > Configuració**.
 
-.. image:: _static/celles/menu_config.png
+![](_static/celles/menu_config.png)
 
-.. _config_fluids:
-
-Fluïds d'aïllament
-------------------
+## Fluïds d'aïllament
 
 Podrem donar d'alta tots els fluïds d'aïllament que necessitem a través de
 **Menú > Centres Transformadors > Manteniment > Cel·les i elements de tall >
 Configuració > Fluïds aïllants**
 
-.. image:: _static/celles/menu_fluids.png
+![](_static/celles/menu_fluids.png)
 
 Els fluïds aïllants disposen de dos camps:
 
-  .. image:: _static/celles/formulari_fluids.png
+  ![](_static/celles/formulari_fluids.png)
 
   * **Codi**: El codi d'identificació d'aquest fluïd. (obligatori)
   * **Descripció**: Una descripció d'aquest fluïd.
@@ -39,60 +29,52 @@ Els fluïds aïllants disposen de dos camps:
 Aquests registres després es podran seleccionar quan estiguem donant d'alta una
 cel·la/element de tall
 
-.. _config_tipus_element:
-
-Tipus d'element
----------------
+# Tipus d'element
 
 Podrem donar d'alta tots els tipus d'element que necessitem a través de **Menú >
 Centres Transformadors > Manteniment > Cel·les i elements de tall > Configuració
 > Tipus elements**
 
-.. image:: _static/celles/menu_tipus_elements.png
+![](_static/celles/menu_tipus_elements.png)
 
 Els tipus d'element disposen de dos camps:
 
-  .. image:: _static/celles/formulari_tipus_elements.png
+  ![](_static/celles/formulari_tipus_elements.png)
 
   * **Codi tipus element**: Códi de tipus d'element.
   * **Tipus d'element**: Nom del tipus d'element
 
-.. _config_tipus_posicio:
-
-Tipus posició
--------------
+# Tipus posició
 
 Podrem donar d'alta tots els tipus de posició que necessitem a través de
 **Menú > Centres Transformadors > Manteniment > Cel·les i elements de tall
 > Configuració > Tipus de posició**
 
-.. image:: _static/celles/menu_tipus_posicio.png
+![](_static/celles/menu_tipus_posicio.png)
 
 Els tipus de posició disposen de dos camps:
 
-  .. image:: _static/celles/formulari_tipus_posicio.png
+  ![](_static/celles/formulari_tipus_posicio.png)
 
   * **Codi tipus posició**: Códi de tipus de posició.
   * **Tipus de posició**: Nom del tipus de posició
 
-Llistat de totes les Cel·les i elements de tall
-===============================================
+# Llistat de totes les Cel·les i elements de tall
 
 Podem trobar un llistat de totes les cel·les i elements de tall al **Menú >
 Centres Transformadors > Manteniment > Cel·les i elements de tall > Cel·les i
 elements de tall**
 
-.. image:: _static/celles/menu_celles.png
+![](_static/celles/menu_celles.png)
 
 Quan fem doble clic al llistat de totes les cel·les, podem veure un llistat on
 es mostraran totes les cel·les i elements de tall que tinguem actives en aquests
 moments.
 
-.. image:: _static/celles/llistat_celles.png
+![](_static/celles/llistat_celles.png)
 
 
-Crear una nova Cel·la i element de tall
-=======================================
+# Crear una nova Cel·la i element de tall
 
 Per crear una nova cel·la i element de tall ho podem fer a través del llistat de
 totes les cel·les i elements de tall i després apretar el botó de **Nou**, igual
@@ -104,7 +86,7 @@ Ens apareixerà un formulari on podem visualitzar tres parts:
   * Dades tècniques
   * Dades administratives
 
-.. image:: _static/celles/formulari_tecnic_celles.png
+![](_static/celles/formulari_tecnic_celles.png)
 
 En l'apartat **general** tenim els camps:
 
@@ -129,12 +111,12 @@ En l'aparatat de **dades tècniques** tenim els camps:
     nostra base de dades.
   * **Tipus d'element**: Ens permet seleccionar de quin tipus d'element
     es tracta segons els que haguem pre-configurat. Veure
-    :ref:`config_tipus_element`.
+    [tipus d'element](#tipus-delement).
   * **Tipus de posició**: Ens permet seleccionar quin tipus de posició és segons
-    els que haguem pre-configurat. Veure :ref:`config_tipus_posicio`.
+    els que haguem pre-configurat. Veure [tipus posició](#tipus-posicio).
   * **Fluïd aïllant**: Ens permet seleccionar quin tipus fluïd aïllant utilitza:
     Les opcions vindran donades segons les que haguem entrat a la configuració
-    de fluïds aïllants. Veure :ref:`config_fluids`.
+    de fluïds aïllants. Veure [fluïds d'aïllament](#fluids-daillament).
   * **Categorització inventari**: Es pot escollir si aquesta cel·la forma part
     de **L2 + P** o s'ha de tenir en compte com a element de **fiabilitat**.
   * **Número de sèrie**: Ens permet relacionar aquesta cel·la/element de tall
@@ -142,14 +124,14 @@ En l'aparatat de **dades tècniques** tenim els camps:
   * **Marca i model**: Un cop escollit el número de sèrie ens mostrar el
     producte relacionat amb aquest número de sèrie.
   * **Relés**: Ens permet assignar tots els relés vinculats a aquesta cel·la/
-    element de tall. Veure :ref:`Formulari relé <formulari_rele>`.
+    element de tall. Veure [Formulari relé](#formulari-rele).
 
 En l'apartat de **dades administratives** tenim els camps:
 
-  .. image:: _static/celles/formulari_administratiu_celles.png
+  ![](_static/celles/formulari_administratiu_celles.png)
 
   * **Propietari**: Per indicar si som propietaris o no.
-  * **% pagat per la compañia**: Per indicar quin percentatge ha pagat l'empresa
+  * **% Pagat per la compañia**: Per indicar quin percentatge ha pagat l'empresa
     per aquest element.
   * **Bloquejar APM**: Permet fixar a una data concreta la *Data APM*. D'aquesta
     forma es permet posar-hi una data fixa i que no es sobreescrigui
@@ -168,28 +150,25 @@ En l'apartat de **dades administratives** tenim els camps:
   * **Expedients**: Amb quins expedients relacionem aquesta cel·la/element de
     tall.
 
-Visualització des de la fitxa de CTs
-====================================
+# Visualització des de la fitxa de CTs
 
 També és possible veure totes les cel·les i elements de tall que hi ha a un determinat
 centre transformador des de la seva fitxa. Hi ha una pestanya anomenada **Cel·les/Elem. de
 tall** que ens les mostrarà. Des d'aquí és possible crear noves cel·les i elements de tall
 directament per aquest CT.
 
-.. image:: _static/celles/pestanya_cts_celles.png
+![](_static/celles/pestanya_cts_celles.png)
 
-Visualització des de la fitxa de Suports AT
-===========================================
+# Visualització des de la fitxa de Suports AT
 
 També és possible veure totes les cel·les i elements de tall que hi ha a un suport
 des de la seva fitxa. Hi ha una pestanya anomenada **Cel·les/Elem. de tall** ens
 les mostrarà. Des d'aquí és possible crear noves cel·les i elements de tall
 directament per aquest suport.
 
-.. image:: _static/celles/pestanya_suports_celles.png
+![](_static/celles/pestanya_suports_celles.png)
 
-Visualització des de la fitxa d'una línia AT
-============================================
+# Visualització des de la fitxa d'una línia AT
 
 També és possible veure totes les cel·les i elements de tall que hi ha a una línia
 AT des de la seva fitxa. Les cel·les i elements de tall que es mostraran seran tots
@@ -198,21 +177,20 @@ pestanya anomenada **Cel·les/Elem. de tall** ens les mostrarà. Des d'aquí **n
 és possible crear noves cel·les i elements de tall, per això s'hauria d'anar al
 suport concret o des del llistat de cel·les.
 
-.. image:: _static/celles/pestanya_lat_celles.png
+![](_static/celles/pestanya_lat_celles.png)
 
-Llistat de tots els relés
-=========================
+# Llistat de tots els relés
 
 Podem visualitzar tots els relés que tenim entrats a través de **Menú > Centres
 Transformadors > Manteniment > Cel·les i elements de tall > Relés**
 
-.. image:: _static/celles/menu_reles.png
+![](_static/celles/menu_reles.png)
 
-.. _formulari_rele:
+## Formulari relé
 
 El formulari d'un relé disposa de tres camps:
 
-  .. image:: _static/celles/formulari_reles.png
+  ![](_static/celles/formulari_reles.png)
 
   * **Cel·la**: Aquest camp relaciona el relé amb la cel·la/element de tall on
     està instal·lat. Quan estiguem donant d'alta un relé a una cel·la/element de
