@@ -10,6 +10,7 @@ pages:
   - Base:
     - Partners: base/partners.md
     - PowerEmail: base/poweremail.md
+    - Gestión ATR: base/atr.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestion: distri/telegestion.md
@@ -17,7 +18,6 @@ pages:
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
-    - Gestion ATR: distri/atr.md
     - Facturación:
       - Peajes: distri/facturacion.md
       - Contratación: distri/facturacion_contratacion.md
@@ -40,7 +40,6 @@ pages:
     - Inicio: comer/index.md
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
-    - Gestión ATR: comer/atr.md
     - Facturación: comer/facturacion.md
     - SIPS: comer/sips.md
     - Administración Pública:
