@@ -10,7 +10,8 @@ pages:
   - Base:
     - Partners: base/partners.md
     - PowerEmail: base/poweremail.md
-    - Gestión ATR: base/atr.md
+    - Gestió ATR: base/atr.md
+    - Gestió de polisses: base/polisses.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestion: distri/telegestion.md
