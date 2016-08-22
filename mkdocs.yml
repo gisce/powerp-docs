@@ -24,6 +24,7 @@ pages:
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
       - Gencat: distri/adm-pub/gencat.md
+      - Informes: distri/adm-pub/informes.md
     - Perfiles: distri/perfiles.md
     - GIS - Instalaciones:
       - Subestaciones: distri/subestaciones.md
