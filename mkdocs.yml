@@ -46,3 +46,5 @@ pages:
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - Informes: comer/adm-pub/informes.md
+  - Facturacio:
+    - Gestió de pagaments i cobraments: facturacio/cobraments.md
