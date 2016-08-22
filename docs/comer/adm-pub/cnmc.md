@@ -16,16 +16,22 @@ El mòdul permet al GISCE-ERP la generació dels informes referents a la circula
 **Informe trimestral.**
 
 1. Omplim el camp de la secció 'tipus de fitxer' amb el valor '1' del desplegable.
-2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial i data final del trimestre.
+2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial
+   i data final del trimestre.
 3. Premem el botó 'exportar' per generar l'informe. 
-4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem escollir obrir o guardar l'informe.
+4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on
+   podrem escollir obrir o guardar l'informe.
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
 ![](../_static/cnmc/wizard_informe_1.png)
 
-* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions contractuals entre les data inicial i data final especificades en la secció 'periode del trimestre', quan dues modificacions contractuals consecutives tenen diferent comercialitzadora. 
-* Només es tenen en compte els canvis de comercialitzadora de 'CUR' a 'NO CUR' i de 'NO CUR' a 'NO CUR'. 
+* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
+  contractuals entre les data inicial i data final especificades en la secció
+  'periode del trimestre', quan dues modificacions contractuals consecutives
+  tenen diferent comercialitzadora.
+* Només es tenen en compte els canvis de comercialitzadora de 'CUR' a
+  'NO CUR' i de 'NO CUR' a 'NO CUR'.
 * Les dades s'agrupen per diferent tipus de punt de mesura.
 
 
@@ -35,17 +41,24 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any
 **Informe trimestral.**
 
 1. Omplim el camp de la secció 'tipus de fitxer' amb el valor '2NA1' del desplegable.
-2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial i data final del trimestre.
+2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial
+   i data final del trimestre.
 3. Premem el botó 'exportar' per generar l'informe. 
-4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem escollir obrir o guardar l'informe.
+4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on
+   podrem escollir obrir o guardar l'informe.
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
 ![](../_static/cnmc/wizard_informe_2.png)
 
-* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions contractuals entre les data inicial i data final especificades en la secció 'periode del trimestre', quan dues modificacions contractuals consecutives tenen diferent comercialitzadora. 
-* Només es tenen en compte els canvis de comercialitzadora de 'CUR' a 'NO CUR', de 'NO CUR' a 'NO CUR' i de 'NO CUR' a 'CUR'. 
-* Les dades s'agrupen per diferents comercialitzadores d'entrada i sortida, tipus de punt de mesura i tarifa d'accés.
+* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
+  contractuals entre les data inicial i data final especificades en la secció
+  'periode del trimestre', quan dues modificacions contractuals consecutives
+  tenen diferent comercialitzadora.
+* Només es tenen en compte els canvis de comercialitzadora de 'CUR' a
+  'NO CUR', de 'NO CUR' a 'NO CUR' i de 'NO CUR' a 'CUR'.
+* Les dades s'agrupen per diferents comercialitzadores d'entrada i sortida,
+  tipus de punt de mesura i tarifa d'accés.
 
 
 
@@ -54,15 +67,20 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any
 **Informe trimestral.**
 
 1. Omplim el camp de la secció 'tipus de fitxer' amb el valor '5A' del desplegable.
-2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial i data final del trimestre.
+2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial
+   i data final del trimestre.
 3. Premem el botó 'exportar' per generar l'informe. 
-4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem escollir obrir o guardar l'informe.
+4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem
+   escollir obrir o guardar l'informe.
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
 ![](../_static/cnmc/wizard_informe_5a.png)
 
-* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions contractuals entre les data inicial i data final especificades en la secció 'periode del trimestre', quan dues modificacions contractuals consecutives tenen diferent comercialitzadora. 
+* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
+  contractuals entre les data inicial i data final especificades en la secció
+  'periode del trimestre', quan dues modificacions contractuals consecutives
+  tenen diferent comercialitzadora.
 * Només es tenen en comtpe els canvis de comercialitzadora de 'CUR' a 'NO CUR'. 
 * Les dades s'agrupen per diferent tipus de punt de mesura. 
 
@@ -73,15 +91,20 @@ En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 **Informe trimestral.**
 
 1. Omplim el camp de la secció 'tipus de fitxer' amb el valor '5B' del desplegable.
-2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial i data final del trimestre.
+2. Omplim els camps de la secció 'periode del trimestre' amb la data inicial
+   i data final del trimestre.
 3. Premem el botó 'exportar' per generar l'informe. 
-4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem escollir obrir o guardar l'informe.
+4. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem
+   escollir obrir o guardar l'informe.
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
 ![](../_static/cnmc/wizard_informe_5b.png)
 
-* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions contractuals entre les data inicial i data final especificades en la secció 'periode del trimestre', quan dues modificacions contractuals consecutives tenen diferent comercialitzadora. 
+* Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
+  contractuals entre les data inicial i data final especificades en la secció
+  'periode del trimestre', quan dues modificacions contractuals consecutives
+  tenen diferent comercialitzadora.
 * Només es tenen en compte els canvis de comercialitzadora de 'NO CUR' a 'NO CUR'. 
 * Les dades s'agrupen per diferent tipus de punt de mesura.
 
@@ -93,14 +116,23 @@ En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
 1. Omplim el camp de la secció 'tipus de fitxer' amb el valor '7NA' del desplegable.
 2. Omplim el camp de la secció 'trimestre' amb la data final del trimestre.
-3. Omplim els camps de la secció 'periode d'energia' amb la data inicial i la data final dels quatre últims trimestres anteriors al trimestre escollit en el camp de la secció 'trimestre'.
+3. Omplim els camps de la secció 'periode d'energia' amb la data inicial i
+   la data final dels quatre últims trimestres anteriors al trimestre escollit
+   en el camp de la secció 'trimestre'.
 4. Premem el botó 'exportar' per generar l'informe. 
-5. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem escollir obrir o guardar l'informe.
+5. Quan s'ha generat l'informe apareix la secció 'nom del fitxer' on podrem
+   escollir obrir o guardar l'informe.
 
-En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any, amb els quatre últims trimestres anteriors al primer trimestre de l'any com a periode d'energia:
+En l'exemple hi ha les dates per generar l'informe del primer trimestre de
+l'any, amb els quatre últims trimestres anteriors al primer trimestre de l'any
+com a periode d'energia:
 
 ![](../_static/cnmc/wizard_informe_7.png)
 
-* Les dades dels consumidors s'extreuen de les modificacions contractuals, on la data especificada a la secció 'trimestre' es troba entre les data inicial i data final de la modificació contractual. 
-* L'energia s'extreu de les factures, amb data de factura entre les data inicial i data final de la secció 'periode d'energia'. 
-* Ambdues es relacionen i s'agrupen per diferents comercialitzadores, tipus de punt de mesura, tarifa d'accés i provincia.
+* Les dades dels consumidors s'extreuen de les modificacions contractuals,
+  on la data especificada a la secció 'trimestre' es troba entre les data
+  inicial i data final de la modificació contractual.
+* L'energia s'extreu de les factures, amb data de factura entre les data
+  inicial i data final de la secció 'periode d'energia'.
+* Ambdues es relacionen i s'agrupen per diferents comercialitzadores,
+  tipus de punt de mesura, tarifa d'accés i provincia.
