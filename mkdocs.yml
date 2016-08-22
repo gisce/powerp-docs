@@ -28,6 +28,8 @@ pages:
     - GIS - Instalaciones:
       - Subestaciones: distri/subestaciones.md
       - CTS: distri/cts.md
+      - CTS:
+        - Cel·les i elements de tall: distri/celles.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
       - Instalaciones RE: distri/re.md
