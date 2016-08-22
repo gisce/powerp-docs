@@ -16,14 +16,14 @@ CSV amb el format definit a INF/DE/0066/14
 Per generar el fitxer, hem d'executar l'assistent que trobarem a
 **Administració pública > CNMC > Informe INF/DE/0066/14**
 
-![](../_static/informes/inf_de_0066_14/menu.png)
+![](../_static/cnmc/inf_de_0066_14/menu.png)
 
 Només caldrà introduïr l'any del qual es vol fer l'informe, que per defecte ja
 és 2013 i prèmer el botó **Exportar**.
 
 Des de **Fitxer** es podrà obrie el CSV i descarregar-lo a disc
 
-![](../_static/informes/inf_de_0066_14/assistent.png)
+![](../_static/cnmc/inf_de_0066_14/assistent.png)
 
 ### Dades utilitzades
 
