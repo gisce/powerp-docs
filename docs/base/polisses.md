@@ -1,11 +1,6 @@
-*****************************
-Gestió de pòlisses/contractes
-*****************************
+# Gestió de pòlisses/contractes
 
-.. inheritref:: base/polisses:section:tarifes_acces
-
-Tarifes d'accés
-===============
+## Tarifes d'accés
 
 Les tarifes d'accés que venen definides amb l'ERP són les que marca la legislació
 vigent.
@@ -26,18 +21,11 @@ vigent.
 - 6.4
 - 6.5
 
-Pòlisses/contractes
-===================
+## Pòlisses/contractes
 
-Formulari d'una pòlissa/contracte
----------------------------------
+## Formulari d'una pòlissa/contracte
 
-.. inheritref:: base/polisses:section:fields_sec_general
-
-Secció general
-^^^^^^^^^^^^^^
-
-.. inheritref:: base/polisses:bullet_list:fields_sec_general
+### Secció general
 
 * **Pòlissa**
 * **Auto**
@@ -51,12 +39,7 @@ Secció general
 * **Data alta**
 * **Data baixa**
 
-.. inheritref:: base/polisses:section:fields_page_general
-
-Pestanya general
-^^^^^^^^^^^^^^^^
-
-.. inheritref:: base/polisses:bullet_list:fields_page_general
+### Pestanya general
 
 * **CUPS**
 * **Direcció CUPS**
@@ -66,38 +49,22 @@ Pestanya general
 * **Potències contractades per període**
 * **Tipus de vivenda**
 
-.. inheritref:: base/polisses:section:fields_page_contactes
-
-Contactes
-^^^^^^^^^
-
-.. inheritref:: base/polisses:bullet_list:fields_page_contactes
+### Contactes
 
 * **NIF Titular**
 
-.. inheritref:: base/polisses:section:fields_page_modcontractuals
-
-Modificacions contractuals
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. inheritref:: base/polisses:bullet_list:fields_page_modcontractuals
+### Modificacions contractuals
 
 * **Modificació contractual actual**
 * **Llistat de modificacions contractuals**
 
-.. inheritref:: base/polisses:section:fields_page_observacions
-
-Observacions
-^^^^^^^^^^^^
-
-.. inheritref:: base/polisses:bullet_list:fields_page_observacions
+### Observacions
 
 * **Observacions**
 
 
 
-Canvi data firma contracte
---------------------------
+## Canvi data firma contracte
 
 En un contracte podem actualitzar la data de firma de contracte sense la
 necessitat de fer una modificació contractual mitjançant un assistent creat
@@ -105,22 +72,17 @@ expresament
 
 Des de una pólissa o des del botó acció del llistat de pólisses podem prèmer
 sobre el botó **Actualitzar data firma contracte**. Ens apareixerà el formulari
-:ref:`wizdatafirma` on podrem veure la pólissa seleccionada i la data de firma
+següent, on podrem veure la pólissa seleccionada i la data de firma
 de contracte actual (si en té). Prement en el botó continuar, actualitzarà la
 data de firma de contracte de la **pólissa** i la **modificació contractual
 activa**.
 
-.. warning::
+!!! warning
+    No es farà cap tipus de validació sobre la data introduïda. Si és una data
+    vàlida es modificarà la data actual sense tenir en compte cap altra
+    consideració com la data d'alta i de baixa de la pòlissa o la data actual
 
-   No es farà cap tipus de validació sobre la data introduïda. Si és una data
-   vàlida es modificarà la data actual sense tenir en compte cap altra
-   consideració com la data d'alta i de baixa de la pòlissa o la data actual
+![](_static/polisses/WizardDataFirmaContracte.png)
 
-.. _wizdatafirma:
-.. figure:: _static/polisses/WizardDataFirmaContracte.png
-
-   Assistent per canviar la data de firma de contracte
-
-Modificacions contractuals
-==========================
+## Modificacions contractuals
 
