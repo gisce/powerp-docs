@@ -42,3 +42,4 @@ pages:
     - SIPS: comer/sips.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
+      - Informes: comer/adm-pub/informes.md
