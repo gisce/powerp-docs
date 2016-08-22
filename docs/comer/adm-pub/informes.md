@@ -2,13 +2,15 @@
 
 ## Resum per tarifes
 
-Resum de facturació per tarifes amb el desglosament dels consums segons els periodes i energia.
-L'informe inclou el resum en kWh, potència total, euros facturats i nombre de clients afectats
+Resum de facturació per tarifes amb el desglosament dels consums segons els
+periodes i energia. L'informe inclou el resum en kWh, potència total, euros
+facturats i nombre de clients afectats
 
 ## Resum per distribuïdora i tarifa
 
-Resum de facturació per distribuïdora i tarifa amb el desglosament dels consums segons els periodes i energia.
-L'informe inclou el resum en kWh, potència total, euros facturats i nombre de clients afectats
+Resum de facturació per distribuïdora i tarifa amb el desglosament dels consums
+segons els periodes i energia. L'informe inclou el resum en kWh, potència total,
+euros facturats i nombre de clients afectats
 
 ## Resum per grup cobratori
 
@@ -16,20 +18,24 @@ Resum per grup de cobrament. Inclou el nombre de factures i el total facturat
 
 ## Resum per municipi i tarifa
 
-Resum de facturació per municipi i tarifa. Inclou el desglosament dels consums segons els periodes i energia.
-L'informe inclou el resum en kWh, potència total, euros facturats i nombre de clients afectats
+Resum de facturació per municipi i tarifa. Inclou el desglosament dels consums
+segons els periodes i energia. L'informe inclou el resum en kWh, potència total,
+euros facturats i nombre de clients afectats
 
 ## Detall per període i tarifa de peatge
 
-Resum de facturació per tarifes que inclou el detall de l'energia facturada, potència facturada i potència contractada per periode
+Resum de facturació per tarifes que inclou el detall de l'energia facturada,
+potència facturada i potència contractada per periode
 
 ## Resum per impostos i distribuïdora
 
-Resum de facturació per distribuïdora. Detalla base, impostos i total en euros facturats.
+Resum de facturació per distribuïdora. Detalla base, impostos i total en
+euros facturats.
 
 ## Detall d'altres conceptes
 
-Resum de facturació per distribuïdora que inclou únicament els productes de tipus 'Altres'. El resum mostra els totals facturats.
+Resum de facturació per distribuïdora que inclou únicament els productes de
+tipus 'Altres'. El resum mostra els totals facturats.
 
 ## Resum Factures (CSV)
 
@@ -94,14 +100,17 @@ per veure'n la seva informació.
 ### Exemples de configuració
 
 Cas 1: Hem facturat des de 01/01/2012 a 30/06/2012 (6 mesos)
+
  * Extrapolar consum: Sí
  * Factor de correcció: 2 (**2** x 6 mesos = 12 mesos)
 
 Cas 2: Tenim factures de 01/04/2012 a 30/06/2012 (3 mesos)
+
  * Extrapolar el consum: Sí
  * Factor de correcció: 4 (**4** x 3 mesos = 12 mesos)
 
 Cas 3: Tenim 12 mesos d'històric de facturació:
+
  * Extrapolar el consum: No
  * Factor de correcció: 1
 
