@@ -1,22 +1,18 @@
-********************
-Gestió de comptadors
-********************
+# Gestió de comptadors
 
-Llistat de comptadors
-=====================
+## Llistat de comptadors
 
 A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
-* ``Menú / infraestructura / comptadors``
+* **Menú / infraestructura / comptadors**
 * **Pólissa**, pestanya ``comptadors`` on apareix el llistat de tots els comptadors
   actius i no actius que ha tingut aquesta pólissa
 
-.. figure:: _static/polisses/ComptadorGeneral.png
+![](_static/comptadors/ComptadorGeneral.png)
 
    Pestanya General Fitxa Comptadors
 
-Formulari de comptadors
-=======================
+## Formulari de comptadors
 
 * **Nº de serie**: És el número que identifica el comptador i al que
   s'associen les lectures, és el que veu el lector quan va a camp
@@ -51,8 +47,6 @@ Formulari de comptadors
 * **Introduïr lectures**: Aquest botó permet entrar les lectures de forma
   manual des de la fitxa del comptador
 
-.. note::
-   :name: Nota 1
-
-   La ``data de primera lectura`` ha de conincidir amb la data de alta del
-   comptador
+!!! note
+    La **data de primera lectura** ha de conincidir amb la data de alta del
+    comptador
