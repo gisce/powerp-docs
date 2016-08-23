@@ -18,8 +18,9 @@ pages:
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
+    - Facturación: distri/facturacion.md
     - Facturación:
-      - Peajes: distri/facturacion.md
+      - Peajes: distri/facturacion_peajes.md
       - Contratación: distri/facturacion_contratacion.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
