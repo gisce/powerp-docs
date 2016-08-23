@@ -82,6 +82,8 @@ de factura i realitzar els assentaments comptables corresponents.
 
 ### Menú lateral:
 
+![](_static/facturacion/menu_lateral.png)
+
 * Validació lot:  Aquesta opció genera un informe en format pdf de les
   incidències trobades en la validació.
 
@@ -118,7 +120,11 @@ s'han de facturar fora del lot de facturació s'utilitzarà aquest tipus de fact
 Des de la fitxa d'una pòlissa s'accedeix al apartat *Factura manual* per
 realitzar una factura que no pot esperar a facturar-se dintre del lot de facturació.
 
+![](_static/facturacion/facturacion_manual.png)
+
 S'accedeix al assistent en el que es indicarà:
+
+![](_static/facturacion/wizard_fact_manual.png)
 
 * Pòlissa: Per defecte apareix la pòlissa en la que es troba en aquest moment.
 
@@ -142,11 +148,15 @@ S'accedeix al assistent en el que es indicarà:
 * Borrador: Es mostra de color blau i aquesta factura encara no té assignat
   número, i es pot borrar de forma inocua per el sistema.
 
+![](_static/facturacion/estado_borrador.png)
+
 * Obert: Quan es valida una factura de forma individual a través del botó
   *Validar* dins de la pròpia factura o bé a través del *Lot de facturació /
   Obrir Factures*. S'assigna un número de factura a aquesta i es realitzen
   els assentaments comptables necesaris per poder fer el seguimient del
   cobrament de la mateixa i els informes comptables mensuals, anuals etc.
+
+![](_static/facturacion/estado_abierto.png)
 
 !!! note
     Per saber quines factures estàn pendents de cobrament pots filtrar les
@@ -158,6 +168,8 @@ S'accedeix al assistent en el que es indicarà:
   assentaments comptables necesaris per conciliar la factura. Es fa amb una
   factura individual des de la pròpia factura amb la opció 'Pagar factura'.
 
+![](_static/facturacion/estado_realizado.png)
+
 !!! Pregunta
     ¿Com es paga un grupo de factures a la vegada?
 
@@ -166,14 +178,20 @@ S'accedeix al assistent en el que es indicarà:
     seleccionant-les d'una llista. Després s'ha d'utilitzar l'assistent
     'acció / pagar grup de factures'.
 
+![](_static/facturacion/boton_accion.png)
+
+![](_static/facturacion/menu_acciones.png)
+
 !!! Pregunta
     Si dono per pagada una factura per error, com desfaig el cobrament? 
 
 !!! Resposta
     Des de la pròpia factura es selecciona la opció '*Desfer pagament*',
-    això passarà la factura del estat 'realitzat' al estat 'obert'. 
-    Igualment es pot fer amb un grup de factures des del assistent 'Acció /
-    Desfer pagament'
+    això passarà la factura del estat 'realitzat' al estat 'obert'.
+
+![](_static/facturacion/accion_deshacer.png)
+
+Igualment es pot fer amb un grup de factures des del assistent 'Acció / Desfer pagament'
 
 #### Preguntes més freqüents:
 
@@ -275,6 +293,8 @@ Un procés de Modificació contractual té 3 passos dins d'una pòlissa:
    Modificació contractual a partir d'una determinada data, o bé sobrescriure
    la actual amb els nous valors, en cas que s'observi algún error en la MD actual.
 
+![](_static/facturacion/modificacion_contractual.png)
+
 ### Crear una Modificació contractual nova
 Aquesta opció crea una nova línea de Modificació contractual entre les dates:
 data d'activació i data final indicades en el quadre de diàleg.
@@ -312,13 +332,23 @@ En una tarifa 3.X o 6.X com puc indicar potències diferents en cada període?
 !!! Resposta
 
 Per poder indicar potències diferents en cada període s'ha de desmarcar
-la casella “Autogenerar períodes” i després editar els períodes de la tarifa
-dins de la finestra “Potencies” indicant la potència contractada en cada període.
+la casella “Autogenerar períodes”
+
+![](_static/facturacion/tarifa_acceso.png)
+
+I després editar els períodes de la tarifa dins de la finestra “Potencies”
+indicant la potència contractada en cada període.
+
+![](_static/facturacion/potencias.png)
 
 ## Llistats de facturació:
 
 Els llistats resum de facturació mensuals es troben en l'apartat:
 **Facturació > General > Informes de facturació > Informes resum facturació**.
+
+![](_static/facturacion/menu_informes_resumen.png)
+
+![](_static/facturacion/datos_informe_resumen.png)
 
 * Des de / Fins a: Indica l'intèrval de data de factura entre els que filtrarà
   el llistat ambdues incloses.
