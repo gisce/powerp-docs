@@ -375,8 +375,7 @@ ve configurat amb dos idiomes, el català i el castellà. Això vol dir que aban
 l'idioma dels clients al desitjat. També es pot modificar el text de la plantilla del correu
 electrònic per tal d'adaptar-lo a les necessitats de cadascú.
 
-Configuració del client
------------------------
+### Configuració del client
 
 Així doncs en un contracte ara disposarem d'uns camps nous per tal de decidir com es vol enviar la
 factura.
@@ -399,8 +398,8 @@ que l'idioma de la **Persona pagadora** sigui el correcta.
 Aquestes opcions ens serviran a l'hora de fer l'enviament massiu. Els que tinguin seleccionada alguna
 de les dues opcions que inclouen l'e-mail es seleccionarà per enviar.
 
-Enviament massiu de factures a través del lot
----------------------------------------------
+### Enviament massiu de factures a través del lot
+
 
 Es pot realitzar un enviament massiu de les factures a través del lot de facturació. Per tal de realitzar-lo
 obrim el lot i en el marge dret hi tindrem l'assistent disponible.
@@ -430,14 +429,13 @@ del compte que ho volem enviar.
 
 Finalment apretem el botó **Envia tots els correus** i ens esperem a que faci la feina.
 
-.. note::
-    Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
-    la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
+!!! note "Nota"
+      Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
+      la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
 
 Haurem de realitzar l'enviament per cada idioma.
 
-Enviament d'una sola factura (manual)
--------------------------------------
+### Enviament d'una sola factura (manual)
 
 Quan volguem re-enviar una sola factura, o enviar-ne alguna que no estigui marcada per enviar també podrem fer-ho.
 Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail Mail Form**.
@@ -446,12 +444,11 @@ Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail 
 
 Després ens sortirà la plantilla igual que en l'enviament massiu.
 
-.. note::
-    Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
-    sigut enviat.
+!!! note "Nota"
+      Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
+      sigut enviat.
 
-Enviament múltiple de factures (manual)
----------------------------------------
+### Enviament múltiple de factures (manual)
 
 Ens hem de situar al llistat de factures i fer el filtre que volguem. És molt important fer el filtre de l'**Idioma Client**
 ja que si no s'utiltiza aquest filtre s'enviarà amb l'idioma del client de la primera factura de la selecció.
@@ -464,14 +461,11 @@ Mail Form**.
 
 La resta és com l'enviament massiu.
 
-.. note::
-    Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
-    sigut enviat.
+!!! note "Nota"
+      Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
+      sigut enviat.
 
-Sistema d'enviament
--------------------
-
-.. blockdiag::
+### Sistema d'enviament
 
     blockdiag {
         lot -> enviament -> enviar -> sortida -> email -> enviats;
@@ -486,12 +480,12 @@ Sistema d'enviament
                shape = "diamond"];
         sortida -> email [folded];
     }
+  ![](_static/email/diag.svg)
 
 Sempre que fem un enviament el correu es queda a la carpeta de **Sortida**, i el sistema cada 5 minuts
 comprova si hi ha correus per enviar. En cas que n'hi hagi s'envien i es mouen a la carpeta d'**Enviats**.
 
-Camps addicionals a una factura d'energia
------------------------------------------
+### Camps addicionals a una factura d'energia
 
 Si una factura està marcada per enviar per E-mail (una modificació contractual que comprèn la
 data de la factura i que té seleccionat l'enviament per e-mail) tindrà 4 camps nous a la pestanya **Other info**.
@@ -516,8 +510,7 @@ En el cas que no estigui marcada per enviar per e-mail veuríem el següent text
 ![](_static/email/camps_factura_no_email.png)
 
 
-Comprovació dels enviaments d'un lot
-------------------------------------
+### Comprovació dels enviaments d'un lot
 
 A partir del lot accedim a la drecera **Factures generades** i s'obrirà el llistat de les factures generades a través
 d'aquell lot. Despleguem els filtres addicionals i veurem que hi ha 4 filtres nous.
@@ -533,8 +526,7 @@ d'aquell lot. Despleguem els filtres addicionals i veurem que hi ha 4 filtres no
 Per tant utilitzant el filtre de **Marcada enviar per E-mail**: **Sí** i **Enviada per E-mail**: **No** tindríem
 totes les que encara no s'han enviat.
 
-Comprovació d'enviaments pendents
----------------------------------
+### Comprovació d'enviaments pendents
 
 Tenim un menú disponible a través de **Facturació > Mercat lliure > Factures Client > Factures pendents d'enviar per email**.
 Aquest és un llistat de factures amb alguns filtres per defecte fets:
@@ -542,7 +534,7 @@ Aquest és un llistat de factures amb alguns filtres per defecte fets:
 * La factura estigui marcada per enviar
 * No s'hagi enviat
 
-.. note::
-    Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
-    factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
-    una factura ha de ser enviada per email.
+!!!note "Nota"
+      Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
+      factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
+      una factura ha de ser enviada per email.
