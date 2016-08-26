@@ -494,8 +494,8 @@ L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupad
 
     ![](_static/print/zip_estructura.png)
 
-    On dins hi ha una carpeta tmp i dins d'aquesta carpeta tots els PDF de les zones separat per **número de zona**
-    i **número de pdf** en el cas que s'hagi superat el límit.
+    Una carpeta *tmp* on dins d'aquesta hi ha tots els PDF de les zones separat per **número de zona**
+    i **número de pdf** en el cas que s'hagi superat el límit *(5) Número de factures per PDF*.
 
 ## Enviament de factures per correu electrònic
 
