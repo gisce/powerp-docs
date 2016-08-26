@@ -403,7 +403,7 @@ L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupad
     **Per exemple** es pot utilitzar per imprimir només les que estan *Obertes*  per si anem
     imprimint les factures a mesura que anem facturant el *Lot de facturació*
 
-2. **Diari**:
+2. **Diari**
 
     Aquest filtre serveix per seleccionar les factures que estan en un determinat *Diari*.
     Per defecte el valor que té és **Tots** de forma que no aplica cap filtre en la selecció de les factures.
@@ -433,6 +433,63 @@ L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupad
 4. **Informe**
 
     Aquest camp serveix per escollir quin *Informe* volem utilitzar per la impressió de les factures.     
+
+5. **Número de factures per PDF**
+
+    Aquest camp serveix per generar fitxers PDF amb un límit de factures. D'aquesta forma podem controlar la mida dels documents generats.
+
+    Com que la impressió de les factures es fa per zones si hi ha alguna zona que té més factures que les indicades en aquest camp llavors
+    separarà en tants fitxers com sigui necessàri per fer el total de la impressió de la zona.
+
+    **Per exemple** si volem imprimir una zona que té 1000 factures i el nostre límit és de 500 ens generarà dos fitxers PDF d'aquesta zona.
+
+6. **Zona**
+
+    Aquest camp serveix per poder escollir les zones de forma manual o totes o les que no tenen zona.
+
+    Si escollim la opció *Seleccionar* en la part de l'assistent **(7) Selecció de zones**
+    haurem d'escollir les zones de forma manual. Per les altres dos opcions desapareix l'opció de seleccionar manualment les zones.
+
+    ![](_static/print/wizard_zona.png)
+
+7. **Selecció de zones**
+
+    Aquest selector només serveix quan volem seleccionar les zones per imprimir de forma manual i com a mínim hem d'escollir una zona.
+
+    ![](_static/print/wizard_seleccio_zones.png)
+
+
+8. **Continuar**
+
+    A partir de tots els filtres escollits anteriorment es fa una consulta per obtenir el total de factures que procedirem a imprimir.
+
+    L'assistent canviarà de "pantalla" indicant-nos quin es el total de factures que imprimirem.
+
+    ![](_static/print/wizard_resultats.png)
+
+    En cas que no sigui el que esperem podem clicar sobre **Tornar** per acabar de ajustar els filtres.
+
+    Si el resultat es l'esperat llavors farem clic sobre **Continuar** i l'assistent començarà a imprimir de forma paral·lela les factures.    
+
+    En la "pantalla" de la impressió hi ha dos barres de progrés, la del *progrés general* i la del *progrés per zona*.
+
+    * **Progrés General** Aquest barra indica el percentatge del total de les zones que s'ha d'imprimir.
+
+    * **Progrés per zona** Aquest barra indica el percentatge del total de les factures de la zona s'han imprés ja.
+
+    Per anar veient quina evolució tenen els percentatges hem d'anar clicant sobre el botó **Actualitzar**
+
+    ![](_static/print/wizard_progres_1.png)
+
+    Quan el **progrés general** ha arribat al 100% ja podrem descarregar el contingut en un fitxer ZIP
+
+    ![](_static/print/wizard_progres_100.png)
+
+    En el camp **Informació** de la "pantalla" de descarrega del fitxer ZIP ens indica si hi ha hagut cap problema al intentar imprimir
+    l'informe per alguna de les factures. Si el camp és buit vol dir que tot el procés ha sigut correcte.
+
+    ![](_static/print/wizard_zip.png)
+
 
 
 
