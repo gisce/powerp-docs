@@ -481,7 +481,7 @@ L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupad
 
     ![](_static/print/wizard_progres_1.png)
 
-    Quan el **progrés general** ha arribat al 100% ja podrem descarregar el contingut en un fitxer ZIP
+    Quan el **progrés general** ha arribat al 100% ja podrem descarregar el contingut en un fitxer ZIP.
 
     ![](_static/print/wizard_progres_100.png)
 
@@ -490,10 +490,12 @@ L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupad
 
     ![](_static/print/wizard_zip.png)
 
+    El contingut d'aquest ZIP es el següent:
 
+    ![](_static/print/zip_estructura.png)
 
-
-
+    On dins hi ha una carpeta tmp i dins d'aquesta carpeta tots els PDF de les zones separat per **número de zona**
+    i **número de pdf** en el cas que s'hagi superat el límit.
 
 ## Enviament de factures per correu electrònic
 
