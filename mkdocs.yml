@@ -23,6 +23,7 @@ pages:
       - Contratación: distri/facturacion_contratacion.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
+      - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
       - Informes: distri/adm-pub/informes.md
     - Perfiles: distri/perfiles.md
@@ -44,4 +45,6 @@ pages:
     - SIPS: comer/sips.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
+      - AEAT: comer/adm-pub/aeat.md
+      - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
