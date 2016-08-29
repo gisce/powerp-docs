@@ -60,7 +60,10 @@ circular 1/2005 de la CNE. Aquests informes venen definits per la mateixa **CNE*
 * [Anexo II: Formularios de envío de información de la  CNE](https://sede.cne.gob.es/c/document_library/get_file?uuid=ce663590-4c7d-411a-b902-0f543c815b10&groupId=10136)
 * [Anexo III: Tablas Circular 1/2005](https://sede.cne.gob.es/c/document_library/get_file?uuid=97fb83c3-dc74-40be-a5e2-fa8a813e29eb&groupId=10136)
 
-### 1 Informe de sol·licituds de canvi de MR a ML i de comercialitzadora
+## Actualment, aquest mòdul és capaç de generar els següents informes:
+
+
+### **1:** Informe de sol·licituds de canvi de MR a ML i de comercialitzadora.
 
 **Informe trimestral.**
 

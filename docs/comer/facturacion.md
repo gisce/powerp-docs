@@ -368,6 +368,135 @@ els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
 
 ## Impressió de factures
 
+### Impressió de factures per zona i ordre
+
+Si volem imprimir factures a partir de la zona i l'ordre que tenen els contractes
+hem d'utilitzar l'assistent **Imprimir factures per zona i ordre**
+
+Per poder cridar aquest assistent s'ha de fer des de el llistat de **Factures client**
+
+![](_static/print/menu_fact_clients.png)
+
+o des de **Factures generades** del lot.
+
+![](_static/print/menu_factures_generades.png)
+
+Un cop estiguem en llistat de les factures hem d'anar a **Acció (1)** i escollir el
+l'assistent **Imprimir factures per zona i ordre (2)**
+
+![](_static/print/accio_wizard.png)
+
+#### Assistent per la impressió de factures per zona i ordre
+
+L'objectiu d'aquest assistent és imprimir una seleccció de factures en agrupades per zones i dins d'aquestes zones ordenades pel camp ordre.
+ Aquests camps es defineixen dins dels contractes.
+
+![](_static/print/wizard_inici.png)
+
+1. **Estat**
+
+    Aquest filtre serveix per indicar l'estat de les factures que volem imprimir.
+    Per defecte el valor que té és **Totes** de forma que no aplica cap filtre en la selecció de les factures.
+
+    ![](_static/print/wizard_estat.png)
+
+    **Per exemple** es pot utilitzar per imprimir només les que estan *Obertes*  per si anem
+    imprimint les factures a mesura que anem facturant el *Lot de facturació*
+
+2. **Diari**
+
+    Aquest filtre serveix per seleccionar les factures que estan en un determinat *Diari*.
+    Per defecte el valor que té és **Tots** de forma que no aplica cap filtre en la selecció de les factures.
+
+    ![](_static/print/wizard_diari.png)
+
+    **Per exemple** amb aquest camp podem filtra només les factures que siguin rectificadores indicant
+    el *Diari* de *Factures d'Energia (Rectificadores)*
+
+3. **Filtrar factures per**
+
+    Aquest filtre serveix per seleccionar si volem filtrar per factures que estan dins d'un lot o entre dates.
+
+    ![](_static/print/wizard_filtrar_per.png)
+
+    * Opció per **Lot** ens apareixerà al costat per indicar quin lot volem escollir.
+
+        ![](_static/print/wizard_filtre_lot.png)
+
+    * Opció per **Dates** ens apareixerà a sota un rang per poder indicar data inicial i la data final.
+        Aquests dos camps són obligatoris i són inclusius dins del rang.
+
+        Per altra banda també apareix un filtre per indicar un rang de número de factura ambdós inclusius també
+
+        ![](_static/print/wizard_filtre_data.png)
+
+4. **Informe**
+
+    Aquest camp serveix per escollir quin *Informe* volem utilitzar per la impressió de les factures.     
+
+5. **Número de factures per PDF**
+
+    Aquest camp serveix per generar fitxers PDF amb un límit de factures. D'aquesta forma podem controlar la mida dels documents generats.
+
+    Com que la impressió de les factures es fa per zones si hi ha alguna zona que té més factures que les indicades en aquest camp llavors
+    separarà en tants fitxers com sigui necessàri per fer el total de la impressió de la zona.
+
+    **Per exemple** si volem imprimir una zona que té 1000 factures i el nostre límit és de 500 ens generarà dos fitxers PDF d'aquesta zona.
+
+6. **Zona**
+
+    Aquest camp serveix per poder escollir les zones de forma manual o totes o les que no tenen zona.
+
+    Si escollim la opció *Seleccionar* en la part de l'assistent **(7) Selecció de zones**
+    haurem d'escollir les zones de forma manual. Per les altres dos opcions desapareix l'opció de seleccionar manualment les zones.
+
+    ![](_static/print/wizard_zona.png)
+
+7. **Selecció de zones**
+
+    Aquest selector només serveix quan volem seleccionar les zones per imprimir de forma manual i com a mínim hem d'escollir una zona.
+
+    ![](_static/print/wizard_seleccio_zones.png)
+
+
+8. **Continuar**
+
+    A partir de tots els filtres escollits anteriorment es fa una consulta per obtenir el total de factures que procedirem a imprimir.
+
+    L'assistent canviarà de "pantalla" indicant-nos quin es el total de factures que imprimirem.
+
+    ![](_static/print/wizard_resultats.png)
+
+    En cas que no sigui el que esperem podem clicar sobre **Tornar** per acabar de ajustar els filtres.
+
+    Si el resultat es l'esperat llavors farem clic sobre **Continuar** i l'assistent començarà a imprimir de forma paral·lela les factures.    
+
+    En la "pantalla" de la impressió hi ha dos barres de progrés, la del *progrés general* i la del *progrés per zona*.
+
+    * **Progrés General** Aquest barra indica el percentatge del total de les zones que s'ha d'imprimir.
+
+    * **Progrés per zona** Aquest barra indica el percentatge del total de les factures de la zona s'han imprés ja.
+
+    Per anar veient quina evolució tenen els percentatges hem d'anar clicant sobre el botó **Actualitzar**
+
+    ![](_static/print/wizard_progres_1.png)
+
+    Quan el **progrés general** ha arribat al 100% ja podrem descarregar el contingut en un fitxer ZIP.
+
+    ![](_static/print/wizard_progres_100.png)
+
+    En el camp **Informació** de la "pantalla" de descarrega del fitxer ZIP ens indica si hi ha hagut cap problema al intentar imprimir
+    l'informe per alguna de les factures. Si el camp és buit vol dir que tot el procés ha sigut correcte.
+
+    ![](_static/print/wizard_zip.png)
+
+    El contingut d'aquest ZIP es el següent:
+
+    ![](_static/print/zip_estructura.png)
+
+    Una carpeta *tmp* on dins d'aquesta hi ha tots els PDF de les zones separat per **número de zona**
+    i **número de pdf** en el cas que s'hagi superat el límit *(5) Número de factures per PDF*.
+
 ## Enviament de factures per correu electrònic
 
 Hi ha la possibilitat d'enviar les factures d'energia a través del correu electrònic. Per defecte
@@ -375,8 +504,7 @@ ve configurat amb dos idiomes, el català i el castellà. Això vol dir que aban
 l'idioma dels clients al desitjat. També es pot modificar el text de la plantilla del correu
 electrònic per tal d'adaptar-lo a les necessitats de cadascú.
 
-Configuració del client
------------------------
+### Configuració del client
 
 Així doncs en un contracte ara disposarem d'uns camps nous per tal de decidir com es vol enviar la
 factura.
@@ -399,8 +527,8 @@ que l'idioma de la **Persona pagadora** sigui el correcta.
 Aquestes opcions ens serviran a l'hora de fer l'enviament massiu. Els que tinguin seleccionada alguna
 de les dues opcions que inclouen l'e-mail es seleccionarà per enviar.
 
-Enviament massiu de factures a través del lot
----------------------------------------------
+### Enviament massiu de factures a través del lot
+
 
 Es pot realitzar un enviament massiu de les factures a través del lot de facturació. Per tal de realitzar-lo
 obrim el lot i en el marge dret hi tindrem l'assistent disponible.
@@ -430,14 +558,13 @@ del compte que ho volem enviar.
 
 Finalment apretem el botó **Envia tots els correus** i ens esperem a que faci la feina.
 
-.. note::
-    Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
-    la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
+!!! note "Nota"
+      Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
+      la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
 
 Haurem de realitzar l'enviament per cada idioma.
 
-Enviament d'una sola factura (manual)
--------------------------------------
+### Enviament d'una sola factura (manual)
 
 Quan volguem re-enviar una sola factura, o enviar-ne alguna que no estigui marcada per enviar també podrem fer-ho.
 Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail Mail Form**.
@@ -446,12 +573,11 @@ Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail 
 
 Després ens sortirà la plantilla igual que en l'enviament massiu.
 
-.. note::
-    Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
-    sigut enviat.
+!!! note "Nota"
+      Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
+      sigut enviat.
 
-Enviament múltiple de factures (manual)
----------------------------------------
+### Enviament múltiple de factures (manual)
 
 Ens hem de situar al llistat de factures i fer el filtre que volguem. És molt important fer el filtre de l'**Idioma Client**
 ja que si no s'utiltiza aquest filtre s'enviarà amb l'idioma del client de la primera factura de la selecció.
@@ -464,14 +590,11 @@ Mail Form**.
 
 La resta és com l'enviament massiu.
 
-.. note::
-    Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
-    sigut enviat.
+!!! note "Nota"
+      Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
+      sigut enviat.
 
-Sistema d'enviament
--------------------
-
-.. blockdiag::
+### Sistema d'enviament
 
     blockdiag {
         lot -> enviament -> enviar -> sortida -> email -> enviats;
@@ -486,12 +609,12 @@ Sistema d'enviament
                shape = "diamond"];
         sortida -> email [folded];
     }
+  ![](_static/email/diag.svg)
 
 Sempre que fem un enviament el correu es queda a la carpeta de **Sortida**, i el sistema cada 5 minuts
 comprova si hi ha correus per enviar. En cas que n'hi hagi s'envien i es mouen a la carpeta d'**Enviats**.
 
-Camps addicionals a una factura d'energia
------------------------------------------
+### Camps addicionals a una factura d'energia
 
 Si una factura està marcada per enviar per E-mail (una modificació contractual que comprèn la
 data de la factura i que té seleccionat l'enviament per e-mail) tindrà 4 camps nous a la pestanya **Other info**.
@@ -516,8 +639,7 @@ En el cas que no estigui marcada per enviar per e-mail veuríem el següent text
 ![](_static/email/camps_factura_no_email.png)
 
 
-Comprovació dels enviaments d'un lot
-------------------------------------
+### Comprovació dels enviaments d'un lot
 
 A partir del lot accedim a la drecera **Factures generades** i s'obrirà el llistat de les factures generades a través
 d'aquell lot. Despleguem els filtres addicionals i veurem que hi ha 4 filtres nous.
@@ -533,8 +655,7 @@ d'aquell lot. Despleguem els filtres addicionals i veurem que hi ha 4 filtres no
 Per tant utilitzant el filtre de **Marcada enviar per E-mail**: **Sí** i **Enviada per E-mail**: **No** tindríem
 totes les que encara no s'han enviat.
 
-Comprovació d'enviaments pendents
----------------------------------
+### Comprovació d'enviaments pendents
 
 Tenim un menú disponible a través de **Facturació > Mercat lliure > Factures Client > Factures pendents d'enviar per email**.
 Aquest és un llistat de factures amb alguns filtres per defecte fets:
@@ -542,7 +663,7 @@ Aquest és un llistat de factures amb alguns filtres per defecte fets:
 * La factura estigui marcada per enviar
 * No s'hagi enviat
 
-.. note::
-    Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
-    factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
-    una factura ha de ser enviada per email.
+!!!note "Nota"
+      Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
+      factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
+      una factura ha de ser enviada per email.

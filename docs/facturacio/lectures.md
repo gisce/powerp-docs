@@ -1,13 +1,6 @@
-******************
-Gestió de lectures
-******************
+# Procesos habituals
 
-
-Procesos habituals
-==================
-
-Canvi de comptador a mig període de facturació
-----------------------------------------------
+## Canvi de comptador a mig període de facturació
 
 Suposem que el dia 13/10/2011 es canvia el comptador amb el ``nº de sèrie``
 1000 per el comptador amb ``nº de sèrie`` 1001. Si i no hi ha cap més canvi de

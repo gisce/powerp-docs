@@ -10,6 +10,8 @@ pages:
   - Base:
     - Partners: base/partners.md
     - PowerEmail: base/poweremail.md
+    - Gestión ATR: base/atr.md
+    - Gestió de comptadors: base/comptadors.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestion: distri/telegestion.md
@@ -17,12 +19,13 @@ pages:
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
-    - Gestion ATR: distri/atr.md
+    - Facturación: distri/facturacion.md
     - Facturación:
-      - Peajes: distri/facturacion.md
+      - Peajes: distri/facturacion_peajes.md
       - Contratación: distri/facturacion_contratacion.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
+      - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md
     - GIS - Instalaciones:
@@ -39,9 +42,13 @@ pages:
     - Inicio: comer/index.md
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
-    - Gestión ATR: comer/atr.md
     - Facturación: comer/facturacion.md
     - SIPS: comer/sips.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
+      - AEAT: comer/adm-pub/aeat.md
+      - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
+  - Facturacio:
+    - Gestió de pagaments i cobraments: facturacio/cobraments.md
+    - Gestió de lectures: facturacio/lectures.md
