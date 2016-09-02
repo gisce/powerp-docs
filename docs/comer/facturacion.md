@@ -16,6 +16,18 @@ funcionalitats s'aniran incorporant properament.
 
 Aquest document descriu les funcionalitats del mòdul de Switching de facturació.
 
+### Comportament importació fitxer F1
+
+#### Comportament importació F1 normal
+
+#### Comportament importació F1 rectificadora
+
+Quan s'importa una factura rectificadora de proveïdor, el que fa amb les lectures
+de la pòlissa es modifcar les lectures del pool.
+
+Un cop en el pool s'han d'esborrar de les lectures de `facturacio` i després carregar del Pool
+un altra cop les lectures per facturar amb els nous valors.
+
 
 ### Lot d'importació i línies
 
