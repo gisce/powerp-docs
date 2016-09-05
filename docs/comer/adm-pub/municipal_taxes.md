@@ -12,14 +12,17 @@ Per generar el fitxer només hem de seleccionar el municipi o municipis dels
 quals volem crear l'informe en la llista de municipis que trobarem a
 *Administració Pública > Administracions locals > Impostos > Municipis*.
 
+![Figura 1](../_static/municipal_taxes/menu.png)
+
 Un cop hàgem seleccionat tots els municipis que desitgem podrem prémer el botó
 d'*Accions*, que obrirà una finestra com la següent:
+
+![Figura 2](../_static/municipal_taxes/wizard_ini.png)
 
 Aquí haurem d'entrar les següents dades:
 
 * **Data d'inici**. Data d'inici del període pel qual volem fer l'informe (inclosa).
 * **Data de fi**. Data de fi del període pel qual volem fer l'informe (exclosa).
-* **Agregat**. ????
 * **Afegir llista factures**. Si marquem aquest camp s'afegiran dos llistats de
 totes les factures realitzades entre les dates seleccionades, separades entre
 les factures de proveïdors i les factures a clients.
@@ -35,6 +38,8 @@ clients. Aquestes dades també estaran ordenades alfabèticament pel nom del mun
 Un cop entrades totes les dades, podem prémer el botó de generar. Això farà les
 consultes necessàries per generar el fitxer i el generarà, permetent obrir-lo
 directament o guardar-lo a l'ordinador.
+
+![Figura 3](../_static/municipal_taxes/wizard_fin.png)
 
 ## Dades utilitzades
 
