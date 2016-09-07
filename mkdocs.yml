@@ -13,7 +13,6 @@ pages:
     - Gestió ATR: base/atr.md
     - Gestió de polisses: base/polisses.md
     - Gestió de comptadors: base/comptadors.md
-    - Facturació: base/facturacio.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestion: distri/telegestion.md
@@ -54,3 +53,4 @@ pages:
   - Facturacio:
     - Gestió de pagaments i cobraments: facturacio/cobraments.md
     - Gestió de lectures: facturacio/lectures.md
+    - Moure factures de lot: facturacio/lots.md
