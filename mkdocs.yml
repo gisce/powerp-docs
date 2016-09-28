@@ -44,6 +44,7 @@ pages:
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
     - Facturación: comer/facturacion.md
+    - Gestión ATR: comer/switching.md
     - SIPS: comer/sips.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
