@@ -34,7 +34,7 @@ We have 4 categories:
 - **base**: Base components: used in distri & comer
 - **distri**: Distri components
 - **comer**: Comer components
-- **facturacio**: Base invoicing compoents used in distr & comer
+- **facturacio**: Base invoicing components used in distri & comer
 
 For images we use `_static` folder with a subfolder with the same name as Markdown file. eg:
 
