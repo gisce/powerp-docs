@@ -45,10 +45,11 @@ Existeixen dues maneres d'afegir factures a una remesa.
 
 ## De forma massiva a partir del lot de facturació
 
-Primer accedim al lot de facturació que es vol remesar pel menú "Facturació /
-Mercat lliure / Lots de facturació / Lots de facturació".
+Primer cal accedir al lot de facturació que es vol remesar pel menú "Facturació ->
+Mercat lliure -> Lots de facturació -> Lots de facturació".
 
-Obrim el lot de facturació que volguem remesar i apretem el botó "Afegir
+A continucació cal obrir el lot de facturació que es vulgui remesar i cal fer
+ click el botó "Afegir
 factures a remesar". Amb aquest assistent només cal buscar la remesa creada a
 l'apartat anterior i després polsar el botó "Afegir factures".
 
@@ -64,6 +65,35 @@ Afegir factures a remesa:
 Seleccionar remesa:
 
 ![](_static/cobraments/seleccionar_remesa.png)
+
+Un cop seleccionada la remesa, al polsar el botó **Afegir factures**
+s'intentaràn afegir les factures seleccionades a la remesa escollida.
+Es poden donar les següents situacions:
+
+### 1. Existència de factures ja remesades
+
+És possible que alguna de les factures a remesar ja estigui en una remesa.
+En aquest cas l'assistent mostra una pantalla com aquesta:
+
+![](_static/cobraments/factures_remesades.png)
+
+La remesa de les factures que apareixen en el llistat serà **sobre-escrita**. 
+Si es vol evitar, les factures que no es vulguin modificar hauràn de ser eliminades
+del llistat. Per fer-ho han de ser seleccionades i s'ha de fer click al botó **suprimir**.
+
+Si es vol tornar a afegir una factura eliminada del llistat, s'ha de fer click al
+botó **afegir**.
+
+Per continuar, s'ha de fer click al botó **Sobre-escriure remesa** i 
+tot seguit apareix la pantalla del següent apartat.
+
+### 2. Factures afegides a la remesa
+
+Quan l'assistent afegeix les factures a la remesa especificada, apareix
+la següent pantalla indicant la finalització del procés:
+
+![](_static/cobraments/factures_afegides.png)
+
 
 ## De forma manual des de la remesa
 
