@@ -11,6 +11,7 @@ pages:
     - Partners: base/partners.md
     - PowerEmail: base/poweremail.md
     - Gestió ATR: base/atr.md
+    - Atenció al Client: base/atc.md
     - Gestió de polisses: base/polisses.md
     - Gestió de comptadors: base/comptadors.md
   - Distribuidora:
