@@ -18,12 +18,12 @@ nova pestanya Telegestió si el comptador es marca que es de telegestió.
 La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
 habitualment seguint tres passos:
 
-1.  **Càrrega de lectures**: Els concentradors deixen les lectures en un
-    servidor FTP en format XML. GISCE-ERP recull aquests fitxers, els processa i
-    els carrega a la base de dades. Aquesta operació la podem realitzar
-    manualment des de la configuracio d'els FTP prement el
-    [boto de connexió ftp](#configuracio-connexions-ftp). Si es produeix
-    un error, es registra al
+1.  **Càrrega de dades**: Els concentradors deixen les dades de lectures,
+    corbes i esdeveniments en un servidor FTP en format XML. GISCE-ERP recull
+    aquests fitxers, els processa i els carrega a la base de dades. Aquesta
+    operació la podem realitzar manualment des de la configuracio d'els FTP
+    prement el [boto de connexió ftp](#configuracio-connexions-ftp). Si es
+    produeix un error, es registra al
     [llistat d'errors de lectura](#registre-de-lectura-tg-reader-errors)
 
 2.  **Validació de lectures**: Per preparar les lectures abans d'ésser passades
@@ -63,7 +63,9 @@ estandaritzats:
 * **S02**: Perfils
 * **S04**: Tancaments mensuals
 * **S05**: Tancaments diaris
+* **S09**: Esdeveniments de comptador
 * **S12**: Configuració del concentrador
+* **S13**: Esdeveniments de comptador espontanis
 
 ## Ampliació Pestanya General
 
@@ -125,6 +127,8 @@ opció ``TG Comptador`` marcada
 * **Concentrador**: Concentrador al qual està assignat aquest comptador. Un
   comptador s'assigna a un concentrador en el moment que se li validen lectures
   enviades des d'aquest concentrador.
+* **Mostrar events TG**: Aquest botó ens obrirà un llistat dels esdeveniments
+  del comptador.
 * **Excepcions de validació**: En aquesta llista es poden afegis les excepcions
   de validació que no es tindran en compte. Al validar una lectura de
   telegestió, es poden generar un seguit d'excepcions que provocarà que la
