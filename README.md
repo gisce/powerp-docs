@@ -1,5 +1,5 @@
 # PowERP documentation
-
+:)
 ## Setting up your environment
 
 ```shell
