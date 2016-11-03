@@ -45,16 +45,18 @@ de fer click a **Avançat**:
 ![](_static/sincronizacion_cups/winscp_inici.png)
 
 A continuació apareix una finestra de configuració de varis paràmetres.
-S'ha de fer click a **Autentificació** (dins l'apartat SSH) i llavors
-s'ha d'importar el fitxer de **clau privada** (subministrat per GISCE).
+S'ha de fer click a **Autentificació** (dins l'apartat SSH, número 1 a 
+la imatge inferior) i llavors s'ha d'importar el fitxer de 
+**clau privada** (subministrat per GISCE, número 2 a la imatge inferior).
 
 ![](_static/sincronizacion_cups/winscp_configuracio.png)
 
 Un cop carregada la clau es pot fer click a **Acceptar**. Llavors, torna
-a aparèixer la finestra de configuració de la connexió. Cal entrar la
-direcció IP del servidor, juntament amb l'usuari i la contrassenya. Un
-cop les dades estiguin completes cal fer click a **Guardar**. D'aquesta
-manera no caldrà tornar a configurar el WinSCP cada cop que s'executi.
+a aparèixer la finestra de configuració de la connexió.
+
+Cal entrar la direcció IP del servidor (o la URL) i l'usuari. Un cop les dades 
+estiguin completes cal fer click a **Guardar**. D'aquesta manera no 
+caldrà tornar a configurar el WinSCP cada cop que s'executi.
 
 ![](_static/sincronizacion_cups/winscp_configuracio2.png)
 
