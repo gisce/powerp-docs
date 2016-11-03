@@ -47,7 +47,7 @@ de fer click a **Avançat**:
 A continuació apareix una finestra de configuració de varis paràmetres.
 S'ha de fer click a **Autentificació** (dins l'apartat SSH, número 1 a 
 la imatge inferior) i llavors s'ha d'importar el fitxer de 
-**clau privada** (subministrat per GISCE, número 2 a la imatge inferior).
+**clau privada** en format **.ppk** (subministrat per GISCE, número 2 a la imatge inferior).
 
 ![](_static/sincronizacion_cups/winscp_configuracio.png)
 
