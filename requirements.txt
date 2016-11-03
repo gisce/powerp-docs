@@ -1,3 +1,5 @@
 mkdocs
+markdown_i18n
 # Due no pypi package: https://github.com/smartboyathome/Markdown-GridTables/issues/2
 https://github.com/mihkels/Markdown-GridTables/archive/master.zip
+
