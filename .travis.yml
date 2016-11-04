@@ -7,5 +7,5 @@ install:
   - "export PYTHONPATH=$PWD/sitecustomize"
 script:
   - mkdocs build -f mkdocs.yml
-  - mkdocs build -f mkdocs_es.yml
+  - mkdocs build -f mkdocs_es.yml --clean
   - python check_strings.py
