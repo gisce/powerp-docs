@@ -32,9 +32,11 @@ Steps to translate your new documentation:
 
 ```shell
 $ mkdocs serve
+$ mkdocs serve -f mkdocs_es.yml
 ```
 
 With this a webserver is started reloading automatically when is needed.
+With the second command, we specify the config file to be used.
 
 - [Markdown Reference](https://pythonhosted.org/Markdown/index.html)
 - [MKDocs Reference](http://www.mkdocs.org/)
