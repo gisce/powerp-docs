@@ -8,3 +8,4 @@ try:
         sys.setdefaultencoding(encoding)
 except ImportError:
     pass
+
