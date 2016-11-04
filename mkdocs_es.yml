@@ -13,12 +13,12 @@ pages:
   - Base:
     - Partners: base/partners.md
     - PowerEmail: base/poweremail.md
-    - Gestió ATR: base/atr.md
-    - Gestió de polisses: base/polisses.md
-    - Gestió de comptadors: base/comptadors.md
+    - Gestión ATR: base/atr.md
+    - Gestión de pólizas: base/polisses.md
+    - Gestión de contadores: base/comptadors.md
   - Distribuidora:
     - Inicio: distri/index.md
-    - Telegestion: distri/telegestion.md
+    - Telegestión: distri/telegestion.md
     - Contadores: distri/contadores.md
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
@@ -36,13 +36,13 @@ pages:
       - Subestaciones: distri/subestaciones.md
       - CTS: distri/cts.md
       - CTS:
-        - Cel·les i elements de tall: distri/celles.md
+        - Celdas i elementos de corte: distri/celles.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
       - Instalaciones RE: distri/re.md
       - Expedientes: distri/expedientes.md
     - Calidad de servicio: distri/calidad.md
-  - Comercialitzadora:
+  - Comercializadora:
     - Inicio: comer/index.md
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
@@ -54,6 +54,6 @@ pages:
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
       - Tasas Municipales: comer/adm-pub/municipal_taxes.md
-  - Facturacio:
-    - Gestió de pagaments i cobraments: facturacio/cobraments.md
-    - Gestió de lectures: facturacio/lectures.md
+  - Facturación:
+    - Gestión de pagaments i cobraments: facturacio/cobraments.md
+    - Gestión de lectures: facturacio/lectures.md
