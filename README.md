@@ -9,6 +9,7 @@ $ mkvirtualenv powerp-docs
 $ git clone git@github.com:gisce/powerp-docs.git
 $ cd powerp-docs
 $ pip install -r requirements.txt
+$ export PYTHONPATH=$PWD/sitecustomize
 ```
 
 ## Translations
@@ -67,3 +68,4 @@ Our travis testing includes:
 - mkdocs build -f mkdocs_es.yml
 - Check for all strings translated in the .po
 - Check for all the strings in the .pot (after build) to be in the .po
+
