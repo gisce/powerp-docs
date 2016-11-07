@@ -15,45 +15,46 @@ pages:
     - Gestió de comptadors: base/comptadors.md
   - Distribuidora:
     - Inicio: distri/index.md
-    - Telegestion: distri/telegestion.md
-    - Contadores: distri/contadores.md
+    - Telegestió: distri/telegestion.md
+    - Contadors: distri/contadores.md
     - TPL: distri/tpl.md
     - CUPS: distri/cups.md
-    - Pólizas: distri/polizas.md
-    - Facturación: distri/facturacion.md
-    - Facturación:
-      - Peajes: distri/facturacion_peajes.md
-      - Contratación: distri/facturacion_contratacion.md
-    - Administración Pública:
+    - Pòlisses: distri/polizas.md
+    - Facturació: distri/facturacion.md
+    - Facturació:
+      - Peatges: distri/facturacion_peajes.md
+      - Contractació: distri/facturacion_contratacion.md
+    - Administració Pública:
+      - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
-    - Perfiles: distri/perfiles.md
-    - GIS - Instalaciones:
-      - Subestaciones: distri/subestaciones.md
+    - Perfils: distri/perfiles.md
+    - GIS - Instalacions:
+      - Subestacions: distri/subestaciones.md
       - CTS: distri/cts.md
       - CTS:
         - Cel·les i elements de tall: distri/celles.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
-      - Instalaciones RE: distri/re.md
-      - Expedientes: distri/expedientes.md
-      - Sincronización CUPS: distri/sincronizacion_cups.md
-    - Calidad de servicio: distri/calidad.md
+      - Instalacions RE: distri/re.md
+      - Expedients: distri/expedientes.md
+      - Sincronització CUPS: distri/sincronizacion_cups.md
+    - Calitat de servei: distri/calidad.md
   - Comercialitzadora:
-    - Inicio: comer/index.md
+    - Inici: comer/index.md
     - CUPS: comer/cups.md
-    - Contratos: comer/contratos.md
-    - Facturación: comer/facturacion.md
-    - Gestión ATR: comer/switching.md
+    - Contractes: comer/contratos.md
+    - Facturació: comer/facturacion.md
+    - Gestió ATR: comer/switching.md
     - SIPS: comer/sips.md
-    - Administración Pública:
+    - Administració Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
-      - Tasas Municipales: comer/adm-pub/municipal_taxes.md
-  - Facturacio:
+      - Tases Municipals: comer/adm-pub/municipal_taxes.md
+  - Facturació:
     - Gestió de pagaments i cobraments: facturacio/cobraments.md
     - Gestió de lectures: facturacio/lectures.md
     - Lots: facturacio/lots.md
