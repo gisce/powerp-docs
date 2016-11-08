@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2016-11-03 11:04+0100\n"
-"PO-Revision-Date: 2016-11-04 14:58+0100\n"
+"PO-Revision-Date: 2016-11-08 12:14+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -115,7 +115,7 @@ msgstr ""
 
 msgid ""
 "P.e.: <strong>C1</strong> &#233;s un proc&#233;s que pot tenir fins a 10 passos"
-msgstr ""
+msgstr "P.e.: <strong>C1</strong> es un proceso que puede tener hasta 10 pasos"
 
 msgid "Passos"
 msgstr "Pasos"
@@ -180,7 +180,7 @@ msgid ""
 msgstr ""
 
 msgid "Menú Switching"
-msgstr ""
+msgstr "Menú Switching"
 
 msgid ""
 "A GISCE-ERP hi ha definit el Menú <strong>Switching</strong> que d&#243;na "
@@ -189,29 +189,29 @@ msgid ""
 msgstr ""
 
 msgid "Opcions del menú Switching"
-msgstr ""
+msgstr "Opciones del menú Switching"
 
 msgid "<img alt=\"\" src=\"../_static/atr/MenuSwitching.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/MenuSwitching.png\" />"
 
 msgid "Assitent per accedir al cas des d'un pas"
-msgstr ""
+msgstr "Asistente para acceder al caso dede un paso"
 
 msgid "<img alt=\"\" src=\"../_static/atr/WizardProcessarPas.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/WizardProcessarPas.png\" />"
 
 msgid "Formulari del Cas"
-msgstr ""
+msgstr "Formulario del Caso"
 
 msgid ""
 "Quan entrem en un cas, tenim la informació principal i diferents pestanyes:"
 msgstr ""
 
 msgid "Informació principal"
-msgstr ""
+msgstr "Información principal"
 
 msgid "Pestanya General (CRM)"
-msgstr ""
+msgstr "Pestaña General (CRM)"
 
 msgid ""
 "Aquesta pestanya és la genèrica de qualsevol cas del CRM de GISCE-ERP. Podem\n"
@@ -222,7 +222,7 @@ msgid "Mitjançant els botons, podem gestionar els diferents estats del cas:"
 msgstr ""
 
 msgid "Pestanya Contactes"
-msgstr ""
+msgstr "Pestaña Contactos"
 
 msgid "<img alt=\"\" src=\"../_static/atr/PestanyaContactes.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaContactes.png\" />"
@@ -233,7 +233,7 @@ msgid ""
 msgstr ""
 
 msgid "Destinatari"
-msgstr ""
+msgstr "Destinatario"
 
 msgid ""
 "Empresa amb la qual es mantindrà la comunicació. En el cas de les\n"
@@ -249,7 +249,7 @@ msgid ""
 msgstr ""
 
 msgid "Comercialitzadora Sortint"
-msgstr ""
+msgstr "Comercializadora Saliendo"
 
 msgid ""
 "En alguns casos, és necessari intercanviar informació amb altres Agents com la\n"
@@ -259,7 +259,7 @@ msgid ""
 msgstr ""
 
 msgid "Pestanya Etapes"
-msgstr ""
+msgstr "Pestaña Etapas"
 
 msgid "<img alt=\"\" src=\"../_static/atr/PestanyaEtapes.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaEtapes.png\" />"
@@ -270,7 +270,7 @@ msgid ""
 msgstr ""
 
 msgid "Pestanya Switching"
-msgstr ""
+msgstr "Pestaña Switching"
 
 msgid "<img alt=\"\" src=\"../_static/atr/PestanyaSwitching.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaSwitching.png\" />"
@@ -281,10 +281,10 @@ msgid ""
 msgstr ""
 
 msgid "Dades generals"
-msgstr ""
+msgstr "Datos generales"
 
 msgid "Detall de passos"
-msgstr ""
+msgstr "Detalles de pasos"
 
 msgid ""
 "Llistat amb tots els passos que s'han generat. Es poden crear, esborrar i\n"
@@ -292,16 +292,16 @@ msgid ""
 msgstr ""
 
 msgid "Quan obres o crees un Pas, accedeixes al formulari del Pas."
-msgstr ""
+msgstr "Quando abres o creas un Paso, accedes al formulario del Paso."
 
 msgid "Formulari de nou pas"
-msgstr ""
+msgstr "Formulario de nuevo paso"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariNouPas.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariNouPas.png\" />"
 
 msgid "Exemple de dades d'un pas. (C1) 01"
-msgstr ""
+msgstr "Ejemplo de datos de un paso. (C1) 01"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariDades.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariDades.png\" />"
@@ -312,7 +312,7 @@ msgid ""
 msgstr ""
 
 msgid "Exemple de dades d'un pas. (M1) 01"
-msgstr ""
+msgstr "Ejemplo de datos de un paso. (M1) 01"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariDadesM101.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariDadesM101.png\" />"
@@ -323,7 +323,7 @@ msgid ""
 msgstr ""
 
 msgid "Pestanya History"
-msgstr ""
+msgstr "Pestaña History"
 
 msgid ""
 "Llistat amb totes les accions que s'han realitzat, com Obrir, Tancar,\n"
@@ -334,7 +334,7 @@ msgid "<img alt=\"\" src=\"../_static/atr/PestanyaHistory.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaHistory.png\" />"
 
 msgid "Pestanya Communication"
-msgstr ""
+msgstr "Pestaña Communication"
 
 msgid ""
 "Llistat amb tots els mails enviats des del cas mitjançant el botó "
@@ -351,15 +351,16 @@ msgstr ""
 
 msgid "Formulari Power Email d'un fitxer XML enviar des del cas corresponent"
 msgstr ""
+"Formulario Power Email de un fichero XML enviar desde el caso correspondiente"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariPowerEmail.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariPowerEmail.png\" />"
 
 msgid "Generació i enviament de XML's"
-msgstr ""
+msgstr "Generación y enviamiento de XMLs"
 
 msgid "Generació del fitxer"
-msgstr ""
+msgstr "Generación del fitxero"
 
 msgid ""
 "El fitxers XML es generen a partir de la informació del pas actual, es a dir,\n"
@@ -375,16 +376,16 @@ msgid ""
 msgstr ""
 
 msgid "Camp per modificar la codificació XML a la fitxa d'empresa"
-msgstr ""
+msgstr "Campo para modificar la codificación XML a la ficha de empresa"
 
 msgid "<img alt=\"\" src=\"../_static/atr/EncodingXML.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/EncodingXML.png\" />"
 
 msgid "Per intercanviar XML's tenim dues opcions:"
-msgstr ""
+msgstr "Para intercambiar XMLs tenemos dos opciones:"
 
 msgid "Exportar XML"
-msgstr ""
+msgstr "Exportar XML"
 
 msgid ""
 "Es genera el fitxer XML d'un pas per poder-lo emmagatzemar en l'ordinador de\n"
@@ -395,7 +396,7 @@ msgid ""
 msgstr ""
 
 msgid "Formulari per exportar un fitxer XML"
-msgstr ""
+msgstr "Formulario para exportar un fichero XML"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariExportarXML.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariExportarXML.png\" />"
@@ -408,7 +409,7 @@ msgid ""
 msgstr ""
 
 msgid "Camp <em>Nom comercial</em> a fitxa de l'empresa"
-msgstr ""
+msgstr "Campo <em>Nombre comercial</em> en ficha de la empresa"
 
 msgid "<img alt=\"\" src=\"../_static/atr/NomComercial.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/NomComercial.png\" />"
@@ -427,13 +428,13 @@ msgid ""
 msgstr ""
 
 msgid "El nom dels fitxers ZIP de cada empresa seguirà el format\n"
-msgstr ""
+msgstr "El nombre de los ficheros ZIP de cada empresa seguirá el formato\n"
 
 msgid "Enviar XML"
-msgstr ""
+msgstr "Enviar XML"
 
 msgid "Formulari per enviar el XML del pas per mail des del Cas"
-msgstr ""
+msgstr "Formulario para enviar el XML del paso por mail desde el Caso"
 
 msgid "<img alt=\"\" src=\"../_static/atr/FormulariEmailXML.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/FormulariEmailXML.png\" />"
@@ -444,13 +445,13 @@ msgid ""
 msgstr ""
 
 msgid "El mail es veurà a la pestanya "
-msgstr ""
+msgstr "El mail se verá en la pestaña"
 
 msgid "Operació"
-msgstr ""
+msgstr "Operación"
 
 msgid "Creació d'un cas com a originador"
-msgstr ""
+msgstr "Creación de un caso como a originador"
 
 msgid "<img alt=\"\" src=\"../_static/atr/NouCas.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/NouCas.png\" />"
@@ -468,7 +469,7 @@ msgid ""
 msgstr ""
 
 msgid "Creació del cas"
-msgstr ""
+msgstr "Creación del caso"
 
 msgid ""
 "Des del llistat de tots els casos, premem sobre el botó <strong>Nou</strong> i "
@@ -478,14 +479,14 @@ msgid ""
 msgstr ""
 
 msgid "A la pestanya "
-msgstr ""
+msgstr "A la pestaña "
 
 msgid ""
 "Guardem el cas amb el botó <strong>Guardar</strong> i ens quedar&#224; en estat "
 msgstr ""
 
 msgid "Obrir Cas"
-msgstr ""
+msgstr "Abrir Caso"
 
 msgid ""
 "Per poder treballar amb el cas cal primer que l'obrim. per fer-ho podem prèmer\n"
@@ -506,9 +507,10 @@ msgstr ""
 
 msgid "Tanquem el formulari i Guardem el cas amb el botó <strong>Guardar</strong>"
 msgstr ""
+"Cerramos el formulario y Guardamos el caso con el botón <strong>Guardar</strong>"
 
 msgid "Informació del cas"
-msgstr ""
+msgstr "Información del caso"
 
 msgid ""
 "Tota la informació relativa a la sol·licitud es podrà editar a la informació\n"
@@ -536,7 +538,7 @@ msgid ""
 msgstr ""
 
 msgid "Generació Pas 1"
-msgstr ""
+msgstr "Generación Paso 2"
 
 msgid ""
 "Per generar l'XML podem utilitzar el formulari d'exportació amb el botó\n"
@@ -553,7 +555,7 @@ msgid ""
 msgstr ""
 
 msgid "Creació d'un cas a partir d'un XML entrant"
-msgstr ""
+msgstr "Creación de un caso a partir de un XML entrante"
 
 msgid ""
 "Rebem una petició a partir d'un XML enviat per un altre agent en un procés on\n"
@@ -561,13 +563,13 @@ msgid ""
 msgstr ""
 
 msgid "Premem sobre la opció "
-msgstr ""
+msgstr "Pulsamos sobre la opción"
 
 msgid "En el llistat de casos veurem que s'ha creat el nou Cas en estat "
-msgstr ""
+msgstr "En el listado de casos veremos que se ha creado el nuevo caso en estado"
 
 msgid "Notificacions a client Final"
-msgstr ""
+msgstr "Notificaciones a cliente Final"
 
 msgid ""
 "Durant un procés de switching es dónen diverses situacions on és recomanable\n"
@@ -579,10 +581,10 @@ msgid ""
 msgstr ""
 
 msgid "S'han definit dues notificacions:"
-msgstr ""
+msgstr "Se han definido dos notificaciones:"
 
 msgid "Acceptació de procés"
-msgstr ""
+msgstr "Aceptación del proceso"
 
 msgid ""
 "Quan la comercialitzadora entrant rep un XML d'acceptació (C1-02, C2-02 o\n"
@@ -595,13 +597,13 @@ msgid ""
 msgstr ""
 
 msgid "Formulari notificació acceptació canvi"
-msgstr ""
+msgstr "Formulario notificación aceptación cambio"
 
 msgid "<img alt=\"\" src=\"../_static/atr/PowerEmailAcceptacio.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PowerEmailAcceptacio.png\" />"
 
 msgid "Activació del procés de canvi de comercialitzadora"
-msgstr ""
+msgstr "Activación del proceso de cambio de comercializadora"
 
 msgid ""
 "Quan la comercialitzadora rep un XML d'activació de canvi de comercialitzadora\n"
@@ -615,13 +617,13 @@ msgid ""
 msgstr ""
 
 msgid "Formulari notificació activació canvi de comercialitzadora"
-msgstr ""
+msgstr "Formulario notificación activación cambio de comercializadora"
 
 msgid "<img alt=\"\" src=\"../_static/atr/PowerEmailActivacio.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/PowerEmailActivacio.png\" />"
 
 msgid "Automatització"
-msgstr ""
+msgstr "Automatización"
 
 msgid ""
 "La gestió ATR, a més d'intercanviar informació entre diferents agents, implica\n"
@@ -635,10 +637,10 @@ msgstr ""
 
 msgid ""
 "Aquesta automatització consisteix bàsicament en dos processos diferenciats:"
-msgstr ""
+msgstr "Esta automatización consiste básicamente en dos procesos diferenciados"
 
 msgid "Activació automàtica de pas (Activar contracte o canvis)"
-msgstr ""
+msgstr "Activación automática de paso (Activar contrato o cambios)"
 
 msgid ""
 "La informació d'un pas de gestió ATR ens permet en alguns casos aplicar els\n"
@@ -654,7 +656,7 @@ msgid ""
 msgstr ""
 
 msgid "Activació d'un cas ATR"
-msgstr ""
+msgstr "Activación de un caso ATR"
 
 msgid ""
 "En la taula següent es pot veure quan es poden activar els canvis associats\n"
@@ -662,22 +664,22 @@ msgid ""
 msgstr ""
 
 msgid "(ac) Activació de contracte (A3,C1,C2) a Comercialitzadora"
-msgstr ""
+msgstr "(ac) Activación de contrato (A3,C1,C2) a Comercializadora"
 
 msgid "(bc) Baixa de contracte (B1,C1,C2) a Comercialitzadora"
-msgstr ""
+msgstr "(bc) Baja de contrato (B1,C1,C2) a Comercializadora"
 
 msgid "(dc) Activació (D1) a Comercialitzadora"
-msgstr ""
+msgstr "(dc) Activación (D1) a Comercializadora"
 
 msgid "(mc) Modificació de contracte (M1) a Comercialitzadora"
-msgstr ""
+msgstr "(mc) Modificación de contrato (M1) a Comercializadora"
 
 msgid "Nou contracte (A3) a Distribuidora"
-msgstr ""
+msgstr "Nuevo contrato (A3) a Distribuidora"
 
 msgid "Creació de Procés automàtic des de pòlissa (Generar cas Gestió ATR)"
-msgstr ""
+msgstr "Creación de Proceso automático desde póliza (Generar caso Gestión ATR)"
 
 msgid ""
 "La creació d'un cas des d'una pòlissa permet generar automàticament el cas amb\n"
@@ -696,27 +698,29 @@ msgid ""
 msgstr ""
 
 msgid "Wizard Generar Cas ATR"
-msgstr ""
+msgstr "Wizard Generar Caso ATR"
 
 msgid "<img alt=\"\" src=\"../_static/atr/WizardGenerarATR.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/WizardGenerarATR.png\" />"
 
 msgid "Asistent generació Casos a partir de pólisses"
-msgstr ""
+msgstr "Asistente generación Casos a partir de pólizas"
 
 msgid ""
 "Un cop executat retorna un llistat amb una descripció del resultat de cada\n"
 "pólissa."
 msgstr ""
+"Una vez ejecutado devuelve un listado con una descripción del \n"
+"resultado de cada póliza."
 
 msgid "<img alt=\"\" src=\"../_static/atr/WizardGenerarATRResultat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/WizardGenerarATRResultat.png\" />"
 
 msgid "Resultat creació passos"
-msgstr ""
+msgstr "Resultado creación pasos"
 
 msgid "Creació Cas A3/C1/C2"
-msgstr ""
+msgstr "Creación Caso A3/C1/C2"
 
 msgid ""
 "Un cas habitual és la entrada automatitzada de peticions de canvi de\n"
@@ -731,21 +735,25 @@ msgid ""
 "esborrany.\n"
 "El seu funcionament &#233;s el seg&#252;ent:"
 msgstr ""
+"Mediante el asistente <a href=\"#wizard-generar-caso-atr\">wizard genenrar caso "
+"ATR</a> se puede crear un caso de cambio\n"
+"de comercializadora o alta a partir de una o varias pólizas en borrador.\n"
+"Su funcionamiento el el siguiente:"
 
 msgid "Creació Cas B1 (Baixa)"
-msgstr ""
+msgstr "Creación Caso B1 (Baja)"
 
 msgid "Creació Cas D1 (Notificació canvi a TG)"
-msgstr ""
+msgstr "Creación Caso D1 (Notificación cambio a TG)"
 
 msgid "Creació Cas M1 (Canvis contracte)"
-msgstr ""
+msgstr "Creación Caso M1 (Cambios contrato)"
 
 msgid "Creació Cas W1 (Autolectures)"
-msgstr ""
+msgstr "Creación Caso W1 (Autolecturas)"
 
 msgid "Validació nom titular"
-msgstr ""
+msgstr "Validación nombre titular"
 
 msgid ""
 "Els casos de Gestió ATR necessiten els noms i cognoms separats. L'ERP\n"
@@ -755,7 +763,7 @@ msgid ""
 msgstr ""
 
 msgid "Es marcarà com a per validar si:"
-msgstr ""
+msgstr "Se marcará como para validar si:"
 
 msgid ""
 "Si el client és una empresa, només es comprova el nom i que sigui de menys\n"
@@ -763,7 +771,7 @@ msgid ""
 msgstr ""
 
 msgid "Segons dades Formulari: Generació casos C1, C2 i A3"
-msgstr ""
+msgstr "Segun datos Formulario: Generación casos C1, C2 y A3"
 
 msgid ""
 "Per automatitzar la creació de C1 , C2 i A3 quan una pòlissa en esborrany es\n"
@@ -775,7 +783,7 @@ msgid ""
 msgstr ""
 
 msgid "Altres automatitzacions"
-msgstr ""
+msgstr "Otras automatizaciones"
 
 msgid ""
 "També s'ha automatitzat la creació d'alguns processos i passos a partir\n"
@@ -783,18 +791,20 @@ msgid ""
 msgstr ""
 
 msgid "B1 i devolucions"
-msgstr ""
+msgstr "B1 y devoluciones"
 
 msgid ""
 "S'ha integrat la generació de casos i processo B1 amb les devolucions i els\n"
 "talls."
 msgstr ""
+"Se ha integrado la generación de casos y proceso B1 con las \n"
+"devoluciones y los cortes."
 
 msgid "Apendix A: Exemple de procés C1"
-msgstr ""
+msgstr "Apéndice A: Ejemplo del proceso C1"
 
 msgid "Apendix B: Traducció de codi REE"
-msgstr ""
+msgstr "Apéndice B: Traducción del codigo REE"
 
 msgid ""
 "El càlcul del codi REE de la distribuidora té algunes particularitats en el "
@@ -818,22 +828,22 @@ msgid "<img alt=\"\" src=\"../_static/atr/EmpresaPrincipal.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/atr/EmpresaPrincipal.png\" />"
 
 msgid "Empresa principal per distribuidores absorbides"
-msgstr ""
+msgstr "Empresa principal para distribuidoras absorbidas"
 
 msgid "L'algoritme que es segueix és el següent i en aquest ordre:"
-msgstr ""
+msgstr "El algoritmo que se sigue es el siguiente y en este orden:"
 
 msgid "ENDESA 0031"
-msgstr ""
+msgstr "ENDESA 0031"
 
 msgid "FENOSA 0039"
-msgstr ""
+msgstr "FENOSA 0039"
 
 msgid "Gestió de pòlisses/contractes"
-msgstr ""
+msgstr "Gestión de pólizas/contratos"
 
 msgid "Tarifes d'accés"
-msgstr ""
+msgstr "Tarifas de acceso"
 
 msgid ""
 "Les tarifes d'accés que venen definides amb l'ERP són les que marca la "
@@ -842,28 +852,28 @@ msgid ""
 msgstr ""
 
 msgid "Pòlisses/contractes"
-msgstr ""
+msgstr "Pólizas/contratos"
 
 msgid "Formulari d'una pòlissa/contracte"
-msgstr ""
+msgstr "Formulario de una póliza/contrato"
 
 msgid "Secció general"
-msgstr ""
+msgstr "Sección general"
 
 msgid "Pestanya general"
-msgstr ""
+msgstr "Pestaña general"
 
 msgid "Contactes"
-msgstr ""
+msgstr "Contactos"
 
 msgid "Modificacions contractuals"
-msgstr ""
+msgstr "Modificaciones contractuales"
 
 msgid "Observacions"
-msgstr ""
+msgstr "Observaciones"
 
 msgid "Canvi data firma contracte"
-msgstr ""
+msgstr "Canvio data firma contrato"
 
 msgid ""
 "En un contracte podem actualitzar la data de firma de contracte sense la\n"
@@ -888,31 +898,31 @@ msgid "<img alt=\"\" src=\"../_static/polisses/WizardDataFirmaContracte.png\" />
 msgstr "<img alt=\"\" src=\"../_static/polisses/WizardDataFirmaContracte.png\" />"
 
 msgid "Gestió de comptadors"
-msgstr ""
+msgstr "Gestión de contadores"
 
 msgid "Llistat de comptadors"
-msgstr ""
+msgstr "Listado de contadores"
 
 msgid "A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:"
-msgstr ""
+msgstr "A la ficha de un contador se puede acceder por dos sitios distintos:"
 
 msgid "<img alt=\"\" src=\"../_static/comptadors/ComptadorGeneral.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/comptadors/ComptadorGeneral.png\" />"
 
 msgid "Pestanya General Fitxa Comptadors"
-msgstr ""
+msgstr "Pestaña General Ficha Contadores"
 
 msgid "Formulari de comptadors"
-msgstr ""
+msgstr "Formulario de contadores"
 
 msgid "Documentación PowERP distribuidora"
 msgstr ""
 
 msgid "Documentació del mòdul de comptadors i lectures de telegestió"
-msgstr ""
+msgstr "Documentación del módulo de contadores y lecturas de telegestión"
 
 msgid "Comptadors de telegestió"
-msgstr ""
+msgstr "Contadores de telegestión"
 
 msgid ""
 "El modul de telegestió gestiona la lectura dels fitxers de tancament diaris i\n"
@@ -931,7 +941,7 @@ msgid ""
 msgstr ""
 
 msgid "Procediment de càrrega de lectures"
-msgstr ""
+msgstr "Procedimiento de carga de lecturas"
 
 msgid ""
 "La gestió de lectures de consum de comptadors mitjançant telegestió es "
@@ -946,21 +956,23 @@ msgid ""
 "Actualment, GISCE-ERP és capaç de llegir els seguents fitxers XML\n"
 "estandaritzats:"
 msgstr ""
+"Actualmente, GISCE-ERP es capaz de leer los siguientes ficheros XML\n"
+"estandarizados:"
 
 msgid "Ampliació Pestanya General"
-msgstr ""
+msgstr "Ampliación Pestaña General"
 
 msgid "<img alt=\"\" src=\"../_static/telegestion/ComptadorTGGeneral.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/ComptadorTGGeneral.png\" />"
 
 msgid "Pestanya General amb telegestió"
-msgstr ""
+msgstr "Pestaña General con telegestión"
 
 msgid "Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat "
-msgstr ""
+msgstr "Con el módulo de telegestión, se añaden los siguientes campos al apartado"
 
 msgid "Fitxa producte d'un comptador de telegestió"
-msgstr ""
+msgstr "Ficha producto de un contador de telegestión"
 
 msgid ""
 "<img alt=\"\" src=\"../_static/telegestion/FitxaProducteComptadorTG.png\" />"
@@ -968,13 +980,13 @@ msgstr ""
 "<img alt=\"\" src=\"../_static/telegestion/FitxaProducteComptadorTG.png\" />"
 
 msgid "Pestanya Telegestió"
-msgstr ""
+msgstr "Pestaña Telegestión"
 
 msgid "<img alt=\"\" src=\"../_static/telegestion/ComptadorTGTelegestio.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/ComptadorTGTelegestio.png\" />"
 
 msgid "Pestanya Telegestió de comptador"
-msgstr ""
+msgstr "Pestaña Telegestión de contador"
 
 msgid ""
 "La pestanya de telegestió només es mostra en aquells comptadors que tenen la\n"
@@ -982,7 +994,7 @@ msgid ""
 msgstr ""
 
 msgid "Gestió i configuració de Telegestió"
-msgstr ""
+msgstr "Gestión y configuración de Telegestión"
 
 msgid ""
 "Tots els menús d'accés a telegestió es troben centralitzats dins el menú\n"
@@ -993,10 +1005,10 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/MenuInfraestructuraTG.png\" />
 msgstr "<img alt=\"\" src=\"../_static/telegestion/MenuInfraestructuraTG.png\" />"
 
 msgid "El menú Infraestructura amb les opcions de telegestió"
-msgstr ""
+msgstr "El menú Infraestructura con las opciones de telegestión"
 
 msgid "Configuració > Connexions FTP"
-msgstr ""
+msgstr "Configuración > Conexiones FTP"
 
 msgid ""
 "Els concentradors de telegestió deixen les dades en format XML en un servidor\n"
@@ -1013,13 +1025,13 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/FitxaFTPTG.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/FitxaFTPTG.png\" />"
 
 msgid "Fitxa de configuració servidor FTP de telegestió"
-msgstr ""
+msgstr "Ficha de configuración servidor FTP de telegestión"
 
 msgid "El procediment de lectura va de la següent forma:"
-msgstr ""
+msgstr "El procedimiento de lectura funciona de la siguiente forma:"
 
 msgid "Configuració > Excepcions"
-msgstr ""
+msgstr "Configuración > Excepciones"
 
 msgid ""
 "Quan es validen les lectures es fan tot un seguit de comprovacions per\n"
@@ -1034,10 +1046,10 @@ msgid ""
 msgstr ""
 
 msgid "Les excepcions que es gestionen actualment són:"
-msgstr ""
+msgstr "Las excepciones que se gestionan actualmente son:"
 
 msgid "Configuració > Excepcions Comptador"
-msgstr ""
+msgstr "Configuración > Excepciones Contador"
 
 msgid ""
 "En aquest llistat podem indicar els comptadors que validen sempre les seves\n"
@@ -1048,7 +1060,7 @@ msgid ""
 msgstr ""
 
 msgid "Configuració > TG Categories Error i Configuració > Errors"
-msgstr ""
+msgstr "Configuración > TG Categorías Error y Configuración > Errores"
 
 msgid ""
 "Els concentradors de telegestió inclouen en els fitxers XML els errors que \n"
@@ -1070,7 +1082,7 @@ msgid ""
 msgstr ""
 
 msgid "Casos Telegestió"
-msgstr ""
+msgstr "Casos Telegestión"
 
 msgid ""
 "Permet un accés directe als casos generats pel sistema de telegestió (veure\n"
@@ -1100,7 +1112,7 @@ msgid ""
 msgstr ""
 
 msgid "Registre de lectura"
-msgstr ""
+msgstr "Registro de lectura"
 
 msgid ""
 "Registre de lectures dels fitxers. Es mostren els fitxers que s'han carregat i\n"
@@ -1109,7 +1121,7 @@ msgid ""
 msgstr ""
 
 msgid "Registre de lectura > TG reader Errors"
-msgstr ""
+msgstr "Registro de lectura > TG reader Errors"
 
 msgid ""
 "Llista els errors de lectura trobats per comptador. Aquests errors venen del\n"
@@ -1120,7 +1132,7 @@ msgid "TG Cierres"
 msgstr ""
 
 msgid "Registre dels tancaments diaris i mensuals amb accessos directes a:"
-msgstr ""
+msgstr "Registro de los cierres diários y mensuales con accesos directos a:"
 
 msgid ""
 "Les lectures que encara no han estat validades es llisten de color "
@@ -1150,19 +1162,19 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/ValidarTancamentTG.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/ValidarTancamentTG.png\" />"
 
 msgid "Podem veure la informació completa en el detall d'un tancament:"
-msgstr ""
+msgstr "Podemos ver la información completa en el detalle de un cierre:"
 
 msgid "<img alt=\"\" src=\"../_static/telegestion/FitxaCierreTG.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/FitxaCierreTG.png\" />"
 
 msgid "Detall d'un tancament"
-msgstr ""
+msgstr "Detalle de un cierre"
 
 msgid "En el detall hi trobem:"
-msgstr ""
+msgstr "En el detalle encontramos:"
 
 msgid "Lectura des de TG (Botó)"
-msgstr ""
+msgstr "Lectura desde TG (Botón)"
 
 msgid ""
 "Ens permet importar les lectures de telegestió d'un comptador si en sabem el\n"
@@ -1174,10 +1186,10 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/ImportarLecturesTG.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/ImportarLecturesTG.png\" />"
 
 msgid "Validar TG Tancaments"
-msgstr ""
+msgstr "Validar TG Cierres"
 
 msgid "La <strong>Validaci&#243;</strong> consisteix en:"
-msgstr ""
+msgstr "La <strong>Validación</strong> consiste en:"
 
 msgid ""
 "El procediment per validar les lectures és a través del wizard que es troba en\n"
@@ -1188,7 +1200,7 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/BotoValidacio.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/BotoValidacio.png\" />"
 
 msgid "Ubicació del wizard de validació de lectures "
-msgstr ""
+msgstr "Ubicación del wizard de validación de lecturas "
 
 msgid ""
 "Podem validar les lectures amb aquest botó. Si no entrem cap número de\n"
@@ -1201,10 +1213,10 @@ msgstr ""
 "<img alt=\"\" src=\"../_static/telegestion/ValidarTancamentsBotoTG.png\" />"
 
 msgid "Formulari de validar tots els tancaments d'un comptador"
-msgstr ""
+msgstr "Formulario de validar todos los cierres de un contador"
 
 msgid "Importar lectures des del Lot de Facturació"
-msgstr ""
+msgstr "Importar lecturas desde el Lote de Facturación"
 
 msgid ""
 "En comptes d'haver d'anar comptador per comptador per carregar les lectures,\n"
@@ -1227,10 +1239,10 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/LotImportarLectures.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/LotImportarLectures.png\" />"
 
 msgid "Botó per importar les lectures des del lot de facturació"
-msgstr ""
+msgstr "Botón para importar las lecturas desde el lote de facturación"
 
 msgid "Telegestió i CRM"
-msgstr ""
+msgstr "Telegestión y CRM"
 
 msgid ""
 "Tots els errors i validacions manuals que s'hagin de fer estan integrades en "
@@ -1288,7 +1300,7 @@ msgid ""
 msgstr ""
 
 msgid "Lectures d'un comptador des d'un cas"
-msgstr ""
+msgstr "Lecturas de un contador desde un caso"
 
 msgid ""
 "Per anar a les lectures d'un contador a partir d'un cas en concret, primer hem\n"
@@ -1335,31 +1347,31 @@ msgid "<img alt=\"\" src=\"../_static/telegestion/crm_lectura_contador.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/telegestion/crm_lectura_contador.png\" />"
 
 msgid "Automatització de tasques"
-msgstr ""
+msgstr "Automatización de tareas"
 
 msgid "S'han creat dues tasques planificades (**Administració > Configuració"
 msgstr ""
 
 msgid "TG Reader scheduler"
-msgstr ""
+msgstr "TG Reader scheduler"
 
 msgid "Aquesta planificació importa cada dia les lectures de l'FTP. "
 msgstr ""
 
 msgid "TG Validate scheduler"
-msgstr ""
+msgstr "TG Validate scheduler"
 
 msgid "Permet programar la validació automàtica de totes les lectures. "
 msgstr ""
 
 msgid "Continguts"
-msgstr ""
+msgstr "Contenidos"
 
 msgid "Documentació del mòdul de comptadors i lectures"
-msgstr ""
+msgstr "Documentación del módulo de contadores y lecturas"
 
 msgid "Manual de comptadors"
-msgstr ""
+msgstr "Manual de contadores"
 
 msgid "<img alt=\"\" src=\"../_static/contadores/ComptadorGeneral.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/ComptadorGeneral.png\" />"
@@ -1368,7 +1380,7 @@ msgid "Pestanya General de la fitxa de comptadors"
 msgstr ""
 
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 msgid "Com es fa un canvi de comptador a mig període de facturació?"
 msgstr ""
@@ -1388,10 +1400,10 @@ msgid "Documentació de lectures per distribuïdores"
 msgstr ""
 
 msgid "Continguts:"
-msgstr ""
+msgstr "Contenidos:"
 
 msgid "Comparativa de consums"
-msgstr ""
+msgstr "Comparativa de consumos"
 
 msgid ""
 "Es tracta de comparar el consum actual, en base a les lectures introduïdes al\n"
@@ -1422,7 +1434,7 @@ msgid ""
 msgstr ""
 
 msgid "Com exportar un fitxer"
-msgstr ""
+msgstr "Como exportar un fichero"
 
 msgid ""
 "Per accedir a generar l'exportació cal anar a\n"
@@ -1444,13 +1456,13 @@ msgid "<img alt=\"\" src=\"../_static/contadores/comparativa_lectures.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/comparativa_lectures.png\" />"
 
 msgid "Camps del fitxer"
-msgstr ""
+msgstr "Campos de fichero"
 
 msgid "A continuació es descriu cada un dels camps del fitxer:"
 msgstr ""
 
 msgid "Compra i magatzem de comptadors"
-msgstr ""
+msgstr "Compra y almazenaje de contadores"
 
 msgid ""
 "En aquest manual s'explica el mòdul de magatzems de GISCE-ERP per a la gestió\n"
@@ -1469,7 +1481,7 @@ msgid "El flux general, i pels comptadors en particular, seria el següent:"
 msgstr ""
 
 msgid "Producte comptador"
-msgstr ""
+msgstr "Producto contador"
 
 msgid ""
 "El primer pas per poder gestionar els comptadors correctament és donar-los\n"
@@ -1512,7 +1524,7 @@ msgid ""
 msgstr ""
 
 msgid "Compra de comptadors"
-msgstr ""
+msgstr "Compra de contadores"
 
 msgid ""
 "Es descriu com realitzar l'ordre de compra dels comptadors i la recepció del\n"
