@@ -1,3 +1,4 @@
+from __future__ import division
 from os.path import abspath, normpath, dirname, join, isfile
 from babel.messages import pofile
 import os
