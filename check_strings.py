@@ -25,13 +25,19 @@ if not pot_file or not es_file:
 strings = [s.id for s in pot_file]
 strings = set(strings)
 es_strings = []
+t_strings = []
 failed_strings = []
 print (u'Checking for all strings to be translated...')
 for s in es_file:
     es_strings.append(s.id)
     if not(s.id and s.string):
         failed_strings.append(s.id)
+    else:
+        t_strings.append(s.string)
 
+print (u'\nTranslated strings: {0}/{1} ({2}%)\n'.format(
+    len(t_strings), len(strings), len(t_strings)/len(strings) * 100
+))
 if failed_strings:
     print (u'There are strings not translated!\n{}'.format(failed_strings))
     exit(-1)
@@ -39,9 +45,6 @@ if failed_strings:
 print (u'Checking all strings in pot to be in po...')
 es_strings = set(es_strings)
 substr = strings - es_strings
-print (u'Translated strings: {0}/{1} ({2}%)'.format(
-    len(strings), len(es_strings), len(es_strings)/len(strings) * 100
-))
 if substr != set():
     print (u'There are missing strings in the po file!\n{}'.format(substr))
     exit(-1)
