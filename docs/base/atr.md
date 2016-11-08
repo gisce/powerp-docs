@@ -829,7 +829,7 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 | 00311 | 0023 (Cia sevillana)                 |
 | 00313 | 0120 (Aragonesa Act.)                |
 | 00315 | 0288 (Balears Gas y E.)              |
-| 00316 | 0393 (Unión Eléctrica Canarias SUP)  |
+| 00316 | 0363 (Unión Eléctrica Canarias SUP)  |
 
 # FENOSA 0039
 

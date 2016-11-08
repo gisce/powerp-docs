@@ -5656,3 +5656,9 @@ msgstr ""
 msgid "Suposem que el dia 13/10/2011 es canvia el comptador amb el "
 msgstr ""
 
+msgid "Documentació específica"
+msgstr ""
+
+msgid "<a href=\"../comer/switching.md\">Gesti&#243; ATR Comercialitzadores</a>"
+msgstr ""
+
