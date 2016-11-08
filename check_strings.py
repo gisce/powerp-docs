@@ -39,6 +39,9 @@ if failed_strings:
 print (u'Checking all strings in pot to be in po...')
 es_strings = set(es_strings)
 substr = strings - es_strings
+print (u'Translated strings: {0}/{1} ({2}%)'.format(
+    len(strings), len(es_strings), len(es_strings)/len(strings) * 100
+))
 if substr != set():
     print (u'There are missing strings in the po file!\n{}'.format(substr))
     exit(-1)
