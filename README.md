@@ -1,7 +1,4 @@
 # PowERP documentation
-We've got this :) or not? nooooo :'(
-:S
-TT
 [Build of our documentation](http://builds.gisce.net/powerp-docs/powerp/)
 
 ## Setting up your environment
