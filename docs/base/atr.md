@@ -834,3 +834,8 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 # FENOSA 0039
 
 * Si el CUPS comença per **03900**: **0022** (``Jallas``)
+
+# Documentació específica
+
+[Gestió ATR Comercialitzadores](../comer/switching.md)
+
