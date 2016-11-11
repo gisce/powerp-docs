@@ -837,5 +837,5 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 
 # Documentació específica
 
-[Gestió ATR Comercialitzadores](../comer/switching.md)
+[Gestió ATR Comercialitzadores](../comer/atr.md)
 
