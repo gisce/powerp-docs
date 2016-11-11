@@ -1,4 +1,4 @@
-site_name: My Docs
+site_name: PowERP Docs
 theme: readthedocs
 
 markdown_extensions:
@@ -45,7 +45,7 @@ pages:
     - CUPS: comer/cups.md
     - Contractes: comer/contratos.md
     - Facturació: comer/facturacion.md
-    - Gestió ATR: comer/switching.md
+    - Gestió ATR: comer/atr.md
     - SIPS: comer/sips.md
     - Administració Pública:
       - CNMC: comer/adm-pub/cnmc.md
