@@ -39,6 +39,7 @@ pages:
       - LBT: distri/lbt.md
       - Instalacions RE: distri/re.md
       - Expedients: distri/expedientes.md
+      - Sincronització CUPS: distri/sincronizacion_cups.md
     - Calitat de servei: distri/calidad.md
   - Comercialitzadora:
     - Inici: comer/index.md
