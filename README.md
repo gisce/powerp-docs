@@ -1,6 +1,6 @@
 # PowERP documentation
 
-[Build of our documentation](http://builds.gisce.net/powerp-docs/)
+[Build of our documentation](http://builds.gisce.net/powerp-docs/master/)
 
 ## Setting up your environment
 
