@@ -5,6 +5,7 @@ Continguts:
 * [INF/DE/0066/44](#modul-per-generar-el-fixer-csv-segons-cnmc-infde006644-per-distribuidora)
 * [Circular 1/2005](#circular-12005)
 * [Circular 4/2014](#circular-42014)
+* [Circular 4/2015](#circular-42015)
 
 
 ## Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per distribuïdora
@@ -545,9 +546,8 @@ la xarxa real. El fitxer resultant és codificat en ASCII mitjançant l'estànda
 S'inclourà informació dels trams d'alta i baixa tensió que compleixin les
 següents característiques:
 
-* **Actiu**: La línia pot estar activa amb la **data de baixa** buida o bé
-  pot estar inactiva. S'ha de complir tant per els trams **d'alta tensió**
-  com els de **baixa tensió**.
+* **Actiu**: S'inclouran en el fitxer només els trams AT/BT que tenen la 
+    casella "Actiu" marcada.
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 31 de Desembre. ( p.e. per l'any 2014 data_APM < 01/01/2015) o bé
   estar buida. S'ha de complir tant per els trams **d'alta tensió**
