@@ -40,3 +40,28 @@ requerida per la CNMC:
   indicar especificament quin és.
 
 
+
+
+## Generació de Informes
+
+La principal funcionalitat d'aquest mòdul és la de poder generar de forma
+automatitzada fitxers amb la informació sobre les reclamacions demanats per la
+CNMC. El format i la informació d'aquests fitxers segueixen les directrius
+definides en la circular 2/2016 mencionada anteriorment.
+
+
+L'assistent per generar els fitxers funciona de la següent manera:
+
+1. Es selecciona el trimestre les reclamacions del qual seran incloses en l'informe i es clica "Generar".
+
+2. Automàticament es generarà un fitxer '.csv' amb tota la informació sobre les reclamacions. Aquest fitxer es pot obrir o guardar.
+
+3. Al guardar el fitxer s'assignarà un nom amb el següent format:
+
+        "AAAA-MM-DD_electricidad_reclamaciones.csv"
+
+     on AAAA-MM-DD és la data en que s'ha generat l'informe. Aquest nom no s'ha de modificar ja que és el demanat per la CNMC.
+
+4. Les reclamacions que son incloses en aquest informe son totes aquelles que no estiguin en estat 'esborrany' i que pertanyin al trimestre seleccionat.
+    A més, l'any en que s'han obert aquestes reclamacions ha de ser l'any actual en cas de trimestres 1 i 2, i l'any anterior al actual en el cas de trimestre 3 i 4.
+    Es fa així per complir amb el requeriment de la CNMC de generar els informes del trimestre N en la primera quinzena trimestre N+2.
