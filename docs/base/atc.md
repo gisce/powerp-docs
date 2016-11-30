@@ -36,13 +36,14 @@ requerida per la CNMC:
 
     * **Reclamant**: Agent que planteja la reclamació.
 
+    * **Resultat**: Resultat final de la reclamació.
+
 ![](_static/atc/camps_nous_general.png)
 
 
 * A la pestanya **Extra Info**:
     * **Número total afectats**: Numero total de cups afectades en la reclamació.
 
-    * **Resultat**: Resultat final de la reclamació.
 
     * **Subtipus**: Subtipus de la reclamació. Si n'hi ha varis s'indica el
         princpal.
@@ -58,37 +59,8 @@ automatitzada fitxers amb la informació sobre les reclamacions demanats per la
 CNMC. El format i la informació d'aquests fitxers segueixen les directrius
 definides en la circular 2/2016 mencionada anteriorment.
 
-Mitjançant la opció "Generate ATC Reports" s'obrirà un assitent per generar
-l'informe:
+El procediment complet per generar aquests informes es detalla en els apartats:
 
-![](_static/atc/menu_atc.png)
+ * Distribuidora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
 
-
-
-
-Aquest assistent funciona de la següent manera:
-
-* Es selecciona el trimestre les reclamacions del qual seran incloses en
-    l'informe i es clica "Generar".
-
-![](_static/atc/assistent_inici.png)
-
-* Automàticament es generarà un fitxer '.csv' amb tota la informació sobre les
-    reclamacions. Aquest fitxer es pot obrir o guardar.
-
-![](_static/atc/assistent_final.png)
-
-* Al guardar el fitxer s'assignarà un nom amb el següent format:
-
-        "AAAA-MM-DD_electricidad_reclamaciones.csv"
-
-     on AAAA-MM-DD és la data en que s'ha generat l'informe. Aquest nom no s'ha
-     de modificar ja que és el demanat per la CNMC.
-
-
-Les reclamacions que son incloses en aquest informe son totes aquelles que no
-estiguin en estat 'esborrany' i que pertanyin al trimestre seleccionat.
-A més, l'any en que s'han obert aquestes reclamacions ha de ser l'any actual en
-cas de trimestres 1 i 2, i l'any anterior al actual en el cas de trimestre 3 i 4.    
-Es fa així per complir amb el requeriment de la CNMC de generar els informes
-del trimestre N en la primera quinzena trimestre N+2.
+ * Comercialitzadora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
