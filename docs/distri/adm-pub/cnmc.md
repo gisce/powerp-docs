@@ -1029,6 +1029,13 @@ Aquest assistent funciona de la següent manera:
 Les reclamacions que son incloses en aquest informe son totes aquelles corresponents als casos d'atenció al client que no
 estiguin en estat 'esborrany' i que pertanyin al trimestre i any seleccionats.
 
-A més, també s'inclouran les reclamacions corresponents als casos **R1** de
-**Gestió ATR** que hagin estat acceptades per la distribuidora (pas 02 amb acceptació)
-i s'hagin obert en el trimestre i any seleccionats en l'assistent.
+
+Al trobar-nos en una distribuidora, també s'inclouran les reclamacions
+corresponents als casos **R1** de **Gestió ATR** que ja tinguin un pas 02 creat
+(es a dir, que ja han estat  acceptats o rebutjats per la ditribuidora).
+
+
+En la situació en que els casos R1 tenen un pas 02 amb rebuig s'indicarar en l'informe que el
+resultat de la reclamació és "No Gestionable".
+Per altra banda, si ja s'ha tancat el cas ATR sense haver generat un pas 02 amb
+rebuig s'indicarà el resultat de la reclamació com a "Procedente / Favorable".
