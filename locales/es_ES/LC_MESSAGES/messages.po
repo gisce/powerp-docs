@@ -8,7 +8,15 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2016-11-03 11:04+0100\n"
+<<<<<<< HEAD
+"PO-Revision-Date: 2016-12-02 12:15+0100\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.3.4\n"
+=======
 "PO-Revision-Date: 2016-12-05 10:18+0100\n"
+>>>>>>> origin/master
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -1642,7 +1650,7 @@ msgid "<img alt=\"\" src=\"../_static/contadores/Captura02.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura02.png\" />"
 
 msgid "Prement el botó <strong>Nou</strong>"
-msgstr ""
+msgstr "Pulsando el botón <strong>Nuevo</strong>"
 
 msgid "<img alt=\"\" src=\"../_static/contadores/Captura03.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura03.png\" />"
@@ -1657,7 +1665,7 @@ msgid "<img alt=\"\" src=\"../_static/contadores/Captura04.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura04.png\" />"
 
 msgid "S'ompliran com a mínim els camps de color blau:"
-msgstr ""
+msgstr "Se rellenarán, como mínimo, los campos de color azul:"
 
 msgid ""
 "Un cop omplert l'encapçalament de la sol·licitud de pressupost amb aquestes\n"
@@ -1742,6 +1750,8 @@ msgstr "<img alt=\"\" src=\"../_static/contadores/Captura12.png\" />"
 msgid ""
 "Fent doble clic sobre l'ordre de compra, es mostrarà en format formulari."
 msgstr ""
+"Haciendo doble click sobre el orden de compra, se mostrará en formato "
+"formulario."
 
 msgid ""
 "Un cop fetes les gestions amb el proveïdor i es consensuin els preus amb la\n"
@@ -1772,6 +1782,8 @@ msgid ""
 "Obtindrem el llistat de totes les ordres de compra que\n"
 "han estat aprovades."
 msgstr ""
+"Obtendremos el listado de todas las ordenes de \n"
+"compra que han estado aprobadas"
 
 msgid "<img alt=\"\" src=\"../_static/contadores/Captura14.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura14.png\" />"
@@ -1785,7 +1797,7 @@ msgid "<img alt=\"\" src=\"../_static/contadores/Captura15.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura15.png\" />"
 
 msgid "Recepció de material amb número de sèrie"
-msgstr ""
+msgstr "Recepción de material con número de série"
 
 msgid ""
 "Accedim a l'<em>ordre de compra en proc&#233;s</em> per realizar-ne la "
@@ -1817,24 +1829,27 @@ msgid "<img alt=\"\" src=\"../_static/contadores/Captura17.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura17.png\" />"
 
 msgid "Aquesta fitxa conté un seguit de camps a títol informatiu:"
-msgstr ""
+msgstr "Esta ficha contiene un seguido de campos a título informativo:"
 
 msgid ""
 "Fent doble-click sobre la línia del material, apareix la fitxa per fer la\n"
 "recepció :"
 msgstr ""
+"Haciendo doble-click sobre la linia del material, aparece la ficha\n"
+"para hacer la recepción:"
 
 msgid "Fitxa recepció de línia de material"
-msgstr ""
+msgstr "Ficha recepción de línia de material"
 
 msgid "<img alt=\"\" src=\"../_static/contadores/Captura18.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura18.png\" />"
 
 msgid "Per fer la recepció del material, podem fer-ho segons diferents casos:"
 msgstr ""
+"Para hacer la recepción del material, podemos hacerlo por distintos casos:"
 
 msgid "Cas 1: Tots els comptadors amb número de sèrie correlatius"
-msgstr ""
+msgstr "Caso 1: Todos los contadores con número de série correlativos"
 
 msgid ""
 "Suposem que els 10 comptadors d'una comanda tenen número de sèrie "
@@ -1873,7 +1888,7 @@ msgid "<img alt=\"\" src=\"../_static/contadores/Captura21.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/contadores/Captura21.png\" />"
 
 msgid "Cas 2: Comptadors amb 2 grups de número de sèrie correlatius"
-msgstr ""
+msgstr "Caso2: Contadores con 2 grupos de número de série correlativos"
 
 msgid ""
 "Estem en aquest cas quan la recepció del material sigui parcial o bé que "
@@ -1889,7 +1904,7 @@ msgid ""
 msgstr ""
 
 msgid "Es procedirà de la següent forma:"
-msgstr ""
+msgstr "Se procederá de la siguiente forma:"
 
 msgid ""
 "Des de la <a href=\"#fitxa-recepcio-de-linia-de-material\">fitxa de "
@@ -1938,7 +1953,7 @@ msgid ""
 msgstr ""
 
 msgid "Es pot fer d'aquesta forma si no hi ha recepcions parcials de material."
-msgstr ""
+msgstr "Se puede hacer de esta forma si no hay recepciones parciales de material."
 
 msgid ""
 "En el cas de comandes que arriben amb diferents albarans d'entrega, el "
@@ -1949,22 +1964,22 @@ msgid ""
 msgstr ""
 
 msgid ":inside:base/cups:bullet_list:cups_form_fields"
-msgstr ""
+msgstr ":inside:base/cups:bullet_list:cups_form_fields"
 
 msgid ":after:base/cups:section:cups"
-msgstr ""
+msgstr ":after:base/cups:section:cups"
 
 msgid "Escomeses"
 msgstr ""
 
 msgid "Assiganció de CUPS"
-msgstr ""
+msgstr "Assiganción de CUPS"
 
 msgid "CUPS sense escomesa"
 msgstr ""
 
 msgid "Documentació del mòdul de pólissa"
-msgstr ""
+msgstr "Documentación del módulo de póliza"
 
 msgid ""
 "Des de una pólissa o des del botó acció del llistat de pólisses podem "
@@ -1995,7 +2010,7 @@ msgid "Assistent canvi dates modificació contractual"
 msgstr ""
 
 msgid "Funcionament"
-msgstr ""
+msgstr "Funcionamiento"
 
 msgid ""
 "Aquest assistent permet modificar la data d'alta, baixa i firma d'una "
@@ -2012,7 +2027,7 @@ msgid "Al fer click al botó apareix l'assistent."
 msgstr ""
 
 msgid "Sense mòdul de facturació:"
-msgstr ""
+msgstr "Sin módulo de facturación:"
 
 msgid ""
 "<img alt=\"\" src=\"../_static/polizas/assistent_modcon_1_no_fact.png\" />"
@@ -2020,13 +2035,13 @@ msgstr ""
 "<img alt=\"\" src=\"../_static/polizas/assistent_modcon_1_no_fact.png\" />"
 
 msgid "Amb mòdul de facturació:"
-msgstr ""
+msgstr "Con módulo de facturación:"
 
 msgid "<img alt=\"\" src=\"../_static/polizas/assistent_modcon_1.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/polizas/assistent_modcon_1.png\" />"
 
 msgid "Camps de l'assistent"
-msgstr ""
+msgstr "Campos del asistente"
 
 msgid ""
 "L'assistent disposa de varis camps que han de ser emplenats per tal de "
@@ -2063,7 +2078,7 @@ msgid ""
 msgstr ""
 
 msgid "Errors"
-msgstr ""
+msgstr "Errores"
 
 msgid ""
 "Durant la modificació de les dates d'una modificació contractual mitjançant\n"
@@ -2080,16 +2095,16 @@ msgid "<img alt=\"\" src=\"../_static/polizas/error_2.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/polizas/error_2.png\" />"
 
 msgid "Documentacion de Facturacion"
-msgstr ""
+msgstr "Documentación de Facturación"
 
 msgid "Veure també"
-msgstr ""
+msgstr "Ver también"
 
 msgid "Proces de facturació:"
 msgstr ""
 
 msgid "Lot de facturació"
-msgstr ""
+msgstr "Lote de facturación"
 
 msgid ""
 "L'apartat <em>Menu/Facturaci&#243;/lots de facturaci&#243;</em> &#233;s el "

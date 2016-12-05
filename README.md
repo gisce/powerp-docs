@@ -14,18 +14,25 @@ $ export PYTHONPATH=$PWD/sitecustomize
 
 ## Translations
 
-Titles on .yml must be translated manually
+Add your titles in all '*.yml'. They must be translated manually
 
-There must be one .yml file for each lang
+There must be one '.yml' file for each language (mkdocs.yml, mkdocs_es.yml...)
 
 Translatable strings can be found on "/locales" inside _messages.pot_
 
-Every mkdocs build updates the _message.pot_ file
+*Every mkdocs build using a '.yml' file updates the _message.pot_ file*
+_except the default one_
 
 Steps to translate your new documentation:
 
 1. Write your docs in the default lang (ca_ES)
-2. Local build your version (with _build_ or _serve_)
+2. Local build your version with:
+
+```shell
+_build_ -f mkdocs_es.yml
+_serve_ -f mkdocs_es.yml
+```
+
 3. Combine the new strings in the .pot with the old .po using:
 
     msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
@@ -34,14 +41,14 @@ Steps to translate your new documentation:
 
     poedit locales/lang/LC_MESSAGES/messages.po
 
-## Start documenting
+## Display documentation
 
 ```shell
 $ mkdocs serve
 $ mkdocs serve -f mkdocs_es.yml
 ```
 
-With this a webserver is started reloading automatically when is needed.
+With this a webserver is started locally reloading automatically when is needed.
 With the second command, we specify the config file to be used.
 
 - [Markdown Reference](https://pythonhosted.org/Markdown/index.html)
@@ -51,6 +58,7 @@ Markdown extensions:
 
 * Tables
 * Admonition
+* markdown_i18n
 
 ## Project structure
 
