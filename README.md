@@ -29,8 +29,8 @@ Steps to translate your new documentation:
 2. Local build your version with:
 
 ```shell
-_build_ -f mkdocs_es.yml
-_serve_ -f mkdocs_es.yml
+build -f mkdocs_es.yml
+serve -f mkdocs_es.yml
 ```
 
 3. Combine the new strings in the .pot with the old .po using:
@@ -40,6 +40,8 @@ _serve_ -f mkdocs_es.yml
 4. Generate the new translations from the updated .po using *poedit*
 
     poedit locales/lang/LC_MESSAGES/messages.po
+
+**Always commit the translated and updated .po and the compiled .mo**
 
 ## Display documentation
 
