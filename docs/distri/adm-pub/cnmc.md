@@ -1690,24 +1690,24 @@ ORÍGEN
 Camps obtinguts directament dels camps de la fitxa de **CEL·LES I ELEMENTS DE TALL**
 
 
-+-----------------------+-------------------------------------------------------------------------------------+
+
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
-+=======================+=====================================================================================+
+|=======================+=====================================================================================|
 |IDENTIFICADOR          |CODI DE LA CEL·LA O ELEMENT DE TALL                                                  |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL CEL·LA O ELEMENT DE TALL                                                    |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |ELEMENTO_ACT           |NOM DEL CT `CT-XXX`, SUBESTACIÓ `SE-XXX` O TRAM del seccionador                      |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU            |TIPO D'INSTAL·LACÍO CNMC                                                             |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA           |
 |                       |RESOLUCIÓ                                                                            |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA APM DE LA CEL·LA                                                                |
-+-----------------------+-------------------------------------------------------------------------------------+
+|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DE LA CEL·LA                                                           |
-+-----------------------+-------------------------------------------------------------------------------------+
++-----------------------|-------------------------------------------------------------------------------------|
 
 Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
 a partir de valors de camps de la BD i càlculs addicionals.
@@ -1815,19 +1815,19 @@ A través d'aquest assistent podem generar els fitxers csv que demana la resoluc
 
 * **Tipus** En el desplegable tipus es pot seleccionar el fitxer .csv que es vol generar
 
-================= === ======================================================= =======================
-Fitxer            Num Descripció
-================= === ======================================================= =======================
-LAT CSV           1   LINIES AT                                               Inventario_R1-XXX_1.txt
-BT CSV            2   LINIES BT                                               Inventario_R1-XXX_2.txt
-Subestacions CSV  3   NODE SUBESTACIONS                                       Inventario_R1-XXX_3.txt
-Posicions CSV     4   NODE POSICIONS EQUIPADES AMB INTERRUPTOR DE SUBESTACIÓ  Inventario_R1-XXX_4.txt
-Maquines CSV      5   NODE MAQUINA                                            Inventario_R1-XXX_5.txt
-Condensadors CSV  5   NODE MAQUINA                                            Inventario_R1-XXX_9.txt
-Despatx CSV       6   NODE DESPATX                                            Inventario_R1-XXX_6.txt
-Fiabilitat CSV    7   NODE EQUIPS DE MILLORA DE LA FIABILITAT                 Inventario_R1-XXX_7.txt
-CTS CSV           8   NODE CENTRES DE TRANSFORMACIÓ                           Inventario_R1-XXX_8.txt
-================= === ======================================================= =======================
+
+|Fitxer          | Num | Descripció                                            |                        |
+|----------------|-----|-------------------------------------------------------|------------------------|
+|LAT CSV         | 1   | LINIES AT                                             | Inventario_R1-XXX_1.txt|
+|BT CSV          | 2   | LINIES BT                                             | Inventario_R1-XXX_2.txt|
+|Subestacions CSV| 3   | NODE SUBESTACIONS                                     | Inventario_R1-XXX_3.txt|
+|Posicions CSV   | 4   | NODE POSICIONS EQUIPADES AMB INTERRUPTOR DE SUBESTACIÓ| Inventario_R1-XXX_4.txt|
+|Maquines CSV    | 5   | NODE MAQUINA                                          | Inventario_R1-XXX_5.txt|
+|Condensadors CSV| 5   | NODE MAQUINA                                          | Inventario_R1-XXX_9.txt|
+|Despatx CSV     | 6   | NODE DESPATX                                          | Inventario_R1-XXX_6.txt|
+|Fiabilitat CSV  | 7   | NODE EQUIPS DE MILLORA DE LA FIABILITAT               | Inventario_R1-XXX_7.txt|
+|CTS CSV         | 8   | NODE CENTRES DE TRANSFORMACIÓ                         | Inventario_R1-XXX_8.txt|
+
 
 * **Any**: Automàticament s'escull l'any anterior a l'any en curs
 * **R1**: Automàticament s'agafa el valor del camp `ref2` de la empresa associada a la nostra companyia
