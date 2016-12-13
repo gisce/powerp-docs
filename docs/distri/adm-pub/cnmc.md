@@ -990,7 +990,7 @@ Camp            | Descripció
 Número de sèrie | Número de sèrie del comptador
 CINI            | Codi CINI del comptador
 
-## Inventaria 4131
+## Inventari 4131
 
 ### Introducció
 
@@ -1001,24 +1001,24 @@ de les instal·lacions en format TXT.
 El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la resolució 4131.
 
 
-.. note::
+*nota:*
     Relacionats amb aquest módul hi ha el módul de subestacions, cel·les i elements de tall, despatxos, posicions,
     Catàleg de cables AT, Catàleg de cables BT, Expedients i Condensadors.
 
-.. note::
+*nota:*
     S'han de unificar els CINI's als publicats a la resolució 4131/2016
 
-.. note::
+*nota:*
     A totes les fitxes s'ha inclós el camp `CNMC Tipus Instal·lació` i el camp `Bloquejar CNMC Tipus Instal·lació`. Amb
     aquest camp es poden intorduïr els camps **TI-XXX** que es defineixen a la *Taula 3* de la resolució 4131. Si es
     marca la variable de bloqueig, cap automatisme de càrrega o modificació automàtica del camp `CNMC Tipus Instal·lació`
     modificarà el valor actual.
 
-.. note::
+*nota:*
     Els informes de Maquines i condensadors s'han d'unificar en un sol fitxer. S'han separat en dos per facilitar-ne la
     seva traçabilitat
 
-.. note::
+*nota:*
    El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
 
 ### Carrega de fitxers de la 4771
@@ -1040,12 +1040,12 @@ El menu de carrega es troba a Administració Pública/CNMC/Resolucions/Resolucio
 **LINIES AT**
 
 
-.. note::
+*nota:*
     Tots els camps referents a les línies provenen dels models de  **trams,** **linies,** **conductors,** i **expedient**
     per tant hauran d'estar ben complimentats tots els camps que fa servir. Aquest NODE es genera en 2 fitxers csv,
     un per línies AT i un altre per les línies BT
 
-.. note::
+*nota:*
     Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
 
 ##### ELEMENTS SELECCIONATS
@@ -1071,7 +1071,7 @@ la línia a la qual pertany
 * **Conductor**: El tipus del cable associat al tram i **NO** ha de ser
   **EMBARRAT** (E)
 
-.. note::
+*nota:*
     S'han de comprovar tots els registres que tenen data_APM de l'any en que es genera el fitxer (en aquest cas 2016)
     perque no sortiran als fitxers .csv.
     S'han de comprovar les instal·lacions **reformades** durant l'any en que es genera el fitxer i comprovar les 
@@ -1166,11 +1166,11 @@ indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valo
 
 **LINIES BT**
 
-.. note::
+*note:*
     Tots els camps referents a les línies BT provenen dels models de **Elements BT** i **CT** 
     per tant hauran d'estar ben cumplimentats tots els camps que fa servir.
 
-.. note::
+*nota:*
     Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
 
 ELEMENTS SELECCIONATS
@@ -1340,7 +1340,7 @@ En el cas que no hi hagi informacio referent a la 4771 d'aquest element es consi
 NODE: POSICIONES EQUIPADAS CON INTERRUPTOR EN SUBESTACIONES
 -----------------------------------------------------------
 
-.. note::
+*nota:*
     Per obtenir aquest fitxer cal tenir configurat el mòdul de subestaciions.
     
 ELEMENTS SELECCIONATS
@@ -1435,12 +1435,12 @@ la fitxa de **Transformadors**:
 * **Reductor**: Tots els transformadors que tinguin el camp `Reductor` marcat i
   estiguin en un estat inclòs en l'inventari
 
-.. note::
+*nota:*
    
    Els Transformadors Reductors també estan inclosos en el
    llistat si compleixen les condicions especificades.
 
-.. note::
+*note:*
    :name: notaestat
 
    Apareixeran en aquest inventari tots els transformadors que l'estat en que
@@ -1452,14 +1452,14 @@ la fitxa de **Transformadors**:
 .. image:: _static/estats_inventari.png
    :name: notaestatimg
 
-.. note::
+*nota:*
 
    Els diferents **Tipus de transformadors** que han de sortir com **mòbils**,
    **reguladors de tensió**, **Condensadors** i **Reactàncies** s'han de
    configurar de forma que compleixin alguna de les condicions esmentades, p.e.
    amb un estat marcat com a **apareix a l'inventari**
 
-.. note::
+*nota:*
    Apareixen en aquest inventari els condensadors d'AT,de BT i bateries fixes i
    automatiques. Aquests s'han d'entrar al menu de l'EPR de condensadors
    (Centres Transformadors/Manteniment/Cel·les i elements de tall/Condensadors).
@@ -1509,13 +1509,13 @@ a partir de valors de camps de la BD i càlculs addicionals.
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
 +-----------------------------+-------------------------------------------------------------------------------+
 
-.. note::
+*nota:*
 
    El camp **TENSION_PRIMARIO** escollirà la tensió més alta dels camps P1 i P2 de les connexions **connectades**
    del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
    Normalitzades o la deixarà igual si no en troba cap.
 
-.. note::
+*nota:*
 
    El camp **TENSION_SECUNDARIO** escollirà la tensió més alta dels camps B1, B2 i B3 de les connexions **connectades**
    del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
