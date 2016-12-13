@@ -36,18 +36,18 @@ for s in es_file:
     else:
         t_strings.append(s.string)
 
-print (u'\nTranslated strings: {0}/{1} ({2}%)\n'.format(
-    len(t_strings), len(strings), len(t_strings)/len(strings) * 100
-))
-if failed_strings:
-    print (u'There are strings not translated!\n{}'.format(failed_strings))
-    exit(-1)
-
 print (u'Checking all strings in pot to be in po...')
 es_strings = set(es_strings)
 substr = strings - es_strings
 if substr != set():
     print (u'There are missing strings in the po file!\n{}'.format(substr))
+    exit(-1)
+    
+print (u'\nTranslated strings: {0}/{1} ({2}%)\n'.format(
+    len(t_strings), len(strings), len(t_strings)/len(strings) * 100
+))
+if failed_strings:
+    print (u'There are strings not translated!\n{}'.format(failed_strings))
     exit(-1)
 
 print (u'Success!')
