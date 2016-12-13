@@ -1189,7 +1189,7 @@ condicions de la fitxa de **Elements bt**:
 * **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
   a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
 
-*ORÍGEN*
+*ORÍGEN:*
 
 Camps obtinguts directament dels camps de la fitxa de **ELEMENTS_BT**
 
@@ -1263,7 +1263,7 @@ Quedant el camp existent
 
 * **Data alta**: Aquesta data correspon a la data en que es va instal·lar.( data de realització de la obra)
 
-*CRITERI ESTADO*
+*CRITERI ESTADO:*
 
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
@@ -1283,7 +1283,7 @@ NODE: SUBESTACIÓ
 !!! note
    Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.
 
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran les Subestacions que compleixin les següents condicions
@@ -1297,7 +1297,7 @@ de la fitxa de **Subestacions**:
 * **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
   a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
 
-*ORÍGEN*
+*ORÍGEN:*
 
 
 Camps obtinguts directament dels camps de la fitxa de **SUBESTACIONS**
@@ -1332,8 +1332,8 @@ a partir de valors de camps de la BD i càlculs addicionals.
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
 
 
-CRITERI ESTADO
-^^^^^^^^^^^^^^
+*CRITERI ESTADO:*
+
 
 En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2), sino es considerara no modificat(0).
 
@@ -1344,7 +1344,7 @@ NODE: POSICIONES EQUIPADAS CON INTERRUPTOR EN SUBESTACIONES
 !!! note
     Per obtenir aquest fitxer cal tenir configurat el mòdul de subestaciions.
     
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran les posicions  que compleixin les següents 
@@ -1359,7 +1359,7 @@ condicions de la fitxa de **Posicions**:
 * **Data APM**: Data de posta en anterior anterior al final de l'any sol·licitat,
   a 1 de Gener ( p.e. per l'any 2014 data_APM < 01/01/2015)
 
-*ORÍGEN*
+*ORÍGEN:*
 
 
 Camps obtinguts directament dels camps de la fitxa de **POSICIONS**
@@ -1399,7 +1399,7 @@ El tipus de posició d'intemperie serà assimilable a la convencional i el tipus
 posició blindada.
 
 
-*CRITERI ESTADO*
+*CRITERI ESTADO:*
 
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
@@ -1416,7 +1416,7 @@ Si no es troben modificacions es posara el camp a 0.
 NODE: MÁQUINA
 -------------
 
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran els Transformadors que compleixin les següents condicions de
@@ -1464,7 +1464,7 @@ la fitxa de **Transformadors**:
    Comprovar que no estiguin entrats a Cel·les
 
 
-*ORÍGEN*
+*ORÍGEN:*
 
 
 Camps obtinguts directament dels camps de la fitxa de **TRANSFORMADORS** i **CONDENSADORS**
@@ -1603,7 +1603,7 @@ Si no es troben modificacions es posara el camp a 0.
 NODE: DESPACHO
 --------------
 
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran els Despatxos que compleixin les següents 
@@ -1612,7 +1612,7 @@ condicions de la fitxa de la fitxa accessible a `Infraestructura / Despatxos`:
 * **Any_PS**: L'any de posada en servei ha de ser inferior o igual al
   sol·licitat
 
-*ORÍGEN*
+*ORÍGEN:*
 
 
 ![](../_static/cnmc/4131/DESPATXOS_1.png)
@@ -1646,7 +1646,7 @@ a partir de valors de camps de la BD i càlculs addicionals.
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
 
 
-*CRITERI ESTADO*
+*CRITERI ESTADO:*
 
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
@@ -1665,7 +1665,7 @@ Si no es troben modificacions es posara el camp a 0.
 NODE: EQUIPOS DE MEJORA DE LA FIABILIDAD
 ----------------------------------------
 
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran les Cel·les i elements de Tall que compleixin les següents 
@@ -1683,7 +1683,7 @@ suports:
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 1 de Gener
 
-*ORÍGEN*
+*ORÍGEN:*
 
 
 Camps obtinguts directament dels camps de la fitxa de **CEL·LES I ELEMENTS DE TALL**
@@ -1718,7 +1718,7 @@ a partir de valors de camps de la BD i càlculs addicionals.
 
 
 
-*CRITERI ESTADO*
+*CRITERI ESTADO:*
 
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
@@ -1750,7 +1750,7 @@ condicions de la fitxa de **CT**:
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 1 de Gener
 
-*ORÍGEN*
+*ORÍGEN:*
 
 Camps obtinguts directament dels camps de la fitxa de **CTS**
 
@@ -1783,7 +1783,7 @@ a partir de valors de camps de la BD i càlculs addicionals.
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
 
 
-*CRITERI ESTADO*
+*CRITERI ESTADO:*
 
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
