@@ -1027,7 +1027,8 @@ El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la re
 Per tal que el ERP pugui fer el calculdel camp estat de la 4131 s'h de carregar el fitxer presentat en la 4771.
 El format del ftixer que s'ha de carregar es format ZIP en el cual a l'arrel del fitxer hi hauran els 8 fitxers entregats.
 
-.. image:: _static/carrega_4771.png
+![](../_static/cnmc/4131/carrega_4771.png)
+
 
 El menu de carrega es troba a Administració Pública/CNMC/Resolucions/Resolucio 4131/2016/Carregar Fitxer presentat 4771
 
@@ -1161,7 +1162,7 @@ La intensitat del cable **INTENSITAT ADMISIBLE** estarà indicada en Ampers, aqu
 tot cas la capacitat s'ha de correspondre amb la capacitat de l'hivern, per a una temperatura ambient de 10ºC segons
 indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valor numèric.
 
-.. image:: _static/cataleg_cables_at.png
+![](../_static/cnmc/4131/cataleg_cables_at.png)
 
 
 **LINIES BT**
@@ -1251,7 +1252,7 @@ tot cas la capacitat s'ha de correspondre amb la capacitat de l'hivern, per a un
 indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valor numèric.
 
 
-.. image:: _static/cataleg_cables_BT.png
+![](../_static/cnmc/4131/cataleg_cables_BT.png)
 
 
 A la fitxa del catàleg de cables s'ha afegit el camp:
@@ -1448,8 +1449,7 @@ la fitxa de **Transformadors**:
    Cada empresa pot indicar que apareixin en aquest llistat els transformadors
    que es troben en diferents estats modificant el checkbox corresponent.
 
-.. image:: _static/estats_inventari.png
-   :name: notaestatimg
+![](../_static/cnmc/4131/estats_inventari.png)
 
 !!! note
    Els diferents **Tipus de transformadors** que han de sortir com **mòbils**,
@@ -1517,8 +1517,7 @@ a partir de valors de camps de la BD i càlculs addicionals.
    del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
    Normalitzades o la deixarà igual si no en troba cap.
 
-.. figure:: _static/llistat_connexions_trafo.png
-   :name: connexionstrafo
+![](../_static/cnmc/4131/llistat_connexions_trafo.png)
 
    Llistat de connexions d'un transformador
 
@@ -1580,8 +1579,8 @@ configuren de la següent forma:
 En el cas de la resolució 4131, s'agafarà el valor de tensió `Tensió a aplicar` que correspongui per quan la tensió (T)
 compleixi `Llindar_inferior <= (T) < Llindar superior`
 
-.. figure:: _static/form_tensio_normalitzada.png
-   :name: tensionormalitzada
+
+![](../_static/cnmc/4131/form_tensio_normalitzada.png)
 
    Fitxa de tensió normalitzada
 
@@ -1616,9 +1615,9 @@ condicions de la fitxa de la fitxa accessible a `Infraestructura / Despatxos`:
 ORÍGEN
 ^^^^^^
 
-.. image:: _static/DESPATXOS_1.png
+![](../_static/cnmc/4131/DESPATXOS_1.png)
 
-.. image:: _static/DESPATXOS_2.png
+![](../_static/cnmc/4131/DESPATXOS_2.png)
 
 Camps obtinguts directament dels camps de la fitxa de **DESPATXOS**
 
@@ -1805,13 +1804,12 @@ Menú
 Per accedir a l'assistent per generar els fitxers CSV i el XML cal anar al menú
 **Administració pública / CNMC / Resolucions / Resolucio 4131/2016 / Generar Inventari 4131**
 
-.. figure:: _static/MENU_4131_1.png
-   :align: center
+![](../_static/cnmc/4131/MENU_4131_1.png)
 
 A través d'aquest assistent podem generar els fitxers csv que demana la resolució.
 
-.. image:: _static/MENU_4131_2.png
-   :align: center
+![](../_static/cnmc/4131/MENU_4131_2.png)
+
 
 * **Tipus** En el desplegable tipus es pot seleccionar el fitxer .csv que es vol generar
 
@@ -1832,8 +1830,8 @@ A través d'aquest assistent podem generar els fitxers csv que demana la resoluc
 * **Any**: Automàticament s'escull l'any anterior a l'any en curs
 * **R1**: Automàticament s'agafa el valor del camp `ref2` de la empresa associada a la nostra companyia
 
-.. image:: _static/MENU_4131_3.png
-   :align: center
+![](../_static/cnmc/4131/MENU_4131_3.png)
+
 
 Una vegada generat el fitxer csv es pot analitzar per validar-lo i veure quines dades falten a la base de dades
 o fer modificacions directament al fitxer.txt
