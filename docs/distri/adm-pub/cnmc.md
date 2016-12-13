@@ -1079,8 +1079,7 @@ la línia a la qual pertany
     dates_APM dels registres en questió per veure si han de sortir o no als .csv y si cal modificar la data_APM per
     que apareixin en la generació dels fitxers.
 
-ORÍGEN
-^^^^^^
+*ORÍGEN:*
 
 S'han afegit nous camps a la fitxa dels trams:
 
@@ -1154,7 +1153,7 @@ indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valo
 !!! note
     Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
 
-*ELEMENTS SELECCIONATS*
+*ELEMENTS SELECCIONATS:*
 
 
 Només s'inclouran els Trams BT que compleixin les següents 
@@ -1508,8 +1507,8 @@ compleixi `Llindar_inferior <= (T) < Llindar superior`
 
    Fitxa de tensió normalitzada
 
-CRITERI ESTADO
-^^^^^^^^^^^^^^
+*CRITERI ESTADO:*
+
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
 
@@ -1698,13 +1697,11 @@ Els camps que es comparen per saber si s'ha modificat(1) un element son:
 En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
 Si no es troben modificacions es posara el camp a 0.
 
-=======================
-Generació dels informes
-=======================
 
-----
-Menú
-----
+### Generació dels informes
+
+**Menú**
+
 
 Per accedir a l'assistent per generar els fitxers CSV i el XML cal anar al menú
 **Administració pública / CNMC / Resolucions / Resolucio 4131/2016 / Generar Inventari 4131**
