@@ -1368,13 +1368,7 @@ Només s'inclouran els Transformadors que compleixin les següents condicions de
 la fitxa de **Transformadors**:
 
 * **Estat**: Els transformadors associats a un estat que el camp **apareix a
-  l'inventari** estigui marcat (veure la nota).
-  !!! note
-    Apareixeran en aquest inventari tots els transformadors que l'estat en que
-    es troben te marcada la casella **apareix a l'inventari**, tal com s'indica
-    a la imatge següent `notaestatimg`_, i tots el que el seu estat es NULL.
-    Cada empresa pot indicar que apareixin en aquest llistat els transformadors
-    que es troben en diferents estats modificant el checkbox corresponent.
+  l'inventari** estigui marcat (veure la següent nota).
 * **Actiu**:
    * Ha d'estar actiu o,
    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data
@@ -1386,6 +1380,13 @@ la fitxa de **Transformadors**:
   CT` sigui major de 2 (`>2`)
 * **Reductor**: Tots els transformadors que tinguin el camp `Reductor` marcat i
   estiguin en un estat inclòs en l'inventari
+
+!!! note
+    Apareixeran en aquest inventari tots els transformadors que l'estat en que
+    es troben te marcada la casella **apareix a l'inventari**, tal com s'indica
+    a la imatge següent `notaestatimg`_, i tots el que el seu estat es NULL.
+    Cada empresa pot indicar que apareixin en aquest llistat els transformadors
+    que es troben en diferents estats modificant el checkbox corresponent.
 
 !!! note
     Els Transformadors Reductors també estan inclosos en el llistat si 
