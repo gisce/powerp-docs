@@ -1019,7 +1019,7 @@ El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la re
     seva traçabilitat
 
 !!! note
-   El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
+    El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
 
 ### Carrega de fitxers de la 4771
 
