@@ -1460,7 +1460,7 @@ CONDENSADORS:
 
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
-|=======================+=====================================================================================|
+|-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |CÓDIGO INTERNO DEL CONDENSADOR                                                       |
 |CINI                   |CINI DEL CONDENSADOR                                                                 |
 |DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA `ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT` |
