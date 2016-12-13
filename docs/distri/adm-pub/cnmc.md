@@ -1097,32 +1097,18 @@ Camps obtinguts directament dels camps de la fitxa de **TRAMS**
 | CAMP                       |CAMP DE LA BASE DE DADES                                                             |
 |----------------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR               |IDENTIFICADOR DEL TRAM                                                               |
-|----------------------------|-------------------------------------------------------------------------------------|
 |CINI                        |CINI DEL TRAM                                                                        |
-|----------------------------|-------------------------------------------------------------------------------------|
 |ORIGEN                      |ORIGEN TRAM                                                                          |
-|----------------------------|-------------------------------------------------------------------------------------|
 |DESTINO                     |FINAL TRAM                                                                           |
-|----------------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU                 |TIPO D'INSTAL·LACIO                                                                  |
-|----------------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION               |100-%FINANÇAMENT                                                                     |
-|----------------------------|-------------------------------------------------------------------------------------|
 |FECHA APS                   |DATA APM DEL TRAM                                                                    |
-|----------------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA                  |DATA DE BAIXA,SI ES EN L'ANY ACTUAL NO APAREIX                                       |
-|----------------------------|-------------------------------------------------------------------------------------|
 |NUMERO_CIRCUITOS            |CIRCUITS                                                                             |
-|----------------------------|-------------------------------------------------------------------------------------|
 |NUMERO_CONDUCTORES          |CAMP FIX=1                                                                           |
-|----------------------------|-------------------------------------------------------------------------------------|
-|NIVEL_TENSION               |CAMP TENSIÓ MÁXIMA DE DISSENY (SI HI ÉS) O TENSIÓ DE LA LÍNIA ASSOCIADA AL TRAM EN   |
-|                            |CAS DE NO ESTAR CONFIGURADA. / 1000 PER TENIR-LA EN kV                               |
-|----------------------------|-------------------------------------------------------------------------------------|
+|NIVEL_TENSION               |CAMP TENSIÓ MÁXIMA DE DISSENY (SI HI ÉS) O TENSIÓ DE LA LÍNIA ASSOCIADA AL TRAM EN CAS DE NO ESTAR CONFIGURADA. / 1000 PER TENIR-LA EN kV |
 |LONGITUD                    |LONGITUD DEL TRAM/1000                                                               |
-|----------------------------|-------------------------------------------------------------------------------------|
 |INTENSITAT MÁXIMA           |INTENSITAT MÁXIMA DEL CABLE ASSOCIAT AL TRAM                                         |
-|----------------------------|-------------------------------------------------------------------------------------|
 |SECCION                     |VALOR NUMÉRIC DEL CAMP **SECCIÓ** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM         |
 
 
@@ -1131,19 +1117,13 @@ Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es
 a partir de valors de camps de la BD i càlculs addicionals.
 
 
-| CAMP                       |CAMP DE LA BASE DE DADES                                                             |
-|----------------------------|-------------------------------------------------------------------------------------|
-|CODIGO_CCAA_1               |EN FUNCIÓ DEL MUNICIPI DE LA LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
-|                            |4131                                                                                 |
-|----------------------------|-------------------------------------------------------------------------------------|
+| CAMP                       |CAMP DE LA BASE DE DADES                                                                  |
+|----------------------------|------------------------------------------------------------------------------------------|
+|CODIGO_CCAA_1               |EN FUNCIÓ DEL MUNICIPI DE LA LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  4131 |
 |CODIGO_CCAA_2               |Aquest camp sempre serà igual a CODIGO_CCAA_1                                        |
-|----------------------------|-------------------------------------------------------------------------------------|
-|CAPACIDAD                   |VALOR DEL CAMP INTESITAT MÀXIMA DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM           |
-|                            |EN FUNCIÓ DE LA TENSIÓ MÀXIMA DE DISSENY DEL TRAM I SI NO DE LA TENSIÓ DE LA LINIA   |
-|                            |AT A LA QUE ESTA ASSOCIAT EL TRAM (en MVA)                                           |
-|----------------------------|-------------------------------------------------------------------------------------|
+|CAPACIDAD                   |VALOR DEL CAMP INTESITAT MÀXIMA DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM EN FUNCIÓ DE LA TENSIÓ MÀXIMA DE DISSENY DEL TRAM I SI NO DE LA TENSIÓ DE LA LINIA   AT A LA QUE ESTA ASSOCIAT EL TRAM (en MVA)|
 |ESTADO                      |SI S'HA DONAT D'ALTA EL TRAM EN AQUEST ANY SERA 2 ALTREMENT 0                        |
-|----------------------------|-------------------------------------------------------------------------------------|
+
 
 CODIGO_CCAA_2 aquest camp es només pels trams de línia que comencen en una comunitat autónoma i acaben
 en una altra.
@@ -1197,36 +1177,20 @@ Camps obtinguts directament dels camps de la fitxa de **ELEMENTS_BT**
 | CAMP                         |CAMP DE LA BASE DE DADES                                                             |
 |------------------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR                 |IDENTIFICADOR DEL TRAM BT (INTERN DE LA TOPOLOGIA)                                   |
-|------------------------------|-------------------------------------------------------------------------------------|
 |CINI                          |CINI DEL TRAM BT                                                                     |
-|------------------------------|-------------------------------------------------------------------------------------|
 |ORIGEN                        |NUS INICI, (INTERN DE LA TOPOLOGIA)                                                  |
-|------------------------------|-------------------------------------------------------------------------------------|
 |DESTINO                       |NUS FINAL, (INTERN DE LA TOPOLOGIA)                                                  |
-|------------------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU                   |TIPUS D'INSTAL·LACIO DEL TRAM BT                                                     |
-|------------------------------|-------------------------------------------------------------------------------------|
-|CODIGO_CCAA_1                 |EN FUNCIÓ DEL **MUNICIPI** DEL TRAM_BT I LA CCAA RELACIONADA A LA TAULA 4 DE LA      |
-|                              |RESOLUCIÓ 4131                                                                       |
-|------------------------------|-------------------------------------------------------------------------------------|
+|CODIGO_CCAA_1                 |EN FUNCIÓ DEL **MUNICIPI** DEL TRAM_BT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ 4131 |
 |CODIGO_CCAA_2                 |Aquest camp sempre serà igual a CODIGO_CCAA_1                                        |
-|------------------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION                 |100-%FINANÇAMENT                                                                     |
-|------------------------------|-------------------------------------------------------------------------------------|
 |FECHA APS                     |DATA APM DEL TRAM BT                                                                 |
-|------------------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA                    |DATA DE BAIXA DEL TRAM DE BT                                                         |
-|------------------------------|-------------------------------------------------------------------------------------|
 |NUMERO_CIRCUITOS              |CAMP FIX=1                                                                           |
-|------------------------------|-------------------------------------------------------------------------------------|
 |NUMERO_CONDUCTORES            |CAMP FIX=1                                                                           |
-|------------------------------|-------------------------------------------------------------------------------------|
 |LONGITUD                      |LONGITUD DEL TRAM_BT/1000                                                            |
-|------------------------------|-------------------------------------------------------------------------------------|
 |INTENSITAT MÁXIMA             |INTENSITAT MÁXIMA DEL CABLE ASSOCIAT AL TRAM BT                                      |
-|------------------------------|-------------------------------------------------------------------------------------|
 |SECCION                       |VALOR NUMÉRIC DEL CAMP **SECCIÓ** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM_BT      |
-|------------------------------|-------------------------------------------------------------------------------------|
 
 Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
 a partir de valors de camps de la BD i càlculs addicionals.
@@ -1234,9 +1198,7 @@ a partir de valors de camps de la BD i càlculs addicionals.
 
 | CAMP                        |CAMP CALCULAT                                                                        |
 |-----------------------------|-------------------------------------------------------------------------------------|
-|CAPACIDAD                    |VALOR FUNCIÓ DEL CAMP **INTESITAT MÀXIMA** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL     |
-|                             |TRAMB_BT I LA TENSIÓ DEL TRAM AL CAMP **VOLTATGE**                                   |
-|-----------------------------|-------------------------------------------------------------------------------------|
+|CAPACIDAD                    |VALOR FUNCIÓ DEL CAMP **INTESITAT MÀXIMA** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAMB_BT I LA TENSIÓ DEL TRAM AL CAMP **VOLTATGE** |
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                              |
 
 
@@ -1306,21 +1268,13 @@ Camps obtinguts directament dels camps de la fitxa de **SUBESTACIONS**
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |IDENTIFICADOR DE LA SUBESTACIÓ                                                       |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DE LA SUBESTACIÓ                                                                |
-|-----------------------|-------------------------------------------------------------------------------------|
 |DENOMINACIÓN           |NOM DE LA SUBESTACIÓ                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DE LA SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ   |
-|-----------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION          |100-%FINANÇAMENT                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA APM DE LA SUBESTACIÓ                                                            |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DE LA SUBESTACIO                                                       |
-|-----------------------|-------------------------------------------------------------------------------------|
-|POSICIONES             |SUMA EL NOMBRE DE POSICIONS QUE TE LA SE A LA PESTANYA POSICIONS EQUIPADES AMB       |
-|                       |INTERUPTOR                                                                           |
+|POSICIONES             |SUMA EL NOMBRE DE POSICIONS QUE TE LA SE A LA PESTANYA POSICIONS EQUIPADES AMB INTERUPTOR |
 
 
 Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
@@ -1368,21 +1322,13 @@ Camps obtinguts directament dels camps de la fitxa de **POSICIONS**
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |IDENTIFICADOR DE LA POSICIÓN                                                         |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DE LA POSICIÓN                                                                  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |DENOMINACIÓN           |NOM DE LA SUBESTACIÓ                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DE LA SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ   |
-|-----------------------|-------------------------------------------------------------------------------------|
 |NIVEL_TENSION          |CAMP TENSIÓ DE LA POSICIÓ / 1000                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION          |100-%FINANÇAMENT                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA DE POSADA EN MARXA DE LA POSICIÓ                                                |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DE L'INTERRUPTOR                                                       |
 
 
@@ -1475,26 +1421,15 @@ TRANSFORMADORS:
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |CÓDIGO INTERNO DEL TRANSFORMADOR                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL TRANSFORMADOR                                                               |
-|-----------------------|-------------------------------------------------------------------------------------|
-|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA       |
-|                       |`ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT`              |
-|-----------------------+-------------------------------------------------------------------------------------|
+|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA `ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT` |
 |CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |TENSION_PRIMARIO       |SEGONS ELS CAMPS P1 i P2 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS      |
-|-----------------------|-------------------------------------------------------------------------------------|
 |TENSION_SECUNDARIO     |SEGONS ELS CAMPS B1, B2 i B3 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION          |100-%FINANÇAMENT                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA APM DEL TRANSFORMADOR                                                           |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DEL TRANSFORMADOR                                                      |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CAPACIDAD              |POTENCIA NOMINAL DEL TRANSFORMADOR EN MVA                                            |
 
 
@@ -1527,26 +1462,15 @@ CONDENSADORS:
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |=======================+=====================================================================================|
 |IDENTIFICADOR          |CÓDIGO INTERNO DEL CONDENSADOR                                                       |
-|-----------------------+-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL CONDENSADOR                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------|
-|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA       |
-|                       |`ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT`              |
-|-----------------------|-------------------------------------------------------------------------------------|
+|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA `ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT` |
 |CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |TENSION_PRIMARIO       |TENSIO DEL CONDENSADOR                                                               |
-|-----------------------|-------------------------------------------------------------------------------------|
 |TENSION_SECUNDARIO     |SEGONS ELS CAMPS B1, B2 i B3 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION          |100-%FINANÇAMENT                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA APM DEL CONDENSADOR                                                             |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DEL CONDENSADOR                                                        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CAPACIDAD              |POTENCIA NOMINAL DEL CONDENSADOR EN MVA                                              |
 
 
@@ -1625,15 +1549,10 @@ Camps obtinguts directament dels camps de la fitxa de **DESPATXOS**
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |IDENTIFICADOR                                                                        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL DESPATX                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |DENOMINACIÓN           |DESCRIPCIÓ DE LA INSTAL·LACIÓ                                                        |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |DATA DE POSADA EN MARXA DE LA INSTAL·LACIÓ                                           |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DE AL INSTAL·LACÍO                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |VALOR DE LA INVERSIÓN  |VALOR DE LA INVERSIÓ EN €                                                            |
 
 
@@ -1693,18 +1612,11 @@ Camps obtinguts directament dels camps de la fitxa de **CEL·LES I ELEMENTS DE T
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |CODI DE LA CEL·LA O ELEMENT DE TALL                                                  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL CEL·LA O ELEMENT DE TALL                                                    |
-|-----------------------|-------------------------------------------------------------------------------------|
 |ELEMENTO_ACT           |NOM DEL CT `CT-XXX`, SUBESTACIÓ `SE-XXX` O TRAM del seccionador                      |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU            |TIPO D'INSTAL·LACÍO CNMC                                                             |
-|-----------------------|-------------------------------------------------------------------------------------|
-|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA           |
-|                       |RESOLUCIÓ                                                                            |
-|-----------------------|-------------------------------------------------------------------------------------|
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ |
 |FECHA APS              |DATA APM DE LA CEL·LA                                                                |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DE LA CEL·LA                                                           |
 
 
@@ -1758,19 +1670,12 @@ Camps obtinguts directament dels camps de la fitxa de **CTS**
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR          |CODI DEL CT                                                                          |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CINI                   |CINI DEL CT                                                                          |
-|-----------------------|-------------------------------------------------------------------------------------|
 |DENOMINACIÓN           |DESCRIPCIÓ DEL CT                                                                    |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCUU            |TIPO D'INSTAL·LACIÓ CNMC DEL TRANSFORMADOR                                           |
-|-----------------------|-------------------------------------------------------------------------------------|
 |CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |PARTICIPACION          |100-%FINANÇAMENT                                                                     |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA APS              |ANY DATA APM DEL CT                                                                  |
-|-----------------------|-------------------------------------------------------------------------------------|
 |FECHA BAJA             |DATA DE BAIXA DEL CT                                                                 |
 
 
