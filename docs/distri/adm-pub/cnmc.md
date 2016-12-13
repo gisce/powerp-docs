@@ -1381,9 +1381,10 @@ la fitxa de **Transformadors**:
 * **Reductor**: Tots els transformadors que tinguin el camp `Reductor` marcat i
   estiguin en un estat inclòs en l'inventari
 
+
 !!! note
-   Els Transformadors Reductors també estan inclosos en el
-   llistat si compleixen les condicions especificades.
+   Els Transformadors Reductors també estan inclosos en el llistat si 
+   compleixen les condicions especificades.
 
 !!! note
    :name: notaestat
