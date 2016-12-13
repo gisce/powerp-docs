@@ -1242,7 +1242,7 @@ NODE: SUBESTACIÓ
 ----------------
 
 !!! note
-   Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.
+    Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.
 
 *ELEMENTS SELECCIONATS:*
 
@@ -1383,31 +1383,30 @@ la fitxa de **Transformadors**:
 
 
 !!! note
-   Els Transformadors Reductors també estan inclosos en el llistat si 
-   compleixen les condicions especificades.
+    Els Transformadors Reductors també estan inclosos en el llistat si 
+    compleixen les condicions especificades.
 
 !!! note
-   :name: notaestat
-
-   Apareixeran en aquest inventari tots els transformadors que l'estat en que
-   es troben te marcada la casella **apareix a l'inventari**, tal com s'indica
-   a la imatge següent `notaestatimg`_, i tots el que el seu estat es NULL.
-   Cada empresa pot indicar que apareixin en aquest llistat els transformadors
-   que es troben en diferents estats modificant el checkbox corresponent.
+    :name: notaestat
+    Apareixeran en aquest inventari tots els transformadors que l'estat en que
+    es troben te marcada la casella **apareix a l'inventari**, tal com s'indica
+    a la imatge següent `notaestatimg`_, i tots el que el seu estat es NULL.
+    Cada empresa pot indicar que apareixin en aquest llistat els transformadors
+    que es troben en diferents estats modificant el checkbox corresponent.
 
 ![](../_static/cnmc/4131/estats_inventari.png)
 
 !!! note
-   Els diferents **Tipus de transformadors** que han de sortir com **mòbils**,
-   **reguladors de tensió**, **Condensadors** i **Reactàncies** s'han de
-   configurar de forma que compleixin alguna de les condicions esmentades, p.e.
-   amb un estat marcat com a **apareix a l'inventari**
+    Els diferents **Tipus de transformadors** que han de sortir com **mòbils**,
+    **reguladors de tensió**, **Condensadors** i **Reactàncies** s'han de
+    configurar de forma que compleixin alguna de les condicions esmentades, p.e.
+    amb un estat marcat com a **apareix a l'inventari**
 
 !!! note
-   Apareixen en aquest inventari els condensadors d'AT,de BT i bateries fixes i
-   automatiques. Aquests s'han d'entrar al menu de l'EPR de condensadors
-   (Centres Transformadors/Manteniment/Cel·les i elements de tall/Condensadors).
-   Comprovar que no estiguin entrats a Cel·les
+    Apareixen en aquest inventari els condensadors d'AT,de BT i bateries fixes i
+    automatiques. Aquests s'han d'entrar al menu de l'EPR de condensadors
+    (Centres Transformadors/Manteniment/Cel·les i elements de tall/Condensadors).
+    Comprovar que no estiguin entrats a Cel·les
 
 
 *ORÍGEN:*
@@ -1443,14 +1442,14 @@ a partir de valors de camps de la BD i càlculs addicionals.
 
 
 !!! note
-   El camp **TENSION_PRIMARIO** escollirà la tensió més alta dels camps P1 i P2 de les connexions **connectades**
-   del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
-   Normalitzades o la deixarà igual si no en troba cap.
+    El camp **TENSION_PRIMARIO** escollirà la tensió més alta dels camps P1 i P2 de les connexions **connectades**
+    del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
+    Normalitzades o la deixarà igual si no en troba cap.
 
 !!! note
-   El camp **TENSION_SECUNDARIO** escollirà la tensió més alta dels camps B1, B2 i B3 de les connexions **connectades**
-   del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
-   Normalitzades o la deixarà igual si no en troba cap.
+    El camp **TENSION_SECUNDARIO** escollirà la tensió més alta dels camps B1, B2 i B3 de les connexions **connectades**
+    del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
+    Normalitzades o la deixarà igual si no en troba cap.
 
 ![](../_static/cnmc/4131/llistat_connexions_trafo.png)
 
