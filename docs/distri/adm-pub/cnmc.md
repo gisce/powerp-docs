@@ -6,6 +6,7 @@ Continguts:
 * [Circular 1/2005](#circular-12005)
 * [Circular 4/2014](#circular-42014)
 * [Circular 4/2015](#circular-42015)
+* [Inventari 4131](#inventari-4131)
 
 
 ## Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per distribuïdora
@@ -988,3 +989,859 @@ Camp            | Descripció
 :---------------|:----------------------------------------------
 Número de sèrie | Número de sèrie del comptador
 CINI            | Codi CINI del comptador
+
+## Inventaria 4131
+
+### Introducció
+
+
+Aquest mòdul permet la generació dels formularis de la Resolució 4131 relatius a l’inventari
+de les instal·lacions en format TXT.
+
+El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la resolució 4131.
+
+
+.. note::
+    Relacionats amb aquest módul hi ha el módul de subestacions, cel·les i elements de tall, despatxos, posicions,
+    Catàleg de cables AT, Catàleg de cables BT, Expedients i Condensadors.
+
+.. note::
+    S'han de unificar els CINI's als publicats a la resolució 4131/2016
+
+.. note::
+    A totes les fitxes s'ha inclós el camp `CNMC Tipus Instal·lació` i el camp `Bloquejar CNMC Tipus Instal·lació`. Amb
+    aquest camp es poden intorduïr els camps **TI-XXX** que es defineixen a la *Taula 3* de la resolució 4131. Si es
+    marca la variable de bloqueig, cap automatisme de càrrega o modificació automàtica del camp `CNMC Tipus Instal·lació`
+    modificarà el valor actual.
+
+.. note::
+    Els informes de Maquines i condensadors s'han d'unificar en un sol fitxer. S'han separat en dos per facilitar-ne la
+    seva traçabilitat
+
+.. note::
+   El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
+
+### Carrega de fitxers de la 4771
+
+
+Per tal que el ERP pugui fer el calculdel camp estat de la 4131 s'h de carregar el fitxer presentat en la 4771.
+El format del ftixer que s'ha de carregar es format ZIP en el cual a l'arrel del fitxer hi hauran els 8 fitxers entregats.
+
+.. image:: _static/carrega_4771.png
+
+El menu de carrega es troba a Administració Pública/CNMC/Resolucions/Resolucio 4131/2016/Carregar Fitxer presentat 4771
+
+### Descripció dels diferents NODES
+
+
+#### NODE: LINIA
+
+
+**LINIES AT**
+
+
+.. note::
+    Tots els camps referents a les línies provenen dels models de  **trams,** **linies,** **conductors,** i **expedient**
+    per tant hauran d'estar ben complimentats tots els camps que fa servir. Aquest NODE es genera en 2 fitxers csv,
+    un per línies AT i un altre per les línies BT
+
+.. note::
+    Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
+
+##### ELEMENTS SELECCIONATS
+
+
+Només s'inclouran els Trams que compleixin les següents condicions de la fitxa
+de **Trams**. També es trindran en compte les dades de la fitxa **Linia AT** de
+la línia a la qual pertany
+
+**De Línia AT**
+
+* **Actiu**: La línia ha d'estar activa o haver-se donat de baixa en l'any de l'informe o posterior(2016).
+* **Propietari**: Ha d'estar marcat com a propietari perque apareixi als llistats.
+
+**De Trams**
+
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
+  a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
+* **Conductor**: El tipus del cable associat al tram i **NO** ha de ser
+  **EMBARRAT** (E)
+
+.. note::
+    S'han de comprovar tots els registres que tenen data_APM de l'any en que es genera el fitxer (en aquest cas 2016)
+    perque no sortiran als fitxers .csv.
+    S'han de comprovar les instal·lacions **reformades** durant l'any en que es genera el fitxer i comprovar les 
+    dates_APM dels registres en questió per veure si han de sortir o no als .csv y si cal modificar la data_APM per
+    que apareixin en la generació dels fitxers.
+
+ORÍGEN
+^^^^^^
+
+S'han afegit nous camps a la fitxa dels trams:
+
+* **Tensió màxima de disseny**: És la tensió per la que està dissenyat el tram de línia (V). Aquest camp permet 
+  classificar els trams de línia AT en funció de la tensió màxima per la que ha estat dissenyat i no per latensió
+  a la que està treballant actualment.
+
+
+A continuació es detalla d'on s'obtenenen els valors dels camps d'aquest fitxer:
+
+Camps obtinguts directament dels camps de la fitxa de **TRAMS**
+
++----------------------------+-------------------------------------------------------------------------------------+
+| CAMP                       |CAMP DE LA BASE DE DADES                                                             |
++============================+=====================================================================================+
+|IDENTIFICADOR               |IDENTIFICADOR DEL TRAM                                                               |
++----------------------------+-------------------------------------------------------------------------------------+
+|CINI                        |CINI DEL TRAM                                                                        |
++----------------------------+-------------------------------------------------------------------------------------+
+|ORIGEN                      |ORIGEN TRAM                                                                          |
++----------------------------+-------------------------------------------------------------------------------------+
+|DESTINO                     |FINAL TRAM                                                                           |
++----------------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU                 |TIPO D'INSTAL·LACIO                                                                  |
++----------------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION               |100-%FINANÇAMENT                                                                     |
++----------------------------+-------------------------------------------------------------------------------------+
+|FECHA APS                   |DATA APM DEL TRAM                                                                    |
++----------------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA                  |DATA DE BAIXA,SI ES EN L'ANY ACTUAL NO APAREIX                                       |
++----------------------------+-------------------------------------------------------------------------------------+
+|NUMERO_CIRCUITOS            |CIRCUITS                                                                             |
++----------------------------+-------------------------------------------------------------------------------------+
+|NUMERO_CONDUCTORES          |CAMP FIX=1                                                                           |
++----------------------------+-------------------------------------------------------------------------------------+
+|NIVEL_TENSION               |CAMP TENSIÓ MÁXIMA DE DISSENY (SI HI ÉS) O TENSIÓ DE LA LÍNIA ASSOCIADA AL TRAM EN   |
+|                            |CAS DE NO ESTAR CONFIGURADA. / 1000 PER TENIR-LA EN kV                               |
++----------------------------+-------------------------------------------------------------------------------------+
+|LONGITUD                    |LONGITUD DEL TRAM/1000                                                               |
++----------------------------+-------------------------------------------------------------------------------------+
+|INTENSITAT MÁXIMA           |INTENSITAT MÁXIMA DEL CABLE ASSOCIAT AL TRAM                                         |
++----------------------------+-------------------------------------------------------------------------------------+
+|SECCION                     |VALOR NUMÉRIC DEL CAMP **SECCIÓ** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM         |
++----------------------------+-------------------------------------------------------------------------------------+
+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++----------------------------+-------------------------------------------------------------------------------------+
+| CAMP                       |CAMP DE LA BASE DE DADES                                                             |
++============================+=====================================================================================+
+|CODIGO_CCAA_1               |EN FUNCIÓ DEL MUNICIPI DE LA LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
+|                            |4131                                                                                 |
++----------------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA_2               |Aquest camp sempre serà igual a CODIGO_CCAA_1                                        |
++----------------------------+-------------------------------------------------------------------------------------+
+|CAPACIDAD                   |VALOR DEL CAMP INTESITAT MÀXIMA DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM           |
+|                            |EN FUNCIÓ DE LA TENSIÓ MÀXIMA DE DISSENY DEL TRAM I SI NO DE LA TENSIÓ DE LA LINIA   |
+|                            |AT A LA QUE ESTA ASSOCIAT EL TRAM (en MVA)                                           |
++----------------------------+-------------------------------------------------------------------------------------+
+|ESTADO                      |SI S'HA DONAT D'ALTA EL TRAM EN AQUEST ANY SERA 2 ALTREMENT 0                        |
++----------------------------+-------------------------------------------------------------------------------------+
+
+CODIGO_CCAA_2 aquest camp es només pels trams de línia que comencen en una comunitat autónoma i acaben
+en una altra.
+En aquest cas s’ha determinat que es creará una línia nova quan es faci un canvi de comunitat autónoma.
+Així no podran existir línies i trams que comparteixin comunitats autònomes diferents.
+
+
+**Catàleg de Cables AT**
+
+Des del menú Linies AT / Manteniment / Cables / Cable.
+
+S'ha de cumplimentar correctament el catàleg de cables AT per poder calcular correctament els camps **SECCIO**
+i **CAPACITAT** d'aquest fitxer.
+
+La intensitat del cable **INTENSITAT ADMISIBLE** estarà indicada en Ampers, aquest valor serà el de catàleg, o en
+tot cas la capacitat s'ha de correspondre amb la capacitat de l'hivern, per a una temperatura ambient de 10ºC segons
+indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valor numèric.
+
+.. image:: _static/cataleg_cables_at.png
+
+
+**LINIES BT**
+
+.. note::
+    Tots els camps referents a les línies BT provenen dels models de **Elements BT** i **CT** 
+    per tant hauran d'estar ben cumplimentats tots els camps que fa servir.
+
+.. note::
+    Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran els Trams BT que compleixin les següents 
+condicions de la fitxa de **Elements bt**:
+
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Cable**: El `Tipus` del Cable seleccionat **NO** és **Embarrat** (E)
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
+  a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
+
+ORÍGEN
+^^^^^^
+Camps obtinguts directament dels camps de la fitxa de **ELEMENTS_BT**
+
++------------------------------+-------------------------------------------------------------------------------------+
+| CAMP                         |CAMP DE LA BASE DE DADES                                                             |
++==============================+=====================================================================================+
+|IDENTIFICADOR                 |IDENTIFICADOR DEL TRAM BT (INTERN DE LA TOPOLOGIA)                                   |
++------------------------------+-------------------------------------------------------------------------------------+
+|CINI                          |CINI DEL TRAM BT                                                                     |
++------------------------------+-------------------------------------------------------------------------------------+
+|ORIGEN                        |NUS INICI, (INTERN DE LA TOPOLOGIA)                                                  |
++------------------------------+-------------------------------------------------------------------------------------+
+|DESTINO                       |NUS FINAL, (INTERN DE LA TOPOLOGIA)                                                  |
++------------------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU                   |TIPUS D'INSTAL·LACIO DEL TRAM BT                                                     |
++------------------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA_1                 |EN FUNCIÓ DEL **MUNICIPI** DEL TRAM_BT I LA CCAA RELACIONADA A LA TAULA 4 DE LA      |
+|                              |RESOLUCIÓ 4131                                                                       |
++------------------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA_2                 |Aquest camp sempre serà igual a CODIGO_CCAA_1                                        |
++------------------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION                 |100-%FINANÇAMENT                                                                     |
++------------------------------+-------------------------------------------------------------------------------------+
+|FECHA APS                     |DATA APM DEL TRAM BT                                                                 |
++------------------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA                    |DATA DE BAIXA DEL TRAM DE BT                                                         |
++------------------------------+-------------------------------------------------------------------------------------+
+|NUMERO_CIRCUITOS              |CAMP FIX=1                                                                           |
++------------------------------+-------------------------------------------------------------------------------------+
+|NUMERO_CONDUCTORES            |CAMP FIX=1                                                                           |
++------------------------------+-------------------------------------------------------------------------------------+
+|LONGITUD                      |LONGITUD DEL TRAM_BT/1000                                                            |
++------------------------------+-------------------------------------------------------------------------------------+
+|INTENSITAT MÁXIMA             |INTENSITAT MÁXIMA DEL CABLE ASSOCIAT AL TRAM BT                                      |
++------------------------------+-------------------------------------------------------------------------------------+
+|SECCION                       |VALOR NUMÉRIC DEL CAMP **SECCIÓ** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAM_BT      |
++------------------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                        |
++=============================+=====================================================================================+
+|CAPACIDAD                    |VALOR FUNCIÓ DEL CAMP **INTESITAT MÀXIMA** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL     |
+|                             |TRAMB_BT I LA TENSIÓ DEL TRAM AL CAMP **VOLTATGE**                                   |
++-----------------------------+-------------------------------------------------------------------------------------+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                              |
++-----------------------------+-------------------------------------------------------------------------------------+
+
+**Catàleg de Cables BT**
+
+Des del menú Linies BT / Manteniment / Cables / Cable.
+
+S'ha de cumplimentar correctament el catàleg de cables BY per poder calcular correctament els camps **SECCIO**
+i **CAPACITAT** d'aquest fitxer.
+
+La intensitat del cable **INTENSITAT ADMISIBLE** estarà indicada en Ampers, aquest valor serà el de catàleg, o en
+tot cas la capacitat s'ha de correspondre amb la capacitat de l'hivern, per a una temperatura ambient de 10ºC segons
+indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valor numèric.
+
+
+.. image:: _static/cataleg_cables_BT.png
+
+
+A la fitxa del catàleg de cables s'ha afegit el camp:
+
+* **Data acta posada en marxa**: Aquesta data correspondria amb la data en que es presenta a industria la legalització de la línia BT.
+
+Quedant el camp existent
+
+* **Data alta**: Aquesta data correspon a la data en que es va instal·lar.( data de realització de la obra)
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* Longitud
+* CINI
+* Seccio
+* Tensio
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+----------------
+NODE: SUBESTACIÓ
+----------------
+
+.. note::
+   Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran les Subestacions que compleixin les següents condicions
+de la fitxa de **Subestacions**:
+
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
+  a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
+
+ORÍGEN
+^^^^^^
+
+Camps obtinguts directament dels camps de la fitxa de **SUBESTACIONS**
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |IDENTIFICADOR DE LA SUBESTACIÓ                                                       |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DE LA SUBESTACIÓ                                                                |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |NOM DE LA SUBESTACIÓ                                                                 |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DE LA SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ   |
++-----------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION          |100-%FINANÇAMENT                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA APM DE LA SUBESTACIÓ                                                            |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DE LA SUBESTACIO                                                       |
++-----------------------+-------------------------------------------------------------------------------------+
+|POSICIONES             |SUMA EL NOMBRE DE POSICIONS QUE TE LA SE A LA PESTANYA POSICIONS EQUIPADES AMB       |
+|                       |INTERUPTOR                                                                           |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2), sino es considerara no modificat(0).
+
+-----------------------------------------------------------
+NODE: POSICIONES EQUIPADAS CON INTERRUPTOR EN SUBESTACIONES
+-----------------------------------------------------------
+
+.. note::
+    Per obtenir aquest fitxer cal tenir configurat el mòdul de subestaciions.
+    
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran les posicions  que compleixin les següents 
+condicions de la fitxa de **Posicions**:
+
+* **Tipus Interruptor**: Ha de ser del tipus **Interruptor automàtic** (2)
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en anterior anterior al final de l'any sol·licitat,
+  a 1 de Gener ( p.e. per l'any 2014 data_APM < 01/01/2015)
+
+ORÍGEN
+^^^^^^
+
+Camps obtinguts directament dels camps de la fitxa de **POSICIONS**
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |IDENTIFICADOR DE LA POSICIÓN                                                         |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DE LA POSICIÓN                                                                  |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |NOM DE LA SUBESTACIÓ                                                                 |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DE LA SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ   |
++-----------------------+-------------------------------------------------------------------------------------+
+|NIVEL_TENSION          |CAMP TENSIÓ DE LA POSICIÓ / 1000                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION          |100-%FINANÇAMENT                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA DE POSADA EN MARXA DE LA POSICIÓ                                                |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DE L'INTERRUPTOR                                                       |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++------------------------+------------------------------------------------------------------------------------+
+| CAMP                   |CAMP CALCULAT                                                                       |
++========================+====================================================================================+
+|ESTADO                  |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                             |
++------------------------+------------------------------------------------------------------------------------+
+
+El tipus de posició d'intemperie serà assimilable a la convencional i el tipus interior serà assimilable a la
+posició blindada.
+
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* CINI
+* Tensio
+* Participacio
+* CT(Denominacion)
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+-------------
+NODE: MÁQUINA
+-------------
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran els Transformadors que compleixin les següents condicions de
+la fitxa de **Transformadors**:
+
+* **Estat**: Els transformadors associats a un estat que el camp **apareix a
+  l'inventari** estigui marcat (veure la nota `notaestat`_).
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data
+     posterior a 1 de Gener de l'any sol·licitat.
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
+  a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
+* **Ordre dins CT**: Tots els transformadors en funcionament que `ordre dins el
+  CT` sigui major de 2 (`>2`)
+* **Reductor**: Tots els transformadors que tinguin el camp `Reductor` marcat i
+  estiguin en un estat inclòs en l'inventari
+
+.. note::
+   
+   Els Transformadors Reductors també estan inclosos en el
+   llistat si compleixen les condicions especificades.
+
+.. note::
+   :name: notaestat
+
+   Apareixeran en aquest inventari tots els transformadors que l'estat en que
+   es troben te marcada la casella **apareix a l'inventari**, tal com s'indica
+   a la imatge següent `notaestatimg`_, i tots el que el seu estat es NULL.
+   Cada empresa pot indicar que apareixin en aquest llistat els transformadors
+   que es troben en diferents estats modificant el checkbox corresponent.
+
+.. image:: _static/estats_inventari.png
+   :name: notaestatimg
+
+.. note::
+
+   Els diferents **Tipus de transformadors** que han de sortir com **mòbils**,
+   **reguladors de tensió**, **Condensadors** i **Reactàncies** s'han de
+   configurar de forma que compleixin alguna de les condicions esmentades, p.e.
+   amb un estat marcat com a **apareix a l'inventari**
+
+.. note::
+   Apareixen en aquest inventari els condensadors d'AT,de BT i bateries fixes i
+   automatiques. Aquests s'han d'entrar al menu de l'EPR de condensadors
+   (Centres Transformadors/Manteniment/Cel·les i elements de tall/Condensadors).
+   Comprovar que no estiguin entrats a Cel·les
+
+
+ORÍGEN
+^^^^^^
+
+Camps obtinguts directament dels camps de la fitxa de **TRANSFORMADORS** i **CONDENSADORS**
+
+TRANSFORMADORS:
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |CÓDIGO INTERNO DEL TRANSFORMADOR                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DEL TRANSFORMADOR                                                               |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA       |
+|                       |`ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT`              |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
++-----------------------+-------------------------------------------------------------------------------------+
+|TENSION_PRIMARIO       |SEGONS ELS CAMPS P1 i P2 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS      |
++-----------------------+-------------------------------------------------------------------------------------+
+|TENSION_SECUNDARIO     |SEGONS ELS CAMPS B1, B2 i B3 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS  |
++-----------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION          |100-%FINANÇAMENT                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA APM DEL TRANSFORMADOR                                                           |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DEL TRANSFORMADOR                                                      |
++-----------------------+-------------------------------------------------------------------------------------+
+|CAPACIDAD              |POTENCIA NOMINAL DEL TRANSFORMADOR EN MVA                                            |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+.. note::
+
+   El camp **TENSION_PRIMARIO** escollirà la tensió més alta dels camps P1 i P2 de les connexions **connectades**
+   del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
+   Normalitzades o la deixarà igual si no en troba cap.
+
+.. note::
+
+   El camp **TENSION_SECUNDARIO** escollirà la tensió més alta dels camps B1, B2 i B3 de les connexions **connectades**
+   del llistat de connexions de la fitxa del transformador. Després la normalitzarà segons les Tensions
+   Normalitzades o la deixarà igual si no en troba cap.
+
+.. figure:: _static/llistat_connexions_trafo.png
+   :name: connexionstrafo
+
+   Llistat de connexions d'un transformador
+
+CONDENSADORS:
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |CÓDIGO INTERNO DEL CONDENSADOR                                                       |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DEL CONDENSADOR                                                                 |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA       |
+|                       |`ALMACEN` . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX `-CT`              |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU            |CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131        |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  |
++-----------------------+-------------------------------------------------------------------------------------+
+|TENSION_PRIMARIO       |TENSIO DEL CONDENSADOR                                                               |
++-----------------------+-------------------------------------------------------------------------------------+
+|TENSION_SECUNDARIO     |SEGONS ELS CAMPS B1, B2 i B3 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS  |
++-----------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION          |100-%FINANÇAMENT                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA APM DEL CONDENSADOR                                                             |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DEL CONDENSADOR                                                        |
++-----------------------+-------------------------------------------------------------------------------------+
+|CAPACIDAD              |POTENCIA NOMINAL DEL CONDENSADOR EN MVA                                              |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+
+**Tensions normalitzades**
+
+Els camps **TENSION_PRIMARIO** i **TENSION_SECUNDARIO** es converteixen a una tensió normalitzada. Per a fer-ho cal
+tenir correctament configurada la taula de tensions normalitzades que podeu trobar en el menú corresponent. La tensió
+normalitzada que es posarà en el fitxer serà el camp tensió que inclogui la tensió del transformador dins la fitxa de
+la tensió normalitzada.
+
+Des del menú `Tensions Normalitzades/ Manteniment / Tensions` podeu accedir a les tensions normalitzades que es
+configuren de la següent forma:
+
+* **Códi tensió normalitzada**: Camp textual per identificar la tensió normalitzada
+* **Llindar inferior**: Llindar inferior de la tensió normalitzada
+* **Llindar superior**: Llindar superior de la tensió normalitzada
+* **Tensió a aplicar**: Valor de Tensió que s'utilitzarà per aquesta tensió normalitzada
+* **Tipus**: AT si > 1 kV i BT < 1 kV
+
+En el cas de la resolució 4131, s'agafarà el valor de tensió `Tensió a aplicar` que correspongui per quan la tensió (T)
+compleixi `Llindar_inferior <= (T) < Llindar superior`
+
+.. figure:: _static/form_tensio_normalitzada.png
+   :name: tensionormalitzada
+
+   Fitxa de tensió normalitzada
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* CINI
+* Tensio primari
+* Tensio secundari
+* Participacio
+* Capacitat
+* CT(Denominacion)
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+--------------
+NODE: DESPACHO
+--------------
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran els Despatxos que compleixin les següents 
+condicions de la fitxa de la fitxa accessible a `Infraestructura / Despatxos`:
+
+* **Any_PS**: L'any de posada en servei ha de ser inferior o igual al
+  sol·licitat
+
+ORÍGEN
+^^^^^^
+
+.. image:: _static/DESPATXOS_1.png
+
+.. image:: _static/DESPATXOS_2.png
+
+Camps obtinguts directament dels camps de la fitxa de **DESPATXOS**
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |IDENTIFICADOR                                                                        |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DEL DESPATX                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |DESCRIPCIÓ DE LA INSTAL·LACIÓ                                                        |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA DE POSADA EN MARXA DE LA INSTAL·LACIÓ                                           |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DE AL INSTAL·LACÍO                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|VALOR DE LA INVERSIÓN  |VALOR DE LA INVERSIÓ EN €                                                            |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* CINI
+* Tensio primari
+* Tensio secundari
+* Participacio
+* Capacitat
+* CT(Denominacion)
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+----------------------------------------
+NODE: EQUIPOS DE MEJORA DE LA FIABILIDAD
+----------------------------------------
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran les Cel·les i elements de Tall que compleixin les següents 
+condicions de la fitxa de **Cel·les i elements de Tall** associades a CT's i
+suports:
+
+* **Categoria inventari**: Ha de ser **Fiabilitat** tant si està associat a CT
+  com si està associat a suports de línies AT/MT (seccionadors, interruptors,
+  fusibles, seccionadors, ...).
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
+  a 1 de Gener
+
+ORÍGEN
+^^^^^^
+
+Camps obtinguts directament dels camps de la fitxa de **CEL·LES I ELEMENTS DE TALL**
+
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |CODI DE LA CEL·LA O ELEMENT DE TALL                                                  |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DEL CEL·LA O ELEMENT DE TALL                                                    |
++-----------------------+-------------------------------------------------------------------------------------+
+|ELEMENTO_ACT           |NOM DEL CT `CT-XXX`, SUBESTACIÓ `SE-XXX` O TRAM del seccionador                      |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU            |TIPO D'INSTAL·LACÍO CNMC                                                             |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT/LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA           |
+|                       |RESOLUCIÓ                                                                            |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |DATA APM DE LA CEL·LA                                                                |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DE LA CEL·LA                                                           |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* CINI
+
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+-------------------------------
+NODE: CENTROS DE TRANSFORMACIÓN
+-------------------------------
+
+
+ELEMENTS SELECCIONATS
+^^^^^^^^^^^^^^^^^^^^^
+
+Només s'inclouran els Centres Transformadors que compleixin les següents 
+condicions de la fitxa de **CT**:
+
+* **Tipus Instal·lació**: Qualsevol excepte Subestacions (**SE**). Inclou CH,
+  CP, CM, CR ...
+* **Actiu**:
+   * Ha d'estar actiu o,
+   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+     a 1 de Gener de l'any sol·licitat.
+* **Propietari**: Ha d'estar marcat com a propietari.
+* **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
+  a 1 de Gener
+
+ORÍGEN
+^^^^^^
+Camps obtinguts directament dels camps de la fitxa de **CTS**
+
++-----------------------+-------------------------------------------------------------------------------------+
+| CAMP                  |CAMP DE LA BASE DE DADES                                                             |
++=======================+=====================================================================================+
+|IDENTIFICADOR          |CODI DEL CT                                                                          |
++-----------------------+-------------------------------------------------------------------------------------+
+|CINI                   |CINI DEL CT                                                                          |
++-----------------------+-------------------------------------------------------------------------------------+
+|DENOMINACIÓN           |DESCRIPCIÓ DEL CT                                                                    |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCUU            |TIPO D'INSTAL·LACIÓ CNMC DEL TRANSFORMADOR                                           |
++-----------------------+-------------------------------------------------------------------------------------+
+|CODIGO_CCAA            |EN FUNCIÓ DEL MUNICIPI DEL CT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ     |
++-----------------------+-------------------------------------------------------------------------------------+
+|PARTICIPACION          |100-%FINANÇAMENT                                                                     |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA APS              |ANY DATA APM DEL CT                                                                  |
++-----------------------+-------------------------------------------------------------------------------------+
+|FECHA BAJA             |DATA DE BAIXA DEL CT                                                                 |
++-----------------------+-------------------------------------------------------------------------------------+
+
+Camps **CALCULATS**: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131
+a partir de valors de camps de la BD i càlculs addicionals.
+
++-----------------------------+-------------------------------------------------------------------------------+
+| CAMP                        |CAMP CALCULAT                                                                  |
++=============================+===============================================================================+
+|ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
++-----------------------------+-------------------------------------------------------------------------------+
+
+CRITERI ESTADO
+^^^^^^^^^^^^^^
+
+Els camps que es comparen per saber si s'ha modificat(1) un element son:
+
+* CINI
+
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
+Si no es troben modificacions es posara el camp a 0.
+
+=======================
+Generació dels informes
+=======================
+
+----
+Menú
+----
+
+Per accedir a l'assistent per generar els fitxers CSV i el XML cal anar al menú
+**Administració pública / CNMC / Resolucions / Resolucio 4131/2016 / Generar Inventari 4131**
+
+.. figure:: _static/MENU_4131_1.png
+   :align: center
+
+A través d'aquest assistent podem generar els fitxers csv que demana la resolució.
+
+.. image:: _static/MENU_4131_2.png
+   :align: center
+
+* **Tipus** En el desplegable tipus es pot seleccionar el fitxer .csv que es vol generar
+
+================= === ======================================================= =======================
+Fitxer            Num Descripció
+================= === ======================================================= =======================
+LAT CSV           1   LINIES AT                                               Inventario_R1-XXX_1.txt
+BT CSV            2   LINIES BT                                               Inventario_R1-XXX_2.txt
+Subestacions CSV  3   NODE SUBESTACIONS                                       Inventario_R1-XXX_3.txt
+Posicions CSV     4   NODE POSICIONS EQUIPADES AMB INTERRUPTOR DE SUBESTACIÓ  Inventario_R1-XXX_4.txt
+Maquines CSV      5   NODE MAQUINA                                            Inventario_R1-XXX_5.txt
+Condensadors CSV  5   NODE MAQUINA                                            Inventario_R1-XXX_9.txt
+Despatx CSV       6   NODE DESPATX                                            Inventario_R1-XXX_6.txt
+Fiabilitat CSV    7   NODE EQUIPS DE MILLORA DE LA FIABILITAT                 Inventario_R1-XXX_7.txt
+CTS CSV           8   NODE CENTRES DE TRANSFORMACIÓ                           Inventario_R1-XXX_8.txt
+================= === ======================================================= =======================
+
+* **Any**: Automàticament s'escull l'any anterior a l'any en curs
+* **R1**: Automàticament s'agafa el valor del camp `ref2` de la empresa associada a la nostra companyia
+
+.. image:: _static/MENU_4131_3.png
+   :align: center
+
+Una vegada generat el fitxer csv es pot analitzar per validar-lo i veure quines dades falten a la base de dades
+o fer modificacions directament al fitxer.txt
+
+Es pot generar un altre fitxer prement en el botó **Un altre CSV**
+
+
