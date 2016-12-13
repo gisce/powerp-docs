@@ -1171,7 +1171,7 @@ indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valo
     Tots els camps referents a les línies BT provenen dels models de **Elements BT** i **CT** 
     per tant hauran d'estar ben cumplimentats tots els camps que fa servir.
 
-*nota:*
+!!! note
     Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
 
 ELEMENTS SELECCIONATS
