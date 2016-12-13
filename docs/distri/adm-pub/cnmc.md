@@ -1242,7 +1242,7 @@ NODE: SUBESTACIÓ
 ----------------
 
 !!! note
-    Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.
+    Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.   
 
 *ELEMENTS SELECCIONATS:*
 
