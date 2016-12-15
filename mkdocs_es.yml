@@ -39,6 +39,7 @@ pages:
         - Celdas i elementos de corte: distri/celles.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
+      - Método actualización del tipo de línea BT: distri/act_linies_bt.md
       - Instalaciones RE: distri/re.md
       - Expedientes: distri/expedientes.md
     - Calidad de servicio: distri/calidad.md
