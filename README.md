@@ -29,15 +29,19 @@ Steps to translate your new documentation:
 2. Local build your version with:
 
 ```shell
-build -f mkdocs_es.yml
-serve -f mkdocs_es.yml
+mkdocs build -f mkdocs_es.yml
+mkdocs serve -f mkdocs_es.yml
 ```
 
 3. Combine the new strings in the .pot with the old .po using:
 
+    sudo apt install gettext
+
     msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
 
 4. Generate the new translations from the updated .po using *poedit*
+
+    sudo apt install poedit
 
     poedit locales/lang/LC_MESSAGES/messages.po
 
