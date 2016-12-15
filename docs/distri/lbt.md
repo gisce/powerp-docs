@@ -48,7 +48,8 @@ En l'apartat de **Dades Administratives** tenim els camps:
 * 7 subterrània (1 circuit)
 
 
-!!! FALTA IMATGE
+![Captura de la seleccio del tipus en el ERP]
+(_static/lbt/captura_tipus_linia_bt.png)
 
 
 El procés de càlcul actualitzarà els camps del model de línies BT següents:
@@ -66,7 +67,7 @@ línies aèries: **_Posada en façana_**: Si / NO
    i carregar-lo al ERP (NOTA 3)
 
 
-!!! FALTA IMATGE
+![Imatge de la sel·leccio dels fitxers SHPS](_static/lbt/fitxers_shps_lbt.png)
 
 
 3. Importar el fitxer **_lbt.shp_** en el ERP com a un procés
@@ -114,7 +115,8 @@ línies aèries: **_Posada en façana_**: Si / NO
     (_abans era 0.55m_) del punt d’inserció d’un suport dels esmentats
     en l’apartat anterior.
 
-    !!! FALTA IMATGE
+    ![Esquema visual de tensada sobre poste]
+    (_static/lbt/esquema_tensada_sobre_poste.png)
 
     En cas que no es doni la condició anterior s’assignara com a cable en façana
 
@@ -124,18 +126,21 @@ línies aèries: **_Posada en façana_**: Si / NO
     Al menú de GIS > Carregador de fitxers SHP LAT i LBT
     per carregar els ZIPs sempre hi ha d’haver el de LBT i el de LAT
 
-!!! FALTA IMATGE
+    ![Mostra carrega de fitxers shp utilitzant el ERP]
+    (_static/lbt/carrega_fitxers_shp.png)
 
 !!! Note
     **NOTA 4. Com actualitzar el tipus de línia en el ERP**
 
     Al menú de GIS > Assignar tipus LBT
 
-    !!! FALTA IMATGE
+    ![Execució de l'acció d'assignar tipus LBT des del ERP]
+    (_static/lbt/assignar_tipus_lbt.png)
 
     Aquest assistent recalcularà el tipus de línia de LBT
 
-    !!!FALTA IMATGE
+    ![Execució del wizard per realitzar l'acció d'assignar el tipus LBT del ERP]
+    (_static/lbt/wizard_assignar_tipus.png)
 
     Aquest procés actualitzarà automàticament els camps:
     **Tipus de línia**: aèria o subterrània
