@@ -20,7 +20,7 @@ configuració es mostren els horaris de les tarifes i els perfils de REE.
 ## Procés de perfilació
 
 Per començar el procés de perfilació s'ha de clicar a '**Lots de Perfilació**',
-on apareixarà una finestra on podrem realitzar el procés de perfilat. Abans 
+on apareixerà una finestra on podrem realitzar el procés de perfilat. Abans 
 d'això caldrà realitzar unes comprovacions bàsiques de les pòlisses a perfilar
 que a continuació expliquem.
 
@@ -30,7 +30,7 @@ Primer de tot haurem de realitzar una comprovació del número de pòlissa
 a perfilar.
 
 En el menú del lot de perfilació podem observar de quin lot es tracta a 
-'**Lot**' i de les dates inici i final que comprén aquest lot. A sota d'aquests
+'**Lot**' i de les dates inici i final que comprèn aquest lot. A sota d'aquests
 camps hi trobem dues pestanyes, on a la de "**Pòlisses**" podem veure una barra
 en el procés de perfilat (que ara estarà a 0%) i del número de pòlisses que hi
 ha en aquest lot.
@@ -41,8 +41,8 @@ En aquesta imatge d'exemple podem veure que hi han 3125 pòlisses a perfilar.
 
 La primera comprovació que farem serà la següent:
 
-1. Clicarem el botó '**(Des)Asignar pòlisses**' 
-   ![desassignar](_static/perfiles/corbes_desassignar.png) i ens apareixarà
+1. Clicarem el botó '**(Des)Assignar pòlisses**'
+   ![desassignar](_static/perfiles/corbes_desassignar.png) i ens apareixerà
    el quadre de diàleg següent amb dos apartats, les pòlisses a assignar i
    les pòlisses a treure:
 
@@ -52,9 +52,9 @@ La primera comprovació que farem serà la següent:
 
 A la finestra de la part superior on esta escrit "**Pòlisses a assignar**",
 si cliquem el botó ![buscar](_static/perfiles/a_pf.PNG) apareixeran les
-pòlisses facturades en aquest període de perfilació i que no estan incluides
+pòlisses facturades en aquest període de perfilació i que no estan incloses
 en el lot de perfilació. Al cap d'uns segons es mostraran totes les pòlisses
-que s'han donat d'alta en el periode de perfilació, més les que tenen
+que s'han donat d'alta en el període de perfilació, més les que tenen
 una potència superior a 450kW.
 
 De la llista de pòlisses que apareixen en la finestra superior s'han de
@@ -63,7 +63,7 @@ seleccionar les que no tinguin una potència superior a 450kW.
 Un cop tinguem seleccionades les pòlisses s'ha de clicar el botó
 ![assignar](_static/perfiles/b.PNG) perquè s'afegeixin al lot de perfilació.
 El botó ![buscar](_static/perfiles/a_pf.PNG) pot clicar-se tantes vegades com
-es cregui necessari, i finalment només han d'apareixer sense assignar les
+es cregui necessari, i finalment només han d'aparèixer sense assignar les
 pòlisses que tinguin la potència contractada superior a 450kW.
 
 #### Pòlisses a treure
@@ -71,8 +71,8 @@ pòlisses que tinguin la potència contractada superior a 450kW.
 A la finestra de la part inferior amb el títol "**Pòlisses a treure**",
 al clicar el botó ![buscar](_static/perfiles/a_pf.PNG) s'ens mostraran
 les pòlisses que es troben al lot de perfilació però no tenen factures
-en el període. Es mostaran totes les pòlisses que s'han donat de baixa al
-final del període anterior. La majoria de vegades apareixarà en blanc.
+en el període. Es mostraran totes les pòlisses que s'han donat de baixa al
+final del període anterior. La majoria de vegades apareixerà en blanc.
 
 De la llista de pòlisses que apareixen a la finestra inferior tenim de
 comprovar que efectivament no s'han de perfilar en aquest lot, i després
@@ -80,11 +80,11 @@ clicar el botó ![treure](_static/perfiles/c.PNG) perquè s'eliminin
 del lot de perfilació.
 
 El botó ![buscar](_static/perfiles/a_pf.PNG) s'ha de clicar tantes vegades
-com es cregui necessari, i finalment no ha d'apareixer cap pòlissa
+com es cregui necessari, i finalment no ha d'aparèixer cap pòlissa
 a la finestra inferior.
 
 Una vegada realitzada aquesta sincronització tanquem la finestra actual
-apretant la tecla *ESC*.
+prement la tecla *ESC*.
 
 La següent comprovació que tenim de fer és:
 
@@ -94,7 +94,7 @@ facturades menys les de 450kW, que en aquest cas son dues.
 
 ![](_static/perfiles/3_pf.PNG)
 
-Si aquest número de pólisses en el lot de facturació menys les de més de 450kW
+Si aquest número de pòlisses en el lot de facturació menys les de més de 450kW
 que no s'han de perfilar és correcte no fa falta realitzar cap comprovació
 addicional.
 
@@ -107,7 +107,7 @@ en el període corresponent.
 #### Comprovació per factures:
 
 S'ha de comprovar que el número de factures del període sigui igual al número
-de pòlisses a perfilar. Tinguent en compte de que les pòlisses que tenen més
+de pòlisses a perfilar. Tinguen en compte de que les pòlisses que tenen més
 de una factura en el període només s'han de tenir en compte una.
 
 A la figura següent s'indica el filtre que s'ha de posar segons
@@ -139,7 +139,7 @@ I sumar les mensuals utilitzant el filtre de la figura següent:
 Tenim de comprovar per cada lot de perfilació que les dates de alta i de baixa
 dels comptadors coincideixin amb les dates de les lectures preses. Per això
 tenim de anar al menú de comptadors, que es troba a **Menú > Infraestructura >
-Comptadors**, i començem filtrant tots els comptadors amb la data d'alta entre
+Comptadors**, i comencem filtrant tots els comptadors amb la data d'alta entre
 les dates del període a perfilar segons la figura següent:
 
 ![](_static/perfiles/7.PNG)
@@ -152,8 +152,8 @@ la primera lectura de aquest comptador coincideix amb la data d'alta.
 ![](_static/perfiles/8.PNG)
 
 Observem a la imatge com les dates de les primeres lectures son del 01/05/2012,
-si siguessin diferentes hauriem de modificar-les per que coincidecin amb
-la data d'alta del contador.
+si fossin diferents hauríem de modificar-les perquè coincideixin amb
+la data d'alta del comptador.
 
 I després de comprovar les dates d'alta, comprovarem les de baixa
 dels comptadors.
@@ -169,7 +169,7 @@ de la última lectura d'aquest comptador coincideix amb la data de baixa.
 ![](_static/perfiles/10.PNG)
 
 En aquesta imatge les dates de les últimes lectures son del 14/05/2012,
-si siguessin diferentes hauríem de modificarles perque coincidissin amb
+si fossin diferents hauríem de modificar-les perquè coincidissin amb
 la data de baixa del comptador.
 
 Per períodes de facturació bimestrals tenim de repetir el procés per el mes
@@ -184,7 +184,7 @@ serà importar les corbes, si en tenim.
 El procés de importació ens permet carregar fitxers de corba un per un, o varis
 al mateix temps si tenim fitxers amb les corbes comprimides en format 'zip'.
 
-Per accedir a l'importació de corbes tenim de clicar sobre la carpeta de
+Per accedir a la importació de corbes tenim de clicar sobre la carpeta de
 "**Accions**" i fer doble-clic a "**Importar Corba**". S'obrirà una
 finestra com la imatge següent:
 
@@ -213,8 +213,8 @@ Així un cop seleccionats els tres camps ens hauria de quedar com la imatge:
     Es pot observar com en el camp de 'Fitxer' hi apareix la mida del
     fitxer que es vol importar.
 
-Per continuar amb l'importació haurem de clicar '**Següent**' i apareixarà
-una finestra on ens mostrarà si s'ha produït algún error en la importació,
+Per continuar amb la importació haurem de clicar '**Següent**' i apareixerà
+una finestra on ens mostrarà si s'ha produït algun error en la importació,
 si n'hi han, al clicar '**Importar Corbes**'.
 
 ![](_static/perfiles/corbes_error_ziv.png)
@@ -224,7 +224,7 @@ format del fitxer, si es mostren es recomana comprovar que el fitxer
 no hagi estat modificat.
 
 Si no hi han errors, al clicar '**Importar Corbes**' la corba s'haurà
-importat correctament, i apareixarà un missatge indicant que la corba
+importat correctament, i apareixerà un missatge indicant que la corba
 ha estat importada correctament tal i com apareix en la imatge següent
 en una nova finestra.
 
@@ -234,11 +234,11 @@ en una nova finestra.
     A la nova finestra podem observar que en el camp de 'Resultats' ens
     mostra informació complementària dels fitxers ja importats, que és el CUPS,
     l'energia total i les hores totals. En el cas que estiguem important varies
-    corbes s'ens mostraran tantes linies com fitxers hi ha dins del
+    corbes s'ens mostraran tantes línies com fitxers hi ha dins del
     fitxer comprimit.
 
 Ara només falta tancar la finestra amb el botó de '**Tancar**' i haurem
-completat el procés d'importació. Repetirem el procés per casdascun dels
+completat el procés d'importació. Repetirem el procés per cadascun dels
 fitxers de corbes que es vulgui importar.
 
 #### Comprovar corbes importades
@@ -258,7 +258,7 @@ les pòlisses incloses en el lot. Ens fixarem especialment en el camp
     És important comprovar la llista i localitzar casos atípics (Estat: obert,
     Origen teòric: corba , indica que està pendent de importar la corba).
     Primer s'han de importar totes les corbes de les que es disposi.
-    Una vegada s'inicii la perfilació del lot s'enten que totes les polisses
+    Una vegada s'inicii la perfilació del lot s'entén que totes les polisses
     del lot en *obert* s'han de perfilar. Si hi han pòlisses que tenen
     '**Origen teòric**' *corba* es perfilaran igualment
     amb el procés de perfilació.
@@ -277,7 +277,7 @@ Dins del menú de "**Lots de perfilació**", just sota de les pestanyes de
 que el clicarem per inicialitzar la perfilació.
 
 !!! note
-    Cal tenir en compte de que aquest botó només esta disponible si el lot
+    Cal tenir en compte de que aquest botó només està disponible si el lot
     en que ens trobem es troba en l'estat 'Obert'.
 
 El procés de perfilat pot tardar varis minuts, i automàticament s'executarà
@@ -319,10 +319,10 @@ En el menú de generació de fitxers de la Red Eléctrica Española (REE)
 es troben els apartats indicats a la imatge inferior. Dins de l'apartat
 d'**Agregacions de Règim Especial** es generen els fitxers **MAGRE** 
 (Dades horaries d'energia d'agregacions d'instal·lacions de producció
-d'energia elèctrica a partir de fonts d'energia renovables, congeneració
+d'energia elèctrica a partir de fonts d'energia renovables, cogeneració
 i residus tipus 3 i 5) i **INMERE** (Acumulat mensual d'energia de punts
 frontera d'instal·lacions de producció d'energia elèctrica a partir de 
-fonts d'energia renovables, congeneració de residus tipus 3 i 5 desagregats).
+fonts d'energia renovables, cogeneració de residus tipus 3 i 5 desagregats).
 Per a més informació, consultar apartats 4.2.12 (MAGRE) i 4.2.13
 (INMERE) del document de REE.
 
@@ -356,7 +356,7 @@ Els camps que el formen són els següents:
   editar manualment.
 * **Arxiu de corba:** Aquest camp ha de contenir un fitxer de corba a partir
   del qual es generarà el fitxer F1.
-* **Informació:** És un recuadre on apareix constantment informació sobre
+* **Informació:** És un requadre on apareix constantment informació sobre
   la generació del fitxer.
 * **Número de CUPS:** Aquest camp indica el número de fitxers de corba
   a processar.
@@ -420,9 +420,9 @@ i els de la dreta són els que han de tenir els fitxers F1.
 * **Tipus de mesura:** conté un valor fixe, "11". Camp B del fitxer F1.
 * **Flag d'estiu/hivern:** s'obté automàticament a partir de les dates
   del fitxer de corba. Camp D del fitxer F1.
-* **Mesura de la magnitud de reserva 1:** aquest valor d'informa buit.
+* **Mesura de la magnitud de reserva 1:** aquest valor s'informa buit.
   Camp K del fitxer F1.
-* **Mesura de la magnitud de reserva 2:** aquest valor d'informa buit.
+* **Mesura de la magnitud de reserva 2:** aquest valor s'informa buit.
   Camp L del fitxer F1.
 * **Mètode d'obtenció:** aquest valor s'informa a 1, «Medidas firmes
   en configuración principal». Camp M del fitxer F1.
@@ -457,9 +457,9 @@ i els de la dreta són els que han de tenir els fitxers F1.
 * **Tipus de mesura:** conté un valor fixe, "11". Camp B del fitxer F1.
 * **Flag d'estiu/hivern:** s'obté automàticament a partir de les dates
   del fitxer de corba. Camp D del fitxer F1.
-* **Mesura de la magnitud de reserva 1:** aquest valor d'informa buit.
+* **Mesura de la magnitud de reserva 1:** aquest valor s'informa buit.
   Camp K del fitxer F1.
-* **Mesura de la magnitud de reserva 2:** aquest valor d'informa buit.
+* **Mesura de la magnitud de reserva 2:** aquest valor s'informa buit.
   Camp L del fitxer F1.
 * **Mètode d'obtenció:** aquest valor s'informa a 1, «Medidas firmes en
   configuración principal». Camp M del fitxer F1.
