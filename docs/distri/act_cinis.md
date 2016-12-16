@@ -96,6 +96,8 @@ associada al tram d’AT:
 
 - La tensió s’obté del camp **Voltatge** de **l’element de Baixa Tensió**.
 
+![](_static/act_cini/lbt_elements_voltatge.png)
+
 **Quarta posició**:
 
 - En les línies de **baixa tensió**, el **número de circuits**
@@ -107,7 +109,7 @@ associada al tram d’AT:
 - Subterránea, un circuito = **1**: si el valor del camp
   **Tipus de línia de BT = Subterrània**
 
-!!! FALTA IMATGE
+![](_static/act_cini/lbt_posada_facana_aeria.png)
 
 **Cinquena posició**:
 
@@ -119,9 +121,9 @@ associada al tram d’AT:
 - La secció s’obté del camp **Secció** del **Cable** associat
   **l’element de Baixa Tensió.**
 
-!!! FALTA IMATGE
+![](_static/act_cini/lbt_element_cable.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/lbt_cable_seccio.png)
 
 **Setena posició**:
 
