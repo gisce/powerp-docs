@@ -24,29 +24,30 @@ El document de referència de CINI serà la
 P.e. en aquest cas la 5a posició apareix en blanc perquè falta entrar
 el valor del tipus de element de la CNMC, en la taula corresponent.
 
-!!! FALTA IMATGE
+![exemle-5a-posicio-buida](_static/act_cini/lat_5a_posicio_buida.png)
 
 # 1. CINI Línies d'Alta Tensió
 
 El CINI de cada tram d’Alta Tensió és calculat a partir de les dades del
 propi tram i de les dades de la **línia d’AT** que té vinculada:
 
-!!! FALTA IMATGE
+![seleccio-lat-en-trams](_static/act_cini/lat_trams_linia.png)
 
-**Primera posició**: 2
-**Segona posició**: 0
+**Primera posició**: 2    
+**Segona posició**: 0    
 **Tercera posició**:
+
 - S’obté del camp “**Tensió màxima de disseny**” del tram d’Alta Tensió.
 
-!!! FALTA IMATGE
+![tensio-maxima-en-trams](_static/act_cini/lat_trams_tensio_max.png)
 
 Si el camp de la “**Tensió màxima de disseny**” del tram d’AT és buit o zero,
 s’obté del camp “**Tensió**” de la **línia d’Alta Tensió**
 associada al tram d’AT:
 
-!!! FALTA IMATGE
+![canvi-lat-en-tram](_static/act_cini/lat_trams_linia_tensio_max_0.png)
 
-!!! FALTA IMATGE
+![canvi-tensio-en-tram-lat](_static/act_cini/lat_trams_tensio_max.png)
 
 **Quarta posició**:
 
@@ -64,22 +65,23 @@ associada al tram d’AT:
   **tipus de línia d’AT = Subterranea** i el valor del camp **Circuits > 2**
 - No es contemplen altres casos per les **línies d’Alta Tensió**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/lat_aeria_circuits.png)
 
 **Cinquena posició**:
 
 -El número de conductors s’obté del camp **conductors** del tramd’Alta Tensió:
 
-!!! FALTA IMATGE
+![](_static/act_cini/lat_conductors_simplex.png)
 
 **Sisena posició**:
 
 - La secció s’obté del camp **Secció** del **Conductor** associat
   al tram d’Alta Tensió.
 
-!!! FALTA IMATGE
+![](_static/act_cini/lat_trams_conductor.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/lat_conductor_seccio.png)
+
 
 **Setena posició**:
 
