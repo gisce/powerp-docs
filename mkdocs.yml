@@ -36,6 +36,8 @@ pages:
       - CTS:
         - Cel·les i elements de tall: distri/celles.md
       - LAT: distri/lat.md
+      - LAT:
+        - Mètode d'actualització automàtic de CINIs: distri/act_cinis_lat.md
       - LBT: distri/lbt.md
       - Instalacions RE: distri/re.md
       - Expedients: distri/expedientes.md
