@@ -38,11 +38,10 @@ pages:
       - CTS:
         - Celdas i elementos de corte: distri/celles.md
       - LAT: distri/lat.md
-      - LAT:
-        - Método de actualización automático de CINIs: distri/act_cinis_lat.md
       - LBT: distri/lbt.md
       - Instalaciones RE: distri/re.md
       - Expedientes: distri/expedientes.md
+      - CINI - Generación Automática: distri/act_cinis_lat.md
     - Calidad de servicio: distri/calidad.md
   - Comercializadora:
     - Inicio: comer/index.md
