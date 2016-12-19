@@ -132,8 +132,8 @@ associada al tram d’AT:
 
 # 3. Transformadors
 
-**Primera posició**: 2
-**Segona posició**: 7
+**Primera posició**: 2    
+**Segona posició**: 7    
 **Tercera posició**:
 
 - La tensió s’obté de la **connexió activa** de la
@@ -192,9 +192,11 @@ El CINI dels transformadors que es troben en el magatzem serà: **I2900600**.
 
  **1.** Busca el valor del camp codi de la categoria CNE del tipus de CT.
 
-!!! FALTA IMATGE
+![](_static/act_cini/ct_tipus_caseta.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/ct_tipus_caseta_dins.png)
+
+![](_static/act_cini/ct_tipus_caseta_cne.png)
 
 Intemperie = **1** si el valor del camp **codi = I**
 Caseta = **2** si el valor del camp **codi = C**
