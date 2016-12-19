@@ -337,7 +337,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
 - S’obté del camp “**Tensió a aplicar**” de la tensió del parc,
   de igual forma que a la **tercera posició**.
 
-# 7. SUBESTACIONS
+# 7. Subestacions
 
 **Primera posició**: 2     
 **Segona posició**: 1    
@@ -345,13 +345,13 @@ es farà fent la semisuma de les potencies de les dues màquines.
 
 - S’obté del camp “**Tensió primari**” de la subestació.
 
-!!! FALTA IMATGE
+![](_static/act_cini/se_tensio_primari.png)
 
 **Quarta posició**:
 
 - S’obté del camp “**Tensió secundari**” de la subestació:
 
-!!! FALTA IMATGE
+![](_static/act_cini/se_tensio_secundari.png)
 
 **Cinquena posició**:
 
@@ -360,7 +360,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
     2. Si **tecnologia = Blindada**
     3. Si **tecnologia = Mòbil**
 
-!!! FALTA IMATGE
+![](_static/act_cini/se_tecnologia.png)
 
 **Sisena posició**:
 
@@ -369,18 +369,18 @@ es farà fent la semisuma de les potencies de les dues màquines.
   Es consideren en funcionament tots els transformadors
   que tinguin un codi d’estat = **1**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/se_estat.png)
 
 - Si no hi ha cap transformador en funcionament o la suma de potències és 0,
   es posarà el valor **Z** a la sisena posició.    
 - Per cada transformador, la potència s’obté del camp
   **Potència nominal (KVA) del transformador**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/se_trafo_potencia.png)
 
 **Setena posició**: posició no utilitzada = 0
 
-# 8. CEL·LES I ELEMENTS DE TALL (Fiabilitat)
+# 8. Cel·les i elements de tall (Fiabilitat)
 
 **CINI: I26** - element de fiabilitat    
 **3a posició**: tensió normalitzada
