@@ -10371,9 +10371,6 @@ msgid ""
 "tensi&#243; = <strong>(V) P2</strong>.</li>\n"
 msgstr ""
 
-msgid "IMATGE"
-msgstr ""
-
 msgid ""
 "<strong>Quarta posici&#243;</strong>:\n"
 "- La tensi&#243; s&#8217;obt&#233; de la \n"
@@ -10549,9 +10546,6 @@ msgid ""
 "es far&#224; fent la semisuma de les potencies de les dues m&#224;quines."
 msgstr ""
 
-msgid "5. POSICIONS"
-msgstr ""
-
 msgid ""
 "<strong>Primera posici&#243;</strong>: 2  \n"
 "<br />\n"
@@ -10610,9 +10604,6 @@ msgid ""
 "  de igual forma que a la <strong>tercera posici&#243;</strong>.</li>\n"
 msgstr ""
 
-msgid "6. PARCS DE DISTRIBUCIÓ"
-msgstr ""
-
 msgid ""
 "<strong>Primera posici&#243;</strong>: 2   \n"
 "<br />\n"
@@ -10653,9 +10644,6 @@ msgid ""
 "<li>S&#8217;obt&#233; del camp &#8220;<strong>Tensi&#243; a "
 "aplicar</strong>&#8221; de la tensi&#243; del parc,\n"
 "  de igual forma que a la <strong>tercera posici&#243;</strong>.</li>\n"
-msgstr ""
-
-msgid "7. SUBESTACIONS"
 msgstr ""
 
 msgid ""
@@ -10711,9 +10699,6 @@ msgid ""
 msgstr ""
 
 msgid "<strong>Setena posici&#243;</strong>: posici&#243; no utilitzada = 0"
-msgstr ""
-
-msgid "8. CEL·LES I ELEMENTS DE TALL (Fiabilitat)"
 msgstr ""
 
 msgid ""
