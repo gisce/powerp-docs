@@ -259,7 +259,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
     1500/2= 750 el valor adoptat serà T 2x1000 kVA.
     (és l’immediatament superior)
 
-# 5. POSICIONS
+# 5. Posicions
 
 **Primera posició**: 2    
 **Segona posició**: 8    
@@ -267,9 +267,9 @@ es farà fent la semisuma de les potencies de les dues màquines.
 
 - S’obté del camp “Tensió a aplicar” de la tensió de la posició:
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_tensio.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_tensio_aplicar.png)
 
 **Quarta posició**:
 
@@ -278,7 +278,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
 - Posición sin interruptor = **3**: si al camp “**Tipus interruptor**”
   de la posició = **Sense interruptor**
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_tipus_interruptor.png)
 
 **Cinquena posició**:
 
@@ -289,25 +289,25 @@ es farà fent la semisuma de les potencies de les dues màquines.
 	- **Intempèrie**: si el camp **Tipus** de la
     **subestació de la posició, l’id = ‘I’**
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_se-tec.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_se_tipus.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_caseta-tipus_id.png)
 
 **Sisena posició**:
 
 - S’obté del camp “**funció**” de la posició. Si el valor del camp
   posició linia = **Altre**, la sisena posició del CINI **quedarà en blanc**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/posicio_funcio.png)
 
 **Setena posició**:
 
 - S’obté del camp “**Tensió a aplicar**” de la tensió de la posició,
   de igual forma que a la **tercera posició**.
 
-# 6. PARCS DE DISTRIBUCIÓ
+# 6. Parcs de distribució
 
 **Primera posició**: 2     
 **Segona posició**: 8     
