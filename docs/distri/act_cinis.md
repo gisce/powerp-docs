@@ -385,36 +385,36 @@ es farà fent la semisuma de les potencies de les dues màquines.
 **CINI: I26** - element de fiabilitat    
 **3a posició**: tensió normalitzada
 
-!!! FALTA IMATGE
+![](_static/act_cini/celes_tensio.png)
 
 **4a posició**: sempre 0 zero    
 **5a posició**:
 
-!!! FALTA IMATGE
+![](_static/act_cini/celes_tipus_element.png)
 
 - Aquesta posició es calcula a partir del valor del camp
   **Tipus CNMC CINI** del catàleg de Tipo elemento.
 
-!!! FALTA IMATGE
+![](_static/act_cini/celes_tipus_element_list.png)
 
 Que es troba al menú:
 
-!!! FALTA IMATGE
+![](_static/act_cini/celes_list_elements_menu.png)
 
 **6a posició**:
 
 - Per defecte sempre posarà **1**
     - A no ser que estigui marcat **Telemando**, llavors posarà **2**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/celes_telemando.png)
 
 **7a posició**:
 
 1. Subestació
 2. Centre de transformació.
 
-!!! FALTA IMATGE
+    ![](_static/act_cini/celes_inst_ct.png)
 
 3. Tram de línia
 
-!!! FALTA IMATGE
+    ![](_static/act_cini/celes_inst_sopAT.png)
