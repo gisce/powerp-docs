@@ -315,22 +315,22 @@ es farà fent la semisuma de les potencies de les dues màquines.
 
 - S’obté del camp “**Tensió a aplicar**” de la tensió del parc:
 
-!!! FALTA IMATGE
+![](_static/act_cini/parcs_tensio.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/parcs_tensio_aplicar.png)
 
 **Quarta posició**: 1    
 **Cinquena posició**:
 
 - S’obté del camp “**Tecnologia**” del parc:
 
-!!! FALTA IMATGE
+![](_static/act_cini/parcs_tecno.png)
 
 **Sisena posició**:
 
 - S’obté del camp “**Configuració**” del parc:
 
-!!! FALTA IMATGE
+![](_static/act_cini/parcs_config.png)
 
 **Setena posició**:
 
