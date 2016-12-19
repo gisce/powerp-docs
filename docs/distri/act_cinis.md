@@ -141,7 +141,7 @@ associada al tram d’AT:
 - S’obté del camp **(V) P1** si **P2 Con** està desactivat.
 - Si **P2 Con** està activat, llavors agafa la tensió = **(V) P2**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_conn_vP1.png)
 
 **Quarta posició**:
 - La tensió s’obté de la **connexió activa** de la
@@ -149,7 +149,7 @@ associada al tram d’AT:
 - S’obté a partir dels camps **(V) B1, (V) B2** i **(V) B3**,
   dels quals obtindrà la que sigui superior.
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_conn_b1-3.png)
 
 **Cinquena posició**:
 
@@ -158,13 +158,13 @@ associada al tram d’AT:
 - en un centre de transformació = **2**: si el **Centre Transformador**
   del **transformador** és un **CT**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_placa_ct.png)
 
 **Sisena posició**:
 
 - La potència s’obté del camp **Potència nominal (KVA) del transformador**.
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_placa_potencia.png)
 
 **Setena posició**:
 
@@ -176,9 +176,9 @@ associada al tram d’AT:
 - Qualsevol altre valor en el camp **estat del transformador**,
   que no està contemplat, **deixarà en blanc** la setena posició.
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_estat_func.png)
 
-!!! FALTA IMATGE
+![](_static/act_cini/trafo_estat_reserv.png)
 
 El CINI dels transformadors que es troben en el magatzem serà: **I2900600**.
 
