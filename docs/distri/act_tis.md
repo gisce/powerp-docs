@@ -167,9 +167,9 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 - **Tensió**: s’obté de la “**Tensió a aplicar**”
   del camp “**Tensió**” de la posició.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_tensio.png)
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_tensio_aplicar.png)
 
 - **Situació**: s’obté a partir de la “**Categoria CNE**” del
   “**Tipus**” de la “**Subestació**” associada a la posició.
@@ -183,17 +183,17 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 
     Per altra banda, si el codi CNE = **I** es considerarà **intempèrie**.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_se.png)
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_se_tipus.png)
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_se_tipus_categoria.png)
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_se_tipus_cat_codi.png)
 
 - **Tipus**: s’obté del camp “**Tecnologia**” de la posició.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/posicio_tec_tipus.png)
 
 # 5. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
