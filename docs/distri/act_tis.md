@@ -105,20 +105,20 @@ es consulten els següents camps:
 
 - **Tensió**: s’obté del camp “**Voltatge**” de l’element de Baixa Tensió.
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/lbt_voltatge.png)
 
 - **Número de conductors**: té un valor fixe de **1**.
 - **Número de circuits**: té un valor fixe de **1**.
 - **Secció**: s’obté del camp “**Secció**”
   del **cable** associat a l’element de Baixa Tensió.
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/lbt_cable.png)
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/lbt_cable_seccio.png)
 
 - **Estesa**: S’obté del camp “**Tipus de línia**” de l’element de Baixa Tensió.
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/lbt_tipus_linia.png)
 
 # 3. TIs de Centres Transformadors
 Per calcular els TI’s dels CTs es consulten els següents camps:
