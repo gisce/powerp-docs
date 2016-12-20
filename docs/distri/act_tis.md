@@ -234,9 +234,7 @@ a les cel·les i elements de tall s’ha creat un
 cal entrar al menú del ERP a _Centres Transformadors → Manteniment →_
 _Cel·les i elements de tall → Configuració → Tipus element_ :
 
-![]() FALTA IMATGE
-
-![]() FALTA IMATGE
+![](_static/act_tis/celes_list_elements_menu.png)
 
 !!! Note
     Al ser personalitzable, cal tenir en compte de no barrejar conceptes.
@@ -248,7 +246,7 @@ els TI’s de les cel·les i elements de tall es consulten els següents camps:
 - **Tipus d’element**: s’obté del codi TI **configurat prèviament**
   (veure taula anterior) equivalent al tipus d’element seleccionat a la cel·la:
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/celes_tipus_element.png)
 
     En aquest exemple, el **codi TI** equivalent a
     **Fusible de Alta Tensión = TI-181 Seccionador Fusible (XS-SXS)**
