@@ -125,7 +125,7 @@ Per calcular els TI’s dels CTs es consulten els següents camps:
 
 - **Tensió**: S’obté del camp “**Tensió primari**” del centre transformador.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/ct_tensio_primari.png)
 
 - **Número de màquines**: es compta el número de transformadors associats al CT.
 - **Potència**: es realitza el sumatori de la potència dels
@@ -137,11 +137,11 @@ Per calcular els TI’s dels CTs es consulten els següents camps:
 - **Situació**: S’obté del “**Codi**” de la “**Categoria CNE**”
   del camp “**Tipus**” del CT.
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/ct_tipus_caseta.png)
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/ct_tipus_caseta_dins.png)
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/ct_tipus_caseta_cne.png)
 
     El codi pren un dels següents valors:
 
