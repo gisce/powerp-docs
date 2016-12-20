@@ -205,7 +205,7 @@ Els TI’s de les màquines de Reserva, seràn sempre TI-000.
 - Bloquejar el TI
 - Entrar el valor TI-000 del desplegable
 
-![]() FALTA IMATGE
+![](_static/act_tis/maq_tipus_tipologia.png)
 
 Per calcular els TI’s de les màquines de subestació
 es consulten els següents camps:
@@ -216,16 +216,16 @@ es consulten els següents camps:
     - Si la connexió P2 és **connectada**, la **tensió primària = (V) P2**
     - Per altra banda, la **tensió primària = (V) P1**
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/maq_connexions.png)
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/maq_trafo_connectat.png)
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/maq_enlace_voltatge.png)
 
 - **Tensió secundària**: Per la connexió **activa (connectada)**,
   obté el valor màxim d’entre els camps **(V) B1, (V) B2 i (V) B3**.
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/maq_enlace_v_sec.png)
 
 # 6. TIs de cel·les i elements de tall (fiabilitat)
 Per tal de poder fer l’assignació dels TIs de fiabilitat,
