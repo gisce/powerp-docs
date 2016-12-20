@@ -52,7 +52,7 @@ El document de referència dels TI serà el document
 
     Per a generar els formularis de moment agafem el valor "Tipologia CNMC"
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/pre_tipologia_cnmc.png)
 
     Està previst que més endavant desapareixi el camp
     “CNMC Tipus Instal·lació” i únicament es mostri el calculat per l’ERP.
@@ -63,15 +63,15 @@ Per calcular els TI’s de les línies d’Alta tensió es consulten els següen
 - **Tensió**: S’obté del camp “**Tensió màxima de disseny**”
   del tram d’Alta Tensió.
 
-      ![]() FALTA IMATGE
+      ![](_static/act_tis/lat_trams_tensio_max.png)
 
     - Si el camp de la “**Tensió màxima de disseny**” del tram d’AT
       és buit o zero, s’obté del camp “**Tensió**” de la
       **línia d’Alta Tensió** associada al tram d’AT:
 
-  ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_trams_linia.png)
 
-  ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_tensio_linia.png)
 
 - **Número de conductors**: s’obté del camp “**Conductors**”
   del tram d’Alta Tensió.    
@@ -81,23 +81,23 @@ Per calcular els TI’s de les línies d’Alta tensió es consulten els següen
     - **Dúplex** = 2
     - **Tríplex** = 3
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_conductors_simplex.png)
 
 - **Número de circuits**: s’obté del camp “**Circuits**” del tram d’Alta Tensió.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_circuits.png)
 
 - **Secció**: s’obté del camp “**Secció**”
   del **conductor** associat al tram d’Alta Tensió.
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_seccio.png)
 
-    ![]() FALTA IMATGE
+  ![](_static/act_tis/lat_conductor_seccio.png)
 
 - **Estesa**: s’obté del valor del camp “**Tipus**” del tram d’Alta Tensió.
   Pren els valors **Subterrani** o **Aeri**:
 
-    ![]() FALTA IMATGE
+    ![](_static/act_tis/lat_trams_tipus.png)
 
 # 2. TIs de Línies de Baixa Tensió
 Per calcular els TI’s de les línies de Baixa tensió
