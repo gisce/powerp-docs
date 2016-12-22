@@ -272,9 +272,116 @@ caldrà recuperar les carpetes amb els resultats i importar-los.
 
 ### Menú de Gestió de Rutes
 
+**Menú principal**    
+Quan obrim l'aplicació "GISCE-TPL" apareix el menú principal en el que permet
+escollir la ruta de lectura que es desitja carregar polsant el botó
+_Cargar Una Ruta_.
+
+![](_static/tpl/tpl_screen01.png)
+
+**Cargar una ruta de lectura**    
+En el quadre de diàleg, apareixen tots els fitxers de ruta (fitxers amb
+l'extensió "**.ruta**" que es troben en qualsevol carpeta del TPL).    
+Fent doble click sobre la ruta, aquesta es carrega i permet la navegació
+per els registres de la ruta.
+
+![](_static/tpl/tpl_screen02.png)
+
+Una vegada carregada la ruta que es desitja llegir, apareix el menú
+de navegació i gestió de rutes. Podem trobar diverses funcions:
+
+- **_Ir al primer contador pendiente_**
+  Permet situar-se en el primer registre de la ruta del que encara
+  no s'ha pres la lectura.
+- **_Ir al primer contador_**    
+  El programa de lectures es situa en el primer comptador de la ruta,
+  tingui o no lectures
+- **_Cargar otra ruta_**    
+  Igual que en la primera imatge d'aquest apartat.
+- **_Salir_**    
+  Sortir de l'aplicació de GISCE-TPL
+
+![](_static/tpl/tpl_screen03.png)
 
 ### Presa de Lectures de forma Manual
 
+GISCE-TPL mostra els diferents formularis per la recollida de lectures, que
+varien en funció de la tarifa associada a la pòlissa, com es veurà en els
+pròxims apartats.
+
+Una pantalla tipus, per la entrada de dades manuals, es tal i com es mostra
+en la següent imatge, on es descriu cadascún dels seus apartats:
+
+![](_static/tpl/tpl_diag_finestra_lectures.png)
+
+A continuació es descriuen els diferents apartats que es mostren durant la
+presa de dades d'un equip de mesura.
+
+Es mostra informació associada a cada comptador en la ruta, per ajudar a
+identificar els comptadors i, en la mesura del possible, minimitzar
+equivocacions i detectar anomalies.
+
+De dalt a baix, i d'esquerra a dreta:
+
+- **Botó retrocedir**    
+  Permet moure's endarrera, mostrant els registres anteriors i els valors de
+  les mitjanes si ja s'han pres.
+- **Número de comptador dins de la ruta**
+- **Número total de comptadors en la ruta**
+- **Número de comptadors pendents de processar**, entre parèntesis.
+- **Símbol d'advertència**
+  Avisa de l'existència d'un avís o situació en el punt de mesura actual.
+- **Codi de la zona i ordre dins de la zona**
+  Mostra el valor de la ruta activa amb l'ordre de lectura associat
+  a cada registre
+- **Botó avançar**
+  Permet moure's cap endavant mostrant els registres anteriors i els valors
+  de les mesures si han estat presos.
+
+En l'àrea verda que hi ha just a sota dels botons de navegació, mostra les
+dades del equip de mesura en el que es troba el lector:
+
+- **Identificador del comptador**    
+  Normalment és el número de sèrie del comptador, de la mateixa manera que
+  l'assigna GISCE-ERP, o el codi únic que identifica l'equip de mesura.
+- **Codi de la _tarifa d'accés_ contractada**
+- **Potència contractada**
+- **Identificador o Codi de la pòlissa**
+
+En la part central de la pantalla, apreixen caselles per a l'entrada de valors
+de diferents magnituds i periodes per a **l'entrada de lectures**
+
+**Totalitzador**    
+Sota les caselles d'entrada de dades, en les lectures de 6 periodes apareix el
+sumatori dels valors introduis perquè es comprovin amb el valor del
+totalitzador del equip de mesura.
+
+Les diferents "pestanyes" permeten accedir als diferents formularis del
+comptador actual. Les magnituds a llegir del comptador apareixen, en funcio del
+_tipus de tarifa_, en les tres pestanyes que s0acaben de descriure:
+
+- **Lectures**: La pestanya de lectures apareix quan s'està prenent les lectures
+  manuals per a tarifes **_2.0A, 2.0DHA, 2.1A i 2.1DHA_**.
+- **A/M/R**(Inicials de "Activa/Reactiva/Maxímetre"): la pestanya A/M/R apareix
+  per a les tarifes **3.0A, 3.1A i 6.1**.
+- **Excessos**: Aquesta pestanya apareix per a les tarifes **6.1**.
+- **Lectura electrònica**: S'accedeix a la descàrrega de tancaments i
+  corbes de càrrega dels equips de mesura.
+- **Misc**: S'introdueixen incidències i observacions de la lectura i
+  equips de mesura
+
+En l'àrea verda de la part inferior, just a sota de les pestanyes, mostra:
+
+- **Nom del client**, en la primera línia
+- **Direcció**, en la segona línia
+- **Població**, en la tercera línia
+
+**Navegació**: Permet accedir al menú de navegació.
+
+- _**Buscar** Comptador_: Permet situar-se en un comptador de la ruta indicant
+  el seu codi o bé manualment o bé a partir de la lectura del codi de barres.
+
+#### Tarifes de 1 o 2 periodes
 
 ### Incidències i Observacions
 
