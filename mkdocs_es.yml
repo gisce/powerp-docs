@@ -20,7 +20,7 @@ pages:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
     - Contadores: distri/contadores.md
-    - TPL: distri/tpl.md
+    - Manual de uso de TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
     - Facturación: distri/facturacion.md

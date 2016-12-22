@@ -17,7 +17,7 @@ pages:
     - Inicio: distri/index.md
     - Telegestió: distri/telegestion.md
     - Contadors: distri/contadores.md
-    - TPL: distri/tpl.md
+    - Manual d'ús de TPL: distri/tpl.md
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Facturació: distri/facturacion.md
