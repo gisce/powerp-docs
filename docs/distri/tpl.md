@@ -260,7 +260,7 @@ Tal com es veu en la següent imatge, per la ruta "_CT-108_ " s'ha creat una
 carpeta amb el mateix nom de la ruta  que conté els fitxers "_CT-108.lectura_ "
 i totes les corbes de càrrega descarregades.
 
-![](docs/distri/_static/tpl/tpl_fitxers_de_ruta_i_lectures.png)
+![](_static/tpl/tpl_fitxers_de_ruta_i_lectures.png)
 
 En aquest exemple hi ha tres rutes sense començar: la "04", la "05" i la "14".
 Els seus directoris amb els resultats es crearan automàticament quan es comenci
