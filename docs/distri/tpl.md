@@ -249,6 +249,26 @@ amb observacions.
 
 ### Organització dels fitxers d'intercanvi en el TPL
 
+Els fitxers de ruta s'hauràn de carregar dins del àrea _flash_ del terminal, per
+evitar pèrdua de dades en cas de que s'acabi o retiri la bateria del dispositiu,
+per exemple si rep un cop.
+
+GISCE-TPL emmagatzemarà els resultats del recorregut (_fitxers de ruta_ i
+_fitxers de corbes_) en un directori amb el mateix nom de la ruta.
+
+Tal com es veu en la següent imatge, per la ruta "_CT-108_ " s'ha creat una
+carpeta amb el mateix nom de la ruta  que conté els fitxers "_CT-108.lectura_ "
+i totes les corbes de càrrega descarregades.
+
+![](docs/distri/_static/tpl/tpl_fitxers_de_ruta_i_lectures.png)
+
+En aquest exemple hi ha tres rutes sense començar: la "04", la "05" i la "14".
+Els seus directoris amb els resultats es crearan automàticament quan es comenci
+el recorregut per cadascuna.
+
+Per traslladar els resultats al sistema de gestió, per exemple GISCE-ERP, només
+caldrà recuperar les carpetes amb els resultats i importar-los.    
+(Veure l'apartat [Fitxers d'intercanvi](#fitxers-dintercanvi-per-gisce-tpl))
 
 ### Menú de Gestió de Rutes
 
