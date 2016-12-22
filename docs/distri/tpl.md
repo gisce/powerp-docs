@@ -132,12 +132,120 @@ Per poder iniciar el programa cal tocar executar-lo.
 
 ## Procés de treball
 
-
 ### Introducció
 
+El concepte "_ruta_" consisteix en una col·lecció de comptadors, disposats en
+un ordre apropiat perquè una persona els recorri tots per a dur a terme alguna
+feina. Per exemple, en el nostre cas, recollir lectures.
+
+El sistema "_GISCE-ERP_" contempla aquest concepte, i genera un _fitxer de ruta_
+(text delimitat per tabuladors, en un fitxer amb l'extensió _.ruta_. Veure
+l'apartat [Fitxers d'intercanvi](#fitxers-dintercanvi-per-gisce-tpl)) que
+conté les dades dels comptadors en l'ordre que s'hagi establert per
+anar recollint les lectures.    
+**Aquest fitxer inclou les dades necessàries per identificar el comptador,
+la pòlissa, l'abonat, el CUPS, i els valors de lectures anteriors**.
+
+L'aplicació "GISCE-TPL" utilitza aquest _fitxer de ruta_ com entrada.
+Permet al usuari anar entrant les lectures per cada comptador, i genera com a
+resultat un _fitxer de lectures_, que conté les dades recollides.
+
+El _fitxer de lectures_ resultant es processa en el sistema "GISCE-ERP",
+actualitzant la base de dades amb la informació recollida i permetent revisar
+les incidències que s'han registrat.
+
+Encara que l'aplicació "GISCE-TPL" està pensada per funcionar integrada en el
+flux de treball del sistema "GISCE-ERP", es completament autònoma. Els formats
+de tots els fitxers de dades estàn descrits formalment en l'apartat
+"_fitxers d'intercanvi_" i poden ser utilitzats amb qualsevol altre
+aplicació de gestió.
 
 ### Fluxorames de processos
 
+![](_static/tpl/tpl_workflow-erp_tpl_erp.png)
+
+Per començar el recorregut per la ruta s'ha de disposar d'un o més _fitxers
+de ruta_. Aquests s'obtenen, generalment, accedint al mòdul de lectures de
+GISCE-ERP: l'apartat que permet exportat el fitxer de ruta sol·licita que
+es seleccioni una ruta i també la data en la que es van recollir les lectures.
+
+S'haurà de disposar del terminal que es va utilitzar durant el recorregut,
+que obviament haurà de tenir instal·lada la aplicació "GISCE-TPL".
+
+S'han d'introduir els fitxers de ruta en el terminal. Això es pot realitzar
+guardant els fitxers en una targeta tipus _flash_, per exemple una _targeta SD_,
+si el terminal ho permet. Es poden introduir directament en el terminal
+conectant-lo al ordinador amb _ActiveSync_.    
+S'ha de tenir en compte que GISCE-TPL generarà un _fitxer de lectures_ per
+cada _ruta_ i aquest quedarà en la mateixa ubicació en la que es trobi el
+_fitxer de ruta_ corresponent.
+
+L'usuari s'emportarà el terminal amb ell. Es convenient probar a obrir cada
+_fitxer de ruta_ abans d'entregar el terminal al usuari, per tal d'evitar, en la
+mesura del possible, que es trobi amb problemes en el carrer.
+
+Per iniciar el procés, s'haurà d'obrir la aplicació "GISCE-ERP". El menú
+principal de la aplicació permet seleccionar un dels _fitxers de ruta_
+disponibles en el terminal. El procés de càrrega s'assegura de que totes les
+dades que hi ha en el _fitxer de ruta_ siguin correctes.    
+A continuació informa del nombre de comptadors que hi ha en la ruta.
+
+Si s'haguessin recollit ja lectures en la ruta, els resultats del _fitxer de
+lectures_ corresponent es carreguen automàticament.    
+El terminal ens mostrarà el número de comptadors pendents de llegir i podrem
+consultar les lectures ja recollides "navegant" pels diferents comptadors.
+
+Per a les lectures manuals, existeix la possibilitat d'etiquetar amb un
+**codi de barres** els comptadors. Això ens permet avançar per la ruta
+de dos maneres diferents:
+
+![](_static/tpl/tpl_workflow_recorrido_ruta.png)
+
+El programa solicita el _codi del comptador_ que es va llegir. Idealment
+s'introdueix amb el lector de codis de barres. "GISCE-TPL" localitza el
+comptador en la ruta i a continuació, sol·licita les lectures dels diferents
+paràmetres segons el tipus de tarifa.    
+Quan s'han entrat totes les dades per al comptador, l'aplicació sol·licita
+un nou _codi de comptador_.    
+Es segueix el recorregut previst en la ruta, introduint els paràmetres a llegir
+de cada comptador. El programa avança automàticament al següent comptador de
+la ruta quan s'ha acabat la lectura del actual.
+
+En tots dos casos, segons es van recollint les lectures de la ruta, el programa
+va emmagatzemant les lectures introduïdes en el fitxer de lectures. Si
+s'interromp el procés, per exemple tencant el programa a mitja ruta,
+només farà falta tornar a carregar la ruta per poder rependre
+el treball on es va deixar.
+
+Les lectures es poden recollir de dos maneres:
+
+- _Manualment_, llegint en el comptador i registrant cada una de les magnituds
+- _Electrònicament_, mitjançant una connexió del TPL al comptador utilitzant
+  un cable sèrie _RS232_ o una _sonda òptica_.
+
+La aplicació sempre dona la possibilitat d'anotar observacions per cada
+comptador. Adicionalment es pot indicar una de les anomalies tipificades,
+seleccionant-la d'una llista, per exemple en cas de detectar un frau, defectes
+en la instal·lació, no poder accedir al aparell...    
+Aquesta llista està basada en la _tabla 63_ del document
+"_tablas de codigos\_CNE\_V\_11\_(220109).doc_" i es pot modificar o ampliar
+fàcilment (Veure l'apartat [Fitxers d'intercanvi](#fitxers-dintercanvi-per-gisce-tpl))
+
+L'aplicació permet a més a més: buscar, avançar i retrocedir per els comptadors
+de la ruta; per revisar en cas de dubte i corretgir les dades ja entrades si
+fos necessari.
+
+L'últim pas consisteix en recollir els _fitxers de lectures_ resultatns i
+processar-los segons sigui oportú.    
+Per recollir els fitxers de lectures s'utilitza el mateix mètode que per
+introduïr els _fitxers de ruta_: es pot insertar la targeta _flash_ al ordinador
+o bé es pot connectar el terminal amb _ActiveSync_.
+
+GISCE-ERP ofereix la funció d'importar les lectures recollides.    
+Analitzarà els fitxers de lectures i actualitzarà la Base De Dades deixant les
+dades llestes per altres processos, per exemple perfilat i facturació. També es
+podrà revisar els comptadors marcats amb anomalies i els que s'han registrat
+amb observacions.
 
 ### Organització dels fitxers d'intercanvi en el TPL
 
