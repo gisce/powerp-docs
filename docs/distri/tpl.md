@@ -383,17 +383,145 @@ En l'àrea verda de la part inferior, just a sota de les pestanyes, mostra:
 
 #### Tarifes de 1 o 2 periodes
 
+**Tarifes**: 2.0A, 2.0DHA, 2.1A i 2.1DHA
+
+La pantalla d'entrada de dades manuals de les tarifes de 1 o 2 períodes es
+tal i com es mostra en aquesta imatge.
+
+![](_static/tpl/tpl_screen04.png)
+
+La columna de l'esquerra mostra la lectura anterior.
+
+Si el valor incremental del consum, obtingut de la diferencia de la lectura
+absoluta anterior i la actual, es negatiu es ressalta en vermell. Això serveix
+perquè l'operador del equip comprobi si el valor introduït es correcte,
+o l'equip de mesura concideix amb el que es desitja realitzar la lectura.
+
+Si el valor incremental del consum es positiu, el valor es mostra ressaltat
+utilitzant el color blau.
+
+#### Tarifes de 3 i 6 períodes
+
+**Tarifes**: 3.0A, 3.1a i 6.x
+
+La pantalla d'entrada de dades manuals de les tarifes de 3 i 6 períodes es
+tal i com es mostra en aquesta imatge. Les tarifes de 3 períodes es llegeixen
+igualment en 6 per tenir en compte els períodes dels dies festius.
+
+- **Pestanya A/R/M**: S'introdueixen els valors de l'energia Activa (A),
+  Reactiva (R) i el Maxímetre (M)
+
+![](_static/tpl/tpl_screen05.png)
+
+En la part inferior de les columnes d'Activa i Reactiva apareix la suma de tots
+els valors per comprobar-los amb el valor del totalitzador del equip de mesura.
+
+Si es desitja fer la lectura electrònica a través del port òptic s'ha de polsar
+sobre la pestanya "Lectura electrónica". (Veure apartat [Descàrrega electrònica
+de tancaments i corbes](#descarrega-electronica-de-tancaments-i-curves))
+
+**Tarifa**: 6.x
+
+- **Pestanya Excesos**: En aquesta pestanya s'introdueixen els excessos de
+  consum registrats en l'equip de mesura.
+
+![](_static/tpl/tpl_screen06.png)
+
+Si es desitja fer la lectura electrònica a través del port òptic s'ha de polsar
+sobre la pestanya "Lectura electrónica". (Veure apartat [Descàrrega electrònica
+de tancaments i corbes](#descarrega-electronica-de-tancaments-i-curves))
+
 ### Incidències i Observacions
 
+La pestanya **Misc** (de _miscelània_) permet registrar incidències i anotar les
+observacions que l'usuari cregui oportunes.
+
+![](_static/tpl/tpl_screen09.png)
+
+- _Registrar anomalia_, permet seleccionar una de els anomalies tipificades
+    - Apareix la finestra que es mostra en les dos imatges de més a la dreta.
+    - Es pot escollir directament de la llista completa o buscar amb el filtre.
+- _Sol·licitar etiqueta_, en cas de qie els comptadors estiguin etiquetats amb
+  codis de barres, l'usuari pot indicar que el comptador actual necessita una
+  nova etiqueta.
+  Es marcarà la casella en cas de que s'hagi de generar una nova etiqueta de
+  codi de barres si l'existent està en mal estat.
+- _Observacions_, permet al usuari registrar qualsevol comentari que cregui
+  oportú. S'hi inclouràn els nous avisos per a pròximes lectures, la situació
+  del equip de mesura o qualsevol informació d'interés per la companyia
+
+- _Llista d'anomalies_, permet seleccionar la categoria i escollir directament
+  de la llista completa o buscar amb el filtre. Una vegada localitzada
+  l'anomalia, es sel·lecciona i es polsa el botó _Registrar_ perquè es guardi
+  en la Base de Dades.
+
+![](_static/tpl/tpl_screen11.png)
+
+- _Filtre d'anomalies_, dins de la finestra de la llista d'anomalies, una vegada
+  ja hem sel·leccionat una categoria, podem escriure dins de la casella de
+  _Filtre_ la cadena de caràcters que volem buscar. Quan ja haguem escrit
+  la cadena, prement el botó _Filtrar_, la llista d'anomalies es reduirà a les
+  que compleixen el filtre.
+
+![](_static/tpl/tpl_screen10.png)
 
 ### Menú Navegació
 
+Polsant sobre el menú "_Navegación_" permet al operador canviar la forma de
+navegar per la ruta en qualsevol moment seleccionant qualsevol de les opcions
+existents.
+
+![](_static/tpl/tpl_screen14.png)
+
+- **Solo contadores pendientes**. Omet els comptadors que ja s'han llegit i
+  únicament mostra els que estàn pendents de llegir.
+- **Todos los contadores**. Mostra tots els comptadors amb lectures realitzades
+  per a la seva verificació.
+- **Navegación por etiquetas**. Permet canviar a la realització de lectures
+  entrant el número del comptador o bé manualment o bé utilitzant el lector
+  de codi de barres del TPL.
 
 ### Buscar un comptador
 
+Polsant el botó "_Buscar_" en la part inferior dreta de la pantalla, o bé des
+del menú "_Navegación/Navegación por etiquetas_", s'accedeix a la pantalla de
+_**Buscar comptador**_.
+
+![](_static/tpl/tpl_screen13.png)
+
+En la casella "_Número del contador_" s'hi introduirà el número de comptador
+desitjat.
+
+Pot teclejar-se directament el codi del comptador, si aquest disposa de codi de
+barres, es pot utilitzar el lector de codi de barres del TPL.
+
+Polsant sobre el botó "_Buscar_" es situarà en el registre desitjat.
+
+Si el codi introduït no correspon a cap comptador de la ruta activa, la casella
+es resalta en color vermell i espera a que s'entri un altre codi.
+
+Si té una centralització de comptadors, es molt útil colocar les etiquetes de
+codi de barres, generat pel programa GISCE-ERP, en cada comptador. Això
+facilitarà i agilitzarà la lectura dels equips de mesura, millorant així la
+eficiència dels treballs de presa de mesures.
 
 ### Avisos i situació del Punt de Mesura
 
+**Advertència**: Quan apareix el símbol '[!]' d'advertència, significa que hi ha
+algun avís referent a les precaucions o accions a tenir en compte pe a la presa
+de lectues, o bé alguna observació referida a la situació del comptador per a la
+seva fàcil localització.
+
+![](_static/tpl/tpl_screen05.png)
+
+Polsant sobre el botó d'advertència es podrà veure l'avís i/o situació referent
+a aquest punt de mesura.
+
+![](_static/tpl/tpl_screen16.png)
+
+Si es desitja afegir algun avís o advertència, s'ha d'indicar en l'apartat
+d'_observacions_, perquè el departament d'administració ho afegeixi per la
+pròxima presa de lectures.
 
 ## Descàrrega electrònica de Tancaments i Curves
 
