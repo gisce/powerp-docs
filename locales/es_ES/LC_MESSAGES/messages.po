@@ -3704,7 +3704,7 @@ msgid ""
 "apretant la tecla <em>ESC</em>."
 msgstr ""
 
-msgid "La següent comprovació que tenim de fer és:"
+msgid "La següent comprovació que hem de fer és:"
 msgstr "La siguiente comprobación que tenemos que hacer es:"
 
 msgid ""
