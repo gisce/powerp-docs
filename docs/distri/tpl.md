@@ -235,7 +235,7 @@ L'aplicació permet a més a més: buscar, avançar i retrocedir per els comptad
 de la ruta; per revisar en cas de dubte i corretgir les dades ja entrades si
 fos necessari.
 
-L'últim pas consisteix en recollir els _fitxers de lectures_ resultatns i
+L'últim pas consisteix en recollir els _fitxers de lectures_ resultants i
 processar-los segons sigui oportú.    
 Per recollir els fitxers de lectures s'utilitza el mateix mètode que per
 introduïr els _fitxers de ruta_: es pot insertar la targeta _flash_ al ordinador

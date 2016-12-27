@@ -10451,7 +10451,7 @@ msgstr ""
 
 msgid ""
 "L'últim pas consisteix en recollir els <em>fitxers de lectures</em> "
-"resultatns i\n"
+"resultants i\n"
 "processar-los segons sigui oport&#250;.  \n"
 "<br />\n"
 "Per recollir els fitxers de lectures s'utilitza el mateix m&#232;tode que"
