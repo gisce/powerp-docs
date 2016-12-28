@@ -40,7 +40,9 @@ pages:
       - Instalacions RE: distri/re.md
       - Expedients: distri/expedientes.md
       - Sincronització CUPS: distri/sincronizacion_cups.md
-    - Calitat de servei: distri/calidad.md
+      - CINI - Generació Automàtica: distri/act_cinis.md
+      - TI - Generació Automàtica: distri/act_tis.md
+    - Qualitat de servei: distri/calidad.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - CUPS: comer/cups.md
