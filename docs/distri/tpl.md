@@ -627,15 +627,77 @@ Per seleccionar el tipus de corba que es desitja decarregar en l'apartat
 
 ## Fitxers d'intercanvi per GISCE-TPL
 
+En aquest apartat es descriuen els formats dels fitxers de intercanvi entre el
+programa de gestió GISCE-ERP.
+
+Si s'utilitza un programa de facturació d'accessos diferent de GISCE-ERP es
+descriuen amb tot detall els formats dels fitxers de importació de rutes i
+exportació de lectures des del TPL.
 
 ### Especificacions comuns a tots els fitxers
 
+Tots els fitxers respecten les següents especificacions:
+
+- Text codificat amb _UTF-8_.
+- Camps delimitats per tabuladors(_'\t', 0x09_).
+- Línies delimitades per _newline_ (_'\n', 0x0a_).
+- No s'utilitzen cometes ni ningun altre delimitador per cadenes de caràcters.
+- Els números no enters es codifiquen amb un punt per separar elsdecimals, mai
+  una coma. No s'utilitzen separadors de miliars. Si alguna magnitud fos
+  negativa s'indicaria amb un guió com a prefix.
 
 ### Codificació dels camps Data/Hora
 
+Els camps data s'emmagatzemen com cadenes de caràcters. Sempre s'inclou la hora,
+i es deixen a 0 els segons, minuts i hores si no es té aquesta precisió o si es
+irrelevant.    
+El format es "_YYYYMMDDHHMMSS_", 4 dígits per l'Any, 2 per al Mes, 2 per al Dia
+del mes, 2 per les Hores, 2 pels Minuts i 2 pels Segons.    
+Cada element s'emplena amb zeros per l'esquerra fins que ocupi la longitud que
+li correspon.
 
 ### Codificació del camp "_Configuración Puerto_"
 
+Els paràmetres de configuració del port série i els paràmetres necessaris per
+accedir al comptador mitjançant el port série, tant amb cable o amb sonda
+òptica, es codifiquen amb una cadena de caràcters. Separant cada un dels camps
+amb el caràcter ':', en aquest ordre:
+
+- **_port_name_**: el nom del port de comunicacions. És una cadena de caràcters
+  i els possibles valors són: _"com1", "com2", ..., "com19", "com20"_. En els
+  terminals sol ser _"com1"_.
+- **_baud_rate_**: tasa de transferència, en _bps_. És un enter i els possibles
+  valors legals són: _110, 300, 600, 1200, 2400, 4800, 9600, 14400, 19200,
+  28800, 38400, 57600, 115200, 128000, 256000_.
+- **_data_bits_**: bits de dades. És un enter. Els possibles valors
+  legals són _7 i 8_
+- **_parity_**: paritat. És una cadena de caràcters. Els possibles valors
+  legals són: _“even”, “none”, “odd”, “mark”, “space”_.
+- **_stop_bits_**: bits de parada. És una cadena de caràcters i els possibles
+  valors legals són: _“0”, “1”, “1.5”, “2”_.
+- **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
+  en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
+  de considerar que no es pot establir la connexió. Un valor típic i
+  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
+- **_direccion_de_enlace_**: Un enter.
+- **_direccion_del_punto_de_medida_**: Un enter.
+- **_contraseña_**: Un enter.
+- **_tipo_de_curva_**: _Per sel·leccionar el tipus de corba que es desitja
+  decarregar en l'apartat "Configuración" es pot sel·leccionar la corba a
+  descarregar:
+    - Dades agregades cada 60 minuts, amb valors absoluts
+    - Dades agregades cada 60 minuts, amb valors incrementals.
+    - Dades agregades cada 15 minuts, amb valors absoluts.
+    - Dades agregades cada 15 minuts, amb valors incrementals._
+
+Com es pot veure:
+
+- El **primer camp** defineix la configuració del **terminal**.
+- Els **cinc següents** defineixen la configuració del protocol **RS232**
+- Els **tres últims** defineixen la configuració del protocol **IEC870REE**
+
+És imprescindible que els valors corresponguin a la configuració del comptador
+per poder descarregar lectures electrònicament.
 
 ### Codificació del camp "_Calidad_"
 
