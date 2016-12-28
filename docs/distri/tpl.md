@@ -24,7 +24,7 @@
 	1. [Descàrrega automàtica pel Port Òptic](#descarrega-automatica-pel-port-optic)
     	1. [Configuració de la descàrrega](#configuracio-de-la-descarrega)
     	2. [Descàrrega de Tancaments](#descarrega-de-tancaments)
-    	3. [Descàrrega de Corbes](descarrega-de-corbes)
+    	3. [Descàrrega de Corbes](#descarrega-de-corbes)
 7. [Fitxers d'intercanvi per GISCE-TPL](#fitxers-dintercanvi-per-gisce-tpl)
 	1. [Especificacions comuns a tots els fitxers](#especificacions-comuns-a-tots-els-fitxers)
 	2. [Codificació dels camps Data/Hora](#codificacio-dels-camps-datahora)
@@ -268,7 +268,13 @@ i totes les corbes de càrrega descarregades.
 ![](_static/tpl/tpl_fitxers_de_ruta_i_lectures.png)
 
 En aquest exemple hi ha tres rutes sense començar: la "04", la "05" i la "14".
-Els seus directoris amb els resultats es crearaers-dintercanvi-per-gisce-tpl))
+Els seus directoris amb els resultats es crearan automàticament quan es comenci
+el recorregut per cadascuna.
+
+Per traslladar els resultats al sistema de gestió, per exemple GISCE-ERP, només
+caldrà recuperar les carpetes amb els resultats i importar-los.    
+(Veure l'apartat
+[Fitxers d'intercanvi](#fitxers-dintercanvi-per-gisce-tpl))
 
 ### Menú de Gestió de Rutes
 
