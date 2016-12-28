@@ -701,6 +701,28 @@ per poder descarregar lectures electrònicament.
 
 ### Codificació del camp "_Calidad_"
 
+D'acord amb el document "_REGLAMENTO DE PUNTOS DE MEDIDA: Protocolo de
+comunicaciones entre registradores y concentradores de medidas o terminales
+portátiles de lectura_", Revisió _10.04.02_, del _10 d'Abril de 2002_, publicat
+a _www.ree.es_.    
+Aquest document es refereix al camp com "_octeto de cualificadores_" i als seus
+bits com "_bits de calidad_".
+
+Aquest camp es un eter de 8 bits, que s'interpreta com un "_mapa de bits_", amb
+el següent significat per cada bit:
+
+| Bit  | Valor |            Descripció                                             |
+|:----:|:-----:|:------------------------------------------------------------------|
+|0(LSB)|   1   | Reservat; Sense significat                                        |
+|  1   |   2   | Fallada en l'alimentació                                          |
+|  2   |   4   | Intrussió                                                         |
+|  3   |   8   | Paràmetres modificats                                             |
+|  4   |   16  | Canvi "lleuger" en la data/hora; p.e. un ajustament de dos minuts |
+|  5   |   32  | _Overflow_                                                        |
+|  6   |   64  | Canvi "radical" en la data/hora; p.e. un ajustament de dos dies   |
+|7(MSB)|  128  | Mesura invàlida.                                                  |
+
+S'ha de tenir sempre en compte, com a mínim, el bit més significatiu (_MSB_)
 
 ### Fitxer de Ruta (GISCE-ERP → GISCE-TPL)
 
