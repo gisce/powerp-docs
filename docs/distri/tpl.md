@@ -574,8 +574,9 @@ estiguin d'acord amb una sèrie de paràmetres (_configuració_) que consta de:
     - Direcció del enllaç
     - Direcció del punt de mesura
     - Contrasenya
-3. Especificar el **tipus de corba** que es vol descarregar.
+3. Especificar el **tipus de corba** que es vol descarregar.    
   Hi ha quatre tipus disponibles, que són:
+
     1. Dades agregades cada 60 minuts, amb valors absoluts
     2. Dades agregades cada 60 minuts, amb valors incrementals.
     3. Dades agregades cada 15 minuts, amb valors absoluts.
@@ -604,7 +605,19 @@ valor del totalitzador del equip de mesura. (Veure apartat
 
 #### Descàrrega de Corbes
 
+Si els paràmetres de configuració de la comunicació són correctes, polsant el
+botó "_Curvas_", es descarrega la corba de càrrega entre les dos dates, que
+s'indiquen en la pantalla.
 
+![](_static/tpl/tpl_screen15.png)
+
+Per seleccionar el tipus de corba que es desitja decarregar en l'apartat
+"_Configuración_" es pot sel·leccionar la corba a descarregar:
+
+1. Dades agregades cada 60 minuts, amb valors absoluts
+2. Dades agregades cada 60 minuts, amb valors incrementals.
+3. Dades agregades cada 15 minuts, amb valors absoluts.
+4. Dades agregades cada 15 minuts, amb valors incrementals.
 
 ## Fitxers d'intercanvi per GISCE-TPL
 
