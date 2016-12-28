@@ -14,12 +14,17 @@
 	3. [Organització dels fitxers d'intercanvi en el TPL](#organitzacio-dels-fitxers-dintercanvi-en-el-tpl)
 	4. [Menú de Gestió de Rutes](#menu-de-gestio-de-rutes)
 	5. [Presa de Lectures de forma Manual](#presa-de-lectures-de-forma-manual)
+    	1. [Tarifes de 1 o 2 períodes](#tarifes-de-1-o-2-periodes)
+    	2. [Tarifes de 3 i 6 períodes](#tarifes-de-3-i-6-periodes)
 	6. [Incidències i Observacions](#incidencies-i-observacions)
 	7. [Menú Navegació](#menu-navegacio)
 	8. [Buscar un comptador](#buscar-un-comptador)
 	9. [Avisos i situació del Punt de Mesura](#avisos-i-situacio-del-punt-de-mesura)
 6. [Descàrrega electrònica de Tancaments i Curves](#descarrega-electronica-de-tancaments-i-curves)
 	1. [Descàrrega automàtica pel Port Òptic](#descarrega-automatica-pel-port-optic)
+    	1. [Configuració de la descàrrega](#configuracio-de-la-descarrega)
+    	2. [Descàrrega de Tancaments](#descarrega-de-tancaments)
+    	3. [Descàrrega de Corbes](descarrega-de-corbes)
 7. [Fitxers d'intercanvi per GISCE-TPL](#fitxers-dintercanvi-per-gisce-tpl)
 	1. [Especificacions comuns a tots els fitxers](#especificacions-comuns-a-tots-els-fitxers)
 	2. [Codificació dels camps Data/Hora](#codificacio-dels-camps-datahora)
@@ -578,7 +583,24 @@ estiguin d'acord amb una sèrie de paràmetres (_configuració_) que consta de:
 
 #### Descàrrega de Tancaments
 
+Si els paràmetres de configuració de la comunicació són correctes, polsant el
+botó "_Cierres_", es descarreguen les _lectures_ del últim tancament registrat
+entre les dos dates que s'indiquen a la pantalla.
 
+![](_static/tpl/tpl_screen12.png)
+
+Una vegada descarregats els tancaments i les corbes del equip actiu, s'efectua
+una verificació de les dades dels tancaments. Si són correctes en la pestanya
+_A/R/M_, podrem premer el botó "_ENTER_" i es passarà al següent comptador de
+la ruta.
+
+Si per algun motiu no es poden descarregar els tancaments, sempre es poden
+entrar manualment els valors registrats en l'equip de mesura des de la pestanya
+_A/R/M_.
+En la part inferior de la pantalla de presa de mesures d'Activa i Reactiva,
+apareix el valor de la suma de tots els períodes perquè es contrasti amb el
+valor del totalitzador del equip de mesura. (Veure apartat
+[5.2](#tarifes-de-3-i-6-periodes))
 
 #### Descàrrega de Corbes
 
