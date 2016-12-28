@@ -62,9 +62,9 @@ With the second command, we specify the config file to be used.
 
 Markdown extensions:
 
-* Tables
-* Admonition
-* markdown_i18n
+* [Tables](https://pythonhosted.org/Markdown/extensions/tables.html) (and [grid_tables](https://github.com/smartboyathome/Markdown-GridTables))
+* [Admonition](https://pythonhosted.org/Markdown/extensions/admonition.html)
+* [markdown_i18n](https://github.com/gisce/markdown-i18n)
 
 ## Project structure
 
