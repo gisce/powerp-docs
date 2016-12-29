@@ -56,8 +56,9 @@ Steps to translate your new documentation:
 2. Local build your version with:
 
 ```shell
-mkdocs build -f mkdocs_es.yml
-mkdocs serve -f mkdocs_es.yml
+    mkdocs build -f mkdocs_es.yml
+# OR
+    mkdocs serve -f mkdocs_es.yml
 ```
 
 3. Combine the new strings in the .pot with the old .po using:`
