@@ -2,6 +2,15 @@
 
 [Build of our documentation](http://builds.gisce.net/powerp-docs/master/)
 
+**Table Of Contents**
+
+- [Environment](#setting-up-your-environment)
+    - [Recommended editors](#recommended-editors)
+- [Translations](#translations)
+- [Display Documentation](#display-documentation)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+
 ## Setting up your environment
 
 ```shell
@@ -11,6 +20,24 @@ $ cd powerp-docs
 $ pip install -r requirements.txt
 $ export PYTHONPATH=$PWD/sitecustomize
 ```
+
+### Recommended Editors
+
+Edit documentation files: 
+
+**Atom**    
+_With the extensions:_
+
+- [markdown-toc](https://atom.io/packages/markdown-toc)
+    - Automatically creates TableOfContents. 
+    - Can be easily configured.
+    - Can't parse special characters.
+- [markdown-writer](https://atom.io/packages/markdown-writer)
+    - Hotkeys to markdown formats
+    - Can be extended
+    - Does not have config set, but you can set the default config...
+- [markdown-preview](https://atom.io/packages/markdown-preview)
+    - Prints the file built to html on a paralel workspace
 
 ## Translations
 
@@ -33,18 +60,20 @@ mkdocs build -f mkdocs_es.yml
 mkdocs serve -f mkdocs_es.yml
 ```
 
-3. Combine the new strings in the .pot with the old .po using:
-
+3. Combine the new strings in the .pot with the old .po using:`
+    
+```shell
     sudo apt install gettext
-
     msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
-
+```
+    
 4. Generate the new translations from the updated .po using *poedit*
 
+```shell
     sudo apt install poedit
-
     poedit locales/lang/LC_MESSAGES/messages.po
-
+```
+    
 **Always commit the translated and updated .po and the compiled .mo**
 
 ## Display documentation
