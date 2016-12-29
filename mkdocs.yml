@@ -18,6 +18,12 @@ pages:
     - Telegestió: distri/telegestion.md
     - Contadors: distri/contadores.md
     - Manual d'ús de TPL: distri/tpl.md
+    - Manual d'ús de TPL:
+      - Requeriments del sistema i instal·lació: distri/tpl/requeriments.md
+      - Procés de treball: distri/tpl/proces_de_treball.md
+      - Descàrrega electrònica de Tancaments i Curves: distri/tpl/decarrega_tancaments_i_curves.md
+      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercanvi_tpl.md
+      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Facturació: distri/facturacion.md
