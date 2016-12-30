@@ -137,11 +137,28 @@ El fitxer conté:
 I en la mateixa línia, per cada magnitud a llegir en el comptador (i el nombre
 de magnituds ha de ser 1, 2, 3, 4, 5, 6, 18 o 24), aquests tres camps:
 
-|      Nom del Camp      |  Descripció                                         |
-|:----------------------:|:----------------------------------------------------|
-| _id_periodo_ | Identificador del periode al que correspon la lectura. El TPL tracta aquest valor com alfanumèric, i es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. No se li mostra al usuari. |
-| _nombre_periodo_ | Identifiador alfanumèric que indica al usuari el periode al que correspon la lectura. El TPL tracta aquest valor com alfanumèric, i es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. Únicament se li mostra al usuari en el cas de les tarifes _"2.0A" i "2.0DHA"_, quan hi ha entre 1 i 6 magnituds a recollir. |
-| _lectura_anterior_ | En general el TPL tracta la lectura com un número enter, excepte quan els tres primers caràcters del camp _nombre_periodo_ son _"MAX" o "EXC"_. En aquests dos casos es permeten decimals. |
++---------------------+--------------------------------------------------------+
+|    Nom del Camp     |  Descripció                                            |
++=====================+========================================================+
+|     _id_periodo_    | Identificador del periode al que correspon la lectura. |
+|                     | El TPL tracta aquest valor com alfanumèric, i es       |
+|                     | retorna intacte en el _fitxer de lectures_ que genera  |
+|                     | el TPL com a resultat de la operació de lectura. No se |
+|                     |  li mostra al usuari.                                  |
++---------------------+--------------------------------------------------------+
+|  _nombre_periodo_   | Identifiador alfanumèric que indica al usuari el       |
+|                     | periode al que correspon la lectura. El TPL tracta     |
+|                     | aquest valor com alfanumèric, i es retorna intacte en  |
+|                     | el _fitxer de lectures_ que genera el TPL com a        |
+|                     | resultat de la operació de lectura. Únicament se li    |
+|                     | mostra al usuari en el cas de les tarifes _"2.0A" i    |
+|                     | "2.0DHA"_, quan hi ha entre 1 i 6 magnituds a recollir.|
++---------------------+--------------------------------------------------------+
+| _lectura_anterior_  | En general el TPL tracta la lectura com un número enter|
+|                     | , excepte quan els tres primers caràcters del camp     |
+|                     | _nombre_periodo_ son _"MAX" o "EXC"_. En aquests dos   |
+|                     | casos es permeten decimals.                            |
++---------------------+--------------------------------------------------------+
 
 GISCE-TPL decideix el procediment per solicitar les lectures d'un comptador en
 base al número de magnituds relacionades amb aquest que apareixen en
