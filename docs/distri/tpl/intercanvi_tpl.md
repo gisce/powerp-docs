@@ -12,8 +12,8 @@ exportació de lectures des del TPL.
 Tots els fitxers respecten les següents especificacions:
 
 - Text codificat amb _UTF-8_.
-- Camps delimitats per tabuladors(`'\t', 0x09`).
-- Línies delimitades per _newline_ (`'\n', 0x0a`).
+- Camps delimitats per tabuladors(_'\t', 0x09_).
+- Línies delimitades per _newline_ (_'\n', 0x0a_).
 - No s'utilitzen cometes ni ningun altre delimitador per cadenes de caràcters.
 - Els números no enters es codifiquen amb un punt per separar elsdecimals, mai
   una coma. No s'utilitzen separadors de miliars. Si alguna magnitud fos
@@ -124,7 +124,7 @@ El fitxer conté:
 | _id_poliza_       | Identificador de la pòlissa, que el TPL tracta com alfanumèric. Es mostra a l'usuari a títol informatiu. No té altre funció. |
 | _id_contador_     | Un número enter que ha de ser diferent per cada comptador de la ruta. Identifica internament (no se li mostra a l'usuari) al comptador. Es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. |
 | _numero_contador_ | Un identificador que ha de ser diferent per cada comptador de la ruta, que TPL tracta com alfanumèric. Es recomana que coincideixi amb el número de sèrie del comptador, que a més a més sol coincidir amb el codi de barres imprés en el frontal del comptador. Se li mostra a l'usuari a títol informatiu. En les lectures electròniques, es compara amb el número de sèrie que dona el comptador, avisant al usuari en cas de ser diferent. En les lectures manuals, aquest camp és el que s'utilitza per identificar el comptador a registrar, a partir de la lectura del seu codi de barres. |
-
+| _id_tarifa_       | GISCE-TPL
 ### Fitxer de Lectures (GISCE-TPL → GISCE-ERP)
 
 
