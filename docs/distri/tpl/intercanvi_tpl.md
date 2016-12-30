@@ -290,9 +290,6 @@ fitxer) es que la lectura vàlida es la última que apareix en el fitxer.
 El fitxer consisteix en una llista per cada comptador llegit, amb els
 següents camps:
 
-I en la mateixa línia, per cada magnitud a llegir en el comptador (encara que
-la lectura estigui en blanc), aquests quatre camps:
-
 +-----------------------+------------------------------------------------------+
 |      Nom del camp     |  Descripció                                          |
 +=======================+======================================================+
@@ -312,14 +309,32 @@ la lectura estigui en blanc), aquests quatre camps:
 |                       | la data i la hora del terminal estan correctament    |
 |                       | configurades.                                        |
 +-----------------------+------------------------------------------------------+
-| _lectura_electronica_ |                                                      |
+| _lectura_electronica_ | Un codi de caràcter, que sempre serà "y" o "n" (per  |
+|                       | "yes" i "no"), que indica si la lectura s'ha recollit|
+|                       | manualment o bé si s'ha descarregat de forma         |
+|                       | electrònica..                                        |
 +-----------------------+------------------------------------------------------+
-|   _codigo_anomalia_   |                                                      |
+|   _codigo_anomalia_   | La clau de l'anomalia que l'usuari hagi pogut        |
+|                       | escollir del _catàleg d'anomalies_.                  |
 +-----------------------+------------------------------------------------------+
-| _etiqueta_solicitada_ |                                                      |
+| _etiqueta_solicitada_ | Un codi de caràcter, que sempre serà "y" o "n" (per  |
+|                       | "yes" i "no"), que indica si l'usuari ha sol·licitat |
+|                       | que es reemplaci l'etiqueta del comptador (p.e.      |
+|                       | perquè falta o està deteriorada)                     |
 +-----------------------+------------------------------------------------------+
-|    _observaciones_    |                                                      |
+|    _observaciones_    | Un text lliure amb els comentaris que l'usuari hagi  |
+|                       | cregut oportuns anotar. Alguns caràcters es          |
+|                       | codifiquen de forma especial:                        |
+|                       |                                                      |
+|                       | - El caràcter tabulador _"\t"_ es reemplaça per _"~"_|
+|                       | - El caràcter seqüència _"\r\n"_ és _"$"_            |
+|                       | - El caràcter seqüència _"\n\r"_ és _"$"_            |
+|                       | - Els caràcters _"\r" i "\n"_ restants, són _"$"_    |
 +-----------------------+------------------------------------------------------+
+
+I en la mateixa línia, per cada magnitud a llegir en el comptador (encara que
+la lectura estigui en blanc), aquests quatre camps:
+
 
 
 ### Fitxer de corbes (GISCE-TPL → GISCE-ERP)
