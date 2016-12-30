@@ -167,6 +167,64 @@ el _fitxer de ruta_:
 
 ### Fitxer de Lectures (GISCE-TPL → GISCE-ERP)
 
+Normalment aquest fitxer el genera l'aplicació GISCE-TPL, com a resultat del
+treball del usuari a partir del _fitxer de ruta_. En aquest cas, el fitxer té
+el mateix nom que el _fitxer de ruta_, substituïnt la extensió per "**.lectura**".
+
+Perquè GISCE-TPL pogui processar el _fitxer de lectures_ ha de tenir la
+extensió "**.lectura**" i ha de trobar-se dins del terminal en la mateixa
+ubicació que el _fitxer de ruta_.
+
+Normalment el _fitxer de lectura_ es processa amb GISCE-ERP per incorporar a la
+base de dades les lectures recollides i poder, així, realitzar les tasques com
+la facturació, el perfilat, generació d'informes, etc.
+
+El fitxer conté una línia per cada comptador per al que l'operari ha recollit
+lectures i/o entrat un comentari o una anomalia indicant el motiu per el que no
+ha estat possible efectuar la lectura, si aquest ha estat el cas. Les línies es
+van afegint al fitxer a mesura que l'usuari va processant comptadors, i en
+l'ordre que els va processant. Això vol dir que no necessariament hi haurà
+lectures per tots els comptadors que es van relacionar en el corresponent
+_fitxer de ruta_.
+
+També existeix la possibilitat de que un comptador hagi estat llegida més d'una
+vegada. La norma general (i això es el que fa GISCE-ERP interpretar aquest
+fitxer) es que la lectura vàlida es la última que apareix en el fitxer.
+
+El fitxer consisteix en una llista per cada comptador llegit, amb els
+següents camps:
+
+I en la mateixa línia, per cada magnitud a llegir en el comptador (encara que
+la lectura estigui en blanc), aquests quatre camps:
+
++-----------------------+------------------------------------------------------+
+|      Nom del camp     |  Descripció                                          |
++=======================+======================================================+
+|      _id_contador_    | Tal com hi apareix al _fitxer de ruta_.              |
++-----------------------+------------------------------------------------------+
+|     _fecha_lectura_   | El valor del camp _fecha_planificada_lectura_ excepte|
+|                       | quan la lectura s'hagi recollit de forma electrónica;|
+|                       | En aquest cas el valor correspon a la data i hora que|
+|                       | el comptador ha registrat per al _tancament_ que s'ha|
+|                       | llegit electrònicament.                              |
++-----------------------+------------------------------------------------------+
+|    _fecha_registro_   | El valor correspon a la data i hora que s'han        |
+|                       | registrat (entrades manualment o descarregades       |
+|                       | electrònicament) les lectures del comptador amb      |
+|                       | GISCE-TPL. Aquest valor es basa en el rellotge del   |
+|                       | terminal; únicament serà fiable si la zona horària,  |
+|                       | la data i la hora del terminal estan correctament    |
+|                       | configurades.                                        |
++-----------------------+------------------------------------------------------+
+| _lectura_electronica_ |                                                      |
++-----------------------+------------------------------------------------------+
+|   _codigo_anomalia_   |                                                      |
++-----------------------+------------------------------------------------------+
+| _etiqueta_solicitada_ |                                                      |
++-----------------------+------------------------------------------------------+
+|    _observaciones_    |                                                      |
++-----------------------+------------------------------------------------------+
+
 
 ### Fitxer de corbes (GISCE-TPL → GISCE-ERP)
 
