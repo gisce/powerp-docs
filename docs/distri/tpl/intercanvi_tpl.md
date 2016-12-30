@@ -24,7 +24,7 @@ Tots els fitxers respecten les següents especificacions:
 Els camps data s'emmagatzemen com cadenes de caràcters. Sempre s'inclou la hora,
 i es deixen a 0 els segons, minuts i hores si no es té aquesta precisió o si es
 irrelevant.    
-El format es `YYYYMMDDhhmmss`, 4 dígits per l'Any, 2 per al Mes, 2 per al Dia
+El format es _"YYYYMMDDhhmmss"_, 4 dígits per l'Any, 2 per al Mes, 2 per al Dia
 del mes, 2 per les Hores, 2 pels Minuts i 2 pels Segons.    
 Cada element s'emplena amb zeros per l'esquerra fins que ocupi la longitud que
 li correspon.
@@ -37,31 +37,31 @@ accedir al comptador mitjançant el port série, tant amb cable o amb sonda
 amb el caràcter ':', en aquest ordre:
 
 - **_port_name_**: el nom del port de comunicacions. És una cadena de caràcters
-  i els possibles valors són: `"com1", "com2", ..., "com19", "com20"`. En els
-  terminals sol ser `"com1"`.
+  i els possibles valors són: _"com1", "com2", ..., "com19", "com20"_ .
+  En els terminals sol ser _"com1"_
 - **_baud_rate_**: tasa de transferència, en _bps_. És un enter i els possibles
   valors legals són: `110, 300, 600, 1200, 2400, 4800, 9600, 14400, 19200, 28800, 38400, 57600, 115200, 128000, 256000`
 
 - **_data_bits_**: bits de dades. És un enter. Els possibles valors
-  legals són `7 i 8`
+  legals són _7 i 8_
 - **_parity_**: paritat. És una cadena de caràcters. Els possibles valors
-  legals són: `“even”, “none”, “odd”, “mark”, “space”`.
+  legals són: _“even”, “none”, “odd”, “mark”, “space”_.
 - **_stop_bits_**: bits de parada. És una cadena de caràcters i els possibles
-  valors legals són: `“0”, “1”, “1.5”, “2”`.
+  valors legals són: _“0”, “1”, “1.5”, “2”_.
 - **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
   en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
   de considerar que no es pot establir la connexió. Un valor típic i
-  raonable és `2000`, que correspon a 2000ms, és a dir, 2 segons.
+  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
 - **_direccion_de_enlace_**: Un enter.
 - **_direccion_del_punto_de_medida_**: Un enter.
 - **_contraseña_**: Un enter.
 - **_tipo_de_curva_**: _Per sel·leccionar el tipus de corba que es desitja
   decarregar en l'apartat "Configuración" es pot sel·leccionar la corba a
-  descarregar:
+  descarregar_:
     - Dades agregades cada 60 minuts, amb valors absoluts
     - Dades agregades cada 60 minuts, amb valors incrementals.
     - Dades agregades cada 15 minuts, amb valors absoluts.
-    - Dades agregades cada 15 minuts, amb valors incrementals._
+    - Dades agregades cada 15 minuts, amb valors incrementals.
 
 Com es pot veure:
 
