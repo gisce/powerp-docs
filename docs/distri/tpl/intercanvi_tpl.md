@@ -335,6 +335,32 @@ següents camps:
 I en la mateixa línia, per cada magnitud a llegir en el comptador (encara que
 la lectura estigui en blanc), aquests quatre camps:
 
++----------------------+-------------------------------------------------------+
+|     Nom del Camp     |  Descripció                                           |
++======================+=======================================================+
+|     _id_periodo_     | Tal com apareix en el _fitxer de ruta_                |
++----------------------+-------------------------------------------------------+
+|   _nombre_periodo_   | Tal com apareix en el _fitxer de ruta_                |
++----------------------+-------------------------------------------------------+
+|  _lectura_anterior_  | Tal com apareix en el _fitxer de ruta_                |
++----------------------+-------------------------------------------------------+
+|   _lectura_actual_   | El valor de la magnitud recollit per l'usuari, amb les|
+|                      | seguents consideracions:                              |
+|                      |                                                       |
+|                      | - El número enter o amb decimals segons el criteri    |
+|                      |   establert en la descripció del camp _nombre_periodo_|
+|                      | - L'usuari ha donat per vàlid el valor tal i com s'ha |
+|                      |   guardat. Els valors es _normalitzen_ (per exemple s'|
+|                      |   arrodoneixen al número de decimals que correspongui)|
+|                      |   i es mostren _normalitzats_ just abans de que       |
+|                      |   l'usuari registri les lectures del comptador i      |
+|                      |   aquestes siguin emmagatzemades en el _fitxer de     |
+|                      |   lectures_.                                          |
+|                      | - Excepte en les lectures recollides electrònicament, |
+|                      |   on existeix la possibilitat d'error humà. Es        |
+|                      |   proveeix de les mesures preventives que s'han       |
+|                      |   explicat prèviament.                                |
++----------------------+-------------------------------------------------------+
 
 
 ### Fitxer de corbes (GISCE-TPL → GISCE-ERP)
