@@ -117,14 +117,54 @@ El fitxer conté:
 
 - Una línia per cada comptador en la ruta, amb els següents camps.
 
-|        Nom del Camp        | Descripció                                      |
-|:--------------------------:|:------------------------------------------------|
-| _zona_            | El codi o nom de la zona, que el TPL tracta com alfanumèric. Es mostra a l'usuari a títol informatiu. No té altre funció. |
-| _orden_           | La posició del comptador dins de la zona/ruta, que el TPL tracta com alfanumèric. Se li mostra a l'usuari a títol informatiu. No té altre funció. |
-| _id_poliza_       | Identificador de la pòlissa, que el TPL tracta com alfanumèric. Es mostra a l'usuari a títol informatiu. No té altre funció. |
-| _id_contador_     | Un número enter que ha de ser diferent per cada comptador de la ruta. Identifica internament (no se li mostra a l'usuari) al comptador. Es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. |
-| _numero_contador_ | Un identificador que ha de ser diferent per cada comptador de la ruta, que TPL tracta com alfanumèric. Es recomana que coincideixi amb el número de sèrie del comptador, que a més a més sol coincidir amb el codi de barres imprés en el frontal del comptador. Se li mostra a l'usuari a títol informatiu. En les lectures electròniques, es compara amb el número de sèrie que dona el comptador, avisant al usuari en cas de ser diferent. En les lectures manuals, aquest camp és el que s'utilitza per identificar el comptador a registrar, a partir de la lectura del seu codi de barres. |
-| _id_tarifa_       | GISCE-TPL
+|      Nom del Camp      |  Descripció                                         |
+|:----------------------:|:----------------------------------------------------|
+|         _zona_         | El codi o nom de la zona, que el TPL tracta com alfanumèric. Es mostra a l'usuari a títol informatiu. No té altre funció. |
+|         _orden_        | La posició del comptador dins de la zona/ruta, que el TPL tracta com alfanumèric. Se li mostra a l'usuari a títol informatiu. No té altre funció. |
+|       _id_poliza_      | Identificador de la pòlissa, que el TPL tracta com alfanumèric. Es mostra a l'usuari a títol informatiu. No té altre funció. |
+|      _id_contador_     | Un número enter que ha de ser diferent per cada comptador de la ruta. Identifica internament (no se li mostra a l'usuari) al comptador. Es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. |
+|    _numero_contador_   | Un identificador que ha de ser diferent per cada comptador de la ruta, que TPL tracta com alfanumèric. Es recomana que coincideixi amb el número de sèrie del comptador, que a més a més sol coincidir amb el codi de barres imprés en el frontal del comptador. Se li mostra a l'usuari a títol informatiu. En les lectures electròniques, es compara amb el número de sèrie que dona el comptador, avisant al usuari en cas de ser diferent. En les lectures manuals, aquest camp és el que s'utilitza per identificar el comptador a registrar, a partir de la lectura del seu codi de barres. |
+|        _id_tarifa_     | GISCE-TPL ignora aquest valor.                           |
+|      _nombre_tarifa_   | El nom de la tarifa (p.e. _"2.0DHA", "6.1", ..._), que el TPL tracta com alfanumèric. Es mostra a l'usuari com a títol informatiu. No té altre funció.  |
+|        _potencia_      | La potència contractada, que el TPL tracta com a camp alfanumèric. Es mostra a l'usuari com a títol informatiu. No té altre funció. |
+|     _nombre_abonado_   | Nom i cognoms o nom fiscal del abonat. Es mostra al usuari a títol informatiu. No te cap altre funció. |
+|       _direccion_      | Generalment correspondrà a la direcció completa (amb número, escala, pis, etc) de l'habitatge o local en la que es subministra el servei. Es mostra al usuari a títol informatiu. No te cap altre funció. |
+|       _poblacion_      | Complementa el camp direcció que s'acaba de descriure. El TPL tracta aquest camp com alfanumèric. Es mostra al usuari a títol informatiu. No te cap altre funció. |
+|  _situacion_contador_  | Indicació per facilitar a l'usuari la localització del comptador. Es mostra al usuari a títol informatiu. No te cap altre funció. El TPL l'interpreta de la següent forma.: Si es un número enter, s'utilitza aquest número com a clau per recuperar la descripció del _catàleg de situacions_. En qualsevol altre cas es considera literalment com la informació que s'ha de mostrar al usuari. |
+|     _aviso_contador_   | Indicació per mostrar al usuari una advertència relevant a ternir en compte quan s'ha d'anar a llegir aquest comptador. Es mostra al usuari a títol informatiu. No te cap altre funció. El TPL l'interpreta de la següent manera: si es un nombre enter, s'utilitza com a clau per recuperar la descripció en el _catàleg d'avisos_. En qualsevol altre cas es considera literalment com la informació que s'ha de mostrar al usuari. |
+| _configuracion_puerto_ | Un valor alfanumèric que correspon a la codificació dels paràmetres de configuració del _port sèrie RS232_ i als paràmetres necessaris per la lectura electrònica a través del _cable serie_ i/o la _sonda òptica_. El TPL descodifica aquest camp segons s'explica en la [secció corresponent](decarrega_tancaments_i_curves.md#configuracio-de-la-descarrega) d'aquest document |
+
+I en la mateixa línia, per cada magnitud a llegir en el comptador (i el nombre
+de magnituds ha de ser 1, 2, 3, 4, 5, 6, 18 o 24), aquests tres camps:
+
+|      Nom del Camp      |  Descripció                                         |
+|:----------------------:|:----------------------------------------------------|
+| _id_periodo_ | Identificador del periode al que correspon la lectura. El TPL tracta aquest valor com alfanumèric, i es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. No se li mostra al usuari. |
+| _nombre_periodo_ | Identifiador alfanumèric que indica al usuari el periode al que correspon la lectura. El TPL tracta aquest valor com alfanumèric, i es retorna intacte en el _fitxer de lectures_ que genera el TPL com a resultat de la operació de lectura. Únicament se li mostra al usuari en el cas de les tarifes _"2.0A" i "2.0DHA"_, quan hi ha entre 1 i 6 magnituds a recollir. |
+| _lectura_anterior_ | En general el TPL tracta la lectura com un número enter, excepte quan els tres primers caràcters del camp _nombre_periodo_ son _"MAX" o "EXC"_. En aquests dos casos es permeten decimals. |
+
+GISCE-TPL decideix el procediment per solicitar les lectures d'un comptador en
+base al número de magnituds relacionades amb aquest que apareixen en
+el _fitxer de ruta_:
+
+- **Entre 1 i 6 lectures** (el cas de les tarifes "2.0A" i "2.0DHA"): es
+  demanen al operador les lectures, mostrant clarament per cada lectura,
+  la etiqueta _nombre_periodo_, la lectura anterior i la diferència entre
+  la lectura anterior i la actual.
+- **18 lectures** (cas de les tarifes "3.0A"): es demanen al operador les
+  lectures, no es mostra ni el valor de la lectura anterior, ni la diferència
+  entre l'actual i l'anterior, ni els camps _nombre_periodo_, i es demanen
+  les lectures en una taula de 3 columnes per 6 files, on les lectures es
+  distribueixen de dalt a baix i d'esquerra a dreta:
+    - Les tres columnes corresponen, d'esquerra a dreta, als valors "Activa",
+      "Reactiva", "Maxímetre" de cada periode.
+    - Les files es veuen etiquetades amb els noms dels periodes, no amb el
+      valor del camp _nombre_periodo_, sempre com _"P1", "P2", ..., "P6"_.
+- **24 lectures** (cas de les tarifes "6.1"): les primeres 18 lectures es
+  distribueixen com el cas que s'acaba d'esplicar; Les 6 restants es mostren
+  com les lectures d'"excessos", en una altra taula, d'una columna i sis files,
+  amb les mateixes etiquetes (_"P1", "P2", ..., "P6"_) per les files.
+
 ### Fitxer de Lectures (GISCE-TPL → GISCE-ERP)
 
 
