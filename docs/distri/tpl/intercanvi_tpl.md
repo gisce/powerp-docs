@@ -471,8 +471,58 @@ entregat el comptador:
 
 ### Catàleg d'anomalies
 
+Una primera part, la _llista de categories_, amb una línia per categoria amb
+dos camps:
+
++------------------------+-----------------------------------------------------+
+|      Nom del Camp      | Descripció                                          |
++========================+=====================================================+
+|     _id_categoria_     | Un enter, diferent per cada categoria               |
++------------------------+-----------------------------------------------------+
+| _descripcion_anomalia_ | El nombre de la categoria. No ha de contenir retorns|
+|                        | de línia (`\n` o `\r`) ni tabuladors (`\t`).        |
++------------------------+-----------------------------------------------------+
+
+Una línia en blanc separa la primera part de la segona i última part.
+La _llista d'anomalies_. Té una anomalia per línia amb tres camps:
+
++------------------------+-----------------------------------------------------+
+|      Nom del Camp      |  Descripció                                         |
++========================+=====================================================+
+|      _id_categoria_    | Un enter, ha de coincidir per força amb el camp     |
+|                        | **_id_categoria_** d'alguna de les categories       |
+|                        | definides en la primera part d'aquest fitxer.       |
++------------------------+-----------------------------------------------------+
+|       _id_anomalia_    | Un valor alfanumèric que ha de ser diferent per cada|
+|                        | anomalia. Inclus si estan en diferents categories.  |
++------------------------+-----------------------------------------------------+
+| _descripcion_anomalia_ | El nom de la anomalia. No ha de contenir retorns de |
+|                        | línia (`\n` o `\r`) ni tabuladors (`\t`).           |
++------------------------+-----------------------------------------------------+
 
 ### Catàleg de situacions
 
+Una línia per cada situació, amb dos camps en aquest ordre:
+
++----------------+-------------------------------------------------------------+
+|  Nom del Camp  | Descripció                                                  |
++================+=============================================================+
+| _id_situacion_ | Un enter, diferent per cada registre.                       |
++----------------+-------------------------------------------------------------+
+| _descripcion_  | No ha de contenir retorns de línia (`\n` o `\r`) ni         |
+|                | tabuladors (`\t`).                                          |
++----------------+-------------------------------------------------------------+
 
 ### Catàleg d'Avisos
+
+Una línia per cada avís, amb aquests dos camps:
+
+
++----------------+-------------------------------------------------------------+
+|  Nom del Camp  | Descripció                                                  |
++================+=============================================================+
+| _id_aviso_     | Un enter, diferent per cada registre.                       |
++----------------+-------------------------------------------------------------+
+| _descripcion_  | No ha de contenir retorns de línia (`\n` o `\r`) ni         |
+|                | tabuladors (`\t`).                                          |
++----------------+-------------------------------------------------------------+
