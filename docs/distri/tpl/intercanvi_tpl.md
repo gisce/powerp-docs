@@ -365,6 +365,109 @@ la lectura estigui en blanc), aquests quatre camps:
 
 ### Fitxer de corbes (GISCE-TPL → GISCE-ERP)
 
+Per cada corva recollida, GISCE-TPL emmagatzema un fitxer de corva.
+
+El nom del fitxers es composa per:
+
+- El _nom de la ruta_
+- Un caràcter guió baix `_` (_underscore_)
+- El camp _número_comptador_ (de la mateixa manera que apareix en el _fitxer
+  de ruta_)
+- La extensió "**.curva**"
+
+Per exemple la corva que es recull per al comptador amb número _123456_ a la
+ruta CT-082. tindrà per nom "_CT-082_123456.curva_".
+
+El contingut té els següents camps:
+
+Una línia de capçalera amb els camps:
+
++----------------------+-------------------------------------------------------+
+|     Nom del Camp     |  Descripció                                           |
++======================+=======================================================+
+|   _numero_contador_  | El número del comptador com apareix al fitxer de ruta |
++----------------------+-------------------------------------------------------+
+|   _numero_de_serie_  | El número de serie que ha reportat el comptador       |
++----------------------+-------------------------------------------------------+
+|  _version_firmware_  | Versió del firmware que ha assenyalat el comptador    |
++----------------------+-------------------------------------------------------+
+|   _fecha_protocolo_  | Data del estàndard del protocol IEC870REE que         |
+|                      | implementa el comptador, tal com ha assenyalat aquest |
++----------------------+-------------------------------------------------------+
+| _version_protocolo_  | Versió del protocol IEC870REE que implementa el       |
+|                      | comptador, tal com ha assenyalat aquest               |
++----------------------+-------------------------------------------------------+
+|      _modelo_        | El model que ha assenyalat el comptador               |
++----------------------+-------------------------------------------------------+
+|     _fabricant_      | El codi de fabricant que ha assenyalat el comptador   |
++----------------------+-------------------------------------------------------+
+
+Segona línia a la capçalera, amb els camps:
+
++------------------------+-----------------------------------------------------+
+|     Nom del Camp       |  Descripció                                         |
++========================+=====================================================+
+| _fecha_y_hora_lectura_ | La data i hora en la que s'han descarregat les dades|
++------------------------+-----------------------------------------------------+
+| _fecha_y_hora_inicial_ | Inici del interval del qual s'han solicitat dades al|
+|                        | comptador                                           |
++------------------------+-----------------------------------------------------+
+|  _fecha_y_hora_final_  | Final del interval del qual s'han solicitat dades al|
+|                        | comptador                                           |
++------------------------+-----------------------------------------------------+
+|    _tipo_de_curva_     | Una cadena de dos caràcters que especifica el tipus |
+|                        | de curva que s'ha solicitat del comptador.          |
+|                        | El primer caràcters és `1` o `2`, per al periode    |
+|                        | d'integració 1 (60 minuts) o el periode d'integració|
+|                        | 2 (15 minuts). El segon caràcter es una `A` si són  |
+|                        | valors absoluts, o una `I` si són valors            |
+|                        | incrementals. Per tant els quatre possibles valors  |
+|                        | són:                                                |
+|                        |                                                     |
+|                        | - `1A`                                              |
+|                        | - `2A`                                              |
+|                        | - `1I`                                              |
+|                        | - `2I`                                              |
++------------------------+-----------------------------------------------------+
+
+Zero o més línies de dades, una per cada conjunt de valors de la curva que ha
+entregat el comptador:
+
++--------------------------------+---------------------------------------------+
+|          Nom del Camp          |  Descripció                                 |
++================================+=============================================+
+|           _data_hora_          | La data i hora de inici del interval        |
+|                                | d'integració al que corresponen els totals  |
+|                                | d'aquesta línia                             |
++--------------------------------+---------------------------------------------+
+|        _activa_entrante_       | Totals integrats d'activa entrant           |
++--------------------------------+---------------------------------------------+
+|    _calidad_activa_entrante_   | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
+|        _activa_saliente_       | Totals integrants d'activa sortint          |
++--------------------------------+---------------------------------------------+
+|    _calidad_activa_saliente_   | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
+|     _reactiva_cuadrante_1_     | Totals integrats de reactiva en el primer   |
+|                                | cuadrant                                    |
++--------------------------------+---------------------------------------------+
+| _calidad_reactiva_cuadrante_1_ | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
+|    _reactiva_cuadrante_2_      | Totals integrats de reactiva en el segon    |
+|                                | cuadrant                                    |
++--------------------------------+---------------------------------------------+
+| _calidad_reactiva_cuadrante_2_ | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
+|    _reactiva_cuadrante_3_      | Totals integrats de reactiva en el tercer   |
+|                                | cuadrant                                    |
++--------------------------------+---------------------------------------------+
+| _calidad_reactiva_cuadrante_3_ | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
+|    _reactiva_cuadrante_4_      | Totals integrats de reactiva en el quart    |
+|                                | cuadrant                                    |
++--------------------------------+---------------------------------------------+
+| _calidad_reactiva_cuadrante_4_ | Byte de qualitat associat al camp anterior  |
++--------------------------------+---------------------------------------------+
 
 ### Catàleg d'anomalies
 
