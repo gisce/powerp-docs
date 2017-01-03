@@ -20,7 +20,13 @@ pages:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
     - Contadores: distri/contadores.md
-    - TPL: distri/tpl.md
+    - Manual de uso de TPL: distri/tpl.md
+    - Manual de uso de TPL:
+      - Requerimentos del sistema e instalación: distri/tpl/requeriments.md
+      - Proceso de trabajo: distri/tpl/proces_de_treball.md
+      - Descarga electrónica de Cierres y Curvas: distri/tpl/decarrega_tancaments_i_curves.md
+      - Ficheros de intercambio para GISCE-TPL: distri/tpl/intercanvi_tpl.md
+      - Ficheros de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
     - Facturación: distri/facturacion.md
