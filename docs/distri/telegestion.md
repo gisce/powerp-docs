@@ -513,3 +513,16 @@ Aquesta planificació importa cada dia les lectures de l'FTP.
 
 Permet programar la validació automàtica de totes les lectures. 
 
+## Corbes de Carrega Horaries (CCH)
+
+Les corbes de carrega horaries cal entregar-les a l'operador del sistema i a la
+comercialitzadora o client directe a mercat.
+
+Les corbes de carrega horaries validades (CCH_VAL) cal entregar-les com a
+màxim setmanalment amb els fitxers P5D.
+
+Les corbes de carrega horaries facturades (CCH_FACT) cal entregar-les com a
+màxim el dia 7 del més seguent amb els fitxers F5D.
+
+Es poden configurar servidors SFTP per tal de pujar-hi automàticament aquests
+fitxers.
