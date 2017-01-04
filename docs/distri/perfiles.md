@@ -88,9 +88,9 @@ prement la tecla *ESC*.
 
 La següent comprovació que tenim de fer és:
 
-Si el lot de perfilació te 3125 pòlisses a facturar tenim de comprovar que en
-el període de facturació corresponent te el mateix número de pòlisses
-facturades menys les de 450kW, que en aquest cas son dues.
+Al lot de perfilació hi ha d'haver les pòlisses que tenen una factura 
+dins del període del lot de perfilació excepte aquelles pòlisses de 
+més de 450kW.
 
 ![](_static/perfiles/3_pf.PNG)
 
@@ -110,25 +110,16 @@ S'ha de comprovar que el número de factures del període sigui igual al número
 de pòlisses a perfilar. Tinguen en compte de que les pòlisses que tenen més
 de una factura en el període només s'han de tenir en compte una.
 
+Cal buscar les factures des del menú "**Facturació**" > "**General**" > 
+"**Factures Client**" i filtrar aquelles factures que comencen abans de 
+l'últim dia del període de perfilació, que acaben després del primer 
+dia del període de perfilació i amb potència menor o igual a 450Kw.
+
+
 A la figura següent s'indica el filtre que s'ha de posar segons
 el període que es desitja:
-Una facturació mensual (p.ex. mes 7) les dates son com s'indiquen
-a la primera figura.
 
 ![](_static/perfiles/4.PNG)
-
-Una facturació bimestral (mes 7 i 8) s'ha de seleccionar el filtre tal i com
-s'indica en la figura següent per tal de que siguin sumades:
-
-![](_static/perfiles/5.PNG)
-
-!!! note
-    S'ha de tenir en compte les pòlisses que tenen més d'una factura en
-    el període i restar-les.
-
-I sumar les mensuals utilitzant el filtre de la figura següent:
-
-![](_static/perfiles/6.PNG)
 
 !!! note
     S'ha de tenir en compte les pòlisses que tenen més d'una factura en
