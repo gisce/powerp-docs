@@ -2,6 +2,15 @@
 
 [Build of our documentation](http://builds.gisce.net/powerp-docs/master/)
 
+**Table Of Contents**
+
+- [Environment](#setting-up-your-environment)
+    - [Recommended editors](#recommended-editors)
+- [Translations](#translations)
+- [Display Documentation](#display-documentation)
+- [Project Structure](#project-structure)
+- [Testing](#testing)
+
 ## Setting up your environment
 
 ```shell
@@ -11,6 +20,47 @@ $ cd powerp-docs
 $ pip install -r requirements.txt
 $ export PYTHONPATH=$PWD/sitecustomize
 ```
+
+### Recommended Editors
+
+#### Edit documentation files: 
+
+**Atom**    
+_With the extensions:_
+
+- [markdown-toc](https://atom.io/packages/markdown-toc)
+    - Automatically creates TableOfContents. 
+    - Can be easily configured.
+    - Can't parse special characters.
+- [markdown-writer](https://atom.io/packages/markdown-writer)
+    - Hotkeys to markdown formats
+    - Can be extended
+    - Does not have config set, but you can set the default config...
+- [markdown-preview](https://atom.io/packages/markdown-preview)
+    - Prints the file built to html on a paralel workspace
+ 
+#### Translate docs:
+
+**Poedit**
+_([Check the following translations section](#translations))_
+
+_Merge Translations files_
+
+- For _.po file_, use 'msgcat' command with '--use-first' parameter. I.e.:
+
+```shell
+git merge <branch_name_remote>
+cd locales/<lang>/LC_MESSAGES
+cp messages.po messages.po.loc
+git checkout <branch_name_remote>
+cp messages.po messages.po.rem
+git checkout <branch_name_local>
+msgcat --use-first messages.po.loc messages.po.rem -o messages.po
+```
+
+- Open .po file with poedit to update _.mo file_ and _modified date_
+- Messages.pot will be automatically updated with build, so there is no need to merge
+- Remember to commit after changes are applied
 
 ## Translations
 
@@ -29,22 +79,25 @@ Steps to translate your new documentation:
 2. Local build your version with:
 
 ```shell
-mkdocs build -f mkdocs_es.yml
-mkdocs serve -f mkdocs_es.yml
+    mkdocs build -f mkdocs_es.yml
+# OR
+    mkdocs serve -f mkdocs_es.yml
 ```
 
-3. Combine the new strings in the .pot with the old .po using:
-
+3. Combine the new strings in the .pot with the old .po using:`
+    
+```shell
     sudo apt install gettext
-
     msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
-
+```
+    
 4. Generate the new translations from the updated .po using *poedit*
 
+```shell
     sudo apt install poedit
-
     poedit locales/lang/LC_MESSAGES/messages.po
-
+```
+    
 **Always commit the translated and updated .po and the compiled .mo**
 
 ## Display documentation
