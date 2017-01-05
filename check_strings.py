@@ -31,7 +31,7 @@ failed_strings = []
 print (u'Checking for all strings to be translated...')
 for s in es_file:
     es_strings.append(s.id)
-    if not(s.id and s.string):
+    if not(s.id and s.string) or s.fuzzy:
         failed_strings.append(s.id)
     else:
         t_strings.append(s.string)
