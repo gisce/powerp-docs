@@ -3,3 +3,4 @@ site/
 .idea/
 *.pyc
 *.pot
+*.mo
