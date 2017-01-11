@@ -1,4 +1,6 @@
-mkdocs
+# Gisce - Mkdocs
+https://github.com/gisce/mkdocs/archive/reorder_builtins_extensions_config.zip
+# Gisce - Markdown translator
 markdown-i18n>=1.3.0
 # Due no pypi package: https://github.com/smartboyathome/Markdown-GridTables/issues/2
 https://github.com/mihkels/Markdown-GridTables/archive/master.zip
