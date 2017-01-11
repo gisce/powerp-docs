@@ -3,8 +3,8 @@ language: python
 python:
   - "2.7"
 install:
-  - "LC_ALL=en_US.UTF8 pip install --no-cache-dir -r requirements.txt"
   - "export PYTHONPATH=$PWD/sitecustomize"
+  - "pip install --no-cache-dir -r requirements.txt"
 script:
   - mkdocs build -f mkdocs.yml
   - mkdocs build -f mkdocs_es.yml --clean
