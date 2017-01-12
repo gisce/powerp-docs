@@ -78,21 +78,21 @@ if substr != set():
     exit(-1)
 print ('{}OK{}'.format(green, endcl))
 
-print ("\nStrings' test briefing:\n")
-print (u'\t{}Translated strings:\t{}{}\t({}%)'.format(
+print ("\nStrings' translated test briefing:\n")
+print (u'\t\t{}Translated strings:\t{}{}\t({}%)'.format(
     green, len(t_strings), endcl,
     len(t_strings)/len(strings) * 100
 ))
-print (u'\t{}Fuzzy strings:\t\t{}{}\t({}%)'.format(
+print (u'\t\t{}Fuzzy strings:\t\t{}{}\t({}%)'.format(
     yellow, len(fuzz_strings), endcl, 
     len(fuzz_strings)/len(strings) * 100
 ))
-print (u'(No Fuzzy){}Untranslated strings:\t{}{}\t({}%)'.format(
+print (u'(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
     red, len(failed_strings)-len(fuzz_strings), endcl,
     (len(failed_strings)-len(fuzz_strings))/len(strings) * 100
 ))
-print (u'    ----------------------------------------------------')
-print (u'\t Total Strings:\t\t{}\n'.format(
+print (u'\t----------------------------------------------------')
+print (u'\t\tTotal Strings:\t\t{}\n'.format(
     len(strings)
 ))
 if failed_strings:
