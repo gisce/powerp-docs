@@ -15,7 +15,7 @@ nova pestanya Telegestió si el comptador es marca que es de telegestió.
 
 ![](_static/telegestion/grupo_TG_info.png)
 
-![](_static/telegestion/pestaña_telegestion.png)
+![](_static/telegestion/pestanya_telegestion.png)
 
 ## Procediment de càrrega de lectures
 
