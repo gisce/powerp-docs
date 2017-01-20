@@ -42,7 +42,7 @@ habitualment seguint tres passos:
 
 !!! note
     Es pot configurar el sistema de telegestió per no carregar les lectures de
-    reactiva i així no facturar-la. No obstant, si la potència contractada és 
+    reactiva i així no facturar-la. No obstant, si la potència contractada és
     superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
 
 blockdiag {
@@ -79,8 +79,8 @@ info``:
   telegestió rebudes per el comptador. No són les de facturació.
 * **Lectura des de TG**: Aquest botó permet crear una lectura de facturació a
   partir de les lectures validades de telegestió que s'hagin obtingut. Es
-  demana la data en la qual es vol generar la lectura. Si d'aquest dia no n'hi 
-  ha cap de vàlida, anirà buscant lectures en dies **anteriors** fins a trobar 
+  demana la data en la qual es vol generar la lectura. Si d'aquest dia no n'hi
+  ha cap de vàlida, anirà buscant lectures en dies **anteriors** fins a trobar
   una lectura de telegestió vàlida o una lectura de facturació. En aquest
   darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
   nova.
@@ -111,7 +111,7 @@ opció ``TG Comptador`` marcada
 * **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
   mesura està activat. Si s'activa apareixeràn 2 camps més a l'apartat de
   ``Control de potència``
-  
+
   * **Potència programada**: Potència màxima que permet l'ICP del comptador
   * **Intensitat**: Indica la intensitat máxima a la qual està programat el
     ICP. Aquest es llegeix automàticament del comptador (Només lectura)
@@ -188,11 +188,11 @@ El procediment de lectura va de la següent forma:
 
 Quan es validen les lectures es fan tot un seguit de comprovacions per
 assegurar-se que les lectures són correctes. En alguns casos, es vol que certes
-validacions no es facin perquè es sap a priori que un comptador en concret té 
+validacions no es facin perquè es sap a priori que un comptador en concret té
 alguna particularitat. P.e. Alguns comptadors poden tenir el totalitzador (P0)
 malament perquè es tenen en compte períodes que per la tarifa actual no
 s'utilitzen. En aquest cas sempre donarà error de totalitzador, però podem
-marcar-lo per a què no tingui en compte aquesta validació i validarà 
+marcar-lo per a què no tingui en compte aquesta validació i validarà
 correctament.
 
 Les excepcions que es gestionen actualment són:
@@ -232,13 +232,13 @@ donats d'alta a l'ERP, etc...
 
 ### Configuració > TG Categories Error i Configuració > Errors
 
-Els concentradors de telegestió inclouen en els fitxers XML els errors que 
-troben al comunicar-se amb els comptadors i relacionats amb la seva própia 
-operació. Aquests errors estandaritzats es classifiquen amb codis de categoria 
+Els concentradors de telegestió inclouen en els fitxers XML els errors que
+troben al comunicar-se amb els comptadors i relacionats amb la seva própia
+operació. Aquests errors estandaritzats es classifiquen amb codis de categoria
 i codis d'error.
 
 GISCE-ERP només emmagatzema els errors que estan donats d'alta en aquestes
-taules. Si el fitxer XML conté un error que no està donat d'alta, no es 
+taules. Si el fitxer XML conté un error que no està donat d'alta, no es
 registrarà.
 
 Aquestes taules les gestiona el propi ERP. Els futurs errors que apareguin en
@@ -289,7 +289,7 @@ propi fitxer enviat pel concentrador, p.e. comptador no trobat
 
 Registre dels tancaments diaris i mensuals amb accessos directes a:
 
-* **TG cierres totals**: Tancaments només del període P0 (totalitzadors) 
+* **TG cierres totals**: Tancaments només del període P0 (totalitzadors)
 * **TG cierres vàlids**: Només tancaments validats
 
 Les lectures que encara no han estat validades es llisten de color **blau** i
@@ -326,7 +326,7 @@ Podem veure la informació completa en el detall d'un tancament:
 En el detall hi trobem:
 
 * **Comptador**: Nom complet del comptador tal i com ens l'envia el
-  concentrador. 
+  concentrador.
 * **Nom CnC**: Nom del concentrador al qual estava associat el comptador en el
   moment de realitzar la lectura. Pot canviar en el temps i així tenim
   traçabilitat.
@@ -357,7 +357,7 @@ En el detall hi trobem:
 
 Ens permet importar les lectures de telegestió d'un comptador si en sabem el
 número de sèrie. Funciona igual que si el cridéssim des de la fitxa del
-comptador. 
+comptador.
 
 * **Comptador**: Nº de sèrie del comptador
 * **Data límit**: Data de la qual volem les lectures
@@ -402,7 +402,7 @@ El procediment per validar les lectures és a través del wizard que es troba en
 
 ![](_static/telegestion/BotoValidacio.png)
 
-   Ubicació del wizard de validació de lectures 
+   Ubicació del wizard de validació de lectures
 
 Podem validar les lectures amb aquest botó. Si no entrem cap número de
 comptador, es validaran **totes** les lectures pendents de validar.
@@ -429,7 +429,7 @@ comptadors que siguin de telegestió.
 
    Botó per importar les lectures des del lot de facturació
 
-!!! note 
+!!! note
     Quan s'importen les lectures d'un comptador de telegestió, s'agafa la
     lectura validada del dia que es demana o la de l'anterior més proper que en
     tingui. Per tant es pot donar el cas que les lectures no siguin del dia de
@@ -501,22 +501,32 @@ S'han creat dues tasques planificades (**Administració > Configuració
 ### TG Reader scheduler
 
 
-Aquesta planificació importa cada dia les lectures de l'FTP. 
+Aquesta planificació importa cada dia les lectures de l'FTP.
 
 ### TG Validate scheduler
 
-Permet programar la validació automàtica de totes les lectures. 
+Permet programar la validació automàtica de totes les lectures.
 
 ## Corbes de Carrega Horaries (CCH)
 
-Les corbes de carrega horaries cal entregar-les a l'operador del sistema i a la
+Les corbes de càrrega horàries cal entregar-les a l'operador del sistema i a la
 comercialitzadora o client directe a mercat.
 
-Les corbes de carrega horaries validades (CCH_VAL) cal entregar-les com a
-màxim setmanalment amb els fitxers P5D.
+### Fitxers P5D
 
-Les corbes de carrega horaries facturades (CCH_FACT) cal entregar-les com a
-màxim el dia 7 del més seguent amb els fitxers F5D.
+Les corbes de càrrega horàries validades (CCH_VAL) cal entregar-les com a
+màxim **setmanalment** amb els fitxers P5D.
 
-Es poden configurar servidors SFTP per tal de pujar-hi automàticament aquests
-fitxers.
+#### Generació dels fitxers P5D de forma manual
+
+L'assistent per generar els fitxers P5D de forma manual es troba al menú
+`Infraestructura/Telegestión/Exportar CCH_VAL (P5D)`
+
+### Fitxers F5D
+
+Les corbes de càrrega horàries facturades (CCH_FACT) cal entregar-les com a
+màxim el dia **7 del mes següent** amb els fitxers F5D.
+
+!!! note
+    Es poden configurar servidors SFTP per tal de pujar-hi automàticament els fitxers
+    F5D i P5D.

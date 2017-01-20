@@ -67,6 +67,7 @@ pages:
       - Informes: comer/adm-pub/informes.md
       - Tasas Municipales: comer/adm-pub/municipal_taxes.md
   - Facturación:
+    - Validaciones: facturacio/validacions.md
     - Gestión de cambio de año: facturacio/canvi_any.md
     - Gestión de pagaments i cobraments: facturacio/cobraments.md
     - Gestión de lectures: facturacio/lectures.md
