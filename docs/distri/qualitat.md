@@ -11,4 +11,29 @@
 
 # Objecte i àmbit d'aplicació
 
+La "_Orden ECO / 797/2002_" del 22 de març per la que s'aprova el procediment
+de mesura i control de la continuïtat del subministre eléctric. Estableix els
+criteris i la metodologia a seguir per la recollida i tractament de les dades
+de la continuitat del subministre, incloent els necessaris per la elaboració
+dels índexos de qualitat zonal, _TIEPI_, percentil **80** del _TIEPI_ i _NIEPI_.
+De la mateixa manera es defineixen les característiques del sistema de registre
+d'incidéncies, la informació de base necessaria i la recollida i tractament de
+les dades de continuitat necessaries per poder evaluar per cada client si s'han
+incomplert les seves condicions de qualitat individual, i en cas de ser així,
+poder aplicar-li el perceptiu descompte en la facturació.
+
+Aquest procediment defineix les característiques del programa
+[módul "_GISCE-ERP_QS_"](qualitat_individual.md), que està integrat en el
+programa de _GIS_ i _Base de Dades_ d'instal·lacions per companyies
+eléctriques "_GISCE-ERP_".
+
+Aquest manual d'ús està dissenyat perquè un usuari del programa _GISCE-ERP_
+tingui la capacitat de realitzar les tasques d'entrada, consulta, comprobació
+i obtenció de resultats de qualitat de servei zonal i individual amb el módul
+anomenat "_GISCE-ERP_QS_".
+
+Aquest procediment s'aplicarà al programa "_GISCE-ERP_QS_", per al càlcul de la
+qualitat zonal i individual definida en la "_ORDEN ECO / 797/2002_", per les
+companyies de distribució eléctrica.
+
 # Normativa
