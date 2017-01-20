@@ -4,6 +4,8 @@ theme: readthedocs
 markdown_extensions:
   - admonition
   - grid_tables
+  - markdown_blockdiag:
+      dir: site
 
 pages:
   - Home: index.md

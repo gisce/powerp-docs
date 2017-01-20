@@ -45,17 +45,11 @@ habitualment seguint tres passos:
     reactiva i així no facturar-la. No obstant, si la potència contractada és 
     superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
 
-```
-.. blockdiag::
-
- blockdiag {
-
+blockdiag {
     ftp -> carga -> validación -> lectura
     carga -> "TG Errores de lectura" [label = "errores", textcolor="#FF0000"]
     validación -> "CRM (Telegestión)" [label = "errores", textcolor="#FF0000"]
-
- }
-```
+}
 
 Actualment, GISCE-ERP és capaç de llegir els seguents fitxers XML
 estandaritzats:

@@ -7,6 +7,8 @@ markdown_extensions:
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
+  - markdown_blockdiag:
+      dir: site
 
 pages:
   - Home: index.md
