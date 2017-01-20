@@ -51,6 +51,13 @@ pages:
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio: distri/qualitat.md
+    - Calidad de servicio:
+      - Términos y Definiciones: distri/qualitat/termes_i_def.md
+      - Marco de referéncia del modelo de calidad: distri/qualitat/marc_ref_model.md
+      - Modelo de calidad para la calidad interna y externa: distri/qualitat/model_interna_i_externa.md
+      - Modelo de calidad para la calidad en uso: distri/qualitat/model_en_us.md
+      - Generación de incidencias: distri/qualitat/generacio_incidencies.md
+      - Obtención de resultados: distri/qualitat/obtencio_resultats.md
     - Calidad individual: distri/qualitat_individual.md
   - Comercializadora:
     - Inicio: comer/index.md
