@@ -49,7 +49,8 @@ pages:
       - Sincronització CUPS: distri/sincronizacion_cups.md
       - CINI - Generació Automàtica: distri/act_cinis.md
       - TI - Generació Automàtica: distri/act_tis.md
-    - Qualitat de servei: distri/calidad.md
+    - Qualitat de servei: distri/qualitat.md
+    - Qualitat individual: distri/qualitat_individual.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - CUPS: comer/cups.md

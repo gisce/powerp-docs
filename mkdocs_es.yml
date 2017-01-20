@@ -50,7 +50,8 @@ pages:
       - Expedientes: distri/expedientes.md
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md
-    - Calidad de servicio: distri/calidad.md
+    - Calidad de servicio: distri/qualitat.md
+    - Calidad individual: distri/qualitat_individual.md
   - Comercializadora:
     - Inicio: comer/index.md
     - CUPS: comer/cups.md
