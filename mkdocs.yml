@@ -31,6 +31,7 @@ pages:
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
+      - Règim especial: distri/facturacio_re.md
       - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
       - REE: distri/adm-pub/ree.md
