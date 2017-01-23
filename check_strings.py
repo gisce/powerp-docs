@@ -72,8 +72,8 @@ print (u'Checking all strings in pot to be in po...', end="")
 es_strings = set(es_strings)
 substr = strings - es_strings
 if substr != set():
-    print (u'{0}There are {1} missing strings in the po file!\n{2}'.format(
-        red, len(substr), list(substr)
+    print (u'{0}There are {1} missing strings in the po file!\n{2},{3}'.format(
+        red, len(substr), list(substr), endcl
     ))
     exit(-1)
 print ('{}OK{}'.format(green, endcl))
