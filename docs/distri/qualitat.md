@@ -1,6 +1,6 @@
 # Índex
 
-1. [Objecte o àmbit d'aplicació](#objecte-i-ambit-daplicacio)
+1. [Objecte i àmbit d'aplicació](#objecte-i-ambit-daplicacio)
 2. [Normativa](#normativa)
 3. [Termes i definicions](qualitat/termes_i_def.md)
 4. [Marc de referència del model de Qualitat](qualitat/marc_ref_model.md)
