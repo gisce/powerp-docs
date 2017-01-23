@@ -38,12 +38,12 @@ companyies de distribució eléctrica.
 
 # Normativa
 
-**Real Decret 1955/2000 de 1 de desembre** per el que es regulin les activitats
-de transport, distribució, comercialització, subministre i procediments
-d'autorització d'instal·lacions d'energia eléctrica.
+**Real Decret 1955/2000 de 1 de desembre** pel qual es regulen les activitats
+de transport, distribució, comercialització, subministrament i procediments
+d’autorització d’instal·lacions d’energia elèctrica.
 
-**ORDEN ECO / 797/2002 de 22 de març** per la que s'aprova el procediment de
-mesura i control de la continuitat del subministre eléctric.
+**ORDEN ECO /797/2002 de 22 de març** per la que s’aprova el procediment de
+mesura i control de la continuïtat del subministrament elèctric.
 
-**Norma UNE-ISO/IEC 9126-1**, ENGINYERIA DEL SOFTWARE, CALITAT DEL PRODUCTE DE
-SOFTWARE, MODEL DE QUALITAT.
+"Norma **UNE-ISO/IEC 9126-1**, INGENIERIA DEL SOFTWARE, CALIDAD DEL PRODUCTO
+DE SOFTWARE, MODELO DE CALIDAD”.
