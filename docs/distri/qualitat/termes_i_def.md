@@ -225,6 +225,7 @@ potencia total en kVA, i el nombre total d’instal·lacions.
 ![](../_static/qualitat/potencia_instalada_list_mes.png)
 
 On:
+
 * **Data**: es la data en que es va guardar la potencia instal·lada.
   Aquesta data indica a quin mes i any correspon potencia instal·lada. Per
   defecte el programa posa la data de l’últim dia del mes pel qual es genera la
@@ -282,7 +283,7 @@ la tarifa i potència contractada.
 
 ![](../_static/qualitat/escomesa_cups_polissa_associada.png)
 
-Totes les escomeses del tipus _CONTA-AT_ son las que es tindran en compte com a
+Totes les escomeses del tipus _CONTA-AT_ son les que es tindran en compte com a
 potència instal·lada.
 
 ## Emmagatzematge de dades
