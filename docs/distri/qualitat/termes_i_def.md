@@ -291,12 +291,15 @@ potència instal·lada.
 Existeixen 2 categories per les dades que son necessàries per la informació
 completa i correcta d’una incidència.
 
-Dades de continuïtat: Es la informació dels intervals horaris d’interrupció de
-subministrament i de les instal·lacions afectades associades.
-Dades complementaries: Es la informació sobre les característiques de la
+**Dades de continuïtat**: Es la informació dels intervals horaris d’interrupció
+de subministrament i de les instal·lacions afectades associades.
+
+**Dades complementaries**: Es la informació sobre les característiques de la
 incidència ( causa, instal·lació origen, etc.)
+
 Les dades de continuïtat emmagatzemades en el programa GISCE-ERP_QS son
 auditables i tenen traçabilitat.
+
 GISCE-ERP_QS està dissenyada de forma que permeti a un tercer independent
 verificar tot el procés de captació, modificació transmissió, suport i
 tractament de la informació necessària en el període d’anàlisi així com
@@ -313,9 +316,6 @@ reflexa exactament les instal·lacions afectades i les maniobres que modifiquen
 l’estat d’afectació de les instal·lacions. També es detallen les escomeses i els
 CUPS relacionats amb aquesta, que han quedat afectats en cada interval  de la
 incidència i les pòlisses relacionades amb cada escomesa.
-
-Dades complementaries: Es la informació sobre les característiques de la
-incidència  (causa, instal·lació origen, etc).
 
 ## Informació associada a una incidència
 
