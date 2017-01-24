@@ -165,3 +165,41 @@ un nou  RD es crea un nou període polsant el botó “nou registre”.
 
 Una vegada creat s’introdueixen els valors dels paràmetres de qualitat i les
 dates d’inici i fi del període de vigència dels valors.
+
+## Recollida d'informació
+
+## Obtenció de la potencia total
+
+## Emmagatzematge de dades
+
+## Informació associada a una incidència
+
+## Criteris per la determinació del nombre i duració de les interrupcions
+
+## Desagregació de les dades de la interrupció
+
+## Informació associada a instal·lacions i clients
+
+## Metodologia pel càlcul de l'indicador percentil 80 de TIEPI
+
+## Metodologia per la obtenció d'informació zonal d'interrupcions en BT
+
+## Avaluació de la qualitat individual
+
+## Documentació Suport
+
+### Generació d'avisos d'incidències
+
+### Dades introduïdes en el sistema de forma manual
+
+### Modificació de dades
+
+### Classificació de la interrupció com a programada
+
+### Classificació de la interrupció com originada per tercers
+
+### Classificació de la interrupció com originada per forca Major
+
+## Sistemes Informàtics
+
+## Model d'informe
