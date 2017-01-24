@@ -438,6 +438,25 @@ condicions normals d’explotació.
 
 ## Criteris per la determinació del nombre i duració de les interrupcions
 
+Pel càlcul dels indicadors de la continuïtat del subministrament es segueixen
+els següents criteris:
+
+* Les interrupcions de duració igual o inferior a 3 minuts no es tindran en
+  compte a cap efecte.
+* La incidència es la unitat bàsica de càlcul per l’índex NIEPI i agrupa, segons
+  la definició, a totes les interrupcions que pateixin les instal·lacions de la
+  mateixa zona connectades elèctricament per causa del mateix motiu i a partir
+  del mateix instant.    
+  L’agrupació de les interrupcions en la mateixa incidència, havent de complir
+  en tot cas les relacions temporal i elèctrica comentades en el apartat 5.4
+  s’estendrà fins la reposició total del servei, moment en el qual es procedeix
+  al tancament de la incidència per haver se informat completament.    
+  Totes aquelles maniobres que s’executen orientades a la reposició del servei
+  no han de ser computades com NIEPI.
+* La comptabilitat de temps pel càlcul del TIEPI motivat per una incidència
+  tindrà en compta les potències interrompudes amb intervals de temps majors de
+  tres minuts.
+
 ## Desagregació de les dades de la interrupció
 
 ## Informació associada a instal·lacions i clients
