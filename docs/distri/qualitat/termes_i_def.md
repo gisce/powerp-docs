@@ -175,7 +175,7 @@ La recollida d’informació procedeix de 3 fonts diferents:
 * Centre d’atenció al client.
 
 L’origen de les incidències està definit en l’apartat “_Qualitat → Configuració
-→ Origen d’incidències_.
+→ Origen d’incidències_".
 
 ![](../_static/qualitat/origen_menu.png)
 
@@ -185,7 +185,109 @@ En aquest apartat hi ha definits els 3 origen de les incidències:
 
 ## Obtenció de la potencia total
 
+Mensualment s’obté la potencia total instal·lada de la base de dades de
+GISCE-ERP, de transformadors i dels clients en alta tensió, i es el denominador
+pel càlcul dels índex TIEPI, NIEPI.    
+Per generar la potencia instal·lada del mes corresponent s’hi accedeix des del
+menú, “_Qualitat → traçabilitat → Generar potència instal·lada_".
+
+![](../_static/qualitat/generar_potencia_menu.png)
+
+Al fer doble clic s’accedeix a l’assistent que ens guia per obtenir la potencia
+instal·lada.
+
+![](../_static/qualitat/generar_potencia_wizard_1.png)
+
+S’ha de seleccionar el mes i l’any que desitgem guardar la potencia instal·lada.
+
+![](../_static/qualitat/generar_potencia_wizard_2.png)
+
+A continuació s’indicarà el valor del cos fi. Aquest valor s’utilitzarà per
+convertir les potencies contractades en AT ( kW ) en kVA.
+
+![](../_static/qualitat/generar_potencia_wizard_3.png)
+
+Per comprovar lles potencies instal·lades en cada mes es pot accedir a l’apartat
+“_Qualitat → traçabilitat → Potència instal·lada_” tal com es veu a la imatge
+següent.
+
+![](../_static/qualitat/potencia_instalada_menu.png)
+
+Al fer doble clic apareixen les potencies instal·lades en els diferents mesos, i
+podem veure-les per realitzar les comprovacions necessàries.
+
+![](../_static/qualitat/potencia_instalada_list.png)
+
+Al seleccionar un mes determinat apareix la potencia instal·lada amb una llista
+de tots els transformadors i tots els subministraments en AT. Així com la
+potencia total en kVA, i el nombre total d’instal·lacions.
+
+![](../_static/qualitat/potencia_instalada_list_mes.png)
+
+On:
+* **Data**: es la data en que es va guardar la potencia instal·lada.
+  Aquesta data indica a quin mes i any correspon potencia instal·lada. Per
+  defecte el programa posa la data de l’últim dia del mes pel qual es genera la
+  potencia instal·lada.
+
+* **Cosfi**: Es el valor del cosinus de fi utilitzat per calcular la potència
+  total instal·lada en kVA, convertint la potencia contractada en AT que es en
+  kW.    
+  Si es desitja canviar el cos fi, al canviar-lo i guardar es recalcula la
+  potencia total (kVA).
+* **Mes**: Mes al que afecta la potencia instal·lada
+
+Fent doble clic a sobre d’una instal·lació apareix la seva fitxa resumida.
+
+![](../_static/qualitat/instalacio_fitxa.png)
+
+A continuació  es descriu com es determina la potencia total instal·lada.
+Si es va a la fitxa dels transformadors al GISCE-ERP, "_Menú → Centres
+Transformadors → Manteniment → Transformadors → Transformador_” i s’obre la
+fitxa d’un transformador apareixen les seves dades.    
+Al generar la potencia instal·lada del mes, selecciona només els transformadors
+que:
+
+* Estan marcats com a **TIEPI = SI**
+* Estan en la **localització = CTS**
+* Estan en **estat = Funcionament**
+
+![](../_static/qualitat/transformador_camps.png)
+
+Com que amb el programa GISCE-ERP es porta el manteniment de les instal·lacions
+de centres transformadors i de les màquines que hi tenen instal·lades, només
+caldrà fer algun llistat de comprovació per veure si les dades estan
+actualitzades. ( per exemple des de “_Centres transformadors →
+Manteniment → transformadors_”) i filtrar els transformadors que estan en
+funcionament, estan a la **localització CTS** i **TIEPI = SI**.
+
+Per obtenir la potencia contractada en AT, es busquen les escomeses que son del
+tipus _CONTA-AT_, es comprova el CUPS que te associat i la potencia de la
+pòlissa associada. Per poder fer comprovacions es pot accedir al menú “_Gestió
+de CUPS → Manteniment → CUPS → Escomesa_”, i buscar les escomeses del tipus
+_CONTA-AT_, i accedir a la fitxa de l’escomesa tal com es veu a la imatge
+següent:
+
+![](../_static/qualitat/escomesa_conta-at.png)
+
+Si es fa doble click sobre el CUPS associat a l’escomesa es pot veure la fitxa
+del CUPS tal com s’observa en la imatge següent.
+
+![](../_static/qualitat/escomesa_cups_associat.png)
+
+La Pòlissa associada a aquest CUPS es la que indica la potencia contractada en
+AT que es tindrà en compte a l’hora d’obtenir la potencia instal·lada.
+Fent  clic sobre la fitxa de la pòlissa associada al CUPS apareixen les dades de
+la tarifa i potència contractada.
+
+![](../_static/qualitat/escomesa_cups_polissa_associada.png)
+
+Totes les escomeses del tipus _CONTA-AT_ son las que es tindran en compte com a
+potència instal·lada.
+
 ## Emmagatzematge de dades
+
+
 
 ## Informació associada a una incidència
 
