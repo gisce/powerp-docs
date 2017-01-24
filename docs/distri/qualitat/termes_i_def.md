@@ -100,3 +100,68 @@ subministre aparèixen alguns termes amb les següents definicions:
   d'escomesa).
 * _Punto de agregación_: Element de la xarxa en el que s'estableix la relació
   client-xarxa.
+
+## Definició de zones
+
+Als efectes de qualitat de subministrament, el Real Decreto 1955/2000 estableix
+la següent clasificació de zones:
+
+* **Zona Urbana**: Conjunt de municipis d’una província amb més de 20.000
+  subministraments, incloent capitals de província, encara que no arribin a la
+  xifra anterior.
+* **Zona Semi-urbana**: Conjunt de municipis d’una província amb un número de
+  subministraments comprès entre 2.000 y 20.000, excloent capitals de província.
+* **Zona Rural**:
+  * **_Zona Rural Concentrada_**: Conjunt de municipis d’una província amb un
+    nombre de subministraments comprès entre 200 y 2.000.
+  * **_Zona Rural Dispersa_**: Conjunt de municipis d’una província amb menys de
+    200 subministraments així como els subministraments ubicats fora dels nuclis
+    de població que no siguin polígons industrials o residencials.
+
+La definició de zones està en l’apartat “_Centres Transformadors → Manteniment →
+CT’S → Zona_”, que s’indica en la figura següent:
+
+![](../_static/qualitat/zona_menu.png)
+
+Al accedir apareixen les 4 zones definides.
+
+![](../_static/qualitat/zones_tipus.png)
+
+Al seleccionar-ne una d’elles apareixerà la seva fitxa en la que definirem les
+següents dades. Es important veure que els valors admissibles es poden anar
+afegint a mesura que aquests vagin variant. Es important així mateix definir
+correctament les dates en que son vigents els valors indicats.
+
+![](../_static/qualitat/zona_fitxa.png)
+
+En la fitxa de cada zona es defineix.
+
+**Paràmetres de Qualitat**:
+* **Hores Alta tensió**: Nombre d’hores màxim d’interrupció en MT ( de 1 a 36
+  kV.)
+* **Interrupcions Alta tensió**: Nombre d’interrupcions màxim en MT ( de 1 a 36
+  kV.)
+* **Hores Baixa Tensió**: Nombre d’hores màxim d’interrupció en BT
+* **Interrupcions Baixa tensió**: Nombre d’interrupcions màxim en BT
+* **Hores TIEPI**: Valor màxim de l’índex TIEPI
+* **Hores percentil**:  Valor màxim de l’índex percentil 80
+* **NIEPI**: Valor màxim de l’índex NIEPI
+
+**Període**:
+
+* **Inici**: Data d’inici de la vigència dels valors  dels paràmetres de
+  qualitat
+* **Fi**: Data de fi de vigència dels valors dels paràmetres de qualitat
+
+Els valors límits estan definits en l’article **104.2 del “Real Decreto
+1955/2000”**.  “_REAL DECRETO 1634/2006, de 29 de diciembre, por el que se
+establece la tarifa eléctrica a partir de 1 de enero de 2007._ (BOE
+30-12-2006)”, que modifica els límits establerts
+
+Quan es modifiquen els valors dels paràmetres de qualitat individual i zonal amb
+un nou  RD es crea un nou període polsant el botó “nou registre”.
+
+![](../_static/qualitat/zona_boto_qualitat.png)
+
+Una vegada creat s’introdueixen els valors dels paràmetres de qualitat i les
+dates d’inici i fi del període de vigència dels valors.
