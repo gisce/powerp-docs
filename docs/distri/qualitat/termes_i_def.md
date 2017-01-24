@@ -288,7 +288,34 @@ potència instal·lada.
 
 ## Emmagatzematge de dades
 
+Existeixen 2 categories per les dades que son necessàries per la informació
+completa i correcta d’una incidència.
 
+Dades de continuïtat: Es la informació dels intervals horaris d’interrupció de
+subministrament i de les instal·lacions afectades associades.
+Dades complementaries: Es la informació sobre les característiques de la
+incidència ( causa, instal·lació origen, etc.)
+Les dades de continuïtat emmagatzemades en el programa GISCE-ERP_QS son
+auditables i tenen traçabilitat.
+GISCE-ERP_QS està dissenyada de forma que permeti a un tercer independent
+verificar tot el procés de captació, modificació transmissió, suport i
+tractament de la informació necessària en el període d’anàlisi així com
+comprovar la compatibilitat i correcta relació dels sistemes de la companyia
+afectats, ( Sistema de registre de incidències, base de dades comercial, base de
+dades tècnica. Etc)  de manera que es pugui afirmar amb una seguretat raonable
+que la informació el·laborada per la companyia correspon amb la realitat.
+
+GISCE-ERP_QS garanteix la possibilitat de verificar el control dels riscos de
+confidencialitat, integritat, disponibilitat i rellevància de la informació.
+
+GISCE-ERP_QS per cada una de les incidències i intervals associats a aquesta,
+reflexa exactament les instal·lacions afectades i les maniobres que modifiquen
+l’estat d’afectació de les instal·lacions. També es detallen les escomeses i els
+CUPS relacionats amb aquesta, que han quedat afectats en cada interval  de la
+incidència i les pòlisses relacionades amb cada escomesa.
+
+Dades complementaries: Es la informació sobre les característiques de la
+incidència  (causa, instal·lació origen, etc).
 
 ## Informació associada a una incidència
 
