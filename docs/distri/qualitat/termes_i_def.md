@@ -319,6 +319,123 @@ incidència i les pòlisses relacionades amb cada escomesa.
 
 ## Informació associada a una incidència
 
+La informació associada a cada incidència es la següent:
+
+* **Identificació de la incidència**: codi únic de la incidència i descripció de
+  la incidència.
+* **El codi de la incidència** es alfanumèric i únic al model de dades de
+  incidències.
+* **Origen de la Incidència**: A cada incidència se li associa un  dels tres
+  orígens que pot tenir, SCADA, Manual o Centre d’atenció al client.
+* **Tipus de incidència**: L’usuari indicarà el tipus d’incidència, que pot ser
+  Imprevista o Programada.
+* **Causa**: S’ha d’indicar la causa que pot ser una de les següents. Transport,
+  distribució, generació, tercers, força major o pròpies.
+* **Data**: Data d’inici de la incidència.
+* **Xarxa afectada**: S’ha d’indicar si es una incidència AT  o BT.
+
+Una fitxa de una incidència registrada amb GISCE-ERP_QS es tal com es pot veure
+a la imatge següent:
+
+![](../_static/qualitat/incidencia_fitxa.png)
+
+A la pestanya de “Intervals” de la fitxa de la incidència es poden veure els
+diferents intervals que s’han produït dins la mateixa incidència tal com indica
+la ECO 797.
+
+![](../_static/qualitat/incidencia_intervals.png)
+
+**Intervals horaris amb instal·lacions afectades**
+
+Una incidència té un o varis intervals horaris en els que queden afectades una o
+varies instal·lacions.    
+En cada interval horari hi poden haver diferents instal·lacions afectades, o bé
+una mateixa instal·lació pot estar afectada en varis intervals d’una mateixa
+incidència.    
+Una incidència compren una sèrie de intervals horaris, amb diferents grups
+d’instal·lacions afectades, que estan temporalment i elèctricament relacionades.    
+La relació temporal implica que des del inici fins al final de la
+incidència no existeix cap interval de temps superior a 10 minuts sense
+instal·lacions afectades.    
+La relació elèctrica implica que les instal·lacions estan connectades
+elèctricament, i que l’origen primer de la incidència es únic.
+
+Si es fa doble clic sobre l’interval desitjat apareix la seva fitxa, que consta
+de 4 pestanyes, interval, Clients afectats, Instal·lacions afectades, i punts de
+tall.
+
+![](../_static/qualitat/incidencia_interval_fitxa.png)
+
+Cada interval consta dels següents camps:
+
+* **Nom del interval**: Codi o nom únic de la incidència.
+
+Incidència a la que pertany el interval:
+
+* **Hora d’inici del interval**: En format DD/MM/AAAA HH:MM:SS.
+* **Hora final del interval**: En format DD/MM/AAAA HH:MM:SS.
+* **Període**:  Temps de durada del interval, en segons, calculat automàticament
+  a partir dels 2 camps anteriors.
+
+La pestanya “Instal·lacions afectades” indica quines instal·lacions han quedat
+afectades per la interrupció.
+
+![](../_static/qualitat/incidencia_interval_instalacions_afectades.png)
+
+**Instal·lacions afectades**
+Es consideren instal·lacions afectades els centres de transformació i les
+instal·lacions dels clients  que es troben en funcionament en el moment de la
+incidència.    
+Es considera una instal·lació de client en funcionament quan existeix una
+relació contractual vàlida i en vigor en el moment de la interrupció.    
+En el cas de centres transformadors de companyia amb mes d’un transformadors,
+s’especifica quin o quins son els transformadors afectats, i sempre que s’hagi
+actuat en un element de maniobra de MT.
+
+Així GISCE-ERP_QS garanteix que quedin registrades les interrupcions que hi ha
+hagut en cada centre transformador o de client de MT, amb el seu interval
+d’interrupció.
+
+La topologia de la xarxa proporcionada pel sistema GIS associat al programa
+GISCE-ERP, es la base del càlcul de les afectacions de incidències a partir de
+la connectivitat dels elements de maniobra de la xarxa.    
+Les simulacions efectuades en el programa de GIS GISCE-ERP permeten veure de una
+forma visual les instal·lacions, tant de centres transformadors, clients MT com
+de línies MT afectades per cada interval de la incidència.
+
+El Sistema GIS manté la associació Client - Xarxa a nivell d’escomesa, Aquesta
+informació i el programa d’anàlisi de grafos permet assignar correctament les
+instal·lacions i clients afectats durant un interval d’una incidència assegurant
+la traçabilitat de la incidència.
+
+Pel càlcul dels índex de qualitat de subministrament , quan una incidència
+tingui com origen la instal·lació d’un client en MT, no es considerarà la
+potencia instal·lada d’aquest client en les potencies afectades per la
+incidència, però si la potencia de la resta d’instal·lacions afectades.    
+Aquest tipus d’incidència està classificada com a causa de “tercers”
+(instal·lació particular).
+
+La obertura accidental de trams de línia MT provocada per elements no
+telecomandats (fusibles, seccionadors, etc.) es comptabilitzarà a partir del
+primer avís que es rebi en la companyia a través d’un client afectat per la
+incidència a través del centre d’atenció al client o a través de qualsevol
+altra via.
+
+La pestanya “Clients afectats” indica quins clients han quedat afectades per la
+interrupció.
+
+![](../_static/qualitat/incidencia_interval_clients_afectats.png)
+
+Aquest apartat permet obtenir la qualitat individual i poder determinar que cap
+client superi els nombre i el temps màxim indicats per cada una de les zones
+definides a [l’apartat 3.1](#definicio-de-zones)
+
+La pestanya “Punts de tall” indica tots els interruptors que hi havia oberts en
+el moment de produir-se la interrupció, inclosos els que estan oberts en
+condicions normals d’explotació.
+
+![](../_static/qualitat/incidencia_interval_talls.png)
+
 ## Criteris per la determinació del nombre i duració de les interrupcions
 
 ## Desagregació de les dades de la interrupció
