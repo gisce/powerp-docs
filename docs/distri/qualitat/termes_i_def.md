@@ -459,6 +459,107 @@ els següents criteris:
 
 ## Desagregació de les dades de la interrupció
 
+Les dades de la interrupció es desagregaran conforme a lo indicat en el quadre
+següent:
+
++-------------------------+----------------------------------------------+
+| Programada              | Imprevista                                   |
++-----------+-------------+-----------+-----------+--------+-------------+
+| Transport | Distribució | Generació | Transport | Tercer | Força Major |
++-----------+-------------+-----------+-----------+--------+-------------+
+
+Que es correspon amb els següents criteris:
+
+* **Tipus de la interrupció**: S’indicarà el tipus de la interrupció
+  calcificant-la en els següents conceptes:
+
+    * **Programada**: La classificació d’una interrupció com a programada
+      requerirà conservar la documentació necessària.
+    * **Imprevista**: En cas de no complir la condició assenyalada en l’apartat
+      anterior la interrupció es considerarà com imprevista.
+
+    El centre de control farà una primera assignació de la causa de la
+    incidència, que podrà ser modificada amb la informació recollida
+    posteriorment.
+
+!!! Note
+    Per definir els tipus d’incidència s’ha d’accedir a “_Menú → Qualitat →
+    Configuració → Tipus Incidències_”.
+
+    ![](../_static/qualitat/tipus_incidencia_menu.png)
+
+    Al accedir a aquest apartat apareixen els tipus d’incidència definits.
+
+    ![](../_static/qualitat/tipus_incidencia_list.png)
+
+* **Causa de la incidència**: S’indicarà la causa que se suposa ha originat la
+  incidència, com a mínim amb el nivell de detall de la següent classificació.
+
+    * **Generació**: Les incidències causades per la generació hauran de ser
+      comptabilitzades, sempre y quant produeixin talls de mercat.
+    * **Transport**: Les incidències causades en la xarxa de transport i que
+      afecten a la xarxa de distribució, sempre i quant afectin al
+      subministrament a clients, es comptabilitzen conjuntament en el sistema de
+      registre d’incidències.    
+      Serà necessari establir el procediment de repercussió al transportista de
+      las penalitzacions en que incorri, per aquest motiu, el distribuïdor.
+    La classificació de la causa de la interrupció com transport s’acreditarà
+    mitjançant informe de l’operador del sistema.
+
+    * **Tercers**: Les causades per persones físiques i jurídiques alienes a
+      l’empresa distribuïdora.    
+      En aquest concepte s’inclouen:
+
+        * **Una altra empresa distribuïdora**.
+        * **Instal·lació particular**: Incidències degudes a instal·lacions de
+          clients o de productors en règim especial.
+        * Accions intencionades o accidentals de tercers, coneguts o no, sobre
+          instal·lacions de la pròpia empresa distribuïdora o transportista
+          (pala excavadora, vehicle, actes de vandalisme o terrorisme, etc.).
+        * **Accions de vagues legals**.
+        * **Força major**: Incidències degudes a causes de força major,
+          acceptades com a tal per l’Administració Competent, entre altres, les
+          decisions governatives o dels Serveis de Protecció Civil i els
+          fenòmens atmosfèrics extraordinaris que excedeixen els límits
+          establerts en el Reglamento de riscos extraordinaris sobre persones i
+          bens (_Real Decreto 2022/1986_). No podran ser al·legats com a causa
+          de força major els fenòmens atmosfèrics que es consideren habituals o
+          normals en cada zona geogràfica, d’acord amb les dades estadístiques
+          de que es disposi.
+
+Cada una de las causes anteriors vindrà identificada amb un “_Codi de la Prova_”
+que farà referència a l’existència de _prova per l’exoneració_, en el seu cas,
+de les **conseqüències de d’incompliment dels índex de qualitat**.
+
+* **Pròpies**: En aquest apartat s’inclouen les interrupcions les causes de les
+  quals no responguin a lo establert en els apartats transport, tercers, força
+  major, o be no degudament justificades.
+
+* **Atmosfèriques**: Inclouen les causes amb origen en fenòmens atmosfèrics tals
+  com pluja, inundació, tormenta, neu, gel, granis, boira, vent, contaminació,
+  pol·lució, etc., sempre que no excedeixin els límits establerts en el
+  "_Reglamento de Riesgos Extraordinarios_", en aquest cas es consideraran de
+  força major.
+* **Agents Externs**: Inclouen causes amb origen en animals, arbrat, moviments
+  de terreny, etc.
+* **Internes**: Inclouen fallades d’equips i materials, corrosió, defecte de
+  disseny o de muntatge, us inadequat, connexió i desconnexió de instal·lacions
+  pròpies, manteniment, obres pròpies, repartiment de càrregues, etc.
+
+* **Desconegudes**.
+
+Les causes de la incidència estan definides a “_Menú → Qualitat → Configuració →
+Causa Incidències_”, on apareixen les 7 causes possibles.    
+Aquestes no s’han de modificar si no apareix cap modificació de la **ECO
+797/2002** que així ho requereixi.
+
+![](../_static/qualitat/causa_incidencies_menu.png)
+
+Al accedir al menú de causes, apareixen les causes definides en el sistema, i
+que es poden ampliar i/o modificar.
+
+![](../_static/qualitat/causa_incidencies_list.png)
+
 ## Informació associada a instal·lacions i clients
 
 ## Metodologia pel càlcul de l'indicador percentil 80 de TIEPI
