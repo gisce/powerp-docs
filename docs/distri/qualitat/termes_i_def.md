@@ -168,6 +168,21 @@ dates d’inici i fi del període de vigència dels valors.
 
 ## Recollida d'informació
 
+La recollida d’informació procedeix de 3 fonts diferents:
+
+* Sistema de telecontrol (SCADA)
+* Actuació manual.
+* Centre d’atenció al client.
+
+L’origen de les incidències està definit en l’apartat “_Qualitat → Configuració
+→ Origen d’incidències_.
+
+![](../_static/qualitat/origen_menu.png)
+
+En aquest apartat hi ha definits els 3 origen de les incidències:
+
+![](../_static/qualitat/origen_tipus.png)
+
 ## Obtenció de la potencia total
 
 ## Emmagatzematge de dades
