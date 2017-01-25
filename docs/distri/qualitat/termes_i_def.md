@@ -795,6 +795,23 @@ el seu càrrec.
 
 ### Modificació de dades
 
+La informació complementaria de la incidència que es recopili (informe
+d’operació, autoritzacions per interrupcions programades, tant en la xarxa
+pròpia de la distribuïdora como en la del client, probes de causa de tercers o
+de força major, etc.) s’haurà de guardar per justificar qualsevol modificació de
+temps, afectacions i classificació de la mateixa amb posterioritat al seu
+tancament.
+
+Desprès de  que es complimenti la informació de qualitat de servei per una
+incidència, es portarà un registre de tots els canvis que afectin als índex de
+qualitat de servei. En cada canvi, juntament amb les seves modificacions es
+registrarà la data/hora del canvi i la persona que el realitza.
+
+Quan s’hagi calculat els índex per un període, la modificació de incidències
+serà restringida a personal autoritzat, quedant igualment tots els canvis
+registrats. Desprès del canvi, els índex sobre els que pugui influir la
+incidència seran calculats de nou.
+
 ### Classificació de la interrupció com a programada
 
 ### Classificació de la interrupció com originada per tercers
