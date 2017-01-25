@@ -613,6 +613,25 @@ d’agregació, es la següent:
 
 ## Metodologia pel càlcul de l'indicador percentil 80 de TIEPI
 
+Percentil 80 del TIEPI: Es el valor del TIEPI que no es superat pel 80 % dels
+municipis de l’àmbit provincial, dins de cada tipus de zona.
+
+Recollida de dades: Aquest indicador s’obté a partir de la informació recollida
+pel càlcul del TIEPI. No es necessari per tant un procediment específic.
+
+Metodologia pel càlcul: Una vegada que es disposa de la informació del TIEPI
+anual a nivell de CT o client de MT, s’agruparà per calcular el TIEPI anual de
+cadascun dels municipis existents en una província, desagregats per zones.
+
+En cada zona s’ordenaran els municipis per ordre creixent del TIEPI.
+
+El percentil 80 del TIEPI serà el corresponent al municipi que ocupa la posició
+del 80 % o la seva immediata superior del total dels municipis ordenats
+existents en aquella zona.
+
+En aquelles províncies en las que en la zona urbana només existeixi un municipi,
+el percentil 80 del TIEPI serà el propi TIEPI del mateix municipi.
+
 ## Metodologia per la obtenció d'informació zonal d'interrupcions en BT
 
 ## Avaluació de la qualitat individual
