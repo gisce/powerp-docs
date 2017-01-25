@@ -838,6 +838,25 @@ següent documentació:
 
 ### Classificació de la interrupció com originada per tercers
 
+La classificació de la interrupció como originada per tercers exigirà conservar
+alguns dels següents documents:
+
+* Document firmat per un tercer (empresa transportista, altra empresa
+  distribuïdora, client, productor, etc.) responsabilitzant-se de la incidència
+  o documento notarial o document emès per una Administració competent en la
+  matèria o autoritat governativa responsabilitzant de la incidència a un
+  tercer. En caso de no disposar d’aquest document també es consideraran vàlida
+  qualsevol prova (denuncia davant instancia policial, prova pericial,
+  fotografies, vídeo, etc.) que permeti assignar la causa a tercers.
+
+* Denuncia davant de l’autoritat corresponent ratificant el fet pels casos
+  d’accident causat per tercers, vandalisme o terrorisme.
+
+* Autorització de vaga emesa per l’autoritat competent i documentació firmada
+  pel responsable tècnic de la instal·lació afectada per la interrupció
+  assenyalant la relació “causa efecte” existent entre la vaga i la interrupció,
+  quan la interrupció es degui a una vaga legal.
+
 ### Classificació de la interrupció com originada per forca Major
 
 ## Sistemes Informàtics
