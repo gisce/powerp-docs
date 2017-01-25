@@ -634,6 +634,44 @@ el percentil 80 del TIEPI serà el propi TIEPI del mateix municipi.
 
 ## Metodologia per la obtenció d'informació zonal d'interrupcions en BT
 
+!!! Note
+    **Definició**: Una interrupció en baixa tensió es aquella interrupció en el
+    subministrament causada per una incidència en la xarxa de BT i que no afecta
+    a instal·lacions de tensió superior (centres de transformació).
+
+Als efectes d’aquesta informació, no es consideren interrupcions en baixa tensió
+les interrupcions ocasionades per incidències en la xarxa de MT ni aquelles que
+tenint el seu origen en la xarxa de BT afecten a un transformador MT/BT d’un CT,
+ja que en ambdós casos, es recullen en l’indicador zonal de MT corresponent.
+
+**Recollida de dades**: La recollida de dades associades a les interrupcions en
+baixa tensió es farà pel centre d’atenció al client i es completarà degudament
+per que pugui ser introduïda en l’aplicació informàtica que gestiona aquesta
+informació.
+
+Informació associada a una interrupció: Es comptabilitzaran les interrupcions en
+la xarxa de baixa tensió que hagin generat, com a mínim, a un avís de reclamació
+per falta de subministrament, agrupant en una sola, totes aquelles que
+provinguin d’una mateixa incidència. Cada incidència ha d’assignar-se al seu
+corresponent centre de transformació. No obstant lo anterior, aquesta
+aproximació no es d’aplicació en aquelles empreses que actualment ja disposen de
+sistemes en que la connectivitat client - xarxa es realitzi a nivell de línia de
+baixa tensió. En el cas de GISCE-ERP la connectivitat client xarxa es fa a
+nivell d’escomesa.
+
+No es comptabilitzaran les interrupcions que tinguin el seu origen en la pròpia
+instal·lació del client. El límit entre les instal·lacions de l’empresa
+distribuïdora i del client se situa, conforme a la Reglamentació vigent, en la
+caixa general de protecció, corresponent aquesta a la instal·lació del client.
+
+Es desagregaran conforme a lo indicat en el següent quadre:
+
++-----------+-------+------------------+-----------------------------------+
+|           |       |                  | Número d'interrupcions            |
+| Província |  Zona | Municipi         +-------------+-------------+-------+
+|           |       |                  | Imprevistes | Programades | Total |
++-----------+-------+------------------+-------------+-------------+-------+
+
 ## Avaluació de la qualitat individual
 
 ## Documentació Suport
