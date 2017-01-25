@@ -71,3 +71,5 @@ pages:
     - Gestión de cambio de año: facturacio/canvi_any.md
     - Gestión de pagaments i cobraments: facturacio/cobraments.md
     - Gestión de lectures: facturacio/lectures.md
+  - GIS :
+    - Buscador: gis/websearch.md
