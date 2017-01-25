@@ -674,6 +674,85 @@ Es desagregaran conforme a lo indicat en el següent quadre:
 
 ## Avaluació de la qualitat individual
 
+L’avaluació de la qualitat Individual i el conseqüent descompte en la facturació
+dels clients depèn bàsicament del coneixement del punt d’agregació dels
+subministraments d’aquests clients i de la possibilitat d’obtenir el registre
+d’interrupcions de les instal·lacions des de les que s’alimenta.
+
+Així doncs, el còmput de la qualitat individual implicarà associar a cada
+element de xarxa en el que es coneix la relació client - xarxa y per extensió a
+tots els clients que depenguin d‘aquest, el registre de les interrupcions
+produïdes, discriminant les que tenen dret a descompte en la facturació,
+d’aquelles que no en tenen (programades, transport, tercers y força major, així
+com les incidències en zones per les que s’estiguin elaborant o executant plans
+de millora de qualitat de servei i electrificació i millora de la qualitat en
+l’àmbit rural, sempre que hagin estat autoritzats per l’òrgan competent de
+l’Administració corresponent).
+
+En el cas de clients amb més d’un circuit d’alimentació i un sol contracte, en
+els que el client pot alimentar-se de qualsevol d’ells, es considerarà
+interrumpit el subministrament si falta tensió en tots els circuits
+simultàniament.
+
+La connectivitat client - xarxa estarà establert al major nivell de detall
+conegut de la xarxa en cada cas. La relació client -xarxa estarà fixada, com a
+mínim, a nivell de centre de transformació. Aquesta aproximació únicament serà
+vàlida durant un període de tres anys, transcorreguts aquests tres anys,  la
+connectivitat client – xarxa haurà d’establir-se a nivell de línia de BT, per lo
+que es fomentarà la captació dels paràmetres de continuïtat de subministrament a
+través del propi equipo de mesura de la energia.
+
+No obstant lo anterior, aquesta aproximació no serà d’aplicació en aquelles
+empreses que ja disposin de sistemes que permetin determinar la connectivitat
+client - xarxa a nivell de línea de BT. El programa GISCE-ERP_QS permet establir
+la connectivitat client – xarxa a nivell d’escomesa.
+
+Una vegada realitzada la simulació d’un interval, i guardats els clients
+afectats gracies a la traçabilitat sempre podrem fer la consulta de forma
+inversa, a partir de la fitxa de la pòlissa d’un client es podrá saber quines
+son les incidències que ha tingut.
+
+En el servei d’atenció al client seleccionant un client des del menú
+"_Contactes → configuració → contactes_" s’accedeix a la fitxa del client:
+
+![](../_static/qualitat/client_fitxa.png)
+
+A la pestanya de “_Pòlisses_” apareix la/es pòlisses que te contractades aquest
+client. Fent doble clic sobre la pòlissa desitjada apareix les dades d’aquesta i
+en la pestanya “_Incidències_” es pot veure totes les incidències que ha tingut,
+tal com es mostra en la imatge següent:
+
+![](../_static/qualitat/client_incidencies.png)
+
+Durant aquesta primera fase de tres anys, les incidències en las xarxes de baixa
+tensió s’assignaran al seu corresponent centre de transformació, repartint-se el
+temps total y el número total d’aquestes entre els consumidors que s’alimenten
+des del centre de transformació, de forma inversament proporcional al número de
+sortides de baixa tensió que existeixin en aquest centre de transformació.
+
+El registre de interrupcions en BT per punt d’agregació es el resultat de
+superposar en el temps les afectacions de MT del CT (o transformador MT/BT) del
+que depèn el punt d’agregació y les afectacions de la seva xarxa de BT. Així
+mateix, el registre de interrupcions en MT/AT per punt d’agregació es el
+resultat de superposar les afectacions, si es el cas, de les instal·lacions de
+MT/AT del que depèn el punt.
+
+La qualitat de les dades topològiques que determinen l’agregació de
+instal·lacions afectades per una incidència a un o varis punts d’agregació, així
+com l’assignació correcta de clients a cadascun dels punts d’agregació
+determinarà fundamentalment la qualitat de la mesura de la qualitat de
+subministrament.
+
+Si la relació client –xarxa està a nivell de sortida de BT, aquesta serà la
+unitat d’imputació per les interrupcions de BT. En el cas de que es pugui
+estimar raonablement l’afectació de les interrupcions a nivell de línia de BT,
+la imputació d’aquestes es realitzarà en aquest nivell. Si no fos possible la
+imputació es realitzarà a nivell de centre de transformació.
+
+En el caso de subministraments en BT, es pot realitzar el càlcul de les
+indemnitzacions anuals en base a la topologia de xarxa que hi hagi en aquell
+moment.
+
 ## Documentació Suport
 
 ### Generació d'avisos d'incidències
