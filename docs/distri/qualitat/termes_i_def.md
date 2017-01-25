@@ -903,3 +903,25 @@ desenvolupament, manteniment i operació en els entorns de procés i sistemes
 d’aplicacions pels objectius establerts en aquest procediment.
 
 ## Model d'informe
+
+La informació amb les dades de qualitat zonal a presentar a les Administracions
+competents haurà d’estar prèviament auditada i tindrà el format següent:
+
+
+| Comunitat Autònoma:  |  Província:  |
+|:--------------------:|:------------:|
+
++-----------+------+-----------------+-----------------------------------+
+|           |      |                 | Programadas                       |
+| Municipio | Zona | Pot. Ins. (MVA) +------------+--------------+-------+
+|           |      |                 | Transporte | Distribución | Total |
++-----------+------+-----------------+------------+--------------+-------+
+
++-------------------------------------------------------------+
+| Imprevistas                                                 |
++------------+------------+----------+--------------+---------+
+| Generación | Transporte | Terceros | Fuerza Mayor | Propias |
++------------+------------+----------+--------------+---------+
+
+| Total |
+|-------|
