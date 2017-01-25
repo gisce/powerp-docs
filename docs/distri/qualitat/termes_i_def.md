@@ -137,6 +137,7 @@ correctament les dates en que son vigents els valors indicats.
 En la fitxa de cada zona es defineix.
 
 **Paràmetres de Qualitat**:
+
 * **Hores Alta tensió**: Nombre d’hores màxim d’interrupció en MT ( de 1 a 36
   kV.)
 * **Interrupcions Alta tensió**: Nombre d’interrupcions màxim en MT ( de 1 a 36
