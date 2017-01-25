@@ -809,7 +809,7 @@ registrarà la data/hora del canvi i la persona que el realitza.
 
 Quan s’hagi calculat els índex per un període, la modificació de incidències
 serà restringida a personal autoritzat, quedant igualment tots els canvis
-registrats. Desprès del canvi, els índex sobre els que pugui influir la
+registrats. Després del canvi, els índex sobre els que pugui influir la
 incidència seran calculats de nou.
 
 ### Classificació de la interrupció com a programada
