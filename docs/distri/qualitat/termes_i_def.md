@@ -859,6 +859,21 @@ alguns dels següents documents:
 
 ### Classificació de la interrupció com originada per forca Major
 
+La classificació de la interrupció com originada per força major exigirà
+conservar documentació que acrediti que la interrupció ha estat motivada per una
+de les causes acceptades como tales per l’Administració competent. Es
+consideraran como causa de força major:
+
+* Fenòmens atmosfèrics que superen els límits que estableix el Reglament de
+  Riscos Extraordinaris per definir el seu caràcter extraordinari. Per poder
+  provar aquesta circumstancia serà necessari adjuntar els partes meteorològics
+  del moment de la incidència.
+
+* Interrupcions causades per sol·licituds dels Serveis de Protecció Civil,
+  Policia o qualsevol altre organisme autoritzat. En aquests casos s’haurà de
+  sol·licitar un document justificatiu de l’esmentada sol·licitud firmada per
+  l’organisme corresponent.
+
 ## Sistemes Informàtics
 
 ## Model d'informe
