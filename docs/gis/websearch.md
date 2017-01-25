@@ -1,46 +1,44 @@
 # Camps indexats
 
-
 ## Linia AT
-- name
-- descripcio
-- origen
-- final
-- municipi.name
-- tensio
-- data_pm
-- expedients
+- Codi (name)
+- Descripció (descripcio)
+- Origen (origen)
+- Final (final)
+- Municipi (municipi.name)
+- Tensió (tensio)
+- Expedient(expedients)
 
 ## Tram AT
-- cini
-- linia.name
-- linia.descripcio
-- linia.origen
-- linia.final
-- linia.municipi.name
-- linia.tensio
-- data_pm
-- name
-- origen
-- final
-- cable.name
- -cable.seccio
-- cable.material.name
+- CINI (cini)
+- Linia Alta Tensió (linia.name)
+- Descripció de la línia (linia.descripcio)
+- Origen de la línia (linia.origen)
+- Final de la línia (linia.final)
+- Municipi de la línia (linia.municipi.name)
+- Tensió de la línia (linia.tensio)
+- Data APM (data_pm)
+- Codi (name)
+- Origen (origen)
+- Final (final)
+- Codi del cable (cable.name)
+- Secció del cable (cable.seccio)
+- Material del cable (cable.material.name)
 - Circuit si hi ha el modul de mapeig
 
 ## Suport AT
-- name
-- linia.name
-- poste.name
-- poste.altura
-- poste.esforc
+- Codi (name)
+- Línia (linia.name)
+- Codi poste (poste.name)
+- Altura del poste (poste.altura)
+- Esforç del poste (poste.esforc)
 
 ## LBT
-- cini
-- name
-- ct.name
-- ct.descripcio
-- municipi.name
+- CINI (cini)
+- Codi (name)
+- Codi CT (ct.name)
+- Descripció del CT (ct.descripcio)
+- Municipi (municipi.name)
 - num_linia': lambda self, data: data and '{0} L{0}'.format(data) or '',
 - cable.name
 - cable.seccio
