@@ -562,6 +562,55 @@ que es poden ampliar i/o modificar.
 
 ## Informació associada a instal·lacions i clients
 
+En aquest apartat s’estableix la informació mínima que han de contenir les bases
+de dades de instal·lacions i de clients.
+
+Un tema a considerar es la periodicitat de l’actualització de la informació
+relativa a les potències. El criteri es el de realitzar una actualització
+mensual de les dades base pel càlcul dels indicadores del mes corresponent.
+
+Les potencies instal·lades (CT) y contractades (clients MT) necessàries pel
+càlcul s’obtindran a partir de les bases de dades tècnica i comercial y
+s’actualitzaran, al menys, mensualment.
+
+En els càlculs dels denominadors dels índex es tindran en compte les potencies
+de l’últim dia del mes. Els índex anuals es calcularan com la suma algebraica
+dels mensuals.
+
+Els temps d’interrupció s’obtenen per diferència dels temps de registre de
+maniobra de les incidències. A aquest efecte, només intervenen les maniobres que
+afecten a pèrdues i reposicions de subministrament.
+
+El càlcul dels indicadores es realitzarà amb la mateixa periodicitat que
+l’actualització de les dades base del càlcul. Si aquestos s’actualitzen
+mensualment, el càlcul dels indicadors d’aquell mes, o fracció de mes, es
+realitzarà amb les dades base del mes; i per períodes superiors al mes, se
+sumaran els respectius indicadors mensuals. En aquest cas es donarà la dada base
+de l’últim mes del període considerat.
+
+En el cas d’indicadors que utilitzen la potència afectada per interrupcions, com
+es el cas del TIEPI, s’utilitzarà la potència instal·lada en els centres de
+transformació i la potència contractada pels clients de MT. La potència
+contractada s’obtindrà de la base de dades de clients, i es sumarà a la potència
+instal·lada en els centres de transformació d’empresa, presentant-se els
+resultats en kVA.
+
+**Informació necessària pel càlcul**
+La informació mínima que s’haurà de tenir amb la periodicitat establerta en
+relació amb les instal·lacions de l’empresa o de client i el seu nivell
+d’agregació, es la següent:
+
+* Relació de tots els CCTT d’empresa i clients de MT connectats en cada tram de
+  les diferents línies.
+* Potència instal·lada en kVA de cada transformador, per un CT de empresa, o
+  potencia màxima contractada en kW, per un CT de client.
+* Municipi, tipus de zona (urbana, semiurbana, rural concentrada o rural
+  dispersa) i província on està ubicada la instal·lació.    
+  En aquelles províncies en que la potència instal·lada de l’empresa
+  distribuïdora sigui inferior a 1 % (províncies amb distribució marginal), la
+  informació de las interrupcions d’aquests clients es podrà agregar a la de la
+  província limítrofa de la qual provingui la línia que els alimenti.
+
 ## Metodologia pel càlcul de l'indicador percentil 80 de TIEPI
 
 ## Metodologia per la obtenció d'informació zonal d'interrupcions en BT
