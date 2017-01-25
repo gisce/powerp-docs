@@ -814,6 +814,28 @@ incidència seran calculats de nou.
 
 ### Classificació de la interrupció com a programada
 
+La classificació d’una interrupció com a programada requerirà conservar la
+següent documentació:
+
+* Sol·licitud d’autorització a l’òrgan competent d’energia de l’Administració
+  autonòmica corresponent amb una antelació mínima de setanta dos hores a
+  l’instant de la interrupció, no computant-se a aquests efectes els dissabtes,
+  diumenges o festius.
+
+* Documentació suport que garanteixi que la comunicació individualitzada a
+  consumidors als que els subministraments es realitzin a tensions superiors a
+  1kV i als establiments que presten serveis declarats essencials per
+  informar-los de la data i hora de inicio y final de la interrupció s’ha
+  realitzat al menys vint-i-quatre hores abans del moment del tall del
+  subministrament degudament justificat i en el seu cas, copia de la
+  comunicació. En caso de que s’opti per realitzar trucades telefòniques es
+  mantindrà un registre automàtic de trucades realitzades que permeti verificar
+  l’instant de realització.
+
+* Referència de l’avís publicat en dos dels mitjans de comunicació escrita de
+  major difusió en la província corresponent informant de la data i hora de
+  l’inicio y final de la interrupció.
+
 ### Classificació de la interrupció com originada per tercers
 
 ### Classificació de la interrupció com originada per forca Major
