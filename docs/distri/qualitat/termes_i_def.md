@@ -876,4 +876,30 @@ consideraran como causa de força major:
 
 ## Sistemes Informàtics
 
+Les companyies distribuïdores mantindran un adequat control i disposaran de
+sistemes que permetin la verificació de les següents característiques de la
+informació emmagatzemada:
+
+* _Confidencialitat_: L’accés als sistemes estarà restringit a determinades
+  persones amb autorització. Es definiran diferents perfils de forma que es
+  controli l’accés a la informació, aplicacions, processos i entorno de xarxa,
+  garantint la identificació de la persona que introdueixi o modifiqui una data
+  i negant l’accés a qualsevol persona sense autorització.
+
+* _Integritat_: Les companyies garantiran la fidelitat i la precisió de la
+  informació continguda en els seus sistemes, controlant que no es produeixin
+  errors de processos, aplicacions o de gestió, que suposin alteracions de la
+  informació.
+
+* _Disponibilitat_: La informació es trobarà accessible per la seva consulta i
+  tractament sempre que sigui necessària. Cada companyia mantindrà un sistema
+  adequat de recolzament de les seves  dades, mitjançant còpies de seguretat
+  periòdiques, de forma que es garanteixi la disponibilitat d’aquestes davant de
+  possibles incidències.
+
+Addicionalment la infraestructura tecnològica escollida per implementar els
+sistemes informàtics de la companyia garantirà la eficiència de la definició,
+desenvolupament, manteniment i operació en els entorns de procés i sistemes
+d’aplicacions pels objectius establerts en aquest procediment.
+
 ## Model d'informe
