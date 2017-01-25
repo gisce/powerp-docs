@@ -755,6 +755,15 @@ moment.
 
 ## Documentació Suport
 
+En aquest apartat es senyala la documentació quer hauran de conservar les
+companyies distribuïdores per suportar la informació continguda en els seus
+sistemes, sense prejudici de lo que s’indica en els apartats anteriors.
+
+El sistema elegit per conservar la documentació ha de permetre l’anàlisi per
+part  d’un auditor extern, considerant-se vàlid l’emmagatzematge de la
+informació en suports magnètics, òptics o similars, sempre que es compleixi el
+que s’estableix en els apartats següents.
+
 ### Generació d'avisos d'incidències
 
 ### Dades introduïdes en el sistema de forma manual
