@@ -1,118 +1,118 @@
 # Camps indexats
 
 ## Linia AT
-- Codi (name)
-- Descripció (descripcio)
-- Origen (origen)
-- Final (final)
-- Municipi (municipi.name)
-- Tensió (tensio)
-- Expedient(expedients)
+- Codi
+- Descripció
+- Origen
+- Final
+- Municipi
+- Tensió
+- Expedient
 
 ## Tram AT
-- CINI (cini)
-- Linia Alta Tensió (linia.name)
-- Descripció de la línia (linia.descripcio)
-- Origen de la línia (linia.origen)
-- Final de la línia (linia.final)
-- Municipi de la línia (linia.municipi.name)
-- Tensió de la línia (linia.tensio)
-- Data APM (data_pm)
-- Codi (name)
-- Origen (origen)
-- Final (final)
-- Codi del cable (cable.name)
-- Secció del cable (cable.seccio)
-- Material del cable (cable.material.name)
+- CINI
+- Linia Alta Tensió
+- Descripció de la línia
+- Origen de la línia
+- Final de la línia
+- Municipi de la línia
+- Tensió de la línia
+- Data APM
+- Codi
+- Origen
+- Final
+- Codi del cable
+- Secció del cable
+- Material del cable
 - Circuit si hi ha el modul de mapeig
 
 ## Suport AT
-- Codi (name)
-- Línia (linia.name)
-- Codi poste (poste.name)
-- Altura del poste (poste.altura)
-- Esforç del poste (poste.esforc)
+- Codi
+- Línia
+- Codi poste
+- Altura del poste
+- Esforç del poste
 
 ## LBT
-- CINI (cini)
-- Codi (name)
-- Codi CT (ct.name)
-- Descripció del CT (ct.descripcio)
-- Municipi (municipi.name)
-- Número de línia (num_linia)
-- Cable (cable.name)
-- Secció del cable (cable.seccio)
-- Material del cable(cable.material.name)
-- Voltatge (voltatge)
-- Data APM (data_pm)
+- CINI
+- Codi
+- Codi CT
+- Descripció del CT
+- Municipi
+- Número de línia
+- Cable
+- Secció del cable
+- Material del cable
+- Voltatge
+- Data APM
 
 ## CT
-- CINI (cini)
-- CT (name)
-- Descripció (descripcio)
-- Municipi (id_municipi.name)
-- Potència Total del CT (potencia)
-- Adreça (adreca)
-- Data APM (data_pm)
-- Tensió primari (tensio_p)
+- CINI
+- CT
+- Descripció
+- Municipi
+- Potència Total del CT
+- Adreça
+- Data APM
+- Tensió primari
 - Circuit (si hi ha el modul de mapeig instal·lat)
 
 ## Transformador
-- CINI (cini)
-- Numero de transformador (name)
-- Numero de fabricacio (numero_fabricacio)
-- Marca (id_marca.name)
-- Connexio UNE (id_connexioune.name)
-- Potencia nominal (potencia_nominal)
-- Estat (id_estat.name)
-- Data APM (data_pm)
+- CINI
+- Numero de transformador
+- Numero de fabricacio
+- Marca
+- Connexio UNE
+- Potencia nominal
+- Estat
+- Data APM
 
 ## Escomeses
-- Node Id (name)
-- Municipi (id_municipi.name)
-- Tipus (blockname.name)
+- Node Id
+- Municipi
+- Tipus
 
 ## Cups
-- CUPS (name)
-- Municipi (id_municipi.name)
-- Polissa (polissa_polissa.name)
-- Nº de comprador (polissa_comptador)
-- Direcció Principal (direccio)
+- CUPS
+- Municipi
+- Polissa
+- Nº de comprador
+- Direcció Principal
 - Titular (Si hi ha el modul giscedat_cups_titular)
-- Zona (zona)
-- Ordre (ordre)
-- ET (et)
-- Linea (linia)
-- Escomesa (id_escomesa.name)
+- Zona
+- Ordre
+- ET
+- Linea
+- Escomesa
 
 ## Interruptors AT
 ### Seccionador unifilar
-- Codi (codi)
-- Tipus (blockname.name)
+- Codi
+- Tipus
 
 ### Seccionador AT
-- Codi (codi)
-- Tipus (blockname.name)
+- Codi
+- Tipus
 
 ### Fusible AT
-- Codi (codi)
-- Tipus (blockname.name)
+- Codi
+- Tipus
 
 ### Interruptor AT
-- Codi codi
-- Tipus (blockname.name)
+- Codi
+- Tipus
 
 ## ADU DSP
-- Codi (codi)
-- Blockname (blockname.name)
+- Codi
+- Blockname
 
 ## Nodes
-- IDNode (Name)
+- IDNode
 
 ## Fusibles BT
-- Codi (codi)
-- Tipus (blockname.name)
+- Codi
+- Tipus
 
 ## Interruptors BT
-- Codi (codi)
-- Tipus (blockname.name)
+- Codi
+- Tipus
