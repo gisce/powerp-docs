@@ -766,6 +766,10 @@ que s’estableix en els apartats següents.
 
 ### Generació d'avisos d'incidències
 
+Les companyies distribuïdores conservaran com a suport els avisos que es generen
+amb la data i la hora dels mateixos registrades automàticament que permeti
+verificar l’instant de generació de l’avís.
+
 ### Dades introduïdes en el sistema de forma manual
 
 ### Modificació de dades
