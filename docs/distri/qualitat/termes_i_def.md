@@ -772,6 +772,27 @@ verificar l’instant de generació de l’avís.
 
 ### Dades introduïdes en el sistema de forma manual
 
+Per garantir que les dades introduïdes en el sistema de forma manual puguin ser
+auditades, es conservarà el comunicat d’operació o documentació suport
+equivalent degudament firmada pel cap de l’equip de treball.
+
+Alternativament es considerarà documentació suport vàlida la informació
+introduïda directament en el sistema d’operació per la persona responsable i/o
+degudament autoritzada per aquesta tasca, sempre i quant el sistema garanteixi
+la identificació unívoca de la persona que ha realitzat la introducció de les
+dades.
+
+Addicionalment, es considerarà vàlid l’emmagatzematge de la informació en suport
+magnètic, òptic o similar i l’escaneig de documents físics. La persona firmant
+del document físic o electrònic es responsabilitzarà de la veracitat de la
+informació continguda en aquest.
+
+En el cas de documentació relacionada amb maniobres manuals, s’inclourà
+clarament els instants de realització de les maniobres, les instal·lacions
+afectades, les dades complementaries que s’introdueixin en l’aplicació
+informàtica i la identificació del responsable de l’equip de treball, així com
+el seu càrrec.
+
 ### Modificació de dades
 
 ### Classificació de la interrupció com a programada
