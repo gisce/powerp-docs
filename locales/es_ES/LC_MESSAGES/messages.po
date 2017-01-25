@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2017-01-25 13:16+0100\n"
-"PO-Revision-Date: 2017-01-25 14:35+0100\n"
+"PO-Revision-Date: 2017-01-25 14:37+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -18327,30 +18327,32 @@ msgstr ""
 " fechas de inicio y fin del período de vigencia de los valores."
 
 msgid "Recollida d'informació"
-msgstr ""
+msgstr "Recogida de información"
 
 msgid "La recollida d’informació procedeix de 3 fonts diferents:"
-msgstr ""
+msgstr "La recogida de información procede de 3 fuentes diferentes:"
 
 msgid "Sistema de telecontrol (SCADA)"
-msgstr ""
+msgstr "Sistema de telecontrol (SCADA)"
 
 msgid "Actuació manual."
 msgstr "Actuación manual."
 
 msgid "Centre d’atenció al client."
-msgstr ""
+msgstr "Centro de atención al cliente."
 
 msgid ""
 "L’origen de les incidències està definit en l’apartat “<em>Qualitat → Configuració\n"
 "→ Origen d’incidències</em>\"."
 msgstr ""
+"El origen de las incidencias está definido en el apartado \"<em>Calidad → \n"
+"configuración → origen de incidencias</em>\"."
 
 msgid "<img alt=\"\" src=\"../../_static/qualitat/origen_menu.png\" />"
 msgstr "<img alt=\"\" src=\"../../_static/qualitat/origen_menu.png\" />"
 
 msgid "En aquest apartat hi ha definits els 3 origen de les incidències:"
-msgstr ""
+msgstr "En este apartado hay definidos los 3 orígenes de las incidencias:"
 
 msgid "<img alt=\"\" src=\"../../_static/qualitat/origen_tipus.png\" />"
 msgstr "<img alt=\"\" src=\"../../_static/qualitat/origen_tipus.png\" />"
