@@ -31,7 +31,12 @@ Actualment, aquest mòdul és capaç de llegir i generar:
 
 * **A3**: Alta directa a mercat. En el procés intervé la comercialitzadora
   entrant i la distribuidora.
-
+ 
+* **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora 
+  actual.
+ 
+* **W1**: Notificació de autolectures a la distribuïdora des de la comercialitzadora.
+ 
 Per facilitar el processat massiu de casos, s'han afegit diverses eines i
 assistents per realitzar accions en múltiples casos.
 
