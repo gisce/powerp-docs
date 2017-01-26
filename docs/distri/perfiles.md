@@ -385,7 +385,7 @@ Per cada CUPS indicat en el camp **Número de CUPS** es realitza el
 següent procediment:
 
 1. Selecció del fitxer de corba origen des del botó **'Seleccionar'**.
-2. Click al botó ![generar](/_static/perfiles/boto_generar.png)
+2. Click al botó ![generar](_static/perfiles/boto_generar.png)
 
 Seguits aquests passos l'assistent mostra la següent informació:
 
