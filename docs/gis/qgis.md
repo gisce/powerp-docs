@@ -21,7 +21,9 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
 * Connectors
 * Giscegis
 * Configuració
+
 ![connectors](_static/configuracio.png)
+
 * Prémer el boto de + per afegir un nou servidor
 ![connectors](_static/dialeg.png)
 * Posar el nom del nou servidor
