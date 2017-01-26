@@ -20,7 +20,7 @@ configuració es mostren els horaris de les tarifes i els perfils de REE.
 ## Procés de perfilació
 
 Per començar el procés de perfilació s'ha de clicar a '**Lots de Perfilació**',
-on apareixerà una finestra on podrem realitzar el procés de perfilat. Abans 
+on apareixerà una finestra on podrem realitzar el procés de perfilat. Abans
 d'això caldrà realitzar unes comprovacions bàsiques de les pòlisses a perfilar
 que a continuació expliquem.
 
@@ -29,7 +29,7 @@ que a continuació expliquem.
 Primer de tot haurem de realitzar una comprovació del número de pòlissa
 a perfilar.
 
-En el menú del lot de perfilació podem observar de quin lot es tracta a 
+En el menú del lot de perfilació podem observar de quin lot es tracta a
 '**Lot**' i de les dates inici i final que comprèn aquest lot. A sota d'aquests
 camps hi trobem dues pestanyes, on a la de "**Pòlisses**" podem veure una barra
 en el procés de perfilat (que ara estarà a 0%) i del número de pòlisses que hi
@@ -88,8 +88,8 @@ prement la tecla *ESC*.
 
 La següent comprovació que tenim de fer és:
 
-Al lot de perfilació hi ha d'haver les pòlisses que tenen una factura 
-dins del període del lot de perfilació excepte aquelles pòlisses de 
+Al lot de perfilació hi ha d'haver les pòlisses que tenen una factura
+dins del període del lot de perfilació excepte aquelles pòlisses de
 més de 450kW.
 
 ![](_static/perfiles/3_pf.PNG)
@@ -110,9 +110,9 @@ S'ha de comprovar que el número de factures del període sigui igual al número
 de pòlisses a perfilar. Tinguen en compte de que les pòlisses que tenen més
 de una factura en el període només s'han de tenir en compte una.
 
-Cal buscar les factures des del menú "**Facturació**" > "**General**" > 
-"**Factures Client**" i filtrar aquelles factures que comencen abans de 
-l'últim dia del període de perfilació, que acaben després del primer 
+Cal buscar les factures des del menú "**Facturació**" > "**General**" >
+"**Factures Client**" i filtrar aquelles factures que comencen abans de
+l'últim dia del període de perfilació, que acaben després del primer
 dia del període de perfilació i amb potència menor o igual a 450Kw.
 
 
@@ -284,7 +284,7 @@ A la dreta del perfilat hi trobarem dos accessos directes a la llista de
 pòlisses que conté el lot, tal i com podem observar a la imatge anterior.
 
 La '**Pòlissa del lot**' ens mostra el llistat de pòlisses on cada pòlissa
-te sis camps: La id de la pòlissa, l'estat en que es troba del procés, 
+te sis camps: La id de la pòlissa, l'estat en que es troba del procés,
 l'**Origen real** que ens mostra si la pòlissa ha estat importada a partir
 de un fitxer de corba o d'un procés de perfilació, **Origen teòric** que
 serà '**corba**' si és major de 50kW, i la tarifa de la pòlissa definida.
@@ -293,8 +293,36 @@ La imatge de continuació ens mostra un exemple de llistat de pòlisses.
 ![](_static/perfiles/corbes_007.png)
 
 En l'accés directe de '**Pòlisses amb l'origen real diferent del teòric**'
-ens mostra un llistat amb els mateixos camps que l'altre llista però amb 
+ens mostra un llistat amb els mateixos camps que l'altre llista però amb
 tant sols les pòlisses que origen real i teòric son diferents.
+
+## Reperfilat
+
+Una vegada ja haguem generat un perfil per una pòlissa i un lot, podem
+reajustar-lo en cas de ser necessari utilitzant l'acció de reperfilar.
+
+Aquesta opció la podem trobar:
+
+* Dins la carpeta de "**Accions**", situat en el menú principal d'aquest mòdul.
+  Just a sota de la carpeta de configuració.
+* Dins d'un lot concret en el menú de "**Lots de perfilació**"
+* Dins d'una pòlissa concreta dins el menú de "**pòlisses d'un lot**"
+
+Per realitzar el reperfilat, independentment de que els camps es sel·leccionin
+automàticament, en el cas de que ja estem dins un lot o una pòlissa, o no,
+caldrà sel·leccionar tant un lot com una pòlissa. Per fer-ho, podem escriure el
+nom d'aquest camp, o fent click a la lupa ens mostrarà una llista amb un
+formulari per poder filtrar els resultats. Amb un simple doble click en un dels
+valors llistats, aquest es situarà en el camp corresponent.
+
+![](_static/perfiles/reperfilar.png)
+
+Una vegada tinguem seleccionats els dos camps, podrem polsar el botó
+**Reperfilar**, que ens adaptarà el nostre perfil. En uns instants, quan acaba
+l'operació, es mostraran els nous resultats en la mateixa finestra,
+indicant-nos que ja ha finalitzat.
+
+![](_static/perfiles/reperfilar_end.png)
 
 ## Menú de generació de fitxers de la REE
 
@@ -308,11 +336,11 @@ Formats d'origen suportats:
 
 En el menú de generació de fitxers de la Red Eléctrica Española (REE)
 es troben els apartats indicats a la imatge inferior. Dins de l'apartat
-d'**Agregacions de Règim Especial** es generen els fitxers **MAGRE** 
+d'**Agregacions de Règim Especial** es generen els fitxers **MAGRE**
 (Dades horaries d'energia d'agregacions d'instal·lacions de producció
 d'energia elèctrica a partir de fonts d'energia renovables, cogeneració
 i residus tipus 3 i 5) i **INMERE** (Acumulat mensual d'energia de punts
-frontera d'instal·lacions de producció d'energia elèctrica a partir de 
+frontera d'instal·lacions de producció d'energia elèctrica a partir de
 fonts d'energia renovables, cogeneració de residus tipus 3 i 5 desagregats).
 Per a més informació, consultar apartats 4.2.12 (MAGRE) i 4.2.13
 (INMERE) del document de REE.
@@ -325,14 +353,14 @@ A l'apartat de REE es generen els següents fitxers:
 * **Fitxer ENEFAC:** aquesta opció genera el fitxer ENEFAC (Energia de
   facturació de les tarifes d'accés) segons el document de REE, pàgina 3.
 * **Fitxer F1:** aquesta opció genera el fitxer F1 (Dades horàries
-  d'energia de punts frontera de clients tipus 1 i 3) segons 
+  d'energia de punts frontera de clients tipus 1 i 3) segons
   el document de REE, apartat 4.2.1.
 
 ![](_static/perfiles/menu_ree.png)
 
 ## Generació de fitxers F1
 
-Aquesta opció genera el fitxer F1 (Dades horàries d'energia de punts 
+Aquesta opció genera el fitxer F1 (Dades horàries d'energia de punts
 frontera de clients tipus 1 i 3) segons el document de REE, apartat 4.2.1.
 
 Al seleccionar-la des del menú de generació de fitxers de la REE
@@ -357,7 +385,7 @@ Per cada CUPS indicat en el camp **Número de CUPS** es realitza el
 següent procediment:
 
 1. Selecció del fitxer de corba origen des del botó **'Seleccionar'**.
-2. Click al botó ![generar](/_static/perfiles/boto_generar.png)
+2. Click al botó ![generar](_static/perfiles/boto_generar.png)
 
 Seguits aquests passos l'assistent mostra la següent informació:
 
