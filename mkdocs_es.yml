@@ -35,6 +35,7 @@ pages:
     - Facturación:
       - Peajes: distri/facturacion_peajes.md
       - Contratación: distri/facturacion_contratacion.md
+      - Régimen especial: distri/facturacio_re.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
       - AEAT: distri/adm-pub/aeat.md
