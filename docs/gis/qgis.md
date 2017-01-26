@@ -3,7 +3,7 @@ Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
 
 * Conectors
 * Gestiona i instal·la connectors
-<Imagte aqui>
+![connectors](_static/connectors.png)
 * Anar a la secció de Configuracio
 * Activar la opció "Comprova si hi ha actualitzacions al arrancar"
 * Afegir un nou repositori de connectors amb les següents dades:
