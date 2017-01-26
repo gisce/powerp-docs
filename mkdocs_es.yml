@@ -41,17 +41,19 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md
-    - GIS - Instalaciones:
-      - Subestaciones: distri/subestaciones.md
-      - CTS: distri/cts.md
-      - CTS:
-        - Celdas i elementos de corte: distri/celles.md
-      - LAT: distri/lat.md
-      - LBT: distri/lbt.md
-      - Instalaciones RE: distri/re.md
-      - Expedientes: distri/expedientes.md
-      - CINI - Generación Automática: distri/act_cinis.md
-      - TI - Generación Automática: distri/act_tis.md
+    - GIS :
+      - GIS Web: gis/websearch.md
+      - GIS - Instalaciones:
+        - Subestaciones: distri/subestaciones.md
+        - CTS: distri/cts.md
+        - CTS:
+          - Celdas i elementos de corte: distri/celles.md
+        - LAT: distri/lat.md
+        - LBT: distri/lbt.md
+        - Instalaciones RE: distri/re.md
+        - Expedientes: distri/expedientes.md
+        - CINI - Generación Automática: distri/act_cinis.md
+        - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio: distri/calidad.md
   - Comercializadora:
     - Inicio: comer/index.md
@@ -71,5 +73,3 @@ pages:
     - Gestión de cambio de año: facturacio/canvi_any.md
     - Gestión de pagaments i cobraments: facturacio/cobraments.md
     - Gestión de lectures: facturacio/lectures.md
-  - GIS :
-    - Buscador: gis/websearch.md
