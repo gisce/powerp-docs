@@ -43,7 +43,7 @@ pages:
     - Perfiles: distri/perfiles.md
     - GIS :
       - GIS Web: gis/websearch.md
-      - GIS - Instalaciones:
+      - Instalaciones:
         - Subestaciones: distri/subestaciones.md
         - CTS: distri/cts.md
         - CTS:
