@@ -1,5 +1,6 @@
 # Instal·lació
 Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
+
 * Conectors
 * Gestiona i instal·la connectors
 <Imagte aqui>
@@ -13,8 +14,10 @@ Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
 * Anar a la secció de "Tot" i buscar el plugin "TileLayer Plugin" i instal·lar-lo
 * Buscar i instal·lar el plugin de "Giscegis"
 
+
 # Configuració d'accés a Giscegis
 Per configurar l'accés al servidor de Giscegis s'han de fer els següents passos:
+
 * Connectors
 * Giscegis
 * Configuració
