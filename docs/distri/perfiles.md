@@ -322,7 +322,7 @@ Una vegada tinguem seleccionats els dos camps, podrem polsar el botó
 l'operació, es mostraran els nous resultats en la mateixa finestra,
 indicant-nos que ja ha finalitzat.
 
-![](/_static/perfiles/reperfilar_end.png)
+![](_static/perfiles/reperfilar_end.png)
 
 ## Menú de generació de fitxers de la REE
 
