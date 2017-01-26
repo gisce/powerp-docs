@@ -1,4 +1,5 @@
 mkdocs
+Markdown==2.6.7
 markdown-blockdiag
 markdown-i18n>=2.1.1
 # Due no pypi package: https://github.com/smartboyathome/Markdown-GridTables/issues/2
