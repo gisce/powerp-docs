@@ -110,10 +110,10 @@ la següent clasificació de zones:
   subministraments, incloent capitals de província, encara que no arribin a la
   xifra anterior.
 * **Zona Semi-urbana**: Conjunt de municipis d’una província amb un número de
-  subministraments comprès entre 2.000 y 20.000, excloent capitals de província.
+  subministraments comprès entre 2.000 i 20.000, excloent capitals de província.
 * **Zona Rural**:
   * **_Zona Rural Concentrada_**: Conjunt de municipis d’una província amb un
-    nombre de subministraments comprès entre 200 y 2.000.
+    nombre de subministraments comprès entre 200 i 2.000.
   * **_Zona Rural Dispersa_**: Conjunt de municipis d’una província amb menys de
     200 subministraments així como els subministraments ubicats fora dels nuclis
     de població que no siguin polígons industrials o residencials.
@@ -497,7 +497,7 @@ Que es correspon amb els següents criteris:
   incidència, com a mínim amb el nivell de detall de la següent classificació.
 
     * **Generació**: Les incidències causades per la generació hauran de ser
-      comptabilitzades, sempre y quant produeixin talls de mercat.
+      comptabilitzades, sempre i quant produeixin talls de mercat.
     * **Transport**: Les incidències causades en la xarxa de transport i que
       afecten a la xarxa de distribució, sempre i quant afectin al
       subministrament a clients, es comptabilitzen conjuntament en el sistema de
@@ -570,8 +570,8 @@ Un tema a considerar es la periodicitat de l’actualització de la informació
 relativa a les potències. El criteri es el de realitzar una actualització
 mensual de les dades base pel càlcul dels indicadores del mes corresponent.
 
-Les potencies instal·lades (CT) y contractades (clients MT) necessàries pel
-càlcul s’obtindran a partir de les bases de dades tècnica i comercial y
+Les potencies instal·lades (CT) i contractades (clients MT) necessàries pel
+càlcul s’obtindran a partir de les bases de dades tècnica i comercial i
 s’actualitzaran, al menys, mensualment.
 
 En els càlculs dels denominadors dels índex es tindran en compte les potencies
@@ -681,10 +681,10 @@ subministraments d’aquests clients i de la possibilitat d’obtenir el registr
 d’interrupcions de les instal·lacions des de les que s’alimenta.
 
 Així doncs, el còmput de la qualitat individual implicarà associar a cada
-element de xarxa en el que es coneix la relació client - xarxa y per extensió a
+element de xarxa en el que es coneix la relació client - xarxa i per extensió a
 tots els clients que depenguin d‘aquest, el registre de les interrupcions
 produïdes, discriminant les que tenen dret a descompte en la facturació,
-d’aquelles que no en tenen (programades, transport, tercers y força major, així
+d’aquelles que no en tenen (programades, transport, tercers i força major, així
 com les incidències en zones per les que s’estiguin elaborant o executant plans
 de millora de qualitat de servei i electrificació i millora de la qualitat en
 l’àmbit rural, sempre que hagin estat autoritzats per l’òrgan competent de
@@ -727,13 +727,13 @@ tal com es mostra en la imatge següent:
 
 Durant aquesta primera fase de tres anys, les incidències en las xarxes de baixa
 tensió s’assignaran al seu corresponent centre de transformació, repartint-se el
-temps total y el número total d’aquestes entre els consumidors que s’alimenten
+temps total i el número total d’aquestes entre els consumidors que s’alimenten
 des del centre de transformació, de forma inversament proporcional al número de
 sortides de baixa tensió que existeixin en aquest centre de transformació.
 
 El registre de interrupcions en BT per punt d’agregació es el resultat de
 superposar en el temps les afectacions de MT del CT (o transformador MT/BT) del
-que depèn el punt d’agregació y les afectacions de la seva xarxa de BT. Així
+que depèn el punt d’agregació i les afectacions de la seva xarxa de BT. Així
 mateix, el registre de interrupcions en MT/AT per punt d’agregació es el
 resultat de superposar les afectacions, si es el cas, de les instal·lacions de
 MT/AT del que depèn el punt.
@@ -826,7 +826,7 @@ següent documentació:
 * Documentació suport que garanteixi que la comunicació individualitzada a
   consumidors als que els subministraments es realitzin a tensions superiors a
   1kV i als establiments que presten serveis declarats essencials per
-  informar-los de la data i hora de inicio y final de la interrupció s’ha
+  informar-los de la data i hora de inicio i final de la interrupció s’ha
   realitzat al menys vint-i-quatre hores abans del moment del tall del
   subministrament degudament justificat i en el seu cas, copia de la
   comunicació. En caso de que s’opti per realitzar trucades telefòniques es
@@ -835,7 +835,7 @@ següent documentació:
 
 * Referència de l’avís publicat en dos dels mitjans de comunicació escrita de
   major difusió en la província corresponent informant de la data i hora de
-  l’inicio y final de la interrupció.
+  l’inicio i final de la interrupció.
 
 ### Classificació de la interrupció com originada per tercers
 
