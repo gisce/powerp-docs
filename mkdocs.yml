@@ -39,18 +39,20 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfils: distri/perfiles.md
-    - GIS - Instalacions:
-      - Subestacions: distri/subestaciones.md
-      - CTS: distri/cts.md
-      - CTS:
-        - Cel·les i elements de tall: distri/celles.md
-      - LAT: distri/lat.md
-      - LBT: distri/lbt.md
-      - Instalacions RE: distri/re.md
-      - Expedients: distri/expedientes.md
-      - Sincronització CUPS: distri/sincronizacion_cups.md
-      - CINI - Generació Automàtica: distri/act_cinis.md
-      - TI - Generació Automàtica: distri/act_tis.md
+    - GIS:
+      - Qgis: gis/qgis.md
+      - Instalacions:
+        - Subestacions: distri/subestaciones.md
+        - CTS: distri/cts.md
+        - CTS:
+          - Cel·les i elements de tall: distri/celles.md
+        - LAT: distri/lat.md
+        - LBT: distri/lbt.md
+        - Instalacions RE: distri/re.md
+        - Expedients: distri/expedientes.md
+        - Sincronització CUPS: distri/sincronizacion_cups.md
+        - CINI - Generació Automàtica: distri/act_cinis.md
+        - TI - Generació Automàtica: distri/act_tis.md
     - Qualitat de servei: distri/calidad.md
   - Comercialitzadora:
     - Inici: comer/index.md
