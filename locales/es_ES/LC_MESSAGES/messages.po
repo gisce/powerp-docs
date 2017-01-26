@@ -24051,6 +24051,192 @@ msgstr ""
 msgid "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 
+msgid "Camps de cerca"
+msgstr "Campos de busqueda"
+
+msgid "Linia AT"
+msgstr "Linea AT"
+
+msgid "Codi"
+msgstr "Codigo"
+
+msgid "Origen"
+msgstr "Origen"
+
+msgid "Final"
+msgstr "Final"
+
+msgid "Tensió"
+msgstr "Tensión"
+
+msgid "Expedient"
+msgstr "Expediente"
+
+msgid "Tram AT"
+msgstr "Tramo AT"
+
+msgid "Linia Alta Tensió"
+msgstr "Linea Alta Tensión"
+
+msgid "Descripció de la línia"
+msgstr "Descripción de la linea"
+
+msgid "Origen de la línia"
+msgstr "Origen de la linea"
+
+msgid "Final de la línia"
+msgstr "Final de la linea"
+
+msgid "Municipi de la línia"
+msgstr "Municipio de la linea"
+
+msgid "Tensió de la línia"
+msgstr "Tensión de la linea"
+
+msgid "Data APM"
+msgstr "Fecha APM"
+
+msgid "Codi del cable"
+msgstr "Código del cable"
+
+msgid "Secció del cable"
+msgstr "Sección del cable"
+
+msgid "Material del cable"
+msgstr "Material del cable"
+
+msgid "Circuit si hi ha el modul de mapeig"
+msgstr "Circuito si hay el modulo de mapeig instalado"
+
+msgid "Suport AT"
+msgstr "Soporte AT"
+
+msgid "Línia"
+msgstr "Linea"
+
+msgid "Codi poste"
+msgstr "Código poste"
+
+msgid "Altura del poste"
+msgstr "Altura del poste"
+
+msgid "Esforç del poste"
+msgstr "Esfuerzo del poste"
+
+msgid "LBT"
+msgstr "LBT"
+
+msgid "Codi CT"
+msgstr "Código CT"
+
+msgid "Descripció del CT"
+msgstr "Descripción del CT"
+
+msgid "Número de línia"
+msgstr "Número de linea"
+
+msgid "Cable"
+msgstr "Cable"
+
+msgid "Voltatge"
+msgstr "Voltaje"
+
+msgid "Potència Total del CT"
+msgstr "Potencia total del CT"
+
+msgid "Adreça"
+msgstr "Direccion"
+
+msgid "Tensió primari"
+msgstr "Tensión primario"
+
+msgid "Circuit (si hi ha el modul de mapeig instal·lat)"
+msgstr "Circuito (si hay el modulo del mapeig instalado)"
+
+msgid "Numero de transformador"
+msgstr "Numero de transformador"
+
+msgid "Numero de fabricacio"
+msgstr "Número de fabricacion"
+
+msgid "Marca"
+msgstr "Marca"
+
+msgid "Connexio UNE"
+msgstr "Conexión UNE"
+
+msgid "Potencia nominal"
+msgstr "Potencia nominal"
+
+msgid "Estat"
+msgstr "Estado"
+
+msgid "Node Id"
+msgstr "Node Id"
+
+msgid "Cups"
+msgstr "Cups"
+
+msgid "Polissa"
+msgstr "Poliza"
+
+msgid "Nº de comprador"
+msgstr "Nº de contador"
+
+msgid "Direcció Principal"
+msgstr "Dirección principal"
+
+msgid "Titular (Si hi ha el modul giscedat_cups_titular)"
+msgstr "Titular (Si hay el modulo giscedata_cups_titular)"
+
+msgid "Zona"
+msgstr "Zona"
+
+msgid "Ordre"
+msgstr "Orden"
+
+msgid "ET"
+msgstr "ET"
+
+msgid "Linea"
+msgstr "Linea"
+
+msgid "Escomesa"
+msgstr "Acometida"
+
+msgid "Interruptors AT"
+msgstr "Interruptores AT"
+
+msgid "Seccionador unifilar"
+msgstr "Seccionador unifilar"
+
+msgid "Seccionador AT"
+msgstr "Seccionador AT"
+
+msgid "Fusible AT"
+msgstr "Fusible AT"
+
+msgid "Interruptor AT"
+msgstr "Interruptor AT"
+
+msgid "ADU DSP"
+msgstr "ADU DSP"
+
+msgid "Blockname"
+msgstr "Blockname"
+
+msgid "Nodes"
+msgstr "Nodos"
+
+msgid "IDNode"
+msgstr "IDNode"
+
+msgid "Fusibles BT"
+msgstr "Fusibles BT"
+
+msgid "Interruptors BT"
+msgstr "Interruptores BT"
+
 #~ msgid ""
 #~ "Per començar el procés de perfilació s'ha de clicar a '<strong>Lots de "
 #~ "Perfilació</strong>',\n"
