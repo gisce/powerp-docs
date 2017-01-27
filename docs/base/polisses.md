@@ -86,3 +86,23 @@ activa**.
 
 ## Modificacions contractuals
 
+## CNAE
+
+El CNAE (Clasificación Nacional de Actividades Económicas) és un codi de 4
+xifres amb una estructura en forma d'arbre.
+
+Per exemple, el codi 61 pertany a _"Telecomunicaciones"_ mentre que el 061
+pertany a _"Extracción de crudo de petróleo"_. Conforme es van afegint dígits
+es va concretant de forma més exacte l'activitat de l'abonat.
+
+Per això és necessari concretar un CNAE de **4 dígits** que descrigui
+**l'activitat concreta de l'abonat**.
+
+Per fer-ho cal fer click al botó de la lupa a l'apartat **CNAE** al **crear **
+**una nova pòlissa**:
+
+![](_static/polisses/cnae.png)
+
+Llavors apareix la llista de CNAEs a escollir:
+
+![](_static/polisses/llista_cnae.png)
