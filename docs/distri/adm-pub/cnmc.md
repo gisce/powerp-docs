@@ -364,7 +364,7 @@ F12bis, F13, F13bis, F13c, F14 , F15 i F20 de la Circular 4/2015.
     Aquest mòdul va ser afegit a partir de la versió **v2.55** on es van afegir
     una sèrie de camps nous a la base de dades per tal de cumplimentar la
     informació requerida en els formularis.
- 
+
 ### Nous camps a la base de dades: circular 4/2015
 
 #### Transformador
@@ -396,11 +396,11 @@ A través d'aquest assistent podem realitzar dues operacions:
   1. Generar els informes
   2. Actualitzar dades estadístiques de la CNMC que s'utilitzen en aquests
      informes
-     
+
 !!! note
     Abans de generar els informes, hem d'haver actualtizat les dades de la CNMC
     amb l'aque que volem realitzar l'informe.
-    
+
 #### 1. Actualització de dades
 
 Aquesta pestanya és diferent segons es tingui instal·lat el mòdul de facturació
@@ -427,7 +427,7 @@ Tenim dues accions disponibles:
 * **Comptadors CSV**: Hem de seleccionar el fitxer CSV amb el contingut
   adequat per tal d'actualitzar els CINIS dels comptadors i després apretar el
   botó **Actualitzar CINIS**. Veure el [format dels comptadors en els csv](#format-comptadors-csv)
-    
+
 #### 2. Generacio dels informes
 
 ![](../_static/cnmc/4_2015/form_wizard_circular.png)
@@ -503,6 +503,11 @@ Energia activa anual consumida   | Energia activa anual consumida del CUPS, expr
 Energia reactiva anual consumida | Energia reactiva anual consumida del CUPS, expressada en kVArh
 Any d'informació                 | Any del qual es genera aquest formulari.
 
+!!! note
+    Per tal d'evitar problemes de validació, veure documentació del camp
+    **[CNAE](../../base/polisses.md#cnae)**
+
+
 #### F1bis: Informació relativa a la lectura dels equips de mesura dels clients
 
 Aquest formulari ens mostrarà la informació relativa als CUPS actius que la seva
@@ -548,7 +553,7 @@ la xarxa real. El fitxer resultant és codificat en ASCII mitjançant l'estànda
 S'inclourà informació dels trams d'alta i baixa tensió que compleixin les
 següents característiques:
 
-* **Actiu**: S'inclouran en el fitxer només els trams AT/BT que tenen la 
+* **Actiu**: S'inclouran en el fitxer només els trams AT/BT que tenen la
     casella "Actiu" marcada.
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 31 de Desembre. ( p.e. per l'any 2014 data_APM < 01/01/2015) o bé
@@ -617,7 +622,7 @@ condicions:
 
 Per les **línies de BT** s'inclouràn les que compleixin el següent:
 
-* **Actiu**: 
+* **Actiu**:
    * Ha d'estar actiu o,
    * Si no està actiu, hi ha d'haver el camp **data baixa** amb una data
      entrada.
@@ -941,7 +946,7 @@ condicions:
 
 El formulari F20 conté, per cadascún dels clients de l'empresa distribuidora,
 la relació amb les instal·lacions a les que es troba connectat. Conté 4 camps,
-separats per punts i comes ';'. 
+separats per punts i comes ';'.
 
 Els camps són:
 
@@ -1128,7 +1133,7 @@ la línia a la qual pertany
 !!! note
     S'han de comprovar tots els registres que tenen data_APM de l'any en que es genera el fitxer (en aquest cas 2016)
     perque no sortiran als fitxers .csv.
-    S'han de comprovar les instal·lacions **reformades** durant l'any en que es genera el fitxer i comprovar les 
+    S'han de comprovar les instal·lacions **reformades** durant l'any en que es genera el fitxer i comprovar les
     dates_APM dels registres en questió per veure si han de sortir o no als .csv y si cal modificar la data_APM per
     que apareixin en la generació dels fitxers.
 
@@ -1136,7 +1141,7 @@ la línia a la qual pertany
 
 S'han afegit nous camps a la fitxa dels trams:
 
-* **Tensió màxima de disseny**: És la tensió per la que està dissenyat el tram de línia (V). Aquest camp permet 
+* **Tensió màxima de disseny**: És la tensió per la que està dissenyat el tram de línia (V). Aquest camp permet
   classificar els trams de línia AT en funció de la tensió màxima per la que ha estat dissenyat i no per latensió
   a la que està treballant actualment.
 
@@ -1200,7 +1205,7 @@ indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valo
 **LINIES BT**
 
 !!! note
-    Tots els camps referents a les línies BT provenen dels models de **Elements BT** i **CT** 
+    Tots els camps referents a les línies BT provenen dels models de **Elements BT** i **CT**
     per tant hauran d'estar ben cumplimentats tots els camps que fa servir.
 
 !!! note
@@ -1209,7 +1214,7 @@ indica l'annex 1 de la resolució. El camp **SECCIO** es cumplimenta amb un valo
 *ELEMENTS SELECCIONATS:*
 
 
-Només s'inclouran els Trams BT que compleixin les següents 
+Només s'inclouran els Trams BT que compleixin les següents
 condicions de la fitxa de **Elements bt**:
 
 * **Actiu**:
@@ -1349,11 +1354,11 @@ NODE: POSICIONES EQUIPADAS CON INTERRUPTOR EN SUBESTACIONES
 
 !!! note
     Per obtenir aquest fitxer cal tenir configurat el mòdul de subestaciions.
-    
+
 *ELEMENTS SELECCIONATS:*
 
 
-Només s'inclouran les posicions  que compleixin les següents 
+Només s'inclouran les posicions  que compleixin les següents
 condicions de la fitxa de **Posicions**:
 
 * **Tipus Interruptor**: Ha de ser del tipus **Interruptor automàtic** (2)
@@ -1442,7 +1447,7 @@ la fitxa de **Transformadors**:
     que es troben en diferents estats modificant el checkbox corresponent.
 
 !!! note
-    Els Transformadors Reductors també estan inclosos en el llistat si 
+    Els Transformadors Reductors també estan inclosos en el llistat si
     compleixen les condicions especificades.
 
 
@@ -1581,7 +1586,7 @@ NODE: DESPACHO
 *ELEMENTS SELECCIONATS:*
 
 
-Només s'inclouran els Despatxos que compleixin les següents 
+Només s'inclouran els Despatxos que compleixin les següents
 condicions de la fitxa de la fitxa accessible a `Infraestructura / Despatxos`:
 
 * **Any_PS**: L'any de posada en servei ha de ser inferior o igual al
@@ -1638,7 +1643,7 @@ NODE: EQUIPOS DE MEJORA DE LA FIABILIDAD
 *ELEMENTS SELECCIONATS:*
 
 
-Només s'inclouran les Cel·les i elements de Tall que compleixin les següents 
+Només s'inclouran les Cel·les i elements de Tall que compleixin les següents
 condicions de la fitxa de **Cel·les i elements de Tall** associades a CT's i
 suports:
 
@@ -1700,7 +1705,7 @@ NODE: CENTROS DE TRANSFORMACIÓN
 *ELEMENTS SELECCIONATS*
 
 
-Només s'inclouran els Centres Transformadors que compleixin les següents 
+Només s'inclouran els Centres Transformadors que compleixin les següents
 condicions de la fitxa de **CT**:
 
 * **Tipus Instal·lació**: Qualsevol excepte Subestacions (**SE**). Inclou CH,
