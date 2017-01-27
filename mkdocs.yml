@@ -39,8 +39,9 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfils: distri/perfiles.md
-    - GIS :
+    - GIS:
       - GIS Web: gis/websearch.md
+      - Qgis: gis/qgis.md
       - Instalacions:
         - Subestacions: distri/subestaciones.md
         - CTS: distri/cts.md
