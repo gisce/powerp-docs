@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-01-26 15:04+0100\n"
-"PO-Revision-Date: 2017-01-26 15:06+0100\n"
+"POT-Creation-Date: 2017-01-27 08:38+0100\n"
+"PO-Revision-Date: 2017-01-27 09:30+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -17147,18 +17147,24 @@ msgstr ""
 msgid "Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:"
 msgstr "Para instalar el plugin de Qgis para acceder a Giscegis se debe ir a:"
 
-msgid "Conectors"
-msgstr "Conecores"
+msgid "Connectors"
+msgstr "Conectores"
 
 msgid ""
-"Gestiona i instal·la connectors\n"
-"<img alt=\"connectors\" src=\"../_static/connectors.png\" />"
+"\n"
+"<p>Gestiona i instal·la connectors\n"
+"<img alt=\"\" src=\"../_static/connectors.png\" /></p>\n"
 msgstr ""
-"Gestiona y instala conectores\n"
-"<img alt=\"connectors\" src=\"../_static/connectors.png\" />"
+"\n"
+"<p>Gestiona y instala conectores\n"
+"<img alt=\"\" src=\"../_static/connectors.png\" /></p>\n"
 
-msgid "Anar a la secció de Configuracio"
-msgstr "Ir a la seccion de Configuracion"
+msgid ""
+"\n"
+"<p>Anar a la secció de Configuracio</p>\n"
+msgstr ""
+"\n"
+"<p>Ir a la seccion de Configuracion</p>\n"
 
 msgid "Activar la opció \"Comprova si hi ha actualitzacions al arrancar\""
 msgstr "Activar la opcion  \"Comprova si hay actualizaciones al arrancar\""
@@ -17199,21 +17205,14 @@ msgstr ""
 "Para configurar el acceso al servidor de Giscegis se deben hacer los "
 "siguientes pasos:"
 
-msgid "Connectors"
-msgstr "Conectores"
-
 msgid "Giscegis"
 msgstr "Giscegis"
 
-msgid "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
-msgstr "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
+msgid "Configuració(1)"
+msgstr "Configuración(1)"
 
-msgid ""
-"Prémer el boto de + per afegir un nou servidor\n"
-"<img alt=\"connectors\" src=\"../_static/dialeg.png\" />"
-msgstr ""
-"Pulsar el boton de + para añadir un nuevo servidor\n"
-"<img alt=\"connectors\" src=\"../_static/dialeg.png\" />"
+msgid "Prémer el boto de + per afegir un nou servidor(2)"
+msgstr "Pulsar el boton de + para añadir un nuevo servidor(2)"
 
 msgid "Posar el nom del nou servidor"
 msgstr "Poner el nombre del nuevo servidor"
@@ -17224,6 +17223,201 @@ msgid ""
 msgstr ""
 "Rellenar el campo de  URL gis, Postgres Host, Postgres Port, Postgres "
 "databse, Postgres user y Postgres password con los datos facilitados"
+
+msgid ""
+"<img alt=\"1\" src=\"../_static/configuracio.png\" />\n"
+"\n"
+"<img alt=\"2\" src=\"../_static/dialeg.png\" />"
+msgstr ""
+"<img alt=\"1\" src=\"../_static/configuracio.png\" />\n"
+"\n"
+"<img alt=\"2\" src=\"../_static/dialeg.png\" />"
+
+msgid "Camps de cerca"
+msgstr "Campos de busqueda"
+
+msgid "Linia AT"
+msgstr "Linea AT"
+
+msgid "Codi"
+msgstr "Codigo"
+
+msgid "Origen"
+msgstr "Origen"
+
+msgid "Final"
+msgstr "Final"
+
+msgid "Tensió"
+msgstr "Tensión"
+
+msgid "Expedient"
+msgstr "Expediente"
+
+msgid "Tram AT"
+msgstr "Tramo AT"
+
+msgid "Linia Alta Tensió"
+msgstr "Linea Alta Tensión"
+
+msgid "Descripció de la línia"
+msgstr "Descripción de la linea"
+
+msgid "Origen de la línia"
+msgstr "Origen de la linea"
+
+msgid "Final de la línia"
+msgstr "Final de la linea"
+
+msgid "Municipi de la línia"
+msgstr "Municipio de la linea"
+
+msgid "Tensió de la línia"
+msgstr "Tensión de la linea"
+
+msgid "Data APM"
+msgstr "Fecha APM"
+
+msgid "Codi del cable"
+msgstr "Código del cable"
+
+msgid "Secció del cable"
+msgstr "Sección del cable"
+
+msgid "Material del cable"
+msgstr "Material del cable"
+
+msgid "Circuit si hi ha el modul de mapeig"
+msgstr "Circuito si hay el modulo de mapeig instalado"
+
+msgid "Suport AT"
+msgstr "Soporte AT"
+
+msgid "Línia"
+msgstr "Linea"
+
+msgid "Codi poste"
+msgstr "Código poste"
+
+msgid "Altura del poste"
+msgstr "Altura del poste"
+
+msgid "Esforç del poste"
+msgstr "Esfuerzo del poste"
+
+msgid "LBT"
+msgstr "LBT"
+
+msgid "Codi CT"
+msgstr "Código CT"
+
+msgid "Descripció del CT"
+msgstr "Descripción del CT"
+
+msgid "Número de línia"
+msgstr "Número de linea"
+
+msgid "Cable"
+msgstr "Cable"
+
+msgid "Voltatge"
+msgstr "Voltaje"
+
+msgid "Potència Total del CT"
+msgstr "Potencia total del CT"
+
+msgid "Adreça"
+msgstr "Direccion"
+
+msgid "Tensió primari"
+msgstr "Tensión primario"
+
+msgid "Circuit (si hi ha el modul de mapeig instal·lat)"
+msgstr "Circuito (si hay el modulo del mapeig instalado)"
+
+msgid "Numero de transformador"
+msgstr "Numero de transformador"
+
+msgid "Numero de fabricacio"
+msgstr "Número de fabricacion"
+
+msgid "Marca"
+msgstr "Marca"
+
+msgid "Connexio UNE"
+msgstr "Conexión UNE"
+
+msgid "Potencia nominal"
+msgstr "Potencia nominal"
+
+msgid "Estat"
+msgstr "Estado"
+
+msgid "Node Id"
+msgstr "Node Id"
+
+msgid "Cups"
+msgstr "Cups"
+
+msgid "Polissa"
+msgstr "Poliza"
+
+msgid "Nº de comprador"
+msgstr "Nº de contador"
+
+msgid "Direcció Principal"
+msgstr "Dirección principal"
+
+msgid "Titular (Si hi ha el modul giscedat_cups_titular)"
+msgstr "Titular (Si hay el modulo giscedata_cups_titular)"
+
+msgid "Zona"
+msgstr "Zona"
+
+msgid "Ordre"
+msgstr "Orden"
+
+msgid "ET"
+msgstr "ET"
+
+msgid "Linea"
+msgstr "Linea"
+
+msgid "Escomesa"
+msgstr "Acometida"
+
+msgid "Interruptors AT"
+msgstr "Interruptores AT"
+
+msgid "Seccionador unifilar"
+msgstr "Seccionador unifilar"
+
+msgid "Seccionador AT"
+msgstr "Seccionador AT"
+
+msgid "Fusible AT"
+msgstr "Fusible AT"
+
+msgid "Interruptor AT"
+msgstr "Interruptor AT"
+
+msgid "ADU DSP"
+msgstr "ADU DSP"
+
+msgid "Blockname"
+msgstr "Blockname"
+
+msgid "Nodes"
+msgstr "Nodos"
+
+msgid "IDNode"
+msgstr "IDNode"
+
+msgid "Fusibles BT"
+msgstr "Fusibles BT"
+
+msgid "Interruptors BT"
+msgstr "Interruptores BT"
 
 msgid "Subestacións"
 msgstr "Subestaciones"
@@ -24051,191 +24245,11 @@ msgstr ""
 msgid "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 
-msgid "Camps de cerca"
-msgstr "Campos de busqueda"
+#~ msgid "Conectors"
+#~ msgstr "Conecores"
 
-msgid "Linia AT"
-msgstr "Linea AT"
-
-msgid "Codi"
-msgstr "Codigo"
-
-msgid "Origen"
-msgstr "Origen"
-
-msgid "Final"
-msgstr "Final"
-
-msgid "Tensió"
-msgstr "Tensión"
-
-msgid "Expedient"
-msgstr "Expediente"
-
-msgid "Tram AT"
-msgstr "Tramo AT"
-
-msgid "Linia Alta Tensió"
-msgstr "Linea Alta Tensión"
-
-msgid "Descripció de la línia"
-msgstr "Descripción de la linea"
-
-msgid "Origen de la línia"
-msgstr "Origen de la linea"
-
-msgid "Final de la línia"
-msgstr "Final de la linea"
-
-msgid "Municipi de la línia"
-msgstr "Municipio de la linea"
-
-msgid "Tensió de la línia"
-msgstr "Tensión de la linea"
-
-msgid "Data APM"
-msgstr "Fecha APM"
-
-msgid "Codi del cable"
-msgstr "Código del cable"
-
-msgid "Secció del cable"
-msgstr "Sección del cable"
-
-msgid "Material del cable"
-msgstr "Material del cable"
-
-msgid "Circuit si hi ha el modul de mapeig"
-msgstr "Circuito si hay el modulo de mapeig instalado"
-
-msgid "Suport AT"
-msgstr "Soporte AT"
-
-msgid "Línia"
-msgstr "Linea"
-
-msgid "Codi poste"
-msgstr "Código poste"
-
-msgid "Altura del poste"
-msgstr "Altura del poste"
-
-msgid "Esforç del poste"
-msgstr "Esfuerzo del poste"
-
-msgid "LBT"
-msgstr "LBT"
-
-msgid "Codi CT"
-msgstr "Código CT"
-
-msgid "Descripció del CT"
-msgstr "Descripción del CT"
-
-msgid "Número de línia"
-msgstr "Número de linea"
-
-msgid "Cable"
-msgstr "Cable"
-
-msgid "Voltatge"
-msgstr "Voltaje"
-
-msgid "Potència Total del CT"
-msgstr "Potencia total del CT"
-
-msgid "Adreça"
-msgstr "Direccion"
-
-msgid "Tensió primari"
-msgstr "Tensión primario"
-
-msgid "Circuit (si hi ha el modul de mapeig instal·lat)"
-msgstr "Circuito (si hay el modulo del mapeig instalado)"
-
-msgid "Numero de transformador"
-msgstr "Numero de transformador"
-
-msgid "Numero de fabricacio"
-msgstr "Número de fabricacion"
-
-msgid "Marca"
-msgstr "Marca"
-
-msgid "Connexio UNE"
-msgstr "Conexión UNE"
-
-msgid "Potencia nominal"
-msgstr "Potencia nominal"
-
-msgid "Estat"
-msgstr "Estado"
-
-msgid "Node Id"
-msgstr "Node Id"
-
-msgid "Cups"
-msgstr "Cups"
-
-msgid "Polissa"
-msgstr "Poliza"
-
-msgid "Nº de comprador"
-msgstr "Nº de contador"
-
-msgid "Direcció Principal"
-msgstr "Dirección principal"
-
-msgid "Titular (Si hi ha el modul giscedat_cups_titular)"
-msgstr "Titular (Si hay el modulo giscedata_cups_titular)"
-
-msgid "Zona"
-msgstr "Zona"
-
-msgid "Ordre"
-msgstr "Orden"
-
-msgid "ET"
-msgstr "ET"
-
-msgid "Linea"
-msgstr "Linea"
-
-msgid "Escomesa"
-msgstr "Acometida"
-
-msgid "Interruptors AT"
-msgstr "Interruptores AT"
-
-msgid "Seccionador unifilar"
-msgstr "Seccionador unifilar"
-
-msgid "Seccionador AT"
-msgstr "Seccionador AT"
-
-msgid "Fusible AT"
-msgstr "Fusible AT"
-
-msgid "Interruptor AT"
-msgstr "Interruptor AT"
-
-msgid "ADU DSP"
-msgstr "ADU DSP"
-
-msgid "Blockname"
-msgstr "Blockname"
-
-msgid "Nodes"
-msgstr "Nodos"
-
-msgid "IDNode"
-msgstr "IDNode"
-
-msgid "Fusibles BT"
-msgstr "Fusibles BT"
-
-msgid "Interruptors BT"
-msgstr "Interruptores BT"
+#~ msgid "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
+#~ msgstr "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
 
 #~ msgid ""
 #~ "Per començar el procés de perfilació s'ha de clicar a '<strong>Lots de "
