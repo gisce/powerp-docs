@@ -18,16 +18,16 @@ mesurar mitjançant mètriques internes o externes.
 
 Es la capacitat del producte software per interactuar amb un o més sistemes
 especificats. GISCE-ERP_QS permet la recollida de dades, emmagatzematge i
-tractament d'aquestes i finalment dona els resultats definits a la "<em>ORDEN
-ECO / 797/2002</em>", càlcul dels índex de qualitat <em>TIEPI, NIEPI i
-percentil 80 del TIEPI</em>
+tractament d'aquestes i finalment dona els resultats definits a la "_ORDEN
+ECO / 797/2002_", càlcul dels índex de qualitat _TIEPI, NIEPI i
+percentil 80 del TIEPI_
 
 ### Adequació
 
 Es defineix com la capacitat del producte software per proporcionar un conjunt
 apropiat de funcions per tasques i objectius d’usuari especificats. En el cas
 de GISCE-ERP_QS proporciona els resultats del càlcul dels índex de qualitat de
-la “ORDEN ECO /797/2002”, generant els documents en el format que defineix la
+la “_ORDEN ECO /797/2002_”, generant els documents en el format que defineix la
 mateixa Ordre.
 
 ### Exactitud
@@ -57,15 +57,19 @@ al temps que no denega l’accés a les persones o sistemes autoritzats.
 
 El Programa GISCE-ERP incorpora un sistema de usuaris, grups i rols que permet
 configurar per cada usuari del sistema els drets que té. Un dels punts més
-importants de GISCE-ERP es la parametrització dels drminen els drets dels
-usuaris, i els rols determinen els seus deures.
+importants de GISCE-ERP es la parametrització dels drets d’accés a la
+informació. Per cada grup d’usuaris es defineixen quins menús no seran
+accessibles i quins si. També permet que els que tenen accés a les dades
+puguin fer-ho només de consulta, i només es permet el dret d’escriptura als
+usuaris que designi el client. Els grups determinen els drets dels usuaris,
+i els rols determinen els seus deures.
 
 ### Acompliment funcional
 
 Es la capacitat que te el producte software per adherir-se a normes,
 convencions o legislació i prescripcions similars relacionades amb la
-funcionalitat. GISCE-ERP_QS s’adapta al lo que indica la “_ORDEN ECO
-/797/2002_”, no només per al càlcul dels índex sinó també per l’adaptació als
+funcionalitat. GISCE-ERP_QS s’adapta al lo que indica la "_ORDEN ECO
+/797/2002_", no només per al càlcul dels índex sinó també per l’adaptació als
 valors admissibles de TIEPI i NIEPI que es van actualitzant pels diferents Reals
 Decrets que es promulguen.
 
