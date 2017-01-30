@@ -15,9 +15,35 @@ d'ús.
 La qualitat del procés contribueix a millorar la qualitat del producte i la
 qualitat del producte contribueix a millorar la qualitat d'ús. Es el procés de
 retroalimentació en la cerca de la millora del producte. Per veure aquest procés
-es pot veure la figura 2 de la norma _UNE-ISO/IEC 9126-1_.
+es pot veure la **figura 2** de la norma _UNE-ISO/IEC 9126-1_.
 
 Els requisits de qualitat del producte de software inclouràn criteris
 d'evaluació per la qualitat interna, la qualitat externa i la qualitat en ún,
 per satisfer les necessitats dels desarrolladors, mantenidors, compradors i
 usuaris finals.
+
+## Qualitat del producte i cicle de vida
+
+Els punts de vista de la qualitat interna, qualitat externa i qualitat en ús,
+canvien durant el cicle de vida del software. Les tecnologies emprades per
+arribar al nivell necessari de qualitat, com l’especificació i l’avaluació de
+la qualitat, necessita suportar aquests diferents punts de vista.
+
+L’objectiu es assolir la qualitat necessària i suficient per satisfer les
+necessitats reals dels usuaris.
+
+Les necessitats especificades per l’usuari no sempre reflecteixen les
+necessitats reals ja que:
+
+* L’usuari no es, sovint, conscient de les seves necessitats reals.
+* Les necessitats poden canviar desprès de ser especificades.
+* Diferents usuaris poden tenir diferents entorns d’operació.
+* Pot ser impossible consultar atots els possibles tipus d’usuaris.
+
+Hi ha diferents perspectives de la qualitat del producte i de les mètriques
+associades en les diferents etapes del cicle de vida del software segons
+la **figura 3** de la norma _UNE-ISO/IEC 9126-1_.
+
+## Elements a ser avaluats
+
+## Us d’un model de qualitat
