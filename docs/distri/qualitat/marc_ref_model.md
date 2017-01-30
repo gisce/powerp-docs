@@ -57,3 +57,11 @@ satisfà les seves necessitats d’arribar a objectius concrets amb efectivitat,
 productivitat, seguretat i satisfacció.
 
 ## Us d’un model de qualitat
+
+Per efectuar la mesura de tensions de pas, en una instal·lació de terra, es
+connectarà un de los borns de sortida de l’equip d’injecció a la posta a terra
+més pròxima al centre de la malla a inspeccionar.
+
+L’altre born es connectarà, bé a la instal·lació de terra d’una altra
+subestació, per mitjà dels conductors d’una línia de AT. que les uneixi,
+o bé a una contraterra creada artificialment.
