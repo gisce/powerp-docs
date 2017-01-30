@@ -92,7 +92,7 @@ print (u'(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
     red, len(failed_strings)-len(fuzz_strings), endcl,
     (len(failed_strings)-len(fuzz_strings))/lenstr * 100
 ))
-print (u'\t\t{} Missing strings:\t{}{}\t({}%)'.format(
+print (u'\t\t{}Missing strings:\t{}{}\t({}%)'.format(
     red, len(substr), endcl, len(substr)/lenstr * 100
 ))
 
