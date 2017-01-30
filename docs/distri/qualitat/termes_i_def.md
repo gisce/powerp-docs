@@ -713,13 +713,14 @@ afectats gracies a la traçabilitat sempre podrem fer la consulta de forma
 inversa, a partir de la fitxa de la pòlissa d’un client es podrá saber quines
 son les incidències que ha tingut.
 
-En el servei d’atenció al client seleccionant un client des del menú
-"_Contactes → configuració → contactes_" s’accedeix a la fitxa del client:
+Podem accedir al llistat de clients a través del menú "_Empresas → Empresas_",
+on podrem accedir a la fitxa d'un client.
 
 ![](../_static/qualitat/client_fitxa.png)
 
-A la pestanya de “_Pòlisses_” apareix la/es pòlisses que te contractades aquest
-client. Fent doble clic sobre la pòlissa desitjada apareix les dades d’aquesta i
+Podem veure les pòlisses del client fent click a les accions "_Como Titular_",
+"_Como Pagador_" o "_Como Notificación_" per veure les respectives contractades.
+Fent doble clic sobre la pòlissa desitjada apareix les dades d’aquesta i
 en la pestanya “_Incidències_” es pot veure totes les incidències que ha tingut,
 tal com es mostra en la imatge següent:
 
