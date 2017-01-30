@@ -25,7 +25,7 @@
     14. [Model d'informe](qualitat/termes_i_def.md#model-dinforme)
 4. [Marc de referència del model de Qualitat](qualitat/marc_ref_model.md)
     1. [Enfocs de qualitat](qualitat/marc_ref_model.md#enfocs-de-qualitat)
-    2. [Qualitat del producte i cicle de vida](qualitat/marc_ref_model.md#qualitat/marc_ref_model.md)
+    2. [Qualitat del producte i cicle de vida](qualitat/marc_ref_model.md#qualitat-del-producte-i-cicle-de-vida)
     3. [Elements a ser avaluats](qualitat/marc_ref_model.md#elements-a-ser-evaluats)
     4. [Us d’un model de qualitat](qualitat/marc_ref_model.md#us-dun-model-de-qualitat)
 5. [Model de qualitat per la qualitat interna i externa](qualitat/model_interna_i_externa.md)
