@@ -46,4 +46,14 @@ la **figura 3** de la norma _UNE-ISO/IEC 9126-1_.
 
 ## Elements a ser avaluats
 
+Els elements es poden avaluar per medició directa, o indirectament per la
+medició de les seves conseqüències.
+
+El software mai s’utilitza aïlladament, si no sempre com part d’un sistema més
+gran, consistent normalment en altres productes software amb els que té
+interfaces, hardware, operaris humans i processos de treball. La qualitat en
+us es pot mesurar pel grau en que un producte usat per usuaris especificats,
+satisfà les seves necessitats d’arribar a objectius concrets amb efectivitat,
+productivitat, seguretat i satisfacció.
+
 ## Us d’un model de qualitat
