@@ -75,6 +75,32 @@ Decrets que es promulguen.
 
 ## Fiabilitat
 
+Es la capacitat del producte software per mantenir un nivell especificat de
+prestacions quan s’utilitza sota condicions especificades.
+
+### Maduresa
+
+Es la capacitat del producte software per evitar fallar com resultat de
+errades en el software.
+
+### Tolerància a errades
+
+Es la capacitat del producte software per mantenir un nivell especificat de
+prestacions en cas d’errades de software o de infringir els seus interfases
+especificats. El nivell especificat de prestacions inclou també la capacitat
+de seguretat davant d’errades.
+
+### Capacitat de recuperació
+
+Es la capacitat del producte software per restablir un nivell de prestacions
+especificat i de recuperar les dades directament afectades es cas d’errada.
+Es comprovarà despres d’una errada
+
+### Acompliment de la fiabilitat
+
+ES la capacitat del producte software per adherir-se a normes, convencions o
+legislació relacionades amb la fiabilitat.
+ 
 ## Usabilitat
 
 ## Eficiència
