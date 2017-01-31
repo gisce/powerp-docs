@@ -18,14 +18,19 @@ programa de GIS “Simulacions/Qualitat de servei AT”.
 * **Interruptors AT oberts**. En aquest apartat apareixen tots els interruptors
   oberts que es carreguen a partir del “Estat de la xarxa” que es poden tancar.
 
-      * Per canviar l’estat d’un interruptor de “tancat” a “obert” només cal
-        seleccionar-lo en la llista d’interruptors tancats i arrossegar-lo a
-        la llista de “ Interruptors oberts”.
-      * Per canviar l’estat d’un interruptor de “obert” a “tancat” només cal
-        seleccionar-lo en la llista de “Interruptors oberts” i arrossegar-lo
-        a la llista de “ Interruptors tancats”.
-      * Una vegada definit l’estat dels interruptors de la xarxa AT, ja es
-        pot passar a realitzar la simulació de la incidència.
+!!! Note
+    Per canviar l’estat d’un interruptor de “tancat” a “obert” només cal
+    seleccionar-lo en la llista d’interruptors tancats i arrossegar-lo a
+    la llista de “ Interruptors oberts”.
+
+!!! Note
+    Per canviar l’estat d’un interruptor de “obert” a “tancat” només cal
+    seleccionar-lo en la llista de “Interruptors oberts” i arrossegar-lo
+    a la llista de “ Interruptors tancats”.
+
+!!! Note
+    Una vegada definit l’estat dels interruptors de la xarxa AT, ja es
+    pot passar a realitzar la simulació de la incidència.
 
 * **Nova incidència**. Es seleccionarà aquesta opció quan es vol crear una nova
   incidència, amb el seu interval associat.
