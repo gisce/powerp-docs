@@ -54,7 +54,15 @@ pages:
         - Sincronització CUPS: distri/sincronizacion_cups.md
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
-    - Qualitat de servei: distri/calidad.md
+    - Qualitat de servei: distri/qualitat.md
+    - Qualitat de servei:
+      - Termes i Definicions: distri/qualitat/termes_i_def.md
+      - Marc de referència del model de qualitat: distri/qualitat/marc_ref_model.md
+      - Model de qualitat per la qualitat interna i externa: distri/qualitat/model_interna_i_externa.md
+      - Model de qualitat per la qualitat en us: distri/qualitat/model_en_us.md
+      - Generació d'incidències: distri/qualitat/generacio_incidencies.md
+      - Obtenció de resultats: distri/qualitat/obtencio_resultats.md
+    - Qualitat individual: distri/qualitat_individual.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - CUPS: comer/cups.md

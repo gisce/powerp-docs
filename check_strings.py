@@ -72,29 +72,39 @@ print (u'Checking all strings in pot to be in po...', end="")
 es_strings = set(es_strings)
 substr = strings - es_strings
 if substr != set():
-    print (u'{0}There are {1} missing strings in the po file!\n{2}'.format(
-        red, len(substr), list(substr)
+    print (u'\n\t{0}There are {1} missing strings in the po file!\n{2}'.format(
+        red, len(substr), endcl
     ))
-    exit(-1)
 print ('{}OK{}'.format(green, endcl))
+
+lenstr = len(strings) + len(substr)
 
 print ("\nStrings' translated test briefing:\n")
 print (u'\t\t{}Translated strings:\t{}{}\t({}%)'.format(
     green, len(t_strings), endcl,
-    len(t_strings)/len(strings) * 100
+    len(t_strings)/lenstr * 100
 ))
 print (u'\t\t{}Fuzzy strings:\t\t{}{}\t({}%)'.format(
     yellow, len(fuzz_strings), endcl, 
-    len(fuzz_strings)/len(strings) * 100
+    len(fuzz_strings)/lenstr * 100
 ))
 print (u'(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
     red, len(failed_strings)-len(fuzz_strings), endcl,
-    (len(failed_strings)-len(fuzz_strings))/len(strings) * 100
+    (len(failed_strings)-len(fuzz_strings))/lenstr * 100
 ))
+print (u'\t\t{}Missing strings:\t{}{}\t({}%)'.format(
+    red, len(substr), endcl, len(substr)/lenstr * 100
+))
+
 print (u'\t----------------------------------------------------')
 print (u'\t\tTotal Strings:\t\t{}\n'.format(
-    len(strings)
+    lenstr
 ))
+if substr != set():
+    print (u'Missing strings:\n{}'.format(
+        substr
+    ))
+    exit(-1)
 if failed_strings:
     print (u'Missing strings:\n{}'.format(
         failed_strings
