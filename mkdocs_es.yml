@@ -41,17 +41,20 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md
-    - GIS - Instalaciones:
-      - Subestaciones: distri/subestaciones.md
-      - CTS: distri/cts.md
-      - CTS:
-        - Celdas i elementos de corte: distri/celles.md
-      - LAT: distri/lat.md
-      - LBT: distri/lbt.md
-      - Instalaciones RE: distri/re.md
-      - Expedientes: distri/expedientes.md
-      - CINI - Generación Automática: distri/act_cinis.md
-      - TI - Generación Automática: distri/act_tis.md
+    - GIS:
+      - QGIS: gis/qgis.md
+      - GIS Web: gis/websearch.md
+      - Instalaciones:
+        - Subestaciones: distri/subestaciones.md
+        - CTS: distri/cts.md
+        - CTS:
+          - Celdas i elementos de corte: distri/celles.md
+        - LAT: distri/lat.md
+        - LBT: distri/lbt.md
+        - Instalaciones RE: distri/re.md
+        - Expedientes: distri/expedientes.md
+        - CINI - Generación Automática: distri/act_cinis.md
+        - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio: distri/qualitat.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/qualitat/termes_i_def.md
