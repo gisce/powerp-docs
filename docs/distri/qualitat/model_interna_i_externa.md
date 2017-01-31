@@ -98,9 +98,9 @@ Es comprovarà despres d’una errada
 
 ### Acompliment de la fiabilitat
 
-ES la capacitat del producte software per adherir-se a normes, convencions o
+Es la capacitat del producte software per adherir-se a normes, convencions o
 legislació relacionades amb la fiabilitat.
- 
+
 ## Usabilitat
 
 ## Eficiència
