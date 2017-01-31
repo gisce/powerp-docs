@@ -42,9 +42,9 @@ apartats de GISCE-ERP_QS.
 ![](../_static/qualitat/qualitat_menu.png)
 
 * Mesos: En aquest menú apareixen els 12 mesos en que es divideix l’any.
-* Origen Incidències: Veure [apartat 3.2](qualitat/termes_i_def.md#recollida-dinformacio)
-* Tipus Incidències: Veure [apartat 3.7](qualitat/termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio)
-* Causa Incidències: Veure [apartat 3.7](qualitat/termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio)
+* Origen Incidències: Veure [apartat 3.2](termes_i_def.md#recollida-dinformacio)
+* Tipus Incidències: Veure [apartat 3.7](termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio)
+* Causa Incidències: Veure [apartat 3.7](termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio)
 * Interruptors: Llistat dels interruptors maniobrables d’AT.
 * Estat de la xarxa AT: Indica els interruptors oberts en l’estat normal
   d’explotació de la xarxa en cada moment amb els punts frontera.
