@@ -103,6 +103,31 @@ legislació relacionades amb la fiabilitat.
 
 ## Usabilitat
 
+Es la capacitat del producte software per esser entès, après, usat i ser
+atractiu per a l’usuari, quan s’utilitza en les condicions especificades.
+
+### Capacitat per ser après
+
+Es la capacitat del producte software que permet a l’usuari aprendre sobre la
+seva aplicació.
+
+### Capacitat per ser operat
+
+Es la capacitat del producte software que permet a l’usuari operar-lo i
+controlar-lo. El programa no permet adequacions particulars per part de
+l’usuari, ja que les seves funcionalitats venen definides per la “_ORDEN ECO
+/797/2002_” i no permet fer-li modificacions o personalitzacions ja que no
+són necessàries.
+
+### Capacitat d’atracció
+
+Es la capacitat del producte software per a ser atractiu a l’usuari.
+
+### Acompliment de la  usabilitat
+
+Es la capacitat del producte software per adherir-se a normes, convencions,
+guies d’estil o legislació relacionades amb la usabilitat.
+
 ## Eficiència
 
 ## Mantenibilitat
