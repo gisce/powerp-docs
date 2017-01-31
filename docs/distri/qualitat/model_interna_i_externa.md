@@ -154,4 +154,36 @@ relacionades amb la eficiència.
 
 ## Mantenibilitat
 
+La capacitat del producte software per ser modificat. Les modificacions podrien
+incloure correccions, millores o adaptació del software a canvis en l’entorn,
+i requisits i especificacions funcionals.
+
+### Capacitat per ser analitzat
+
+Defineix la capacitat del producte software per diagnosticar-li deficiències o
+causes dels errors en el software, o per identificar les parts que ha de ser
+modificades.
+
+### Capacitat per ser canviat
+
+Es la capacitat del producte software que permet que una determinada modificació
+sigui implementada.
+
+Les modificacions només les implanta el servei tècnic de GISCE.
+
+### Estabilitat
+
+Es la capacitat del producte software per evitar efectes inesperats deguts a
+modificacions del software.
+
+### Capacitat per ser provat
+
+Es la capacitat del producte software que permet que  el software modificat
+sigui validat.
+
+### Acompliment de la mantenibilitat
+
+Es la capacitat del producte software per adherir-se a normes o convencions
+relacionades amb la mantenibilitat.
+
 ## Portabilitat
