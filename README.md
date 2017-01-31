@@ -100,7 +100,7 @@ Steps to translate your new documentation:
     poedit locales/lang/LC_MESSAGES/messages.po
 ```
     
-**Always commit the translated and updated .po and the compiled .mo**
+**Always commit the translated and updated .po**
 
 ## Display documentation
 
