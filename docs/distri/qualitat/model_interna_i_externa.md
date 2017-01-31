@@ -130,27 +130,27 @@ guies d’estil o legislació relacionades amb la usabilitat.
 
 ## Eficiència
 
-Es la capacidad del producto software para proporcionar prestaciones apropiadas,
-relativas a la cantidad de recursos usados, bajo condiciones determinadas.
+Es la capacitat del producte software per proporcionar prestacions apropiades,
+relatives a la quantitat de recursos usats, sota condicions determinades.
 
-Se pueden considerar recursos otros productos de software, la configuración del
-software y el hardware del sistema.
+Es poden considerar recursos altres productes de software, la configuració del
+software i el hardware del sistema.
 
-### Comportamiento temporal
+### Comportament temporal
 
-Es la capacidad del producto software para proporcionar tiempos de respuesta,
-tiempo de proceso y potencia apropiados, bajo condiciones determinadas
+Es la capacitat del producte software per proporcionar temps de resposta,
+temps de procés i potencia apropiats, sota condicions determinades
 
-### Utilización de recursos
+### Utilització de recursos
 
-Es la capacidad del producto software para usar las cantidades y tipos de
-recursos adecuados cuando el software realiza su función bajo condiciones
-determinadas. Se incluyen los recursos humanos.
+Es la capacitat del producte software per usar les quantitats i tipus de
+recursos adequats quan el software realitza la seva funció sota condicions
+determinades. S’hi inclouen els recursos humans.
 
-### Cumplimiento de la  eficiencia
+### Acompliment de la eficiència
 
-Es la capacidad del producto software para adherirse a normas, convenciones
-relacionadas con la eficiencia.
+Es la capacitat del producte software per adherir-se a normes, convencions
+relacionades amb la eficiència.
 
 ## Mantenibilitat
 
