@@ -130,7 +130,7 @@ We have 4 categories:
 
 For images we use `_static` folder with a subfolder with the same name as Markdown file. eg:
 
-for `distri/atr.md` we have `distri/_static/atr/image1.png`
+For `distri/atr.md` we have `distri/_static/atr/image1.png`
 
 # Testing
 
