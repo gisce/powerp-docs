@@ -187,3 +187,34 @@ Es la capacitat del producte software per adherir-se a normes o convencions
 relacionades amb la mantenibilitat.
 
 ## Portabilitat
+
+Es la capacitat del producte software per ser transferit d’un entorn a un altre.
+L’entorn pot ser organitzatiu de hardware i software.
+
+### Adaptabilitat
+
+La capacitat del producte software per ser adaptat a diferents entorns
+especificats, sense aplicar accions o mecanismes diferents dels proporcionat
+per aquest propòsit pel propi software considerat.
+
+### Instalabilitat
+
+Es la capacidad del producto software para ser instalado en un entorno
+especificado. Las diferentes actualizaciones del módulo GISCE-ERP_QS se
+realizan con el sistema de actualizaciones de GISCE-ERP, siendo un módulo
+más integrado en el ERP.
+
+### Coexistència
+
+Es la capacitat del producte software per coexistir amb un altre software
+independent, en un entorn comú, compartint recursos comuns.
+
+### Capacitat per reemplaçar
+
+Es la capacitat del producte software per ser usat en lloc d’un altre
+producte software, pel mateix propòsit, en el mateix entorn.
+
+### Acompliment de la portabilitat
+
+Es la capacitat del producte software per adherir-se a normes o convencions
+relacionades amb la portabilitat.
