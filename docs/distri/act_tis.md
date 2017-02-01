@@ -7,8 +7,8 @@ El document de referència dels TI serà el document
 3. [TIs de Centres Transformadors](#3-tis-de-centres-transformadors)
 4. [TIs de Subestacions](#4-subestacions)
 5. [TIs de Posicions](#5-tis-de-posicions)
-6. [TIs de Màquines](#6-tis-de-les-maquines)
-7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall)
+6. [TIs de Màquines](#6-tis-de-maquines)
+7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall-fiabilitat)
 
 !!! Note
     Quan el sistema no pogui assignar un TI a la instal·lació
