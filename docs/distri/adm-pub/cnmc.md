@@ -1151,7 +1151,7 @@ S'han afegit nous camps a la fitxa dels trams:
 
 * **Tensió màxima de disseny**: És la tensió per la que està dissenyat el
   tram de línia (V). Aquest camp permet classificar els trams de línia AT en
-  funció de la tensió màxima per la que ha estat dissenyat i no per latensió
+  funció de la tensió màxima per la que ha estat dissenyat i no per la tensió
   a la que està treballant actualment.
 
 
@@ -1623,7 +1623,7 @@ _ELEMENTS SELECCIONATS:_
 
 
 Només s'inclouran els Despatxos que compleixin les següents
-condicions de la fitxa de la fitxa accessible a `Infraestructura / Despatxos`:
+condicions de la fitxa de la fitxa accessible a "_Infraestructura / Despatxos_":
 
 * **Any_PS**: L'any de posada en servei ha de ser inferior o igual al
   sol·licitat
