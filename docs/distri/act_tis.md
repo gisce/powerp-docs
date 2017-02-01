@@ -5,10 +5,10 @@ El document de referència dels TI serà el document
 1. [TIs de Línies d’Alta Tensió](#1-tis-de-linies-dalta-tensio)
 2. [TIs de Línies de Baixa Tensió](#2-tis-de-linies-de-baixa-tensio)
 3. [TIs de Centres Transformadors](#3-tis-de-centres-transformadors)
-    1. [TIs de Subestacions](#31-subestacions)
-4. [TIs de Posicions](#4-tis-de-posicions)
-5. [TIs de Màquines](#5-tis-de-les-maquines)
-6. [TIs de cel·les i elements de tall (fiabilitat)](#6-tis-de-celles-i-elements-de-tall)
+4. [TIs de Subestacions](#4-subestacions)
+5. [TIs de Posicions](#5-tis-de-posicions)
+6. [TIs de Màquines](#6-tis-de-les-maquines)
+7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall)
 
 !!! Note
     Quan el sistema no pogui assignar un TI a la instal·lació
@@ -150,7 +150,7 @@ Per calcular els TI’s dels CTs es consulten els següents camps:
     - **I** = Intempèrie
     - **S** = Subterrani
 
-## 3.1. Subestacions
+## 4. Subestacions
 Encara que en el ERP existeix el camp per a completar el TI,
 no es contempla perquè:
 
@@ -161,7 +161,7 @@ no es contempla perquè:
 - En les taules de TI’s tampoc hi surt cap valor de TI
   que compleixi per a Subestacions.
 
-# 4. TIs de Posicions
+# 5. TIs de Posicions
 Per calcular els TI’s de les posicions es consulten els següents camps:
 
 - **Tensió**: s’obté de la “**Tensió a aplicar**”
@@ -195,7 +195,7 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 
   ![](_static/act_tis/posicio_tec_tipus.png)
 
-# 5. TIs de Màquines
+# 6. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
 de reserva i móbils.    
 Formulari 5 de la [4131](adm-pub/cnmc/#inventari-4131).
@@ -227,7 +227,7 @@ es consulten els següents camps:
 
     ![](_static/act_tis/maq_enlace_v_sec.png)
 
-# 6. TIs de cel·les i elements de tall (fiabilitat)
+# 7. TIs de cel·les i elements de tall (fiabilitat)
 Per tal de poder fer l’assignació dels TIs de fiabilitat,
 a les cel·les i elements de tall s’ha creat un
 **camp addicional** als **tipus d’element**. Per accedir,
