@@ -30,7 +30,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Municipi de la línia
 - Tensió de la línia
 - Data APM
-- Codi
+- Codi(Permet "TZ-001-25" o 2TZ-001 25")
 - Origen
 - Final
 - Codi del cable
@@ -44,7 +44,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - (Tram AT) Al Camprodon : Mostra els trams que tenen material Alumini(Al) i que estan al municipi de Camprodon 
 
 ## Suport AT
-- Codi
+- Codi(Permet "LA-001-1" o "LA-001 1")
 - Línia
 - Codi poste
 - Altura del poste
@@ -60,8 +60,8 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Cable
 - Secció del cable
 - Material del cable
-- Voltatge
-- Data APM
+- Voltatge(Cal afegir la V de volts al final)
+- Data APM(En format dd-mm-yyyy, permet usar "-" o "/" com a separador)
 
 ## CT
 - CINI
@@ -91,7 +91,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 ## Escomeses
 - Node Id
 - Municipi
-- Tipus
+- Tipus(No permet cercar si es CONTA-S CONTA-SS  o CONTA-Q)
 
 ## Cups
 - CUPS
