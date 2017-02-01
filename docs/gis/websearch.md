@@ -1,5 +1,9 @@
 # Camps de cerca
 
+## Introducció
+
+Les cerques del
+
 ## Linia AT
 - Codi
 - Descripció
@@ -8,6 +12,10 @@
 - Municipi
 - Tensió
 - Expedient
+
+### Exemples de cerca
+- (LAT) Granollers : Mostra totes les LAT de Granollers
+- (LAT) Granollers 20000 : Mostra totes les LAT donades d'alta el 2000 a Granollers
 
 ## Tram AT
 - CINI
@@ -56,6 +64,10 @@
 - Data APM
 - Tensió primari
 - Circuit (si hi ha el modul de mapeig instal·lat)
+
+### Exemple de cerca
+ - (CT) Tona: Cerca tots els CTs de Tona
+ - (CT) Tona 2003: Cerca tots els CTs de Tona que es van donar d'alta el 2003
 
 ## Transformador
 - CINI
