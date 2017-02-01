@@ -19,7 +19,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 
 ### Exemples de cerca
 - (LAT) Granollers : Mostra totes les LAT de Granollers
-- (LAT) Granollers 20000 : Mostra totes les LAT de Granollers donades d'alta el 2000
+- (LAT) Granollers ET Pompeu Fabra: LATs que començin o acabin a la ET Pompeu Fabra
 
 ## Tram AT
 - CINI
