@@ -50,6 +50,10 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Altura del poste
 - Esforç del poste
 
+### Exemples de cerca
+- (Suport AT) SMC-012 : Suports de la linia SMC-012
+- (Suport AT) SMC-012 PFUZ : Suports de la linia SMC-012 que tenen poste PFUZ 
+
 ## LBT
 - CINI
 - Codi
