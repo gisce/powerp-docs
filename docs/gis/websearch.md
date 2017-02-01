@@ -92,6 +92,9 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Estat
 - Data APM
 
+### Exemples de cerca
+- (Transformador)  A.E.G: Transofrmadors de la marca A.E.G
+
 ## Escomeses
 - Node Id
 - Municipi
