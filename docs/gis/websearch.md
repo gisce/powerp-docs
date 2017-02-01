@@ -75,8 +75,8 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Circuit (si hi ha el modul de mapeig instal·lat)
 
 ### Exemple de cerca
- - (CT) Tona: Cerca tots els CTs de Tona
- - (CT) Tona 2003: Cerca tots els CTs de Tona que es van donar d'alta el 2003
+- (CT) Tona: Cerca tots els CTs de Tona
+- (CT) Tona 2003: Cerca tots els CTs de Tona que es van donar d'alta el 2003
 
 ## Transformador
 - CINI
