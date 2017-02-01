@@ -17,7 +17,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 
 ### Exemples de cerca
 - (LAT) Granollers : Mostra totes les LAT de Granollers
-- (LAT) Granollers 20000 : Mostra totes les LAT donades d'alta el 2000 a Granollers
+- (LAT) Granollers 20000 : Mostra totes les LAT de Granollers donades d'alta el 2000
 
 ## Tram AT
 - CINI
