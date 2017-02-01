@@ -36,6 +36,11 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Material del cable
 - Circuit si hi ha el modul de mapeig
 
+### Exemples de cerca
+- (Tram AT) 2000 : Trams amb Data APM del any 2000
+- (Tram AT) CT-Birba : Trams que surten o finalitzen al CT Birba
+- (Tram AT) Al Camprodon : Mostra els trams que tenen material Alumini(Al) i que estan al municipi de Camprodon 
+
 ## Suport AT
 - Codi
 - Línia
