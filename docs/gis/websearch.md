@@ -104,7 +104,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - (Escaomesa) Seva : Escomeses de Seva
 - (Escomesa) CONTA-AT: Escomeses de tipus CONTA-AT
 
-## Cups
+## CUPS
 - CUPS
 - Municipi
 - Polissa
