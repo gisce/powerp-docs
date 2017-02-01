@@ -3,7 +3,9 @@
 ## Introducció
 
 El GIS disposa de un motor de cerca que permet buscar elements.
+
 En el cas que no s'indiqui es cercara a tots els elements que continguin el text cercat.
+
 Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tipus d'element.
 
 ## Linia AT
