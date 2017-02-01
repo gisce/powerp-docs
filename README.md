@@ -73,6 +73,8 @@ Translatable strings can be found on "/locales" inside _messages.pot_
 *Every mkdocs build using a '.yml' file updates the _message.pot_ file*
 _except the default one_
 
+*Easy Mode*: run ./translate.sh
+
 Steps to translate your new documentation:
 
 1. Write your docs in the default lang (ca_ES)
@@ -98,7 +100,7 @@ Steps to translate your new documentation:
     poedit locales/lang/LC_MESSAGES/messages.po
 ```
     
-**Always commit the translated and updated .po and the compiled .mo**
+**Always commit the translated and updated .po**
 
 ## Display documentation
 
