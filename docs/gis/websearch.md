@@ -100,6 +100,10 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Municipi
 - Tipus(No permet cercar si es CONTA-S CONTA-SS  o CONTA-Q)
 
+### Exemples de cerca
+- (Escaomesa) Seva : Escomeses de Seva
+- (Escomesa) CONTA-AT: Escomeses de tipus CONTA-AT
+
 ## Cups
 - CUPS
 - Municipi
