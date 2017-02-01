@@ -65,7 +65,10 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Secció del cable
 - Material del cable
 - Voltatge(Cal afegir la V de volts al final)
-- Data APM(En format dd-mm-yyyy, permet usar "-" o "/" com a separador)
+- Data APM(En format yyyy-mm-dd, permet usar "-" o "/" com a separador)
+
+### Exemples de cerca
+- (LBT) CT-001 : Mostra les LBT del CT-001
 
 ## CT
 - CINI
