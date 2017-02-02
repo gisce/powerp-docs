@@ -92,3 +92,4 @@ pages:
   - Integración de servicios base: erp/services.md
   - Otros temas: erp/other.md
   - Ejecución y Despliegue: erp/build.md
+  - Anexos: erp/annex.md
