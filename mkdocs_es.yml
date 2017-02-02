@@ -82,3 +82,13 @@ pages:
     - Gestión de cambio de año: facturacio/canvi_any.md
     - Gestión de pagaments i cobraments: facturacio/cobraments.md
     - Gestión de lectures: facturacio/lectures.md
+- Desarrollo OpenERP:
+  - Inicio: erp/index.md
+  - Introducción: erp/intro.md
+  - Desarrollo de módulos: erp/modules.md
+  - Desarrollo de procesos de empresa: erp/process.md
+  - Configuración avanzada de procesos de empresa: erp/adv_process.md
+  - Serialización, migración, actualitzaciones y pruevas: erp/patches.md
+  - Integración de servicios base: erp/services.md
+  - Otros temas: erp/other.md
+  - Ejecución y Despliegue: erp/build.md
