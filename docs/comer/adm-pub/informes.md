@@ -114,6 +114,67 @@ Cas 3: Tenim 12 mesos d'històric de facturació:
  * Extrapolar el consum: No
  * Factor de correcció: 1
 
+### Obtenció de les factures
+
+Per obtenir les factures s'efectuen les següents operacions:
+
+ * S'obtenen totes les factures on la _data_factura_ <= _data_inici_ entrada
+ al wizard.
+ * Un cop obtingudes, d'entre totes les factures es filtren les **anul·ladores**
+ **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
+ * Per últim es tornen a buscar d'entre totes les factures, les normals i
+ rectificadores que siguin **diferents** de les anteriors, doncs si una factura
+ ja ha estat abonada no cal rectificar-la.
+
+### Detecció del tipus de consumidor
+
+Es considera un consumidor domèstic si la tarifa de la factura és una **'2.0A'**
+o **'2.0 DHA'**.
+
+### Càlcul de dades
+
+ * Les dades es calculen independentment del tipus de consumidor.
+ * Per cada **factura** obtinguda al apartat 1, recorre
+ **cada línia de factura**.
+ * Si el tipus d'energia és altres, la línia és ignorada.
+
+Les dades a calcular són les següents:
+
+ * **_Energía mercado libre (Mwh)[A]_**
+     * Es fa un sumatori de les línies del tipus "energia".
+     * Es suma la quantitat
+ * **_Potencia facturada (MW)_**
+     * Σ línies tipus «potència» / núm. línies.
+ * **_Facturación tarifa de acceso sin impuestos [B]_**
+     * Per cada línia de factura es calcula el seu subtotal.
+     * Es fa un sumatori de tots els subtotals de **totes les línies** de
+     **totes les factures**.
+     * El subtotal de cada línia es calcula de la següent forma:
+         * **Quantitat * Extra per operacions * preu**
+     * _Preu: calculat segons el Cos(fi) i la llista de preus_
+ * **_Facturación 	tarifa acceso sin IVA ni otros impuestos recuperables [C]_**
+     * Es calcula de la mateixa manera 	que **[B]** però sumant també l'IESE
+     per cada línia.
+ * **_Facturación 	tarifa de acceso con todos los impuestos e IVA [D]_**
+     * Es calcula de la mateixa manera que **[C]** però sumant també l'IVA per
+     cada línia.
+ * **_Facturación 	energía a mercado libre sin impuestos [E]_**
+     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+ * **_Facturación 	energía a mercado libre sin IVA ni otros recuperables [F]_**
+     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+ * **_Facturación 	energía a mercado libre con todos los impuestos e IVA [G]_**
+     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+ * **_Facturación 	total sin IVA ni otros impuestos recuperables [C]+[F]_**
+     * Sumatori de (amount_untaxed + tax_amount) de cada factura.
+ * **_Facturación 	alquiler de equipos de medida y control [Lloguer]_**
+     * Sumatori del «price_subtotal» per les línies del tipus «lloguer».
+ * **_Tensión máxima [v_max]_**
+     * Obté la tensió més alta d'entre totes les tensions de totes les
+     factures llistades.
+ * **_Tensión mínima [v_min]_**
+     * Obté la tensió més baixa d'entre totes les tensions de totes les
+     factures llistades.
+
 ## Model 159
 
 En la ubicació que es mostra en la següent imatge:

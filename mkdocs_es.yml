@@ -1,4 +1,9 @@
 site_name: PowERP Docs
+repo_name: GitHub
+repo_url: https://github.com/gisce/powerp-docs
+edit_uri: edit/master/docs
+site_author: GISCE-TI, S.L.
+google_analytics: ['UA-27668469-4', 'builds.gisce.net']
 theme: readthedocs
 
 markdown_extensions:
@@ -7,6 +12,7 @@ markdown_extensions:
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
+  - markdown_blockdiag
 
 pages:
   - Home: index.md
@@ -34,23 +40,35 @@ pages:
     - Facturación:
       - Peajes: distri/facturacion_peajes.md
       - Contratación: distri/facturacion_contratacion.md
+      - Régimen especial: distri/facturacio_re.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md
-    - GIS - Instalaciones:
-      - Subestaciones: distri/subestaciones.md
-      - CTS: distri/cts.md
-      - CTS:
-        - Celdas i elementos de corte: distri/celles.md
-      - LAT: distri/lat.md
-      - LBT: distri/lbt.md
-      - Instalaciones RE: distri/re.md
-      - Expedientes: distri/expedientes.md
-      - CINI - Generación Automática: distri/act_cinis.md
-      - TI - Generación Automática: distri/act_tis.md
-    - Calidad de servicio: distri/calidad.md
+    - GIS:
+      - QGIS: gis/qgis.md
+      - GIS Web: gis/websearch.md
+      - Instalaciones:
+        - Subestaciones: distri/subestaciones.md
+        - CTS: distri/cts.md
+        - CTS:
+          - Celdas i elementos de corte: distri/celles.md
+        - LAT: distri/lat.md
+        - LBT: distri/lbt.md
+        - Instalaciones RE: distri/re.md
+        - Expedientes: distri/expedientes.md
+        - CINI - Generación Automática: distri/act_cinis.md
+        - TI - Generación Automática: distri/act_tis.md
+    - Calidad de servicio: distri/qualitat.md
+    - Calidad de servicio:
+      - Términos y Definiciones: distri/qualitat/termes_i_def.md
+      - Marco de referéncia del modelo de calidad: distri/qualitat/marc_ref_model.md
+      - Modelo de calidad para la calidad interna y externa: distri/qualitat/model_interna_i_externa.md
+      - Modelo de calidad para la calidad en uso: distri/qualitat/model_en_us.md
+      - Generación de incidencias: distri/qualitat/generacio_incidencies.md
+      - Obtención de resultados: distri/qualitat/obtencio_resultats.md
+    - Calidad individual: distri/qualitat_individual.md
   - Comercializadora:
     - Inicio: comer/index.md
     - CUPS: comer/cups.md
