@@ -119,12 +119,12 @@ Cas 3: Tenim 12 mesos d'històric de facturació:
 Per obtenir les factures s'efectuen les següents operacions:
 
  * S'obtenen totes les factures on la _data_factura_ <= _data_inici_ entrada
- al wizard.
+   al wizard.
  * Un cop obtingudes, d'entre totes les factures es filtren les **anul·ladores**
- **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
+   **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
  * Per últim es tornen a buscar d'entre totes les factures, les normals i
- rectificadores que siguin **diferents** de les anteriors, doncs si una factura
- ja ha estat abonada no cal rectificar-la.
+   rectificadores que siguin **diferents** de les anteriors, doncs si una factura
+   ja ha estat abonada no cal rectificar-la.
 
 ### Detecció del tipus de consumidor
 
