@@ -119,7 +119,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Linea
 - Escomesa
 
-### Examples de cerca
+### Exemples de cerca
 - (CUPS) Rius: Tots els CUPS amb un titular que es digui Rius
 - (CUPS) Girona: Tots els cups del municipi de Girona
 
