@@ -18,7 +18,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Expedient
 
 ### Exemples de cerca
-- (LAT) Girona: Mostra totes les LAT de Granollers
+- (LAT) Girona: Mostra totes les LAT de Girona
 - (LAT) Girona ET Riu Güell: LATs que començin o acabin a la ET Riu Güell
 
 ## Tram AT
