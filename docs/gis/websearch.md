@@ -18,8 +18,8 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Expedient
 
 ### Exemples de cerca
-- (LAT) Granollers : Mostra totes les LAT de Granollers
-- (LAT) Granollers ET Pompeu Fabra: LATs que començin o acabin a la ET Pompeu Fabra
+- (LAT) Girona: Mostra totes les LAT de Granollers
+- (LAT) Girona ET Riu Güell: LATs que començin o acabin a la ET Riu Güell
 
 ## Tram AT
 - CINI
@@ -36,12 +36,11 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Codi del cable
 - Secció del cable
 - Material del cable
-- Circuit si hi ha el modul de mapeig
+- Circuit
 
 ### Exemples de cerca
-- (Tram AT) 2000 : Trams amb Data APM del any 2000
-- (Tram AT) CT-Birba : Trams que surten o finalitzen al CT Birba
-- (Tram AT) Al Camprodon : Mostra els trams que tenen material Alumini(Al) i que estan al municipi de Camprodon 
+- (Tram AT) CT Riu Güell : Trams que surten o finalitzen al CT Güell
+- (Tram AT) Al Girona: Mostra els trams que tenen material Alumini(Al) i que estan al municipi de Girona 
 
 ## Suport AT
 - Codi(Permet "LA-001-1" o "LA-001 1")
@@ -79,11 +78,11 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Adreça
 - Data APM
 - Tensió primari
-- Circuit (si hi ha el modul de mapeig instal·lat)
+- Circuit
 
 ### Exemple de cerca
-- (CT) Tona: Cerca tots els CTs de Tona
-- (CT) Tona 2003: Cerca tots els CTs de Tona que es van donar d'alta el 2003
+- (CT) Salt: Cerca tots els CTs de Salt
+- (CT) Salt 2003: Cerca tots els CTs de Salt que es van donar d'alta el 2003
 
 ## Transformador
 - CINI
@@ -113,7 +112,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Polissa
 - Nº de comprador
 - Direcció Principal
-- Titular (Si hi ha el modul giscedat_cups_titular)
+- Titular
 - Zona
 - Ordre
 - ET
