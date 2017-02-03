@@ -46,21 +46,11 @@ _([Check the following translations section](#translations))_
 
 _Merge Translations files_
 
-- For _.po file_, use 'msgcat' command with '--use-first' parameter. I.e.:
-
 ```shell
-git merge <branch_name_remote>
-cd locales/<lang>/LC_MESSAGES
-cp messages.po messages.po.loc
-git checkout <branch_name_remote>
-cp messages.po messages.po.rem
-git checkout <branch_name_local>
-msgcat --use-first messages.po.loc messages.po.rem -o messages.po
+./merge.sh
 ```
 
-- Open .po file with poedit to update _.mo file_ and _modified date_
-- Messages.pot will be automatically updated with build, so there is no need to merge
-- Remember to commit after changes are applied
+**Remember to commit after changes are applied**
 
 ## Translations
 
