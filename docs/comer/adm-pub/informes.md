@@ -128,8 +128,9 @@ Per obtenir les factures s'efectuen les següents operacions:
 
 ### Detecció del tipus de consumidor
 
-Es considera un consumidor domèstic si la tarifa de la factura és una **'2.0A'**
-o **'2.0 DHA'**.
+* El tipus de consumidor es detecta mitjançant el CIF o NIF del client de la factura:
+    * **NIF**: es considerarà un consumidor **domèstic**.
+    * **CIF**: es considerarà un consumidor **industrial**.
 
 ### Càlcul de dades
 
