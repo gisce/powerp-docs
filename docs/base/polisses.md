@@ -65,11 +65,72 @@ vigent.
 
 ## Subministrament no tallable
 
+En una pòlissa podem marcar un motiu per no tallar el subministrament, quedant
+així especificada com a un **subministrament no tallable**. Existeixen certs
+motius per fer que el subministrament sigui no tallable, els quals venen
+definits en aquest apartat.
+
+### Això ens permet:
+
+* **Definir motius per no tallar el subministrament**
+* **Assignar un motiu de no tallable a una pòlissa**
+* **Llistar les pòlisses que tenen algun motiu de no tallable**
+* **Visualització del motiu de no tallable a la pòlissa**
+
+Des de una pòlissa a l'apartat general, podem seleccionar un dels motius no
+tallables. El trobarem al subapartat de dades tècniques, just a sota
+d'autoconsum, i podem fer clic sobre el botó de buscar un registre (lupa) per
+seleccionar un dels motius per no tallar el subministrament. Si tenim la
+pòlissa marcada com a activa ho haurem de fer mitjançant una modificació
+contractual.
+
+![](_static/polisses/BotoSubministramentNoTallable.png)
+
+Aquí podem seleccionar el motiu, i també podem filtrar: per nom del motiu,
+per si és un motiu definit al BOE o no, i per descripció.
+Una vegada seleccionat el motiu fem clic sobre el botó acceptar, o fem clic
+dues vegades sobre el motiu escollit per marcar-lo a la pòlissa.
+
+![](_static/polisses/FormulariMotius.png)
+
+![](_static/polisses/FiltrarMotius.png)
+
+També podem definir motius de no tallable des del mateix formulari que acabem
+de veure o des del menú de Gestió de Pòlisses - Configuració - Motius no
+tallables.
+En el dos casos farem clic sobre el botó nou. En el cas del formulari el
+trobarem a la barra d'eines inferior (veure imatge anterior). I en el cas
+d'estar a l'apartat de configuració de pòlisses el trobarem a la barra d'eines
+del menú superior, tal com veiem a la següent imatge
+
+![](_static/polisses/NouMotiu.png)
+
+Per definir el motiu emplenem els camps de nom i descripció i BOE si és el cas.
+Guardem els canvis i es crea el motiu i s'afegeix a motius de subministrament
+no tallable.
+
+Per llistar totes les pòlisses no tallables accedirem al menù: Configuració de
+Pòlisses - Pòlisses - Pòlisses no tallables
+
+![](_static/polisses/RutaNoTallables.png)
+
+I ens llistara totes les pòlisses que tenen assignat un motiu de
+subministrament no tallable
+
+### Permisos
+
+Aquesta funcionalitat està reservada per els usuaris que siguin del grup
+**GISCEDATA Pòlissa /CutOff**, per tant tinguin permisos especifics per
+interactuar amb els motius de subministrament no tallable.
+La resta d'usuaris només podrán llistar totes les pólisses que tenen un motiu
+de subministrament no tallable, però tot i així no poden veure el motiu de
+no tall.
+
 !!! note
     En el cas de les distribuidores un subministrament no tallable, hauria
     de venir definit pel BOE (que ja venen pre-carregats)
     En el cas de les comercialitzadores un subministrament no tallable pot ser
-    també per motiu comercial.
+    també per motiu comercial.
 
 ## Canvi data firma contracte
 
@@ -92,4 +153,3 @@ activa**.
 ![](_static/polisses/WizardDataFirmaContracte.png)
 
 ## Modificacions contractuals
-
