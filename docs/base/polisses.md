@@ -63,6 +63,13 @@ vigent.
 * **Observacions**
 
 
+## Subministrament no tallable
+
+!!! note
+    En el cas de les distribuidores un subministrament no tallable, hauria
+    de venir definit pel BOE (que ja venen pre-carregats)
+    En el cas de les comercialitzadores un subministrament no tallable pot ser
+    també per motiu comercial.
 
 ## Canvi data firma contracte
 
