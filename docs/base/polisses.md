@@ -66,7 +66,7 @@ vigent.
 ## Subministrament no tallable
 
 En una pòlissa podem marcar un motiu per no tallar el subministrament, quedant
-així especificada com a un **subministrament no tallable**. Existeixen certs
+així especificat un motiu de **subministrament no tallable**. Existeixen certs
 motius per fer que el subministrament sigui no tallable, els quals venen
 definits en aquest apartat.
 
@@ -79,7 +79,7 @@ definits en aquest apartat.
 
 Des de una pòlissa a l'apartat general, podem seleccionar un dels motius no
 tallables. El trobarem al subapartat de dades tècniques, just a sota
-d'autoconsum, i podem fer clic sobre el botó de buscar un registre (lupa) per
+d'autoconsum. I podem fer clic sobre el botó de buscar un registre (lupa) per
 seleccionar un dels motius per no tallar el subministrament. Si tenim la
 pòlissa marcada com a activa ho haurem de fer mitjançant una modificació
 contractual.
@@ -120,7 +120,7 @@ subministrament no tallable
 ### Permisos
 
 Aquesta funcionalitat està reservada per els usuaris que siguin del grup
-**GISCEDATA Pòlissa /CutOff**, per tant tinguin permisos especifics per
+**GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos especifics per
 interactuar amb els motius de subministrament no tallable.
 La resta d'usuaris només podrán llistar totes les pólisses que tenen un motiu
 de subministrament no tallable, però tot i així no poden veure el motiu de
