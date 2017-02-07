@@ -18,18 +18,17 @@ $ mkvirtualenv powerp-docs
 $ git clone git@github.com:gisce/powerp-docs.git
 $ cd powerp-docs
 $ pip install -r requirements.txt
-$ export PYTHONPATH=$PWD/sitecustomize
 ```
 
 ### Recommended Editors
 
-#### Edit documentation files: 
+#### Edit documentation files:
 
 **Atom**    
 _With the extensions:_
 
 - [markdown-toc](https://atom.io/packages/markdown-toc)
-    - Automatically creates TableOfContents. 
+    - Automatically creates TableOfContents.
     - Can be easily configured.
     - Can't parse special characters.
 - [markdown-writer](https://atom.io/packages/markdown-writer)
@@ -38,7 +37,7 @@ _With the extensions:_
     - Does not have config set, but you can set the default config...
 - [markdown-preview](https://atom.io/packages/markdown-preview)
     - Prints the file built to html on a paralel workspace
- 
+
 #### Translate docs:
 
 **Poedit**
@@ -82,14 +81,14 @@ Steps to translate your new documentation:
     sudo apt install gettext
     msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
 ```
-    
+
 4. Generate the new translations from the updated .po using *poedit*
 
 ```shell
     sudo apt install poedit
     poedit locales/lang/LC_MESSAGES/messages.po
 ```
-    
+
 **Always commit the translated and updated .po**
 
 ## Display documentation
@@ -132,4 +131,3 @@ Our travis testing includes:
 - mkdocs build -f mkdocs_es.yml
 - Check for all strings translated in the .po
 - Check for all the strings in the .pot (after build) to be in the .po
-
