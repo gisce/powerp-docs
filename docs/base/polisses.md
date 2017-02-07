@@ -94,22 +94,22 @@ per si és un motiu definit al BOE o no, i per descripció.
 ### Crear nous motius
 
 També podem definir motius de no tallable des del mateix formulari que acabem
-de veure o des del menú de Gestió de Pòlisses - Configuració - Motius no
+de veure, o des del menú de Gestió de Pòlisses - Configuració - Motius no
 tallables.
-En el dos casos farem clic sobre el botó nou. En el cas del formulari el
+En el dos casos farem clic sobre el botó nou. En el cas del formulari, el
 trobarem a la barra d'eines inferior (veure imatge anterior). I en el cas
-d'estar a l'apartat de configuració de pòlisses el trobarem a la barra d'eines
+d'estar a l'apartat de configuració de pòlisses, el trobarem a la barra d'eines
 del menú superior, tal com veiem a la següent imatge
 
 ![](_static/polisses/NouMotiu.png)
 
-Per definir el motiu emplenem els camps de nom i descripció i BOE si és el cas.
-Guardem els canvis i es crea el motiu i s'afegeix a motius de subministrament
+Per definir el motiu emplenem els camps de nom, descripció i BOE si és el cas.
+Guardem els canvis, i es crea el motiu, i s'afegeix a motius de subministrament
 no tallable.
 
 ### Llistar les pòlisses no tallables
 
-Per llistar totes les pòlisses no tallables accedirem al menù: Configuració de
+Per llistar totes les pòlisses no tallables, accedirem al menù: Configuració de
 Pòlisses - Pòlisses - Pòlisses no tallables
 
 ![](_static/polisses/RutaNoTallables.png)
