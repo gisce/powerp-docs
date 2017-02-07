@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-01 11:02+0100\n"
-"PO-Revision-Date: 2017-02-01 11:11+0100\n"
+"POT-Creation-Date: 2017-02-03 14:23+0100\n"
+"PO-Revision-Date: 2017-02-07 17:44+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -17236,6 +17236,25 @@ msgstr ""
 msgid "Camps de cerca"
 msgstr "Campos de busqueda"
 
+msgid "El GIS disposa de un motor de cerca que permet buscar elements."
+msgstr ""
+"El GIS dispone de un motor de búsqueda que permite buscar distintos "
+"elementos."
+
+msgid ""
+"En el cas que no s'indiqui es cercara a tots els elements que continguin el "
+"text cercat."
+msgstr ""
+"En el caso que no se indique se buscara todos los elementos que contengan el "
+"texto buscado."
+
+msgid ""
+"Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per "
+"tipus d'element."
+msgstr ""
+"Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per "
+"tipus d'element."
+
 msgid "Linia AT"
 msgstr "Linea AT"
 
@@ -17253,6 +17272,16 @@ msgstr "Tensión"
 
 msgid "Expedient"
 msgstr "Expediente"
+
+msgid "Exemples de cerca"
+msgstr "Ejemplo e busqueda"
+
+msgid "(LAT) Girona: Mostra totes les LAT de Granollers"
+msgstr "(LAT) Girona: Muestara toddas las LAT de Girona"
+
+msgid "(LAT) Girona ET Riu Güell: LATs que començin o acabin a la ET Riu Güell"
+msgstr ""
+"(LAT) Girona ET Riu Güell: LATs que empiezen o acaben en la ET Riu Güell"
 
 msgid "Tram AT"
 msgstr "Tramo AT"
@@ -17278,6 +17307,9 @@ msgstr "Tensión de la linea"
 msgid "Data APM"
 msgstr "Fecha APM"
 
+msgid "Codi(Permet \"TZ-001-25\" o 2TZ-001 25\")"
+msgstr "Codigoi(Permite \"TZ-001-25\" o 2TZ-001 25\")"
+
 msgid "Codi del cable"
 msgstr "Código del cable"
 
@@ -17287,11 +17319,25 @@ msgstr "Sección del cable"
 msgid "Material del cable"
 msgstr "Material del cable"
 
-msgid "Circuit si hi ha el modul de mapeig"
-msgstr "Circuito si hay el modulo de mapeig instalado"
+msgid "Circuit"
+msgstr "Circuito"
+
+msgid "(Tram AT) CT Riu Güell : Trams que surten o finalitzen al CT Güell"
+msgstr ""
+"(Tramo AT) CT Riu Güell : Traos que salgan o finalizen en el CT Riu Güell"
+
+msgid ""
+"(Tram AT) Al Girona: Mostra els trams que tenen material Alumini(Al) i que "
+"estan al municipi de Girona "
+msgstr ""
+"(Tramo AT) Al Girona: Muestra todos los tramos que tengan material "
+"Aluminio(Al)  y que esten en el municipio de Girona"
 
 msgid "Suport AT"
 msgstr "Soporte AT"
+
+msgid "Codi(Permet \"LA-001-1\" o \"LA-001 1\")"
+msgstr "Código (Permite \"LA-001-1\" o \"LA-001 1\")"
 
 msgid "Línia"
 msgstr "Linea"
@@ -17304,6 +17350,14 @@ msgstr "Altura del poste"
 
 msgid "Esforç del poste"
 msgstr "Esfuerzo del poste"
+
+msgid "(Suport AT) SMC-012 : Suports de la linia SMC-012"
+msgstr "(Soporte AT) SMC-012 : Soportes e la linea SMC-012"
+
+msgid ""
+"(Suport AT) SMC-012 PFUZ : Suports de la linia SMC-012 que tenen poste PFUZ "
+msgstr ""
+"(Soporte AT) SMC-012 PFUZ : Soportes de la linea SMC-12 que tienen poste PFUZ"
 
 msgid "LBT"
 msgstr "LBT"
@@ -17320,8 +17374,17 @@ msgstr "Número de linea"
 msgid "Cable"
 msgstr "Cable"
 
-msgid "Voltatge"
-msgstr "Voltaje"
+msgid "Voltatge(Cal afegir la V de volts al final)"
+msgstr "Voltaje (Hace falta añadir la V de voltios al final)"
+
+msgid ""
+"Data APM(En format yyyy-mm-dd, permet usar \"-\" o \"/\" com a separador)"
+msgstr ""
+"Fecha APM(En formato  yyyy-mm-dd, permite usar \"-\" o \"/\" cómo a "
+"separador)"
+
+msgid "(LBT) CT-001 : Mostra les LBT del CT-001"
+msgstr "(LBT) CT-001 : Mostra las LBT del CT-001"
 
 msgid "Potència Total del CT"
 msgstr "Potencia total del CT"
@@ -17332,8 +17395,16 @@ msgstr "Direccion"
 msgid "Tensió primari"
 msgstr "Tensión primario"
 
-msgid "Circuit (si hi ha el modul de mapeig instal·lat)"
-msgstr "Circuito (si hay el modulo del mapeig instalado)"
+msgid "Exemple de cerca"
+msgstr "Ejemplosde busqueda"
+
+msgid "(CT) Salt: Cerca tots els CTs de Salt"
+msgstr "(CT) Salt: Busca todos los CTs de Salt"
+
+msgid ""
+"(CT) Salt 2003: Cerca tots els CTs de Salt que es van donar d'alta el 2003"
+msgstr ""
+"(CT) Salt 2003: Busca todos los CTs de Salt que se dieron de alta el 2003"
 
 msgid "Numero de transformador"
 msgstr "Numero de transformador"
@@ -17353,11 +17424,20 @@ msgstr "Potencia nominal"
 msgid "Estat"
 msgstr "Estado"
 
+msgid "(Transformador)  A.E.G: Transofrmadors de la marca A.E.G"
+msgstr "(Transformador)  A.E.G: Transofrmadores de la marca A.E.G"
+
 msgid "Node Id"
 msgstr "Node Id"
 
-msgid "Cups"
-msgstr "Cups"
+msgid "Tipus(No permet cercar si es CONTA-S CONTA-SS  o CONTA-Q)"
+msgstr "Tipos(No permite buscar si es CONTA-S CONTA-SS  o CONTA-Q)"
+
+msgid "(Escaomesa) Seva : Escomeses de Seva"
+msgstr "(Acometida) Seva : Acometidas de Seva"
+
+msgid "(Escomesa) CONTA-AT: Escomeses de tipus CONTA-AT"
+msgstr "(Acometida) CONTA-AT: Acometidas de tipo CONTA-AT"
 
 msgid "Polissa"
 msgstr "Poliza"
@@ -17368,8 +17448,8 @@ msgstr "Nº de contador"
 msgid "Direcció Principal"
 msgstr "Dirección principal"
 
-msgid "Titular (Si hi ha el modul giscedat_cups_titular)"
-msgstr "Titular (Si hay el modulo giscedata_cups_titular)"
+msgid "Titular"
+msgstr "Titular"
 
 msgid "Zona"
 msgstr "Zona"
@@ -17385,6 +17465,12 @@ msgstr "Linea"
 
 msgid "Escomesa"
 msgstr "Acometida"
+
+msgid "(CUPS) Rius: Tots els CUPS amb un titular que es digui Rius"
+msgstr "(CUPS) Rius: Todos los CUPS  con el titular que se llame Rius"
+
+msgid "(CUPS) Girona: Tots els cups del municipi de Girona"
+msgstr "(CUPS) Girona: Todos los cups del municipio de Girona"
 
 msgid "Interruptors AT"
 msgstr "Interruptores AT"
@@ -28722,6 +28808,21 @@ msgstr ""
 
 msgid "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
+
+#~ msgid "Circuit si hi ha el modul de mapeig"
+#~ msgstr "Circuito si hay el modulo de mapeig instalado"
+
+#~ msgid "Voltatge"
+#~ msgstr "Voltaje"
+
+#~ msgid "Circuit (si hi ha el modul de mapeig instal·lat)"
+#~ msgstr "Circuito (si hay el modulo del mapeig instalado)"
+
+#~ msgid "Cups"
+#~ msgstr "Cups"
+
+#~ msgid "Titular (Si hi ha el modul giscedat_cups_titular)"
+#~ msgstr "Titular (Si hay el modulo giscedata_cups_titular)"
 
 #~ msgid ""
 #~ "<a href=\"#3-tis-de-centres-transformadors\">TIs de Centres "
