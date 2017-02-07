@@ -13,6 +13,13 @@ facturació. Només es carregaràn a facturació les lectures necessaries.
 El módul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
 nova pestanya Telegestió si el comptador es marca que es de telegestió.
 
+En aquesta pestanya hi ha una casella de checkbox la qual indica si el comptador
+té actualment alguna excepció.
+
+![](_static/telegestion/grupo_TG_info.png)
+
+![](_static/telegestion/pestanya_telegestion.png)
+
 ## Procediment de càrrega de lectures
 
 La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
