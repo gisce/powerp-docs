@@ -76,7 +76,7 @@ o els que anem creant nosaltres mateixos
     En el cas de les comercialitzadores un subministrament no tallable pot ser
     també per motiu comercial.
 
-### Assignar un motiu de subministrament no tallable
+### Marcar una pòlissa com a no tallable
 
 Des d'una pòlissa, podem seleccionar un dels motius no
 tallables. Si tenim la pòlissa marcada com a activa ho haurem de fer mitjançant
@@ -91,7 +91,7 @@ per si és un motiu definit al BOE o no, i per descripció.
 
 ![](_static/polisses/FiltrarMotius.png)
 
-### Crear nous motius de subministrament no tallable
+### Crear nous motius
 
 També podem definir motius de no tallable des del mateix formulari que acabem
 de veure o des del menú de Gestió de Pòlisses - Configuració - Motius no
@@ -107,7 +107,7 @@ Per definir el motiu emplenem els camps de nom i descripció i BOE si és el cas
 Guardem els canvis i es crea el motiu i s'afegeix a motius de subministrament
 no tallable.
 
-### Llistar les pòlisses que tenen algun motiu de subministrament no tallable
+### Llistar les pòlisses no tallables
 
 Per llistar totes les pòlisses no tallables accedirem al menù: Configuració de
 Pòlisses - Pòlisses - Pòlisses no tallables
