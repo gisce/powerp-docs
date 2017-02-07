@@ -77,19 +77,14 @@ definits en aquest apartat.
 * **Llistar les pòlisses que tenen algun motiu de no tallable**
 * **Visualització del motiu de no tallable a la pòlissa**
 
-Des de una pòlissa a l'apartat general, podem seleccionar un dels motius no
-tallables. El trobarem al subapartat de dades tècniques, just a sota
-d'autoconsum. I podem fer clic sobre el botó de buscar un registre (lupa) per
-seleccionar un dels motius per no tallar el subministrament. Si tenim la
-pòlissa marcada com a activa ho haurem de fer mitjançant una modificació
-contractual.
+Des de una pòlissa, podem seleccionar un dels motius no
+tallables. Si tenim la pòlissa marcada com a activa ho haurem de fer mitjançant
+una modificació contractual.
 
 ![](_static/polisses/BotoSubministramentNoTallable.png)
 
 Aquí podem seleccionar el motiu, i també podem filtrar: per nom del motiu,
 per si és un motiu definit al BOE o no, i per descripció.
-Una vegada seleccionat el motiu fem clic sobre el botó acceptar, o fem clic
-dues vegades sobre el motiu escollit per marcar-lo a la pòlissa.
 
 ![](_static/polisses/FormulariMotius.png)
 
@@ -122,9 +117,9 @@ subministrament no tallable
 Aquesta funcionalitat està reservada per els usuaris que siguin del grup
 **GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos especifics per
 interactuar amb els motius de subministrament no tallable.
-La resta d'usuaris només podrán llistar totes les pólisses que tenen un motiu
-de subministrament no tallable, però tot i així no poden veure el motiu de
-no tall.
+La resta d'usuaris podran llistar totes les pòlisses que tenen un motiu de
+subministrament no tallable, i veure el motiu de no tall. Però no podran crear
+ni assignar motius.
 
 !!! note
     En el cas de les distribuidores un subministrament no tallable, hauria
