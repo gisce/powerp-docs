@@ -67,7 +67,7 @@ vigent.
 
 Podem marcar una pòlissa com a **subministrament no tallable**. Existeixen
 dos tipus de motius per fer-ho: els que vénen definits en el BOE
-([24/2013 Artículo 52 punto 4](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13645)),
+([24/2013 Article 52 punt 4](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13645)),
 o els que anem creant nosaltres mateixos
 
 !!! note
