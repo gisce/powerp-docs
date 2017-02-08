@@ -203,7 +203,7 @@ El formulari d'un relé disposa de tres camps:
 # Condensadors i Reactàncies
 
 Podem accedir a través del menú "_Menú ERP → Centres Transformadors →
-Manteniment → Cel·les i elemetns de tall → Condensadors_"
+Manteniment → Cel·les i elements de tall → Condensadors_"
 
 ![](_static/celles/menu_condensadors.png)
 
