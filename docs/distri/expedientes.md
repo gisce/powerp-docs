@@ -58,7 +58,7 @@ li assignarem l'expedient que li correspon.
 2. Localitzem el centre en qüestió, amb l'ajuda de filtres o sel·leccionant-lo
    directament del llistat.
 
-3. Entrar a la fitxa del centre utilitzant el botó "_Vista → Formulari_" o bé,
+3. Entrar a la fitxa del centre utilitzant el botó "_Vista → Formulari_ " o bé,
    fent doble click.
 
     ![](_static/expedients/ct_form.png)
@@ -73,3 +73,33 @@ li assignarem l'expedient que li correspon.
    al menú expedients.
 
     ![](_static/expedients/ct_expedients_add.png)
+
+### Assignar un expedient a una línia de Mitja Tensió
+
+!!! note
+    Els expedients s'assignen als trams (no a la línia).
+    Un expedient pot estar assignat a diversos trams de la línia.
+
+1. Entrar en el menú "_Menú ERP → Línies d'Alta Tensió → Manteniment → Trams →
+   Tots els Trams_"
+
+    ![](_static/expedients/mt_menu.png)
+
+2. Localitzem el tram en qüestió, amb l'ajuda de filtres o sel·leccionant-lo
+   diremtament del llistat.
+
+3. Entrar a la fitxa del tram utilitzant el botó "_Vista → Formulari_ " o bé,
+   fent doble click.
+
+    ![](_static/expedients/mt_form.png)
+
+4. Accedim a la pestanya _Expedients._
+
+    ![](_static/expedients/mt_expedients_pestanya.png)
+
+5. Afegim (botó _Add_ ) un nou expedient i sel·leccionem l'expedient del llistat
+   que ens apareixerà.   
+   La finestra que apareix és el llistat de tots els expedients entrats al ERP,
+   al menú expedients.
+
+    ![](_static/expedients/mt_expedients_add.png)
