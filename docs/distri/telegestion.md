@@ -283,9 +283,24 @@ mitjançant el botó comptadors.
 
 ### Registre de lectura
 
-Registre de lectures dels fitxers. Es mostren els fitxers que s'han carregat i
-si la seva càrrega ha estat correcte o no. Els fitxers erronis poden ser
-fitxers en un format no soportat o directoris a l'arrel del nostre FTP.
+En el registre de lectures dels fitxers es mostren els fitxers que s'han intentat 
+carregar i ens informa del resultat de la lectura. Si s'ha llegit correctament
+tot el fitxer, si s'ha llegit parcialment amb algun error o si ha sigut totalment
+erroni. 
+
+Els fitxers erronis poden ser fitxers en un format no soportat o directoris
+a l'arrel del nostre FTP. 
+Els fitxers que tenen l'estat d'error parcial és perquè contenen valors 
+incorrectes en un o més camps. En aquest cas s'ignoren els grups 
+d'informació amb errors i es llegeix la resta.
+
+![](_static/telegestion/partial_file_readings.png)
+
+Si entrem a veure l'error parcial que resulta de la càrrega del fitxer
+trobarem quin model de informe és el que dòna l'error, a quin o quins comptadors
+passa, el missatge d'error i la línia o línies conflictives del fitxer.
+
+![](_static/telegestion/partial_reading_error_info.png)
 
 ### Registre de lectura > TG reader Errors
 
