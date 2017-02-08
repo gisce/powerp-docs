@@ -160,15 +160,19 @@ Les dades a calcular són les següents:
      * Es calcula de la mateixa manera que **[C]** però sumant també l'IVA per
      cada línia.
  * **_Facturación 	energía a mercado libre sin impuestos [E]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [BE] - [B].
  * **_Facturación 	energía a mercado libre sin IVA ni otros recuperables [F]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [CF] - [C].
  * **_Facturación 	energía a mercado libre con todos los impuestos e IVA [G]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [DG] - [D].
+ * **_Facturación 	total sin impuestos [B]+[E]_**
+     * Sumatori de l'import "base" de cada factura.
  * **_Facturación 	total sin IVA ni otros impuestos recuperables [C]+[F]_**
-     * Sumatori de (amount_untaxed + tax_amount) de cada factura.
+     * Sumatori de (base + impost) de cada factura.
+ * **_Facturación   total con todos los impuestos e IVA [D]+[G]_**
+     * Sumatori de l'import "total" de cada factura.
  * **_Facturación 	alquiler de equipos de medida y control [Lloguer]_**
-     * Sumatori del «price_subtotal» per les línies del tipus «lloguer».
+     * Sumatori de l'import de la línia per les línies del tipus «lloguer».
  * **_Tensión máxima [v_max]_**
      * Obté la tensió més alta d'entre totes les tensions de totes les
      factures llistades.
