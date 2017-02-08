@@ -41,5 +41,35 @@ complementar un expedient.
     - Adjuntar el document escanejat
 
     ![](_static/expedients/exp_adjunts_dades.png)
-    
+
     ![](_static/expedients/exp_adjunts_dades_fet.png)
+
+## Assignar un expedient a un centre o línia
+
+### Assignar un expedient a un Centre Transformador
+
+Hem de localitzar el centre transformador a l'ERP, i des de la fitxa del centre
+li assignarem l'expedient que li correspon.
+
+1. Entrem des del menú: "_Menú ERP → Centres Transformadors → CT_"
+
+    ![](_static/expedients/ct_menu.png)
+
+2. Localitzem el centre en qüestió, amb l'ajuda de filtres o sel·leccionant-lo
+   directament del llistat.
+
+3. Entrar a la fitxa del centre utilitzant el botó "_Vista → Formulari_" o bé,
+   fent doble click.
+
+    ![](_static/expedients/ct_form.png)
+
+4. Accedim a la pestanya _Expedients._
+
+    ![](_static/expedients/ct_expedients_pestanya.png)
+
+5. Afegim (botó _Add_ ) un nou expedient i sel·leccionem l'expedient del llistat
+   que ens apareixerà.   
+   La finestra que apareix és el llistat de tots els expedients entrats al ERP,
+   al menú expedients.
+
+    ![](_static/expedients/ct_expedients_add.png)
