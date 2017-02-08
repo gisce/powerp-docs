@@ -199,3 +199,8 @@ El formulari d'un relé disposa de tres camps:
   * **Número de sèrie**: Número de sèria d'aquest relé.
   * **Marca i model**: Segons el número de sèrie assignat es mostrarà la marca i
     el model d'aquest relé.
+
+# Condensadors i Reactàncies
+
+Podem accedir a través del menú "_Menú ERP → Centres Transformadors →
+Manteniment → Cel·les i elemetns de tall → Condensadors_"
