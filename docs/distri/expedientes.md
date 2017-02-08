@@ -36,8 +36,8 @@ complementar un expedient.
     ![](_static/expedients/exp_adjunts_nou.png)
 
 4. Entrar les dades:
-    - Nom del document Adjunt
-      - _Exemple: "APS LMT CLAMOR FERIAL"_
+    - Nom del document Adjunt.
+        - _Exemple: "APS LMT CLAMOR FERIAL"_
     - Adjuntar el document escanejat
 
     ![](_static/expedients/exp_adjunts_dades.png)
@@ -106,7 +106,7 @@ li assignarem l'expedient que li correspon.
 
 ## Data APM
 
-Una vegada assignatt l'expedient al CT i/o línia, automàticament se li assignarà
+Una vegada assignat l'expedient al CT i/o línia, automàticament se li assignarà
 la data del expedient al CT i/o línia.
 
 En el cas de voler posar en el centre i/o línia una altra data diferent a la data
