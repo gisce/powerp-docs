@@ -58,6 +58,7 @@ pages:
         - LBT: distri/lbt.md
         - Instalaciones RE: distri/re.md
         - Expedientes: distri/expedientes.md
+        - Despachos: distri/despatxos.md
         - CINI - Generación Automática: distri/act_cinis.md
         - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio: distri/qualitat.md
