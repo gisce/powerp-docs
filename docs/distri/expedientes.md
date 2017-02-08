@@ -103,3 +103,23 @@ li assignarem l'expedient que li correspon.
    al menú expedients.
 
     ![](_static/expedients/mt_expedients_add.png)
+
+## Data APM
+
+Una vegada assignatt l'expedient al CT i/o línia, automàticament se li assignarà
+la data del expedient al CT i/o línia.
+
+En el cas de voler posar en el centre i/o línia una altra data diferent a la data
+del expedient per motius diversos, per exemple: perquè hi ha hagut reformes,
+perquè la data real és una altra ...; haruem de:
+
+1. Bloquejar la data APM: a la pestanya de dades administratives.
+2. Entrar la data APM que volem deixar.
+
+![](_static/expedients/tram_apm.png)
+
+!!! note
+    Poden haver diversos expedients assignats a un mateix centre i/o línia.    
+    En aquest cas l'ERP agafarà la **data APM més recent** i la assignarà al
+    centre. En cas de voler conservar l'altre data, cal bloquejar la data
+    "_Bloquejar APM_ ", com es descriu en el punt anterior.
