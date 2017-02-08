@@ -204,3 +204,53 @@ El formulari d'un relé disposa de tres camps:
 
 Podem accedir a través del menú "_Menú ERP → Centres Transformadors →
 Manteniment → Cel·les i elemetns de tall → Condensadors_"
+
+![](_static/celles/menu_condensadors.png)
+
+Per crear un nou condensador, cal completar els camps remarcat amb el color blau.
+
+![](_static/celles/formulari_condensadors.png)
+
+El **Codi** de condensador i reactància que s'entri a l'ERP ha de ser el mateix
+que l'**ID** dels blocs utilitzats en el GIS i l'Autocad.
+
+Els blocs a utilitzar són:
+
+|     Condensador-BT       |      Condensador-AT      |     Reactància      |
+|:------------------------:|:------------------------:|:-------------------:|
+
+![](_static/celles/esquema_condensadors.png)
+
+
+| Bateria_auto | Bateria_fixe |
+|:------------:|:------------:|
+
+![](_static/celles/esquema_bateries.png)
+
+
+|     Tipus de Condensador    |    CINI     |       Tipus d'Instal·lació       |
+|:---------------------------:|:-----------:|:--------------------------------:|
+|         Condensador BT      |   I24500A2  | TI-000 (ja que no s'especifica a les taules de TI de la _CNMC_) |
+|         Condensador AT      |   I24400A1  |             TI-168               |
+|         Reactancia          |   I24401A1  | 				    TI-168               |
+
+![](_static/celles/taula_condensadors.png)
+
+![](_static/celles/taula_codis_instalacions.png)
+
+Data APM: Si no la sabem, posem la mateixa que el CT.
+
+Per entrar el **número de sèrie**:
+
+- Obrir amb la lupa i crear un de Nou
+- Si sabem el número, el posem. Altrament posem el mateix número que el condensador
+
+![](_static/celles/formulari_numero_de_serie.png)
+
+Si el producte "_Condensador Genèric_" no està creat:
+
+- Cal crear un producte Nou
+- De la categoria "_Distribució_"
+- La resta de camps no són obligatoris
+
+![](_static/celles/add_producte_condensador.png)
