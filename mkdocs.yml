@@ -56,6 +56,7 @@ pages:
         - LBT: distri/lbt.md
         - Instalacions RE: distri/re.md
         - Expedients: distri/expedientes.md
+        - Despatxos: distri/despatxos.md
         - Sincronització CUPS: distri/sincronizacion_cups.md
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
