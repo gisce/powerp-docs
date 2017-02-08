@@ -110,5 +110,9 @@ if failed_strings:
         failed_strings
     ))
     exit(-1)
-
+if len(t_strings) != lenstr:
+    print(u'There are more strings in po than in pot after build!')
+    print(u'Try running "./translate.sh" again...\n')
+    exit(-1)
 print (u'{}Success!{}'.format(green, endcl))
+
