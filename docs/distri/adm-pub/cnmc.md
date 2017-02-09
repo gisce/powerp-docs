@@ -1132,9 +1132,9 @@ la línia a la qual pertany
 **De Trams**
 
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
   a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
 * **Conductor**: El tipus del cable associat al tram i **NO** ha de ser
@@ -1229,9 +1229,9 @@ Només s'inclouran els Trams BT que compleixin les següents
 condicions de la fitxa de **Elements bt**:
 
 * **Actiu**:
-   * Ha d'estar actiu o,
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Cable**: El `Tipus` del Cable seleccionat **NO** és **Embarrat** (E)
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
@@ -1319,9 +1319,9 @@ Només s'inclouran les Subestacions que compleixin les següents condicions
 de la fitxa de **Subestacions**:
 
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en marxa posterior al final de l'any sol·licitat,
   a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
@@ -1368,9 +1368,9 @@ condicions de la fitxa de **Posicions**:
 
 * **Tipus Interruptor**: Ha de ser del tipus **Interruptor automàtic** (2)
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en anterior anterior al final de l'any sol·licitat,
   a 1 de Gener ( p.e. per l'any 2014 data_APM < 01/01/2015)
@@ -1427,9 +1427,9 @@ la fitxa de **Transformadors**:
 * **Estat**: Els transformadors associats a un estat que el camp **apareix a
   l'inventari** estigui marcat (veure la següent nota).
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data
-     posterior a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data
+      posterior a 1 de Gener de l'any sol·licitat.
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 1 de Gener. ( p.e. per l'any 2014 data_APM < 01/01/2015)
@@ -1645,9 +1645,9 @@ suports:
   com si està associat a suports de línies AT/MT (seccionadors, interruptors,
   fusibles, seccionadors, ...).
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 1 de Gener
@@ -1697,9 +1697,9 @@ condicions de la fitxa de **CT**:
 * **Tipus Instal·lació**: Qualsevol excepte Subestacions (**SE**). Inclou CH,
   CP, CM, CR ...
 * **Actiu**:
-   * Ha d'estar actiu
-   * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
-     a 1 de Gener de l'any sol·licitat.
+    * Ha d'estar actiu
+    * Si no està actiu, hi ha d'haver el camp **data baixa** amb la data posterior
+      a 1 de Gener de l'any sol·licitat.
 * **Propietari**: Ha d'estar marcat com a propietari.
 * **Data APM**: Data de posta en marxa anterior al final de l'any sol·licitat,
   a 1 de Gener
