@@ -1,10 +1,11 @@
+from __future__ import unicode_literals
 from shutil import copyfile
 from subprocess import Popen, PIPE
 from os import system
 
-msgdir = "locales/es_ES/LC_MESSAGES/"
+msgdir = "test_scripts/locales/es_ES/LC_MESSAGES/"
 pofile = "{}messages.po".format(msgdir)
-potfile = "locales/messages.pot"
+potfile = "test_scripts/locales/messages.pot"
 
 translate_cases = {}
 
@@ -39,7 +40,7 @@ for key in merge_cases.keys():
     try:
         # Run merge script
         merge_test = Popen(
-            "../merge.sh -t".split(),
+            "./merge.sh -t".split(),
             stderr=PIPE,
             stdout=PIPE
         )
@@ -51,7 +52,16 @@ for key in merge_cases.keys():
         print ("Got an exception running merge!\n{}".format(ex))
     try:
         # Run Check Strings test on test-strings
-        string_res = system("python ../check_strings.py -v")
+        # string_res = system("python check_strings.py -v")
+        from os import getcwd
+        from os.path import join
+        string_test = Popen(
+            "python ../check_strings.py -v",
+            cwd=join(getcwd(), "test_scripts/"),
+            shell=True
+        )
+        string_test.communicate()
+        string_res = string_test.returncode
         print ("Returned: {}".format(string_res))
         if string_res == 0:
             merge_ok += 1
@@ -59,3 +69,7 @@ for key in merge_cases.keys():
         print ("Got an exception running check_strings!\n{}".format(ex))
 
 print ("Merging tests: {}/{}".format(merge_ok, len(merge_cases)))
+if merge_ok < len(merge_cases):
+    print ("MERGING TESTS FAILED")
+    exit(-1)
+
