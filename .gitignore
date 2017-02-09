@@ -5,3 +5,4 @@ site/
 locales/messages.pot
 *.mo
 *~
+test_scripts/locales/es_ES/LC_MESSAGES/messages.po
