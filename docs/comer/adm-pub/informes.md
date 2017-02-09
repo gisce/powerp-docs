@@ -123,14 +123,35 @@ Per obtenir les factures s'efectuen les següents operacions:
  * Un cop obtingudes, d'entre totes les factures es filtren les **anul·ladores**
    **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
  * Per últim es tornen a buscar d'entre totes les factures, les normals i
-   rectificadores que siguin **diferents** de les anteriors, doncs si una factura
-   ja ha estat abonada no cal rectificar-la.
+   rectificadores que siguin **diferents** de les anteriors, doncs si una
+   factura ja ha estat abonada no cal rectificar-la.
 
 ### Detecció del tipus de consumidor
 
-* El tipus de consumidor es detecta mitjançant el CIF o NIF del client de la factura:
+* El tipus de consumidor es detecta mitjançant el CIF o NIF del client de la
+factura:
     * **NIF**: es considerarà un consumidor **domèstic**.
     * **CIF**: es considerarà un consumidor **industrial**.
+
+### Càlcul del número de clients per banda de consum
+
+Durant la generació de l'informe es realitza un sumatori per cada banda
+especificada a l'annex 1 del BOE n. 69  Sec. I. Pàg. 30271. Les bandes són
+les següents:
+
+ ![bandes](../_static/informes/model_606/bandes.png)
+
+Per cada factura obtinguda, es classifiquen les corresponents pòlisses segons el
+tipus de consumidor.
+
+Un cop classificades les pòlisses, mitjançant el **consum anual** es procedeix a
+classificar-les de nou a la **banda** que els hi correspón, tenint també en
+compte el tipus de consumidor.
+
+Un cop classificades les pòlisses per tipus de consumidor i banda, es realitza
+**un sumatori** per cada pòlissa existent a cada banda. No es realitza cap tipus
+de mitjana aritmètica. D'aquesta forma es fa el recompte del total de clients
+a cada banda de consum. 
 
 ### Càlcul de dades
 
