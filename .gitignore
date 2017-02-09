@@ -2,6 +2,6 @@ site/
 *.idea
 .idea/
 *.pyc
-*.pot
+locales/messages.pot
 *.mo
 *~
