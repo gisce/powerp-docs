@@ -56,12 +56,12 @@ correctament.
 ## Circular 1/2005
 
 El mòdul permet al GISCE-ERP la generació dels informes referents a la
-circular 1/2005 de la CNE. Aquests informes venen definits per la mateixa **CNE**.
+circular 1/2005 de la CNMC. Aquests informes venen definits per la mateixa **CNMC**.
 
 * [Anexo I: Instrucciones para completar la información solicitada en los
-  formularios del Anexo II](https://sede.cne.gob.es/c/document_library/get_file?uuid=59598178-3f1c-47e5-98ee-b705b6c06397&groupId=10136)
-* [Anexo II: Formularios de envío de información de la  CNE](https://sede.cne.gob.es/c/document_library/get_file?uuid=ce663590-4c7d-411a-b902-0f543c815b10&groupId=10136)
-* [Anexo III: Tablas Circular 1/2005](https://sede.cne.gob.es/c/document_library/get_file?uuid=97fb83c3-dc74-40be-a5e2-fa8a813e29eb&groupId=10136)
+  formularios del Anexo II](https://sede.cnmc.gob.es/sites/default/files/2016-11/20161111_AnexoI_Circ_1_2005.pdf)
+* [Anexo II: Formularios de envío de información de la  CNE](https://sede.cnmc.gob.es/sites/default/files/2016-11/20161111_AnexoII_Circ_1_2005.pdf)
+* [Anexo III: Tablas Circular 1/2005](https://sede.cnmc.gob.es/sites/default/files/2016-09/AnexoIII_Circ_1_2005.xls)
 
 ## Actualment, aquest mòdul és capaç de generar els següents informes:
 
