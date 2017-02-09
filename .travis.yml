@@ -8,3 +8,4 @@ script:
   - mkdocs build -f mkdocs.yml
   - mkdocs build -f mkdocs_es.yml --clean
   - python check_strings.py -v -l
+  - python test_scripts/test_scripts.py
