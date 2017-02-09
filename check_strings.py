@@ -10,8 +10,9 @@ def usage():
     print ('\t"-h" or "--help" to print usage and close')
     print ('\t"-v" or "--verbose" to print more output')
     print ('\t"-l" or "--list" to print the missing/failed strings list')
+    print ('\t"-t" or "--test" to check strings in the test directory')
 
-if len(argv) > 4:
+if len(argv) > 5:
     print ('Too many arguments!!')
     print ('use "check_strings.py --help" for usage description')
     exit(-1)
@@ -19,6 +20,7 @@ else:
     verb = False
     build = False
     use_list = False
+    test = False
     for i in range(1,len(argv)):
         if argv[i] == '-h' or argv[i] == '--help':
             usage()
@@ -27,6 +29,8 @@ else:
             verb = True
         elif (argv[i] == '-l') or (argv[i] == '--list'):
             use_list = True
+        elif (argv[i] == '-t') or (argv[i] == '--test'):
+            test = True
         else:
             print ('Ignoring unknown argument "{}"...')
             print ('Use "-h" or "--help" to print usage')
@@ -40,7 +44,11 @@ endcl = "\033[0m"
 cwd = os.getcwd()
 if verb:
     print (u'Running on : {}'.format(cwd))
-locales = join(cwd, 'locales')
+if test:
+    locales = join(cwd, 'test_scripts', 'locales')
+    print (u'Using test dir: {}'.format(locales))
+else:
+    locales = join(cwd, 'locales')
 
 pot_path = join(locales, 'messages.pot')
 es_path = join(locales, join('es_ES', join('LC_MESSAGES', 'messages.po')))
