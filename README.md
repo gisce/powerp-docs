@@ -43,7 +43,7 @@ _With the extensions:_
 
 #### Translate docs:
 
-For more detailed info, [check the wiki].
+For more detailed info, [check the wiki](https://github.com/gisce/powerp-docs/wiki/Translate!----build-your-docs-on-any-language).
 
 Set all file titles in the mkdocs.yml files.
 For each language, there should be a translation.
@@ -67,7 +67,7 @@ Just use the following:
 
 ## Display documentation
 
-You should [check the wiki] to learn more about this.
+You should [check the wiki](https://github.com/gisce/powerp-docs/wiki/Build!---Displaying-the-Docs) to learn more about this.
 
 The essential commands are:
 
@@ -75,7 +75,6 @@ The essential commands are:
   (Does not update with the translations files)
 * Build - to build the html from the docs into a folder.
 
-With this a webserver is started locally reloading automatically when is needed.
 With the "-f" argument, we specify the config file to be used.
 
 i.e.:
