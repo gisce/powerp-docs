@@ -1,7 +1,22 @@
-from __future__ import division, print_function
+from __future__ import division, print_function, unicode_literals
 from os.path import abspath, normpath, dirname, join, isfile
 from babel.messages import pofile
 import os
+import argparse
+
+parser = argparse.ArgumentParser(description='Check the strings translated.',
+                                 usage='%(prog)s [options]')
+parser.add_argument(
+    '--list', '-l',
+    nargs='?', const=True, default=False,
+    help='Print a list of missing strings'
+)
+parser.add_argument(
+    '--verbose', '-v',
+    nargs='?', const=True, default=False,
+    help='Show more status messages'
+)
+args = parser.parse_args()
 
 green = "\033[0;32m"
 yellow = "\033[0;33m"
@@ -9,7 +24,8 @@ red = "\033[0;31m"
 endcl = "\033[0m"
 
 cwd = os.getcwd()
-print (u'Running on : {}'.format(cwd))
+if args.verbose:
+    print ('Running on : {}'.format(cwd))
 locales = join(cwd, 'locales')
 
 pot_path = join(locales, 'messages.pot')
@@ -17,7 +33,7 @@ es_path = join(locales, join('es_ES', join('LC_MESSAGES', 'messages.po')))
 
 if not isfile(pot_path) or not isfile(es_path):
     print (
-        u'{}Missing "locales/messages.pot" or '
+        '{}Missing "locales/messages.pot" or '
         '"locales/es_ES/LC_MESSAGES/messages.po" files{}'.format(
             red, endcl
         )
@@ -31,7 +47,7 @@ with open(es_path, 'r') as po:
     es_file = pofile.read_po(po)
 
 if not pot_file or not es_file:
-    print (u'{}messages.pot or messages.po could not be readed{}'.format(
+    print ('{}messages.pot or messages.po could not be readed{}'.format(
         red, endcl
     ))
 
@@ -42,7 +58,8 @@ es_strings = []
 t_strings = []
 failed_strings = []
 fuzz_strings = []
-print (u'Checking for all strings to be translated...', end="")
+if args.verbose:
+    print ('Checking for all strings to be translated...', end="")
 for s in es_file:
     es_strings.append(s.id)
     if s.id == "":
@@ -54,65 +71,69 @@ for s in es_file:
     else:
         t_strings.append(s.string)
 
-if not failed_strings:
-    print(u'{}OK{}'.format(green, endcl))
-else:
+if not failed_strings and args.verbose:
+    print('{}OK{}'.format(green, endcl))
+elif args.verbose:
     if len(failed_strings) >= 1:
-        print (u'\n\t{}There are strings not translated!{}'.format(
+        print ('\n\t{}There are strings not translated!{}'.format(
             red, endcl
         ))
     if len(fuzz_strings) >= 1:
         print (
-            u'\t{}There are fuzzy strings!{}'.format(
+            '\t{}There are fuzzy strings!{}'.format(
                 yellow, endcl
             )
         )
 
-print (u'Checking all strings in pot to be in po...', end="")
+if args.verbose:
+    print ('Checking all strings in pot to be in po...', end="")
 es_strings = set(es_strings)
 substr = strings - es_strings
-if substr != set():
-    print (u'\n\t{0}There are {1} missing strings in the po file!\n{2}'.format(
+if substr != set() and args.verbose:
+    print ('\n\t{0}There are {1} missing strings in the po file!\n{2}'.format(
         red, len(substr), endcl
     ))
-print ('{}OK{}'.format(green, endcl))
+elif args.verbose:
+    print ('{}OK{}'.format(green, endcl))
 
 lenstr = len(strings) + len(substr)
 
 print ("\nStrings' translated test briefing:\n")
-print (u'\t\t{}Translated strings:\t{}{}\t({}%)'.format(
+print ('\t\t{}Translated strings:\t{}{}\t({}%)'.format(
     green, len(t_strings), endcl,
     len(t_strings)/lenstr * 100
 ))
-print (u'\t\t{}Fuzzy strings:\t\t{}{}\t({}%)'.format(
+print ('\t\t{}Fuzzy strings:\t\t{}{}\t({}%)'.format(
     yellow, len(fuzz_strings), endcl, 
     len(fuzz_strings)/lenstr * 100
 ))
-print (u'(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
+print ('(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
     red, len(failed_strings)-len(fuzz_strings), endcl,
     (len(failed_strings)-len(fuzz_strings))/lenstr * 100
 ))
-print (u'\t\t{}Missing strings:\t{}{}\t({}%)'.format(
+print ('\t\t{}Missing strings:\t{}{}\t({}%)'.format(
     red, len(substr), endcl, len(substr)/lenstr * 100
 ))
 
-print (u'\t----------------------------------------------------')
-print (u'\t\tTotal Strings:\t\t{}\n'.format(
+print ('\t----------------------------------------------------')
+print ('\t\tTotal Strings:\t\t{}\n'.format(
     lenstr
 ))
 if substr != set():
-    print (u'Missing strings:\n{}'.format(
-        substr
-    ))
+    if args.list:
+        print ('Missing strings:\n{}'.format(
+            substr
+        ))
     exit(-1)
 if failed_strings:
-    print (u'Missing strings:\n{}'.format(
-        failed_strings
-    ))
+    if args.list:
+        print ('Missing strings:\n{}'.format(
+            failed_strings
+        ))
     exit(-1)
 if len(t_strings) != lenstr:
-    print(u'There are more strings in po than in pot after build!')
-    print(u'Try running "./translate.sh" again...\n')
+    print('There are more strings in po than in pot after build!')
+    print('Try running "./translate.sh" again...\n')
     exit(-1)
-print (u'{}Success!{}'.format(green, endcl))
+print ('{}Success!{}'.format(green, endcl))
 
