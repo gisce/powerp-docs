@@ -40,10 +40,21 @@ _With the extensions:_
 
 #### Translate docs:
 
-**Poedit**
-_([Check the following translations section](#translations))_
+For more detailed info, [check the wiki].
 
-_Merge Translations files_
+Set all file titles in the mkdocs.yml files.
+For each language, there should be a translation.
+
+To translate the text use:
+
+```shell
+./translate.sh
+```
+
+To merge with master, you'll probably have conflicts with the pofile. There's
+quite a story behind, [you can learn more on the wiki].
+
+Just use the following:
 
 ```shell
 ./merge.sh
@@ -51,55 +62,29 @@ _Merge Translations files_
 
 **Remember to commit after changes are applied**
 
-## Translations
-
-Add your titles in all '*.yml'. They must be translated manually
-
-There must be one '.yml' file for each language (mkdocs.yml, mkdocs_es.yml...)
-
-Translatable strings can be found on "/locales" inside _messages.pot_
-
-*Every mkdocs build using a '.yml' file updates the _message.pot_ file*
-_except the default one_
-
-*Easy Mode*: run ./translate.sh
-
-Steps to translate your new documentation:
-
-1. Write your docs in the default lang (ca_ES)
-2. Local build your version with:
-
-```shell
-    mkdocs build -f mkdocs_es.yml
-# OR
-    mkdocs serve -f mkdocs_es.yml
-```
-
-3. Combine the new strings in the .pot with the old .po using:`
-    
-```shell
-    sudo apt install gettext
-    msgmerge -U locales/lang/LC_MESSAGES/messages.po locales/messages.pot
-```
-
-4. Generate the new translations from the updated .po using *poedit*
-
-```shell
-    sudo apt install poedit
-    poedit locales/lang/LC_MESSAGES/messages.po
-```
-
-**Always commit the translated and updated .po**
-
 ## Display documentation
 
-```shell
-$ mkdocs serve
-$ mkdocs serve -f mkdocs_es.yml
-```
+You should [check the wiki] to learn more about this.
+
+The essential commands are:
+
+* Serve - to build a webserver that auto-updates with changes in the docs.
+  (Does not update with the translations files)
+* Build - to build the html from the docs into a folder.
 
 With this a webserver is started locally reloading automatically when is needed.
-With the second command, we specify the config file to be used.
+With the "-f" argument, we specify the config file to be used.
+
+i.e.:
+
+```shell
+$ mkdocs serve  
+$ mkdocs serve -f mkdocs_es.yml
+$ mkdocs build
+$ mkdocs build -f mkdocs_es.yml
+```
+
+# Coding references
 
 - [Markdown Reference](https://pythonhosted.org/Markdown/index.html)
 - [MKDocs Reference](http://www.mkdocs.org/)
@@ -112,14 +97,18 @@ Markdown extensions:
 
 ## Project structure
 
-We have 4 categories:
+We have 5 categories:
 
 - **base**: Base components: used in distri & comer
 - **distri**: Distri components
 - **comer**: Comer components
 - **facturacio**: Base invoicing components used in distri & comer
+- **gis**: GIS components
 
-For images we use `_static` folder with a subfolder with the same name as Markdown file. eg:
+For images we use `_static` folder inside the category with a subfolder for the
+same name as Markdown file of the Section.
+
+i.e.:
 
 For `distri/atr.md` we have `distri/_static/atr/image1.png`
 
