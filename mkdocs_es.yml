@@ -1,4 +1,9 @@
 site_name: PowERP Docs
+repo_name: GitHub
+repo_url: https://github.com/gisce/powerp-docs
+edit_uri: edit/master/docs
+site_author: GISCE-TI, S.L.
+google_analytics: ['UA-27668469-4', 'builds.gisce.net']
 theme: readthedocs
 
 markdown_extensions:
@@ -53,6 +58,7 @@ pages:
         - LBT: distri/lbt.md
         - Instalaciones RE: distri/re.md
         - Expedientes: distri/expedientes.md
+        - Despachos: distri/despatxos.md
         - CINI - Generación Automática: distri/act_cinis.md
         - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio: distri/qualitat.md
