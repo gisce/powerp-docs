@@ -504,6 +504,11 @@ Energia activa anual consumida   | Energia activa anual consumida del CUPS, expr
 Energia reactiva anual consumida | Energia reactiva anual consumida del CUPS, expressada en kVArh
 Any d'informació                 | Any del qual es genera aquest formulari.
 
+!!! note
+    Per tal d'evitar problemes de validació, veure documentació del camp
+    **[CNAE](../../base/polisses.md#cnae)**
+
+
 #### F1bis: Informació relativa a la lectura dels equips de mesura dels clients
 
 Aquest formulari ens mostrarà la informació relativa als CUPS actius que la seva
@@ -1018,6 +1023,8 @@ Client**"  s'obrirà un assitent per generar l'informe:
 ![](../_static/cnmc/atc/menu_atc.png)
 
 
+
+
 Aquest assistent funciona de la següent manera:
 
 * Es selecciona un trimestre i un any (per defecte seran el trimestre i l'any
@@ -1052,6 +1059,7 @@ En la situació en que els casos R1 tenen un pas 02 amb rebuig s'indicarar en
 l'informe que el resultat de la reclamació és "No Gestionable".    
 Per altra banda, si ja s'ha tancat el cas ATR sense haver generat un pas 02 amb
 rebuig s'indicarà el resultat de la reclamació com a "Procedente / Favorable".
+
 
 
 ## Inventari 4131
@@ -1103,7 +1111,9 @@ El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resoluc
 
 ### Descripció dels diferents NODES
 
+
 #### NODE: LINIA
+
 
 **LINIES AT**
 
@@ -1118,6 +1128,7 @@ El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resoluc
     Ha d'existir cable "DESCONEGUT" tipus "INDEFINIT" sino no generara el fitxer
 
 ##### ELEMENTS SELECCIONATS
+
 
 Només s'inclouran els Trams que compleixin les següents condicions de la fitxa
 de **Trams**. També es trindran en compte les dades de la fitxa **Linia AT** de
@@ -1157,9 +1168,11 @@ S'han afegit nous camps a la fitxa dels trams:
   funció de la tensió màxima per la que ha estat dissenyat i no per la tensió
   a la que està treballant actualment.
 
+
 A continuació es detalla d'on s'obtenenen els valors dels camps d'aquest fitxer:
 
 Camps obtinguts directament dels camps de la fitxa de **TRAMS**
+
 
 | CAMP                       |CAMP DE LA BASE DE DADES                                                             |
 |----------------------------|-------------------------------------------------------------------------------------|
@@ -1213,6 +1226,7 @@ numèric.
 
 ![](../_static/cnmc/4131/cataleg_cables_at.png)
 
+
 **LINIES BT**
 
 !!! note
@@ -1241,6 +1255,7 @@ condicions de la fitxa de **Elements bt**:
 
 Camps obtinguts directament dels camps de la fitxa de **ELEMENTS_BT**
 
+
 | CAMP                         |CAMP DE LA BASE DE DADES                                                             |
 |------------------------------|-------------------------------------------------------------------------------------|
 |IDENTIFICADOR                 |IDENTIFICADOR DEL TRAM BT (INTERN DE LA TOPOLOGIA)                                   |
@@ -1268,6 +1283,7 @@ addicionals.
 |CAPACIDAD                    |VALOR FUNCIÓ DEL CAMP **INTESITAT MÀXIMA** DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAMB_BT I LA TENSIÓ DEL TRAM AL CAMP **VOLTATGE** |
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                              |
 
+
 **Catàleg de Cables BT**
 
 Des del menú "_Linies BT / Manteniment / Cables / Cable_".
@@ -1283,6 +1299,7 @@ valor numèric.
 
 ![](../_static/cnmc/4131/cataleg_cables_BT.png)
 
+
 A la fitxa del catàleg de cables s'ha afegit el camp:
 
 * **Data acta posada en marxa**: Aquesta data correspondria amb la data en
@@ -1294,6 +1311,7 @@ Quedant el camp existent
   (data de realització de la obra)
 
 *CRITERI ESTADO:*
+
 
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
 
@@ -1315,6 +1333,7 @@ el camp a 0.
 
 *ELEMENTS SELECCIONATS:*
 
+
 Només s'inclouran les Subestacions que compleixin les següents condicions
 de la fitxa de **Subestacions**:
 
@@ -1328,7 +1347,9 @@ de la fitxa de **Subestacions**:
 
 *ORÍGEN:*
 
+
 Camps obtinguts directament dels camps de la fitxa de **SUBESTACIONS**
+
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
@@ -1348,6 +1369,7 @@ càlculs addicionals.
 | CAMP                        |CAMP CALCULAT                                                                  |
 |-----------------------------|-------------------------------------------------------------------------------|
 |ESTADO                       |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0                        |
+
 
 *CRITERI ESTADO:*
 
@@ -1377,7 +1399,9 @@ condicions de la fitxa de **Posicions**:
 
 *ORÍGEN:*
 
+
 Camps obtinguts directament dels camps de la fitxa de **POSICIONS**
+
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
@@ -1404,6 +1428,7 @@ tipus interior serà assimilable a la posició blindada.
 
 *CRITERI ESTADO:*
 
+
 Els camps que es comparen per saber si s'ha modificat(1) un element son:
 
 * CINI
@@ -1420,6 +1445,7 @@ posara el camp a 0.
 # NODE: Màquina
 
 *ELEMENTS SELECCIONATS:*
+
 
 Només s'inclouran els Transformadors que compleixin les següents condicions de
 la fitxa de **Transformadors**:
@@ -1448,6 +1474,7 @@ la fitxa de **Transformadors**:
 !!! note
     Els Transformadors Reductors també estan inclosos en el llistat si
     compleixen les condicions especificades.
+
 
 ![](../_static/cnmc/4131/estats_inventari.png)
 
@@ -1511,6 +1538,7 @@ càlculs addicionals.
 >Llistat de connexions d'un transformador
 
 CONDENSADORS:
+
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
@@ -1654,7 +1682,10 @@ suports:
 
 *ORÍGEN:*
 
+
 Camps obtinguts directament dels camps de la fitxa de **CEL·LES I ELEMENTS DE TALL**
+
+
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|-------------------------------------------------------------------------------------|
@@ -1683,6 +1714,7 @@ Els camps que es comparen per saber si s'ha modificat(1) un element son:
 En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
 considerara que l'element es nou(2).
 
+En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
 Si no es troben modificacions es posara el camp a 0.
 
 --------------------------------------------------------------------------------
@@ -1707,6 +1739,7 @@ condicions de la fitxa de **CT**:
 _ORÍGEN:_
 
 Camps obtinguts directament dels camps de la fitxa de **CTS**
+
 
 | CAMP                  |CAMP DE LA BASE DE DADES                                                             |
 |-----------------------|---------------------------------------------------------------------------------|
@@ -1738,9 +1771,11 @@ considerara que l'element es nou(2).
 
 Si no es troben modificacions es posara el camp a 0.
 
+
 ### Generació dels informes
 
 **Menú**
+
 
 Per accedir a l'assistent per generar els fitxers CSV i el XML cal anar al menú
 **Administració pública / CNMC / Resolucions / Resolucio 4131/2016 / Generar Inventari 4131**
@@ -1751,7 +1786,9 @@ A través d'aquest assistent podem generar els fitxers csv que demana la resoluc
 
 ![](../_static/cnmc/4131/MENU_4131_2.png)
 
+
 * **Tipus** En el desplegable tipus es pot seleccionar el fitxer .csv que es vol generar
+
 
 |Fitxer          | Num | Descripció                                            |                        |
 |----------------|-----|-------------------------------------------------------|------------------------|
@@ -1765,6 +1802,7 @@ A través d'aquest assistent podem generar els fitxers csv que demana la resoluc
 |Fiabilitat CSV  | 7   | NODE EQUIPS DE MILLORA DE LA FIABILITAT               | Inventario_R1-XXX_7.txt|
 |CTS CSV         | 8   | NODE CENTRES DE TRANSFORMACIÓ                         | Inventario_R1-XXX_8.txt|
 
+
 * **Any**: Automàticament s'escull l'any anterior a l'any en curs
 * **R1**: Automàticament s'agafa el valor del camp `ref2` de la empresa
   associada a la nostra companyia
@@ -1774,5 +1812,7 @@ A través d'aquest assistent podem generar els fitxers csv que demana la resoluc
 Una vegada generat el fitxer csv es pot analitzar per validar-lo i veure
 quines dades falten a la base de dades o fer modificacions directament al
 fitxer.txt
+
+Es pot generar un altre fitxer prement en el botó **Un altre CSV**
 
 Es pot generar un altre fitxer prement en el botó **Un altre CSV**
