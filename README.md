@@ -6,9 +6,10 @@
 
 - [Environment](#setting-up-your-environment)
     - [Recommended editors](#recommended-editors)
-- [Translations](#translations)
+- [Translations](#translate-docs)
 - [Display Documentation](#display-documentation)
 - [Project Structure](#project-structure)
+- [Coding references](#coding-references)
 - [Testing](#testing)
 
 ## Setting up your environment
@@ -18,6 +19,8 @@ $ mkvirtualenv powerp-docs
 $ git clone git@github.com:gisce/powerp-docs.git
 $ cd powerp-docs
 $ pip install -r requirements.txt
+$ apt-get install gettext
+$ apt-get install poedit
 ```
 
 ### Recommended Editors
