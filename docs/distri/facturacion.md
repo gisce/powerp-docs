@@ -29,7 +29,7 @@ donarà error per la facturació.
 #### 1 Obrir:
 
 El botó obrir es el primer pas a realitzar per iniciar la facturació
-d'un determinat període. Si s'intenta obrir un lot sense haver tancat 
+d'un determinat període. Si s'intenta obrir un lot sense haver tancat
 l'anterior apareixerà un error indicant que existeix més d'un lot obert.
 
 Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
@@ -132,7 +132,7 @@ S'accedeix al assistent en el que es indicarà:
   les lectures que trobi en aquest intèrval.
 
 * Diari: S'ha de indicar a quin diari es desitja assignar a la factura
-  a realitzar. Si es una factura de energia normal s'asignarà al diari *Factures Energía*. 
+  a realitzar. Si es una factura de energia normal s'asignarà al diari *Factures Energía*.
 
 !!! note
     Aquesta factura manual es pot realitzar en qualsevol moment, i la/es
@@ -183,7 +183,7 @@ S'accedeix al assistent en el que es indicarà:
 ![](_static/facturacion/menu_acciones.png)
 
 !!! Pregunta
-    Si dono per pagada una factura per error, com desfaig el cobrament? 
+    Si dono per pagada una factura per error, com desfaig el cobrament?
 
 !!! Resposta
     Des de la pròpia factura es selecciona la opció '*Desfer pagament*',
@@ -314,7 +314,7 @@ Com es realitza un augment de potència de 5,5 a 10,390?
    de diàleg advertint que la tarifa no concorda amb la nova potencia
    contractada), es canvia la tarifa a 2.1A , es prem el botó generar períodes
    per que apareixi el període de la nova tarifa 2.1A amb la potència contractada.
-2. Comptador:  S'ha d'indicar la lectura de tancament de la 2.0A en la data 
+2. Comptador:  S'ha d'indicar la lectura de tancament de la 2.0A en la data
    dd/mm/aaaa i inicialitzar la nova lectura de la 2.1A que serà la mateixa
    en la data dd/mm/aaaa +1. Això s'ha de fer tant si es canvia de comptador
    com si es mantenen el mateix comptador.
@@ -355,7 +355,7 @@ Els llistats resum de facturació mensuals es troben en l'apartat:
 
 * Tipus: Pot escollir-se entre Mensuals, Bimestrals o Totes
 
-* Serie: En el desplegable apareixen totes les sèries que es poden 
+* Serie: En el desplegable apareixen totes les sèries que es poden
   sel·leccionar. En el caso de facturació de energía s'han de seleccionar:
   Seqüència F. Energia, Seqüència F. Energia Abonada o
   Seqüència F. Energia Rectificadora.
@@ -363,7 +363,25 @@ Els llistats resum de facturació mensuals es troben en l'apartat:
 * Informes: En aquest desplegable es poden sel·leccionar les diferents formes
   de resums i agrupacions segons convingui.
 
+## Certificat de consums
+
+Aquest informe mostra el consum de totes les factures d'una pólissa concreta
+en un període de temps determinat.
+
+Per tal d'imprimir el certificat de relació de consums s'ha d'anar a l'apartat:
+**Facturació > General > Informes de facturació > Relació de consums**.
+
+![](_static/facturacion/relacio_de_consums.png)
+
+* És necessari introduir un número de pólissa i dues dates per tal d'indicar
+quin període temporal ens interessa.
+
+![](_static/facturacion/relacio_de_consums_polissa.png)
+
+![](_static/facturacion/relacio_de_consums_dates.png)
+
+
+
 ## Exportació factures F1
 
 !!! TODO
-
