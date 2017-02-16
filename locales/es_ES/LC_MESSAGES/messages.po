@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-15 14:02+0100\n"
-"PO-Revision-Date: 2017-02-15 14:08+0100\n"
+"POT-Creation-Date: 2017-02-16 10:16+0100\n"
+"PO-Revision-Date: 2017-02-16 10:17+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.3.4\n"
-"X-Generator: Poedit 1.8.7.1\n"
+"X-Generator: Poedit 1.5.4\n"
 
 msgid "Documentació PowERP"
 msgstr "Documentación PoweERP"
@@ -17613,6 +17613,47 @@ msgstr ""
 "firmes en\n"
 "  configuración principal. Campo M del fichero F1."
 
+msgid "Descarrecs"
+msgstr "Descargos"
+
+msgid "Generar sol·licitud de descàrrec"
+msgstr "Generar solicitud de descargo"
+
+msgid ""
+"Per generar una sol·licitud de descàrrec hem d'anar al menú de Descàrrecs/"
+"Manteniment/Sol·licituds i crear una nova solicitud."
+msgstr ""
+"Para generar una solicitud de descargo hemos de ir al menu de Descargos/"
+"Mantenimiento/Solicitudes y crear una nueva solicitud."
+
+msgid "En el formulari hem de d'omplir:"
+msgstr "En el formulario hemos de rellenar:"
+
+msgid "<img alt=\"\" src=\"../_static/descarrecs/solicitud.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/descarrecs/solicitud.png\" />"
+
+msgid "Descripció de la sol·licitud"
+msgstr "Descripción de la solicitud"
+
+msgid "Sol·licitant"
+msgstr "Solicitante"
+
+msgid "Inici"
+msgstr "Inicio"
+
+msgid "Final"
+msgstr "Final"
+
+msgid "Xarxa afectada (AT o BT depenent del tipus de descàrrec)"
+msgstr "Red afectada(AT o BT dependiendo del tipo de descargo)"
+
+msgid ""
+"Finalment hem d'enviar la sol·licitud al GIS per fer la simulació prement el "
+"boto \"Enviar al GIS\""
+msgstr ""
+"Finalmente hemos de enviar la solicitud al GIS para hacer la simulación "
+"pulsando el boto \"Enviar al GIS\""
+
 msgid "Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:"
 msgstr "Para instalar el plugin de Qgis para acceder a Giscegis se debe ir a:"
 
@@ -17730,9 +17771,6 @@ msgstr "Codigo"
 
 msgid "Origen"
 msgstr "Origen"
-
-msgid "Final"
-msgstr "Final"
 
 msgid "Expedient"
 msgstr "Expediente"
