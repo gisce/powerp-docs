@@ -46,6 +46,7 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md
+    - Descargos: distri/descarrecs.md
     - GIS:
       - QGIS: gis/qgis.md
       - GIS Web: gis/websearch.md
