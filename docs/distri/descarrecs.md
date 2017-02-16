@@ -12,7 +12,7 @@ En el formulari hem de d'omplir:
 2. Sol·licitant
 3. Inici
 4. Final
-5. Xarxa afectada (AT o BT depenent del tipus de descargo)
+5. Xarxa afectada (AT o BT depenent del tipus de descàrrec)
 
 Finalment hem d'enviar la sol·licitud al GIS per fer la simulació prement el boto "Enviar al GIS"
 
