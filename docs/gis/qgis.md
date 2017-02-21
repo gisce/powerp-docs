@@ -1,3 +1,11 @@
+# Introduccio 
+Qgis es un programa per el la gestió, consulta i anàlisis de dades GIS.
+El seu funcionament pot ser estès mitjançant plugins.
+
+Es pot consultar el manual d'usuari de QGIS a la següent adreça:
+[http://www.qgis.org/es/docs/index.html](http://www.qgis.org/es/docs/index.html)
+
+
 # Instal·lació
 Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
 
