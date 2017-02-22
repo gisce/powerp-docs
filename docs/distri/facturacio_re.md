@@ -45,3 +45,5 @@ els valors d'aquesta factura.
 
 * La tarifa RE liquida amb el codi de CNMC: **603**
 * La tarifa RE12 liquida amb el codi de CNMC: **602**
+
+Més informació com generar les liquidacions a la pàgina [liquidació de peatges](liquidacion_peajes)

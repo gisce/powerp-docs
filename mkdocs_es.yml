@@ -12,7 +12,8 @@ markdown_extensions:
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
-  - markdown_blockdiag
+  - markdown_blockdiag:
+      fontpath: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
 
 pages:
   - Home: index.md
