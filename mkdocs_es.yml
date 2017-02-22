@@ -51,7 +51,9 @@ pages:
     - Descargos: distri/descarrecs.md
     - GIS:
       - QGIS: gis/qgis.md
-      - GIS Web: gis/websearch.md
+      - GIS Web:
+        - Visor: gis/webgis.md
+        - Buscador: gis/websearch.md
       - Instalaciones:
         - Subestaciones: distri/subestaciones.md
         - CTS: distri/cts.md
