@@ -9,7 +9,8 @@ theme: readthedocs
 markdown_extensions:
   - admonition
   - grid_tables
-  - markdown_blockdiag
+  - markdown_blockdiag:
+      fontpath: fonts/DejaVuSans.ttf
 
 pages:
   - Home: index.md
@@ -37,6 +38,7 @@ pages:
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
       - Règim especial: distri/facturacio_re.md
+      - Liquidació: distri/liquidacion_peajes.md
       - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
       - REE: distri/adm-pub/ree.md
