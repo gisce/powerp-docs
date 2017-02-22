@@ -10,7 +10,7 @@ markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
-      fontpath: /usr/share/fonts/truetype/dejavu/DejaVuSans.ttf
+      fontpath: fonts/DejaVuSans.ttf
 
 pages:
   - Home: index.md
