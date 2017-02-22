@@ -48,7 +48,9 @@ pages:
     - Perfils: distri/perfiles.md
     - Descarrecs: distri/descarrecs.md
     - GIS:
-      - GIS Web: gis/websearch.md
+      - GIS Web:
+        - Visor web: gis/webgis.md
+        - Buscador: gis/websearch.md
       - Qgis: gis/qgis.md
       - Instalacions:
         - Subestacions: distri/subestaciones.md
