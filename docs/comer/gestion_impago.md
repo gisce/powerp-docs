@@ -1,0 +1,3 @@
+# Gestió impagats
+
+## Estats pendents
