@@ -80,6 +80,7 @@ pages:
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
     - Facturación: comer/facturacion.md
+    - Gestión impagados: comer/gestion_impago.md
     - Gestión ATR: comer/atr.md
     - SIPS: comer/sips.md
     - Administración Pública:

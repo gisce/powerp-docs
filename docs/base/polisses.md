@@ -62,6 +62,27 @@ vigent.
 
 * **Observacions**
 
+## Visualització deute d'una pòlissa/contracte
+
+Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
+tenim els camps **Estat pendent** i **Quantitat pendent**.
+
+![](_static/polisses/pending_amount_form.png)
+
+* **Quantitat pendent**: Indica els euros que deu aquesta pòlissa/contracte de
+  totes les factures que tingui pendents.
+
+* **Estat pendent**: Mostra el *pitjor* estat de totes les pòlisses que no estiguin
+  en estat correcte.
+
+També podem llistar **totes** les pòlisses/contractes que tinguin algun deute a
+través del menú: **Gestió de pòlisses > Pòlisses amb deute** on es pot veure en
+cada contracte quin estat i deute tenen i un sumatori de tot deute del llistat.
+
+![](_static/polisses/pending_amount_list.png)
+
+Per més informació es pot llegir la seccció de [gestió d'impagats](/comer/gestion_impago.md) en comercialització.
+
 
 ## Subministrament no tallable
 

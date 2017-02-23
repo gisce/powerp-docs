@@ -79,6 +79,7 @@ pages:
     - CUPS: comer/cups.md
     - Contractes: comer/contratos.md
     - Facturació: comer/facturacion.md
+    - Gestió impagats: comer/gestion_impago.md
     - Gestió ATR: comer/atr.md
     - SIPS: comer/sips.md
     - Administració Pública:
