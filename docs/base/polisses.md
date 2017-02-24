@@ -65,12 +65,16 @@ vigent.
 ## Visualització deute d'una pòlissa/contracte
 
 Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
-tenim els camps **Estat pendent** i **Quantitat pendent**.
+tenim els camps **Estat pendent**, **Quantitat pendent** i **Quantitat deute**.
 
 ![](_static/polisses/pending_amount_form.png)
 
-* **Quantitat pendent**: Indica els euros que deu aquesta pòlissa/contracte de
-  totes les factures que tingui pendents.
+* **Quantitat pendent**: Indica els euros que aquesta pòlissa està pendent de
+  pagar. Ja sigui perquè és d'una devolució o perquè encara no s'ha remesat.
+
+* **Quantitat deute**: Indica els euros que deu aquesta pòlissa que són d'impagament.
+  Agafa la quantitat residual de totes les factures que el seu estat pendent no
+  sigui **Correcte**.
 
 * **Estat pendent**: Mostra el *pitjor* estat de totes les pòlisses que no estiguin
   en estat correcte.
