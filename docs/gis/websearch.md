@@ -77,7 +77,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Potència Total del CT (Cal afegir kVA al final)
 - Adreça
 - Data APM
-- Tensió primari
+- Tensió primari (Cal afegir V al final)
 - Circuit
 
 ### Exemple de cerca
