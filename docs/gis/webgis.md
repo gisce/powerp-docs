@@ -8,7 +8,7 @@
 
 # Interfície
 
- ![](_static/interfice.png)
+ ![](_static/interficie.png)
  
  La interfície es composa dels següents elements:
 
