@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-02-24 14:05+0100\n"
-"PO-Revision-Date: 2017-02-24 14:07+0100\n"
+"POT-Creation-Date: 2017-02-28 16:44+0100\n"
+"PO-Revision-Date: 2017-02-28 16:45+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -19102,6 +19102,33 @@ msgstr ""
 "Para acceder debemos introducir nuestro usuario y contraseña y presiona "
 "retorno o el botón de login. El usuario y la contraseña es el mismo que para "
 "el ERP."
+
+msgid "Interfície"
+msgstr "Interficie"
+
+msgid "<img alt=\"\" src=\"../_static/interficie.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+msgid "La interfície es composa dels següents elements:"
+msgstr "La interficie se compone de los siguientes elementos:"
+
+msgid "Control de cerca"
+msgstr "Control de busqueda"
+
+msgid "Selector de capes"
+msgstr "Selector de capas"
+
+msgid "Control de zoom"
+msgstr "Control de zoom"
+
+msgid "Control d'ubicació"
+msgstr "Control de ubicación"
+
+msgid "Exportació"
+msgstr "Exportacion"
+
+msgid "Quadre de coordenades"
+msgstr "Cuadro de coordenadas"
 
 msgid "Camps de cerca"
 msgstr "Campos de busqueda"
