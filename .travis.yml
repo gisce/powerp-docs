@@ -7,4 +7,4 @@ install:
 script:
   - mkdocs build -f mkdocs.yml
   - mkdocs build -f mkdocs_es.yml --clean
-  - python check_strings.py
+  - python check_strings.py -v -l

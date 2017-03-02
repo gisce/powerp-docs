@@ -62,7 +62,94 @@ vigent.
 
 * **Observacions**
 
+## Visualització deute d'una pòlissa/contracte
 
+Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
+tenim els camps **Estat pendent**, **Quantitat pendent** i **Quantitat deute**.
+
+![](_static/polisses/pending_amount_form.png)
+
+* **Quantitat pendent**: Indica els euros que aquesta pòlissa està pendent de
+  pagar. Ja sigui perquè és d'una devolució o perquè encara no s'ha remesat.
+
+* **Quantitat deute**: Indica els euros que deu aquesta pòlissa que són d'impagament.
+  Agafa la quantitat residual de totes les factures que el seu estat pendent no
+  sigui **Correcte**.
+
+* **Estat pendent**: Mostra el *pitjor* estat de totes les pòlisses que no estiguin
+  en estat correcte.
+
+També podem llistar **totes** les pòlisses/contractes que tinguin algun deute a
+través del menú: **Gestió de pòlisses > Pòlisses amb deute** on es pot veure en
+cada contracte quin estat i deute tenen i un sumatori de tot deute del llistat.
+
+![](_static/polisses/pending_amount_list.png)
+
+Per més informació es pot llegir la seccció de [gestió d'impagats](/comer/gestion_impago.md) en comercialització.
+
+
+## Subministrament no tallable
+
+Podem marcar una pòlissa com a **subministrament no tallable**. Existeixen
+dos tipus de motius per fer-ho: els que vénen definits en el BOE
+([24/2013 Article 52 punt 4](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13645)),
+o els que anem creant nosaltres mateixos
+
+!!! note
+    En el cas de les distribuidores un subministrament no tallable, hauria
+    de venir definit pel BOE (que ja venen pre-carregats)
+    En el cas de les comercialitzadores un subministrament no tallable pot ser
+    també per motiu comercial.
+
+### Marcar una pòlissa com a no tallable
+
+Des d'una pòlissa, podem seleccionar un dels motius no
+tallables. Si tenim la pòlissa marcada com a activa ho haurem de fer mitjançant
+una modificació contractual.
+
+![](_static/polisses/BotoSubministramentNoTallable.png)
+
+Aquí podem seleccionar el motiu, i també podem filtrar: per nom del motiu,
+per si és un motiu definit al BOE o no, i per descripció.
+
+![](_static/polisses/FormulariMotius.png)
+
+![](_static/polisses/FiltrarMotius.png)
+
+### Crear nous motius
+
+També podem definir motius de no tallable des del mateix formulari que acabem
+de veure, o des del menú de **Gestió de Pòlisses > Configuració > Motius no
+tallables**.
+En el dos casos farem clic sobre el botó nou. En el cas del formulari, el
+trobarem a la barra d'eines inferior (veure imatge anterior). I en el cas
+d'estar a l'apartat de configuració de pòlisses, el trobarem a la barra d'eines
+del menú superior, tal com veiem a la següent imatge
+
+![](_static/polisses/NouMotiu.png)
+
+Per definir el motiu emplenem els camps de nom, descripció i BOE si és el cas.
+Guardem els canvis, i es crea el motiu, i s'afegeix a motius de subministrament
+no tallable.
+
+### Llistar les pòlisses no tallables
+
+Per llistar totes les pòlisses no tallables, accedirem al menù: **Configuració
+de Pòlisses > Pòlisses > Pòlisses no tallables**
+
+![](_static/polisses/RutaNoTallables.png)
+
+I ens llistarà totes les pòlisses que tenen assignat un motiu de
+subministrament no tallable
+
+### Permisos
+
+Aquesta funcionalitat està reservada pels usuaris que siguin del grup
+**GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos específics per
+interactuar amb els motius de subministrament no tallable.
+La resta d'usuaris podran llistar totes les pòlisses que tenen un motiu de
+subministrament no tallable, i veure el motiu de no tall. Però no podran crear
+ni assignar motius.
 
 ## Canvi data firma contracte
 
@@ -86,3 +173,23 @@ activa**.
 
 ## Modificacions contractuals
 
+## CNAE
+
+El CNAE (Clasificación Nacional de Actividades Económicas) és un codi de 4
+xifres amb una estructura en forma d'arbre.
+
+Per exemple, el codi 61 pertany a _"Telecomunicaciones"_ mentre que el 061
+pertany a _"Extracción de crudo de petróleo"_. Conforme es van afegint dígits
+es va concretant de forma més exacte l'activitat de l'abonat.
+
+Per això és necessari concretar un CNAE de **4 dígits** que descrigui
+**l'activitat concreta de l'abonat**.
+
+Per fer-ho cal fer click al botó de la lupa a l'apartat **CNAE** al **crear **
+**una nova pòlissa**:
+
+![](_static/polisses/cnae.png)
+
+Llavors apareix la llista de CNAEs a escollir:
+
+![](_static/polisses/llista_cnae.png)

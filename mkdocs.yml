@@ -1,10 +1,16 @@
 site_name: PowERP Docs
+repo_name: GitHub
+repo_url: https://github.com/gisce/powerp-docs
+edit_uri: edit/master/docs
+site_author: GISCE-TI, S.L.
+google_analytics: ['UA-27668469-4', 'builds.gisce.net']
 theme: readthedocs
 
 markdown_extensions:
   - admonition
   - grid_tables
-  - markdown_blockdiag
+  - markdown_blockdiag:
+      fontpath: fonts/DejaVuSans.ttf
 
 pages:
   - Home: index.md
@@ -32,6 +38,7 @@ pages:
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
       - Règim especial: distri/facturacio_re.md
+      - Liquidació: distri/liquidacion_peajes.md
       - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
       - REE: distri/adm-pub/ree.md
@@ -39,8 +46,11 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfils: distri/perfiles.md
+    - Descarrecs: distri/descarrecs.md
     - GIS:
-      - GIS Web: gis/websearch.md
+      - GIS Web:
+        - Visor web: gis/webgis.md
+        - Buscador: gis/websearch.md
       - Qgis: gis/qgis.md
       - Instalacions:
         - Subestacions: distri/subestaciones.md
@@ -51,6 +61,7 @@ pages:
         - LBT: distri/lbt.md
         - Instalacions RE: distri/re.md
         - Expedients: distri/expedientes.md
+        - Despatxos: distri/despatxos.md
         - Sincronització CUPS: distri/sincronizacion_cups.md
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
@@ -68,6 +79,7 @@ pages:
     - CUPS: comer/cups.md
     - Contractes: comer/contratos.md
     - Facturació: comer/facturacion.md
+    - Gestió impagats: comer/gestion_impago.md
     - Gestió ATR: comer/atr.md
     - SIPS: comer/sips.md
     - Administració Pública:

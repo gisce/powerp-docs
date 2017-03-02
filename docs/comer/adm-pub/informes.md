@@ -119,17 +119,39 @@ Cas 3: Tenim 12 mesos d'històric de facturació:
 Per obtenir les factures s'efectuen les següents operacions:
 
  * S'obtenen totes les factures on la _data_factura_ <= _data_inici_ entrada
- al wizard.
+   al wizard.
  * Un cop obtingudes, d'entre totes les factures es filtren les **anul·ladores**
- **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
+   **(A)** i **rectificadores amb substituent (B)**, i amb el diari d'energia.
  * Per últim es tornen a buscar d'entre totes les factures, les normals i
- rectificadores que siguin **diferents** de les anteriors, doncs si una factura
- ja ha estat abonada no cal rectificar-la.
+   rectificadores que siguin **diferents** de les anteriors, doncs si una
+   factura ja ha estat abonada no cal rectificar-la.
 
 ### Detecció del tipus de consumidor
 
-Es considera un consumidor domèstic si la tarifa de la factura és una **'2.0A'**
-o **'2.0 DHA'**.
+* El tipus de consumidor es detecta mitjançant el CIF o NIF del client de la
+factura:
+    * **NIF**: es considerarà un consumidor **domèstic**.
+    * **CIF**: es considerarà un consumidor **industrial**.
+
+### Càlcul del número de clients per banda de consum
+
+Durant la generació de l'informe es realitza un sumatori per cada banda
+especificada a l'annex 1 del BOE n. 69  Sec. I. Pàg. 30271. Les bandes són
+les següents:
+
+ ![bandes](../_static/informes/model_606/bandes.png)
+
+Per cada factura obtinguda, es classifiquen les corresponents pòlisses segons el
+tipus de consumidor.
+
+Un cop classificades les pòlisses, mitjançant el **consum anual** es procedeix a
+classificar-les de nou a la **banda** que els hi correspón, tenint també en
+compte el tipus de consumidor.
+
+Un cop classificades les pòlisses per tipus de consumidor i banda, es realitza
+**un sumatori** per cada pòlissa existent a cada banda. No es realitza cap tipus
+de mitjana aritmètica. D'aquesta forma es fa el recompte del total de clients
+a cada banda de consum. 
 
 ### Càlcul de dades
 
@@ -159,15 +181,19 @@ Les dades a calcular són les següents:
      * Es calcula de la mateixa manera que **[C]** però sumant també l'IVA per
      cada línia.
  * **_Facturación 	energía a mercado libre sin impuestos [E]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [BE] - [B].
  * **_Facturación 	energía a mercado libre sin IVA ni otros recuperables [F]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [CF] - [C].
  * **_Facturación 	energía a mercado libre con todos los impuestos e IVA [G]_**
-     * Val zero (0). S'inicialitza a zero però mai s'actualitza.
+     * És la diferència dels apartats [DG] - [D].
+ * **_Facturación 	total sin impuestos [B]+[E]_**
+     * Sumatori de l'import "base" de cada factura.
  * **_Facturación 	total sin IVA ni otros impuestos recuperables [C]+[F]_**
-     * Sumatori de (amount_untaxed + tax_amount) de cada factura.
+     * Sumatori de (base + impost) de cada factura.
+ * **_Facturación   total con todos los impuestos e IVA [D]+[G]_**
+     * Sumatori de l'import "total" de cada factura.
  * **_Facturación 	alquiler de equipos de medida y control [Lloguer]_**
-     * Sumatori del «price_subtotal» per les línies del tipus «lloguer».
+     * Sumatori de l'import de la línia per les línies del tipus «lloguer».
  * **_Tensión máxima [v_max]_**
      * Obté la tensió més alta d'entre totes les tensions de totes les
      factures llistades.
