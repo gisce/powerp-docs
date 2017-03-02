@@ -8,6 +8,7 @@ echo "Reset po file from local branch"
 git reset HEAD locales/es_ES/LC_MESSAGES/messages.po
 git checkout -- locales/es_ES/LC_MESSAGES/messages.po
 echo "Merging from master"
+git fetch
 git merge origin/master
 echo "Merging pofile using msgcat"
 msgcat --use-first messages.local.po messages.remote.po -o messages.merge.po
