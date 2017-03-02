@@ -30,7 +30,7 @@ if args.verbose:
 locales = join(cwd, 'locales')
 
 pot_path = join(locales, 'messages.pot')
-es_path = join(locales, join('es_ES', join('LC_MESSAGES', 'messages.po')))
+es_path = join(locales, 'es_ES', 'LC_MESSAGES', 'messages.po')
 
 if not isfile(pot_path) or not isfile(es_path):
     print (
@@ -65,7 +65,7 @@ for s in es_file:
     es_strings.append(s.id)
     if s.id == "":
         es_strings.remove("")
-    elif not(s.id and s.string) or s.fuzzy:
+    elif not s.string or s.fuzzy:
         failed_strings.append(s.id)
         if s.fuzzy:
             fuzz_strings.append(s.id)
@@ -97,7 +97,7 @@ if substr != set() and args.verbose:
 elif args.verbose:
     print ('{}OK{}'.format(green, endcl))
 
-lenstr = len(strings) + len(substr)
+lenstr = len(strings)
 
 print ("\nStrings' translated test briefing:\n")
 print ('\t\t{}Translated strings:\t{}{}\t({}%)'.format(
