@@ -21,21 +21,21 @@
  
 ## Control de cerca
  
- Esta situat a la psart superior esquerra i ens permet cercar elements al GIS. 
+ Esta situat a la parte superior esquerra i ens permet cercar elements al GIS. 
 
 ## Selector de capes
  
- El selector de capes e l'eina que ens permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
+ El selector de capes es l'eina que ens permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
  
  ![](_static/capes.png)
  
  En aquest control es poden diferenciar en dos tipus, capes de base (part superior del contol) i capes sobreposades(part inferior del control)
  
  - Capes base:
-    -  Nomes podem seelcionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
+    -  Només podem seelcionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
 
  - Capes sobreposades:
-    - aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
+    - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
 
 ## Control de zoom
  
