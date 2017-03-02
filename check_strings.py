@@ -21,6 +21,7 @@ args = parser.parse_args()
 green = "\033[0;32m"
 yellow = "\033[0;33m"
 red = "\033[0;31m"
+purple = "\033[0;35m"
 endcl = "\033[0m"
 
 cwd = os.getcwd()
@@ -112,7 +113,7 @@ print ('(No Fuzzy)\t{}Untranslated strings:\t{}{}\t({}%)'.format(
     (len(failed_strings)-len(fuzz_strings))/lenstr * 100
 ))
 print ('\t\t{}Missing strings:\t{}{}\t({}%)'.format(
-    red, len(substr), endcl, len(substr)/lenstr * 100
+    purple, len(substr), endcl, len(substr)/lenstr * 100
 ))
 
 print ('\t----------------------------------------------------')
