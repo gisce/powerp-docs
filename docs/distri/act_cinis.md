@@ -107,7 +107,7 @@ associada al tram d’AT:
   **Tipus de línia de BT = Aèria** i el camp **Posada en façana = desactivat**.
 - Apoyada sobre fachada, un circuito = **4**: si el valor del camp
   **Tipus de línia de BT = Aèria** i el camp **Posada en façana = activat**.
-- Subterránea, un circuito = **1**: si el valor del camp
+- Subterránea, un circuito = **7**: si el valor del camp
   **Tipus de línia de BT = Subterrània**
 
 ![](_static/act_cini/lbt_posada_facana_aeria.png)
