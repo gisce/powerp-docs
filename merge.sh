@@ -15,6 +15,8 @@ mv messages.merge.po locales/es_ES/LC_MESSAGES/messages.po
 echo "Cleaning repository"
 rm messages.local.po
 rm messages.remote.po
+echo "Updating python versions"
+pip install -r requirements.txt
 echo "Updating pot file to check strings after merge..."
 if [ -f locales/messages.pot ];
 then
