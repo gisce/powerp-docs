@@ -148,6 +148,145 @@ interfície web de _Launchpad_ i demanar que es posi en la nova versió oficial.
 
 ## Configuració
 
+Hi ha dos configuracions, una pel client i una pel servidor. Respectivament:
+
+- ~/.openerprc
+- ~/.openerp_serverrc
+
+Aquests fitxers segueixen la convenció per al _ConfigParser_ de Python.
+
+Les linies que comencen per "#" o ";" són comentaris.
+
+El fitxer de configuració del client es genera automaticament al iniciar-lo per
+primera vegada.
+La configuració per al servidor, en canvi, es pot crear automaticament utilitzant
+la següent comanda:
+
+    openerp-server.py -s
+
+En cas de no trobar els fitxers de configuració, el client i el servidor utilitzen
+la configuració per defecte.
+
+### Configuració del Servidor
+
+Configuracions disponibles:
+
++-------------------+--------------------------------------------------------------+
+| interface         | Adreça a la que es vincula el servidor                       |
++-------------------+--------------------------------------------------------------+
+| port              | Port al que el servidor escolta                              |
++-------------------+--------------------------------------------------------------+
+| database          | Nom de la Base de Dades a utilitzar                          |
++-------------------+--------------------------------------------------------------+
+| user              | Nom del Usuari per connectar a la Base de Dades              |
++-------------------+--------------------------------------------------------------+
+| translate_in      | Fitxer per traduir OpenERP al teu llenguatge                 |
++-------------------+--------------------------------------------------------------+
+| translate_out     | Fitxer per exportar el llenguatge del OpenERP                |
++-------------------+--------------------------------------------------------------+
+|                   | Especifica els moduls per exportar. S'ha d'utilitzar en      |
+| translate_modules | combinació amb el paràmetre de la línia de comandes:         |
+|                   | `--i18n-export`                                              |
++-------------------+--------------------------------------------------------------+
+| language          | Especificació del llenguatge utilitzat per OpenERP.          |
++-------------------+--------------------------------------------------------------+
+| verbose           | Habilita la sortida per debugar                              |
++-------------------+--------------------------------------------------------------+
+| init              | Inicialitza un mòdul (Per tots els mòduls, utilitzar _'all'_)|
++-------------------+--------------------------------------------------------------+
+| update            | Actualitza un mòdul (Per tots els mòduls, utilitzar _'all'_) |
++-------------------+--------------------------------------------------------------+
+| upgrade           | Millora/Instala/Desinstala moduls                            |
++-------------------+--------------------------------------------------------------+
+| db_name           | Especifica el nom de la Base de Dades                        |
++-------------------+--------------------------------------------------------------+
+| db_user           | Especifica el nom del usuari de la Base de Dades             |
++-------------------+--------------------------------------------------------------+
+| db_password       | Especifica la contrasenya de la Base de Dades                |
++-------------------+--------------------------------------------------------------+
+| db_host           | Especifica el host (adreça IP) de la Base de Dades           |
++-------------------+--------------------------------------------------------------+
+| db_port           | Especifica el port per al host de la Base de Dades           |
++-------------------+--------------------------------------------------------------+
+| pg_path           | Especifica el camí al executable _pg_                        |
++-------------------+--------------------------------------------------------------+
+
+Per crear el teu propi fitxer de configuració, inicia el servidor amb el paràmetre
+de la línia de comandes `-s` o `--save`.
+
+Si vols iniciar el servidor amb una configuració alternativa, utilitza el
+paràmetre de la línia de comandes `-c <config file>` o `--config=<config file>`.
+
+A continuació pots veure una configuració bàsica:
+
+```
+[options]
+verbose = False
+xmlrpc = True
+database = terp
+update = {}
+port = 8069
+init = {}
+interface = 127.0.0.1
+reportgz = False
+```
+
+I d'una configuració completa:
+
+```
+[printer]
+path = none
+softpath_html = none
+preview = True
+softpath = none
+
+[logging]
+output = stdout
+logger =
+verbose = True
+level = error
+
+[help]
+index = http://www.openerp.com/documentation/user-manual/
+context = http://www.openerp.com/scripts/context_index.php
+
+[form]
+autosave = False
+toolbar = True
+
+[support]
+recipient = support@openerp.com
+support_id =
+
+[tip]
+position = 0
+autostart = False
+
+[client]
+lang = en_US
+default_path = /home/user
+filetype = {}
+theme = none
+toolbar = icons
+form_tab_orientation = 0
+form_tab = top
+
+[survey]
+position = 3
+
+[path]
+pixmaps = /usr/share/pixmaps/openerp-client/
+share = /usr/share/openerp-client/
+
+[login]
+db = eo2
+login = admin
+protocol = http://
+port = 8069
+server = localhost
+```
+
+
 ## Opcions de línia de comandes
 
 ## Servidor OpenERP i Client Web - Start/Stop
