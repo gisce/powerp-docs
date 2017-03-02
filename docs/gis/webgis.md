@@ -27,6 +27,8 @@
  
  El selector de capes e l'eina que ens permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
  
+ ![](_static/capes.png)
+ 
  En aquest control es poden diferenciar en dos tipus, capes de base (part superior del contol) i capes sobreposades(part inferior del control)
  
  - Capes base:
@@ -45,9 +47,13 @@
  
  Aquest control permet situar el mapa a la nostra ubicació.
  
+ ![](_static/permet_ubicacio.png)
+ 
  Un cop premem el boto el navegador ens demanara si volem permetre el GIS coneixer la nostra ubicació
  
  Seguidament podem veure la nostra ubicació. L'indicador mostrara el centre de la zona aproximada de l'ubicació i el cercle la zona aproximada.
+ 
+ ![](_static/ubicacio.png)
 
 ## Exportació
   
@@ -57,5 +63,5 @@
 
  Aquest control esta situat a la cantonada inferior esquerra i ens permt verue les coordenades del punt on tenim el ratolí. També permet buscar una coordenada concreta, clicant sobre el control apareixerà un formulari per indicar la coordenada a bucar. Un Cop introduïda la coordenada prement retorn apereixerà un indicador de la situacio de la coordenada.
   
-
+ ![](_static/coordenades.png)
 
