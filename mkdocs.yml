@@ -94,3 +94,14 @@ pages:
     - Gestió de pagaments i cobraments: facturacio/cobraments.md
     - Gestió de lectures: facturacio/lectures.md
     - Lots: facturacio/lots.md
+  - Desenvolupament OpenERP:
+    - Inici: erp/index.md
+    - Introducció: erp/intro.md
+    - Desenvolupament de mòduls: erp/modules.md
+    - Desenvolupament de processos d'empresa: erp/process.md
+    - Configuració avançada de processos d'empresa: erp/adv_process.md
+    - Serialització, migració, actualitzacions i proves: erp/patches.md
+    - Integració de serveis base: erp/services.md
+    - Altres temes: erp/other.md
+    - Execució i Desplegament: erp/build.md
+    - Annex: erp/annex.md
