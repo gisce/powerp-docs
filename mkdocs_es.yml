@@ -37,7 +37,6 @@ pages:
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
     - Contadores: distri/contadores.md
-    - Lecturas: distri/lecturas.md
     - Facturación: distri/facturacion.md
     - Facturación:
       - Peajes: distri/facturacion_peajes.md

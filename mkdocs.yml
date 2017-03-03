@@ -34,7 +34,6 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Contadors: distri/contadores.md
-    - Lectures: distri/lecturas.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
