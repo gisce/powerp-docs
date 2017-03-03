@@ -158,6 +158,38 @@ donar d'alta un comptador]
 
 ### Donar de Baixa una pòlissa
 
+Per donar de baixa una pòlissa en una data determinada s'han de tenir en compte
+els següents punts.
+
+**A la pestanya General:**
+
+* El camp _Data de Baixa_: S'hi indicarà la data en que es farà efectiva la
+  data de baixa de la pòlissa i ha de coincidir amb la data de baixa de
+  comptador associat.
+* La casella _Baixa_: Es marcarà la casella _Baixa_ en el moment de posar la
+  _data de baixa_.   
+  Es mantindrà la casella _Activa_ fins que s'hagi realitzat l'última factura
+  d'aquesta pòlissa.
+* La casella _Activa_: Es desactivarà quan s'hagi realitzar l'última factura
+  d'aquesta pòlissa.   
+  Dependrà de si es "mensual" o "bimestral".
+
+!!! Warning
+    No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
+
+**A la pestanya Comptadors:**
+
+Al comptador actiu s'han de completar els següents camps:
+
+* El camp _Data Baixa_: S'hi indicarà la data en la que es retira el comptador.   
+  Coincidirà amb la _Data Baixa_ de la pòlissa.   
+  Aquesta data s'utilitzarà per facturar el terme de potencia de la última
+  factura i només tindrà en compte els dies des de l'última facturació fins la
+  data.
+* La casella _Activa_: Es desactivarà quan s'hagi realitzat l'última facturació
+  de la pòlissa.   
+  Dependrà de si es "mensual" o "bimestral".
+
 ### Realitzar canvi de titularitat
 
 ### Canvi de la potencia contractada
