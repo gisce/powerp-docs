@@ -42,7 +42,7 @@ facturació funcioni correctament.
 Es selecciona el botó "_Nou_" de la barra de botons i es procedeix a completar
 les dades de les diferents pestanyes.
 
-#### Penstanya General
+#### Pestanya General
 
 !!! TODO
 
