@@ -190,13 +190,36 @@ Al comptador actiu s'han de completar els següents camps:
   de la pòlissa.   
   Dependrà de si es "mensual" o "bimestral".
 
+!!! Warning
+    No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
+
 ### Realitzar canvi de titularitat
+
+Un canvi de titularitat d'una pòlissa suposa [donar de baixa una
+pòlissa](#donar-de-baixa-una-polissa) i [donar d'alta una
+pòlissa](#donar-dalta-una-polissa) nova amb les dades del nou titular.
 
 ### Canvi de la potencia contractada
 
+Per realitzar el canvi de potencia contractada ha de realitzar-se al inici del
+periode de facturació de la pòlissa.   
+Si s'ha de realitzar el canvi enmig d'un periode de facturació s'haurà de fer
+[una baixa de la pòlissa](#donar-de-baixa-una-polissa) i [donar d'alta una
+pòlissa](#donar-dalta-una-polissa) perquè es poguin facturar correctament els
+termes de potència de cada un dels contractes.
+
 ### Canvi de la tarifa
 
-### Canvi de facturació mensual/bimestral
+Si el canvi de potencia, que es faci a l'inici d'un periode de facturació,
+suposi un canvi de tarifa de peatge, s'haurà de fer un canvi de comptador. Per
+realitzar-ho cal [donar de baixa el comptador] i [donar d'alta un nou comptador]
+inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
+
+!!! Note
+    Sempre s'ha d'inicialitzar un nou comptador amb les lectures dels periodes
+    de la nova tarifa.   
+    Recorda que cada peruide d'una tarifa es un producte diferent. (p.e. P1(2.0)
+    es un producte i P1(2.1) es un altre producte)
 
 ## Formulari d'una pòlissa/contracte
 
