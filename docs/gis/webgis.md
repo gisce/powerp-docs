@@ -175,7 +175,7 @@
     
 4. Seleccionar el origen de la incidència.
     
-    ![](_static/qualitat_at/iniciar_qualitat.png)
+    ![](_static/qualitat_at/origen.png)
 
 5. Seleccionar el tipus d'incidència.
     
