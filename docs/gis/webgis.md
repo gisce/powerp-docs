@@ -65,9 +65,9 @@
   
  ![](_static/coordenades.png)
 
-# Simulaciones
+# Simulacions
 
-## Simulaciones AT
+## Simulacions AT
 
 1. Seleccionar un tram de AT. Això farà apareixer en pantalla una targeta amb la informació del tram i del botó "Simula".
  <imatge>
