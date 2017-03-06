@@ -83,8 +83,9 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
   reinicia a 0.
 
     !!! Note
-        Si la casella _Gir_ amb 100.000. Quan el comptador arribi a 99.999,
-        el següent valor serà 0.
+        Si es un comptador amb 5 rodes, s'ha d'indicar el valor de la casella
+        _Gir_ amb 100.000. Quan el comptador arribi a 99.999, el següent valor
+        serà 0.
 
     El progama fa els càlculs dels consums, tinguent en compte el gir del
     comptador indicat en aquest camp.    
