@@ -53,6 +53,127 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
     comptador*
 
 
+## Donar d'alta un Comptador
+
+Ens situem a la fitxa de la pòlissa a la que volem afegir el comptador. Allà,
+anem a la pestanya _Comptadors_ i polsarem el botó _Nou_ tal i com s'indica
+en la imatge següent:
+
+!!! Todo
+
+Apareixerà la fitxa del comptador que ha de cumplimentar-se com es descriu més
+endavant. S'ha d'emplenar també el camp informatiu _N comptador_ de la part
+superior. Sempre ha de conincidir amb el número de série del comptador actiu.
+
+!!! Todo
+
++ **Nº de serie**: S'ha d'indicar el número de série del comptador. Si el
+  comptador ja ha estat donat d'alta en alguna altra ocasió, el número de série
+  haurà de buscar-se en la llista amb la _lupa_. En el cas que el comptador
+  sigui nou, s'haurà de donar d'alta el número de série amb el botó _Nou_
++ **Comptador**: Aquest camp no s'ha d'emplenar momentàniament fins que es pogui
+  relacionar amb un producte del mòdul de "_Productes_"
++ **Producte**: En aquest camp  s'ha d'indicar el lloguer a cobrar en la llista
+  de lloguers que tingui la companyia. La Gestió dels lloguers es pot veure en
+  l'apartat de [Lloguers](#lloguer-de-comptadors).
++ **Lloguer**: Si la casella està marcada, es cobrarà el lloguer descrit en el
+  camp _Producte_.    
+      Si està desmarcada, no es cobrarà cap lloguer.
++ **Gir**: En aquest camp s'indica numéricament en quin valor el comptador es
+  reinicia a 0.
+
+    !!! Note
+        Si la casella _Gir_ amb 100.000. Quan el comptador arribi a 99.999,
+        el següent valor serà 0.
+
+    El progama fa els càlculs dels consums, tinguent en compte el gir del
+    comptador indicat en aquest camp.    
+    Quan la lectura actual es inferior a la anterior, aplica el valor del gir
+    per fer el càlcul correctament.    
+
+    !!! Warning
+        Es important que aquest camp sigui cumplimentat correctament.
+
++ **Constant de multiplicació**: Per defecte aquest valor serà 1. Per equips
+  antics en els que la constant sigui diferent de 1, s'haurà d'indicar el valor
+  de multiplicació dels valor de lectura introduïts.
++ **Data d'Alta**: Aquesta data es la que es tindrà en compta alhora de facturar
+  els termes de potència. Si la data d'alta es el 15-01-2010 i la següent
+  facturació es el 31-01-2010, es facturarà la part proporcional de la potencia
+  als 16 dies d'estar donat d'alta.
+
+    !!! Note
+        Aquesta data també és important per la generació dels perfils de consum.
+
++ **Actiu**: El comptador que es dona d'alta ha d'estar sempre actiu.    
+  Estaràn desactivats els demés comptadors que ja no estàn en funcionament en la
+  pòlissa en qüestió
++ **Data de Baixa**: Es la data en que un comptador deixa d'estar associat a
+  una pòlissa.    
+  El comptador que el substitueix ha d'estar donat d'alta el dia següent al de
+  la baixa del comptador anterior, així facturarà correctament el terme de
+  potència.
+
+Una vegada s'ha donat d'alta el comptador s'ha d'introduïr les [lectures
+inicials del comptador](#introduccio-de-lectures).
+
+## Donar de baixa un comptador
+
+Existeixen 3 casos en els que s'hagi de donar de baixa un comptador:
+
+1. Quan la pòlissa es dona de baixa i es retira el comptador.
+2. Quan es realitza un canvi de comptador i es substitueix per un altre.
+3. Quan es produeix un [canvi de tarifa o periodes de lectura](#canviar-de-3-a-6-periodes-de-lectures-en-tarifes-30a-i-31a).
+
+## Lloguer de comptadors
+
+!!! Todo
+
+Amb el programa base, venen predefinits els preus dels productes de lloguer que
+tenen els codis de ALQ1 a ALQ18 segons el decret vigent.
+
+Els preus dels lloguers del ALQ14 al ALQ18 els ha d'indicar la pròpia companyia.
+
+La pròpia companyia podrà crear nous lloguers, i aplicar els preus d'aquests.   
+També podrà crear nous productes com a combinació de diversos productes
+basant-se en els escandalls dels productes de GISCE-ERP. En la següent imatge
+es poden veure combinacions de diferents lloguers combinats. El preu d'un
+lloguer combinat s'autocaclcula com la suma dels seus productes base.
+
+!!! Todo
+
+## Canviar de 3 a 6 periodes de lectures en tarifes 3.0A i 3.1A
+
+Si fins una determinada data s'han estat prenent lectures d'una pòlissa amb
+tarifa 3.0A i 3.1A en tres periodes i es desitja fer el canvi a 6 periodes s'ha
+de procedir com si fos un canvi de comptador, però mantenint el número de série.
+
+El resultat final ha de ser tal i com es mostra en les següents imatges:
+
+!!! Todo
+
+!!! Note
+    S'observa que en data XX/XX/XXXX es dona de baixa el comptador amb el que es
+    realitzaven les lectures en 3 periodes.    
+    en data XX/XX/XXXX es dona d'alta el nou comptador amb el mateix número de
+    serie i s'inicialitza ja amb les lectures en 6 periodes.    
+    En les següents imatges s'observa les lectures en data XX/XX/XXXX dels dos
+    comptadors.
+
+!!! Todo
+
+!!! Note
+    S'observa que les lectures tant d'activa com de reactiva estan en tres
+    periodes. Aquest es el comptador que es dona de baixa el XX/XX/XXXX.
+
+!!! Todo
+
+!!! Note
+    En el nou comptador, que es l'actiu, s'observa que les lectures inicials a
+    XX/XX/XXXX estan fetes en 6 periodes i que la suma de P1+P4 es igual a la
+    del P1 del comptador anterior, igual que amb P2+P5 són iguals al P2
+    anterior, i la P3+P6 es igual al P3 del comptador amb 3 periodes.
+
 ## Com es fa un canvi de comptador a mig període de facturació?
 
 Suposem que el dia 13/10/2011 es canvia el comptador amb el **nº de sèrie**
@@ -71,8 +192,11 @@ tarifa ni de potència contractada no tindrem modificació contractual del dia
 
 Continguts:
 
+* [Introducció de lectures](#introduccio-de-lectures)
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
+
+## Introducció de Lectures
 
 ## Comparativa de consums
 
