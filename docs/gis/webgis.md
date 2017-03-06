@@ -74,7 +74,7 @@
  
 2. Premer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
  ![](_static/sim_at/step_2.png)
- !!! note
+!!! note
     Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(2).
@@ -98,7 +98,7 @@
 
 2. Premer "simular". Axo obrirà el llistat d'interrutpros maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
  ![](_static/sim_bt/step_2.png)
- !!! note
+!!! note
     Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(2). 
