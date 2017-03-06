@@ -1,6 +1,6 @@
 # Continguts
 
-* [Documentació del mòdul de comptadors i lectures](#documentacio-del-modul-de-comptadors-i-lectures)
+* [Documentació del mòdul de comptadors](#documentacio-del-modul-de-comptadors)
 * [Documentació de lectures per distribuïdores](#documentacio-de-lectures-per-distribuidores)
 
 # Documentació del mòdul de comptadors
