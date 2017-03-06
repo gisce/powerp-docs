@@ -105,7 +105,7 @@
     !!! note
         Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
  
-3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(2). 
+3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa. Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors, en el cas que no estigui tancat el podem buscar. 
     ![](_static/sim_bt/step_3.png)
  
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
