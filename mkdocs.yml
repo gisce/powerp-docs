@@ -33,7 +33,7 @@ pages:
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
-    - Contadors: distri/contadores.md
+    - Comptadors: distri/contadores.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
