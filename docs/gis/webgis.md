@@ -119,3 +119,43 @@
 
 5. Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_bt/step_5.png)
+    
+# Qualitat
+
+## Qualitat AT
+1. Fer una simulacio AT <link>
+2. Si volem crear una incicencia escollim "Crear incidencia" en el llistat d'incidencies i posem el nom de la incidencia, en el cas que volguem afegir un interval a una inicidencia la selecionem en el lllistat de inicidencies.
+<imagtge>
+3. Selecionem el origen de la incidencia.
+<imatge>
+4. Selecionem el tipus d'incidencia.
+<imatge>
+5. Selecionem la causa de la incidencia
+<imatge>
+6. Assigem la data d'inici de la incidencia (en format dia/mes/any hora:minuts:segons)
+<imatge>
+7. Assigem la data de fi de la incidencia (en format dia/mes/any hora:minuts:segons)
+<imatge>
+8. Creem la la inicidencia
+<imatge>
+!!! note
+    Un cop creada la inicidencia la podem consultar al ERP a Calidad/Trazabilidad/Incidencias
+
+## Qualitat BT 
+1. Fer una simulacio BT <link>
+2. Si volem crear una incicencia escollim "Crear incidencia" en el llistat d'incidencies i posem el nom de la incidencia, en el cas que volguem afegir un interval a una inicidencia la selecionem en el lllistat de inicidencies.
+<imagtge>
+3. Selecionem el origen de la incidencia.
+<imatge>
+4. Selecionem el tipus d'incidencia.
+<imatge>
+5. Selecionem la causa de la incidencia
+<imatge>
+6. Assigem la data d'inici de la incidencia (en format dia/mes/any hora:minuts:segons)
+<imatge>
+7. Assigem la data de fi de la incidencia (en format dia/mes/any hora:minuts:segons)
+<imatge>
+8. Creem la la inicidencia
+<imatge>
+!!! note
+    Un cop creada la inicidencia la podem consultar al ERP a Calidad/Trazabilidad/Incidencias
