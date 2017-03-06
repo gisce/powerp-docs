@@ -126,76 +126,76 @@
 
 1. Fer una simulacio AT <link> i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
-2. Selecionar l'opcio de qualitat en el llitat d'interruptors
+2. Seleccionar l'opció de qualitat en el llitat d'interruptors
     
     ![](_static/qualitat_at/iniciar_qualitat.png)
     
-3. Si es vol crear una incicencia escollim "Crear incidencia" en el llistat d'incidencies(1) i posem el nom de la incidencia(2), en el cas que volguem afegir un interval a una inicidencia la selecionem en el lllistat de inicidencies(1).
+3. Si es vol crear una incidència escollim "Crear incidència" en el llistat d'incidencies(1) i posem el nom de la incidència(2), en el cas que volguem afegir un interval a una incidència la selecionem en el llistat de incidències(1).
 
     ![](_static/qualitat_at/crear_inc_at.png)
 
-4. Selecionar el origen de la incidencia.
+4. Seleccionar el origen de la incidència.
     
     ![](_static/qualitat_at/origen.png)
 
-5. Selecionar el tipus d'incidencia.
+5. Seleccionar el tipus d'incidència.
     
     ![](_static/qualitat_at/tipus.png)
 
-6. Selecioanr la causa de la incidencia
+6. Seleccionar la causa de la incidència
     
     ![](_static/qualitat_at/causa.png)
 
-7. Assignar la data d'inici de la incidencia (en format dia/mes/any hora:minuts:segons)
+7. Assignar la data d'inici de la incidència (en format dia/mes/any hora:minuts:segons)
     
     ![](_static/qualitat_at/inici.png)
 
-8. Assignar la data de fi de la incidencia (en format dia/mes/any hora:minuts:segons)
+8. Assignar la data de fi de la incidència (en format dia/mes/any hora:minuts:segons)
     
     ![](_static/qualitat_at/fi.png)
 
-9. Crear la la inicidencia. Un cop creada l'icona canviará a un "tick".
+9. Crear la la incidència. Un cop creada l'icona canviará a un "tick".
     
     ![](_static/qualitat_at/crear.png)
 
 !!! note
-    Un cop creada la inicidencia la podem consultar al ERP a Calidad/Trazabilidad/Incidencias
+    Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
 
 ## Qualitat BT 
 
 1. Fer una simulacio BT <link>  i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
-2. Selecionar l'opcio de qualitat en el llitat d'interruptors
+2. Seleccionar l'opcio de qualitat en el llitat d'interruptors
     
     ![](_static/qualitat_at/iniciar_qualitat.png)
     
-3. Si es vol crear una incicencia escollim "Crear incidencia" en el llistat d'incidencies(1) i posem el nom de la incidencia(2), en el cas que volguem afegir un interval a una inicidencia la selecionem en el lllistat de inicidencies(1).
+3. Si es vol crear una incidència escollim "Crear incidencia" en el llistat d'incidències(1) i posem el nom de la incidència(2), en el cas que volguem afegir un interval a una inicidencia la seleccionem en el llistat de incidències(1).
     
     ![](_static/qualitat_bt/crear_inc_bt.png)
     
-4. Selecionar el origen de la incidencia.
+4. Seleccionar el origen de la incidència.
     
     ![](_static/qualitat_at/iniciar_qualitat.png)
 
-5. Selecionar el tipus d'incidencia.
+5. Seleccionar el tipus d'incidència.
     
     ![](_static/qualitat_bt/tipus.png)
 
-6. Selecionar la causa de la incidencia
+6. Seleccionar la causa de la incidencia
     
     ![](_static/qualitat_bt/tipus.png)
 
-7. Assignar la data d'inici de la incidencia (en format dia/mes/any hora:minuts:segons)
+7. Assignar la data d'inici de la incidència (en format dia/mes/any hora:minuts:segons)
     
     ![](_static/qualitat_bt/inici.png)
 
-8. Assignar la data de fi de la incidencia (en format dia/mes/any hora:minuts:segons)
+8. Assignar la data de fi de la incidència (en format dia/mes/any hora:minuts:segons)
     
     ![](_static/qualitat_bt/fi.png)
 
-9. Crear la la inicidencia
+9. Crear la la incidència
     
     ![](_static/qualitat_bt/crear.png)
 
 !!! note
-    Un cop creada la inicidencia la podem consultar al ERP a Calidad/Trazabilidad/Incidencias
+    Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
