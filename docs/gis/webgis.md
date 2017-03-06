@@ -89,8 +89,8 @@
     ![](_static/sim_at/step_4.png)
     
     !!! note
-        * Es dibuixaran els trams desconectats en vermell i els conectats en verd.
-        * En la part inferior de la targeta apreix el llistat de clients afectats, es a dis que es quederien sense corrent.
+        - Es dibuixaran els trams desconectats en vermell i els conectats en verd.
+        - En la part inferior de la targeta apreix el llistat de clients afectats, es a dis que es quederien sense corrent.
  
 5. Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_at/step_5.png)
@@ -112,9 +112,10 @@
  
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
     ![](_static/sim_bt/step_4.png)
+    
     !!! note
-        * Es dibuixaran en vermell els trams desconectats i els conectats en verd.
-        * En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
+        - Es dibuixaran en vermell els trams desconectats i els conectats en verd.
+        - En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
 
 5. Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_bt/step_5.png)
