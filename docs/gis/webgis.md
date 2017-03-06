@@ -65,3 +65,137 @@
   
  ![](_static/coordenades.png)
 
+# Simulacions
+
+## Simulacions AT
+
+1. Seleccionar un tram de AT. Això farà aparèixer en pantalla una targeta amb la informació del tram i del botó "Simula".
+    ![](_static/sim_at/step_1.png)
+ 
+2. Prémer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
+    ![](_static/sim_at/step_2.png)
+    
+    !!! note
+        Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
+ 
+3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). També el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
+    ![](_static/sim_at/step_3.png)
+    
+    !!! note
+        A la capçalera del llistat d'interruptors podem veure el nombre d'interruptors oberts
+
+ 
+4. Prémer el botó de "Simula" que haurà canviat a un simbol de "Play".
+    ![](_static/sim_at/step_4.png)
+    
+    !!! note
+        - Es dibuixaran els trams desconnectats en vermell i els connectats en verd.
+        - En la part inferior de la targeta apareix el llistat de clients afectats.
+ 
+5. Per sortir de la simulació podem tancar o prémer "ESC".
+    ![](_static/sim_at/step_5.png)
+
+
+## Simulacions BT
+
+1. Seleccionar el CT que volem simular.
+    ![](_static/sim_bt/step_1.png)
+
+2. Prémer "Simula". Aixo obrirà el llistat d'interruptors maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
+    ![](_static/sim_bt/step_2.png)
+    
+    !!! note
+        Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
+ 
+3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa. També el podem modificar l'estat del interruptor en el llistat d'interruptors, en el cas que no estigui tancat el podem buscar. 
+    ![](_static/sim_bt/step_3.png)
+ 
+4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
+    ![](_static/sim_bt/step_4.png)
+    
+    !!! note
+        - Es dibuixaran en vermell els trams desconnectats i els connectats en verd.
+        - En la part interior de la targeta apareix el llistat de clients afectats.
+
+5. Per sortir de la simulació podem tancar o prémer "ESC".
+    ![](_static/sim_bt/step_5.png)
+    
+# Qualitat
+
+## Qualitat AT
+
+1. Fer una simulacio AT <link> i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
+
+2. Seleccionar l'opció de qualitat en el llitat d'interruptors
+    
+    ![](_static/qualitat_at/iniciar_qualitat.png)
+    
+3. Si es vol crear una incidència escollim "Crear incidència" en el llistat d'incidencies(1) i posem el nom de la incidència(2), en el cas que volguem afegir un interval a una incidència la selecionem en el llistat de incidències(1).
+
+    ![](_static/qualitat_at/crear_inc_at.png)
+
+4. Seleccionar el origen de la incidència.
+    
+    ![](_static/qualitat_at/origen.png)
+
+5. Seleccionar el tipus d'incidència.
+    
+    ![](_static/qualitat_at/tipus.png)
+
+6. Seleccionar la causa de la incidència
+    
+    ![](_static/qualitat_at/causa.png)
+
+7. Assignar la data d'inici de la incidència (en format dia/mes/any hora:minuts:segons)
+    
+    ![](_static/qualitat_at/inici.png)
+
+8. Assignar la data de fi de la incidència (en format dia/mes/any hora:minuts:segons)
+    
+    ![](_static/qualitat_at/fi.png)
+
+9. Crear la la incidència. Un cop creada l'icona canviará a un "tick".
+    
+    ![](_static/qualitat_at/crear.png)
+
+!!! note
+    Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
+
+## Qualitat BT 
+
+1. Fer una simulacio BT <link>  i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
+
+2. Seleccionar l'opcio de qualitat en el llitat d'interruptors
+    
+    ![](_static/qualitat_at/iniciar_qualitat.png)
+    
+3. Si es vol crear una incidència escollim "Crear incidencia" en el llistat d'incidències(1) i posem el nom de la incidència(2), en el cas que volguem afegir un interval a una inicidencia la seleccionem en el llistat de incidències(1).
+    
+    ![](_static/qualitat_bt/crear_inc_bt.png)
+    
+4. Seleccionar el origen de la incidència.
+    
+    ![](_static/qualitat_at/origen.png)
+
+5. Seleccionar el tipus d'incidència.
+    
+    ![](_static/qualitat_bt/tipus.png)
+
+6. Seleccionar la causa de la incidencia
+    
+    ![](_static/qualitat_bt/tipus.png)
+
+7. Assignar la data d'inici de la incidència (en format dia/mes/any hora:minuts:segons)
+    
+    ![](_static/qualitat_bt/inici.png)
+
+8. Assignar la data de fi de la incidència (en format dia/mes/any hora:minuts:segons)
+    
+    ![](_static/qualitat_bt/fi.png)
+
+9. Crear la la incidència
+    
+    ![](_static/qualitat_bt/crear.png)
+
+!!! note
+    Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
