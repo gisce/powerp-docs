@@ -74,11 +74,13 @@
  
 2. Premer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
     ![](_static/sim_at/step_2.png)
+    
     !!! note
         Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1).
     ![](_static/sim_at/step_3.png)
+    
     !!! note
         indicar que es veu nombre de interruptors obert
 
@@ -91,6 +93,7 @@
 5.Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_at/step_5.png)
 
+
 ## Simulacions BT
 
 1 Selecionar el CT que volem simular.
@@ -98,6 +101,7 @@
 
 2. Premer "simular". Axo obrirà el llistat d'interrutpros maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
     ![](_static/sim_bt/step_2.png)
+    
     !!! note
         Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
  
