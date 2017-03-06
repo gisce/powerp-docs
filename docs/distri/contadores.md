@@ -3,9 +3,7 @@
 * [Documentació del mòdul de comptadors i lectures](#documentacio-del-modul-de-comptadors-i-lectures)
 * [Documentació de lectures per distribuïdores](#documentacio-de-lectures-per-distribuidores)
 
-# Documentació del mòdul de comptadors i lectures
-
-## Manual de comptadors
+# Documentació del mòdul de comptadors
 
 A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
@@ -15,7 +13,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
 ![](_static/contadores/ComptadorGeneral.png)
 
-### Pestanya General de la fitxa de comptadors
+## Pestanya General de la fitxa de comptadors
 
 * **Nº de serie**: És el número que identifica el comptador i al que
   s'associen les lectures, és el que veu el lector quan va a camp
@@ -55,9 +53,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
     comptador*
 
 
-## FAQ
-
-### Com es fa un canvi de comptador a mig període de facturació?
+## Com es fa un canvi de comptador a mig període de facturació?
 
 Suposem que el dia 13/10/2011 es canvia el comptador amb el **nº de sèrie**
 1000 per el comptador amb **nº de sèrie** 1001. Si i no hi ha cap més canvi de
@@ -77,8 +73,6 @@ Continguts:
 
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
-
---------------------------------------------------------------------------------
 
 ## Comparativa de consums
 
@@ -205,20 +199,13 @@ El flux general, i pels comptadors en particular, seria el següent:
 4. Assignar el *número de sèrie* , i per tant producte, als comptadors del menú
    **Infraestructura**
 
-!!! Todo
-```
-.. blockdiag::
-
 blockdiag {
-
     "Orden de compra" -> Confirmar
     Confirmar -> "Aceptada por proveedor" [label = "OK"]
     "Aceptada por proveedor" -> Recepción [label = "paquete"]
     Recepción -> "Asignación de Nº de série" [label = "albarán"]
-    "Asignación de Nº de série" -> "Asociar a contador" [label = "install"]
-
+    "Asignación de Nº de série" -> "Asociar a contador" [label = "install"];
 }
-```
 
 ### Producte comptador
 
@@ -251,8 +238,7 @@ referències de cada proveïdor per aquest producte.
 
 ![](_static/contadores/Captura07.png)
 
-|Pestanya preus i proveïdors de la fitxa de producte|
-|---------------------------------------------------|
+####Pestanya preus i proveïdors de la fitxa de producte
 
 * **Preu cost**: És el preu que s'utilitzarà a l'ordre de compra d'aquest
   producte
@@ -271,31 +257,27 @@ material en el magatzem.
 
 ![](_static/contadores/Captura01.png)
 
-|Mòdul de compres|
-|----------------|
+#### Mòdul de compres
 
 Per començar es selecciona el menú **Compres > Comandes de compra > Sol·licitud
 de presupostos**
 
 ![](_static/contadores/Captura02.png)
 
-|Sol·licitud de pressupost|
-|-------------------------|
+#### Sol·licitud de pressupost
 
 Prement el botó **Nou**
 
 ![](_static/contadores/Captura03.png)
 
-|Nova ordre de compra|
-|--------------------|
+#### Nova ordre de compra
 
 creem una nova ordre de compra i primer omplim els camps tal com es veu a la
 imatge
 
 ![](_static/contadores/Captura04.png)
 
-|Fitxa de sol·licitud de compra|
-|------------------------------|
+#### Fitxa de sol·licitud de compra
 
 S'ompliran com a mínim els camps de color blau:
 
@@ -323,8 +305,7 @@ de la llista de productes, el producte i la quantitat a sol·licitar.
 
 ![](_static/contadores/Captura05.png)
 
-|Afegir productes a sol·licitud de pressupost|
-|--------------------------------------------|
+#### Afegir productes a sol·licitud de pressupost
 
 Es selecciona el botó nou ![](_static/contadores/iconaNou.png) de l'apartat
 **línia de ordre de compra**
@@ -338,8 +319,7 @@ compra. Es marca en vermell els camps que ha d'omplir l'usuari.
 
 ![](_static/contadores/Captura08.png)
 
-|Omplir línia de compra|
-|----------------------|
+#### Omplir línia de compra
 
 * **Producte**: Amb la lupa es selecciona el producte desitjat. Poden
   utilitzar-se els filtres necessaris per filtrar (**categoria**,
@@ -354,8 +334,7 @@ partir dels preus de compra introduïts a la base de dades.
 
 ![](_static/contadores/Captura09.png)
 
-|Ordre de compra a punt per confirmar|
-|------------------------------------|
+#### Ordre de compra a punt per confirmar
 
 Un cop introduïdes totes les línies de sol·licitud de compra i confirmats els
 preus de compra es pot prèmer el el botó **Confirmar comanda de compra**
@@ -370,8 +349,7 @@ de la comanda**
 
 ![](_static/contadores/Captura10.png)
 
-|Ordre de compra confirmada|
-|--------------------------|
+#### Ordre de compra confirmada
 
 Podem accedir posteriorment a les comandes confirmades a la opció de menú
 **Compres > Comandes de compra > Comanda de compra esperant aprovació** on es
@@ -380,8 +358,7 @@ proveïdor, confirmació de preus de compra, disponibilitat de productes, etc...
 
 ![](_static/contadores/Captura11.png)
 
-|Menú de comandes de compra. Esperant aprovació|
-|----------------------------------------------|
+#### Menú de comandes de compra. Esperant aprovació
 
 Podem veure el llistat de totes les ordres de compres
 que estan esperant la confirmació per part del proveïdor
@@ -389,8 +366,7 @@ que estan esperant la confirmació per part del proveïdor
 
 ![](_static/contadores/Captura12.png)
 
-|Llistat de  comandes de compra pendents d'aprovació|
-|---------------------------------------------------|
+#### Llistat de  comandes de compra pendents d'aprovació
 
 Fent doble clic sobre l'ordre de compra, es mostrarà en format formulari.
 
@@ -406,24 +382,21 @@ des del menu **Compres > Comandes de compra > Comandes de compra en procés**
 
 ![](_static/contadores/Captura13.png)
 
-|Menu de comandes de compra. En procés|
-|-------------------------------------|
+#### Menu de comandes de compra. En procés
 
 Obtindrem el llistat de totes les ordres de compra que
 han estat aprovades.
 
 ![](_static/contadores/Captura14.png)
 
-|Llistat de comandes de compra en procés|
-|---------------------------------------|
+#### Llistat de comandes de compra en procés
 
 L'ordre de compra encara es pot cancel·lar. Per fer-ho accedim a l'ordre de
 compra i premem el botó **Cancel·la comanda de compra**
 
 ![](_static/contadores/Captura15.png)
 
-|Cancel·lar ordre de compra en procés|
-|------------------------------------|
+#### Cancel·lar ordre de compra en procés
 
 ### Recepció de material amb número de sèrie
 
@@ -432,8 +405,7 @@ doble-click.
 
 ![](_static/contadores/Captura15.png)
 
-|Ordre de compra a punt per rebre el material|
-|--------------------------------------------|
+#### Ordre de compra a punt per rebre el material
 
 Quan arriba l'albarà amb el material al magatzem es procedeix a la seva
 recepció prement al botó de la part superior dreta **Paquet/Albarà**
@@ -443,16 +415,14 @@ següent:
 
 ![](_static/contadores/Captura16.png)
 
-|Linies de paquets d'un albarà|
-|-----------------------------|
+#### Linies de paquets d'un albarà
 
 Prement sobre la línia de recepció de paquets obtindrem finalment la fitxa per
 omplir les dades de la recepció del material.
 
 ![](_static/contadores/Captura17.png)
 
-|Fitxa de recepció de material|
-|-----------------------------|
+#### Fitxa de recepció de material
 
 Aquesta fitxa conté un seguit de camps a títol informatiu:
 
@@ -483,16 +453,14 @@ veu en la imatge següent:
 
 ![](_static/contadores/Captura19.png)
 
-|Fitxa recepció material dividida en 1 sèrie correlativa (Cas 1)|
-|---------------------------------------------------------------|
+#### Fitxa recepció material dividida en 1 sèrie correlativa (Cas 1)
 
 Per acabar, prement el botó **Productes rebuts** apareixerà el cuadre de diàleg
 següent:
 
 ![](_static/contadores/Captura20.png)
 
-|Productes rebuts (Cas 1)|
-|------------------------|
+#### Productes rebuts (Cas 1)
 
 Prement el botó **Crear albarà** es donarà el procés de recepció de material
 per acabat, passant a estat **realitzat**
@@ -500,8 +468,7 @@ per acabat, passant a estat **realitzat**
 
 ![](_static/contadores/Captura21.png)
 
-|Fitxa recepció material en estat realitzat (Cas 1)|
-|--------------------------------------------------|
+#### Fitxa recepció material en estat realitzat (Cas 1)
 
 ### Cas 2: Comptadors amb 2 grups de número de sèrie correlatius
 
@@ -522,27 +489,24 @@ la opció **Divideix línia de moviment**
 
 ![](_static/contadores/Captura22.png)
 
-|Menú acció|
-|----------|
+#### Menú acció
 
 A la casella blava haurem d'indicar quants comptadors tenen número consecutiu,
 (en el nostre exemple indicarem *6*) i prèmer el botó **Dividir**
 
 ![](_static/contadores/Captura23.png)
 
-|Partició de línies|
-|------------------|
+#### Partició de línies
 
-El resultat serà que es crearan 2 línies a la 
-[fitxa empaquetat/albarà](#fitxa-recepcio-de-linia-de-material). Apareixeràn 
+El resultat serà que es crearan 2 línies a la
+[fitxa empaquetat/albarà](#fitxa-recepcio-de-linia-de-material). Apareixeràn
 les dues línies al fer doble-click sobre la línia.
 
 ![](_static/contadores/Captura24.png)
 
-|Recepció de material partida en dues línies (Cas 2)|
-|---------------------------------------------------|
+#### Recepció de material partida en dues línies (Cas 2)
 
-Un cop divit l'**Empaquetat/Albarà** es procedirà com en el 
+Un cop divit l'**Empaquetat/Albarà** es procedirà com en el
 [cas 1](#cas-1-tots-els-comptadors-amb-numero-de-serie-correlatius) per cada
 una de les linies creades.
 
@@ -551,4 +515,3 @@ Es pot fer d'aquesta forma si no hi ha recepcions parcials de material.
 En el cas de comandes que arriben amb diferents albarans d'entrega, el procés
 es realitza com en el
 [cas 2](#cas-2-comptadors-amb-2-grups-de-numero-de-serie-correlatius).
-
