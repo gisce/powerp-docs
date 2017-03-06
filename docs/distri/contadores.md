@@ -199,6 +199,48 @@ Continguts:
 
 ## Introducció de Lectures
 
+Existeixes diversos mètodes per l'entrada de lectures de comptadors. A partir
+de les lectures obtingudes per TPL, entrada manual per ruta, entrada de lectures
+per número de comptador...
+
+LEs lectures inicials d'un comptador s'entren des del menú: "_Mení → Facturació
+→ Lectures → Introduïr lectures per comptador_".
+
+El procés es descriu a continuació:
+
+1. Es sel·lecciona el número de comptador que s'acaba de donar d'alta en una
+   pòlissa.
+2. Una vegada localitzat es prem el botó _Continuar_.
+3. Es comproba que el client, la tarifa i la potència contractada siguin
+   correctes. En el camp data s'introduirà la data de la última facturació que
+   s'ha realitzat depenent de si la tarifa és bimestral o mensual.
+
+    !!! Note
+        Si es dona d'alta el comptador en data 01/02/2010:
+
+        * Si la pòlissa és bimestral, la lectura s'introduirà en data
+          31/12/2009, que és la última dels bimestrals.
+        * Si la pòlissa es factura mensualment, la data de la lectura inicial
+          del comptador seria 31/01/2010.
+
+    !!! Note
+        La _hora_ de la lectura es pot introduïr segons dos opcions:
+
+        * Si el tancament és _Manual_ la hora és 12:00.
+        * Si la lectura es pren amb _Tancament_, la hora de lectura és 00:00.
+
+    Seguidament es polsarà el botó _Introduir Dades_.
+
+4. S'introdueixen els valors corresponents al maxímetre, i els valos del
+   comptador d'activa i reactiva de cada un dels periodes, polsant el botó
+   _Guardar i següent_
+
+5. Si s'accedeix al comptador desde la pestanya _comptadors_ de la fitxa de la
+   pòlissa, s'observa el resultat de la inicialització del comptador.
+
+!!! tip
+    Veure la [importació i exportació de lectures de TPL](tpl)
+
 ## Comparativa de consums
 
 ### Introducció
