@@ -99,11 +99,14 @@
 Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
 </note>
  ![](_static/sim_bt/step_2.png)
+ 
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(2). 
  ![](_static/sim_bt/step_3.png)
+ 
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
  ![](_static/sim_bt/step_4.png)
 Es dibuixaran en vermell els trams desconectats i els conectats en verd.
 En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
+
 5.Per sortir de la simulacio podem tancar o premer "ESC".
  ![](_static/sim_bt/step_5.png)
