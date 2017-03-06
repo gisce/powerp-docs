@@ -910,8 +910,9 @@ La informació amb les dades de qualitat zonal a presentar a les Administracions
 competents haurà d’estar prèviament auditada i tindrà el format següent:
 
 
-| Comunitat Autònoma:  |  Província:  |
-|:--------------------:|:------------:|
++----------------------+--------------+
+| Comunitat Autònoma   |  Província   |
++----------------------+--------------+
 
 +-----------+------+-----------------+-----------------------------------+
 |           |      |                 | Programadas                       |
@@ -925,5 +926,6 @@ competents haurà d’estar prèviament auditada i tindrà el format següent:
 | Generación | Transporte | Terceros | Fuerza Mayor | Propias |
 +------------+------------+----------+--------------+---------+
 
-| Total |
-|-------|
++----------+
+|  Total   |
++----------+
