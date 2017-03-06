@@ -201,9 +201,9 @@ Continguts:
 
 Existeixes diversos mètodes per l'entrada de lectures de comptadors. A partir
 de les lectures obtingudes per TPL, entrada manual per ruta, entrada de lectures
-per número de comptador...
+per número de comptador.
 
-LEs lectures inicials d'un comptador s'entren des del menú: "_Mení → Facturació
+Les lectures inicials d'un comptador s'entren des del menú: "_Mení → Facturació
 → Lectures → Introduïr lectures per comptador_".
 
 El procés es descriu a continuació:
@@ -231,7 +231,7 @@ El procés es descriu a continuació:
 
     Seguidament es polsarà el botó _Introduir Dades_.
 
-4. S'introdueixen els valors corresponents al maxímetre, i els valos del
+4. S'introdueixen els valors corresponents al maxímetre, i els valors del
    comptador d'activa i reactiva de cada un dels periodes, polsant el botó
    _Guardar i següent_
 
@@ -239,7 +239,7 @@ El procés es descriu a continuació:
    pòlissa, s'observa el resultat de la inicialització del comptador.
 
 !!! tip
-    Veure la [importació i exportació de lectures de TPL](tpl)
+    Veure la [importació i exportació de lectures de TPL](tpl.md)
 
 ## Comparativa de consums
 
