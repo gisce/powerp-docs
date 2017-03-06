@@ -70,44 +70,44 @@
 ## Simulacions AT
 
 1. Seleccionar un tram de AT. Això farà apareixer en pantalla una targeta amb la informació del tram i del botó "Simula".
- ![](_static/sim_at/step_1.png)
+    ![](_static/sim_at/step_1.png)
  
 2. Premer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
- ![](_static/sim_at/step_2.png)
-!!! note
-    Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
+    ![](_static/sim_at/step_2.png)
+    !!! note
+        Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
  
-3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
- ![](_static/sim_at/step_3.png)
- <note>
- <! indicar que es veu nombre de interruptors oberts>
- </note
+3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1).
+    ![](_static/sim_at/step_3.png)
+    !!! note
+        indicar que es veu nombre de interruptors obert
+
  
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
- ![](_static/sim_at/step_4.png)
- Es dibuixaran els trams desconectats en vermell i els conectats en verd.
- En la part inferior de la targeta apreix el llistat de clients afectats, es a dis que es quederien sense corrent.
+    ![](_static/sim_at/step_4.png)
+    Es dibuixaran els trams desconectats en vermell i els conectats en verd.
+    En la part inferior de la targeta apreix el llistat de clients afectats, es a dis que es quederien sense corrent.
  
 5.Per sortir de la simulacio podem tancar o premer "ESC".
- ![](_static/sim_at/step_5.png)
+    ![](_static/sim_at/step_5.png)
 
 ## Simulacions BT
 
 1 Selecionar el CT que volem simular.
- ![](_static/sim_bt/step_1.png)
+    ![](_static/sim_bt/step_1.png)
 
 2. Premer "simular". Axo obrirà el llistat d'interrutpros maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
- ![](_static/sim_bt/step_2.png)
-!!! note
-    Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
+    ![](_static/sim_bt/step_2.png)
+    !!! note
+        Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(2). 
- ![](_static/sim_bt/step_3.png)
+    ![](_static/sim_bt/step_3.png)
  
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
- ![](_static/sim_bt/step_4.png)
-Es dibuixaran en vermell els trams desconectats i els conectats en verd.
-En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
+    ![](_static/sim_bt/step_4.png)
+    Es dibuixaran en vermell els trams desconectats i els conectats en verd.
+    En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
 
 5.Per sortir de la simulacio podem tancar o premer "ESC".
- ![](_static/sim_bt/step_5.png)
+    ![](_static/sim_bt/step_5.png)
