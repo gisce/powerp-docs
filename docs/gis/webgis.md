@@ -90,16 +90,16 @@
     Es dibuixaran els trams desconectats en vermell i els conectats en verd.
     En la part inferior de la targeta apreix el llistat de clients afectats, es a dis que es quederien sense corrent.
  
-5.Per sortir de la simulacio podem tancar o premer "ESC".
+5. Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_at/step_5.png)
 
 
 ## Simulacions BT
 
-1 Selecionar el CT que volem simular.
+1. Selecionar el CT que volem simular.
     ![](_static/sim_bt/step_1.png)
 
-2. Premer "simular". Axo obrirà el llistat d'interrutpros maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
+2. Premer "Simula". Axo obrirà el llistat d'interrutpros maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
     ![](_static/sim_bt/step_2.png)
     
     !!! note
@@ -113,5 +113,5 @@
     Es dibuixaran en vermell els trams desconectats i els conectats en verd.
     En la part interior de la targeta apreix el llitat de clients afectats, és a dir els que es quedarien sense corrent.
 
-5.Per sortir de la simulacio podem tancar o premer "ESC".
+5. Per sortir de la simulacio podem tancar o premer "ESC".
     ![](_static/sim_bt/step_5.png)
