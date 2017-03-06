@@ -78,7 +78,7 @@
     !!! note
         Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
  
-3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1).
+3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). Tambè el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
     ![](_static/sim_at/step_3.png)
     
     !!! note
