@@ -82,7 +82,7 @@
     ![](_static/sim_at/step_3.png)
     
     !!! note
-        indicar que es veu nombre de interruptors obert
+        A la capçalera del llistat d'interruptors podem veure el nombre d'interruptors oberts
 
  
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
