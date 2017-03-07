@@ -18,7 +18,7 @@ markdown_extensions:
 pages:
   - Home: index.md
   - Base:
-    - Partners: base/partners.md
+    - Clientes y Empresas: base/partners.md
     - PowerEmail: base/poweremail.md
     - Gestión ATR: base/atr.md
     - Atención al Cliente: base/atc.md
@@ -27,7 +27,6 @@ pages:
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
-    - Contadores: distri/contadores.md
     - Manual de uso de TPL: distri/tpl.md
     - Manual de uso de TPL:
       - Requerimentos del sistema e instalación: distri/tpl/requeriments.md
@@ -37,6 +36,7 @@ pages:
       - Ficheros de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
+    - Contadores: distri/contadores.md
     - Facturación: distri/facturacion.md
     - Facturación:
       - Peajes: distri/facturacion_peajes.md
