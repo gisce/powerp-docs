@@ -59,13 +59,11 @@ Ens situem a la fitxa de la pòlissa a la que volem afegir el comptador. Allà,
 anem a la pestanya _Comptadors_ i polsarem el botó _Nou_ tal i com s'indica
 en la imatge següent:
 
-!!! Todo
+![](_static/contadores/contador_new.png)
 
 Apareixerà la fitxa del comptador que ha de cumplimentar-se com es descriu més
 endavant. S'ha d'emplenar també el camp informatiu _N comptador_ de la part
 superior. Sempre ha de conincidir amb el número de série del comptador actiu.
-
-!!! Todo
 
 + **Nº de serie**: S'ha d'indicar el número de série del comptador. Si el
   comptador ja ha estat donat d'alta en alguna altra ocasió, el número de série
@@ -128,7 +126,7 @@ Existeixen 3 casos en els que s'hagi de donar de baixa un comptador:
 
 ## Lloguer de comptadors
 
-!!! Todo
+![](_static/contadores/comptadors_lloguer.png)
 
 Amb el programa base, venen predefinits els preus dels productes de lloguer que
 tenen els codis de ALQ1 a ALQ18 segons el decret vigent.
@@ -141,8 +139,6 @@ basant-se en els escandalls dels productes de GISCE-ERP. En la següent imatge
 es poden veure combinacions de diferents lloguers combinats. El preu d'un
 lloguer combinat s'autocaclcula com la suma dels seus productes base.
 
-!!! Todo
-
 ## Canviar de 3 a 6 periodes de lectures en tarifes 3.0A i 3.1A
 
 Si fins una determinada data s'han estat prenent lectures d'una pòlissa amb
@@ -151,29 +147,28 @@ de procedir com si fos un canvi de comptador, però mantenint el número de sér
 
 El resultat final ha de ser tal i com es mostra en les següents imatges:
 
-!!! Todo
+![](_static/contadores/polissa_comptadors.png)
 
 !!! Note
-    S'observa que en data XX/XX/XXXX es dona de baixa el comptador amb el que es
+    S'observa que en data 31/01/2013 es dona de baixa el comptador amb el que es
     realitzaven les lectures en 3 periodes.    
-    en data XX/XX/XXXX es dona d'alta el nou comptador amb el mateix número de
+    En data 01/02/2013 es dona d'alta el nou comptador amb el mateix número de
     serie i s'inicialitza ja amb les lectures en 6 periodes.    
-    En les següents imatges s'observa les lectures en data XX/XX/XXXX dels dos
-    comptadors.
 
-!!! Todo
+En la següent imatge s'observen les lectures en data 30/10/2009 per un altre cas
+dels dos comptadors.
+
+![](_static/contadores/canvi_comptador_3_6-3.png)
 
 !!! Note
     S'observa que les lectures tant d'activa com de reactiva estan en tres
-    periodes. Aquest es el comptador que es dona de baixa el XX/XX/XXXX.
+    periodes. Aquest es el comptador que es dona de baixa el 30/10/2009.
 
-!!! Todo
+![](_static/contadores/canvi_comptador_3_6-6.png)
 
 !!! Note
-    En el nou comptador, que es l'actiu, s'observa que les lectures inicials a
-    XX/XX/XXXX estan fetes en 6 periodes i que la suma de P1+P4 es igual a la
-    del P1 del comptador anterior, igual que amb P2+P5 són iguals al P2
-    anterior, i la P3+P6 es igual al P3 del comptador amb 3 periodes.
+    En el nou comptador, que es l'actiu, s'observa que ara ja introdueix
+    lectures en 6 periodes.
 
 ## Com es fa un canvi de comptador a mig període de facturació?
 
@@ -210,10 +205,15 @@ El procés es descriu a continuació:
 
 1. Es sel·lecciona el número de comptador que s'acaba de donar d'alta en una
    pòlissa.
+
+    ![](_static/contadores/lectura_comptador_new.png)
+
 2. Una vegada localitzat es prem el botó _Continuar_.
 3. Es comproba que el client, la tarifa i la potència contractada siguin
    correctes. En el camp data s'introduirà la data de la última facturació que
    s'ha realitzat depenent de si la tarifa és bimestral o mensual.
+
+    ![](_static/contadores/lectura_comptador_contacte.png)
 
     !!! Note
         Si es dona d'alta el comptador en data 01/02/2010:
@@ -234,6 +234,8 @@ El procés es descriu a continuació:
 4. S'introdueixen els valors corresponents al maxímetre, i els valors del
    comptador d'activa i reactiva de cada un dels periodes, polsant el botó
    _Guardar i següent_
+
+    ![](_static/contadores/lectura_comptador_dades.png)
 
 5. Si s'accedeix al comptador desde la pestanya _comptadors_ de la fitxa de la
    pòlissa, s'observa el resultat de la inicialització del comptador.
