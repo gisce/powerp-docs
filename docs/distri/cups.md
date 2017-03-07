@@ -9,7 +9,7 @@ la Base de Dades es pot fer des de dos llocs diferents:
 2. Des del menú "_Menú → Gestió de CUPS → Manteniment → CUPS → CUPS_" i
    sel·leccionant el botó _Nou_
 
-!!! TODO
+![](_static/cups/cups_general.png)
 
 El codi del CUPS es genera automàticament. Llavors se li ham de cumplimentar els
 camps de la pestanya General. El camp Escomesa no s'ha d'emplenar ja que la

@@ -28,11 +28,10 @@ quina tarifa té actualment, comercialitzadora, poténcia contractada, tipus de
 facturació, data de la próxima facturació, históric de comptadors i les seves
 lectures, ...
 
-!!! TODO
+En el menú principal podem trobar el llistat de pólisses a "_Menú → Gestió de
+Pólisses_"
 
-En el menú principal podem trobar el llistat de pólisses a "_Menú → Pólisses_"
-
-!!! TODO
+![](_static/polisses/menu.png)
 
 ### Donar d'Alta una pòlissa
 
@@ -44,7 +43,7 @@ les dades de les diferents pestanyes.
 
 #### Pestanya General
 
-!!! TODO
+![](_static/polisses/polissa_general.png)
 
 * Client: Nom del client.    
   Es pot buscar un client ja existent i si no existeix es [dona d'alta un nou
@@ -61,7 +60,9 @@ les dades de les diferents pestanyes.
         * A la pestanya _Propietats_: Tot introduït correctament
         * Tipo de Pago introduït.
 
-!!! TODOx4
+![](_static/polisses/polissa_facturacio.png)
+
+![](_static/polisses/polissa_contacte.png)
 
 !!! Note
     En l'apartat _Tipo de pago_ es pot introduïr uns valors com els que es mostren
@@ -104,7 +105,7 @@ les dades de les diferents pestanyes.
 * Tarifa: S'ha de sel·leccionar, utilitzant el botó _lupa_, una de les tarifes
   vigents en el moment de fer l'alta.
 
-!!! Todo
+    ![](_static/polisses/tarifes.png)
 
     !!! Note
         Una vegada sel·leccionada la tarifa, i **després de guardar el registre**,
@@ -152,9 +153,9 @@ instal·lat està _"Actiu"_.
     comptador_
 
 En cas de necessitar donar d'alta un comptador, cal seguir el [procediment per
-donar d'alta un comptador]
+donar d'alta un comptador](../distri/contadores.md#donar-dalta-un-comptador)
 
-!!! TODO
+![](_static/polisses/polissa_comptadors.png)
 
 ### Donar de Baixa una pòlissa
 
