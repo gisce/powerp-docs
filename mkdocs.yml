@@ -82,6 +82,7 @@ pages:
     - Gestió impagats: comer/gestion_impago.md
     - Gestió ATR: comer/atr.md
     - SIPS: comer/sips.md
+    - SOA: comer/soa.md
     - Administració Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
