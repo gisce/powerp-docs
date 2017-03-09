@@ -1,4 +1,4 @@
-# **Intercanvi SOA comercialitzadora**
+# Intercanvi SOA comercialitzadora
 
 El fitxer d'intercanvi SOA té el format estàndard **CSV** amb els camps separats
 per **tabulacions** i codificat en **UTF-8**.
