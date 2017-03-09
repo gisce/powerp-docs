@@ -7,7 +7,7 @@ El fitxer ha de contenir **tots** els valors. Si no es disposa d'informació per
 emplenar-los, s'hauràn de deixar buits. A continuació es detallen els camps
 concrets dels que disposa el fitxer:
 
-| Columna | Nom del camp                          | Tipus        | Descripció                                                         |
+| Columna | Nom intern del camp                   | Tipus        | Descripció                                                         |
 |:-------:|---------------------------------------|--------------|--------------------------------------------------------------------|
 | 1       | **csv_cups_codi**                     | varchar(30)  | Codi Universal de Punt de Suministre                               |
 | 2       | **csv_cups_distribuidora**            | varchar(10)  | Distribuidora del CUPS                                             |
@@ -79,7 +79,7 @@ concrets dels que disposa el fitxer:
 | 68      | **csv_pagador_numero**                | varchar(128) | Número del pagador                                                 |
 | 69      | **csv_pagador_planta**                | varchar(128) | Planta del pagador                                                 |
 | 70      | **csv_pagador_cp**                    | varchar(10)  | Codi postal del pagador                                            |
-| 71      | **csv_pagador_ine_municipi**          | varchar(10   | INE del pagador                                                    |
+| 71      | **csv_pagador_ine_municipi**          | varchar(10)   | INE del pagador                                                    |
 | 72      | **csv_pagador_poblacio**              | varchar(128) | Posició del pagador                                                |
 | 73      | **csv_pagador_provincia**             | varchar(128) | Província del pagador                                              |
 | 74      | **csv_pagador_pais**                  | varchar(128) | País del pagador                                                   |
@@ -88,7 +88,7 @@ concrets dels que disposa el fitxer:
 | 77      | **csv_pagador_mail**                  | varchar(64)  | Email del pagador                                                  |
 | 78      | **csv_pagador_mobil**                 | varchar(64)  | Mòbil del pagador                                                  |
 | 79      | **csv_fact_enviament_factura**        | varchar(12)  | Enviament de la factura. Valors: 'POSTAL', 'EMAIL' o 'POST+EMAIL'  |
-| 80      | **csv_fact_persona_notificacio**      | varchar(7)   | Persona de notificació. Valors: 'TITULAR', 'PAGAFOR' o 'ALTRE'     |
+| 80      | **csv_fact_persona_notificacio**      | varchar(7)   | Persona de notificació. Valors: 'TITULAR', 'PAGADOR' o 'ALTRE'     |
 | 81      | **csv_notificacio_nom**               | varchar(128) | Nom de la notificació d'enviament                                  |
 | 82      | **csv_notificacio_nif**               | varchar(128) | NIF de la notificació d'enviament                                  |
 | 83      | **csv_notificacio_direccio_nom**      | varchar(128) | Nom de la direcció de la notificació d'enviament                   |
