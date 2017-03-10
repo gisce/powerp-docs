@@ -372,6 +372,28 @@ activa**.
 
 ## Modificacions contractuals
 
+### Desfer una modificació contractual
+
+Per desfer una modificació contractual, cal seleccionar d'entre la llista de
+modificacions contractuals la que està **activa**.
+
+Un cop seleccionada es pot veure com apareix un botó per desfer la modificació
+contractual:
+
+![](_static/polisses/boto_undo.png)
+
+Al fer click al botó apareixerà un avís per pantalla el qual informa que l'acció
+no es pot desfer.
+
+Si es confirma, la modificació contractual activa serà eliminada i la
+modificació contractual anterior es reactivarà. Altrament, la modificació
+contractual es mantindrà sense canvis.
+
+!!! note
+    No es podrà desfer cap modificació contractual si la pòlissa no es troba
+    en estat **actiu**
+
+
 ## CNAE
 
 El CNAE (Clasificación Nacional de Actividades Económicas) és un codi de 4
