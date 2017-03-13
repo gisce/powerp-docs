@@ -179,8 +179,8 @@ Les validacions tenen tres nivells, descrits a continuació:
 - **[2007] Factura de referència inexistent (E)**: No s'ha trobat la factura de referència indicada.
 - **[2008] Configuració no trobada (E)**: No s'ha trobat la configuració de switching per l'emissor de la factura.
 - **[2009] Producte no identificat (W)**: No s'ha pogut identificar un dels productes.
-- **[2010]  (I)**: ...........
-- **[2011]  (I)**: ...........
+- **[2010] Factura anuladora ja carregada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Té el mateix import que una factura anul·ladora ja carregada
+- **[2011] Factura anuladora no trobada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Probablement falta una factura anul·ladora
 - **[2012] Creació forçada (I)**: No s'ha trobat la factura de referencia però s'ha forçat la creació de la factura.
 
 ##### Fase 3
@@ -189,7 +189,7 @@ Les validacions tenen tres nivells, descrits a continuació:
 
     - **[3001] Adequar gir a lectura (I)**: És realitza una validació de que el gir que tenim a la base de dades és diferent al que ens donen al fitxer F1.
     - **[3014] El gir de l'F1 no es correcte (I)**: És realitza una validació de que el gir que ens donen al fitxer F1 sigui suficient per les lectures que ens donen. Per exemple, si ens donen un gir de 100 i una lectura de 4560 sabem que com a mínim el gir ha de ser de 10000.
-    - **[3002] El comptador existeix (W)**: Comprovem que el comptador que ens donen existeix en la nostra base de dades. Tenim en compte que hi pot haver padding de zeros. *Veure el punt Moguts a la iteració 4*
+    - **[3002] El comptador existeix (W)**: Comprovem que el comptador que ens donen existeix en la nostra base de dades. Tenim en compte que hi pot haver padding de zeros.
     - **[3003] Comptador repetit (I)**: Comprovem si en una sola factura tenim dues vegades un mateix comptador.
     - **[3004] Comptador de reactiva (I)**: Comprovem si algun dels comptadors només té lectures de reactiva (pels casos en que tenim un comptador per activa i un per reactiva).
     - **[3005] Més d'un comptador actiu (W)**: Comprovem si la pòlissa té més d'un comptador actiu actualment.
@@ -210,7 +210,7 @@ Les validacions tenen tres nivells, descrits a continuació:
     - **[3010] Ajust integrador (I)**: Alguna de les lectures importades té ajust integrador.
     - **[3011] Possible gir de comptador (I)**: Alguna de les lectures finals són inferiors a les lectures inicials.
     - **[3012] Factura rectificadora (I)**: La factura és rectificadora, de manera que les lectures es sobreescriuran.
-    - **[3013] Origen "Sin lectura (99) (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura. *Veure el punt Moguts a la iteració 4*
+    - **[3013] Origen "Sin lectura (99) (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura.
     - **[3015] Unitats d'importació (I)**: S'indicaran quines són les unitats amb les que suposarem que ens venen els valors.
 
 - **Lectures de Maxímetre**
