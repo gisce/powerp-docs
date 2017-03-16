@@ -1150,8 +1150,6 @@ la línia a la qual pertany
 
 **De Línia AT**
 
-* **Actiu**: La línia ha d'estar activa o haver-se donat de baixa en l'any de
-  l'informe o posterior(2016).
 * **Propietari**: Ha d'estar marcat com a propietari perque apareixi als llistats.
 
 **De Trams**
