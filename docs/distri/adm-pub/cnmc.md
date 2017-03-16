@@ -1115,10 +1115,13 @@ Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017
 s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels 
 fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi 
 hauran els 8 fitxers entregats.
+
 ** Els fitxers han d'esta en codificacio UTF-8 **
 
 El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio 
 4131/2016/Carregar Fitxer presentat 4131 n-1_"
+
+![](../_static/cnmc/4131/load_4131.png)
 
 ### Descripció dels diferents NODES
 
