@@ -12,12 +12,13 @@ markdown_extensions:
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
-  - markdown_blockdiag
+  - markdown_blockdiag:
+      fontpath: fonts/DejaVuSans.ttf
 
 pages:
   - Home: index.md
   - Base:
-    - Partners: base/partners.md
+    - Clientes y Empresas: base/partners.md
     - PowerEmail: base/poweremail.md
     - Gestión ATR: base/atr.md
     - Atención al Cliente: base/atc.md
@@ -26,7 +27,6 @@ pages:
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
-    - Contadores: distri/contadores.md
     - Manual de uso de TPL: distri/tpl.md
     - Manual de uso de TPL:
       - Requerimentos del sistema e instalación: distri/tpl/requeriments.md
@@ -36,11 +36,13 @@ pages:
       - Ficheros de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
+    - Contadores: distri/contadores.md
     - Facturación: distri/facturacion.md
     - Facturación:
       - Peajes: distri/facturacion_peajes.md
       - Contratación: distri/facturacion_contratacion.md
       - Régimen especial: distri/facturacio_re.md
+      - Liquidación: distri/liquidacion_peajes.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
       - AEAT: distri/adm-pub/aeat.md
@@ -49,7 +51,9 @@ pages:
     - Descargos: distri/descarrecs.md
     - GIS:
       - QGIS: gis/qgis.md
-      - GIS Web: gis/websearch.md
+      - GIS Web:
+        - Visor Web: gis/webgis.md
+        - Buscador: gis/websearch.md
       - Instalaciones:
         - Subestaciones: distri/subestaciones.md
         - CTS: distri/cts.md
@@ -76,8 +80,10 @@ pages:
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
     - Facturación: comer/facturacion.md
+    - Gestión impagados: comer/gestion_impago.md
     - Gestión ATR: comer/atr.md
     - SIPS: comer/sips.md
+    - SOA: comer/soa.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md

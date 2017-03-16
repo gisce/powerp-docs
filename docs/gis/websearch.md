@@ -74,10 +74,10 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - CT
 - Descripció
 - Municipi
-- Potència Total del CT
+- Potència Total del CT (Cal afegir kVA al final)
 - Adreça
 - Data APM
-- Tensió primari
+- Tensió primari (Cal afegir V al final)
 - Circuit
 
 ### Exemple de cerca
@@ -90,7 +90,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Numero de fabricacio
 - Marca
 - Connexio UNE
-- Potencia nominal
+- Potencia nominal (Cal afegir kVA al final)
 - Estat
 - Data APM
 

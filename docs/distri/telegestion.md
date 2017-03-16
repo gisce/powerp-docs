@@ -283,15 +283,15 @@ mitjançant el botó comptadors.
 
 ### Registre de lectura
 
-En el registre de lectures dels fitxers es mostren els fitxers que s'han intentat 
+En el registre de lectures dels fitxers es mostren els fitxers que s'han intentat
 carregar i ens informa del resultat de la lectura. Si s'ha llegit correctament
 tot el fitxer, si s'ha llegit parcialment amb algun error o si ha sigut totalment
-erroni. 
+erroni.
 
 Els fitxers erronis poden ser fitxers en un format no soportat o directoris
-a l'arrel del nostre FTP. 
-Els fitxers que tenen l'estat d'error parcial és perquè contenen valors 
-incorrectes en un o més camps. En aquest cas s'ignoren els grups 
+a l'arrel del nostre FTP.
+Els fitxers que tenen l'estat d'error parcial és perquè contenen valors
+incorrectes en un o més camps. En aquest cas s'ignoren els grups
 d'informació amb errors i es llegeix la resta.
 
 ![](_static/telegestion/partial_file_readings.png)
@@ -324,8 +324,7 @@ les validades de color **negre**
 
 ![](_static/telegestion/CierresTG.png)
 
-|Llista de lectures de Telegestió|
-|:------------------------------:|
+#### Llista de lectures de Telegestió
 
 Des del llistat podem seleccionar un conjunt lectures i validar-les prement el
 botó **Acció**. S'ens obrirà un formulari on podrem escollir validar o
@@ -336,8 +335,7 @@ tancament com a vàlid o el desmarca.
 
 ![](_static/telegestion/ValidarTancamentTG.png)
 
-|Formulari de validació d'un tancament|
-|:-----------------------------------:|
+#### Formulari de validació d'un tancament
 
 Podem veure la informació completa en el detall d'un tancament:
 
@@ -388,8 +386,7 @@ comptador.
 
 ![](_static/telegestion/ImportarLecturesTG.png)
 
-|Formulari per introduïr data de importació de lectura|
-|:---------------------------------------------------:|
+#### Formulari per introduïr data de importació de lectura
 
 ### Validar TG Tancaments
 
