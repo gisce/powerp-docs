@@ -185,7 +185,7 @@ cap.
 
    Figura 3: Formulari d'un lot d'importació.
 
-## Figura 4
+### Figura 4
 ![](_static/f1/zip_wizard.png)
 
    Figura 4: Importació d'un zip.
@@ -679,3 +679,48 @@ Aquest és un llistat de factures amb alguns filtres per defecte fets:
       Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
       factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
       una factura ha de ser enviada per email.
+
+## Avançar facturació d'una pòlissa endarrerida
+
+Si volem avançar la facturació d'una pòlissa endarrerida (que no pertany al lot
+de facturació actual) podem utilitzar l'assistent per tal de carregar
+lectures per facturar del pool de lectures.
+
+Per cridar aquest assistent ho podem fer de dues maneres:
+
+1. Seleccionem l'opció d'**Avançar facturació** en
+la llista d'opcions del lateral dret d'un contracte
+
+![](_static/avancar_facturacio/value_wizard_avancar_facturacio.png)
+
+2. Seleccionem un contracte en el llistat de contractes i escollim l'acció
+d'**Avançar facturació**
+
+![](_static/avancar_facturacio/accio_wizard_avancar_facturacio.png)
+
+#### Assistent per avançar facturació
+
+L'objectiu d'aquest assistent és el d'avançar la facturació d'una pòlissa endarrerida
+al lot de facturació actual. Per fer això l'assistent crearà factures des de
+la data de l'última lectura facturada fins a la data actual i afegirà el lot de
+facturació actual a la pòlissa.
+
+Cada factura que generi serà entre la data de l'última lectura facturada i la
+data de l'última lectura carregada. En cas de no haver-hi lectures carregades
+les intentarà carregar del pool de lectures, o bé en crearà una lectura estimada
+si han passat els dies del llindar d'estimació (indicats per la variable de
+configuració **'pool_llindar_estimacio_lectures'**) des de la data de l'última lectura.
+
+L'assistent permet introduir la data per la qual volem que es generi la factura.
+
+
+![](_static/avancar_facturacio/wizard_avancar_facturacio.png)
+
+Un cop generada la factura ens informarà entre quines dates s'ha generat.
+
+![](_static/avancar_facturacio/wizard_avancar_facturacio2.png)
+
+En cas de no haver generat la factura ens mostrarà que no s'ha pogut facturar i
+el motiu pel qual no s'ha pogut facturar.
+
+![](_static/avancar_facturacio/wizard_avancar_facturacio3.png)
