@@ -1405,8 +1405,17 @@ càlculs addicionals.
 
 *CRITERI ESTADO:*
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element
-es considerara que l'element es nou(2), sino es considerara no modificat(0).
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
+
+* CINI
+* Participació
+
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
+
 
 --------------------------------------------------------------------------------
 
