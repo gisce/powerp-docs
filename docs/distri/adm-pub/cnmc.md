@@ -1806,16 +1806,18 @@ addicionals.
 |-----------|----------------------------------------------------------------|
 | ESTADO    |  SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0       |
 
-_CRITERI ESTADO:_
+*CRITERI ESTADO:*
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
+* CODIGO_CCUU 
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2).
-
-Si no es troben modificacions es posara el camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
 
 ### Generació dels informes
