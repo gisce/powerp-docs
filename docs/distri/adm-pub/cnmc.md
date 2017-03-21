@@ -1238,7 +1238,7 @@ numèric.
 
 ![](../_static/cnmc/4131/cataleg_cables_at.png)
 
-**CRITERI ESTADO**
+*CRITERI ESTADO:*
 
 Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
 
