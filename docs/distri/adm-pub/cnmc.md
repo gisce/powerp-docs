@@ -1239,24 +1239,6 @@ numèric.
 ![](../_static/cnmc/4131/cataleg_cables_at.png)
 
 
-**CRITERI ESTADO**
-
-Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
-
-Estat = 0      	Element sense  modificacions en relació a n-1.
-
-Estat = 1	Element amb alguna modificació en algun d’aquests camps:
-
-* Longitud
-* CINI
-* Secció
-* Codi CCUU
-* Tensio
-    
-Estat = 2 Element nou que no apareix al inventari de l’any n-1
-
-
-
 **LINIES BT**
 
 !!! note
