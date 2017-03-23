@@ -96,12 +96,12 @@ pages:
     - Gestión de lectures: facturacio/lectures.md
   - Desarrollo OpenERP:
     - Inicio: erp/index.md
-    - Introducción: erp/intro.md
-    - Desarrollo de módulos: erp/modules.md
-    - Desarrollo de procesos de empresa: erp/process.md
-    - Configuración avanzada de procesos de empresa: erp/adv_process.md
-    - Serialización, migración, actualitzaciones y pruevas: erp/patches.md
-    - Integración de servicios base: erp/services.md
-    - Otros temas: erp/other.md
-    - Ejecución y Despliegue: erp/build.md
-    - Anexos: erp/annex.md
+    - Introducción: erp/1-intro.md
+    - Desarrollo de módulos: erp/2-modules.md
+    - Desarrollo de procesos de empresa: erp/3-process.md
+    - Configuración avanzada de procesos de empresa: erp/4-adv_process.md
+    - Serialización, migración, actualitzaciones y pruevas: erp/5-patches.md
+    - Integración de servicios base: erp/6-services.md
+    - Otros temas: erp/7-other.md
+    - Ejecución y Despliegue: erp/8-build.md
+    - Anexos: erp/9-annex.md
