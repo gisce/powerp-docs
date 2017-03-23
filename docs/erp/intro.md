@@ -393,6 +393,94 @@ default_path = /home/user
 
 ## Opcions de línia de comandes
 
+#### Opcions generals
++---------------------------------+----------------------------------------------------+
+| --version                       | Mostra la versió del programa i surt               |
++---------------------------------+----------------------------------------------------+
+| -h, --help                      | Mostra aquest missatge d'ajuda i surt              |
++---------------------------------+----------------------------------------------------+
+| -c _CONFIG_,                    | Especifica un fitxer de configuració alternatiu    |
+|                                 |                                                    |
+| --config=_CONFIG_               |                                                    |
++---------------------------------+----------------------------------------------------+
+| -s, --save                      | Guarda la configuració a ~/.terp_serverrc          |
++---------------------------------+----------------------------------------------------+
+| -v, --verbose                   | Activa debugging                                   |
++---------------------------------+----------------------------------------------------+
+| --pidfile=_PIDFILE_             | Fitxer on es guardarà el pid del servidor          |
++---------------------------------+----------------------------------------------------+
+| --logfile=_LOGFILE_             | Fitxer on es guardarà el log del servidor          |
++---------------------------------+----------------------------------------------------+
+| -n _INTERFACE_,                 | Especifica l'adreça TCP IP                         |
+|                                 |                                                    |
+| --interface=_INTERFACE_         |                                                    |
++---------------------------------+----------------------------------------------------+
+| -p _PORT_, --port=_PORT_        | Especifica el port TCP                             |
++---------------------------------+----------------------------------------------------+
+| --net_interface=_NETINTERFACE_  | Especifica l'adreça TCP IP per netrpc              |
++---------------------------------+----------------------------------------------------+
+| --net_port=_NETPORT_            | Especifica el port TCP per netrpc                  |
++---------------------------------+----------------------------------------------------+
+| --no-netrpc	                  | Desactiva netprc                                   |
++---------------------------------+----------------------------------------------------+
+| --no-xmlrpc                     | Desactiva xmlrpc                                   |
++---------------------------------+----------------------------------------------------+
+| -i _INIT_, --init=_INIT_        | Inicia un mòdul (utilitzar "all" per tots els      |
+|                                 | mòduls)                                            |
++---------------------------------+----------------------------------------------------+
+| --without-demo=_WITHOUT_DEMO_   | Carrega dades de demo per un mòdul                 |
+|                                 | (utilitzar "all" per tots els mòduls)              |
++---------------------------------+----------------------------------------------------+
+| -u _UPDATE_, --update=_UPDATE_  | Actualitza un mòdul (utilitzar "all" per tots els  |
+|                                 | mòduls)                                            |
++---------------------------------+----------------------------------------------------+
+| --stop-after-in                 | Atura el servidor després de que s'inicialitzi     |
++---------------------------------+----------------------------------------------------+
+| --debug                         | Habilita el mode debug                             |
++---------------------------------+----------------------------------------------------+
+| -S, --secure                    | Engega el servidor per HTTPS en comptes d'HTTP     |
++---------------------------------+----------------------------------------------------+
+| --smtp=_SMTP_SERVER_            | Especifica el servidor SMTP per enviar un mail     |
++---------------------------------+----------------------------------------------------+
+| -price_accuracy=_PRICE_ACCURACY_| Especifica el price accuracy                       |
++---------------------------------+----------------------------------------------------+
+
+#### Opcions relacionades amb la base de dades
++------------------------------------+----------------------------------------------------+
+| -d _DB_NAME_, --database=_DB_NAME_ | Especifica el nom de la base de dades              |
++------------------------------------+----------------------------------------------------+
+| -r _DB_USER_, --db_user=_DB_USER_  | Especifica el nom d'usuari de la base de dades     |
++------------------------------------+----------------------------------------------------+
+| -w _DB_PASSWORD_,                  | Especifica la contrasenya de la base de dades      |
+|                                    |                                                    |
+| --db_password=_DB_PASSWORD_        |                                                    |
++------------------------------------+----------------------------------------------------+
+| --pg_path=_PG_PATH_                | Especifica el path del pg executable               |
++------------------------------------+----------------------------------------------------+
+| --db_host=_DB_HOST_                | Especifica el host de la base de dades             |
++------------------------------------+----------------------------------------------------+
+| --db_port=_DB_PORT_                | Especifica el port de la base de dades             |
++------------------------------------+----------------------------------------------------+
+
+
+#### Opcions per a la internacionalització (traducció)
+
+Utilitzar aquestes opcions per traduir l'OpenERP a un altre idioma.
+
++-------------------------------+----------------------------------------------------+
+| -l _LANGUAGE_,                | Especifica  l'idioma de l'arxiu de traduccions.    |
+|                               | Utilitzar amb --i18n-export i --i18n-import        |
+| --language=_LANGUAGE_         |                                                    |
++-------------------------------+----------------------------------------------------+
+| --i18n-export=_TRANSLATE_OUT_ | Exporta tots els strings per traduir a un arxiu    |
+|                               | CSV i surt                                         |
++-------------------------------+----------------------------------------------------+
+| --i18n-import=_TRANSLATE_IN_  | Importa un fitxer CSV amb traduccions i surt       |
++-------------------------------+----------------------------------------------------+
+| --modules=_TRANSLATE_MODULES_ | Especifica els mòduls per exportar. Utilitzar en   |
+|                               | combinació amb --i18n-export                       |
++-------------------------------+----------------------------------------------------+
+
 ## Servidor OpenERP i Client Web - Start/Stop
 
 ## Apagant el servidor
