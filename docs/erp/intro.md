@@ -483,7 +483,45 @@ Utilitzar aquestes opcions per traduir l'OpenERP a un altre idioma.
 
 ## Servidor OpenERP i Client Web - Start/Stop
 
-## Apagant el servidor
+#### OpenERP 4.2
+
+Primer s'ha de comprovar que totes les dependències necessàries estan instal·lades.
+Després es crea el terp de la base de dades. Ens hem d'assegurar que el nostre
+usuari té les credencials correctes per crear bases de dades amb PostgreSQL. per
+més informació en aquest tema consulta el manual de PostgreSQL:
+
+`createdb terp --encoding=unicode`
+
+Un cop hem creat la base de dades, podem iniciar l'OpenERP. El contingut de la
+base de dades es crearà automàticament al primer inici:
+
+`./tinyerp-server.py`
+
+#### OpenERP 5.0 i superior
+
+- Comprovem que totes les dependències necessàries estan instal·lades.
+- Assegurar-nos que estem en un usuari que té permisos d'administrador en el
+  PostgreSQL. Consulta el manual de PostgreSQL per més informació sobre això.
+- Inicia el servidor d'OpenERP
+
+`./openerp-server.py`
+
+Finalment connecta al servidor amb el client GTK i utilitza la opció de Crear
+Base de dades per crear la teva base de dades
+
+## Aturant el servidor
+
+La forma més fàcil d'aturar el servidor en un sistema Linux és enviar una senyal
+SIG INT al servidor.
+
+- Busca el Process ID
+
+    `ps ax | grep -i tiny`
+
+- Utilitza la comanda kill amb el pid
+
+    `kill -2 pid`
+
 
 # Aproximació al desenvolupament modul·lar
 
