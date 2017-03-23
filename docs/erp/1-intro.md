@@ -525,5 +525,63 @@ SIG INT al servidor.
 
 # Aproximació al desenvolupament modul·lar
 
+## OpenObject Servidor i Mòduls
 
-# Arquitectura oberta a Objectes - Mvc
+L'OpenERP té les següents característiques:
+
+- És un sistema client/servidor que treballa sobre una xarxa IP.
+- El llenguatge de programació és Python.
+- Utilitza tecnologies orientades a objectes (Object-Oriented).
+- Emmagatzema les dades amb una base de dades relacional de PostgreSQL.
+- Els objectes de negoci estan modelats amb un sistema ORM (Object Relational
+  Mapping).
+- Ofereix tres Human Machine Interfaces (HMI): un client GTK, un client QT i un
+  client web (eTiny).
+- Utilitza XML per a diferents propòsits: descriure dades, vistes, reports,
+  transport de dades (XML-RPC).
+
+### Arquitectura tècnica
+
+#### Servidor/client, XML-RPC
+
+L'OpenERP està basat en una arquitectura client/servidor. El servidor i el client
+es comuniquen utilitzant el protocol XML-RPC. XML-RPC és un protocol molt senzill
+que permet al client fer crides de procediments remots. La funció que es crida,
+els seus arguments i el resultat són enviats per HTTP i codificats utilitzant XML.
+
+Per a més informació sobre XML-RPC, si us plau mira el següent: http://www.xml-rpc.com/
+
+Des de la versió 4.2, hi ha un nou protocol entre el client i el servidor que ha
+estat anomenat net-rpc. Aquest està basat en la funció cPickle de python i és
+més ràpid que el XML-RPC.
+
+#### Client
+
+La lògica de l'OpenERP és purament en el costat del servidor. El client és molt
+senzill; la seva feina és la de preguntar dades (formularis, llistes, arbres)
+del servidor i retornar-les. Amb aquesta aproximació, quasi tots els
+desenvolupaments són fets al costat del servidor. Això fa de que l'OpenERP sigui
+més fàcil de desenvolupar i mantenir.
+
+El client no entén què envia. Fins i tot les accions com "Fer click al botó
+d'imprimir" són enviades al servidor per preguntar com reaccionar.
+
+L'operació del client és molt senzilla; quan l'usuari realitza una acció (guardar
+un formulari, obrir un menú, imprimir, ...) aquest envia l'acció al servidor.
+Després el servidor envia la nova acció a executar al client.
+
+Hi ha tres tipus d'acció:
+
+- Obrir una finestra (formulari o arbre)
+- Imprimir un document
+- Executar un assistent (wizard)
+
+#### Arquitectura
+
+![](_static/arquitectura_client_servidor.png)
+
+Explicació dels mòduls:
+
+Utilitzem un mecanisme de communicació distribuïda
+
+# Arquitectura oberta a Objectes - MVC
