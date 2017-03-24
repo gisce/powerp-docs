@@ -182,6 +182,7 @@ Les validacions tenen tres nivells, descrits a continuació:
 - **[2010] Factura anuladora ja carregada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Té el mateix import que una factura anul·ladora ja carregada
 - **[2011] Factura anuladora no trobada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Probablement falta una factura anul·ladora
 - **[2012] Creació forçada (I)**: No s'ha trobat la factura de referencia però s'ha forçat la creació de la factura.
+- **[2013] Numero de factura repetit (E)**: En el fitxer importat hi ha dues o més factures amb el mateix número de factura.
 
 ##### Fase 3
 
@@ -212,6 +213,7 @@ Les validacions tenen tres nivells, descrits a continuació:
     - **[3012] Factura rectificadora (I)**: La factura és rectificadora, de manera que les lectures es sobreescriuran.
     - **[3013] Origen "Sin lectura (99) (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura.
     - **[3015] Unitats d'importació (I)**: S'indicaran quines són les unitats amb les que suposarem que ens venen els valors.
+    - **[3029] Conflicte en les lectures (E)**: El fitxer dona diferents valors per una mateixa lectura.
 
 - **Lectures de Maxímetre**
 
@@ -219,6 +221,7 @@ Les validacions tenen tres nivells, descrits a continuació:
     - **[3008] Nombre de períodes (E)**: Tenim un nombre incorrecte de períodes per un comptador i un tipus.
     - **[3009] Lectures negatives (E)**: El consum d'alguna de les lectures importades és negatiu.
     - **[3010] Ajust integrador (I)**: Alguna de les lectures importades té ajust integrador.
+    - **[3029] Conflicte en les lectures (E)**: El fitxer dona diferents valors per una mateixa lectura. Només es tenen en compte les lectures finals.
 
 - **Lectures d'energia**
 
