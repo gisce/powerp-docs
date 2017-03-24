@@ -65,6 +65,7 @@ pages:
         - Sincronització CUPS: distri/sincronizacion_cups.md
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
+      - ERP: gis/erp.md
     - Qualitat de servei: distri/qualitat.md
     - Qualitat de servei:
       - Termes i Definicions: distri/qualitat/termes_i_def.md
