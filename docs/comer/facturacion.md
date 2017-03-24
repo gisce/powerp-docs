@@ -211,7 +211,7 @@ Les validacions tenen tres nivells, descrits a continuació:
     - **[3010] Ajust integrador (I)**: Alguna de les lectures importades té ajust integrador.
     - **[3011] Possible gir de comptador (I)**: Alguna de les lectures finals són inferiors a les lectures inicials.
     - **[3012] Factura rectificadora (I)**: La factura és rectificadora, de manera que les lectures es sobreescriuran.
-    - **[3013] Origen "Sin lectura (99) (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura.
+    - **[3013] Origen "Sin lectura (99)" (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura.
     - **[3015] Unitats d'importació (I)**: S'indicaran quines són les unitats amb les que suposarem que ens venen els valors.
     - **[3029] Conflicte en les lectures (E)**: El fitxer dona diferents valors per una mateixa lectura.
 
