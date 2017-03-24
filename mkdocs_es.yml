@@ -66,6 +66,7 @@ pages:
         - Despachos: distri/despatxos.md
         - CINI - Generación Automática: distri/act_cinis.md
         - TI - Generación Automática: distri/act_tis.md
+      - ERP: gis/erp.md
     - Calidad de servicio: distri/qualitat.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/qualitat/termes_i_def.md
