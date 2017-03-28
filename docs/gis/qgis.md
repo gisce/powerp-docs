@@ -30,15 +30,11 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
 1. Connectors
 2. Giscegis
 3. Configuració
-    
+4. Omplir el camp URL gis, Postgres Host, Postgres Port, Postgres databse, Postgres user i Postgres password amb les dades facilitades
     ![1](_static/configuracio.png)
-
-4. Prémer el boto de + per afegir un nou servidor
-5. Posar el nom del nou servidor
-
+5. Prémer el boto de + per afegir un nou servidor
+6. Posar el nom del nou servidor i premer ok
     ![2](_static/dialeg.png)
-    
-6. Omplir el camp URL gis, Postgres Host, Postgres Port, Postgres databse, Postgres user i Postgres password amb les dades facilitades
 
 
 
