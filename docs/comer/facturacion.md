@@ -194,6 +194,7 @@ Les validacions tenen tres nivells, descrits a continuació:
     - **[3003] Comptador repetit (I)**: Comprovem si en una sola factura tenim dues vegades un mateix comptador.
     - **[3004] Comptador de reactiva (I)**: Comprovem si algun dels comptadors només té lectures de reactiva (pels casos en que tenim un comptador per activa i un per reactiva).
     - **[3005] Més d'un comptador actiu (W)**: Comprovem si la pòlissa té més d'un comptador actiu actualment.
+    - **[3030] Comptador nou amb conflictes (E)**: Quan importem un comptador nou comprovem que no causi conflictes de dates amb els comptadors que ja tenim per la pòlissa.
 
 - **Comprovacions dades CCH**
 
