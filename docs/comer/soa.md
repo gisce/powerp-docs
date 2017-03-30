@@ -119,5 +119,38 @@ concrets dels que disposa el fitxer:
 | 108     | **csv_propietari_cc_mail**            | varchar(64)  | Email propietari CC                                                |
 | 109     | **csv_propietari_cc_mobil**           | varchar(64)  | Mòbil propietari CC                                                |
 
-Els camps on a la descripció s'especifiquen valors concrets significa que el
+- Els camps on a la descripció s'especifiquen valors concrets significa que el
 valor només pot estar comprés entre els especificats.
+
+- Tots els números de compte estan relacionats amb el **pagador** del contracte.
+Si el titular és el mateix que el pagador, llavors es crearà també en el
+titular.
+
+- Per introduïr el cups de la **distribuidora** (csv_cups_distribuidora) és
+suficient amb els 4 dígits de REE. Per exemple, el codi de **Unión Fenosa** és
+el 0022.
+
+- Per introduïr el cups del **municipi** es fa mitjançant el codi INE.
+
+- Al introduïr la població del CUPS o de l'abonat (csv_cups_poblacio i
+csv_abonat_poblacio) per defecte s'obtenen les poblacions del municipi indicat.
+Si no es troba la població pot crearse de forma automàtica o bé enviar un error,
+segons la configuració de l'ERP.
+
+- El camp **csv_abonat_idioma** pot prendre els següents valors:
+    - Castellà: **es_ES**
+    - Català: **ca_ES**
+    - Gallec: **gl_ES**
+    - Anglès: **en_US**
+
+- Si es desitja introduïr varis períodes al camp **csv_polissa_potencies_per_periode**,
+s'ha de fer ordenat per períodes i separats per espais. Si aquest camp no es
+defineix, per defecte tots els períodes tindràn la potència contractada.
+    - Exemple d'una 3.0A: "15 20 20"
+
+- El camp **csv_polissa_tensio** s'ha d'introduïr per el seu valor normalitzat.
+
+- El separador **decimal** de tots els camps ha de ser un **punt**.
+
+- Per informar del **mode de facturació** d'una pòlissa, cal fer-ho mitjançant
+el camp **csv_fact_facturacio_tipus**. Pot prendre els valors "MENSUAL" o "BIMESTRAL".

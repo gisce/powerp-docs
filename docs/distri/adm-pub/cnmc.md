@@ -1099,8 +1099,8 @@ resolució 4131.
 
 ### Carrega de fitxers de la 4771
 
-Per tal que el ERP pugui fer el calculdel camp estat de la 4131 s'h de
-carregar el fitxer presentat en la 4771. El format del ftixer que s'ha de
+Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del 2016 s'ha de
+carregar els fitxers presentats en la 4771. El format del ftixer que s'ha de
 carregar es format ZIP en el cual a l'arrel del fitxer hi hauran els 8 fitxers
 entregats.
 
@@ -1108,6 +1108,20 @@ entregats.
 
 El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio
 4131/2016/Carregar Fitxer presentat 4771_"
+
+### Carrega de fitxers 4131
+
+Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017 
+s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels 
+fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi 
+hauran els 8 fitxers entregats.
+
+** Els fitxers han d'esta en codificacio UTF-8 **
+
+El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio 
+4131/2016/Carregar Fitxer presentat 4131 n-1_"
+
+![](../_static/cnmc/4131/load_4131.png)
 
 ### Descripció dels diferents NODES
 
@@ -1136,8 +1150,6 @@ la línia a la qual pertany
 
 **De Línia AT**
 
-* **Actiu**: La línia ha d'estar activa o haver-se donat de baixa en l'any de
-  l'informe o posterior(2016).
 * **Propietari**: Ha d'estar marcat com a propietari perque apareixi als llistats.
 
 **De Trams**
@@ -1226,6 +1238,23 @@ numèric.
 
 ![](../_static/cnmc/4131/cataleg_cables_at.png)
 
+*CRITERI ESTADO:*
+
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
+
+* Longitud
+* CINI
+* Seccio
+* Codi CCUU
+* Tensio
+
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
+
+
 
 **LINIES BT**
 
@@ -1312,17 +1341,20 @@ Quedant el camp existent
 
 *CRITERI ESTADO:*
 
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * Longitud
 * CINI
 * Seccio
+* Codi CCUU
 * Tensio
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2). Si no es troben modificacions es posara
-el camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
+
 
 --------------------------------------------------------------------------------
 
@@ -1373,8 +1405,17 @@ càlculs addicionals.
 
 *CRITERI ESTADO:*
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element
-es considerara que l'element es nou(2), sino es considerara no modificat(0).
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
+
+* CINI
+* Participació
+
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
+
 
 --------------------------------------------------------------------------------
 
@@ -1428,17 +1469,19 @@ tipus interior serà assimilable a la posició blindada.
 
 *CRITERI ESTADO:*
 
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
-* Tensió
+* Codi CCUU
+* Tensio
 * Participació
 * CT (Denominació)
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2). Si no es troben modificacions es
-posara el camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
 --------------------------------------------------------------------------------
 
@@ -1591,20 +1634,24 @@ aplicar** que correspongui per quan la tensió (T) compleixi:
 
 >Fitxa de tensió normalitzada
 
-_CRITERI ESTADO:_
+*CRITERI ESTADO:* 
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
+* Codi CCUU
 * Tensio primari
 * Tensio secundari
 * Participacio
 * Capacitat
 * CT(Denominacion)
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2). Si no es troben modificacions es posara el
-camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
+
 
 --------------------------------------------------------------------------------
 
@@ -1643,21 +1690,18 @@ addicionals.
 |-------------------|---------------------------------------------------------|
 |ESTADO             |SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0  |
 
-_CRITERI ESTADO:_
+*CRITERI ESTADO:*
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
-* Tensio primari
-* Tensio secundari
-* Participacio
-* Capacitat
-* CT(Denominacion)
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2).
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
-Si no es troben modificacions es posara el camp a 0.
 
 --------------------------------------------------------------------------------
 
@@ -1705,17 +1749,19 @@ addicionals.
 |-----------|----------------------------------------------------------------|
 |ESTADO     |  SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0       |
 
-_CRITERI ESTADO:_
+*CRITERI ESTADO:*
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
+* CODIGO_CCUU 
+* Elemento_ACT  (SE, CT, tram)
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2).
-
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es considerara que l'element es nou(2).
-Si no es troben modificacions es posara el camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
 --------------------------------------------------------------------------------
 
@@ -1760,16 +1806,18 @@ addicionals.
 |-----------|----------------------------------------------------------------|
 | ESTADO    |  SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0       |
 
-_CRITERI ESTADO:_
+*CRITERI ESTADO:*
 
-Els camps que es comparen per saber si s'ha modificat(1) un element son:
+Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
+
+Estat = 0      	Element sense  modificacions en relació a n-1
+
+Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
+* CODIGO_CCUU 
 
-En el cas que no hi hagi informacio referent a la 4771 d'aquest element es
-considerara que l'element es nou(2).
-
-Si no es troben modificacions es posara el camp a 0.
+Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
 
 ### Generació dels informes
