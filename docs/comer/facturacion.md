@@ -261,6 +261,10 @@ Les validacions tenen tres nivells, descrits a continuació:
         - **[3028-H] Impost faltant**: En l'XML falta un IVA amb un percentatge que hauria d'aparèixer segons els conceptes cobrats.
         - **[3028-I] Error en el total**: El preu total de la simulació no coincideix amb el donat a l'F1.
 
+##### Fase 4
+
+En la fase 4 no hi ha validacions ja que totes les validacions necessaries s'han realitzat a la fase anterior.
+
 #### Activar i desactivar validacions
 
 Podem activar i desactivar algunes de les validacions. Per tal de fer-ho
