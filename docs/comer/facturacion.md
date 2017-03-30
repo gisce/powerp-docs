@@ -127,10 +127,10 @@ Procediment d'importació
 En processar un fitxer xml, ja sigui provinent d'un zip o individualment, el
 mòdul realitza les següents accions:
 
-1- Pujar el fitxer F1 al servidor
-2- Importar les dades generals de l'F1
-3- Realitzar validacions sobre les lectures proporcionades per l'F1
-4- Importar les lectures
+1. Pujar el fitxer F1 al servidor
+2. Importar les dades generals de l'F1
+3. Realitzar validacions sobre les lectures proporcionades per l'F1
+4. Importar les lectures
 
 Durant aquests passos, es van realitzant un seguit de validacions, definides a
 continuació.
