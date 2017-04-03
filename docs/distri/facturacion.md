@@ -381,7 +381,6 @@ quin període temporal ens interessa.
 ![](_static/facturacion/relacio_de_consums_dates.png)
 
 
-
 ## Exportació factures F1
 
 Per exportar les factures generades en format XML F1 per enviar a les
@@ -432,3 +431,35 @@ tot un lot (``.zip`` o ``.xml``) en funció de les comercialitzadores de les
 factures generades.
 
 En ambdós casos, es pot generar el CSV resum seleccionant la opció corresponent.
+
+
+## Facturació amb IESE a distribuidora
+
+Al instal·lar el mòdul de facturació amb IESE a distribuidora haurem de fer ús
+de les posicions fiscals, així es passarà a per defecte a cobrar a tothom l'IESE
+a no ser que li diguem que forma part de la posició fiscal "Comercialitzadora",
+on després aquest impost desapareix.
+
+### Donar d'alta una comercialitzadora per no facturar IESE
+
+Per donar d'alta una comercialitzadora nova ho haurem de fer a través del menú
+**Empreses > Empreses > Nova empresa**
+
+![](_static/facturacion/menu_empresas.png)
+
+Els camps més importants a emplenar són:
+
+* **Nom**: Nom de la comercialitzadora
+* **Codi**: Codi de REE per aquesta comercialitzadora. Després s'utilitzarà en
+  fitxers de perfils que s'entreguen a REE.
+* **Posició fiscal**: Ens hem d'assegurar de que sigui una posició fiscal del
+  tipus "Comercialitzadora". Per això ens assegurem que triem la que posi
+  "Régimen nacional YYYY (Comercializadora)" on YYYY és el valor més gran.
+
+![](_static/facturacion/comercialitzadora_creada.png)
+
+!!! note
+    El camp **Posició fiscal** s'utilitza pel cas que a qui vagi destinada
+    la factura sigui una comercialitzadora, no se li aplicarà l'IESE, en
+    canvi si la factura va a un client final se li aplicarà l'IESE encara
+    que siguem una distribuidora.
