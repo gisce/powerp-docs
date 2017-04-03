@@ -384,4 +384,51 @@ quin període temporal ens interessa.
 
 ## Exportació factures F1
 
-!!! TODO
+Per exportar les factures generades en format XML F1 per enviar a les
+comercialitzadores hem de fer servir l'assistent accessible des del formulari
+del lot de facturació, amb el botó *Exportar factures XML*.
+
+### Exportació de la facturació d'un període
+
+Si volem exportar totes les factures d'una comercialitzadora (o de totes) que
+s'han generat a partir d'un lot de facturació, accedirem al lot que volguem, i
+al seu formulari trobarem a la columna de la dreta, el botó d'*Exportar
+factures XML*, que ens obrirà un assistent.
+
+![](_static/facturacion/F1_0.png)
+
+Aquest assistent ens demanarà de quina comercialitzadora volem exportar les
+factures, mostrant un desplegable amb les diferents comercialitzadores
+facturades en aquest lot. També hi ha l'opció d'exportar-les totes.
+
+Addicionalment, es pot demanar el resum de les factures generades marcant aquesta
+opció en l'assistent.
+
+El resultat d'aquest assistent serà un fitxer ``.zip``. Si s'han seleccionat
+totes les comercialitzadores, contindrà un fitxer ``.zip`` per cada
+comercialitzadora amb les seves factures. Si només se n'ha seleccionat una, les
+factures ``.xml`` de la comercialitzadora seleccionada.
+
+Si s'ha seleccionat la opció de resum es generarà un fitxer CSV ``.txt`` amb
+les dades de totes les factures que s'inclouen en l'XML ordenades per
+comercialitzadora.
+
+![](_static/facturacion/F1_1.png)
+
+### Exportació manual de factures
+
+També hi ha la opció d'exportar una o múltiples factures seleccionades manualment.
+
+Per exportar només una factura, obrirem la factura que volguem exportar i executarem
+l'assistent anomenat *Exportar factura XML* que trobarem a la columna dreta de la
+finestra de la factura.
+
+El resultat d'aquest assistent és un arxiu ``.xml`` amb la factura en format F1.
+
+Si volem exportar mes d'una factura, podem seleccionar-les en el llistat i
+pŕemer el botó *Acció* i la opció *Exportar factura XML*. El fitxer generat
+contrindrà els fitxers ``.xml`` seguint la mateixa lògica que quan s'exporta
+tot un lot (``.zip`` o ``.xml``) en funció de les comercialitzadores de les
+factures generades.
+
+En ambdós casos, es pot generar el CSV resum seleccionant la opció corresponent.
