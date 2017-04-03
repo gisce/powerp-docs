@@ -85,6 +85,7 @@ pages:
     - Gestión ATR: comer/atr.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
+    - ESCILA: comer/escila.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
