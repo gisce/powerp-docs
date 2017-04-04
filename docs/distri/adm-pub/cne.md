@@ -21,7 +21,7 @@ Apretem el botó **Generar liquidacions** i ens esperem a que finalitzi el càlc
 !!! note
    Pot ser que el programa es bloquegi, segons el número de factures que estiguin
    incloses en el període de liquidació seleccionat. Veurem que el botó es queda
-   *clavat*, ens hem d'esperar que finalitzi l'operació.
+   _clavat_, ens hem d'esperar que finalitzi l'operació.
 
 !!! tip   
     Si volem continuar treballant, podem obrir un altre client de l'ERP i continuar
@@ -50,22 +50,22 @@ mode formulari.
 
 ![](../_static/adm-pub/cne/liq_5.png)
 
-Podem imprimir la liquidació a PDF mitjançant el botó *Imprimir* o la opció
-*Liquidació* al menú de la dreta un cop dins la liquidació
+Podem imprimir la liquidació a PDF mitjançant el botó _Imprimir_ o la opció
+_Liquidació_ al menú de la dreta un cop dins la liquidació
 
 ### Exportació de liquidacions a CSV
 
 GISCE-ERP també permet exportar les liquidacions mitjançant un fitxer CSV. Per
-fer-ho, podem seleccionar una liquidació i prèmer al botó *Acció* o la opció
-*Exportar Liquidació (CSV)* del menú de la dreta un cop dins la liquidació. Se'ns obrirà
+fer-ho, podem seleccionar una liquidació i prèmer al botó _Acció_ o la opció
+_Exportar Liquidació (CSV)_ del menú de la dreta un cop dins la liquidació. Se'ns obrirà
 l'assistent que permetrà descarregar-nos el fitxer CSV generat.
 
 ![](../_static/adm-pub/cne/liq_8.png)
 
 !!! note
    El Fitxer s'anomenarà automàticament amb el format
-   **liquidacio_RRRR_YYYYMM.csv** on *RRRR* és el codi de referència de la
-   distribuidora i *YYYYMM* l'any i mes de la liquidació.
+   **liquidacio_RRRR_YYYYMM.csv** on _RRRR_ és el codi de referència de la
+   distribuidora i _YYYYMM_ l'any i mes de la liquidació.
 
 !!! note
    El fitxer CSV generat separa els camps per punt i coma (**;**) i pels valors numèrics

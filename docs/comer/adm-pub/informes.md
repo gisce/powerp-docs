@@ -50,7 +50,7 @@ Resum de les factures en Excel.
 ### Descripció
 
 Aquest mòdul permet generar l'informe sol·licitat pel ministeri de indústria
-Energia i turisme (*MINETUR*) segons RD 1658/2012 i recollits en el manual de
+Energia i turisme (_MINETUR_) segons RD 1658/2012 i recollits en el manual de
 la aplicació ESCILA.
 
 Es tracta de una estadística en format XML de la potencia contractada per la
@@ -60,7 +60,7 @@ comercialitzadora agrupada per CNAE i provincia
 
 Podeu trobar l'assistent de generació de l'informe a:
 
-`Administració pública -> Economia - Indústria -> ESCILA -> ESCILA`
+_"Administració pública -> Economia - Indústria -> ESCILA -> ESCILA"_
 
 ![](../_static/escila/menu_escila.png)
 
