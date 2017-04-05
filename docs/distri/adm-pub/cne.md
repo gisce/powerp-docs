@@ -123,7 +123,7 @@ d'introduïr a la web de la CNE.
 
 ![](../_static/adm-pub/cne/quota_1.png)
 
-## Documentació del Wizard de Generació d'Informes Georeferenciats de la CNE
+## Documentació del Assistent de Generació d'Informes Georeferenciats de la CNE
 
 ### Generació de fitxers georeferenciats per CNE segons Circular 1/2012 des de GISCE-ERP
 
@@ -302,7 +302,7 @@ Destacar els següents camps de l'informe:
 **_Formulari de Règim Especial amb camps per F8 georef CNE 2012_**
 ![](../_static/adm-pub/cne/F8_re_es.png)
 
-### Wizard de generació de fitxers georeferenciats per CNE segons Circular 1/2012 des de GISCE-ERP
+### Assistent de generació de fitxers georeferenciats per CNE segons Circular 1/2012 des de GISCE-ERP
 
 #### Introducció:
 
@@ -314,8 +314,8 @@ informes hi ha altres scripts que els complementen per omplir dades rellevants d
 externes que no es poden calcular automàticament utilitzant les dades de Gisce-ERP. Tots aquests
 scripts s'engloben dins el projecte `georef` allotjat al `github de Gisce`.
 
-Per permetre la generació dels informes des de Gisce-ERP s'ha desenvolupat un wizard
-específic. Aquest wizard el trobareu a **Administració Pública -> CNE -> Generar informes georeferenciació**
+Per permetre la generació dels informes des de Gisce-ERP s'ha desenvolupat un Assistent
+específic. Aquest Assistent el trobareu a **Administració Pública -> CNE -> Generar informes georeferenciació**
 
 Es poden generar els següents fitxers georefereniats de la CNE:
 
@@ -337,7 +337,7 @@ Es poden generar els següents fitxers georefereniats de la CNE:
 ![](../_static/adm-pub/cne/Wizard_F4_generat_ca.png)
 
 
-El Wizard està format per un sol formulari amb dos estats, _fitxer no generat_ i _fitxer generat_.
+El Assistent està format per un sol formulari amb dos estats, _fitxer no generat_ i _fitxer generat_.
 Els camps imprescindibles per qualsevol fitxer són:
 
 * **Tipus**: Especifica l'informe que es vol generar
@@ -358,7 +358,7 @@ Els camps imprescindibles per qualsevol fitxer són:
 Les accions que es poden realizar es realitzen prement el botó corresponent:
 
 * **Generar Fitxer**: Genera el fitxer seleccionat en el desplegable _Tipus_
-* **Tanca**: Tanca el wizard
+* **Tanca**: Tanca el Assistent
 
 El fitxer resultant es pot descarregar i veure en el camp **Fitxer** (fitxer generat)
 
