@@ -19,9 +19,9 @@ pel qual volem generar la liquidació de la CNE.
 Apretem el botó **Generar liquidacions** i ens esperem a que finalitzi el càlcul.
 
 !!! note
-   Pot ser que el programa es bloquegi, segons el número de factures que estiguin
-   incloses en el període de liquidació seleccionat. Veurem que el botó es queda
-   _clavat_, ens hem d'esperar que finalitzi l'operació.
+    Pot ser que el programa es bloquegi, segons el número de factures que estiguin
+    incloses en el període de liquidació seleccionat. Veurem que el botó es queda
+    _clavat_, ens hem d'esperar que finalitzi l'operació.
 
 !!! tip   
     Si volem continuar treballant, podem obrir un altre client de l'ERP i continuar
@@ -63,13 +63,13 @@ l'assistent que permetrà descarregar-nos el fitxer CSV generat.
 ![](../_static/adm-pub/cne/liq_8.png)
 
 !!! note
-   El Fitxer s'anomenarà automàticament amb el format
-   **liquidacio_RRRR_YYYYMM.csv** on _RRRR_ és el codi de referència de la
-   distribuidora i _YYYYMM_ l'any i mes de la liquidació.
+    El Fitxer s'anomenarà automàticament amb el format
+    **liquidacio_RRRR_YYYYMM.csv** on _RRRR_ és el codi de referència de la
+    distribuidora i _YYYYMM_ l'any i mes de la liquidació.
 
 !!! note
-   El fitxer CSV generat separa els camps per punt i coma (**;**) i pels valors numèrics
-   utilitza el punt (**.**) com a separador de decimals.
+    El fitxer CSV generat separa els camps per punt i coma (**;**) i pels valors numèrics
+    utilitza el punt (**.**) com a separador de decimals.
 
 
 ### Com es generen els càlculs de la liquidació
@@ -327,7 +327,8 @@ Es poden generar els següents fitxers georefereniats de la CNE:
 * **F7**: CUPS _(CUPS)_
 * **F8**: Règim Especial _(RE)_
 
-!!! Subestacions
+!!! note
+    En el cas de les subestacions:
     La generació dels fitxers **F1** i **F1bis** només estarà disponible en aquelles
     instal·lacions que disposin del mòdul de Subestacions
 
@@ -437,7 +438,9 @@ Un exemple:
 
 !!! note
 
-    georef: https://github.com/gisce/georef
+    Link al repositori del projecte georef
+
+    https://github.com/gisce/georef
 
 ### Càrrega d'energies per F8 (CUPS)
 
