@@ -97,3 +97,4 @@ pages:
     - Gestió de pagaments i cobraments: facturacio/cobraments.md
     - Gestió de lectures: facturacio/lectures.md
     - Lots: facturacio/lots.md
+    - Facturació sitel: facturacio/facturacio_sitel.md
