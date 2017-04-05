@@ -73,7 +73,8 @@ You should [check the wiki](https://github.com/gisce/powerp-docs/wiki/Build!---D
 The essential commands are:
 
 * Serve - to build a webserver that auto-updates with changes in the docs.
-  (Does not update with the translations files)
+    - Does not update with the translations files
+    - **RECOMMENDED** While writting the docs
 * Build - to build the html from the docs into a folder.
 
 With the "-f" argument, we specify the config file to be used.
