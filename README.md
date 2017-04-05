@@ -1,6 +1,6 @@
 # PowERP documentation
 
-[Build of our documentation](http://builds.gisce.net/powerp-docs/master/)
+Our docs are available in: [manuals.gisce.net](http://manuals.gisce.net/)
 
 **Table Of Contents**
 
