@@ -10,7 +10,7 @@ Transformadors i els seus elements més característics
 Dins del mateix mòdul de centres transformadors, disposem de diversos submoduls
 per a millor gestió d'aquests. Aquests submòduls son:
 
-* [Cel·les i elements de tall](celles.md)
+* [Cel·les i elements de tall](celdas.md)
 * [Subestacions](subestaciones.md)
 
 ## Crear un nou Centre Transformador (CT)

@@ -76,7 +76,7 @@ _A/R/M_.
 En la part inferior de la pantalla de presa de mesures d'Activa i Reactiva,
 apareix el valor de la suma de tots els períodes perquè es contrasti amb el
 valor del totalitzador del equip de mesura. (Veure apartat
-[5.5.2](proces_de_treball.md#tarifes-de-3-i-6-periodes))
+[5.5.2](proceso_de_trabajo.md#tarifes-de-3-i-6-periodes))
 
 ### Descàrrega de Corbes
 
