@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-04-05 10:32+0200\n"
-"PO-Revision-Date: 2017-04-05 10:36+0200\n"
+"POT-Creation-Date: 2017-04-05 13:07+0200\n"
+"PO-Revision-Date: 2017-04-05 14:03+0200\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -33779,6 +33779,1245 @@ msgstr ""
 
 msgid "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/lectures/llistat.png\" />"
+
+#, fuzzy
+msgid "Documentació del mòdul de CSEC"
+msgstr "Documentación del módulo de perfiles"
+
+msgid "Menú de CSEC"
+msgstr "Menú de CSEC"
+
+msgid ""
+"En el menú de <strong>Concentrador secundari</strong> es troba l'apartat indicat a "
+"la imatge\n"
+"inferior. Dins de l'apartat \n"
+"<strong>Enllaç concentrador secundari</strong> s'envia informació\n"
+"a la base de dades remota: el concentrador secundari."
+msgstr ""
+"En el menú de <strong>Concentrador secundario</strong> se encuentra el apartado "
+"indicado en la imagen\n"
+"inferior. Dentro del apartado\n"
+"<strong>Enlace concentrador secundario</strong> se envia información\n"
+"a la base de datos remota: el concentrador secundario."
+
+#, fuzzy
+msgid "<strong><em>Menú de CSEC</em></strong>"
+msgstr "<strong>M1</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/menu_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/escila/menu_escila.png\" />"
+
+msgid "Enllaç amb el concentrador secundari"
+msgstr "Enlace con el concentrador secundario"
+
+msgid ""
+"Aquesta opció envia informació a la base de dades remota: el concentrador "
+"secundari.\n"
+"Al seleccionar-la des del menú de CSEC s'obre l'assistent de l'enllaç amb el\n"
+"concentrador secundari:"
+msgstr ""
+"Esta opción envia información a la base de datos remota: el concentrador "
+"secundario.\n"
+"Al selecionarla desde el menú de CSEC se abre el asistente del enlace con el\n"
+"concentrador secundario:"
+
+#, fuzzy
+msgid "<strong><em>Assistent CSEC</em></strong>"
+msgstr "<strong>Resistencia</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/wizard_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/f1/wizard_xml.png\" />"
+
+#, fuzzy
+msgid "<strong>Càrrega d'abonats</strong>"
+msgstr "<strong>Catálogo de Cables AT</strong>"
+
+msgid ""
+"<strong>Data:</strong> data del dia que es llisten i envien les modificacions "
+"contractuals\n"
+" dels abonats al concentrador secundari. Es llistaran tots els abonats que hi\n"
+" havia el dia especificat."
+msgstr ""
+"<strong>Fecha:</strong> Fecha del día quese listan t envian las modificaciones "
+"contractuales\n"
+"de los abonados al concentrador secundario. Se listaran todos los abonados que "
+"hubiera\n"
+"el día especificado."
+
+#, fuzzy
+msgid "<strong>Tancaments bruts</strong>"
+msgstr "<strong>Tensión</strong>"
+
+#, fuzzy
+msgid ""
+"<strong>Data inicial:</strong> data a partir de la qual es llisten les factures "
+"dels\n"
+" tancaments bruts."
+msgstr "<strong> Límite </strong>: Fecha de la que queremos las lecturas"
+
+msgid ""
+"<strong>Data final:</strong> data límit en que es llisten les factures dels "
+"tancaments\n"
+" bruts."
+msgstr ""
+"<strong>Fecha final:</strong>Fecha límite en la que se listan las facturas de los "
+"cierres\n"
+"sucios."
+
+#, fuzzy
+msgid "<strong>Saldo ATR</strong>"
+msgstr "<strong>LINEAS AT</strong>"
+
+msgid ""
+"<strong>Data:</strong> data del dia a partir del qual es descarregarà el saldo ATR "
+"des del\n"
+" concentrador remot fins la data actual."
+msgstr ""
+"<strong>Fecha:</strong> Fecha del día a partir del que se descargará el saldo ATR "
+"des del\n"
+"concentrador remoto hasta la fecha actual."
+
+msgid ""
+"<strong>Corba de càrrega horària ferma a efectes de facturació al consumidor (CCHF)</"
+"strong>"
+msgstr ""
+"<strong>Curva de carga horaria firme a efectos de facturación al consumidor (CCHF)</"
+"strong>"
+
+msgid ""
+"<strong>Data:</strong> data del dia a partir del qual es descarregarà la corba "
+"facturada\n"
+" des del concentrador remot fins la data actual."
+msgstr ""
+"<strong>Fecha:</strong> Fecha del día a partir del que se descargará la curva "
+"facturada\n"
+"des del concentrador remoto hasta la fecha actual."
+
+msgid "<strong>Corba de càrrega horària ferma validada (CCHV)</strong>"
+msgstr "<strong>Curva de carga horaria firme validada (CCHV)</strong>"
+
+msgid ""
+"<strong>Data:</strong> data del dia a partir del qual es descarregarà la corba "
+"validada\n"
+" des del concentrador remot fins la data actual."
+msgstr ""
+"<strong>Fecha:</strong> Fecha del día a partir del que se descargará la curva "
+"validada\n"
+"des del concentrador remoto hasta la fecha actual."
+
+#, fuzzy
+msgid ""
+"<strong>Informació:</strong> mostra constantment informació sobre l'estat de les "
+"transaccions\n"
+" de l'assistent."
+msgstr ""
+"<strong>Información</strong> Es un cuadro donde aparece constantemente información "
+"sobre la generación del fichero."
+
+msgid "Saldo ATR"
+msgstr "Saldo ATR"
+
+msgid ""
+"Amb aquesta opció és possible consultar les dades descarregades des del\n"
+"concentrador secundari. Per fer-ho, es fa click a la opció <strong>Saldo ATR</"
+"strong> del\n"
+"menú del \n"
+"<strong>Concentrador secundari</strong>. Llavors, apareix la següent pantalla:"
+msgstr ""
+"Con esta opción es posible consultar las fechas descargadas desde el\n"
+"concentrador secundario. Para hacerlo, se hace click a la opción <strong>Saldo ATR</"
+"strong> del\n"
+"menú del \n"
+"<strong>Concentrador secundario</strong>. Entonces, aparece la siguiente pantalla:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/saldo_atr.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/f1/lot_tree.png\" />"
+
+msgid ""
+"Aquesta pantalla mostra tota la informació disponible dels <strong>Saldos ATR</"
+"strong>. Al\n"
+"fer doble click a un registre apareix informació extesa sobre aquest:"
+msgstr ""
+"Esta pantalla muestra toda la información disponible de los <strong>Saldos ATR</"
+"strong>. Al\n"
+"hacer doble click a un registro aparece información extendida sobre este:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/atr_registre.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+#, fuzzy
+msgid "Corba de càrrega horaria validada (CCHV)"
+msgstr "Curvas de Carga Horarias (CCH)"
+
+msgid ""
+"Amb aquesta opció és possible consultar les dades descarregades des del\n"
+"concentrador secundari relatives a les <strong>corbes de càrrega horària validades</"
+"strong>.\n"
+"Per fer-ho s'ha de fer click a la opció \n"
+"<strong>Corba de càrrega horària validada (CCHV)</strong>\n"
+"i llavors apareix la següent pantalla:"
+msgstr ""
+"Con esta opción es posible consultar los datos descargados desde el \n"
+"concentrador secundario relativas a las <strong>curvas de carga horaria validadas</"
+"strong>.\n"
+"para hacerlo se debe hacer click a la opción\n"
+"<strong>Curva de carga horaria validada (CCHV)</strong>\n"
+"y entonces aparece la siguiente pantalla:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchv.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+msgid "Al fer doble click en un registre es mostrarà informació extesa sobre aquest:"
+msgstr ""
+"Al hacer doble click en un registro se mostrará información extendida sobre este:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchv_registre.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+#, fuzzy
+msgid "Corba de càrrega horaria facturada (CCHF)"
+msgstr "Curvas de Carga Horarias (CCH)"
+
+msgid ""
+"Amb aquesta opció és possible consultar les dades descarregades des del\n"
+"concentrador secundari relatives a les <strong>corbes de càrrega horària facturades</"
+"strong>.\n"
+"Per fer-ho s'ha de fer click a la opció \n"
+"<strong>Corba de càrrega horària facturada (CCHF)</strong>\n"
+"i llavors apareix la següent pantalla:"
+msgstr ""
+"Con esta opción es posible consultar los datos descargados des del\n"
+"concentrador secundario relativas a las <strong>curvas de carga horaria facturada</"
+"strong>.\n"
+"Para hacerlo se debe hacer click a la opción\n"
+"<strong>Curva de carga horaria facturada (CCHF)</strong>\n"
+"y entonces aparece la siguiente pantalla:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchf.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchf_registre.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+#, fuzzy
+msgid "Crear lectures de TG"
+msgstr "Comprobar lecturas"
+
+#, fuzzy
+msgid "Crear lectura des de TG"
+msgstr "Lectura desde TG (Botón)"
+
+msgid ""
+"Aquesta opció permet crear lectures de telegestió per els comptadors desitjats\n"
+"<strong>a partir de les dades obtingudes del concentrador secundari</strong>. Els "
+"comptadors\n"
+"s'han d'entrar manualment. Per crear una lectura s'ha de fer click a la opció\n"
+"\n"
+"<strong>Crear lectura des de TG</strong> des del menú del concentrador secundari i "
+"llavors\n"
+"apareix la següent pantalla:"
+msgstr ""
+"Esta opción permite crear lecturas de telegestión para los contadores deseados \n"
+"<strong>a partir de los datos obtenidos del concentrador secundario</strong>. Los "
+"contadores \n"
+"deben ser entrados manualmente. Para crear una lectura debe hacer click en la "
+"opción \n"
+"<strong>Crear lectura desde TG</strong> desde el menú del concentrador secundario y "
+"entonces \n"
+"aparece la siguiente pantalla:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/lectura_tg_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/f1/factura_tree.png\" />"
+
+#, fuzzy
+msgid "Els passos a seguir per generar una lectura són els següents:"
+msgstr "Los campos que lo forman són los siguientes:"
+
+msgid "Selecció del comptador desitjat des del selector de comptadors."
+msgstr "Selección del contador deseado desde el selector de contadores."
+
+msgid "Selecció de la data desitjada des del selector de dates."
+msgstr "Selección de la fecha deseada desde el selector de fechas."
+
+msgid ""
+"Fer click a la opció \"forçar\" en cas de voler generar la lectura encara que\n"
+"   ja n'existeixi una de posterior. (opcional)"
+msgstr ""
+"Hacer click en la opción \"forzar\" en caso de querer generar la lectura aunque\n"
+"ya no exista una de posterior. (opcional)"
+
+#, fuzzy
+msgid "Click al botó <img alt=\"\" src=\"../_static/sitel_fact/ok.png\" />."
+msgstr ""
+"Click al botón <img alt=\"generar\" src=\"../_static/perfiles/boto_generar.png\" />"
+
+msgid "Crear múltiples lectures de TG a partir d'un lot"
+msgstr "Crear múltiples lecturas de TG desde un lote."
+
+msgid ""
+"Es poden crear lectures de TG a partir d'un lot de facturació. Per crear-les\n"
+"s'ha de fer click al menú <strong>Facturació</strong> --> \n"
+"<strong>General</strong> -->\n"
+"\n"
+"<strong>Lots de facturació</strong> i fer click a la opció \n"
+"<strong>Lots de facturació</strong>.\n"
+"Apareixerà una pantalla com la següent:"
+msgstr ""
+"Se pueden crear lecturas de TG a partir de un lote de facturación. Para crear las \n"
+"lecturas se debe hacer clic en el menú <strong>Facturación -> General -> Lotes de "
+"facturación</strong>\n"
+" y hacer click en la opción <strong>Lotes de facturación</strong>. \n"
+"Aparecerá una pantalla como la siguiente:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/lots.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/print/menu_fact_clients.png\" />"
+
+msgid ""
+"A continuació es fa click sobre el lot des del qual es desitja generar les\n"
+"lectures de telegestió i, llavors, es fa click al botó <img alt=\"\" src=\"../"
+"_static/sitel_fact/boto_lot.png\" />:"
+msgstr ""
+"A continuación se hace clic sobre el lote desde el que se desea generar las \n"
+"lecturas de telegestión y, entonces, se hace clic en el botón  <img alt=\"\" src="
+"\"../_static/sitel_fact/boto_lot.png\" />:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/lot_detall.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/f1/lot_tree.png\" />"
+
+msgid ""
+"Es generaran <strong>lectures de les pòlisses del lot</strong> que estiguin marcades "
+"com\n"
+"\n"
+"<strong>operatives amb o sense CCH</strong>. Les lectures sempre es generen buscant "
+"els\n"
+"tancaments bruts (descarregats des del concentrador secundari) que estan més\n"
+"pròxims a la \n"
+"<strong>data final</strong> del lot, però mai posterior a aquesta."
+msgstr ""
+"Se generarán <strong>lecturas de las pólizas del lote</strong> que estén marcadas "
+"como \n"
+"<strong>operativas con o sin CCH</strong>. Las lecturas siempre se generan buscando "
+"los \n"
+"cierres brutos (descargados desde el concentrador secundario) que están más próximos "
+"a la \n"
+"<strong>fecha final</strong> del lote, pero nunca posterior a ésta."
+
+#, fuzzy
+msgid "Obtenció de dades"
+msgstr "Obtención de resultados"
+
+msgid ""
+"Per obtenir el <strong>Saldo ATR</strong> des del concentrador secundari s'ha de "
+"seguir el\n"
+"següent procediment:"
+msgstr ""
+"Para obtener el <strong>Saldo ATR</strong> desde el concentrador secundario se debe "
+"seguir el \n"
+"siguiente procedimiento:"
+
+msgid ""
+"Selecció de la data desitjada des del selector de dates a partir de la qual\n"
+"   es descarregaran els saldos ATR fins el dia actual."
+msgstr ""
+"Selección de la fecha deseada desde el selector de datos a partir de la cual \n"
+"se descargarán los saldos ATR hasta el día actual."
+
+#, fuzzy
+msgid ""
+"Click al botó <img alt=\"\" src=\"../_static/sitel_fact/boto_descarregar.png\" /> de "
+"l'apartat \n"
+"<strong>Saldo ATR</strong>."
+msgstr ""
+"Se selecciona el botón nuevo <img alt=\"\" src=\"../_static/contadores/iconaNou.png"
+"\" />del\n"
+"apartado\n"
+"<strong>línia de orden de compra</strong>"
+
+#, fuzzy
+msgid "Seguits aquests passos es mostra la següent informació:"
+msgstr "Seguidos estos pasos el asistente muestra la siguiente información:"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/atr_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/act_tis/lat_seccio.png\" />"
+
+#, fuzzy
+msgid "Corba de càrrega horària ferma validada (CCHV)"
+msgstr "Curvas de Carga Horarias (CCH)"
+
+msgid ""
+"Per obtenir la <strong>corba de càrrega horària validada CCHV</strong> des del "
+"concentrador\n"
+"secundari s'ha de seguir el següent procediment:"
+msgstr ""
+"Para obtener la <strong>curva de carga horaria validada CCHV</strong> desde el "
+"concentrador\n"
+"secundario se debe seguir el siguiente procedimiento:"
+
+msgid ""
+"Selecció de la data desitjada des del selector de dades a partir de la qual\n"
+"   es descarregaran les corbes fins el dia actual."
+msgstr ""
+"Selección de la fecha deseada desde el selector de datos a partir de la cual \n"
+"se descargarán las curvas hasta el día actual."
+
+#, fuzzy
+msgid ""
+"Click al botó <img alt=\"\" src=\"../_static/sitel_fact/boto_descarregar.png\" /> de "
+"l'apartat \n"
+"<strong>Corba de càrrega horària ferma validada (CCHV)</strong>."
+msgstr ""
+"Se selecciona el botón nuevo <img alt=\"\" src=\"../_static/contadores/iconaNou.png"
+"\" />del\n"
+"apartado\n"
+"<strong>línia de orden de compra</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchv_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+msgid "Corba de càrrega horària ferma a efectes de facturació al consumidor (CCHF)"
+msgstr "Curva de carga horaria firme a efectos de facturación al consumidor (CCHF)"
+
+msgid ""
+"Per obtenir la <strong>corba de càrrega horària facturada</strong> des del "
+"concentrador\n"
+"secundari s'ha de seguir el següent procediment:"
+msgstr ""
+"Para obtener la <strong>curva de carga horaria facturada</strong> desde el "
+"concentrador \n"
+"secundario se debe seguir el siguiente procedimiento:"
+
+#, fuzzy
+msgid ""
+"Click al botó <img alt=\"\" src=\"../_static/sitel_fact/boto_descarregar.png\" /> de "
+"l'apartat \n"
+"<strong>Corba de càrrega horària ferma a efectes de facturació al consumidor (CCHF)</"
+"strong>."
+msgstr ""
+"Se selecciona el botón nuevo <img alt=\"\" src=\"../_static/contadores/iconaNou.png"
+"\" />del\n"
+"apartado\n"
+"<strong>línia de orden de compra</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/cchf_csec.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/interficie.png\" />"
+
+#, fuzzy
+msgid "Enviament de dades"
+msgstr "3.4. Almacenamiento de datos"
+
+#, fuzzy
+msgid "Càrrega d'abonats"
+msgstr "Descarga de Cierres"
+
+msgid ""
+"La càrrega d'abonats és incremental i consisteix en volcar, per tots els clients\n"
+"de facturació i independentment del tipus que siguin, tots aquells canvis que\n"
+"s'hagin produït en l'inventari d'abonats."
+msgstr ""
+"La carga de abonados es incremental y consiste en volcar, para todos los clientes \n"
+"de facturación e independientemente del tipo que sean, todos los cambios que se \n"
+"hayan producido en el inventario de abonados."
+
+msgid ""
+"Canvis estructurals en l'inventari<blockquote>\n"
+"<ul>\n"
+"<li>Altes de nous subministraments</li>\n"
+"<li>Baixes de subministraments existents</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+msgstr ""
+"Cambios estructurales en el inventario:<blockquote>\n"
+"<ul>\n"
+"<li>Altas de nuevos suministramientos</li>\n"
+"<li>Bajas de suministramientos existentes</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+
+msgid ""
+"Canvis d'agregació<blockquote>\n"
+"<ul>\n"
+"<li>Canvi de potència</li>\n"
+"<li>Canvi de tarifa</li>\n"
+"<li>Canvi de comercialitzadora</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+msgstr ""
+"Cambios de agregación<blockquote>\n"
+"<ul>\n"
+"<li>Cambio de potencia</li>\n"
+"<li>Cambio de tarifa</li>\n"
+"<li>Cambio de comercializadora</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+
+msgid ""
+"Canvis de contingut<blockquote>\n"
+"<ul>\n"
+"<li>Canvi de comptador</li>\n"
+"<li>Canvi de nom del titular del contracte</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+msgstr ""
+"Cambios de contenido<blockquote>\n"
+"<ul>\n"
+"<li>Cambio de contador</li>\n"
+"<li>Cambio de nombre del titular del contrato</li>\n"
+"</ul>\n"
+"</blockquote>\n"
+
+msgid ""
+"Si en la mateixa data es produeixen dos o més canvis (siguin del tipus que\n"
+"siguin) s'afegeix una línia per cada canvi produït."
+msgstr ""
+"Si en la misma fecha se producen dos o más cambios (sean del tipo que \n"
+"sean) se añade una línea por cada cambio producido."
+
+msgid ""
+"No és necessari fer la càrrega d'abonats més d'un cop, doncs s'encarrega\n"
+"d'inicialitzar la base de dades del concentrador remot i les modificacions\n"
+"contractuals s'envien periòdicament de forma automàtica."
+msgstr ""
+"No es necesario hacer la carga de abonados más de una vez, pues se encarga\n"
+"de inicializar la base de datos del concentrador remoto y las modificaciones\n"
+"contractuales se envía periódicamente de forma automática."
+
+msgid ""
+"Per enviar els abonats d'un dia concret al concentrador secundari es realitza\n"
+"el següent procediment:"
+msgstr ""
+"Para enviar los abonados de un día concreto al concentrador secundario se realiza \n"
+"el siguiente procedimiento:"
+
+#, fuzzy
+msgid ""
+"Click al botó <img alt=\"\" src=\"../_static/sitel_fact/boto_carregar.png\" /> de "
+"l'apartat \n"
+"<strong>càrrega d'abonats</strong>."
+msgstr ""
+"Se selecciona el botón nuevo <img alt=\"\" src=\"../_static/contadores/iconaNou.png"
+"\" />del\n"
+"apartado\n"
+"<strong>línia de orden de compra</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/resultats_abonats.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaContactes.png\" />"
+
+#, fuzzy
+msgid "La informació a incloure és la següent:"
+msgstr "La información asociada a cada incidencia es la siguiente:"
+
+msgid ""
+"\n"
+"<p><strong>INV_FechaHoraRegistro:</strong> s'obté a través del camp "
+"<strong>write_date</strong> de la\n"
+" modificació contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_FechaHoraRegistro:</strong> se obtiene desde el campo "
+"<strong>write_date</strong> de la\n"
+" modificación contractual activa.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_EstadoRegistro:</strong> té un valor fixe 0 (registre nou no "
+"processat).</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+msgid ""
+"\n"
+"<p><strong>INV_TipoOperacion:</strong> conté els següents valors:</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_TipoOperacion:</strong> contiene los siguientes valores:</p>\n"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/estat_registre.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/atr/PestanyaHistory.png\" />"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_CUPS:</strong> s'obté a través del camp <strong>CUPS</strong> de la "
+"pòlissa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+msgid ""
+"\n"
+"<p><strong>INV_Distribuidor:</strong> camp de 4 dígits, completat amb zeros a "
+"l'esquerra (si\n"
+" cal). S'obté a través del camp <strong>Distribuidora</strong> de la pòlissa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_Distribuidor:</strong> campo de 4 dígitos, completado con zeros a la "
+"izquierda \n"
+"(si es necesario). Se obtiene desde el campo <strong>Distribuidora</strong> de la "
+"póliza.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_FechaVigorCambio:</strong> s'obté a través del camp "
+"<strong>data_inici</strong> de la\n"
+" modificació contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Fecha final nueva:</strong> la nueva fecha final que el asistente ha "
+"asignado a la\n"
+"  modificación contractual.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_FechaAltaDistribucion:</strong> s'obté a través del camp "
+"<strong>data_alta</strong> de la\n"
+" pòlissa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+msgid ""
+"\n"
+"<p><strong>INV_FechaBajaDistribucion:</strong> s'obté a través del camp "
+"<strong>data_baixa</strong> de la\n"
+" pòlissa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_FechaBajaDistribucion:</strong> se obtiene desde el campo "
+"<strong>data_baja</strong> de la\n"
+" póliza.</p>\n"
+
+msgid ""
+"\n"
+"<p><strong>FechaAltaComercializador:</strong> s'obté a través de la data d'alta més "
+"recent de\n"
+" la pòlissa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>FechaAltaComercializador:</strong> se obtiene desde la fecha de alta más "
+"reciente de\n"
+"la póliza.</p>\n"
+
+msgid ""
+"\n"
+"<p><strong>INV_Comercializador:</strong> camp de 4 dígits, completat amb zeros a "
+"l'esquerra (\n"
+" si cal). S'obté a través del camp <strong>Comercialitzadora</strong> de la pòlissa."
+"</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_Comercializador:</strong> campo de 4 dígitos, completado con zeros a "
+"la izquierda \n"
+"( si es necesario ). Se obtiene desde el campo <strong>Comercializadora</strong> de "
+"la póliza.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_NivelTension:</strong> s'obté del camp <strong>agree_tensio</strong> "
+"de la modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_TarifaAcceso:</strong> s'obté del camp <strong>agree_tarifa</strong> "
+"de la modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_DiscriminacionHoraria:</strong> s'obté del camp <strong>agree_dh</"
+"strong> de la modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Fecha firma contrato nueva:</strong> la nueva fecha de firma del contrato "
+"que\n"
+"  el asistente ha asignado a la modificación contractual.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContractada:</strong> s'obté del camp <strong>potencia</"
+"strong> de la modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Provincia:</strong> s'obté a partir de l'adreça del titular de la "
+"modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Fecha inicial nueva:</strong> la nueva fecha inicial que el asistente ha "
+"asignado a la modificación contractual</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_NombreAbonado:</strong> s'obté a partir del titular de la "
+"modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Fecha final nueva:</strong> la nueva fecha final que el asistente ha "
+"asignado a la\n"
+"  modificación contractual.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_NumeroCliente:</strong> s'obté a partir de l'ID del titular de la "
+"modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Fecha final nueva:</strong> la nueva fecha final que el asistente ha "
+"asignado a la\n"
+"  modificación contractual.</p>\n"
+
+msgid ""
+"\n"
+"<p><strong>INV_NumeroContador:</strong> Si es tracta d'una baixa, busca el comptador "
+"que\n"
+" estava actiu a la data de baixa de la pòlissa. En cas contrari es busca a\n"
+" partir de la data d'inici.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>INV_NumeroContador:</strong> Si se trat de una baja, busca el contador "
+"que\n"
+" estaba activo en la fecha de baja de la póliza. En caso contrario se busca desde la "
+"fecha de\n"
+"inicio.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_NumeroContadorReactiva:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_NumeroPoliza:</strong> s'obté a partir de l'ID de la pòlissa.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Póliza</strong>\n"
+"    Número de póliza.</p>\n"
+
+msgid ""
+"\n"
+"<p><strong>INV_CodigoMunicipio:</strong> s'obté a partir del camp <strong>ine</"
+"strong> del municipi de\n"
+" l'adreça del titular de la pòlissa.</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>INV_Municipio:</strong> s'obté a partir del camp <strong>name</strong> "
+"del municipi de\n"
+" l'adreça del titular de la pòlissa.</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>INV_Calle:</strong> s'obté a partir del camp <strong>street</strong> de "
+"l'adreça del titular\n"
+" de la pòlissa.</p>\n"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Numero:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Escalera:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Planta:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Piso:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+msgid ""
+"\n"
+"<p><strong>INV_Telefono:</strong> s'obté a partir del camp <strong>phone</strong> de "
+"l'adreça del titular\n"
+" de la pòlissa.</p>\n"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_TipoTarifa:</strong> s'obté a partir del camp <strong>tipo_pago</"
+"strong> de la modificació\n"
+" contractual activa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_Zona:</strong> té un valor fixe, 0 (zona peninsular).</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP1:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP2:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP3:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP4:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP5:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_PotenciaContratadaP6:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>INV_DireccionAclarador:</strong> té un valor fixe buit.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+msgid "Tancaments bruts"
+msgstr ""
+
+msgid ""
+"Es carrega al sistema concentrador secundari la informació relacionada als\n"
+"consums d'un període determinat per aquells abonats que s'hagin facturat (\n"
+"refacturacions incloses) en un interval de temps."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Per enviar els tancaments bruts dins d'un interval de temps es realitza el\n"
+"següent procediment:"
+msgstr ""
+"Por cada CUPS indicado en el campo <strong> Número de CUPS </strong> se realiza el\n"
+"siguiente procedimiento:"
+
+msgid "Selecció de la data inicial desitjada des del selector de dates inicials."
+msgstr ""
+
+msgid "Selecció de la data final desitjada des del selector de dates finals."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Click al botó <img alt=\"\" src=\"../_static/sitel_fact/boto_carregar.png\" /> de "
+"l'apartat \n"
+"<strong>tancaments bruts</strong>."
+msgstr ""
+"Se selecciona el botón nuevo <img alt=\"\" src=\"../_static/contadores/iconaNou.png"
+"\" />del\n"
+"apartado\n"
+"<strong>línia de orden de compra</strong>"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/sitel_fact/resultats_tancaments.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/menu_assistent_tancament_any.png\" />"
+
+msgid ""
+"Si s'intenten carregar tancaments ja enviats l'assistent ho informarà al camp\n"
+"d'informació indicant el numero de registres repetits que s'anaven a enviar:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/sitel_fact/resultats_tancaments_repetits.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/menu_assistent_tancament_any.png\" />"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>CON_FechaHoraRegistro:</strong> s'obté a través del camp "
+"<strong>write_date</strong> de la\n"
+" factura.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>CON_EstadoRegistro:</strong> té un valor fixe, 0 (registre nou no "
+"processat).</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>CON_CUPS:</strong> s'obté a través del camp <strong>CUPS</strong> de la "
+"pòlissa.</p>\n"
+msgstr ""
+"<strong>Tipo</strong>: se obtiene del campo \"<strong>Tecnología</strong>\" de la "
+"posición."
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>CON_NumeroContador:</strong> s'obté a través del comptador de la pòlissa."
+"</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Póliza</strong>\n"
+"    Número de póliza.</p>\n"
+
+#, fuzzy
+msgid ""
+"\n"
+"<p><strong>CON_NumFactura:</strong> s'obté a partir del camp <strong>id</strong> de "
+"la factura.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Número de contadores</strong>: tiene un valor fijo de <strong>1</strong>."
+"</p>\n"
+"\n"
+
+msgid ""
+"\n"
+"<p><strong>CON_InicioDelPeriodo:</strong> s'obté a partir del camp "
+"<strong>data_anterior</strong> de les\n"
+" lectures d'energia de la factura.</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_FinDelPeriodo:</strong> s'obté a partir del camp <strong>data_actual</"
+"strong> de les\n"
+" lectures d'energia de la factura.</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo1:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P1\".</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo2:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P2\".</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo3:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P3\".</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo4:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P4\".</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo5:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P5\".</p>\n"
+msgstr ""
+
+msgid ""
+"\n"
+"<p><strong>CON_ConsumoPeriodo6:</strong> s'obté a partir del camp <strong>consum</"
+"strong> de les lectures\n"
+" d'energia de la factura on el període sigui \"P6\".</p>\n"
+msgstr ""
+
+#, fuzzy
+msgid "Enviament de modificacions contractuals"
+msgstr "Modificaciones contractuales"
+
+msgid ""
+"Aquest mòdul envia periòdicament dades al concentrador secundari de manera\n"
+"automàtica. Envia informació sobre les modificacions contractuals efectuades i\n"
+"també altes i baixes de pòlisses. Les dades que envia són les següents:"
+msgstr ""
+
+msgid ""
+"<strong>Alta d'un nou subminstrament en la distribuidora:</strong> s'activa al "
+"donar\n"
+"   d'alta una nova pòlissa."
+msgstr ""
+
+msgid ""
+"<strong>Baixa d'un subministrament en la distribuidora:</strong> s'activa al donar "
+"de\n"
+"   baixa una pòlissa."
+msgstr ""
+
+msgid ""
+"<strong>Canvi de potència:</strong> s'activa quan s'efectua una modificació "
+"contractual\n"
+"   on la potència és modificada."
+msgstr ""
+
+msgid ""
+"<strong>Canvi de tarifa:</strong> s'activa quan s'efectua una modificació "
+"contractual on\n"
+"   la tarifa és modificada."
+msgstr ""
+
+msgid ""
+"<strong>Canvi de comercialitzadora:</strong> s'activa quan s'efectua una "
+"modificació\n"
+"   contractual on la comercialitzadora és modificada."
+msgstr ""
+
+msgid ""
+"<strong>Canvi de comptador:</strong> s'activa quan s'efectua una modificació "
+"contractual\n"
+"    on el comptador és modificat."
+msgstr ""
+
+msgid ""
+"<strong>Canvi de nom:</strong> s'activa quan s'efectua una modificació contractual "
+"on el\n"
+"    titular és modificat."
+msgstr ""
+
+msgid "Alta d'un nou subministrament en la distribuidora"
+msgstr ""
+
+msgid ""
+"S'activa durant el workflow <strong>wkf_activa</strong>. Si la pòlissa no té cap "
+"modificació\n"
+"contractual anterior o bé és una reactivació d'una pòlissa donada de baixa\n"
+"anteriorment, es considera una alta."
+msgstr ""
+
+msgid "Baixa d'un subministrament en la distribuidora"
+msgstr ""
+
+msgid "S'activa durant el workflow <strong>wkf_baixa</strong>."
+msgstr ""
+
+#, fuzzy
+msgid "Canvi de potència"
+msgstr "Cambio de tarifa"
+
+msgid "Es pot activar des de dos workflows:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<strong>wkf_activa:</strong> es compara la potència de la modificació contractual "
+"amb la\n"
+"   de la modificació contractual anterior."
+msgstr ""
+"\n"
+"<p><strong>Fecha final modificación contractual anterior:</strong> nueva fecha final "
+"asignada a\n"
+"   la modificación contractual anterior (si existe).</p>\n"
+
+msgid ""
+"<strong>wkf_overwrite_modcontractual:</strong> es compara la potència que s'ha "
+"sobreescrit"
+msgstr ""
+
+#, fuzzy
+msgid "Canvi de tarifa"
+msgstr "Cambio de tarifa"
+
+#, fuzzy
+msgid ""
+"<strong>wkf_activa:</strong> es compara la tarifa de la modificació contractual amb "
+"la de\n"
+"   la modificació contractual anterior."
+msgstr ""
+"\n"
+"<p><strong>Fecha final modificación contractual anterior:</strong> nueva fecha final "
+"asignada a\n"
+"   la modificación contractual anterior (si existe).</p>\n"
+
+msgid ""
+"<strong>wkf_overwrite_modcontractual:</strong> es compara la tarifa que s'ha "
+"sobreescrit\n"
+"   a la modificació contractual actual amb el valor que hi havia anteriorment."
+msgstr ""
+
+#, fuzzy
+msgid "Canvi de comercialitzadora"
+msgstr "Tarifa comercializadora"
+
+msgid ""
+"<strong>wkf_activa:</strong> es compara la comercialitzadora de la modificació "
+"contractual\n"
+"   amb la de la modificació contractual anterior."
+msgstr ""
+
+msgid ""
+"<strong>wkf_overwrite_modcontractual:</strong> es compara la comercialitzadora que "
+"s'ha\n"
+"   sobreescrit a la modificació contractual actual amb el valor que hi havia\n"
+"   anteriorment."
+msgstr ""
+
+#, fuzzy
+msgid "Canvi de comptador"
+msgstr "Compra de contadores"
+
+msgid "<strong>create:</strong> es genera el comptador al crear-ne un de nou."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<strong>write:</strong> es genera el comptador al fer click al botó de \n"
+"<strong>desar</strong>."
+msgstr ""
+"<strong>Reductor</strong>: Debe tener desmarcado el checkbox\n"
+"<strong>reductor</strong>."
+
+#, fuzzy
+msgid "Canvi de nom"
+msgstr "Cambio de tarifa"
+
+#, fuzzy
+msgid ""
+"<strong>wkf_activa:</strong> es compara el titular de la modificació contractual\n"
+"   amb el de la modificació contractual anterior."
+msgstr ""
+"\n"
+"<p><strong>Fecha final modificación contractual anterior:</strong> nueva fecha final "
+"asignada a\n"
+"   la modificación contractual anterior (si existe).</p>\n"
+
+msgid ""
+"<strong>wkf_overwrite_modcontractual:</strong> es compara el titular que s'ha\n"
+"   sobreescrit a la modificació contractual actual amb el valor que hi havia\n"
+"   anteriorment."
+msgstr ""
 
 #~ msgid "Subestacions"
 #~ msgstr ""
