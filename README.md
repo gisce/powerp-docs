@@ -34,6 +34,7 @@ _With the extensions:_
     - Automatically creates TableOfContents.
     - Can be easily configured.
     - Can't parse special characters.
+    - Use only if ToC is needed in the docs you are writing.
 - [markdown-writer](https://atom.io/packages/markdown-writer)
     - Hotkeys to markdown formats
     - Can be extended
