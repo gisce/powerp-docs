@@ -374,11 +374,11 @@ la circular de la CNE:
 * **FN**: Número d'informe
 * **RRR**: Codi R1 de la distribuidora
 
--> `RR_YYYY_FN_R1-RRR.txt`
+> `RR_YYYY_FN_R1-RRR.txt`
 
 P.e:
 
--> `RR_2011_F4_R1-000.txt`
+> `RR_2011_F4_R1-000.txt`
 
 ### Càrrega d'energies per F7 (CUPS)
 
@@ -425,9 +425,11 @@ Els decimals es separaran per punts, p.e. 5.4
 
 Un exemple:
 
-| `ES0999000000123456KH;103.4;12.03`
-| `ES0999000000234567LM;23.4;0`
-| `...`
+> `ES0999000000123456KH;103.4;12.03`
+
+> `ES0999000000234567LM;23.4;0`
+
+> `...`
 
 !!! note
     Un cop carregades les energies mitjançant CSV, no fa falta tornar-les a carregar en
