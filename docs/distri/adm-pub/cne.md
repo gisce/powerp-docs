@@ -364,8 +364,8 @@ El fitxer resultant es pot descarregar i veure en el camp **Fitxer** (fitxer gen
 * **Input de text**: Mostra la mida del fitxer
 * **Botó seleccionar**: No té funcionaliat
 * **Obrir**: Obre el fitxer a l'editor de textes
-* |arxivador_ico| : Descarrega el fitxer
-* |neteja_ico| : Esborra l'accés al fitxer generat
+* ![](../_static/adm-pub/cne/icona_fitxer.png) : Descarrega el fitxer
+* ![](../_static/adm-pub/cne/icona_neteja.png) : Esborra l'accés al fitxer generat
 
 Quan es descarrega el fitxer, el nom que es proposa per guardar ja és el nom recomanat per
 la circular de la CNE:
@@ -374,11 +374,11 @@ la circular de la CNE:
 * **FN**: Número d'informe
 * **RRR**: Codi R1 de la distribuidora
 
-| `RR_YYYY_FN_R1-RRR.txt`
+-> `RR_YYYY_FN_R1-RRR.txt`
 
 P.e:
 
-| `RR_2011_F4_R1-000.txt`
+-> `RR_2011_F4_R1-000.txt`
 
 ### Càrrega d'energies per F7 (CUPS)
 
@@ -433,14 +433,7 @@ Un exemple:
     Un cop carregades les energies mitjançant CSV, no fa falta tornar-les a carregar en
     successives generacions del fitxer, ja que les dades queden emmagatzemades permanentment.
 
-**_Icona Arxivador_**
-![](../_static/adm-pub/cne/icona_fitxer.png)
-
-**_Icona neteja_**
-![](../_static/adm-pub/cne/icona_neteja.png)
-
 !!! note
-    github de Gisce: https://github.com/gisce
 
     georef: https://github.com/gisce/georef
 
