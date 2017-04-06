@@ -24277,7 +24277,7 @@ msgid "<img alt=\"\" src=\"../_static/ultim.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/ultim.png\" />"
 
 msgid "<a href=\"#objecte-i-ambit-daplicacio\">Objecte i àmbit d'aplicació</a>"
-msgstr "<a href=\"#objecto-y-ambito-de-aplicacion\">Objeto y ámbito de aplicación</a>"
+msgstr "<a href=\"#objeto-y-ambito-de-aplicacion\">Objeto y ámbito de aplicación</a>"
 
 msgid ""
 "<a href=\"terminos_y_definicion/\">Termes i definicions</a>\n"
@@ -31198,7 +31198,7 @@ msgid ""
 "<a href=\"#modul-per-generar-el-fixer-csv-segons-cnmc-infde006644-per-"
 "comercialitzadora\">INF/DE/0066/44</a>"
 msgstr ""
-"<a href=\"#modulo-para-generar-el-fichero-csv-segun-cnmc-infde006644-para-"
+"<a href=\"#modulo-para-generar-el-fichero  -csv-segun-cnmc-infde006644-por-"
 "comercializadora\">INF/DE/0066/44</a>"
 
 msgid ""
@@ -31210,7 +31210,7 @@ msgstr ""
 
 msgid "Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per comercialitzadora"
 msgstr ""
-"Módulo para generar el fichero CSV según CNMC INF / DE / 0066/44 por comercializadora"
+"Módulo para generar el fichero CSV según CNMC INF/DE/0066/44 por comercializadora"
 
 msgid ""
 "La principal funcionalitat del modul d'Atenció al Client és la de poder generar de "
