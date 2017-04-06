@@ -23741,7 +23741,7 @@ msgstr ""
 "“CNMC Tipo Instalación\" y únicamente se muestre el calculado por l'ERP."
 
 msgid "1. TIs de Línies d’Alta Tensió"
-msgstr "1. TIs Líneas de Alta Tensión"
+msgstr "1. TIs de Líneas de Alta Tensión"
 
 msgid ""
 "Per calcular els TI’s de les línies d’Alta tensió es consulten els següents camps:"
