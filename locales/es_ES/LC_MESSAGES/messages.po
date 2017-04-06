@@ -21261,7 +21261,7 @@ msgstr ""
 "<strong>Tipo de elemento</strong>: Nos permite seleccionar de qué tipo de elemento\n"
 "    se trata según los que hayamos preconfigurado. Ver\n"
 "    \n"
-"<a href=\"#tipo-de-elemento\">tipo de elemento</a>."
+"<a href=\"#tipos-de-elemento\">tipo de elemento</a>."
 
 msgid ""
 "<strong>Tipus de posició</strong>: Ens permet seleccionar quin tipus de posició és "
