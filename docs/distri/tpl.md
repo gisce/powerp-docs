@@ -34,9 +34,9 @@
 	8. [Catàleg d'anomalies](tpl/intercambio_tpl.md#cataleg-danomalies)
 	9. [Catàleg de situacions](tpl/intercambio_tpl.md#cataleg-de-situacions)
 	10. [Catàleg d'Avisos](tpl/intercambio_tpl.md#cataleg-davisos)
-8. [Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP](#fitxers-dintercanvi-entre-gisce-tpl-i-gisce-erp)
-	1. [Exportació del fitxer de Rutes](#exportacio-del-fitxer-de-rutes)
-	2. [Exportació del fitxer de Lectures](#exportacio-del-fitxer-de-lectures)
+8. [Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP](tpl/intercambio_tpl_erp.md#fitxers-dintercanvi-entre-gisce-tpl-i-gisce-erp)
+	1. [Exportació del fitxer de Rutes](tpl/intercambio_tpl_erp.md#exportacio-del-fitxer-de-rutes)
+	2. [Exportació del fitxer de Lectures](tpl/intercambio_tpl_erp.md#exportacio-del-fitxer-de-lectures)
 
 # Objecte
 
