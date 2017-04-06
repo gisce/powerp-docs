@@ -31198,7 +31198,7 @@ msgid ""
 "<a href=\"#modul-per-generar-el-fixer-csv-segons-cnmc-infde006644-per-"
 "comercialitzadora\">INF/DE/0066/44</a>"
 msgstr ""
-"<a href=\"#modulo-para-generar-el-fichero  -csv-segun-cnmc-infde006644-por-"
+"<a href=\"#modulo-para-generar-el-fichero-csv-segun-cnmc-infde006644-por-"
 "comercializadora\">INF/DE/0066/44</a>"
 
 msgid ""
