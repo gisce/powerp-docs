@@ -23618,7 +23618,7 @@ msgstr "<a href=\"#2-tis-de-lineas-de-baja-tension\">TIs de Lineas de Baja Tensi
 
 msgid "<a href=\"#3-tis-de-centres-transformadors\">TIs de Centres Transformadors</a>"
 msgstr ""
-"<a href=\"#3-tis-de-centres-transformadors\">TIs de Centros Transformadores</a>"
+"<a href=\"#3-tis-de-centros-transformadores\">TIs de Centros Transformadores</a>"
 
 msgid "<a href=\"#4-subestacions\">TIs de Subestacions</a>"
 msgstr "<a href=\"#4-subestaciones\">Subestaciones</a>"
