@@ -18497,7 +18497,7 @@ msgstr ""
 "se nos mostrarán los valores que tenemos que introducir en la web de la CNE."
 
 msgid "<img alt=\"\" src=\"../../_static/adm-pub/cne/quota_1.png\" />"
-msgstr "<img alt=\"\" src=\"../../_staticadm-pub/cne/quota_1.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/adm-pub/cne/quota_1.png\" />"
 
 msgid "Documentació del mòdul de perfils"
 msgstr "Documentación del módulo de perfiles"
