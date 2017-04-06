@@ -36,8 +36,8 @@ blockdiag {
 
 El primer pas per poder gestionar els comptadors correctament és donar-los
 d'alta a la base de dades de productes. Podem accedir a la fitxa de productes
-des del menú `Productes`. Per crear o cercar el producte, és millor anar a la
-categoria de producte corresponent des del menú `Productes per categoria`
+des del menú _Productes_. Per crear o cercar el producte, és millor anar a la
+categoria de producte corresponent des del menú _Productes per categoria_.
 
 !!! tip
     Es recomana crear una categoria de producte **Comptador** o **Equips de
@@ -54,7 +54,7 @@ correctament. (A la imatge es mostra l'IVA vigent en aquell moment)
 !!! tip
     Quan es creen productes, es recomana duplicar un producte de la mateixa
     categoria que tingui tots els camps omplerts i així s'estalvia temps de
-    creació del producte. S'ha de fer des de `Formulari > Duplicar`.
+    creació del producte. S'ha de fer des de _"Formulari > Duplicar"_.
     Un cop duplicat s'han de canviar el _nom de producte_, el _codi_, el _preu_,
     la _referència del proveïdor_ i el _proveïdor_ quan sigui necessari.
 
@@ -72,8 +72,8 @@ referències de cada proveïdor per aquest producte.
   habitual) el preu de compra s'anirà actualitzant a partir dels diferents
   preus de compra que es vagin donant.
 
-Les dades de les pestanyes `Proveïments i Ubicacions`, `Descripcions` i
-`Empaquetament` són dades informatives del producte, per tant no és
+Les dades de les pestanyes _Proveïments i Ubicacions_, _Descripcions_ i
+_Empaquetament_ són dades informatives del producte, per tant no és
 obligatori que estiguin omplertes.
 
 ## Compra de comptadors
@@ -86,8 +86,8 @@ material en el magatzem.
 ![](_static/lecturas/Captura01.png)
 
 
-Per començar es selecciona el menú `Compres > Comandes de compra > Sol·licitud
-de presupostos`
+Per començar es selecciona el menú _"Compres > Comandes de compra > Sol·licitud
+de presupostos"_
 
 
 **_Sol·licitud de pressupost_**
@@ -139,7 +139,7 @@ de la llista de productes, el producte i la quantitat a sol·licitar.
 ![](_static/lecturas/Captura05.png)
 
 
-Es selecciona el botó nou ![](_static/lecturas/iconaNou.png) de l'apartat `línia de ordre de compra`.
+Es selecciona el botó nou ![](_static/lecturas/iconaNou.png) de l'apartat _línia de ordre de compra_.
 
 El producte que es vol comprar ha d'estar degudament introduït a la base de
 dades de productes amb totes les dades omplertes correctament.
@@ -155,8 +155,8 @@ que ha d'omplir l'usuari.
 
 
 * **Producte**: Amb la lupa es selecciona el producte desitjat. Poden
-  utilitzar-se els filtres necessaris per filtrar (`categoria`,
-  `proveïdor`, etc..) per una localització més fàcil dels productes.
+  utilitzar-se els filtres necessaris per filtrar (_categoria_,
+  _proveïdor_, etc..) per una localització més fàcil dels productes.
 * **Quantitat**: S'ha d'indicar les unitats d'aquest producte que es desitja
   comprar.
   Poden introduïrse tantes línies de compra com es desitgi a cada ordre de
@@ -179,8 +179,8 @@ preus de compra es pot prèmer el el botó **Confirmar comanda de compra**
     **Cancel·la comanda de compra**
 
 Un cop confirmada, es pot veure com l'estat de la comanda ha passat de l'estat
-`Petició de pressupost` a `confirmat` tal com es veu a la casella `Estat
-de la comanda`
+_Petició de pressupost_ a _confirmat_ tal com es veu a la casella _Estat
+de la comanda_
 
 
 **_Ordre de compra confirmada_**
@@ -189,7 +189,7 @@ de la comanda`
 
 
 Podem accedir posteriorment a les comandes confirmades a la opció de menú
-`Compres > Comandes de compra > Comanda de compra esperant aprovació` on es
+_"Compres > Comandes de compra > Comanda de compra esperant aprovació"_ on es
 llistaran totes les comandes confirmades que esperen l'aprovació per part del
 proveïdor, confirmació de preus de compra, disponibilitat de productes, etc...
 
@@ -216,9 +216,9 @@ companyia, ja es pot prèmer el botó **Aprovada pel proveïdor**
 Mentre no es premi el botó **Aprovada pel Proveïdor** s'és a temps de modificar
 el preu dels productes o les seves quantitats.
 
-Un cop s'ha apretat el botó, l'ordre de compra passa a l'estat de `ordres de
-compra en procés`. Totes aquestes comandes les veurem al llistat accessible
-des del menu `Compres > Comandes de compra > Comandes de compra en procés`
+Un cop s'ha apretat el botó, l'ordre de compra passa a l'estat de _ordres de
+compra en procés_. Totes aquestes comandes les veurem al llistat accessible
+des del menu _"Compres > Comandes de compra > Comandes de compra en procés"_
 
 
 **_Menú de comandes de compra. En procés_**
@@ -339,7 +339,7 @@ Es procedirà de la següent forma:
 Des de la fitxa de recepció de material haurem de dividir la línia de 10
 comptadors en dues línies, una de 6 comptadors i una altra de 4 comptadors.
 Seleccionem la línia i premem el botó d'**acció** ![](_static/lecturas/iconaAccio.png) i del menú que
-apareix seleccionem la opció `Divideix línia de moviment`.
+apareix seleccionem la opció _Divideix línia de moviment_.
 
 
 **_Menú acció_**
@@ -364,7 +364,7 @@ Apareixeràn les dues línies al fer doble-click sobre la línia.
 ![](_static/lecturas/Captura24.png)
 
 
-Un cop divit l'`Empaquetat/Albarà` es procedirà com en el **Cas 1** per cada
+Un cop divit l'_Empaquetat/Albarà_ es procedirà com en el **Cas 1** per cada
 una de les línies creades.
 
 Es pot fer d'aquesta forma si no hi ha recepcions parcials de material.
