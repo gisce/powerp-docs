@@ -23849,7 +23849,7 @@ msgstr ""
 "<p><img alt=\"\" src=\"../_static/act_tis/lat_trams_tipus.png\" /></p>\n"
 
 msgid "2. TIs de Línies de Baixa Tensió"
-msgstr "2. TIs de Línias de Baja Tensión"
+msgstr "2. TIs de Líneas de Baja Tensión"
 
 msgid ""
 "Per calcular els TI’s de les línies de Baixa tensió\n"
