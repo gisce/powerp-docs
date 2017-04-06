@@ -25,11 +25,11 @@ El flux general, i pels comptadors en particular, seria el següent:
    **Infraestructura**
 
 blockdiag {
-    "Ordre de compra" -> Confirmar
-    Confirmar -> "Acceptada per proveïdor" [label = "OK"]
-    "Acceptada prr proveïdor" -> Recepció [label = "paquet"]
-    Recepció -> "Assignació de Nº de sèrie" [label = "albarà"]
-    "Assignació de Nº de sèrie" -> "Associar a comptador" [label = "install"]
+    "Orden de compra" -> Confirmar
+    Confirmar -> "Aceptada por proveedor" [label = "OK"]
+    "Aceptada por proveedor." -> Recepción [label = "paquete"]
+    Recepción -> "Asignació de Nº de serie" [label = "albarán"]
+    "Asignació de Nº de serie" -> "Asociar a contador" [label = "install"]
 }
 
 ## Producte comptador
