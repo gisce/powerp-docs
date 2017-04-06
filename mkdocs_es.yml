@@ -24,6 +24,7 @@ pages:
     - Atención al Cliente: base/atc.md
     - Gestión de pólizas: base/polisses.md
     - Gestión de contadores: base/comptadors.md
+    - Equipos de telecomunicación: base/telecom.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
@@ -45,6 +46,7 @@ pages:
       - Liquidación: distri/liquidacion_peajes.md
     - Administración Pública:
       - CNMC: distri/adm-pub/cnmc.md
+      - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfiles: distri/perfiles.md

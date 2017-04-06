@@ -8,7 +8,7 @@
 
 ### Lot de facturació
 
-L'apartat *Menu/Facturació/lots de facturació* és el panell de control per
+L'apartat _Menu/Facturació/lots de facturació_ és el panell de control per
 realitzar les facturacions masives, indica l'estat en que es troba el lot
 (**Borrador, obert, tancat**)
 
@@ -117,7 +117,7 @@ de factura i realitzar els assentaments comptables corresponents.
 Per realitzar facturacions eventuals, o de pòlisses que es dònen de baixa i
 s'han de facturar fora del lot de facturació s'utilitzarà aquest tipus de facturació.
 
-Des de la fitxa d'una pòlissa s'accedeix al apartat *Factura manual* per
+Des de la fitxa d'una pòlissa s'accedeix al apartat _Factura manual_ per
 realitzar una factura que no pot esperar a facturar-se dintre del lot de facturació.
 
 ![](_static/facturacion/facturacion_manual.png)
@@ -132,15 +132,15 @@ S'accedeix al assistent en el que es indicarà:
   les lectures que trobi en aquest intèrval.
 
 * Diari: S'ha de indicar a quin diari es desitja assignar a la factura
-  a realitzar. Si es una factura de energia normal s'asignarà al diari *Factures Energía*.
+  a realitzar. Si es una factura de energia normal s'asignarà al diari _Factures Energía_.
 
 !!! note
     Aquesta factura manual es pot realitzar en qualsevol moment, i la/es
-    factura/es que realiza queden en estat *borrador*. Pots utilitzar aquesta
+    factura/es que realiza queden en estat _borrador_. Pots utilitzar aquesta
     opció per comprovar si el resultat de la facturació d'aquesta pòlissa es
-    l'esperat. (p.e.  si hi ha hagut una *Modificació contractual* en mig del
+    l'esperat. (p.e.  si hi ha hagut una _Modificació contractual_ en mig del
     període de facturació i s'han de realitzar 2 factures.) Després pots borrar
-    la/es factura/es en estat *borrador* i la pòlissa seguirà pendent de facturar.
+    la/es factura/es en estat _borrador_ i la pòlissa seguirà pendent de facturar.
     Tambié es pot utilitzar aquesta opció per fer una simulació de factura (factura pro-forma)
 
 ### Estados d'una factura:
@@ -151,8 +151,8 @@ S'accedeix al assistent en el que es indicarà:
 ![](_static/facturacion/estado_borrador.png)
 
 * Obert: Quan es valida una factura de forma individual a través del botó
-  *Validar* dins de la pròpia factura o bé a través del *Lot de facturació /
-  Obrir Factures*. S'assigna un número de factura a aquesta i es realitzen
+  _Validar_ dins de la pròpia factura o bé a través del _Lot de facturació /
+  Obrir Factures_. S'assigna un número de factura a aquesta i es realitzen
   els assentaments comptables necesaris per poder fer el seguimient del
   cobrament de la mateixa i els informes comptables mensuals, anuals etc.
 
@@ -186,8 +186,8 @@ S'accedeix al assistent en el que es indicarà:
     Si dono per pagada una factura per error, com desfaig el cobrament?
 
 !!! Resposta
-    Des de la pròpia factura es selecciona la opció '*Desfer pagament*',
-    això passarà la factura del estat 'realitzat' al estat 'obert'.
+    Des de la pròpia factura es selecciona la opció '_Desfer pagament_',
+    això passarà la factura de l'estat 'realitzat' al estat 'obert'.
 
 ![](_static/facturacion/accion_deshacer.png)
 
@@ -381,7 +381,85 @@ quin període temporal ens interessa.
 ![](_static/facturacion/relacio_de_consums_dates.png)
 
 
-
 ## Exportació factures F1
 
-!!! TODO
+Per exportar les factures generades en format XML F1 per enviar a les
+comercialitzadores hem de fer servir l'assistent accessible des del formulari
+del lot de facturació, amb el botó _Exportar factures XML_.
+
+### Exportació de la facturació d'un període
+
+Si volem exportar totes les factures d'una comercialitzadora (o de totes) que
+s'han generat a partir d'un lot de facturació, accedirem al lot que volguem, i
+al seu formulari trobarem a la columna de la dreta, el botó d'_Exportar
+factures XML_, que ens obrirà un assistent.
+
+![](_static/facturacion/F1_0.png)
+
+Aquest assistent ens demanarà de quina comercialitzadora volem exportar les
+factures, mostrant un desplegable amb les diferents comercialitzadores
+facturades en aquest lot. També hi ha l'opció d'exportar-les totes.
+
+Addicionalment, es pot demanar el resum de les factures generades marcant aquesta
+opció en l'assistent.
+
+El resultat d'aquest assistent serà un fitxer `.zip`. Si s'han seleccionat
+totes les comercialitzadores, contindrà un fitxer `.zip` per cada
+comercialitzadora amb les seves factures. Si només se n'ha seleccionat una, les
+factures `.xml` de la comercialitzadora seleccionada.
+
+Si s'ha seleccionat la opció de resum es generarà un fitxer CSV `.txt` amb
+les dades de totes les factures que s'inclouen en l'XML ordenades per
+comercialitzadora.
+
+![](_static/facturacion/F1_1.png)
+
+### Exportació manual de factures
+
+També hi ha la opció d'exportar una o múltiples factures seleccionades manualment.
+
+Per exportar només una factura, obrirem la factura que volguem exportar i executarem
+l'assistent anomenat _Exportar factura XML_ que trobarem a la columna dreta de la
+finestra de la factura.
+
+El resultat d'aquest assistent és un arxiu `.xml` amb la factura en format F1.
+
+Si volem exportar mes d'una factura, podem seleccionar-les en el llistat i
+pŕemer el botó _Acció_ i la opció _Exportar factura XML_. El fitxer generat
+contrindrà els fitxers `.xml` seguint la mateixa lògica que quan s'exporta
+tot un lot (`.zip` o `.xml`) en funció de les comercialitzadores de les
+factures generades.
+
+En ambdós casos, es pot generar el CSV resum seleccionant la opció corresponent.
+
+
+## Facturació amb IESE a distribuidora
+
+Al instal·lar el mòdul de facturació amb IESE a distribuidora haurem de fer ús
+de les posicions fiscals, així es passarà a per defecte a cobrar a tothom l'IESE
+a no ser que li diguem que forma part de la posició fiscal "Comercialitzadora",
+on després aquest impost desapareix.
+
+### Donar d'alta una comercialitzadora per no facturar IESE
+
+Per donar d'alta una comercialitzadora nova ho haurem de fer a través del menú
+**Empreses > Empreses > Nova empresa**
+
+![](_static/facturacion/menu_empresas.png)
+
+Els camps més importants a emplenar són:
+
+* **Nom**: Nom de la comercialitzadora
+* **Codi**: Codi de REE per aquesta comercialitzadora. Després s'utilitzarà en
+  fitxers de perfils que s'entreguen a REE.
+* **Posició fiscal**: Ens hem d'assegurar de que sigui una posició fiscal del
+  tipus "Comercialitzadora". Per això ens assegurem que triem la que posi
+  "Régimen nacional YYYY (Comercializadora)" on YYYY és el valor més gran.
+
+![](_static/facturacion/comercialitzadora_creada.png)
+
+!!! note
+    El camp **Posició fiscal** s'utilitza pel cas que a qui vagi destinada
+    la factura sigui una comercialitzadora, no se li aplicarà l'IESE, en
+    canvi si la factura va a un client final se li aplicarà l'IESE encara
+    que siguem una distribuidora.
