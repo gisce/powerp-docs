@@ -8,7 +8,7 @@
 	2. [Instal·lació](tpl/requisitos.md#installacio)
 5. [Procés de treball](tpl/proceso_de_trabajo.md)
 	1. [Introducció](tpl/proceso_de_trabajo.md#introduccio)
-	2. [Fluxorames de processos](tpl/proceso_de_trabajo.md#fluxorames-de-processos)
+	2. [Fluxogrames de processos](tpl/proceso_de_trabajo.md#fluxorames-de-processos)
 	3. [Organització dels fitxers d'intercanvi en el TPL](tpl/proceso_de_trabajo.md#organitzacio-dels-fitxers-dintercanvi-en-el-tpl)
 	4. [Menú de Gestió de Rutes](tpl/proceso_de_trabajo.md#menu-de-gestio-de-rutes)
 	5. [Presa de Lectures de forma Manual](tpl/proceso_de_trabajo.md#presa-de-lectures-de-forma-manual)

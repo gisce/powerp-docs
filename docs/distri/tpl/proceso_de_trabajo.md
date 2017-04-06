@@ -26,7 +26,7 @@ de tots els fitxers de dades estàn descrits formalment en l'apartat
 "_fitxers d'intercanvi_" i poden ser utilitzats amb qualsevol altre
 aplicació de gestió.
 
-# Fluxorames de processos
+# Fluxogrames de processos
 
 ![](../_static/tpl/tpl_workflow-erp_tpl_erp.png)
 

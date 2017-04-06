@@ -8,7 +8,7 @@ Els lots de facturació són grups de polisses que s'han de facturar per un cert
 
 En alguns casos es pot desitjar moure les pòlisses d'un lot de facturació a l'altre.
 Aquest wizard permet fer-ho de forma automàtica per totes les pòlisses en estat
-obert, esborren o/i a punt de facturar d'un o més lots de facturació a un altre.
+obert, esborrany i/o a punt de facturar d'un o més lots de facturació.
 
 Totes les pòlisses mogudes passaran a tenir l'estat d'esborrany, independentment
 de l'estat que tinguessin en començar.
