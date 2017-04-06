@@ -6,7 +6,7 @@ de cobro / Nueva orden de cobro" com es veu a la següent figura.
 
 Nova "Orden de cobro":
 
-![](_static/cobraments/orden_de_cobro.png)
+![](_static/cobros/orden_de_cobro.png)
 
 Un cop creada, cal omplir-ne els camps de la fitxa.
 
@@ -18,7 +18,7 @@ quina data es programarà el cobrament (camp "Scheduled date if fixed").
 
 Dades obligatòries:
 
-![](_static/cobraments/dades_orden_de_cobro.png)
+![](_static/cobros/dades_orden_de_cobro.png)
 
 **Descripció dels camps de la fitxa de remesa**
 
@@ -60,11 +60,11 @@ punt.
 
 Afegir factures a remesa:
 
-![](_static/cobraments/afegir_factures_remesa.png)
+![](_static/cobros/afegir_factures_remesa.png)
 
 Seleccionar remesa:
 
-![](_static/cobraments/seleccionar_remesa.png)
+![](_static/cobros/seleccionar_remesa.png)
 
 Un cop seleccionada la remesa, al polsar el botó **Afegir factures**
 s'intentaràn afegir les factures seleccionades a la remesa escollida.
@@ -75,7 +75,7 @@ Es poden donar les següents situacions:
 És possible que alguna de les factures a remesar ja estigui en una remesa.
 En aquest cas l'assistent mostra una pantalla com aquesta:
 
-![](_static/cobraments/factures_remesades.png)
+![](_static/cobros/factures_remesades.png)
 
 La remesa de les factures que apareixen en el llistat serà **sobre-escrita**. 
 Si es vol evitar, les factures que no es vulguin modificar hauràn de ser eliminades
@@ -92,7 +92,7 @@ tot seguit apareix la pantalla del següent apartat.
 Quan l'assistent afegeix les factures a la remesa especificada, apareix
 la següent pantalla indicant la finalització del procés:
 
-![](_static/cobraments/factures_afegides.png)
+![](_static/cobros/factures_afegides.png)
 
 
 ## De forma manual des de la remesa

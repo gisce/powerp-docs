@@ -47,11 +47,11 @@ subministre aparèixen alguns termes amb les següents definicions:
 * _TIEPI_: Es el temps de interrupció equivalent a la poténcia instalada a mitja
   tensió (1kV i 36kV). Aquest índex es defineix mitjançant la següent expressió:
 
-    ![](../_static/qualitat/TIEPI.png)
+    ![](../_static/calidad/TIEPI.png)
 
     On:
 
-      * ![](../_static/qualitat/sumatori.png)**PI** = Suma de la poténcia
+      * ![](../_static/calidad/sumatori.png)**PI** = Suma de la poténcia
         instal·lada dels centres de transformació MT/BT del distribuïdor més la
         poténcia contractada a MT (en kVA).
       * **PIi** = Poténcia instal·lada en els centres de transformació MT/BT del
@@ -70,11 +70,11 @@ subministre aparèixen alguns termes amb les següents definicions:
   MT (1kV < V <= 36kV). Aquest índex es defineix mitjançant la següent
   expressió:
 
-    ![](../_static/qualitat/NIEPI.png)
+    ![](../_static/calidad/NIEPI.png)
 
     On:
 
-      * ![](../_static/qualitat/sumatori.png)**PI** = Suma de la potència
+      * ![](../_static/calidad/sumatori.png)**PI** = Suma de la potència
         instal·lada dels centres de transformació MT/BT del distribuïdor més la
         potència contractada a MT (en kVA).
       * **PIi** = Potència instal·lada dels centres de transformació MT/BT del
@@ -121,18 +121,18 @@ la següent clasificació de zones:
 La definició de zones està en l’apartat “_Centres Transformadors → Manteniment →
 CT’S → Zona_”, que s’indica en la figura següent:
 
-![](../_static/qualitat/zona_menu.png)
+![](../_static/calidad/zona_menu.png)
 
 Al accedir apareixen les 4 zones definides.
 
-![](../_static/qualitat/zones_tipus.png)
+![](../_static/calidad/zones_tipus.png)
 
 Al seleccionar-ne una d’elles apareixerà la seva fitxa en la que definirem les
 següents dades. Es important veure que els valors admissibles es poden anar
 afegint a mesura que aquests vagin variant. Es important així mateix definir
 correctament les dates en que son vigents els valors indicats.
 
-![](../_static/qualitat/zona_fitxa.png)
+![](../_static/calidad/zona_fitxa.png)
 
 En la fitxa de cada zona es defineix.
 
@@ -162,7 +162,7 @@ establece la tarifa eléctrica a partir de 1 de enero de 2007._ (BOE
 Quan es modifiquen els valors dels paràmetres de qualitat individual i zonal amb
 un nou  RD es crea un nou període polsant el botó “nou registre”.
 
-![](../_static/qualitat/zona_boto_qualitat.png)
+![](../_static/calidad/zona_boto_qualitat.png)
 
 Una vegada creat s’introdueixen els valors dels paràmetres de qualitat i les
 dates d’inici i fi del període de vigència dels valors.
@@ -178,11 +178,11 @@ La recollida d’informació procedeix de 3 fonts diferents:
 L’origen de les incidències està definit en l’apartat “_Qualitat → Configuració
 → Origen d’incidències_".
 
-![](../_static/qualitat/origen_menu.png)
+![](../_static/calidad/origen_menu.png)
 
 En aquest apartat hi ha definits els 3 origen de les incidències:
 
-![](../_static/qualitat/origen_tipus.png)
+![](../_static/calidad/origen_tipus.png)
 
 ## Obtenció de la potencia total
 
@@ -192,38 +192,38 @@ pel càlcul dels índex TIEPI, NIEPI.
 Per generar la potencia instal·lada del mes corresponent s’hi accedeix des del
 menú, “_Qualitat → traçabilitat → Generar potència instal·lada_".
 
-![](../_static/qualitat/generar_potencia_menu.png)
+![](../_static/calidad/generar_potencia_menu.png)
 
 Al fer doble clic s’accedeix a l’assistent que ens guia per obtenir la potencia
 instal·lada.
 
-![](../_static/qualitat/generar_potencia_wizard_1.png)
+![](../_static/calidad/generar_potencia_wizard_1.png)
 
 S’ha de seleccionar el mes i l’any que desitgem guardar la potencia instal·lada.
 
-![](../_static/qualitat/generar_potencia_wizard_2.png)
+![](../_static/calidad/generar_potencia_wizard_2.png)
 
 A continuació s’indicarà el valor del cos fi. Aquest valor s’utilitzarà per
 convertir les potencies contractades en AT ( kW ) en kVA.
 
-![](../_static/qualitat/generar_potencia_wizard_3.png)
+![](../_static/calidad/generar_potencia_wizard_3.png)
 
 Per comprovar lles potencies instal·lades en cada mes es pot accedir a l’apartat
 “_Qualitat → traçabilitat → Potència instal·lada_” tal com es veu a la imatge
 següent.
 
-![](../_static/qualitat/potencia_instalada_menu.png)
+![](../_static/calidad/potencia_instalada_menu.png)
 
 Al fer doble clic apareixen les potencies instal·lades en els diferents mesos, i
 podem veure-les per realitzar les comprovacions necessàries.
 
-![](../_static/qualitat/potencia_instalada_list.png)
+![](../_static/calidad/potencia_instalada_list.png)
 
 Al seleccionar un mes determinat apareix la potencia instal·lada amb una llista
 de tots els transformadors i tots els subministraments en AT. Així com la
 potencia total en kVA, i el nombre total d’instal·lacions.
 
-![](../_static/qualitat/potencia_instalada_list_mes.png)
+![](../_static/calidad/potencia_instalada_list_mes.png)
 
 On:
 
@@ -241,7 +241,7 @@ On:
 
 Fent doble clic a sobre d’una instal·lació apareix la seva fitxa resumida.
 
-![](../_static/qualitat/instalacio_fitxa.png)
+![](../_static/calidad/instalacio_fitxa.png)
 
 A continuació  es descriu com es determina la potencia total instal·lada.
 Si es va a la fitxa dels transformadors al GISCE-ERP, "_Menú → Centres
@@ -254,7 +254,7 @@ que:
 * Estan en la **localització = CTS**
 * Estan en **estat = Funcionament**
 
-![](../_static/qualitat/transformador_camps.png)
+![](../_static/calidad/transformador_camps.png)
 
 Com que amb el programa GISCE-ERP es porta el manteniment de les instal·lacions
 de centres transformadors i de les màquines que hi tenen instal·lades, només
@@ -270,19 +270,19 @@ de CUPS → Manteniment → CUPS → Escomesa_”, i buscar les escomeses del ti
 _CONTA-AT_, i accedir a la fitxa de l’escomesa tal com es veu a la imatge
 següent:
 
-![](../_static/qualitat/escomesa_conta-at.png)
+![](../_static/calidad/escomesa_conta-at.png)
 
 Si es fa doble click sobre el CUPS associat a l’escomesa es pot veure la fitxa
 del CUPS tal com s’observa en la imatge següent.
 
-![](../_static/qualitat/escomesa_cups_associat.png)
+![](../_static/calidad/escomesa_cups_associat.png)
 
 La Pòlissa associada a aquest CUPS es la que indica la potencia contractada en
 AT que es tindrà en compte a l’hora d’obtenir la potencia instal·lada.
 Fent  clic sobre la fitxa de la pòlissa associada al CUPS apareixen les dades de
 la tarifa i potència contractada.
 
-![](../_static/qualitat/escomesa_cups_polissa_associada.png)
+![](../_static/calidad/escomesa_cups_polissa_associada.png)
 
 Totes les escomeses del tipus _CONTA-AT_ son les que es tindran en compte com a
 potència instal·lada.
@@ -338,13 +338,13 @@ La informació associada a cada incidència es la següent:
 Una fitxa de una incidència registrada amb GISCE-ERP_QS es tal com es pot veure
 a la imatge següent:
 
-![](../_static/qualitat/incidencia_fitxa.png)
+![](../_static/calidad/incidencia_fitxa.png)
 
 A la pestanya de “Intervals” de la fitxa de la incidència es poden veure els
 diferents intervals que s’han produït dins la mateixa incidència tal com indica
 la ECO 797.
 
-![](../_static/qualitat/incidencia_intervals.png)
+![](../_static/calidad/incidencia_intervals.png)
 
 **Intervals horaris amb instal·lacions afectades**
 
@@ -365,7 +365,7 @@ Si es fa doble clic sobre l’interval desitjat apareix la seva fitxa, que const
 de 4 pestanyes, interval, Clients afectats, Instal·lacions afectades, i punts de
 tall.
 
-![](../_static/qualitat/incidencia_interval_fitxa.png)
+![](../_static/calidad/incidencia_interval_fitxa.png)
 
 Cada interval consta dels següents camps:
 
@@ -381,7 +381,7 @@ Incidència a la que pertany el interval:
 La pestanya “Instal·lacions afectades” indica quines instal·lacions han quedat
 afectades per la interrupció.
 
-![](../_static/qualitat/incidencia_interval_instalacions_afectades.png)
+![](../_static/calidad/incidencia_interval_instalacions_afectades.png)
 
 **Instal·lacions afectades**
 Es consideren instal·lacions afectades els centres de transformació i les
@@ -425,7 +425,7 @@ altra via.
 La pestanya “Clients afectats” indica quins clients han quedat afectades per la
 interrupció.
 
-![](../_static/qualitat/incidencia_interval_clients_afectats.png)
+![](../_static/calidad/incidencia_interval_clients_afectats.png)
 
 Aquest apartat permet obtenir la qualitat individual i poder determinar que cap
 client superi els nombre i el temps màxim indicats per cada una de les zones
@@ -435,7 +435,7 @@ La pestanya “Punts de tall” indica tots els interruptors que hi havia oberts
 el moment de produir-se la interrupció, inclosos els que estan oberts en
 condicions normals d’explotació.
 
-![](../_static/qualitat/incidencia_interval_talls.png)
+![](../_static/calidad/incidencia_interval_talls.png)
 
 ## Criteris per la determinació del nombre i duració de les interrupcions
 
@@ -487,11 +487,11 @@ Que es correspon amb els següents criteris:
     Per definir els tipus d’incidència s’ha d’accedir a “_Menú → Qualitat →
     Configuració → Tipus Incidències_”.
 
-    ![](../_static/qualitat/tipus_incidencia_menu.png)
+    ![](../_static/calidad/tipus_incidencia_menu.png)
 
     Al accedir a aquest apartat apareixen els tipus d’incidència definits.
 
-    ![](../_static/qualitat/tipus_incidencia_list.png)
+    ![](../_static/calidad/tipus_incidencia_list.png)
 
 * **Causa de la incidència**: S’indicarà la causa que se suposa ha originat la
   incidència, com a mínim amb el nivell de detall de la següent classificació.
@@ -554,12 +554,12 @@ Causa Incidències_”, on apareixen les 7 causes possibles.
 Aquestes no s’han de modificar si no apareix cap modificació de la **ECO
 797/2002** que així ho requereixi.
 
-![](../_static/qualitat/causa_incidencies_menu.png)
+![](../_static/calidad/causa_incidencies_menu.png)
 
 Al accedir al menú de causes, apareixen les causes definides en el sistema, i
 que es poden ampliar i/o modificar.
 
-![](../_static/qualitat/causa_incidencies_list.png)
+![](../_static/calidad/causa_incidencies_list.png)
 
 ## Informació associada a instal·lacions i clients
 
@@ -716,7 +716,7 @@ son les incidències que ha tingut.
 Podem accedir al llistat de clients a través del menú "_Empresas → Empresas_",
 on podrem accedir a la fitxa d'un client.
 
-![](../_static/qualitat/client_fitxa.png)
+![](../_static/calidad/client_fitxa.png)
 
 Podem veure les pòlisses del client fent click a les accions "_Como Titular_",
 "_Como Pagador_" o "_Como Notificación_" per veure les respectives contractades.
@@ -724,7 +724,7 @@ Fent doble clic sobre la pòlissa desitjada apareix les dades d’aquesta i
 en la pestanya “_Incidències_” es pot veure totes les incidències que ha tingut,
 tal com es mostra en la imatge següent:
 
-![](../_static/qualitat/client_incidencies.png)
+![](../_static/calidad/client_incidencies.png)
 
 Durant aquesta primera fase de tres anys, les incidències en las xarxes de baixa
 tensió s’assignaran al seu corresponent centre de transformació, repartint-se el

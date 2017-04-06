@@ -12,12 +12,12 @@ Per generar el fitxer només hem de seleccionar el municipi o municipis dels
 quals volem crear l'informe en la llista de municipis que trobarem a
 *Administració Pública > Administracions locals > Impostos > Municipis*.
 
-![Figura 1](../_static/municipal_taxes/menu.png)
+![Figura 1](../_static/tasas_municipales/menu.png)
 
 Un cop hàgem seleccionat tots els municipis que desitgem podrem prémer el botó
 d'*Accions*, que obrirà una finestra com la següent:
 
-![Figura 2](../_static/municipal_taxes/wizard_ini.png)
+![Figura 2](../_static/tasas_municipales/wizard_ini.png)
 
 Aquí haurem d'entrar les següents dades:
 
@@ -43,7 +43,7 @@ Un cop entrades totes les dades, podem prémer el botó de generar. Això farà 
 consultes necessàries per generar els fitxers demanats i els generarà, permetent
 obrir-los directament o guardar-los a l'ordinador.
 
-![Figura 3](../_static/municipal_taxes/wizard_fin.png)
+![Figura 3](../_static/tasas_municipales/wizard_fin.png)
 
 ## Dades utilitzades
 

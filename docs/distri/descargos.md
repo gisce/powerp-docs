@@ -6,7 +6,7 @@ Per generar una sol·licitud de descàrrec hem d'anar al menú de Descàrrecs/Ma
 
 En el formulari hem de d'omplir:
 
-![](_static/descarrecs/solicitud.png)
+![](_static/descargos/solicitud.png)
 
 1. Descripció de la sol·licitud
 2. Sol·licitant

@@ -39,7 +39,7 @@ En la figura següent apareix les opcions de configuració, traçabilitat,
 informes, Configuració de la distribuïdora i accions, que composen tots els
 apartats de GISCE-ERP_QS.
 
-![](../_static/qualitat/qualitat_menu.png)
+![](../_static/calidad/qualitat_menu.png)
 
 * Mesos: En aquest menú apareixen els 12 mesos en que es divideix l’any.
 * Origen Incidències: Veure [apartat 3.2](./terminos_y_definicion.md#recollida-dinformacio)

@@ -31,7 +31,7 @@ lectures, ...
 En el menú principal podem trobar el llistat de pólisses a "_Menú → Gestió de
 Pólisses_"
 
-![](_static/polisses/menu.png)
+![](_static/polizas/menu.png)
 
 ### Donar d'Alta una pòlissa
 
@@ -43,7 +43,7 @@ les dades de les diferents pestanyes.
 
 #### Pestanya General
 
-![](_static/polisses/polissa_general.png)
+![](_static/polizas/polissa_general.png)
 
 * Client: Nom del client.    
   Es pot buscar un client ja existent i si no existeix es [dona d'alta un nou
@@ -60,9 +60,9 @@ les dades de les diferents pestanyes.
         * A la pestanya _Propietats_: Tot introduït correctament
         * Tipo de Pago introduït.
 
-![](_static/polisses/polissa_facturacio.png)
+![](_static/polizas/polissa_facturacio.png)
 
-![](_static/polisses/polissa_contacte.png)
+![](_static/polizas/polissa_contacte.png)
 
 !!! Note
     En l'apartat _Tipo de pago_ es pot introduïr uns valors com els que es mostren
@@ -105,7 +105,7 @@ les dades de les diferents pestanyes.
 * Tarifa: S'ha de sel·leccionar, utilitzant el botó _lupa_, una de les tarifes
   vigents en el moment de fer l'alta.
 
-    ![](_static/polisses/tarifes.png)
+    ![](_static/polizas/tarifes.png)
 
     !!! Note
         Una vegada sel·leccionada la tarifa, i **després de guardar el registre**,
@@ -155,7 +155,7 @@ instal·lat està _"Actiu"_.
 En cas de necessitar donar d'alta un comptador, cal seguir el [procediment per
 donar d'alta un comptador](../distri/contadores.md#donar-dalta-un-comptador)
 
-![](_static/polisses/polissa_comptadors.png)
+![](_static/polizas/polissa_comptadors.png)
 
 ### Donar de Baixa una pòlissa
 
@@ -266,7 +266,7 @@ inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
 Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
 tenim els camps **Estat pendent**, **Quantitat pendent** i **Quantitat deute**.
 
-![](_static/polisses/pending_amount_form.png)
+![](_static/polizas/pending_amount_form.png)
 
 * **Quantitat pendent**: Indica els euros que aquesta pòlissa està pendent de
   pagar. Ja sigui perquè és d'una devolució o perquè encara no s'ha remesat.
@@ -282,7 +282,7 @@ També podem llistar **totes** les pòlisses/contractes que tinguin algun deute 
 través del menú: **Gestió de pòlisses > Pòlisses amb deute** on es pot veure en
 cada contracte quin estat i deute tenen i un sumatori de tot deute del llistat.
 
-![](_static/polisses/pending_amount_list.png)
+![](_static/polizas/pending_amount_list.png)
 
 Per més informació es pot llegir la seccció de [gestió d'impagats](/comer/gestion_impago.md) en comercialització.
 
@@ -306,14 +306,14 @@ Des d'una pòlissa, podem seleccionar un dels motius no
 tallables. Si tenim la pòlissa marcada com a activa ho haurem de fer mitjançant
 una modificació contractual.
 
-![](_static/polisses/BotoSubministramentNoTallable.png)
+![](_static/polizas/BotoSubministramentNoTallable.png)
 
 Aquí podem seleccionar el motiu, i també podem filtrar: per nom del motiu,
 per si és un motiu definit al BOE o no, i per descripció.
 
-![](_static/polisses/FormulariMotius.png)
+![](_static/polizas/FormulariMotius.png)
 
-![](_static/polisses/FiltrarMotius.png)
+![](_static/polizas/FiltrarMotius.png)
 
 ### Crear nous motius
 
@@ -325,7 +325,7 @@ trobarem a la barra d'eines inferior (veure imatge anterior). I en el cas
 d'estar a l'apartat de configuració de pòlisses, el trobarem a la barra d'eines
 del menú superior, tal com veiem a la següent imatge
 
-![](_static/polisses/NouMotiu.png)
+![](_static/polizas/NouMotiu.png)
 
 Per definir el motiu emplenem els camps de nom, descripció i BOE si és el cas.
 Guardem els canvis, i es crea el motiu, i s'afegeix a motius de subministrament
@@ -336,7 +336,7 @@ no tallable.
 Per llistar totes les pòlisses no tallables, accedirem al menù: **Configuració
 de Pòlisses > Pòlisses > Pòlisses no tallables**
 
-![](_static/polisses/RutaNoTallables.png)
+![](_static/polizas/RutaNoTallables.png)
 
 I ens llistarà totes les pòlisses que tenen assignat un motiu de
 subministrament no tallable
@@ -368,7 +368,7 @@ activa**.
     vàlida es modificarà la data actual sense tenir en compte cap altra
     consideració com la data d'alta i de baixa de la pòlissa o la data actual
 
-![](_static/polisses/WizardDataFirmaContracte.png)
+![](_static/polizas/WizardDataFirmaContracte.png)
 
 ## Modificacions contractuals
 
@@ -380,7 +380,7 @@ modificacions contractuals la que està **activa**.
 Un cop seleccionada es pot veure com apareix un botó per desfer la modificació
 contractual:
 
-![](_static/polisses/boto_undo.png)
+![](_static/polizas/boto_undo.png)
 
 Al fer click al botó apareixerà un avís per pantalla el qual informa que l'acció
 no es pot desfer.
@@ -409,8 +409,8 @@ Per això és necessari concretar un CNAE de **4 dígits** que descrigui
 Per fer-ho cal fer click al botó de la lupa a l'apartat **CNAE** al **crear **
 **una nova pòlissa**:
 
-![](_static/polisses/cnae.png)
+![](_static/polizas/cnae.png)
 
 Llavors apareix la llista de CNAEs a escollir:
 
-![](_static/polisses/llista_cnae.png)
+![](_static/polizas/llista_cnae.png)
