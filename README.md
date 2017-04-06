@@ -99,8 +99,7 @@ Markdown extensions:
 
 ## Project structure
 
-!!! note
-    All filenames and directories should be in Spanish
+_**NOTE**_: All filenames and directories should be in Spanish
 
 We have 5 categories:
 
