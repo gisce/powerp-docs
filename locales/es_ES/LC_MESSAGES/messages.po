@@ -21284,7 +21284,7 @@ msgstr ""
 "utiliza:\n"
 "    Las opciones vendran dadas segun las que hayamos entrado en la configuracion\n"
 "    de fluidos aislantes. Ver \n"
-"<a href=\"#fluidos-aislantes\">fluidos aislantes</a>."
+"<a href=\"#fluidos-de-aislamiento\">fluidos de aislamiento</a>."
 
 msgid ""
 "<strong>Categorització inventari</strong>: Es pot escollir si aquesta cel·la forma "
