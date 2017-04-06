@@ -124,3 +124,39 @@ Our travis testing includes:
 - mkdocs build -f mkdocs_es.yml
 - Check for all strings translated in the .po
 - Check for all the strings in the .pot (after build) to be in the .po
+
+# Possible Upgrades
+
+## Footnotes
+
+We are not using them, but we can add footnotes.
+
+To add footnotes, first it's needed to add footnotes extension to config.yml:
+```
+vim mkdocs.yml
+```
+Then append the extension:
+```
+markdown_extensions:
+  - footnotes
+```
+
+Use it in any _.md_ document as in [footnotes docs](https://pythonhosted.org/Markdown/extensions/footnotes.html):
+```
+Footnotes[^1] have a label[^@#$%] and the footnote's content.
+
+[^1]: This is a footnote content.
+[^@#$%]: A footnote on the label: "@#$%".
+
+[^1]: 
+    The first paragraph of the definition.
+
+    Paragraph two of the definition.
+
+    > A blockquote with
+    > multiple lines.
+
+        a code block
+
+    A final paragraph.
+```
