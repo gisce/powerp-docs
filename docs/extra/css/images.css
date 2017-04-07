@@ -1,3 +1,16 @@
+/* Center all images */
+img{
+  display: block;
+  margin: auto;
+}
+
+/* Center all tables and width:100% */
+table{
+  display: inline-table;
+  margin: auto;
+}
+
+/* Set all icons inline and 35x35px */
 img[alt="icona"], img[alt="icono"]{
   height:35px !important;
   width: 35px;
