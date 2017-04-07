@@ -10,6 +10,7 @@ markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
+      format: svg
       fontpath: fonts/DejaVuSans.ttf
 
 pages:
@@ -35,6 +36,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Lectures: distri/lecturas.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
