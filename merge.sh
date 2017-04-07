@@ -17,7 +17,7 @@ if [[ $input == 'y' || $input == 'Y' ]]; then
   echo "Solve the conflicts from another terminal"
   echo "Can we continue? Or should we (A)bort?"
   read input
-  if [ $input == 'A' ]; then
+  if [[ $input == 'A' ]]; then
     git merge --abort
     exit 
   fi
