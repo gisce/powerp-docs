@@ -1,8 +1,8 @@
-# Consultar data del ultim bolcat
+# Consultar data de l'últim bolcat
 
-El ERP permet consultar la data en que es va fer el ultim bolcat a GIS/Ultim bolcat
+El ERP permet consultar la data en què es va fer l'últim bolcat a GIS/Últim bolcat
  
  * Un cop fet això, s'obrirà un assistent
- * Premer Consultar 
+ * Prémer Consultar 
 
 ![](_static/ultim.png)

@@ -1,6 +1,6 @@
 # PowERP documentation
 
-[Build of our documentation](http://builds.gisce.net/powerp-docs/master/)
+Our docs are available in: [manuals.gisce.net](http://manuals.gisce.net/)
 
 **Table Of Contents**
 
@@ -34,6 +34,7 @@ _With the extensions:_
     - Automatically creates TableOfContents.
     - Can be easily configured.
     - Can't parse special characters.
+    - Use only if ToC is needed in the docs you are writing.
 - [markdown-writer](https://atom.io/packages/markdown-writer)
     - Hotkeys to markdown formats
     - Can be extended
@@ -72,7 +73,8 @@ You should [check the wiki](https://github.com/gisce/powerp-docs/wiki/Build!---D
 The essential commands are:
 
 * Serve - to build a webserver that auto-updates with changes in the docs.
-  (Does not update with the translations files)
+    - Does not update with the translations files
+    - **RECOMMENDED** While writting the docs
 * Build - to build the html from the docs into a folder.
 
 With the "-f" argument, we specify the config file to be used.
@@ -99,12 +101,14 @@ Markdown extensions:
 
 ## Project structure
 
+_**NOTE**_: All filenames and directories should be in Spanish
+
 We have 5 categories:
 
 - **base**: Base components: used in distri & comer
 - **distri**: Distri components
 - **comer**: Comer components
-- **facturacio**: Base invoicing components used in distri & comer
+- **facturacion**: Base invoicing components used in distri & comer
 - **gis**: GIS components
 
 For images we use `_static` folder inside the category with a subfolder for the
@@ -122,3 +126,39 @@ Our travis testing includes:
 - mkdocs build -f mkdocs_es.yml
 - Check for all strings translated in the .po
 - Check for all the strings in the .pot (after build) to be in the .po
+
+# Possible Upgrades
+
+## Footnotes
+
+We are not using them, but we can add footnotes.
+
+To add footnotes, first it's needed to add footnotes extension to config.yml:
+```
+vim mkdocs.yml
+```
+Then append the extension:
+```
+markdown_extensions:
+  - footnotes
+```
+
+Use it in any _.md_ document as in [footnotes docs](https://pythonhosted.org/Markdown/extensions/footnotes.html):
+```
+Footnotes[^1] have a label[^@#$%] and the footnote's content.
+
+[^1]: This is a footnote content.
+[^@#$%]: A footnote on the label: "@#$%".
+
+[^1]: 
+    The first paragraph of the definition.
+
+    Paragraph two of the definition.
+
+    > A blockquote with
+    > multiple lines.
+
+        a code block
+
+    A final paragraph.
+```

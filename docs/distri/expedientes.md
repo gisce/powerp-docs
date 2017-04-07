@@ -3,7 +3,7 @@
 Podem entrar al menú d'Expedients a dins del ERP accedint a "_Menú ERP →
 Expedients → Expedients_".
 
-![](_static/expedients/exp_menu.png)
+![](_static/expedientes/exp_menu.png)
 
 Localitzar en el document d'Acta de posada en servei, o en el certificat final
 d'obra o en el certificat d'indústria, les dades mínimes a complementar:
@@ -17,32 +17,32 @@ d'obra o en el certificat d'indústria, les dades mínimes a complementar:
 5. Tipus: Si es un expedient de CT (Centre Transformador), si es de línia de MT
    (Mitja Tensió) i si afecta a MT i CT.
 
-![](_static/expedients/exp_form.png)
+![](_static/expedientes/exp_form.png)
 
 En la següent imatge es pot veure un exemple de mostra amb diversos camps per
 complementar un expedient.
 
-![](_static/expedients/exp_mostra_acta.png)
+![](_static/expedientes/exp_mostra_acta.png)
 
 ## Adjuntar el document del expedient/acta a l'ERP
 
 1. Escanejar el document
 2. Dins de la fitxa del expedient, sel·leccionar la opció "_Fitxers Adjunts_"
 
-    ![](_static/expedients/exp_adjunts.png)
+    ![](_static/expedientes/exp_adjunts.png)
 
 3. Crear un nou (botó _New_) registre
 
-    ![](_static/expedients/exp_adjunts_nou.png)
+    ![](_static/expedientes/exp_adjunts_nou.png)
 
 4. Entrar les dades:
     - Nom del document Adjunt.
         - _Exemple: "APS LMT CLAMOR FERIAL"_
     - Adjuntar el document escanejat
 
-    ![](_static/expedients/exp_adjunts_dades.png)
+    ![](_static/expedientes/exp_adjunts_dades.png)
 
-    ![](_static/expedients/exp_adjunts_dades_fet.png)
+    ![](_static/expedientes/exp_adjunts_dades_fet.png)
 
 ## Assignar un expedient a un centre o línia
 
@@ -53,7 +53,7 @@ li assignarem l'expedient que li correspon.
 
 1. Entrem des del menú: "_Menú ERP → Centres Transformadors → CT_"
 
-    ![](_static/expedients/ct_menu.png)
+    ![](_static/expedientes/ct_menu.png)
 
 2. Localitzem el centre en qüestió, amb l'ajuda de filtres o sel·leccionant-lo
    directament del llistat.
@@ -61,18 +61,18 @@ li assignarem l'expedient que li correspon.
 3. Entrar a la fitxa del centre utilitzant el botó "_Vista → Formulari_ " o bé,
    fent doble click.
 
-    ![](_static/expedients/ct_form.png)
+    ![](_static/expedientes/ct_form.png)
 
 4. Accedim a la pestanya _Expedients._
 
-    ![](_static/expedients/ct_expedients_pestanya.png)
+    ![](_static/expedientes/ct_expedients_pestanya.png)
 
 5. Afegim (botó _Add_ ) un nou expedient i sel·leccionem l'expedient del llistat
    que ens apareixerà.   
    La finestra que apareix és el llistat de tots els expedients entrats al ERP,
    al menú expedients.
 
-    ![](_static/expedients/ct_expedients_add.png)
+    ![](_static/expedientes/ct_expedients_add.png)
 
 ### Assignar un expedient a una línia de Mitja Tensió
 
@@ -83,7 +83,7 @@ li assignarem l'expedient que li correspon.
 1. Entrar en el menú "_Menú ERP → Línies d'Alta Tensió → Manteniment → Trams →
    Tots els Trams_"
 
-    ![](_static/expedients/mt_menu.png)
+    ![](_static/expedientes/mt_menu.png)
 
 2. Localitzem el tram en qüestió, amb l'ajuda de filtres o sel·leccionant-lo
    diremtament del llistat.
@@ -91,18 +91,18 @@ li assignarem l'expedient que li correspon.
 3. Entrar a la fitxa del tram utilitzant el botó "_Vista → Formulari_ " o bé,
    fent doble click.
 
-    ![](_static/expedients/mt_form.png)
+    ![](_static/expedientes/mt_form.png)
 
 4. Accedim a la pestanya _Expedients._
 
-    ![](_static/expedients/mt_expedients_pestanya.png)
+    ![](_static/expedientes/mt_expedients_pestanya.png)
 
 5. Afegim (botó _Add_ ) un nou expedient i sel·leccionem l'expedient del llistat
    que ens apareixerà.   
    La finestra que apareix és el llistat de tots els expedients entrats al ERP,
    al menú expedients.
 
-    ![](_static/expedients/mt_expedients_add.png)
+    ![](_static/expedientes/mt_expedients_add.png)
 
 ## Data APM
 
@@ -116,7 +116,7 @@ perquè la data real és una altra ...; haruem de:
 1. Bloquejar la data APM: a la pestanya de dades administratives.
 2. Entrar la data APM que volem deixar.
 
-![](_static/expedients/tram_apm.png)
+![](_static/expedientes/tram_apm.png)
 
 !!! note
     Poden haver diversos expedients assignats a un mateix centre i/o línia.    
