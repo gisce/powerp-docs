@@ -139,7 +139,7 @@ de la llista de productes, el producte i la quantitat a sol·licitar.
 ![](_static/lecturas/Captura05.png)
 
 
-Es selecciona el botó nou ![](_static/lecturas/iconaNou.png) de l'apartat _línia de ordre de compra_.
+Es selecciona el botó nou ![icona](_static/lecturas/iconaNou.png) de l'apartat _línia de ordre de compra_.
 
 El producte que es vol comprar ha d'estar degudament introduït a la base de
 dades de productes amb totes les dades omplertes correctament.
@@ -338,7 +338,7 @@ Es procedirà de la següent forma:
 
 Des de la fitxa de recepció de material haurem de dividir la línia de 10
 comptadors en dues línies, una de 6 comptadors i una altra de 4 comptadors.
-Seleccionem la línia i premem el botó d'**acció** ![](_static/lecturas/iconaAccio.png) i del menú que
+Seleccionem la línia i premem el botó d'**acció** ![icona](_static/lecturas/iconaAccio.png) i del menú que
 apareix seleccionem la opció _Divideix línia de moviment_.
 
 
