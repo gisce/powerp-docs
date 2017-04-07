@@ -361,7 +361,7 @@ Una part general per tal d'identificar la revisió on hi ha els camps:
 ![](_static/revisiones/guardat_revisio_planificacio.png)
 
 
-* **Periodiciat quantitat**: Número en temps que depèn del camp **Periodicitat
+* **Periodictiat quantitat**: Número en temps que depèn del camp **Periodicitat
   tipus**.
 * **Periodicitat tipus**: Tipus de temps a aplicar per planificar la següent
   revisió.
@@ -388,13 +388,13 @@ blockdiag {
 |           |                |  revisió                                                 |
 +-----------+----------------+----------------------------------------------------------+
 | Assignada | Administrador  | Ja s'ha preparat la revisió. En el moment de passar-la   |
-|           |                |  a assignada s'assignaran totes els ítems de les         |
+|           |                |  a assignada s'assignaran tots els ítems de les          |
 |           |                |  normatives vinculades a aquest model i que el registre  |
 |           |                |  complexi amb el domini de les normatives.               |
 |           |                |  En aquest moment, la revisió ja està a punt perquè la   |
 |           |                |  persona que la de duu a terme ho faci.                  |
 +-----------+----------------+----------------------------------------------------------+
-| Oberta    | Tècnic/Empresa | La persona responable de fer la revisió comença.         |
+| Oberta    | Tècnic/Empresa | La persona responsable de fer la revisió comença.        |
 |           |                |                                                          |
 | Tancada   | Tècnic/Empresa | La persona que ha fet la revisió ha finalitzat la feina. |
 +-----------+----------------+----------------------------------------------------------+
@@ -402,7 +402,7 @@ blockdiag {
 #### Comprovació d'ítems
 
 1. Passar l'estat de la revisió a **Oberta**.
-2. Assignar la **Data real** en que es duu a terme la revisió.
+2. Assignar la **Data real** en què es duu a terme la revisió.
 3. Comprovar tots els ítems que tenim per revisar, anant un a un fent doble clic
    a l'ítem i modificant els valors del formulari
 4. Passar l'estat de la revisió a **Tancada**.
@@ -419,7 +419,7 @@ En el formulari d'un ítem a revisar trobem els següents camps:
 * **Normativa**: Normativa a la qual pertany aquest ítem a revisar.
 * **Descripció**: Descripció de l'ítem a revisar que s'ha configurat a la
   normativa.
-* **Estat**: En quin estat es troba aquest ítem.s
+* **Estat**: En quin estat es troba aquest ítem.
 >  * **No comprovat**: Encara no s'ha comprovat aquest ítem de la revisió.
 >  * **Correcte**: L'ítem està correcte. S'haurà d'introduïr la **data de
     comprovació** i segons el tipus d'entrada que s'hagi configurat per aquest ítem
@@ -530,7 +530,7 @@ Per exemple volem buscar els transformadors que no tenen número de sèrie:
 Els operadors que tenim són els següents:
   * **=**: igual al tercer element.
   * **!=**: diferent al tercer element.
-  * **in**:: dins de la llista del tercer element.
+  * **in**: dins de la llista del tercer element.
   * **not in**: no està a dins la llista del tercer element.
   * **like**: Té alguna coincidència amb el tercer element (tenint en compte les
     majúscules) el caràcter comodí és el **%**. Ex %jo% coincidiria amb joan,
