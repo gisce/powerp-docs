@@ -12,12 +12,12 @@ git fetch
 git merge origin/master
 echo "Are there any conflicts (not the po file)? [y/N]"
 read input
-if [ input == 'y' || input == 'Y' ]; then 
+if [[ $input == 'y' || $input == 'Y' ]]; then 
   abort=1
   echo "Solve the conflicts from another terminal"
   echo "Can we continue? Or should we (A)bort?"
-  read inputt
-  if [ inputt == 'A' ]; then
+  read input
+  if [ $input == 'A' ]; then
     git merge --abort
     exit 
   fi
