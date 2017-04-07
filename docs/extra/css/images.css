@@ -1,4 +1,4 @@
-img[alt="icona"]{
+img[alt="icona"], img[alt="icono"]{
   height:35px !important;
   width: 35px;
 }
