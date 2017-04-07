@@ -13,7 +13,6 @@ markdown_extensions:
       i18n_lang:  es_ES
       i18n_dir:   locales
   - markdown_blockdiag:
-      format: svg
       fontpath: fonts/DejaVuSans.ttf
 
 pages:

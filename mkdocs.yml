@@ -10,7 +10,6 @@ markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
-      format: svg
       fontpath: fonts/DejaVuSans.ttf
 
 pages:
