@@ -127,6 +127,28 @@ Our travis testing includes:
 
 # Possible Upgrades
 
+## Images with CSS
+
+Using alt text (or the source) to find the images.
+
+Add your own css in the `docs/extra/css/images.css` directory.
+
+The _css_ may have the format:
+
+```
+img[alt="TextFromAlt"]{}
+img[src="TextFromSrc"]{}
+```
+
+And the _markdown_ image should be like:
+
+```
+![TextFromAlt](TextFromSrc)
+```
+
+If using alt as a _CSS class_, remember to use an image-defining name and also
+translate it. (i.e. alt="icon" [icon->icona / icon->icono])
+
 ## Footnotes
 
 We are not using them, but we can add footnotes.
@@ -148,7 +170,7 @@ Footnotes[^1] have a label[^@#$%] and the footnote's content.
 [^1]: This is a footnote content.
 [^@#$%]: A footnote on the label: "@#$%".
 
-[^1]: 
+[^1]:
     The first paragraph of the definition.
 
     Paragraph two of the definition.
