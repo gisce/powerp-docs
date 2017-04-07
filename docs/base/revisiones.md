@@ -361,7 +361,7 @@ Una part general per tal d'identificar la revisió on hi ha els camps:
 ![](_static/revisiones/guardat_revisio_planificacio.png)
 
 
-* **Periodictiat quantitat**: Número en temps que depèn del camp **Periodicitat
+* **Periodicitat quantitat**: Número en temps que depèn del camp **Periodicitat
   tipus**.
 * **Periodicitat tipus**: Tipus de temps a aplicar per planificar la següent
   revisió.
