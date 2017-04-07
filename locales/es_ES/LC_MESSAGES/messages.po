@@ -18888,7 +18888,7 @@ msgstr ""
 "y cargarlo al ERP (NOTA 3) <p>\n"
 
 msgid "<img alt=\"Imatge de la sel·leccio dels fitxers SHPS\" src=\"../_static/lbt/fitxers_shps_lbt.png\" />"
-msgstr "<img alt=\"Imatge de la sel&#183;leccio dels fitxers SHPS\" src=\"../_static/lbt/fitxers_shps_lbt.png\" />"
+msgstr "<img alt=\"Imagen de la seleccion de los ficheros SHPS\" src=\"../_static/lbt/fitxers_shps_lbt.png\" />"
 
 msgid ""
 "Importar el fitxer <strong><em>lbt.shp</em></strong> en el ERP com a un procés\n"
