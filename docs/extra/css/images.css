@@ -14,4 +14,10 @@ table{
 img[alt="icona"], img[alt="icono"]{
   height:35px !important;
   width: 35px;
+  display: inline;
+}
+
+/* docs/distri/tpl/proces_de_treball.md */
+img[src="../../_static/tpl/tpl_fitxers_de_ruta_i_lectures.png"]{
+  height: 400px !important;
 }
