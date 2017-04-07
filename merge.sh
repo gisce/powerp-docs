@@ -16,13 +16,11 @@ if [ input == 'y' or input == 'Y' ]; then
   abort=1
   echo "Solve the conflicts from another terminal"
   echo "Can we continue? Or should we (A)bort?"
-  read input
-  if [ input == 'A' ]; then
+  read inputt
+  if [ inputt == 'A' ]; then
     git add *
     exit 
   fi
-else
-  abort=0
 fi
 echo "Merging pofile using msgcat"
 msgcat --use-first messages.local.po messages.remote.po -o messages.merge.po
