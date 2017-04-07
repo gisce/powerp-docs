@@ -13,6 +13,9 @@ markdown_extensions:
       format: svg
       fontpath: fonts/DejaVuSans.ttf
 
+extra_css:
+  - extra/css/images.css
+
 pages:
   - Home: index.md
   - Base:
