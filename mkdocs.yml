@@ -10,6 +10,7 @@ markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
+      format: svg
       fontpath: fonts/DejaVuSans.ttf
 
 pages:
@@ -21,6 +22,7 @@ pages:
     - Atenció al Client: base/atc.md
     - Gestió de pòlisses: base/polizas.md
     - Gestió de comptadors: base/contadores.md
+    - Equips de telecomunicació: base/telecom.md
   - Distribuidora:
     - Inici: distri/index.md
     - Telegestió: distri/telegestion.md
@@ -34,6 +36,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Lectures: distri/lecturas.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
