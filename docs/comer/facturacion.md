@@ -454,7 +454,7 @@ els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
 ###Figures
 
 ### Figura 1
-![](_static/q1/_static/q1/menu_principal.png)
+![](_static/q1/menu_principal.png)
 
    Figura 1: Ubicació del formulari d'importacions.
 
