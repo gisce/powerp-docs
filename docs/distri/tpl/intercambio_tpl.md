@@ -208,8 +208,8 @@ El fitxer conté:
 |                        | electrònica a través del _cable serie_ i/o la _sonda|
 |                        | òptica_. El TPL descodifica aquest camp segons      |
 |                        | s'explica en la                                     |
-|                        | [secció  corresponent](../tpl/decarrega_tancaments_i|
-|                        |_curves#configuracio-de-la-descarrega) d'aquest      |
+|                        | [secció  corresponent](../tpl/descarga_cierres_y_   |
+|                        |_curvas#configuracio-de-la-descarrega) d'aquest      |
 |                        | document.                                           |
 +------------------------+-----------------------------------------------------+
 

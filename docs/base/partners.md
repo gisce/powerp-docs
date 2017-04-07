@@ -32,7 +32,7 @@ En els dos casos s'ha d'emplenar la informació corresponent a:
 
 Els contactes o empreses relacionats amb la companyia normalment no es donaràn
 mai de baixa, ja que són informació important. En el cas de que sigui un abonat,
-el que s'ha de fer és [donar de baixa la pòlissa](polisses.md#donar-de-baixa-una-polissa)
+el que s'ha de fer és [donar de baixa la pòlissa](polizas.md#donar-de-baixa-una-polissa)
 d'aquest abonat.
 
 ## Canviar l'IVA de facturació a una Comercialitzadora

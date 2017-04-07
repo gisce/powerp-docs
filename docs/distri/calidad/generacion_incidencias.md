@@ -41,11 +41,11 @@ programa de GIS “Simulacions/Qualitat de servei AT”.
   “Incidència existent”.
 * **Origen de la incidència**. Es seleccionarà l’origen de la nova incidència
   seleccionant la opció desitjada del desplegable tal com s’ha definit a
-  l’[apartat 3.2](./termes_i_def.md#recollida-dinformacio) els possibles orígens.
+  l’[apartat 3.2](./terminos_y_definicion.md#recollida-dinformacio) els possibles orígens.
 * **Tipus incidència**. Es seleccionarà del desplegable la opció “programada”
-  o “imprevista” segons s’indica a l’[apartat 3.7](./termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio).
+  o “imprevista” segons s’indica a l’[apartat 3.7](./terminos_y_definicion.md#desagregacio-de-les-dades-de-la-interrupcio).
 * **Causa de la incidència**. Es seleccionarà la causa de la incidència segons
-  s’ha definit a l’[apartat 3.7](./termes_i_def.md#desagregacio-de-les-dades-de-la-interrupcio).
+  s’ha definit a l’[apartat 3.7](./terminos_y_definicion.md#desagregacio-de-les-dades-de-la-interrupcio).
 
 Una vegada seleccionada la incidència, l’origen, el tipus i la causa es
 procedeix a definir l’interval de la incidència que es simularà en el GIS.

@@ -1,7 +1,7 @@
 # Obtenció de resultats
 ## TIEPI zonal anual
 
-![](../_static/qualitat/tiepi_zona_anual.png)
+![](../_static/calidad/tiepi_zona_anual.png)
 
 Per obtenir els llistats de TIEPI s’accedeix al menú "_Qualitat → Accions →
 Generar TIEPI_": Qualitat zonal anual.
@@ -14,7 +14,7 @@ TIEPI y NIEPI debido a interrupciones largas_".
 
 ## NIEPI zonal anual
 
-![](../_static/qualitat/niepi_zona_anual.png)
+![](../_static/calidad/niepi_zona_anual.png)
 
 Per obtenir els llistats de NIEPI s’accedeix al menú "_Qualitat → Accions →
 Generar NIEPI_": Qualitat zonal anual.
@@ -27,7 +27,7 @@ NIEPI debido a interrupciones largas_".
 
 ## Obtenció del indicador percentil 80 del TIEPI
 
-![](../_static/qualitat/percentil_zona_anual.png)
+![](../_static/calidad/percentil_zona_anual.png)
 
 Per obtenir els llistats de l’indicador percentil 80 del TIEPI s’accedeix al
 menú "_Qualitat → Accions → Generar TIEPI_": Percentil 80.

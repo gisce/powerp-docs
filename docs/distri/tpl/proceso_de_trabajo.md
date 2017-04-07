@@ -6,7 +6,7 @@ feina. Per exemple, en el nostre cas, recollir lectures.
 
 El sistema "_GISCE-ERP_" contempla aquest concepte, i genera un _fitxer de ruta_
 (text delimitat per tabuladors, en un fitxer amb l'extensió _.ruta_. Veure
-l'apartat [Fitxers d'intercanvi](intercanvi_tpl.md)) que
+l'apartat [Fitxers d'intercanvi](intercambio_tpl.md)) que
 conté les dades dels comptadors en l'ordre que s'hagi establert per
 anar recollint les lectures.    
 **Aquest fitxer inclou les dades necessàries per identificar el comptador,
@@ -26,7 +26,7 @@ de tots els fitxers de dades estàn descrits formalment en l'apartat
 "_fitxers d'intercanvi_" i poden ser utilitzats amb qualsevol altre
 aplicació de gestió.
 
-# Fluxorames de processos
+# Fluxogrames de processos
 
 ![](../_static/tpl/tpl_workflow-erp_tpl_erp.png)
 
@@ -95,7 +95,7 @@ seleccionant-la d'una llista, per exemple en cas de detectar un frau, defectes
 en la instal·lació, no poder accedir al aparell...    
 Aquesta llista està basada en la _tabla 63_ del document
 "_tablas de codigos\_CNE\_V\_11\_(220109).doc_" i es pot modificar o ampliar
-fàcilment (Veure l'apartat [Fitxers d'intercanvi](intercanvi_tpl.md))
+fàcilment (Veure l'apartat [Fitxers d'intercanvi](intercambio_tpl.md))
 
 L'aplicació permet a més a més: buscar, avançar i retrocedir per els comptadors
 de la ruta; per revisar en cas de dubte i corretgir les dades ja entrades si
@@ -135,7 +135,7 @@ el recorregut per cadascuna.
 Per traslladar els resultats al sistema de gestió, per exemple GISCE-ERP, només
 caldrà recuperar les carpetes amb els resultats i importar-los.    
 (Veure l'apartat
-[Fitxers d'intercanvi](intercanvi_tpl.md))
+[Fitxers d'intercanvi](intercambio_tpl.md))
 
 # Menú de Gestió de Rutes
 
@@ -285,7 +285,7 @@ els valors per comprobar-los amb el valor del totalitzador del equip de mesura.
 
 Si es desitja fer la lectura electrònica a través del port òptic s'ha de polsar
 sobre la pestanya "Lectura electrónica". (Veure apartat [Descàrrega electrònica
-de tancaments i corbes](decarrega_tancaments_i_curves.md))
+de tancaments i corbes](descarga_cierres_y_curvas.md))
 
 **Tarifa**: 6.x
 
@@ -296,7 +296,7 @@ de tancaments i corbes](decarrega_tancaments_i_curves.md))
 
 Si es desitja fer la lectura electrònica a través del port òptic s'ha de polsar
 sobre la pestanya "Lectura electrónica". (Veure apartat [Descàrrega electrònica
-de tancaments i corbes](decarrega_tancaments_i_curves.md))
+de tancaments i corbes](descarga_cierres_y_curvas.md))
 
 # Incidències i Observacions
 

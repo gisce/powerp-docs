@@ -9,7 +9,7 @@ Podem trobar totes les opcions de configuració del les cel·les i elements de
 tall a través de **Menú > Centres Transformadors > Manteniment > Cel·les i
 elements de tall > Configuració**.
 
-![](_static/celles/menu_config.png)
+![](_static/celdas/menu_config.png)
 
 ## Fluïds d'aïllament
 
@@ -17,11 +17,11 @@ Podrem donar d'alta tots els fluïds d'aïllament que necessitem a través de
 **Menú > Centres Transformadors > Manteniment > Cel·les i elements de tall >
 Configuració > Fluïds aïllants**
 
-![](_static/celles/menu_fluids.png)
+![](_static/celdas/menu_fluids.png)
 
 Els fluïds aïllants disposen de dos camps:
 
-  ![](_static/celles/formulari_fluids.png)
+  ![](_static/celdas/formulari_fluids.png)
 
   * **Codi**: El codi d'identificació d'aquest fluïd. (obligatori)
   * **Descripció**: Una descripció d'aquest fluïd.
@@ -35,11 +35,11 @@ Podrem donar d'alta tots els tipus d'element que necessitem a través de **Menú
 Centres Transformadors > Manteniment > Cel·les i elements de tall > Configuració
 > Tipus elements**
 
-![](_static/celles/menu_tipus_elements.png)
+![](_static/celdas/menu_tipus_elements.png)
 
 Els tipus d'element disposen de dos camps:
 
-  ![](_static/celles/formulari_tipus_elements.png)
+  ![](_static/celdas/formulari_tipus_elements.png)
 
   * **Codi tipus element**: Códi de tipus d'element.
   * **Tipus d'element**: Nom del tipus d'element
@@ -50,11 +50,11 @@ Podrem donar d'alta tots els tipus de posició que necessitem a través de
 **Menú > Centres Transformadors > Manteniment > Cel·les i elements de tall
 > Configuració > Tipus de posició**
 
-![](_static/celles/menu_tipus_posicio.png)
+![](_static/celdas/menu_tipus_posicio.png)
 
 Els tipus de posició disposen de dos camps:
 
-  ![](_static/celles/formulari_tipus_posicio.png)
+  ![](_static/celdas/formulari_tipus_posicio.png)
 
   * **Codi tipus posició**: Códi de tipus de posició.
   * **Tipus de posició**: Nom del tipus de posició
@@ -65,13 +65,13 @@ Podem trobar un llistat de totes les cel·les i elements de tall al **Menú >
 Centres Transformadors > Manteniment > Cel·les i elements de tall > Cel·les i
 elements de tall**
 
-![](_static/celles/menu_celles.png)
+![](_static/celdas/menu_celles.png)
 
 Quan fem doble clic al llistat de totes les cel·les, podem veure un llistat on
 es mostraran totes les cel·les i elements de tall que tinguem actives en aquests
 moments.
 
-![](_static/celles/llistat_celles.png)
+![](_static/celdas/llistat_celles.png)
 
 
 # Crear una nova Cel·la i element de tall
@@ -86,7 +86,7 @@ Ens apareixerà un formulari on podem visualitzar tres parts:
   * Dades tècniques
   * Dades administratives
 
-![](_static/celles/formulari_tecnic_celles.png)
+![](_static/celdas/formulari_tecnic_celles.png)
 
 En l'apartat **general** tenim els camps:
 
@@ -128,7 +128,7 @@ En l'aparatat de **dades tècniques** tenim els camps:
 
 En l'apartat de **dades administratives** tenim els camps:
 
-  ![](_static/celles/formulari_administratiu_celles.png)
+  ![](_static/celdas/formulari_administratiu_celles.png)
 
   * **Propietari**: Per indicar si som propietaris o no.
   * **% Pagat per la compañia**: Per indicar quin percentatge ha pagat l'empresa
@@ -157,7 +157,7 @@ centre transformador des de la seva fitxa. Hi ha una pestanya anomenada **Cel·l
 tall** que ens les mostrarà. Des d'aquí és possible crear noves cel·les i elements de tall
 directament per aquest CT.
 
-![](_static/celles/pestanya_cts_celles.png)
+![](_static/celdas/pestanya_cts_celles.png)
 
 # Visualització des de la fitxa de Suports AT
 
@@ -166,7 +166,7 @@ des de la seva fitxa. Hi ha una pestanya anomenada **Cel·les/Elem. de tall** en
 les mostrarà. Des d'aquí és possible crear noves cel·les i elements de tall
 directament per aquest suport.
 
-![](_static/celles/pestanya_suports_celles.png)
+![](_static/celdas/pestanya_suports_celles.png)
 
 # Visualització des de la fitxa d'una línia AT
 
@@ -177,20 +177,20 @@ pestanya anomenada **Cel·les/Elem. de tall** ens les mostrarà. Des d'aquí **n
 és possible crear noves cel·les i elements de tall, per això s'hauria d'anar al
 suport concret o des del llistat de cel·les.
 
-![](_static/celles/pestanya_lat_celles.png)
+![](_static/celdas/pestanya_lat_celles.png)
 
 # Llistat de tots els relés
 
 Podem visualitzar tots els relés que tenim entrats a través de **Menú > Centres
 Transformadors > Manteniment > Cel·les i elements de tall > Relés**
 
-![](_static/celles/menu_reles.png)
+![](_static/celdas/menu_reles.png)
 
 ## Formulari relé
 
 El formulari d'un relé disposa de tres camps:
 
-  ![](_static/celles/formulari_reles.png)
+  ![](_static/celdas/formulari_reles.png)
 
   * **Cel·la**: Aquest camp relaciona el relé amb la cel·la/element de tall on
     està instal·lat. Quan estiguem donant d'alta un relé a una cel·la/element de
@@ -205,11 +205,11 @@ El formulari d'un relé disposa de tres camps:
 Podem accedir a través del menú "_Menú ERP → Centres Transformadors →
 Manteniment → Cel·les i elements de tall → Condensadors_"
 
-![](_static/celles/menu_condensadors.png)
+![](_static/celdas/menu_condensadors.png)
 
 Per crear un nou condensador, cal completar els camps remarcat amb el color blau.
 
-![](_static/celles/formulari_condensadors.png)
+![](_static/celdas/formulari_condensadors.png)
 
 El **Codi** de condensador i reactància que s'entri a l'ERP ha de ser el mateix
 que l'**ID** dels blocs utilitzats en el GIS i l'Autocad.
@@ -219,9 +219,9 @@ Els blocs a utilitzar són:
 |     Condensador-BT       |      Condensador-AT      |     Reactància      |
 |:------------------------:|:------------------------:|:-------------------:|
 
-![](_static/celles/esquema_condensadors.png)
+![](_static/celdas/esquema_condensadors.png)
 
-![](_static/celles/esquema_bateries.png)
+![](_static/celdas/esquema_bateries.png)
 
 
 |     Tipus de Condensador    |    CINI     |       Tipus d'Instal·lació       |
@@ -230,9 +230,9 @@ Els blocs a utilitzar són:
 |         Condensador AT      |   I24400A1  |             TI-168               |
 |         Reactancia          |   I24401A1  | 				    TI-168               |
 
-![](_static/celles/taula_condensadors.png)
+![](_static/celdas/taula_condensadors.png)
 
-![](_static/celles/taula_codis_instalacions.png)
+![](_static/celdas/taula_codis_instalacions.png)
 
 Data APM: Si no la sabem, posem la mateixa que el CT.
 
@@ -241,7 +241,7 @@ Per entrar el **número de sèrie**:
 - Obrir amb la lupa i crear un de Nou
 - Si sabem el número, el posem. Altrament posem el mateix número que el condensador
 
-![](_static/celles/formulari_numero_de_serie.png)
+![](_static/celdas/formulari_numero_de_serie.png)
 
 Si el producte "_Condensador Genèric_" no està creat:
 
@@ -249,4 +249,4 @@ Si el producte "_Condensador Genèric_" no està creat:
 - De la categoria "_Distribució_"
 - La resta de camps no són obligatoris
 
-![](_static/celles/add_producte_condensador.png)
+![](_static/celdas/add_producte_condensador.png)

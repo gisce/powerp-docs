@@ -15,12 +15,12 @@ El de *Hores* ens generarà els valors que conten el temps en segons dels talls 
 
 Per generar la llista de la qualitat clicarem sobre el tipus que desitgem, si *hores* o *incidències*, i ens apareixarà una finestra on ens demanarà l'any pel que volem calcular quines pòlisses han sofert incidències, tal i com podem veure a la imatge següent:
 
-![](_static/calidad/TIEPI_1.png)
+![](_static/calidad_individual/TIEPI_1.png)
 
 A la imatge hem escrit l'any 2013 com a exemple. Cal tenir en compte de que cada cop que es clica el botó s'està generant l'any sencer, o sobreescrivint en el cas que ja existeixi.
 Un cop seleccionat l'any cliquem al botó *Següent* i se'ns mostrarà una nova pestanya amb l'any que hem escollit, clicant sobre l'any podrem veure el llistat de les pòlisses com en la imatge següent:
 
-![](_static/calidad/TIEPI_2.png)
+![](_static/calidad_individual/TIEPI_2.png)
 
 En cada linia del llistat consta de vuit columnes amb els camps:
 
@@ -41,7 +41,7 @@ El camp de **Dret a descompte** tindrà un tic de correcte si el **Temps Total I
 
 A la part dreta tenim un accés directe que, clicant sobre ell, ens mostra una finestra que ens permet filtrar per varis camps els talls de l'any selecionat, com podem veure a la imatge següent:
 
-![](_static/calidad/TIEPI_3.png)
+![](_static/calidad_individual/TIEPI_3.png)
 
 Sota de la llista podem observar que ens apareix el sumatori del camp **Temps Total Interupció** en segons, seleccionant varies línies clicant amb el botó de *Ctrl* el sumatori serà de les línies que haguem escollit.
 
@@ -49,7 +49,7 @@ Per generar la **Qualitat individual Incidències** és el mateix procediment qu
 
 A la següent imatge veiem un exemple de l'any 2013 on ens fixem amb el número de talls:
 
-![](_static/calidad/TIEPI_4.png)
+![](_static/calidad_individual/TIEPI_4.png)
 
 En aquest cas de les incidències també tenim l'accés directe per a poder filtrar i fer el sumatori del número de incidències.
 
@@ -62,9 +62,9 @@ Ho explicarem amb l'exemple de la **Qualitat individual Incidències**, però el
 
 Clicant sobre el botó ens apareix una nova pestanya on hi trobem els anys disponibles per l'informe de qualitat individual, com en la imatge següent:
 
-![](_static/calidad/TIEPI_5.png)
+![](_static/calidad_individual/TIEPI_5.png)
 
 Clicant sobre un any s'ens mostra una pestanya on ens apareixen totes les pòlisses afectades en el termini de l'any, tal i com surt en l'apartat anterior de generar la qualitat individual.
 En aquest cas d'exemple s'ens mostra les incidències del 2011.
 
-![](_static/calidad/TIEPI_6.png)
+![](_static/calidad_individual/TIEPI_6.png)

@@ -20,4 +20,4 @@ Des d'aquest llistat podem filtrar totes les lectures que volguem, un exemple é
 filtrar totes les lectures que s'han generat amb factor d'utilització amb data més
 gran que el 29/11/2016
 
-![](_static/lectures/llistat.png)
+![](_static/lecturas/llistat.png)
