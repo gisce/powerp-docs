@@ -58,7 +58,7 @@ correctament. (A la imatge es mostra l'IVA vigent en aquell moment)
     Un cop duplicat s'han de canviar el _nom de producte_, el _codi_, el _preu_,
     la _referència del proveïdor_ i el _proveïdor_ quan sigui necessari.
 
-La fitxa de producte es pot completar amb la pestanya `Preus & proveïdors` on
+La fitxa de producte es pot completar amb la pestanya _Preus & proveïdors_ on
 s'hi indicarà el preu de cost, els possibles proveïdors, els noms i les
 referències de cada proveïdor per aquest producte.
 
@@ -281,7 +281,7 @@ Aquesta fitxa conté un seguit de camps a títol informatiu:
 * **Data prevista**: Data en la qual es fa la recepció del material. No es pot
   modificar.
 * **Tipus d'enviament**: Quan el material arriba del proveïdor, sempre és
-  `Recepció mercaderies`
+  _Recepció mercaderies_
 
 Fent doble-click sobre la línia del material, apareix la fitxa per fer la
 recepció.
@@ -312,7 +312,7 @@ veu en la imatge.
 
 Per acabar, prement el botó **Productes rebuts** apareixerà el cuadre de diàleg
 i prement el botó **Crear albarà** es donarà el procés de recepció de material
-per acabat, passant a estat `realitzat`.
+per acabat, passant a estat _realitzat_.
 
 
 **_Productes rebuts (Cas 1)_**
