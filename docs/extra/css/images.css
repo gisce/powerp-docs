@@ -33,10 +33,12 @@ img[alt="buscar"], img[alt="generar"]
 
 /* H: 125
 * docs/distri/sincronizacion_cups/winscp_download.png
-* docs/distri/qualitat/TIEPI.png
-* docs/distri/qualitat/NIEPI.png
+* docs/distri/calidad/TIEPI.png
+* docs/distri/calidad/NIEPI.png
 */
-img[src="../_static/sincronizacion_cups/winscp_download.png"]{
+img[src="../_static/sincronizacion_cups/winscp_download.png"],
+img[src="../../_static/calidad/TIEPI.png"],
+img[src="../../_static/calidad/NIEPI.png"]{
   height:125px !important;
 }
 
