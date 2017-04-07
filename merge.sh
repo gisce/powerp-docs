@@ -12,8 +12,15 @@ git fetch
 git merge origin/master
 echo "Are there any conflicts (not the po file)? [y/N]"
 read input
-if [ input == 'y' ]; then 
+if [ input == 'y' or input == 'Y' ]; then 
   abort=1
+  echo "Solve the conflicts from another terminal"
+  echo "Can we continue? Or should we (A)bort?"
+  read input
+  if [ input == 'A' ]; then
+    git add *
+    exit 
+  fi
 else
   abort=0
 fi
@@ -25,23 +32,21 @@ rm messages.local.po
 rm messages.remote.po
 echo "Updating python versions"
 pip install -r requirements.txt
-if [ abort == 0 ]; then
-  echo "Updating pot file to check strings after merge..."
-  if [ -f locales/messages.pot ];
-  then
-    echo "Erasing old pot file (local cache)..."
-    rm locales/messages.pot
-  fi
-  echo "Building docs to get new pot file..."
-  mkdocs build -f mkdocs_es.yml --clean
-  echo "Merging pofiles..."
-  msgmerge -U locales/es_ES/LC_MESSAGES/messages.po locales/messages.pot
-  git add locales/es_ES/LC_MESSAGES/messages.po
-  if python check_strings.py;
-  then
-    echo "DONE - remember to 'git commit' to end merging"
-  else
-    echo "Test failed, update the strings with poedit"
-    echo "DONE - use 'git commit' to end merging."
-  fi
+echo "Updating pot file to check strings after merge..."
+if [ -f locales/messages.pot ];
+then
+  echo "Erasing old pot file (local cache)..."
+  rm locales/messages.pot
+fi
+echo "Building docs to get new pot file..."
+mkdocs build -f mkdocs_es.yml --clean
+echo "Merging pofiles..."
+msgmerge -U locales/es_ES/LC_MESSAGES/messages.po locales/messages.pot
+git add locales/es_ES/LC_MESSAGES/messages.po
+if python check_strings.py;
+then
+  echo "DONE - remember to 'git commit' to end merging"
+else
+  echo "Test failed, update the strings with poedit"
+  echo "DONE - use 'git commit' to end merging."
 fi
