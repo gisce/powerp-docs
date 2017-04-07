@@ -6,14 +6,13 @@ img{
 
 /* Center all tables and width:100% */
 table{
-  display: inline-table;
+  display: inline-table !important;
   margin: auto;
 }
 
 /* Set all icons inline and 35x35px */
 img[alt="icona"], img[alt="icono"]{
   height:35px !important;
-  width: 35px;
   display: inline;
 }
 
