@@ -8,7 +8,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 * **Pólissa**, pestanya ``comptadors`` on apareix el llistat de tots els comptadors
   actius i no actius que ha tingut aquesta pólissa
 
-![](_static/comptadors/ComptadorGeneral.png)
+![](_static/contadores/contador_general.png)
 
    Pestanya General Fitxa Comptadors
 

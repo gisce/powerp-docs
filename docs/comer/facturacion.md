@@ -819,12 +819,12 @@ Per cridar aquest assistent ho podem fer de dues maneres:
 1. Seleccionem l'opció d'**Avançar facturació** en
 la llista d'opcions del lateral dret d'un contracte
 
-![](_static/avancar_facturacio/value_wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/value_wizard_avancar_facturacio.png)
 
 2. Seleccionem un contracte en el llistat de contractes i escollim l'acció
 d'**Avançar facturació**
 
-![](_static/avancar_facturacio/accio_wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/accio_wizard_avancar_facturacio.png)
 
 #### Assistent per avançar facturació
 
@@ -842,13 +842,13 @@ configuració **'pool_llindar_estimacio_lectures'**) des de la data de l'última
 L'assistent permet introduir la data per la qual volem que es generi la factura.
 
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio.png)
 
 Un cop generada la factura ens informarà entre quines dates s'ha generat.
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio2.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio2.png)
 
 En cas de no haver generat la factura ens mostrarà que no s'ha pogut facturar i
 el motiu pel qual no s'ha pogut facturar.
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio3.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio3.png)

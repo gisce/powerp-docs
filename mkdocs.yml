@@ -10,7 +10,6 @@ markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
-      format: svg
       fontpath: fonts/DejaVuSans.ttf
 
 pages:
@@ -20,19 +19,19 @@ pages:
     - PowerEmail: base/poweremail.md
     - Gestió ATR: base/atr.md
     - Atenció al Client: base/atc.md
-    - Gestió de polisses: base/polisses.md
-    - Gestió de comptadors: base/comptadors.md
+    - Gestió de pòlisses: base/polizas.md
+    - Gestió de comptadors: base/contadores.md
     - Equips de telecomunicació: base/telecom.md
   - Distribuidora:
-    - Inicio: distri/index.md
+    - Inici: distri/index.md
     - Telegestió: distri/telegestion.md
     - Manual d'ús de TPL: distri/tpl.md
     - Manual d'ús de TPL:
-      - Requeriments del sistema i instal·lació: distri/tpl/requeriments.md
-      - Procés de treball: distri/tpl/proces_de_treball.md
-      - Descàrrega electrònica de Tancaments i Curves: distri/tpl/decarrega_tancaments_i_curves.md
-      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercanvi_tpl.md
-      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercanvi_tpl_erp.md
+      - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
+      - Procés de treball: distri/tpl/proceso_de_trabajo.md
+      - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
+      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
+      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
@@ -40,7 +39,7 @@ pages:
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
-      - Règim especial: distri/facturacio_re.md
+      - Règim especial: distri/facturacion_re.md
       - Liquidació: distri/liquidacion_peajes.md
       - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
@@ -50,35 +49,35 @@ pages:
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
     - Perfils: distri/perfiles.md
-    - Descarrecs: distri/descarrecs.md
+    - Descàrrecs: distri/descargos.md
     - GIS:
       - GIS Web:
         - Visor web: gis/webgis.md
         - Buscador: gis/websearch.md
       - Qgis: gis/qgis.md
-      - Instalacions:
+      - Instal·lacions:
         - Subestacions: distri/subestaciones.md
         - CTS: distri/cts.md
         - CTS:
-          - Cel·les i elements de tall: distri/celles.md
+          - Cel·les i elements de tall: distri/celdas.md
         - LAT: distri/lat.md
         - LBT: distri/lbt.md
-        - Instalacions RE: distri/re.md
+        - Instal·lacions RE: distri/re.md
         - Expedients: distri/expedientes.md
-        - Despatxos: distri/despatxos.md
+        - Despatxos: distri/despachos.md
         - Sincronització CUPS: distri/sincronizacion_cups.md
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
       - ERP: gis/erp.md
-    - Qualitat de servei: distri/qualitat.md
+    - Qualitat de servei: distri/calidad.md
     - Qualitat de servei:
-      - Termes i Definicions: distri/qualitat/termes_i_def.md
-      - Marc de referència del model de qualitat: distri/qualitat/marc_ref_model.md
-      - Model de qualitat per la qualitat interna i externa: distri/qualitat/model_interna_i_externa.md
-      - Model de qualitat per la qualitat en us: distri/qualitat/model_en_us.md
-      - Generació d'incidències: distri/qualitat/generacio_incidencies.md
-      - Obtenció de resultats: distri/qualitat/obtencio_resultats.md
-    - Qualitat individual: distri/qualitat_individual.md
+      - Termes i Definicions: distri/calidad/terminos_y_definicion.md
+      - Marc de referència del model de qualitat: distri/calidad/marco_ref_modelo.md
+      - Model de qualitat per la qualitat interna i externa: distri/calidad/modelo_interna_y_externa.md
+      - Model de qualitat per la qualitat en us: distri/calidad/modelo_en_uso.md
+      - Generació d'incidències: distri/calidad/generacion_incidencias.md
+      - Obtenció de resultats: distri/calidad/obtencion_resultados.md
+    - Qualitat individual: distri/calidad_individual.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - CUPS: comer/cups.md
@@ -93,10 +92,10 @@ pages:
       - AEAT: comer/adm-pub/aeat.md
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
-      - Tases Municipals: comer/adm-pub/municipal_taxes.md
+      - Taxes Municipals: comer/adm-pub/tasas_municipales.md
   - Facturació:
-    - Validacions: facturacio/validacions.md
-    - Gestió de canvi d'any: facturacio/canvi_any.md
-    - Gestió de pagaments i cobraments: facturacio/cobraments.md
-    - Gestió de lectures: facturacio/lectures.md
-    - Lots: facturacio/lots.md
+    - Validacions: facturacion/validaciones.md
+    - Gestió de canvi d'any: facturacion/cambio_ano.md
+    - Gestió de pagaments i cobraments: facturacion/cobros.md
+    - Gestió de lectures: facturacion/lecturas.md
+    - Lots: facturacion/lotes.md

@@ -32,7 +32,7 @@ parts:
 
 En l'apartat de **Dades Administratives** tenim els camps:
 
-  ![](_static/subestacions/formulari_administratiu.png)
+  ![](_static/subestaciones/formulari_administratiu.png)
 
   * **Propietari (check)**: Per indicar si som propietaris o no.
   * **Propietari**: Qui és el propietari de la Subestacio, habitualment
@@ -60,12 +60,12 @@ En l'apartat de **Dades Administratives** tenim els camps:
 Podem trobar un llistat de totes les posicions al **Menú >
 Centres Transformadors > Manteniment > Subestacions > Posicions**
 
-![](_static/subestacions/menu_posicions.png)
+![](_static/subestaciones/menu_posicions.png)
 
 Quan fem doble clic al llistat de totes les posicions, podem veure un llistat on
 es mostraran totes les posicions que tinguem actives en aquests moments.
 
-![](_static/subestacions/llistat_posicions.png)
+![](_static/subestaciones/llistat_posicions.png)
 
 ## Crear una nova Posició
 
@@ -88,7 +88,7 @@ La capçalera és visibles des de qualsevol apartat:
 
 En l'apartat de **General** dos seccions amb els camps:
 
-![](_static/subestacions/formulari_general_posicions.png)
+![](_static/subestaciones/formulari_general_posicions.png)
 
 *Dades tècniques*
 
@@ -122,7 +122,7 @@ En l'apartat de **General** dos seccions amb els camps:
 
 En l'apartat de **Expedient i Obres** tenim els camps:
 
-  ![](_static/subestacions/formulari_expedients_posicions.png)
+  ![](_static/subestaciones/formulari_expedients_posicions.png)
 
   * **Expedient**: Expedient relacionat amb aquesta posició
   * **Obres**: Amb quines obres relacionem aquesta Posició.

@@ -101,12 +101,14 @@ Markdown extensions:
 
 ## Project structure
 
+_**NOTE**_: All filenames and directories should be in Spanish
+
 We have 5 categories:
 
 - **base**: Base components: used in distri & comer
 - **distri**: Distri components
 - **comer**: Comer components
-- **facturacio**: Base invoicing components used in distri & comer
+- **facturacion**: Base invoicing components used in distri & comer
 - **gis**: GIS components
 
 For images we use `_static` folder inside the category with a subfolder for the

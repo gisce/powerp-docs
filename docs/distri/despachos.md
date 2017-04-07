@@ -10,7 +10,7 @@ i [4131](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2016-4131)_
 Per entrar les dades corresponents a **Despatxos** a l'ERP cal accedir al menú
 "_Menú ERP → Infraestructura → Despatxos_".
 
-![](_static/despatxos/desp_menu.png)
+![](_static/despachos/desp_menu.png)
 
 Haurem d'entrar els camps definits en l'ERP:
 
@@ -19,4 +19,4 @@ Haurem d'entrar els camps definits en l'ERP:
 * **CINI**: _Código de Identificación Normalizada de instalaciones_
 * **Denominació**: breu descripció
 
-![](_static/despatxos/desp_wizard.png)
+![](_static/despachos/desp_wizard.png)

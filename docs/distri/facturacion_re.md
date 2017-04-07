@@ -5,7 +5,7 @@
 Quan es dona d'alta una pòlissa de **Règim especial** hem de seleccionar la
 tarifa d'accés que li toca.
 
-![](_static/facturacio_re/polissa_form.png)
+![](_static/facturacion_re/polissa_form.png)
 
 Hi ha dues tarifes disponibles:
 
@@ -16,7 +16,7 @@ Hi ha dues tarifes disponibles:
 Si escollim la tarifa **RE** podrem seleccionar el període de facturació
 **Anual** en la pestanya **Facturació**
 
-![](_static/facturacio_re/facturacio_anual.png)
+![](_static/facturacion_re/facturacio_anual.png)
 
 Això el que ens farà és moure la pòlissa en els lots de facturació, segons
 haguem indicat.
@@ -34,7 +34,7 @@ que surtin els nous preus al BOE corresponent.
 S'ha de seleccionar la tarifa de preus: **TARIFAS GENERACIÓN (EUR)** a la pestanya
 **Facturación**
 
-![](_static/facturacio_re/tarifa_preus_re.png)
+![](_static/facturacion_re/tarifa_preus_re.png)
 
 
 ## Liquidació CNMC
