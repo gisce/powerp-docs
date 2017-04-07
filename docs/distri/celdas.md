@@ -221,10 +221,6 @@ Els blocs a utilitzar són:
 
 ![](_static/celdas/esquema_condensadors.png)
 
-
-| Bateria_auto | Bateria_fixe |
-|:------------:|:------------:|
-
 ![](_static/celdas/esquema_bateries.png)
 
 

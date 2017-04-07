@@ -44,20 +44,20 @@ subministre aparèixen alguns termes amb les següents definicions:
 * _Indicadores de Continuidad de subministro_: Índex numérics definits al efecte
   de medir el número i/o duració de les interrupcions de duració major de tres
   minuts que afecten als clients.
-* _TIEPI_: Es el temps de interrupció equivalent a la poténcia instalada a mitja
+* _TIEPI_: Es el temps de interrupció equivalent a la Potència instalada a mitja
   tensió (1kV i 36kV). Aquest índex es defineix mitjançant la següent expressió:
 
     ![](../_static/calidad/TIEPI.png)
 
     On:
 
-      * ![](../_static/calidad/sumatori.png)**PI** = Suma de la poténcia
+      * **∑PI** = Suma de la Potència
         instal·lada dels centres de transformació MT/BT del distribuïdor més la
-        poténcia contractada a MT (en kVA).
-      * **PIi** = Poténcia instal·lada en els centres de transformació MT/BT del
-        distribuidor més la poténcia contractada en MT, afectada per la
+        Potència contractada a MT (en kVA).
+      * **PIi** = Potència instal·lada en els centres de transformació MT/BT del
+        distribuidor més la Potència contractada en MT, afectada per la
         interrupció _i_ de duració _Hi_ (en kVA).
-      * **Hi** = Temps d'interrupció del subministre que afecta a la poténcia
+      * **Hi** = Temps d'interrupció del subministre que afecta a la Potència
         _Pi_, (en hores).
       * **K** = Número total d'interrupcions durant el període considerat.
       * Les interrupcions que es consideraràn en el càlcul del _TIEPI_ seran les
@@ -74,19 +74,19 @@ subministre aparèixen alguns termes amb les següents definicions:
 
     On:
 
-      * ![](../_static/calidad/sumatori.png)**PI** = Suma de la potència
+      * **∑PI** = Suma de la potència
         instal·lada dels centres de transformació MT/BT del distribuïdor més la
         potència contractada a MT (en kVA).
       * **PIi** = Potència instal·lada dels centres de transformació MT/BT del
         distribuidor més la potència contractada en MT, afectada per la
         interrupció _i_ (en kVA).
-      * **K** = Número total d'interrupcións durant el periode considerat.
+      * **K** = Número total d'interrupcions durant el periode considerat.
       * Les interrupcions que es consideraràn en el càlcul del _NIEPI_ seran les
         de duració superior a tres minuts. A efectes de _NIEPI_, es computarà
         una interrupció per cada incidència.
 
 
-* _Punto de Connexión de Red (PCR)_: Es el punt físic en el que es sitúa la
+* _Punto de Connexión de Red (PCR)_: Es el punt físic en el que es situa la
   frontera de responsabilitat del distribuïdor: la entrada de la caixa general
   de proteccions per clients de BT i el dispositiu de maniobra frontera per
   clients de AT i MT.

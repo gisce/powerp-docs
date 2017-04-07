@@ -365,8 +365,8 @@ El fitxer resultant es pot descarregar i veure en el camp **Fitxer** (fitxer gen
 * **Input de text**: Mostra la mida del fitxer
 * **Botó seleccionar**: No té funcionaliat
 * **Obrir**: Obre el fitxer a l'editor de textes
-* ![](../_static/adm-pub/cne/icona_fitxer.png) : Descarrega el fitxer
-* ![](../_static/adm-pub/cne/icona_neteja.png) : Esborra l'accés al fitxer generat
+* ![icona](../_static/adm-pub/cne/icona_fitxer.png) : Descarrega el fitxer
+* ![icona](../_static/adm-pub/cne/icona_neteja.png) : Esborra l'accés al fitxer generat
 
 Quan es descarrega el fitxer, el nom que es proposa per guardar ja és el nom recomanat per
 la circular de la CNE:
