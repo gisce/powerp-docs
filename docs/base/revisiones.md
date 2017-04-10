@@ -420,6 +420,7 @@ En el formulari d'un ítem a revisar trobem els següents camps:
 * **Descripció**: Descripció de l'ítem a revisar que s'ha configurat a la
   normativa.
 * **Estat**: En quin estat es troba aquest ítem.
+
 >  * **No comprovat**: Encara no s'ha comprovat aquest ítem de la revisió.
 >  * **Correcte**: L'ítem està correcte. S'haurà d'introduïr la **data de
     comprovació** i segons el tipus d'entrada que s'hagi configurat per aquest ítem
@@ -528,25 +529,26 @@ Per exemple volem buscar els transformadors que no tenen número de sèrie:
 ```
 
 Els operadors que tenim són els següents:
-  * **=**: igual al tercer element.
-  * **!=**: diferent al tercer element.
-  * **in**: dins de la llista del tercer element.
-  * **not in**: no està a dins la llista del tercer element.
-  * **like**: Té alguna coincidència amb el tercer element (tenint en compte les
-    majúscules) el caràcter comodí és el **%**. Ex %jo% coincidiria amb joan,
-    josep, ajornar, major, ...
-  * **ilike**: El mateix que l'anterior però sense tenir en compte les majúscules.
-  * **not like**: Cap coincidència.
-  * **>**: Més gran que el tercer element.
-  * **>=**: Més gran o igual.
-  * **<**: Més petit.
-  * **<=**: Més petit o igual.
+
+* `=`: igual al tercer element.
+* `!=`: diferent al tercer element.
+* `in`: dins de la llista del tercer element.
+* `not in`: no està a dins la llista del tercer element.
+* `like`: Té alguna coincidència amb el tercer element (tenint en compte les
+majúscules) el caràcter comodí és el `%`. Ex `%jo%` coincidiria amb joan,
+josep, ajornar, major, ...
+* `ilike`: El mateix que l'anterior però sense tenir en compte les majúscules.
+* `not like`: Cap coincidència.
+* `>`: Més gran que el tercer element.
+* `>=`: Més gran o igual.
+* `<`: Més petit.
+* `<=`: Més petit o igual.
 
 Es pot fer servir més d'una condició alhora
 
 ```
 
-   [('numero_fabricaio', '=', False), ('pes_total', '>', 200)]
+   [('numero_fabricacio', '=', False), ('pes_total', '>', 200)]
 
 ```
 
@@ -555,10 +557,10 @@ que 200.
 Per defecte quan es posa més d'una tuple s'han de cumplir totes les condicions,
 si no és així hi ha altres operadors:
 
-* **& (AND)**: Operador per defecte, fa que es compleixin les condicions entre
+* `& (AND)`: Operador per defecte, fa que es compleixin les condicions entre
   dos ANDs.
-* **| (OR)**: Una condició o una altra.
-* **! (NOT)**: Nega tota una condició.
+* `| (OR)`: Una condició o una altra.
+* `! (NOT)`: Nega tota una condició.
 
 Es fa servir _notació polonesa <http://ca.wikipedia.org/wiki/Notaci%C3%B3_polonesa>_
 
