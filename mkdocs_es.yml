@@ -15,6 +15,9 @@ markdown_extensions:
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
+extra_css:
+  - extra/css/images.css
+  
 pages:
   - Home: index.md
   - Base:
@@ -39,7 +42,6 @@ pages:
     - CUPS: distri/cups.md
     - Pólizas: distri/polizas.md
     - Contadores: distri/contadores.md
-    - Lectures: distri/lecturas.md
     - Facturación: distri/facturacion.md
     - Facturación:
       - Peajes: distri/facturacion_peajes.md

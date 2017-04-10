@@ -49,9 +49,3 @@ filtre.
 !!! Note
     En General: Recorda que per buscar un registre **no actiu** s'ha de fer
     seleccionant la opció "_Actiu = No_" en els filtres de sel·lecció.
-
-# Escomeses
-
-## Assiganció de CUPS
-
-## CUPS sense escomesa

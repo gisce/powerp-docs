@@ -18,7 +18,7 @@ d'un CUPS de nova creació.
 
 Si es trata d'un CUPS existent: es procedeix de la següent forma:
 
-1. Amb la lupa ![](_static/facturacion_peajes/icono_lupa.png) es sel·lecciona
+1. Amb la lupa ![icona](_static/facturacion_peajes/icono_lupa.png) es sel·lecciona
    el CUPS al que es va a connectar la nova pòlissa.
 2. Per localitzar el punt de subministre es poden utilitzar els camps de
    la parte superior de la llista de CUPS per filtrar i localitzar
@@ -32,7 +32,7 @@ Aquesta es la fitxa d'un CUPS associat a un contracte.
 
 ![](_static/facturacion_peajes/cups_asociado.png)
 
-Si s'ha de crear un nou CUPS es realitzarà prement el botó ![](_static/facturacion_peajes/icono_nuevo.png)
+Si s'ha de crear un nou CUPS es realitzarà prement el botó ![icona](_static/facturacion_peajes/icono_nuevo.png)
 al costat del camp CUPS o bé accedient a la fitxa de CUPS des del menú “Menu/Ges
 
 Alta d'una comercializadora: Per crear una comercializadora s'ha d'accedir

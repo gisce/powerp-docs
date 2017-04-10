@@ -454,7 +454,7 @@ els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
 ###Figures
 
 ### Figura 1
-![](_static/q1/_static/q1/menu_principal.png)
+![](_static/q1/menu_principal.png)
 
    Figura 1: Ubicació del formulari d'importacions.
 
@@ -736,20 +736,15 @@ La resta és com l'enviament massiu.
 
 ### Sistema d'enviament
 
-    blockdiag {
-        lot -> enviament -> enviar -> sortida -> email -> enviats;
-        sortida -> sortida [label = "Cada 5m"]
-
-        lot [shape = "note",
-             label = "Lot"];
-        enviament [label = "Enviament\nmassiu",
-                   shape = "diamond"];
-        email [shape = "mail"];
-        enviar[label =  "Enviar",
-               shape = "diamond"];
-        sortida -> email [folded];
-    }
-  ![](_static/email/diag.svg)
+blockdiag {
+    lot -> enviament -> enviar -> sortida -> email -> enviats;
+    sortida -> sortida [label = "Cada 5'"]
+    lot [shape = "note", label = "Lot"];
+    enviament [label = "Enviament\nmassiu", shape = "diamond"];
+    email [shape = "mail"];
+    enviar[label =  "Enviar", shape = "diamond"];
+    sortida -> email [folded];
+}
 
 Sempre que fem un enviament el correu es queda a la carpeta de **Sortida**, i el sistema cada 5 minuts
 comprova si hi ha correus per enviar. En cas que n'hi hagi s'envien i es mouen a la carpeta d'**Enviats**.

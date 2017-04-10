@@ -476,7 +476,7 @@ de la llista de productes, el producte i la quantitat a sol·licitar.
 
 #### Afegir productes a sol·licitud de pressupost
 
-Es selecciona el botó nou ![](_static/contadores/iconaNou.png) de l'apartat
+Es selecciona el botó nou ![icona](_static/contadores/iconaNou.png) de l'apartat
 **línia de ordre de compra**
 
 El producte que es vol comprar ha d'estar degudament introduït a la base de
@@ -653,7 +653,7 @@ Es procedirà de la següent forma:
 Des de la [fitxa de recepció de material](#fitxa-recepcio-de-linia-de-material) haurem de
 dividir la línia de 10 comptadors en dues línies, una de 6 comptadors i una
 altra de 4 comptadors. Seleccionem la línia i premem el botó d'**acció**
-![](_static/contadores/iconaAccio.png) i del menú que apareix seleccionem
+![icona](_static/contadores/iconaAccio.png) i del menú que apareix seleccionem
 la opció **Divideix línia de moviment**
 
 ![](_static/contadores/Captura22.png)
