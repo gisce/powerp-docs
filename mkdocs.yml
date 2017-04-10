@@ -25,6 +25,7 @@ pages:
     - Gestió de pòlisses: base/polizas.md
     - Gestió de comptadors: base/contadores.md
     - Equips de telecomunicació: base/telecom.md
+    - Revisions internes: base/revisiones.md
   - Distribuidora:
     - Inici: distri/index.md
     - Telegestió: distri/telegestion.md
