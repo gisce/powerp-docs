@@ -10,6 +10,14 @@ table{
   margin: auto;
 }
 
+/*
+  All text in .MD files is inside divs with class="section"
+  This is to justify all text inside these divs
+*/
+.section {
+  text-align: justify;
+}
+
 /* Set all icons inline and 35x35px */
 img[alt="icona"], img[alt="icono"]{
   height:35px !important;
