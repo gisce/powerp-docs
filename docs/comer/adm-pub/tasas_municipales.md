@@ -14,7 +14,14 @@ quals volem crear l'informe en la llista de municipis que trobarem a
 
 ![Figura 1](../_static/tasas_municipales/menu.png)
 
-Un cop hàgem seleccionat tots els municipis que desitgem podrem prémer el botó
+#### Generació conjunta per municipis a través de la diputació provincial
+
+Podem seleccionar els municipis en els que l'impost municipal està gestionat a
+través de la diputació provincial filtrant pel camp _IMU diputació_
+
+![](../_static/tasas_municipales/imu_diputacio_filter.png)
+
+Un cop haguem seleccionat tots els municipis que desitgem podrem prémer el botó
 d'*Accions*, que obrirà una finestra com la següent:
 
 ![Figura 2](../_static/tasas_municipales/wizard_ini.png)
