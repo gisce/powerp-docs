@@ -345,7 +345,7 @@ subministrament no tallable
 
 Aquesta funcionalitat està reservada pels usuaris que siguin del grup
 **GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos específics per
-interactuar amb els motius de subministrament no tallable.
+interactuar amb els motius de subministrament no tallable.    
 La resta d'usuaris podran llistar totes les pòlisses que tenen un motiu de
 subministrament no tallable, i veure el motiu de no tall. Però no podran crear
 ni assignar motius.
