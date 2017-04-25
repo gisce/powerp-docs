@@ -93,7 +93,7 @@ més delicats són el nom dels fitxers i la data d'accés.
 Per cada apartat:
 
 * **Enabled**: Habilita aquest tipus de fitxer
-* **File syntax**: Format del fitxer (veure [Format del nom de fitxer](#nom_dels_fitxers_de_corbes) )
+* **File syntax**: Format del fitxer (veure [Format del nom de fitxer](#nom-dels-fitxers-de-corbes) )
 * **Remote Folder**: Fitxer on començar la cerca recursiva. per defecte l'arrel del servidor FTP (*/*)
 * **Acces date**: Data del fitxer descarregat més recent
 
@@ -111,7 +111,7 @@ definit i amb data de fitxer en el servidor SFTP posterior a la emmagatzemada.
 
 Els fitxers s'emmagatzemaràn localment en el servidor per al seu posterior
 procés en l'adreça definida per la variable de configuració _tg_comer_cch_dir_
-tal com es comenta a [aquí](#creacio_de_nova_variable_de_configuracio)
+tal com es comenta a [aquí](#creacio-de-nova-variable-de-configuracio)
 
 ![Configuració Proveïdor](_static/curvas/provider_config.png)
 
