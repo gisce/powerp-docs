@@ -48,7 +48,7 @@ Aquí buscarem el mòdul i l'instal·larem si és necessari.
 
 ### Configurar connexions sftp
 
-Per tal de que l'ERP conegui on anar a buscar els arxius de corbes hem de crear
+Per tal de que l'ERP sàpiga on anar a buscar els arxius de corbes hem de crear
 registres que l'hi indiquin. Anant a **_Infraestructura > Telegestió comer >
 Config > SFTP Connections_** podrem crear entrades per cada sftp de cada
 distribuïdora que ens interessi.
@@ -76,7 +76,7 @@ Els camps directori arrel i el directori de lectura no s'utilitzen de moment
 
 En aquest pas hem de crear registres nous per totes les empreses distibuïdores
 de les quals rebem corbes horàries. Per fer-ho anem a **_Infraestructura >
-Telegestió comer > Config > TG Comer Provider_** i creem els nous registres.
+Telegestió comer > Config > TG Comer Provider_** i creem els nous registres
 
 La configuració es realitza de la següent forma:
 
