@@ -17,7 +17,7 @@ markdown_extensions:
 
 extra_css:
   - extra/css/images.css
-  
+
 pages:
   - Home: index.md
   - Base:
@@ -91,6 +91,7 @@ pages:
     - Facturación: comer/facturacion.md
     - Gestión impagados: comer/gestion_impago.md
     - Gestión ATR: comer/atr.md
+    - Curvas i CCH: comer/curvas.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
     - Administración Pública:
