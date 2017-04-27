@@ -124,7 +124,7 @@
 
 ## Qualitat AT
 
-1. Fer una simulacio AT <link> i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
+1. Fer una simulacio AT i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
 2. Seleccionar l'opció de qualitat en el llitat d'interruptors
     
@@ -163,7 +163,7 @@
 
 ## Qualitat BT 
 
-1. Fer una simulacio BT <link>  i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
+1. Fer una simulacio BT i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
 2. Seleccionar l'opcio de qualitat en el llitat d'interruptors
     
