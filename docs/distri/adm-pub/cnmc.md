@@ -360,6 +360,8 @@ Una vegada hagi finalitzat el procés podrem descarregar l'informe geneat
 Aquest mòdul permet la generació dels formularis F1, F1bis, F9, F10, F11, F12,
 F12bis, F13, F13bis, F13c, F14 , F15 i F20 de la Circular 4/2015.
 
+* [Disposición 8624 del BOE núm. 182 de 2015](http://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
+
 !!! note
     Aquest mòdul va ser afegit a partir de la versió **v2.55** on es van afegir
     una sèrie de camps nous a la base de dades per tal de cumplimentar la
@@ -1111,14 +1113,14 @@ El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resoluc
 
 ### Carrega de fitxers 4131
 
-Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017 
-s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels 
-fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi 
+Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017
+s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels
+fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi
 hauran els 8 fitxers entregats(no incloure el fitxer de transmisions).
 
 ** Els fitxers han d'esta en codificacio UTF-8 **
 
-El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio 
+El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio
 4131/2016/Carregar Fitxer presentat 4131 n-1_"
 
 ![](../_static/cnmc/4131/load_4131.png)
@@ -1634,7 +1636,7 @@ aplicar** que correspongui per quan la tensió (T) compleixi:
 
 >Fitxa de tensió normalitzada
 
-*CRITERI ESTADO:* 
+*CRITERI ESTADO:*
 
 Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:
 
@@ -1758,7 +1760,7 @@ Estat = 0      	Element sense  modificacions en relació a n-1
 Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
-* CODIGO_CCUU 
+* CODIGO_CCUU
 * Elemento_ACT  (SE, CT, tram)
 
 Estat = 2	Element nou que no apareix al inventari de l’any n-1
@@ -1815,7 +1817,7 @@ Estat = 0      	Element sense  modificacions en relació a n-1
 Estat = 1	Element amb alguna modificació en algun d’aquests camps:
 
 * CINI
-* CODIGO_CCUU 
+* CODIGO_CCUU
 
 Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
