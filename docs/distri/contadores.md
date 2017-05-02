@@ -189,6 +189,7 @@ tarifa ni de potència contractada no tindrem modificació contractual del dia
 Continguts:
 
 * [Introducció de lectures](#introduccio-de-lectures)
+* [Importar full de lectures](#importar-full-de-lectures)
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
 
@@ -242,6 +243,78 @@ El procés es descriu a continuació:
 
 !!! tip
     Veure la [importació i exportació de lectures de TPL](tpl.md)
+
+## Importar full de lectures
+
+### Introducció
+
+Aquest assistent ens permet carregar lectures massivament a partir d'un fitxer
+CSV
+
+S'hi accedeix des de **_Facturación > Lecturas > Importar hoja de lecturas_** i
+ens demana:
+
+* **Fitxer**: Fitxer CSV que volem carregar en el format especificat a [Format
+del full de lectures](#format-del-full-de-lectures)
+* **Provar**: Si està marcat, processa el fitxer i els possibles errors però no
+crea les lectures
+
+Les lectures introduïdes d'aquesta forma es podran reconèixer fàcilment perquè
+al camp observacions de les lectures s'hi escriurà el text **Datos importados**
+
+![](_static/contadores/hoja_lecturas.png)
+
+Un cop carregat el fitxer es mostrarà un resum amb el resultat de la càrrega
+i diversos resums del procés realitzat:
+
+* comptadors amb lectures no vàlides
+* comptadors no trobats
+* comptadors sense lectura
+* comptadors que ja tenien lectura
+
+### Format del full de lectures
+
+El format és CSV ASCII de 26 camps separats per **;** (punt i coma) on els camps
+ han d'estar ordenats i amb el format que es detalla a continuació. Els float
+només tenen el punt com a separador de decimals.
+Cada línia conté les lectures de tots els períodes d'un comptador en una
+data concreta:
+
+| #  | Columna   |  Format    |Descripció                                      |
+|:--:|-----------|------------|------------------------------------------------|
+| 1  | data      | dd/mm/YYYY | Data de la lectura                             |
+| 2  | comptador | text       | Num de comptador                               |
+| 3  | P1A       | float      | Energia activa de P1 en kWh                    |
+| 4  | P2A       | float      | Energia activa de P2 en kWh                    |
+| 5  | P3A       | float      | Energia activa de P3 en kWh                    |
+| 6  | P4A       | float      | Energia activa de P4 en kWh                    |
+| 7  | P5A       | float      | Energia activa de P5 en kWh                    |
+| 8  | P6A       | float      | Energia activa de P6 en kWh                    |
+| 9  | P1R       | float      | Energia reactiva de P1 en kVArh                |
+| 10 | P2R       | float      | Energia reactiva de P2 en kVArh                |
+| 11 | P3R       | float      | Energia reactiva de P3 en kVArh                |
+| 12 | P4R       | float      | Energia reactiva de P4 en kVArh                |
+| 13 | P5R       | float      | Energia reactiva de P5 en kVArh                |
+| 14 | P6R       | float      | Energia reactiva de P6 en kVArh                |
+| 15 | MAX1      | float      | Maxímetre de P1 en kW                          |
+| 16 | MAX2      | float      | Maxímetre de P2 en kW                          |
+| 17 | MAX3      | float      | Maxímetre de P3 en kW                          |
+| 18 | MAX4      | float      | Maxímetre de P4 en kW                          |
+| 19 | MAX5      | float      | Maxímetre de P5 en kW                          |
+| 20 | MAX6      | float      | Maxímetre de P6 en kW                          |
+| 21 | EXC1      | float      | Excessos de Potència P1 en kW                  |
+| 22 | EXC2      | float      | Excessos de Potència P2 en kW                  |
+| 23 | EXC3      | float      | Excessos de Potència P3 en kW                  |
+| 24 | EXC4      | float      | Excessos de Potència P4 en kW                  |
+| 25 | EXC5      | float      | Excessos de Potència P5 en kW                  |
+| 26 | EXC6      | float      | Excessos de Potència P6 en kW                  |
+
+
+!!!tip
+
+    Qualsevol fila que comenci per **#** (coixinet) no es tindrà en compte i es
+    tractarà com un comentari
+
 
 ## Comparativa de consums
 
