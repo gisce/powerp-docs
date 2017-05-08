@@ -1,5 +1,16 @@
 # Índex
 
+- [Càrrega de fitxers 4666](#carrega-de-fitxers-4666)
+- [Generació de fitxers 4666](#generacio-dels-informes)
+- [Descripció dels diferents Nodes](#descripcio-dels-diferents-nodes)
+  - [Línia](#node-linia)
+  - [Subestació](#node-subestacio)
+  - [Posicions amb interruptor en subestacions](#node-posicions-equipades-amb-interruptor-en-subestacions)
+  - [Màquina](#node-maquina)
+  - [Despatx](#node-despatx)
+  - [Equips de millora de la fiabilitat](#node-equips-de-millora-de-la-fiabilitat)
+  - [Centres de transformació](#node-centres-de-transformacio)
+
 # Inventari 4666
 
 ## Introducció
@@ -737,7 +748,7 @@ Estat = 2	Element nou que no apareix al inventari de l’any n-1
 
 --------------------------------------------------------------------------------
 
-# NODE: Cemtres de transformació
+# NODE: Centres de transformació
 
 _ELEMENTS SELECCIONATS_
 
