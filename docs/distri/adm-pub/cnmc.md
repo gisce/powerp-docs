@@ -7,7 +7,7 @@ Continguts:
 * [Circular 4/2014](#circular-42014)
 * [Circular 4/2015](#circular-42015)
 * [Circular 2/2016](#generacio-de-informes-sobre-reclamacions-de-consumidors)
-* [Inventari 4666](cnmc/resoluciones.md#inventari-4666)
+* [Inventari 4666](resoluciones/4666.md#inventari-4666)
 
 
 ## Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per distribuïdora
