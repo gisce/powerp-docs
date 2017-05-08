@@ -35,18 +35,6 @@ resolució 4666.
 !!! note
     El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
 
-### Carrega de fitxers de la 4771
-
-Per tal que el ERP pugui fer el calcul del camp estat de la 4666 del 2017 s'ha de
-carregar els fitxers presentats en la 4771. El format del ftixer que s'ha de
-carregar es format ZIP en el cual a l'arrel del fitxer hi hauran els 8 fitxers
-entregats.
-
-![](../_static/cnmc/4666/carrega_4771.png)
-
-El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio
-4666/2017/Carregar Fitxer presentat 4771_"
-
 ### Carrega de fitxers 4666
 
 Per tal que el ERP pugui fer el calcul del camp estat de la 4666 del any 2017
