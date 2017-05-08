@@ -51,8 +51,8 @@ pages:
     - Administración Pública:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
-      - CNMC:
-        - Resoluciones: distri/adm-pub/cnmc/resoluciones.md
+      - CNMC - Resoluciones:
+        - 4666: distri/adm-pub/resoluciones/4666.md
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
