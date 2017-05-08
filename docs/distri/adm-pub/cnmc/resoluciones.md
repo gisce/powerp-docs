@@ -18,7 +18,7 @@
 Aquest mòdul permet la generació dels formularis de la Resolució 4666 relatius
 a l’inventari de les instal·lacions en format TXT.
 
-El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la
+El mòdul permet generar 8 fitxers .txt corresponents als Fitxers d'inventari descrits a la
 resolució 4666.
 
 
@@ -28,23 +28,25 @@ resolució 4666.
     Catàleg de cables BT, Expedients i Condensadors.
 
 !!! note
-    S'han de unificar els CINI's als publicats a la resolució 4666/2017
+    Els CINI's i TIs (Codi CCUU) utilitzats són els publicats a la resolució
+    4666/2017
 
 !!! note
     A totes les fitxes s'ha inclós el camp `CNMC Tipus Instal·lació` i el
     camp `Bloquejar CNMC Tipus Instal·lació`. Amb aquest camp es poden
-    intorduïr els camps **TI-XXX** que es defineixen a la *Taula 3* de la
-    resolució 4666. Si es marca la variable de bloqueig, cap automatisme de
-    càrrega o modificació automàtica del camp `CNMC Tipus Instal·lació`
-    modificarà el valor actual.
+    intorduïr els camps **TI-XXX** que es defineixen a la _Taula 3_ de la
+    resolució 4666. Si es marca la variable `Bloquejar Tipus`, no s'aplica la
+    modificació automàtica del camp `CNMC Tipus Instal·lació` i no es
+    modificarà el valor entrat de forma manual.
 
 !!! note
-    Els informes de Maquines i condensadors s'han d'unificar en un sol
-    fitxer. S'han separat en dos per facilitar-ne la
-    seva traçabilitat
+    Els informes de Màquines i condensadors s'han d'unificar en un sol
+    fitxer. S'han separat en dos per facilitar-ne la seva traçabilitat.
+    Seran el fitxer 5 i el fitxer 9
 
 !!! note
-    El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)
+    El camp que s'agafarà per a Tipus d'instal·lació és el `Tipologia CNMC`
+    (del desplegable)
 
 ## Carrega de fitxers 4666
 
