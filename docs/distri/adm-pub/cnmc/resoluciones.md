@@ -17,7 +17,7 @@ resolució 4666.
     Catàleg de cables BT, Expedients i Condensadors.
 
 !!! note
-    S'han de unificar els CINI's als publicats a la resolució 4666/2016
+    S'han de unificar els CINI's als publicats a la resolució 4666/2017
 
 !!! note
     A totes les fitxes s'ha inclós el camp `CNMC Tipus Instal·lació` i el
@@ -37,7 +37,7 @@ resolució 4666.
 
 ### Carrega de fitxers de la 4771
 
-Per tal que el ERP pugui fer el calcul del camp estat de la 4666 del 2016 s'ha de
+Per tal que el ERP pugui fer el calcul del camp estat de la 4666 del 2017 s'ha de
 carregar els fitxers presentats en la 4771. El format del ftixer que s'ha de
 carregar es format ZIP en el cual a l'arrel del fitxer hi hauran els 8 fitxers
 entregats.
@@ -45,18 +45,18 @@ entregats.
 ![](../_static/cnmc/4666/carrega_4771.png)
 
 El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio
-4666/2016/Carregar Fitxer presentat 4771_"
+4666/2017/Carregar Fitxer presentat 4771_"
 
 ### Carrega de fitxers 4666
 
 Per tal que el ERP pugui fer el calcul del camp estat de la 4666 del any 2017
-s'han de carregar els fitxers presentat de la 4666 del 2016. El fromat dels
+s'han de carregar els fitxers presentat de la 4666 del 2017. El fromat dels
 fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi
 hauran els 8 fitxers entregats(no incloure el fitxer de transmisions).
 
 ** Els fitxers han d'esta en codificacio UTF-8 **
 
 El menu de carrega es troba a "_Administració Pública/CNMC/Resolucions/Resolucio
-4666/2016/Carregar Fitxer presentat 4666 n-1_"
+4666/2017/Carregar Fitxer presentat 4666 n-1_"
 
 ![](../_static/cnmc/4666/load_4666.png)
