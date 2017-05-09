@@ -153,7 +153,7 @@ Any d'informació                 | Any del qual es genera aquest formulari.
 
 !!! note
     Per tal d'evitar problemes de validació, veure documentació del camp
-    **[CNAE](../../base/polizas.md#cnae)**
+    [**CNAE**](../../../base/polizas.md#cnae)
 
 
 #### F1bis: Informació relativa a la lectura dels equips de mesura dels clients
