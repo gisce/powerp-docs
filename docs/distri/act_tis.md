@@ -198,7 +198,7 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 # 6. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
 de reserva i móbils.    
-Formulari 5 de la [4666](adm-pub/cnmc/#inventari-4666).
+Formulari 5 de la [4666](adm-pub/cnmc/resoluciones/4666.md#inventari-4666).
 
 Els TI’s de les màquines de Reserva, seràn sempre TI-000.
 
