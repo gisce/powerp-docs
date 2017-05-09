@@ -17,7 +17,7 @@ Aquest mòdul genera els formularis _F1, F1bis i F11_ de la _Circular 4/2014_
     Tots els camps referents a dades de la **CNMC** s'han mogut a una pestanya
     anomendada **Estadistiques** dins del formulari del CUPS.
 
-    ![](../_static/cnmc/4_2014/form_cups_estadistiques.png)
+    ![](../../_static/cnmc/4_2014/form_cups_estadistiques.png)
 
 S'han afegit nous camps estadístics de la CNMC:
 
@@ -30,7 +30,7 @@ S'han afegit nous camps estadístics de la CNMC:
 
 S'afegeix el codi CINI al comptador
 
-![](../_static/cnmc/4_2014/form_comptador_cini.png)
+![](../../_static/cnmc/4_2014/form_comptador_cini.png)
 
 * **Bloquejar CINI**: Un cop assignat un CINI de forma manual ens permet
   bloquejar-lo per tal d'evitar una modificació.
@@ -84,7 +84,7 @@ la posició 6 del CINI automàticament amb 3.
 
 Se ha añadido el campo **Número máximo de máquinas**
 
-![](../_static/cnmc/4_2014/form_cts_num_maquines.png)
+![](../../_static/cnmc/4_2014/form_cts_num_maquines.png)
 
 !!! note
     En el procés d'actualització aquest camp s'inicialitza de forma automàtica
@@ -115,14 +115,14 @@ de distribució de GISCE-ERP o no.
 
 **Amb mòdul de facturació**
 
-![](../_static/cnmc/4_2014/form_wizard_update_facturacio.png)
+![](../../_static/cnmc/4_2014/form_wizard_update_facturacio.png)
 
 En el cas que el tinguem instal·lat, només ens apareix un botó per recalcular aquest
 valors depenguent de l'any que tinguem introduït en la pestanya "Generador d'informes".
 
 **Sense mòdul de facturació**
 
-![](../_static/cnmc/4_2014/form_wizard_update_no_facturacio.png)
+![](../../_static/cnmc/4_2014/form_wizard_update_no_facturacio.png)
 
 Tenim dues accions disponibles:
 
@@ -136,7 +136,7 @@ Tenim dues accions disponibles:
 
 #### Generació dels informes
 
-![](../_static/cnmc/4_2014/form_wizard_circular.png)
+![](../../_static/cnmc/4_2014/form_wizard_circular.png)
 
 * **Formulari**: Ens permet seleccionar quin informe volem generar. Els
   disponibles són: F1, F1bis i F11.
@@ -155,4 +155,4 @@ generació de l'informe.
 
 Una vegada hagi finalitzat el procés podrem descarregar l'informe geneat
 
-![](../_static/cnmc/4_2014/form_wizard_result.png)
+![](../../_static/cnmc/4_2014/form_wizard_result.png)

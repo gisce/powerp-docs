@@ -9,7 +9,7 @@ les directrius definides en la circular [2/2016](http://www.boe.es/diario_boe/tx
 Mitjançant la opció "**Generate ATC Reports**" situada a  "**CRM -> Atenció al
 Client**"  s'obrirà un assitent per generar l'informe:
 
-![](../_static/cnmc/atc/menu_atc.png)
+![](../../_static/cnmc/atc/menu_atc.png)
 
 
 
@@ -19,12 +19,12 @@ Aquest assistent funciona de la següent manera:
 * Es selecciona un trimestre i un any (per defecte seran el trimestre i l'any
   actuals) i es clica "**Generar**".
 
-![](../_static/cnmc/atc/assistent_inici.png)
+![](../../_static/cnmc/atc/assistent_inici.png)
 
 * Automàticament es generarà un fitxer '.csv' amb tota la informació sobre les
   reclamacions. Aquest fitxer es pot obrir o guardar.
 
-![](../_static/cnmc/atc/assistent_final.png)
+![](../../_static/cnmc/atc/assistent_final.png)
 
 * Al guardar el fitxer s'assignarà un nom amb el següent format:
 

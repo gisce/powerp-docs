@@ -24,7 +24,7 @@ circular 1/2005 de la CNMC. Aquests informes venen definits per la mateixa **CNM
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
-![](../_static/cnmc/1_2005/wizard_informe_1.png)
+![](../../_static/cnmc/1_2005/wizard_informe_1.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -50,7 +50,7 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any
 
 En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any:
 
-![](../_static/cnmc/1_2005/wizard_informe_2.png)
+![](../../_static/cnmc/1_2005/wizard_informe_2.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -75,7 +75,7 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de l'any
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
-![](../_static/cnmc/1_2005/wizard_informe_5a.png)
+![](../../_static/cnmc/1_2005/wizard_informe_5a.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -98,7 +98,7 @@ En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
 En l'exemple hi ha les dates per generar l'informe del primer semestre de l'any:
 
-![](../_static/cnmc/1_2005/wizard_informe_5b.png)
+![](../../_static/cnmc/1_2005/wizard_informe_5b.png)
 
 * Les dades s'extreuen dels canvis de comercialitzadora en les modificacions
   contractuals entre les data inicial i data final especificades en la secció
@@ -125,7 +125,7 @@ En l'exemple hi ha les dates per generar l'informe del primer trimestre de
 l'any, amb els quatre últims trimestres anteriors al primer trimestre de l'any
 com a periode d'energia:
 
-![](../_static/cnmc/1_2005/wizard_informe_7.png)
+![](../../_static/cnmc/1_2005/wizard_informe_7.png)
 
 * Les dades dels consumidors s'extreuen de les modificacions contractuals, on
   la data especificada a la secció 'trimestre' es troba entre les data inicial i

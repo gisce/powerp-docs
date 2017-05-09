@@ -16,7 +16,7 @@ F12bis, F13, F13bis, F13c, F14 , F15 i F20 de la Circular 4/2015.
 
 #### Transformador
 
-![](../_static/cnmc/4_2015/form_camps_trafo.png)
+![](../../_static/cnmc/4_2015/form_camps_trafo.png)
 
 S'han afegit nous camps a la fitxa de **transformadors**:
 
@@ -28,7 +28,7 @@ S'han afegit nous camps a la fitxa de **transformadors**:
 
 #### Cables Baixa Tensió
 
-![](../_static/cnmc/4_2015/form_camps_cable_bt.png)
+![](../../_static/cnmc/4_2015/form_camps_cable_bt.png)
 
 S'ha afegit un nou camp a la fitxa de **cables baixa tensió**:
 
@@ -56,14 +56,14 @@ de distribució de GISCE-ERP o no.
 
 **Amb mòdul de facturació**
 
-![](../_static/cnmc/4_2015/form_wizard_update_facturacio.png)
+![](../../_static/cnmc/4_2015/form_wizard_update_facturacio.png)
 
 En el cas que el tinguem instal·lat, només ens apareix un botó per recalcular aquest
 valors depenguent de l'any que tinguem introduït en la pestanya "Generador d'informes".
 
 **Sense mòdul de facturació**
 
-![](../_static/cnmc/4_2015/form_wizard_update_no_facturacio.png)
+![](../../_static/cnmc/4_2015/form_wizard_update_no_facturacio.png)
 
 Tenim dues accions disponibles:
 
@@ -78,7 +78,7 @@ Tenim dues accions disponibles:
 
 #### 2. Generacio dels informes
 
-![](../_static/cnmc/4_2015/form_wizard_circular.png)
+![](../../_static/cnmc/4_2015/form_wizard_circular.png)
 
 * **Formulari**: Ens permet seleccionar quin informe volem generar. Els
   disponibles són: F1, F1bis, F9, F10, F11, F12, F12bis, F13, F13bis, F13c, F14
@@ -100,7 +100,7 @@ generació de l'informe.
 
 Una vegada hagi finalitzat el procés podrem descarregar l'informe generat
 
-![](../_static/cnmc/4_2015/form_wizard_result.png)
+![](../../_static/cnmc/4_2015/form_wizard_result.png)
 
 ### Formularis suportats
 
