@@ -128,10 +128,10 @@ Tenim dues accions disponibles:
 
 * **CUPS CSV**: Hem de seleccionar el fitxer CSV amb el contingut adequat per
   tal d'actualitzar els valors CNMC del CUPS i després apretar el botó
-  **Actualitzar CUPS**. Veure el [format dels cups en el csv](#format-cups-csv)
+  **Actualitzar CUPS**. Veure el [format dels cups en el csv](../cnmc.md#format-cups-csv)
 * **Comptadors CSV**: Hem de seleccionar el fitxer CSV amb el contingut
   adequat per tal d'actualitzar els CINIS dels comptadors i després apretar el
-  botó **Actualitzar CINIS**. Veure el [format dels comptadors en els csv](#format-comptadors-csv)
+  botó **Actualitzar CINIS**. Veure el [format dels comptadors en els csv](../cnmc.md#format-comptadors-csv)
 
 
 #### Generació dels informes
