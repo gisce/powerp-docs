@@ -620,3 +620,34 @@ Exemple:
 
 Aquest fitxer contindrà el mateix numero de línies com clients té la
 distribuidora.
+
+### Validació dels fitxers
+
+Aquest assistent ofereix la possibilitat d'analitzar els fitxers per trobar
+errors i així poder corregir-los. Per fer-ho, cal fer click a la pestanya
+**Validador d'informes**:
+
+![](../../_static/cnmc/4_2015/form_validador_informes.png)
+
+Durant el pas inicial, cal introduïr la ruta de la ubicació dels fitxers
+de la circular 4/2015 prèviament generats per aquest assistent.
+
+Per seleccionar la ruta, cal copiar el text superior de la barra de direccions
+de la finestra de l'explorador de fitxers de **Windows** de la carpeta que conté
+els fitxers:
+
+![](../../_static/cnmc/4_2015/form_validador_ruta.png)
+
+Si el sistema operatiu es **Linux**, el procediment és el mateix:
+
+![](../../_static/cnmc/4_2015/form_validador_ruta_linux.png)
+
+Un cop copiada la ruta, s'ha d'introduïr a l'assistent i fer click al botó
+"validar fitxers":
+
+![](../../_static/cnmc/4_2015/form_validador_ruta_2.png)
+
+Un cop finalitzat el procés s'haurà generat el fitxer "resultats.txt". Es pot
+trobar a la ruta especificada o bé es pot descarregar des del propi assistent:
+
+![](../../_static/cnmc/4_2015/form_validator_ruta_finish.png)
