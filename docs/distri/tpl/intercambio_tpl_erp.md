@@ -40,7 +40,7 @@ de zona.
 
 ![](../_static/tpl/tpl_export_fitxer_rutes_guardar.png)
 
-### Exportació del fitxer de Lectures
+### Importació del fitxer de Lectures
 
 Per importar un fitxer de lectures es procedirà sel·leccionant en el menú
 _TPL/ Importació de lectures_
@@ -49,12 +49,48 @@ _TPL/ Importació de lectures_
 
 Apareix el quadre de diàleg per sel·leccionar el fitxer a importar.
 
+Es podrà escollir el fitxer _.lectura_ a importar i la data que s'utilitzarà al
+crear les lectures
+
 ![](../_static/tpl/tpl_import_fitxer.png)
 
-Polsant sobre el botó "_Obre_" es pot navegar per localitzar el fitxer de
-lectures que prèviament s'haurà copiat del TPL.
+* **Fitxer**: Polsant sobre el botó "_Seleccionar_" es pot navegar per
+  localitzar el fitxer de lectures que prèviament s'haurà copiat del TPL.
+* **Data**: La data amb la qual es crearà la lectura des del fitxer TPL. Es
+  pot triar la data real de la lectura (**Real TPL**) o el dia de lectura que
+  es va omplir al generar el fitxer de _.ruta_ (**Planificada (fitxer ruta)**).
 
-![](../_static/tpl/tpl_import_fitxer_obrir.png)
+!!! tip
+
+    * Es genera un fitxer _.ruta_ amb _dia de lectura_ 31/03/2017
+    * Es llegeix el comptador el dia 16/04/2017 a les 13:46
+
+    Durant la càrrega, en funció de la _Data_ seleccionada:
+
+    * **Real TPL**: La lectura es crearà amb data 16/04/2017
+    * **Planificada (fitxer ruta)**: La lectura es crearà amb data 31//03/2017
+
+#### Selecció de orígen "Sense lectura"
+
+Per defecte, totes les lectures carregades des de TPL tindran com a origen
+**TPL**. En els casos en els quals no es pot obtenir la lectura per alguna
+raó, com la impossibilitat d'accés al comptador, es pot carregar la lectura amb
+orígen **Sense Lectura**. Quan es desitgi aquesta funcionalitat (i si GISCE-ERP
+està correctament configurat) caldrà escollir una incidència adequada en la
+lectura i copiar la lectura anterior en el TPL.
+
+La configuració d'aquesta funcionalitat ens permet escollir com comença el codi
+d'incidència que selecciona l'orígen **Sense Lectura**. Alguns exemples:
+
+* Codis que comencen per _I_. En aquest cas les incidències _I910_ ,_I912_, ...
+* Codi _I910_. En aquest cas només la incidència _I910_.
+
+!!! tip
+    La configuració de la selecció de origen sense lectura es realitza
+    mitjançant la variable de configuració `pda_no_lect_origin_incidence_prefix`
+
+    * **''**: (Buit) Sempre amb orígen **TPL**
+    * **I**: Només les incidències on el codi comença per *I*
 
 Una vegada importats tots els fitxers les lectures dels comptadors quedaran
-actualitzats en GISCE-ERP i ja es pot donar començ al procés de facturació.
+actualitzats en GISCE-ERP i ja es pot donar començar al procés de facturació.
