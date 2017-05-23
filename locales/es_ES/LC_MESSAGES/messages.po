@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-05-23 12:30+0200\n"
-"PO-Revision-Date: 2017-05-23 12:45+0200\n"
+"POT-Creation-Date: 2017-05-23 12:47+0200\n"
+"PO-Revision-Date: 2017-05-23 12:49+0200\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -13195,11 +13195,9 @@ msgstr "CINI"
 msgid "Codi CINI del comptador"
 msgstr "Código CINI del contador"
 
-#, fuzzy
 msgid "Inventari 4131"
-msgstr "Inventario 4666"
+msgstr "Inventario 4131"
 
-#, fuzzy
 msgid ""
 "Aquest mòdul permet la generació dels formularis de la Resolució 4131 relatius\n"
 "a l’inventari de les instal·lacions en format TXT."
@@ -13207,7 +13205,6 @@ msgstr ""
 "Este módulo permite la generación de los formularios de la Resolución 4131 relativos al inventario\n"
 " de las instalaciones en formato TXT."
 
-#, fuzzy
 msgid ""
 "El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la\n"
 "resolució 4131."
@@ -13224,7 +13221,6 @@ msgstr ""
 msgid "S'han de unificar els CINI's als publicats a la resolució 4131/2016"
 msgstr "Se deben unificar los CINI's a los publicados en la resolución 4131/2016"
 
-#, fuzzy
 msgid ""
 "A totes les fitxes s'ha inclós el camp <code>CNMC Tipus Instal·lació</code> i el\n"
 "camp \n"
@@ -13246,16 +13242,14 @@ msgstr ""
 "<code>CNMC Tipo Instalación</code>\n"
 "modificará el valor actual."
 
-#, fuzzy
 msgid ""
 "Els informes de Maquines i condensadors s'han d'unificar en un sol\n"
 "fitxer. S'han separat en dos per facilitar-ne la\n"
 "seva traçabilitat"
 msgstr "Los informes de Máquinas y condensadores se deben unificar en un solo fichero. Se han separado en dos para facilitar la trazabilidad."
 
-#, fuzzy
 msgid "El camps que s'usara com a Tipus d'instal·lacio es el Tipologia CNMC(desplegable)"
-msgstr "El campo que se usara como Tipo de instalación es el <code>Tipología CNMC</code>(del desplegable)"
+msgstr "El campo que se usara como Tipo de instalación es el Tipología CNMC(desplegable)"
 
 msgid "Carrega de fitxers de la 4771"
 msgstr "Carga de ficheros de la 4771"
@@ -13279,35 +13273,35 @@ msgid ""
 "4131/2016/Carregar Fitxer presentat 4771</em>\""
 msgstr "El menu de carga se encuentra en  \"<em>Administracion Publica/CNMC/Resoluciones/Resolucion 4131/2016/Carga de fichero presentado 4771</em>\""
 
-#, fuzzy
 msgid "Carrega de fitxers 4131"
-msgstr "Carga de ficheros de la 4666"
+msgstr "Carga de ficheros de la 4131"
 
-#, fuzzy
 msgid ""
 "Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017\n"
 "s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels\n"
 "fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi\n"
 "hauran els 8 fitxers entregats(no incloure el fitxer de transmisions)."
 msgstr ""
-"Para que el ERP pueda calcular el campo estado de la 4131 del año 2017 se han de cargar los ficheros persentados en la 4771.\n"
-"El formato de este fichero que se tiene que cargar es ZIP en la raiz del cual deben haber los 8 ficheros entregados."
+"Para que el ERP pueda hacer el calculo del campo estado de la 4131 del año 2017\n"
+"se deben cargar los ficheros presentados de la 4131 del 2016. El formato de los\n"
+"ficheros que se deben cargar es formato ZIP en el cual en la raíz del fichero \n"
+"habrán los 8 ficheros entregados(no incluir el fichero de transmisiones)."
 
 msgid "<strong> Els fitxers han d'esta en codificacio UTF-8 </strong>"
 msgstr "<strong> Els fitxers han d'esta en codificacio UTF-8 </strong>"
 
-#, fuzzy
 msgid ""
 "El menu de carrega es troba a \"<em>Administració Pública/CNMC/Resolucions/Resolucio\n"
 "4131/2016/Carregar Fitxer presentat 4131 n-1</em>\""
-msgstr "El menu de carga se encuentra en  \"<em>Administracion Publica/CNMC/Resoluciones/Resolucion 4131/2016/Carga de fichero presentado 4771</em>\""
+msgstr ""
+"El menú de carga se encuentra en \"<em>Administración Pública/CNMC/Resoluciones/Resolución\n"
+"4131/2016/Cargar fichero presentado 4131 n-1</em>\""
 
 msgid "<img alt=\"\" src=\"../../../_static/cnmc/4131/load_4131.png\" />"
 msgstr "<img alt=\"\" src=\"../../../_static/cnmc/4131/load_4131.png\" />"
 
-#, fuzzy
 msgid "Descripció dels diferents NODES"
-msgstr "Descripción de los diferentes ficheros del inventario"
+msgstr "Descripción de los diferentes NODOS"
 
 msgid "NODE: LINIA"
 msgstr "NODO: LINEA"
@@ -13315,7 +13309,6 @@ msgstr "NODO: LINEA"
 msgid "<strong>LINIES AT</strong>"
 msgstr "<strong>LINEAS AT</strong>"
 
-#, fuzzy
 msgid ""
 "Tots els camps referents a les línies provenen dels models de  <strong>trams,</strong>\n"
 "\n"
@@ -13327,12 +13320,11 @@ msgid ""
 msgstr ""
 "Todos los campos referentes a la línias provienen de los modelos de <strong>tramos,</strong> \n"
 "<strong>línias, conductores, y expediente</strong>\n"
-"Por tanto deberán estar bien complementados todos los campos que se van a usar. Este archivo se genera en 2\n"
+"Por tanto deberán estar bien complementados todos los campos que se van a usar. Este NODO se genera en 2\n"
 "ficheros csv, uno por línea AT y otro por las líneas BT"
 
-#, fuzzy
 msgid "Ha d'existir cable \"DESCONEGUT\" tipus \"INDEFINIT\" sino no generara el fitxer"
-msgstr "Debe existir el cable \"DESCONOCIDO\" del tipo \"INDEFINIDO\" sinó no generará el fichero"
+msgstr "Debe existir cable \"DESCONOCIDO\" tipo \"INDEFINIDO\" sinó no generará el fichero"
 
 msgid "ELEMENTS SELECCIONATS"
 msgstr "ELEMENTOS SELECCIONADOS"
@@ -13347,11 +13339,9 @@ msgstr ""
 "de <strong>Tramos</strong>. También se tendrán en cuenta los datos de la ficha\n"
 "<strong>Línea AT</strong> de la línea a la que pertenece"
 
-#, fuzzy
 msgid "<strong>De Línia AT</strong>"
 msgstr "<strong>De Línea AT</strong>"
 
-#, fuzzy
 msgid "<strong>Propietari</strong>: Ha d'estar marcat com a propietari perque apareixi als llistats."
 msgstr "<strong>Propietario</strong>: Debe estar marcado como propietario para que aparezca en los listados."
 
@@ -13392,7 +13382,6 @@ msgstr ""
 "  \n"
 "<strong>EMBARRADO</strong> (E)"
 
-#, fuzzy
 msgid ""
 "S'han de comprovar tots els registres que tenen data_APM de l'any en que\n"
 "es genera el fitxer (en aquest cas 2016) perque no sortiran als fitxers .csv.\n"
@@ -13401,11 +13390,10 @@ msgid ""
 "per veure si han de sortir o no als .csv y si cal modificar la data_APM per\n"
 "que apareixin en la generació dels fitxers."
 msgstr ""
-"Se deben comprobar todos los registros que tienen fecha_APM del año en que\n"
-"se genera el archivo (en este caso 2016) porque no saldrán en los ficheros csv.\n"
-"Se deben comprobar las instalaciones <strong>reformadas</strong> durante el año en que\n"
-"se genera el archivo y comprobar las fechas_APM de los registros en cuestión\n"
-"para ver si deben salir o no en los .csv y si es necesario modificar la fecha_APM para\n"
+"Se deben comprobar todos los registros que tienen fecha_APM del año en que se genera el archivo (en este caso 2016)\n"
+"porque no saldrán en los ficheros csv.\n"
+"Se deben comprobar las instalaciones <strong>reformadas</strong> durante el año en que se genera el archivo y comprobar las\n"
+"fechas_APM de los registros en cuestión para ver si deben salir o no en los .csv y si es necesario modificar la fecha_APM para\n"
 "que aparecen en la generación de los ficheros."
 
 msgid "<em>ORÍGEN:</em>"
@@ -13414,7 +13402,6 @@ msgstr "<em>ORIGEN</em>"
 msgid "S'han afegit nous camps a la fitxa dels trams:"
 msgstr "Se han añadido nuevos campos en la ficha de los tramos:"
 
-#, fuzzy
 msgid ""
 "<strong>Tensió màxima de disseny</strong>: És la tensió per la que està dissenyat el\n"
 "  tram de línia (V). Aquest camp permet classificar els trams de línia AT en\n"
@@ -13532,9 +13519,8 @@ msgstr ""
 msgid "CODIGO_CCAA_1"
 msgstr "CODIGO_CCAA_1"
 
-#, fuzzy
 msgid "EN FUNCIÓ DEL MUNICIPI DE LA LAT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ  4131"
-msgstr "EN FUNCIÓN DEL MUNICIPIO DEL CT/LAT Y LA CCAA RELACIONADA A LA TABLA 4 DE LA RESOLUCIÓN"
+msgstr "EN FUNCIÓN DEL MUNICIPIO DE LA LAT Y LA CCAA RELACIONADA A LA TABLA 4 DE LA RESOLUCIÓN 4131"
 
 msgid "CODIGO_CCAA_2"
 msgstr "CODIGO_CCAA_2"
@@ -13551,29 +13537,23 @@ msgstr "VALOR DEL CAMPO INTESIDAT MÁXIMA DE LA FICHA DEL CONDUCTOR ASOCIADO AL 
 msgid "ESTADO"
 msgstr "estadi"
 
-#, fuzzy
 msgid "SI S'HA DONAT D'ALTA EL TRAM EN AQUEST ANY SERA 2 ALTREMENT 0"
-msgstr ""
-"\n"
-"<p>SI SE HA DADO DE ALTA EN EL AÑO ACTUAL SERA 2 DE OTRA FORMA 0</p>\n"
+msgstr "SI SE HA DADO DE ALTA EL TRAMO EN ESTE AÑO SERÁ 2, SI NO 0"
 
-#, fuzzy
 msgid ""
 "CODIGO_CCAA_2 aquest camp es només pels trams de línia que comencen en una\n"
 "comunitat autónoma i acaben en una altra."
 msgstr ""
 "CODIGO_CCAA_2 este campo es sólo para los tramos de línea que empiecen en una\n"
-"comunidad autónoma y acaben en otra de diferente orígen."
+"comunidad autónoma y acaben en otra."
 
-#, fuzzy
 msgid ""
 "En aquest cas s’ha determinat que es creará una línia nova quan es faci un\n"
 "canvi de comunitat autónoma. Així no podran existir línies i trams que\n"
 "comparteixin comunitats autònomes diferents."
 msgstr ""
-"En estos casos se puede contemplar crear una linea nueva cuando se haga un\n"
-"cambio de comunidad autonoma. Asi no podran existir lineas y tramos que\n"
-"compartan comunidades autónomas diferentes."
+"En este caso se ha determinado que se creara una linea nueva cuando se haga un cambio de comunidad autonoma.\n"
+"Asi no podran existir lineas y tramos que compartan comunidades autonomas diferentes."
 
 msgid "<strong>Catàleg de Cables AT</strong>"
 msgstr "<strong>Catálogo de Cables AT</strong>"
@@ -13608,13 +13588,11 @@ msgstr "<img alt=\"\" src=\"../../../_static/cnmc/4131/cataleg_cables_at.png\" /
 msgid "<em>CRITERI ESTADO:</em>"
 msgstr "<em>CRITERIO ESTADO:</em>"
 
-#, fuzzy
 msgid "Feta la comparació dels elements amb el fitxer de la 4131 de l’any n-1, es defineixen els 3 estats diferents:"
-msgstr "Hecha la comparación de los elementos con el fichero de la 4131, se definen los 3 estados distintos:"
+msgstr "Hecha la comparacion de los elementos con el fichero de la 4131 del año n-1, se definen los 3 estados distintos:"
 
-#, fuzzy
 msgid "Estat = 0       Element sense  modificacions en relació a n-1"
-msgstr "Estado = 0  Elemento sin modificaciones respecto a n-1"
+msgstr "Estado = 0       Elemento sin omdificaciones respecto a n-1"
 
 msgid "Estat = 1   Element amb alguna modificació en algun d’aquests camps:"
 msgstr "Estado = 1   Elemento con alguna modificación  en alguno de estos campos:"
@@ -13671,9 +13649,8 @@ msgstr ""
 msgid "<strong>Propietari</strong>: Ha d'estar marcat com a propietari."
 msgstr "<strong>Propietario</strong>: La instalación debe estar marcada como propietario."
 
-#, fuzzy
 msgid "Camps obtinguts directament dels camps de la fitxa de <strong>ELEMENTS_BT</strong>"
-msgstr "Campos obtenidos directamente de los campos de la ficha de <strong>CTS</strong>"
+msgstr "Campos obtenidos directamente de los campos de la ficha de <strong>TRAMO</strong>"
 
 msgid "IDENTIFICADOR DEL TRAM BT (INTERN DE LA TOPOLOGIA)"
 msgstr "IDENTIFICADOR DEL TRAMO BT (INTERNO DE LA TIPOLOGÍA)"
@@ -13690,9 +13667,8 @@ msgstr "NUDO FINAL, (INTERNO DE LA TOPOLOGÍA)"
 msgid "TIPUS D'INSTAL·LACIO DEL TRAM BT"
 msgstr "TIPO DE INSTALACIÓN DEL TRAMO BT"
 
-#, fuzzy
 msgid "EN FUNCIÓ DEL <strong>MUNICIPI</strong> DEL TRAM_BT I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ 4131"
-msgstr "EN FUNCIÓN DEL <strong>MUNICIPIO</strong> DEL TRAMO_BT Y LA CCAA RELACIONADA EN LA TABLA 4 DE LA RESOLUCIÓN 4666"
+msgstr "EN FUNCIÓN DEL <strong>MUNICIPIO</strong> DEL TRAMO_BT Y LA CCAA RELACIONADA EN LA TABLA 4 DE LA RESOLUCIÓN 4131"
 
 msgid "DATA APM DEL TRAM BT"
 msgstr "FECHA APM DEL TRAMO BT"
@@ -13712,7 +13688,6 @@ msgstr "VALOR NUMÉRICO DEL CAMPO <strong>SECCIÓN</strong> DE LA FICHA DEL COND
 msgid "CAMP CALCULAT"
 msgstr "CAMPO CALCULADO"
 
-#, fuzzy
 msgid ""
 "VALOR FUNCIÓ DEL CAMP <strong>INTESITAT MÀXIMA</strong> DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAMB_BT I LA TENSIÓ DEL TRAM AL CAMP \n"
 "<strong>VOLTATGE</strong>"
@@ -13720,7 +13695,6 @@ msgstr ""
 "VALOR FUNCIÓN DEL CAMPO <strong>INTENSIDAD MÁXIMA </strong> DE LA FICHA DEL CONDUCTOR ASOCIADO AL TRAMO_BT Y LA TENSIÓN DEL TRAMO AL CAMPO\n"
 "<strong>VOLTAJE</strong>"
 
-#, fuzzy
 msgid "SI S'HA DONAT D'ALTA EN L'ANY ACTUAL SERA 2 ALTREMENT 0"
 msgstr "SI SE HA DADO DE ALTA EN EL AÑO ACTUAL SERA 2 DE OTRA FORMA 0"
 
@@ -13757,7 +13731,6 @@ msgstr "<img alt=\"\" src=\"../../../_static/cnmc/4131/cataleg_cables_BT.png\" /
 msgid "A la fitxa del catàleg de cables s'ha afegit el camp:"
 msgstr "En la ficha del catálogo de cables se debe añadir el campo:"
 
-#, fuzzy
 msgid ""
 "<strong>Data acta posada en marxa</strong>: Aquesta data correspondria amb la data en\n"
 "  que es presenta a industria la legalització de la línia BT."
@@ -13774,11 +13747,8 @@ msgstr "<strong>Fecha alta</strong>: Esta fecha corresponde con la fecha en la q
 msgid "NODE: Subestació"
 msgstr "NODO: Subestación"
 
-#, fuzzy
 msgid "Per obtenir aquest fitxer cal tenir configurat el mòdul de subestacions.   "
-msgstr ""
-"Para obtener este fichero es necesario tener configurado, en el ERP, el módulo de\n"
-"subestaciones.   "
+msgstr "Para obtener este fichero se necesario tener configurado el módulo de subestaciones.   "
 
 msgid ""
 "Només s'inclouran les Subestacions que compleixin les següents condicions\n"
@@ -13831,15 +13801,11 @@ msgstr ""
 msgid "Participació"
 msgstr "Participación"
 
-#, fuzzy
 msgid "NODE: Posicions equipades amb interruptor en subestacions"
-msgstr "Posiciones equipadas con interruptor en subestaciones, Inventario_R1-XXX_4.txt"
+msgstr "NODO: Posiciones equipadas con interruptor en subestaciones"
 
-#, fuzzy
 msgid "Per obtenir aquest fitxer cal tenir configurat el mòdul de subestaciions."
-msgstr ""
-"Para obtener este fichero hace falta tener configurado, en el ERP, el módulo de\n"
-"subestaciones."
+msgstr "Para obtener este fichero hace falta tener configurado el módulo de subestaciones."
 
 msgid ""
 "Només s'inclouran les posicions  que compleixin les següents\n"
@@ -13869,9 +13835,8 @@ msgstr "IDENTIFICADOR DE LA POSICIÓN"
 msgid "CINI DE LA POSICIÓN"
 msgstr "CINI DE LA POSICIÓN"
 
-#, fuzzy
 msgid "CNMC Tipus Instal·lació DE LA POSICIÓ. VALORS DE LA TAULA 3 DE RESOLUCIÓ 4131"
-msgstr "CNMC Tipo Instalación DE LA POSICIÓN. VALORES DE LA TABLA 3 DE RESOLUCIÓN 4666"
+msgstr "CNMC Tipo Instalación DE LA POSICIÓN. VALORES DE LA TABLA 3 DE RESOLUCIÓN 4131"
 
 msgid "CAMP TENSIÓ DE LA POSICIÓ / 1000"
 msgstr "CAMPO TENSIÓN DE LA POSICIÓN / 1000"
@@ -13890,7 +13855,6 @@ msgstr ""
 "Campos <strong>CALCULADOS</strong>: En este caso el valor no existe en un campo de la BD y se calculan los campos de la 4131\n"
 "a partir de valores de campos de la BD y cálculos adicionales."
 
-#, fuzzy
 msgid ""
 "El tipus de posició d'intemperie serà assimilable a la convencional i el\n"
 "tipus interior serà assimilable a la posició blindada."
@@ -13959,7 +13923,6 @@ msgstr ""
 "<code>Reductor</code> marcado y\n"
 "  esten en un estado incluido en el inventario"
 
-#, fuzzy
 msgid ""
 "Apareixeran en aquest inventari tots els transformadors que l'estat en que\n"
 "es troben te marcada la casella <strong>apareix a l'inventari</strong>, tal com s'indica\n"
@@ -13970,7 +13933,7 @@ msgid ""
 msgstr ""
 "Aparecerán en este inventario todos los transformadores que el estado en que\n"
 "se encuentran tiene marcada la casilla <strong> aparece en el inventario </strong>, tal como se indica\n"
-"en la imagen siguiente, y todos los que su estado sea\n"
+"en la imagen siguiente, y todos lo que su estado sea\n"
 "<code>NULL</code>.\n"
 "Cada empresa puede indicar que aparezcan en este listado los transformadores\n"
 "que se encuentran en diferentes estados modificando el checkbox correspondiente."
@@ -14003,7 +13966,6 @@ msgstr ""
 " <strong>Reactancias</strong> se deben de configurar de forma que cumplan alguna de las condiciones esmentadas, p.e.\n"
 " con un estado marcado como a <strong>aparece al inventario</strong>"
 
-#, fuzzy
 msgid ""
 "Apareixen en aquest inventari els condensadors d'AT,de BT i bateries fixes i\n"
 "automatiques. Aquests s'han d'entrar al menu de l'EPR de condensadors\n"
@@ -14014,11 +13976,11 @@ msgid ""
 "<strong>Comprovar que no estiguin entrats a Cel·les</strong>"
 msgstr ""
 "Aparecen en este inventario los condensadores de AT , BT y baterias fijas y \n"
-"automáticas. Estas se deben entrar en el menu del ERP de condensadores\n"
+"automaticas. Estas se han de entrar en el menu del ERP de condensadores\n"
 "(\"<em>Centros Transformadores/ Mantenimiento/Celdas y elementos de corte/Condensadores</em>\").\n"
 "<br />\n"
 "\n"
-"<strong>Comprobar que no estén entrados en Celdas</strong>"
+"<strong>Comprovar que no esten entrados en Celdas</strong>"
 
 msgid ""
 "Camps obtinguts directament dels camps de la fitxa de <strong>TRANSFORMADORS</strong>\n"
@@ -14037,7 +13999,6 @@ msgstr "CÓDIGO INTERNO DEL TRANSFORMADOR</p>"
 msgid "CINI DEL TRANSFORMADOR"
 msgstr "CINI DEL TRANSFORMADOR"
 
-#, fuzzy
 msgid ""
 "DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA <code>ALMACEN</code> . SI INSTAL·LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX \n"
 "<code>-CT</code>"
@@ -14045,46 +14006,26 @@ msgstr ""
 "DESCRIPCIÓN DE LA SUBESTACIÓN A LA QUE PERTENECE. SI NO INSTALADO O RESERVA, PONE <code>ALMACEN</code>. SI INSTALADO EN CT (RESERVA O TERCERO), AÑADE SUFIJO\n"
 "<code>CT</code>"
 
-#, fuzzy
 msgid "EN FUNCIÓ DEL MUNICIPI DEL CT/SE I LA CCAA RELACIONADA A LA TAULA 4 DE LA RESOLUCIÓ"
-msgstr "EN FUNCIÓN DEL MUNICIPIO DEL CT Y LA CCAA RELACIONADA EN LA TABLA 4 DE LA RESOLUCIÓN"
+msgstr "EN FUNCIÓN DEL MUNICIPIO DEL CT/SE Y LA CCAA RELACIONADA EN LA TABLA 4 DE LA RESOLUCIÓN"
 
-#, fuzzy
 msgid "TENSION_PRIMARIO"
-msgstr ""
-"\n"
-"<p>TENSION_PRIMARIO</p>\n"
+msgstr "TENSION_PRIMARIO"
 
-#, fuzzy
 msgid "SEGONS ELS CAMPS P1 i P2 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS"
-msgstr ""
-"\n"
-"<p>SEGUN LOS CAMPIOS P1 Y P2 DE LAS CONEXIONES Y NORMALIZADA SEGUN TABLA TENSIONES</p>\n"
+msgstr "SEGUN LOS CAMPIOS P1 Y P2 DE LAS CONEXIONES Y NORMALIZADA SEGUN TABLA TENSIONES"
 
-#, fuzzy
 msgid "TENSION_SECUNDARIO"
-msgstr ""
-"\n"
-"<p>TENSION_SECUNDARIO\n"
-"</p>\n"
+msgstr "TENSION_SECUNDARIO"
 
-#, fuzzy
 msgid "SEGONS ELS CAMPS B1, B2 i B3 DE LES CONNEXIONS I NORMALITZADA SEGONS TAULA TENSIONS"
-msgstr ""
-"\n"
-"<p>SEGUN LOS CAMPOS B1, B2 y B3 DE LAS CONNECCIONES Y NORMALIZADA SEGUN TABLA TENSIONES</p>\n"
+msgstr "SEGUN LOS CAMPOS B1, B2 y B3 DE LAS CONNECCIONES Y NORMALIZADA SEGUN TABLA TENSIONES"
 
-#, fuzzy
 msgid "DATA APM DEL TRANSFORMADOR"
-msgstr ""
-"\n"
-"<p>FECHA APM DEL TRANSFORMADOR</p>\n"
+msgstr "DATA APM DEL TRANSFORMADOR"
 
-#, fuzzy
 msgid "DATA DE BAIXA DEL TRANSFORMADOR"
-msgstr ""
-"\n"
-"<p>FECHA DE BAJA DEL TRANSFORMADOR</p>\n"
+msgstr "FECHA DE BAJA DEL TRANSFORMADOR"
 
 msgid "POTENCIA NOMINAL DEL TRANSFORMADOR EN MVA"
 msgstr "POTENCIA NOMINAL DEL TRANSFORMADOR EN MVA"
@@ -14129,11 +14070,8 @@ msgstr "CÓDIGO INTERNO DEL CONDENSADOR"
 msgid "CINI DEL CONDENSADOR"
 msgstr "CINI DEL CONDENSADOR"
 
-#, fuzzy
 msgid "TENSIO DEL CONDENSADOR"
-msgstr ""
-"\n"
-"<p>TENSION DEL CONDENSADOR</p>\n"
+msgstr "TENSION DEL CONDENSADOR"
 
 msgid "DATA APM DEL CONDENSADOR"
 msgstr "FECHA APM DEL CONDENSADOR"
@@ -14186,13 +14124,12 @@ msgstr "<strong>Tensión a aplicar</strong>: Valor de Tensión que se utilizará
 msgid "<strong>Tipus</strong>: AT si > 1 kV i BT < 1 kV"
 msgstr "<strong>Tipo</strong>: AT si > 1 kV i BT < 1 kV"
 
-#, fuzzy
 msgid ""
 "En el cas de la resolució 4131, s'agafarà el valor de tensió <strong>Tensió a\n"
 "aplicar</strong> que correspongui per quan la tensió (T) compleixi:"
 msgstr ""
-"En el caso de la resolución 4666, se usará el valor de tensión <strong>Tensión a \n"
-"aplicar</strong> que corresponda para cuando la tensión (T) cumpla:"
+"En el caso de la resolución 4131, se usará el valor de tensión <strong>Tensión a aplicar</strong> que corresponda para cuando la tensión (T)\n"
+"cumpla:"
 
 msgid "<code>Llindar_inferior <= (T) < Llindar superior</code>"
 msgstr "<code>Lindar inferior &lt;= (T) &lt; Lindar superior </code>"
@@ -14262,9 +14199,8 @@ msgstr "VALOR DE LA INVERSIÓN"
 msgid "VALOR DE LA INVERSIÓ EN €"
 msgstr "VALOR DE LA INVERSIÓN EN €"
 
-#, fuzzy
 msgid "NODE: Equips de millora de la fiabilitat"
-msgstr "Equipos de mejora de la fiabilidad, Inventario_R1-XXX_7.txt"
+msgstr "NODO: Equipos de mejora de la fiabilidad"
 
 msgid ""
 "Només s'inclouran les Cel·les i elements de Tall que compleixin les següents\n"
@@ -14275,7 +14211,6 @@ msgstr ""
 "condiciones de la ficha de <strong>Celdas y elementos de Corte</strong> asociadas a CT 's y\n"
 "soportes:"
 
-#, fuzzy
 msgid ""
 "<strong>Categoria inventari</strong>: Ha de ser \n"
 "<strong>Fiabilitat</strong> tant si està associat a CT\n"
@@ -14284,8 +14219,8 @@ msgid ""
 msgstr ""
 "<strong>Categoría inventario <strong>: Ha de ser \n"
 "<strong>Fiabilidad</strong> tanto si esta asociado a CT\n"
-"  como si esta asociado a soportes de líneas AT/MT (seccionadores,interruptores,\n"
-"  fusibles, ...)."
+"  como si esta asociado a soportes de lineas AT/MT (seccionadores,interruptores,\n"
+"  fusibles, seccionadores, ...)."
 
 msgid ""
 "<strong>Data APM</strong>: Data de posta en marxa anterior al final de l'any sol·licitat,\n"
@@ -14381,13 +14316,12 @@ msgstr "Generación de los informes"
 msgid "<strong>Menú</strong>"
 msgstr "<strong>M1</strong>"
 
-#, fuzzy
 msgid ""
 "Per accedir a l'assistent per generar els fitxers CSV i el XML cal anar al menú\n"
 "<strong>Administració pública / CNMC / Resolucions / Resolucio 4131/2016 / Generar Inventari 4131</strong>"
 msgstr ""
 "Para acceder al assistenete para generar los ficheros CSV i el XML hace falta ir al menu\n"
-"<strong>Administració publica / CNMC / Resoluciones / Resolucion 4666/2016 / Generar Inventario 4666</strong>"
+"<strong>Administració publica / CNMC / Resoluciones / Resolucion 4131/2016 / Generar Inventario 4131</strong>"
 
 msgid "<img alt=\"\" src=\"../../../_static/cnmc/4131/MENU_4131_1.png\" />"
 msgstr "<img alt=\"\" src=\"../../../_static/cnmc/4131/MENU_4131_1.png\" />"
@@ -14428,9 +14362,8 @@ msgstr "Inventario_R1-XXX_2.txt"
 msgid "Subestacions CSV"
 msgstr "Subestaciones CSV"
 
-#, fuzzy
 msgid "NODE SUBESTACIONS"
-msgstr "SUBESTACIONES"
+msgstr "NODO SUBESTACIONES"
 
 msgid "Inventario_R1-XXX_3.txt"
 msgstr "Inventario_R1-XXX_3.txt"
@@ -14438,9 +14371,8 @@ msgstr "Inventario_R1-XXX_3.txt"
 msgid "Posicions CSV"
 msgstr "Posiciones CSV"
 
-#, fuzzy
 msgid "NODE POSICIONS EQUIPADES AMB INTERRUPTOR DE SUBESTACIÓ"
-msgstr "POSICIONES EQUIPADAS CON INTERRUPTOR DE SUBESTACIONES"
+msgstr "NODO POSICIONES EQUIPADAS CON INTERRUPTOR DE SUBESTACIONES"
 
 msgid "Inventario_R1-XXX_4.txt"
 msgstr "Inventario_R1-XXX_4.txt"
@@ -14463,9 +14395,8 @@ msgstr "Inventario_R1-XXX_9.txt"
 msgid "Despatx CSV"
 msgstr "Despacho CSV"
 
-#, fuzzy
 msgid "NODE DESPATX"
-msgstr "CINI DEL DESPACHO"
+msgstr "NODO DESPACHO"
 
 msgid "Inventario_R1-XXX_6.txt"
 msgstr "Inventario_R1-XXX_6.txt"
@@ -14473,9 +14404,8 @@ msgstr "Inventario_R1-XXX_6.txt"
 msgid "Fiabilitat CSV"
 msgstr "Fiabilidad CSV"
 
-#, fuzzy
 msgid "NODE EQUIPS DE MILLORA DE LA FIABILITAT"
-msgstr "EQUIPOS DE MEJORA DE LA FIABILIDAD"
+msgstr "NODO EQUIPOS DE MEJORA DE LA FIABILIDAD"
 
 msgid "Inventario_R1-XXX_7.txt"
 msgstr "Inventario_R1-XXX_7.txt"
@@ -14483,9 +14413,8 @@ msgstr "Inventario_R1-XXX_7.txt"
 msgid "CTS CSV"
 msgstr "CTS CSV"
 
-#, fuzzy
 msgid "NODE CENTRES DE TRANSFORMACIÓ"
-msgstr "NODO: CENTROS DE TRANSFORMACIÓN"
+msgstr "NODO CENTROS DE TRANSFORMACIÓN"
 
 msgid "Inventario_R1-XXX_8.txt"
 msgstr "Inventario_R1-XXX_8.txt"
@@ -14521,7 +14450,6 @@ msgstr "<a href=\"carga-de-ficheros-de-la-4666\">Carga de ficheros 4666</a>"
 msgid "<a href=\"#generacio-dels-informes\">Generació de fitxers 4666</a>"
 msgstr "<a href=\"#generacion-de-los-informes\">Generación de ficheros 4666</a>"
 
-#, fuzzy
 msgid ""
 "<a href=\"#descripcio-dels-diferents-fitxers-de-linventari\">Descripció dels diferents Fitxers de l'inventari</a>\n"
 "<ul>\n"
@@ -14548,6 +14476,7 @@ msgstr ""
 "<li><a href=\"#equipos-de-mejora-de-la-fiabilidad-inventario_r1-xxx_7txt\">Equips de mejora de la fiabilidad</a></li>\n"
 "<li><a href=\"#centros-de-transformacion-inventario_r1-xxx_8txt\">Centros de transformación</a></li>\n"
 "<li><a href=\"#condensadores-inventario_r1-xxx_9txt\">Condensadores y Reactancias</a></li>\n"
+"<li><a href=\"#modificaciones-modificaciones_r1-xxxtxt\">Modificaciones</a></li>\n"
 "</ul>\n"
 
 msgid "Inventari 4666"
@@ -32147,6 +32076,193 @@ msgstr ""
 msgid "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png\" />"
 msgstr "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png\" />"
 
+#~ msgid "<a href=\"#circular-12005\">Circular 1/2005</a>"
+#~ msgstr "<a href=\"#circular-12005\">Circular 1/2005</a>"
+
+#~ msgid "<a href=\"#circular-42014\">Circular 4/2014</a>"
+#~ msgstr "<a href=\"#circular-42014\">Circular 4/2014</a>"
+
+#~ msgid "<a href=\"#circular-42015\">Circular 4/2015</a>"
+#~ msgstr "<a href=\"#circular-42015\">Circular 4/2015</a>"
+
+#~ msgid "<a href=\"#generacio-de-informes-sobre-reclamacions-de-consumidors\">Circular 2/2016</a>"
+#~ msgstr "<a href=\"#generacion-de-informes-sobre-reclamaciones-de-consumidores\">Circular 2/2016</a>"
+
+#~ msgid "<a href=\"#inventari-4131\">Inventari 4131</a>"
+#~ msgstr "<a href=\"#inventario-4131\">Inventario 4131</a>"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_1.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_1.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_2.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_2.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_5a.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_5a.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_5b.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_5b.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_7.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/1_2005/wizard_informe_7.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_cups_estadistiques.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_cups_estadistiques.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_comptador_cini.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_comptador_cini.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_cts_num_maquines.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_cts_num_maquines.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_update_facturacio.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_update_facturacio.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_update_no_facturacio.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_update_no_facturacio.png\" />"
+
+#~ msgid ""
+#~ "<strong>CUPS CSV</strong>: Hem de seleccionar el fitxer CSV amb el contingut adequat per\n"
+#~ "  tal d'actualitzar els valors CNMC del CUPS i després apretar el botó\n"
+#~ "  \n"
+#~ "<strong>Actualitzar CUPS</strong>. Veure el \n"
+#~ "<a href=\"#format-cups-csv\">format dels cups en el csv</a>"
+#~ msgstr ""
+#~ "<strong>CUPS CSV</strong>: se selecciona el fichero CSV con el contenido adecuado para actualizar los valores CNMC del CUPS y después se pulsa el botón <strong>Actualizar CUPS</strong>.\n"
+#~ "Ver el <a href=\"#formato-cups-csv\">formato dels cups en el csv</a>"
+
+#~ msgid ""
+#~ "<strong>Comptadors CSV</strong>: Hem de seleccionar el fitxer CSV amb el contingut\n"
+#~ "  adequat per tal d'actualitzar els CINIS dels comptadors i després apretar el\n"
+#~ "  botó \n"
+#~ "<strong>Actualitzar CINIS</strong>. Veure el \n"
+#~ "<a href=\"#format-comptadors-csv\">format dels comptadors en els csv</a>"
+#~ msgstr ""
+#~ "<strong>Contadores CSV</strong>: Tenemos que seleccionar el archivo CSV con el contenido\n"
+#~ "  adecuado para tal de actualizar los CINIS de los contadores y después pulsar el\n"
+#~ "  botón \n"
+#~ "<strong>Actualizar CINIS</strong>. Ver el \n"
+#~ "<a href=\"#formato-contadores-csv\">formato de los contadores en el csv</a>"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_circular.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_circular.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_result.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2014/form_wizard_result.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_camps_trafo.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_camps_trafo.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_camps_cable_bt.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_camps_cable_bt.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_update_facturacio.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_update_facturacio.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_update_no_facturacio.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_update_no_facturacio.png\" />"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p><strong>Actualitzar CUPS</strong>. Veure el <a href=\"#format-cups-csv\">format dels cups en el csv</a></p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<p><strong>Actualizar CUPS</strong>. Ver el <a href=\"#formato-cups-csv\">formato dels cups en el csv</a></p>\n"
+
+#~ msgid ""
+#~ "\n"
+#~ "<p><strong>Comptadors CSV</strong>: Hem de seleccionar el fitxer CSV amb el contingut\n"
+#~ "  adequat per tal d'actualitzar els CINIS dels comptadors i després apretar el\n"
+#~ "  botó <strong>Actualitzar CINIS</strong>. Veure el <a href=\"#format-comptadors-csv\">format dels comptadors en els csv</a></p>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<p><strong>Contadores CSV</strong>: Tenemos que seleccionar el archivo CSV con el contenido\n"
+#~ "  adecuado para tal de actualizar los CINIS de los contadores y después pulsar el\n"
+#~ "  botón <strong>Actualizar CINIS</strong>. Ver el <a href=\"#formato-contadores-csv\">formato de los contadores en los csv</a></p>\n"
+#~ "\n"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_circular.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_circular.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_result.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4_2015/form_wizard_result.png\" />"
+
+#~ msgid ""
+#~ "Per tal d'evitar problemes de validació, veure documentació del camp\n"
+#~ "<strong><a href=\"../../../base/polizas/#cnae\">CNAE</a></strong>"
+#~ msgstr ""
+#~ "Con el fin de evitar problemas de validación, ver documentación del campo\n"
+#~ "<strong><a href=\"../../../base/polizas/#cnae\">CNAE</a></strong>"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/carrega_4771.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/carrega_4771.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/load_4131.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/load_4131_es.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/cataleg_cables_at.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/cataleg_cables_at.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/cataleg_cables_BT.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/cataleg_cables_BT.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/estats_inventari.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/estats_inventari.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/llistat_connexions_trafo.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/llistat_connexions_trafo.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/form_tensio_normalitzada.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/form_tensio_normalitzada.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/DESPATXOS_1.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/DESPATXOS_1.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/DESPATXOS_2.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/DESPATXOS_2.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_1.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_1.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_2.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_2.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_3.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../../_static/cnmc/4131/MENU_4131_3.png\" />"
+
+#~ msgid ""
+#~ "Despatxos són despeses, factures i inversions fetes per part de l'empresa, com\n"
+#~ "telegestió, software, concentradors, fibra òptica..., és a dir, tot lo relacionat\n"
+#~ "i necessari per la distribució i que no siguin instal·lacions; i que solicita la\n"
+#~ "<strong>CNMC</strong>, \n"
+#~ "<em>en el Formulari 6 del inventari corresponent a Resolució\n"
+#~ "<a href=\"https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-4771\">4771</a>\n"
+#~ "i <a href=\"https://www.boe.es/diario_boe/txt.php?id=BOE-A-2016-4131\">4131</a></em>"
+#~ msgstr ""
+#~ "Despachos son gastos, facturas e inversiones hechas por parte de la empresa, como telegestión, software, concentradores, fibra óptica... todo lo relacionado y necesario para la distribución y que no sean instalaciones; y que solicita la <strong>CNMC</strong>, <em>en el Formulario 6 del inventario correspondiente a la Resolución \n"
+#~ "<a href=\"https://www.boe.es/diario_boe/txt.php?id=BOE-A-2015-4771\">4771</a>\n"
+#~ "y <a href=\"https://www.boe.es/diario_boe/txt.php?id=BOE-A-2016-4131\">4131</a></em>."
+
+#~ msgid ""
+#~ "En l’Inventari de la 4131, formulari 3:<ul>\n"
+#~ "<li>No es sol·licita aquesta informació.</li>\n"
+#~ "</ul>\n"
+#~ msgstr ""
+#~ "En el inventario de la 4131, formulario 3:<ul>\n"
+#~ "<li>No se solicita esta información</li>\n"
+#~ "</ul>\n"
+
+#~ msgid ""
+#~ "En aquest apartat s’inclouen els transformadors de subsestació,\n"
+#~ "de reserva i móbils.  <br />\n"
+#~ "Formulari 5 de la \n"
+#~ "<a href=\"../adm-pub/cnmc/#inventari-4131\">4131</a>."
+#~ msgstr ""
+#~ "En este apartado se incluyen los transformadores de subsestación,\n"
+#~ "de reserva y móviles.  <br />\n"
+#~ "Formulari 5 de la \n"
+#~ "<a href=\"../adm-pub/cnmc/#inventario-4131\">4131</a>."
+
 #~ msgid "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA0AAAAB4CAIAAABUwAVIAAAam0lEQVR4nO3deZAU5f0/8Ofp6bl2Z3dmd2E5Q0k8CMai5FJJ5GaXRVhArkUMOQxVgsWRQCEsxRkENIgWxBhC/kjEcLgbEBRQORZcJFpIgSWVqpTGkFCFsvfMzrkz3fN8//j8tp3fcgS2YXue8f36w5Le2d5net7P05/ufrqHCyEYAAAAAMhDsboBAAAAAHB7UMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASEa1ugFmaZpms9msbsV3l67rqipxipAfayE/YAbyA2bInh8uhLC6DQAAAABwG2StPYUQnPNoNPr666/PmjXL5XKhEu1gnPNYLLZ79+7nnnvO7XZb3Zzbg/xYDvkBM5AfMEPq/BhkPQNHHcDv9+fl5XXt2lVVVUnfiLw455qmXb16tampyefz0SdidaNuFfJjOeQHzEB+wAyp82OQ9QwcEUL06tXr5MmTeXl56AAdjHPe1NQ0cuTIZDLJWockqxt1e5AfCyE/YAbyA2ZkQH5YBhRwuq536tQpNzfX6rZ8F6mqqus6dQAmYR9AfqyF/IAZyA+YIXt+mOwFHEkkEkIIGbe+vGhrJxIJxpiu64yxZDKpKP/vqTRyfRDIT8dDfsAM5AfMyJj8ZEIBxzmnLS7Rds8AxmZvaWnRNI26gaIo0n0KyI8lkB8wA/kBMzIjP5lQwIGFhBDRaDQWi9E/jfTL1Q3AKsgPmIH8gBmy50fuAg4TPy0nhAgGg6FQiB6HyDm32WyccymuCCA/lkN+wAzkB8yQOj8sMwo4KTZ0phJC+P1+r9frcrlsNhul3zg7neaQH8shP2AG8gNmSJ0flhnfhYrjGKvQkYrf7w+FQrFYLJFIaJpGE3KtbtptkKu1mQT5ATOQHzAjA/KTCQWcLMVyRhJCBAKBYDBIHSCZTEqUfoL8WAj5ATOQHzBD9vzIXcDJta0zkhAiHA5Ho9F4PK5pGnUAWT4XWdqZwZAfMAP5ATOkzg+Tt4CTaBNnNiFELBaLx+OJRIIeimh8NOn8GaVz275TkB8wA/kBMyTNj0HWAg7Sh67r9Bwd4ztJmCTph3SA/IAZyA+YIXV+UMBB+9HsDV3XdV0XraxulEz+5+bSNO3O/kX6sO7sOtsN+QEzkB8wIwPygwIu3aV/pFLnDdD/aJqWbjNzhRDpU7gY/udWoqcT3UF0q/ydXadJyM/dc93RI/2HlNuC/KS/dI5cm/xY3ZzbgwKu/ZLJZKLV3euc6TYS3QQNnQ6Hw+VyxeNxq5vzLRrQbTabEML46uJ0EAgE2myo1APBaDT629/+NhqNtlneZpbGtQeO1z2UpIgeOXLkyJEj9M90O+hEfkyiESl1yXVHj1sfUtInG7cC+Wk3Xdfv6o5Mor2YXFDAtZ+iKPZWNpvtbvRMIUQoFJJiGNV1nXNeWFjo9/sXLVq0bds2zvkdvwJ4u2jT+f3+SZMmvf/++5xzRVHo26Mtb1Vzc/P999//0ksvsdZLpclkMvUZktFo9NVXX6UCzvhR6tkFzjltds55avyMlaQWfIqiCCH27NlTUVHBWncq1/6uVZAf82hEMj7N644eNGv7Ftsv0X4X+THDZrPdvR2ZRHsx6aCAaw86TKmurl6+fPmvf/3rBQsWfPDBB4qiGLMg2xzN6K2o69LTAumpM4wx4zRe6pkVui+mqalp0KBBfr+fpZzwu+5qO3wbfCuZTCaTSZ/PJ4QoLy//4Q9/uG3btkAgQIebIg04nc5Dhw6NGzeupKTk2LFjNE7Rp2DJFqP71desWdO/f/99+/ZduXKFjs4VRQmHw42NjbTj9Hq9Fy9ezMvLSyaTNpstFAr5/X5VVcPhML2vSCRis9noQZSK8m1fbmhoaGxsZK1PqqS11dXVcc579erl8XgYY06nMxAINDQ0tPndjof8mEdjwkcffbRixQqq1Bljfr9/0KBBTU1NiUQiHo/TaNPY2NitWzeKx82HFF3Xg8EgvYClDGvpVn8gP+1mNGDfvn3z58+fP3/+wYMHjR3Z3diLaZp2t69ZfaeggGsPimxFRcVbb72VTCaj0ejEiRPpAItObLQ5mrG1stvtnHNVVek1tOM0TuMZZ0045w6Hgxb6/X4aBW6+Wqs2hRAiKysrKyvro48++sUvfrF58+aGhgZVVd1uN70LbilFUTjnTqfT6/Vyzj/44INx48atW7euvr5eVVWHw9HxY6gQwm63CyG2b9++ZMkSp9P5xz/+kXPOGDt06FCvXr0efPDBkpKSWCwWDAaHDx/e0NCgKMrBgwd79uz5yCOPzJ07t1+/fpFIJBqNPvjgg7/61a8eeeSRHj16HDx4kDEWDAbHjx8/aNCg/v37jx07trm5mQbcMWPGDBgwYMaMGadPn3Y4HIyxysrK/v37Dxky5N5776XftWRIRX7ulGQyuWXLlh07dhw/fpy3jiR+v58GDYfDQYWdx+N5+eWXPR6PEMK4hmBMi0wdUpLJ5GOPPUYvYIzx1vHHGKnSAfJjZtMJIaLR6NChQ1977TXKwObNm/fu3cs513X9Jtng7dqLMcZUVb2r16y+a+T+LlTLPf300y+88AJjLDs7e+/evSUlJXQqZfXq1U1NTZMnTx4zZgxj7PDhw06nMxgMnjx5cv369Tt37hw/fvwrr7xSWlo6fPjw559/Ph6Pe73ejRs30nexMcaWL1+eSCTmzZvndDqpMySTyRuttqqqasuWLTQc8A4cW4UQqqp+9tlnb7311vnz5xlj1KsTiURtbe1XX32ladodn4bfDqFQiA4NVVXVNG3t2rWvv/763Llzy8rKqJbqyMbQ6bSDBw8+/vjjxcXFQogXX3wxkUjEYrHS0tLKyspp06ZVVVVFo1FVVWtraz0eT1VV1dSpUysqKkaMGFFcXHzp0iVVVXVdr62t7du37+rVq48ePfr000/X1tYKIRYsWHDvvffquj5hwoSXXnppw4YNo0ePjkQiFy9ePHr06MyZM0eNGsUY69q16/79+3Nzc48dOzZr1qyrV6/STh35uVZa5edauq7bbLYDBw58/vnnzz777OLFi8+fP0/bzel01tTUrF271m63b9q0iYYRKs4450KIVatW+f3+UaNGTZw4UVXVQ4cOuVwuv9//ySefDBo06N///vecOXO8Xu+LL74YjUZXr14di8WMkaqD03It5McM2jhr1qwJhUIXLlyghYFA4JNPPqGPdeXKlddmo917MSrXKisr6QBj0qRJ48aNSyaT1p7+l5314ZaXoihff/11bW1tPB4/d+4c7RcjkUhJSUkkEhkyZEhRURHtj48dO7Z169by8nKHw5FIJBYuXLhv376HHnrIbrfv3r1bVdWePXueOnVq/PjxR44cicfjRUVF4XB42LBhDz/8sBDC4XDEYrGioqLrrnbFihWpE186GOf8zJkzly9fZozZbDZd16lD/vOf/zx48CDtWixpWKpYLEazYag9VPps2LDhoYcecrlcHbzpjALuvvvuq6+v79u378WLF5uamgoKCkpKSnbu3Hn69OnS0tK8vLy6ujpVVV0uV2Vl5Zw5c6ZMmcIY+/DDDx944AG6ctGpU6c5c+bYbLYnn3zy+eefj0ajOTk527dvP3/+vNvtDofDdO7k008//frrrz0eT1lZ2YcfflhbW8sYi0Qi06ZN83g8NpvN5XLRFKKO35cgP+ZRA/bv319SUlJeXr59+/arV6/27NlTVdX6+vqHH354zpw5J0+ePHPmzPHjxyORyDPPPDN+/HjO+dixYyORyIgRI1555ZWPP/548+bNR48e/d3vfrd8+XKXy0UFB2tN7Jtvvmmz2b7//e/TSPXuu+/SR2NtDYf8tA9dB2hqatqzZ88//vEPxlg8Huece71eSsW4ceOum41278VycnLq6+sPHDjQt2/fRCIxe/bsN95444knnkiTz0hWd/pyfwehe+hqa2t79OjR2NgoOna6QzweF0KsWrUqOzu7d+/e3bp1Y4x98803Qohly5b94Ac/oJdVVFTQOFheXj548GBaGAwGfT7f8ePHjX9u2bLlhRdemDdvnnGarU+fPvTTvXv3ZmdnCyFSF153tR2Mtrbf7+/UqdOmTZvWr1//6KOPUqKysrI455s2bbKkYTfi9XptNhsN7vn5+WvWrAkGg83Nzd27d+/I/NBfqa+vz83NzcvL+973vtezZ0/O+cqVK+kFf/vb3xYtWjRq1Ki33347Fot17txZCDF37txnn32WXhAKhbp169bc3EyNr6mpSSaTNTU1Xbt2FUKsWLFi4MCBdXV1LS0ts2fPXrx4sRAiNzc3GAzSr8+bN2/RokVCCLfb/c477zQ3N//nP/+hSVEdthEE8nPn0N8Nh8MPPPAATUtaunRpeXm5rusNDQ05OTl79+6lV/bp02fNmjVCiC5duggh1q5de8899zQ1NQkhvvrqq4KCAiHEihUrjCGlpaWlV69exh8Kh8PGSOVwOOgXrX3XyE+7GQNR9+7dGxoaaB6hEIK+EnTlypU3z8bt7sVycnLoKurx48fXr1+/adOm+++/f+HChaJ1Z9rBUvOzbt26ioqK6urqL774ora2NhwOp34rQ5rDGbj28/v9ZWVlmzZtYoydOnXql7/85eHDhxsbG2fNmsUYi0Qi06dPX7x4MWOMDkQoEy0tLbm5uY899hidRJk5c+bly5cfffRRt9tdUFDAOa+rq6M1RKPRsrKyJUuWMMaMhdddbUtLS1ZWllXboaWlZcCAAePHjz979mx5eXlTUxNrPehMJBIWzs9jrVMxgsEga53jVVpa+uc//7mgoIAxVlNT08HnDzRNs9vtW7du7dmzZ3V1dTKZVFX1xIkTc+bMmT9//rlz50pLS6dOnTpw4MDTp09PnjyZLq1Onz69qKiouLh4xIgRo0ePrq+vdzqdsViMDl455zQnmv6Eoigul+vQoUNvvvnmqlWrGGODBg0qKio6fPjwsWPH/vCHP/zmN7+hl9GB78yZM2tqamhinCWQHzPo9Ninn3765Zdfzp071+l0vvfee126dKGp6Pn5+WVlZdFo1O1204VyxhjdlJBIJBRFGTBgQCAQUFWVwhAMBmlIEULQBMorV67k5+erqjpjxozUkcrad50K+Wk3RVEURaHrznQGjua0tbS02Gy2G2WjHXuxpUuXOhyOqqqqiRMnPvnkkz6fr6CgwO12W/jeMwMuP7dfMpns1q1bYWFhYWHh9OnT6fFa3bt337VrF2MsKyursrKyvr6eMWaz2WKxmDH9k3MeiUTsdnswGDx8+PCFCxf+9Kc/TZ8+nXp4586dd+/ezRhzu90VFRWhUCh14Y1Wa91mYPR2gsHghAkTzp49u3btWrfbHYlE1LTBOadr0O+///4777xTUFDQ0tIihOj46ReKosRisQsXLrz88ssFBQWdO3fOy8ubNm3a0KFDz549u2vXrnvuuaewsNDn823cuNHv93fp0iUUCo0aNWr//v2zZ88eOHDgqFGjqP10vYN2AJzzgoICv9+/cuXK3NzcPn367NmzZ8yYMXR15r333svOzu7Xr9++ffuKiopisRhjbOfOnTNnzhwwYEC/fv169+5t4Y3MyI95K1asGDlyJJ2tnzx58tmzZ0+ePOn1egOBQEVFBe0pd+/eXVhYyBij4YLmXXz22WcNDQ01NTX/+te/6B3RzpvetaIoPXr0cLvdzc3NqSNVPB5Pn/eO/LRvoyUSCZ/P99RTTw0fPpwxRjccNDY2njlzxuv16rp+o2y0Yy8WCATcbvdf/vKXqVOn/vWvf33ttdfoIpJVbz9j4AycKbt27WpubhZCfP7553Q5f/ny5SdOnBg4cOCQIUN+//vfV1ZWMsbq6uqMy/xCCOPAy+v1jhs3bvDgwT/60Y927NiRSCQCgUB5eXlVVdWAAQOGDRu2Y8eOaDRqLLzJaq1FN1uFQqHCwsI1a9b89Kc/vXLlihAiTZrHGDty5AhNUqRRw6o76eiE2RtvvJGfny9a703hnB84cCAcDpeWltIzRPLy8qiR586d83g88Xh80qRJ4XCYMXb69OkdO3YwxjweD/2UMZaXl3fu3LmsrCxFUY4fP97Y2Jifn88Yi0QijDGHw3HtwilTphQXF2ua5vP5wuEwncG16nwA8tM+dPrtyy+/vHDhAt3vQstjsdi2bduGDh3q9/t//vOf//3vf6+uru7cuXN5eXlDQ4Pf729oaFi2bFlVVVVRUdHQoUM1Tbt06dK+fftouj2tWVXVUCj0zDPP5OXlbdy4ccKECakjlaXvuy3kpx1UVRVCrFu37uOPPx45cmS/fv2oaFu0aNGyZcuOHj16o2ywdu3FYrHYz372s0mTJrnd7v/+97+nTp0aPHiwpRsgE6TLUZRc6MhpxowZZWVldDfWwoULDx8+zDl3uVzV1dVPPPEEY+zYsWPTpk1jjD311FMzZsyg383KytqwYUN2djZjzG63v/vuu8XFxU6n89KlS6+++qrdbqc1jB07lobm1IU3Wm2aHA3TMyoDgUDv3r0ff/xxlgYNoyHG5/PR6Gk89tbCJimKkp+fT3Uba9332Gy23Nxcxlh+fj5Vb3TIS7tkv99fWlq6aNGi5557btiwYTt37szJyRFC5OTkGGfgPB6P8QAwqg4ZY1SWXXdhMpn0eDw+n0/TtOzsbMt3Jwz5aa/Lly9XVlZmZWW1tLTE43FN0zZu3FhcXBwKhbZu3frFF1/YbLaxY8dWV1c7nU6Xy7Vx40aXy+VyuU6ePDl69Gia9vSTn/xEVdXJkyeXlZUxxnRd93q9e/bsyc7OpqtsbUYqNQ3u7mwD+bkt1BK323369On58+fTmbOlS5dOnz5dVdVTp07dKBusXXsxTdNGjx799ttv2+32JUuWHD16dNiwYSwNPiOpWXDf2R1Btx/X1dX179+fHnYqrL6nnbRpRjtuk77uGzG/2juL2hMIBO67774FCxb07du3a9euXbt29fl82dnZdHxp3ExuOSEEnaswllibn2v/lrGE+qPxU5qpqijK/v37T5w4QbffFxUVUftT13Pd/7/5QuNvdXzfQX4scaPASAf5uXvuyM7lum/H8t2W4eb5oYcmpk+pfRNpdxQlkWQyaTz71JgSTrtDmlFuLKSXGR049elExotVVdV1nSZM3HzhjVabPmj2jNWt+BaN5la34lvXjgvGkjY/MgaRKVOm0GNEWMo4mPri6/7/zRfe6I9aDvm5LXS7XGoLhRDGEyuMG1xoGGGt40/qkMJaR5U2QwrNWOec0+W2NoNSB7/NW4f83C76oFnKzuV/ZqMdezFFUegP0WUrlpY7L7mkbydMf3QLz7XL6V6e1CVtYpo69qW+2Fj+Pxded7WQwa4dYQHItaMQlVysdfRoM27c+pBCT96/9sXpXL1BO6R+0OQu7cWu/UNgBvohgAQw8AEAQKo0Os8MAAAAALcCBRwAAACAZFDAAQAAAEgGBRwAAACAZFDAAQAAAEgGBRwAAACAZFDAAQAAAEgmE54DJ1pZ3ZDvENrambHNkZ+Oh/yAGcgPmJEx+ZG+gOOcOxwOKb62LJPQ1qbvHLS6LaYgP5ZAfsAM5AfMyJj8SF/AJRKJurq6RCJB3/nN0u+LHTMSfRlwc3Ozpmn0vb+0XLqNj/xYAvkBM5AfMCNj8iN3Aaeqqs1m+/GPf8w5p290pv9mzAnSdGZ8XbHD4aCvhZXuOBL5sRDyA2YgP2BGBuSHyVvA0db3eDwXLlwIBoPNzc11dXU1NTXffPNNXV2d3+8Ph8MtLS2aptFXgDP0B9OMcCuKoqqq0+nMzs7u1KmTx+OhJalHkGneE5Cfjof8WNtm2SE/1rZZdpmUH4PcBRznPD8/Pysry+Vy0dZPJpM2m83pdKZ2AET/DuKcp3YAn8/ncrkcDgcdTcpyOhr5sQryA2YgP2BGZuTHIGsBRzjniURC0zTqDHa73eVyZWVlaZqmqmo8Hqcf4R6fO4W3UlXV4XC43e7s7GyPx+N2u6kPyHUiGvnpYMgPmIH8gBkZlh8mewHHGFMUxWaz0Yfh8XgSiQTn3OVyRaNRTdN0XTdOQcOdQttcVVXqAD6fz+PxuFwuu92eegQjBeSn4yE/YAbyA2ZkUn7kLuCMatput7vdbk3TGGN2u93j8dDhi67rOHa54zjn1AGMcYcOYux2u6qqEh3BID+WQH7ADOQHzMiY/LAMKOComqYOwBhTVdXlchnpxwSCu8HY7NQHXC6X2+2mDtBmGkGaQ34sgfyAGcgPmJEx+WFSF3DGPFDqAPSp2O12mkOA9N9VqX2AuoExD5RLchcP8mMh5AfMQH7AjAzID5G4gGMpW5m2O91dkmzFWr+lxNI2ZiDjJLPSKvUWHolOQSM/lkB+wAzkB8zImPwwxrjs+TCeeZj6FETcudMB+P8v9f4diToA8mMV5AfMQH7AjMzIj/QFHEntBgzPPOxARuKli34q5McqyA+YgfyAGbLnJ0MKOHa90GfMW0tP12ZduvSnQn46GPIDZiA/YEZm5CdzCrg2MvV9pRUZE3+LkJ8OgPyAGcgPmJEB+cnYAg4AAAAgUylWNwAAAAAAbg8KOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJ/B/eW/3UOTf4qwAAAABJRU5ErkJggg==\" />"
 #~ msgstr "<img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA0AAAAB4CAIAAABUwAVIAAAam0lEQVR4nO3deZAU5f0/8Ofp6bl2Z3dmd2E5Q0k8CMai5FJJ5GaXRVhArkUMOQxVgsWRQCEsxRkENIgWxBhC/kjEcLgbEBRQORZcJFpIgSWVqpTGkFCFsvfMzrkz3fN8//j8tp3fcgS2YXue8f36w5Le2d5net7P05/ufrqHCyEYAAAAAMhDsboBAAAAAHB7UMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASAYFHAAAAIBkUMABAAAASEa1ugFmaZpms9msbsV3l67rqipxipAfayE/YAbyA2bInh8uhLC6DQAAAABwG2StPYUQnPNoNPr666/PmjXL5XKhEu1gnPNYLLZ79+7nnnvO7XZb3Zzbg/xYDvkBM5AfMEPq/BhkPQNHHcDv9+fl5XXt2lVVVUnfiLw455qmXb16tampyefz0SdidaNuFfJjOeQHzEB+wAyp82OQ9QwcEUL06tXr5MmTeXl56AAdjHPe1NQ0cuTIZDLJWockqxt1e5AfCyE/YAbyA2ZkQH5YBhRwuq536tQpNzfX6rZ8F6mqqus6dQAmYR9AfqyF/IAZyA+YIXt+mOwFHEkkEkIIGbe+vGhrJxIJxpiu64yxZDKpKP/vqTRyfRDIT8dDfsAM5AfMyJj8ZEIBxzmnLS7Rds8AxmZvaWnRNI26gaIo0n0KyI8lkB8wA/kBMzIjP5lQwIGFhBDRaDQWi9E/jfTL1Q3AKsgPmIH8gBmy50fuAg4TPy0nhAgGg6FQiB6HyDm32WyccymuCCA/lkN+wAzkB8yQOj8sMwo4KTZ0phJC+P1+r9frcrlsNhul3zg7neaQH8shP2AG8gNmSJ0flhnfhYrjGKvQkYrf7w+FQrFYLJFIaJpGE3KtbtptkKu1mQT5ATOQHzAjA/KTCQWcLMVyRhJCBAKBYDBIHSCZTEqUfoL8WAj5ATOQHzBD9vzIXcDJta0zkhAiHA5Ho9F4PK5pGnUAWT4XWdqZwZAfMAP5ATOkzg+Tt4CTaBNnNiFELBaLx+OJRIIeimh8NOn8GaVz275TkB8wA/kBMyTNj0HWAg7Sh67r9Bwd4ztJmCTph3SA/IAZyA+YIXV+UMBB+9HsDV3XdV0XraxulEz+5+bSNO3O/kX6sO7sOtsN+QEzkB8wIwPygwIu3aV/pFLnDdD/aJqWbjNzhRDpU7gY/udWoqcT3UF0q/ydXadJyM/dc93RI/2HlNuC/KS/dI5cm/xY3ZzbgwKu/ZLJZKLV3euc6TYS3QQNnQ6Hw+VyxeNxq5vzLRrQbTabEML46uJ0EAgE2myo1APBaDT629/+NhqNtlneZpbGtQeO1z2UpIgeOXLkyJEj9M90O+hEfkyiESl1yXVHj1sfUtInG7cC+Wk3Xdfv6o5Mor2YXFDAtZ+iKPZWNpvtbvRMIUQoFJJiGNV1nXNeWFjo9/sXLVq0bds2zvkdvwJ4u2jT+f3+SZMmvf/++5xzRVHo26Mtb1Vzc/P999//0ksvsdZLpclkMvUZktFo9NVXX6UCzvhR6tkFzjltds55avyMlaQWfIqiCCH27NlTUVHBWncq1/6uVZAf82hEMj7N644eNGv7Ftsv0X4X+THDZrPdvR2ZRHsx6aCAaw86TKmurl6+fPmvf/3rBQsWfPDBB4qiGLMg2xzN6K2o69LTAumpM4wx4zRe6pkVui+mqalp0KBBfr+fpZzwu+5qO3wbfCuZTCaTSZ/PJ4QoLy//4Q9/uG3btkAgQIebIg04nc5Dhw6NGzeupKTk2LFjNE7Rp2DJFqP71desWdO/f/99+/ZduXKFjs4VRQmHw42NjbTj9Hq9Fy9ezMvLSyaTNpstFAr5/X5VVcPhML2vSCRis9noQZSK8m1fbmhoaGxsZK1PqqS11dXVcc579erl8XgYY06nMxAINDQ0tPndjof8mEdjwkcffbRixQqq1Bljfr9/0KBBTU1NiUQiHo/TaNPY2NitWzeKx82HFF3Xg8EgvYClDGvpVn8gP+1mNGDfvn3z58+fP3/+wYMHjR3Z3diLaZp2t69ZfaeggGsPimxFRcVbb72VTCaj0ejEiRPpAItObLQ5mrG1stvtnHNVVek1tOM0TuMZZ0045w6Hgxb6/X4aBW6+Wqs2hRAiKysrKyvro48++sUvfrF58+aGhgZVVd1uN70LbilFUTjnTqfT6/Vyzj/44INx48atW7euvr5eVVWHw9HxY6gQwm63CyG2b9++ZMkSp9P5xz/+kXPOGDt06FCvXr0efPDBkpKSWCwWDAaHDx/e0NCgKMrBgwd79uz5yCOPzJ07t1+/fpFIJBqNPvjgg7/61a8eeeSRHj16HDx4kDEWDAbHjx8/aNCg/v37jx07trm5mQbcMWPGDBgwYMaMGadPn3Y4HIyxysrK/v37Dxky5N5776XftWRIRX7ulGQyuWXLlh07dhw/fpy3jiR+v58GDYfDQYWdx+N5+eWXPR6PEMK4hmBMi0wdUpLJ5GOPPUYvYIzx1vHHGKnSAfJjZtMJIaLR6NChQ1977TXKwObNm/fu3cs513X9Jtng7dqLMcZUVb2r16y+a+T+LlTLPf300y+88AJjLDs7e+/evSUlJXQqZfXq1U1NTZMnTx4zZgxj7PDhw06nMxgMnjx5cv369Tt37hw/fvwrr7xSWlo6fPjw559/Ph6Pe73ejRs30nexMcaWL1+eSCTmzZvndDqpMySTyRuttqqqasuWLTQc8A4cW4UQqqp+9tlnb7311vnz5xlj1KsTiURtbe1XX32ladodn4bfDqFQiA4NVVXVNG3t2rWvv/763Llzy8rKqJbqyMbQ6bSDBw8+/vjjxcXFQogXX3wxkUjEYrHS0tLKyspp06ZVVVVFo1FVVWtraz0eT1VV1dSpUysqKkaMGFFcXHzp0iVVVXVdr62t7du37+rVq48ePfr000/X1tYKIRYsWHDvvffquj5hwoSXXnppw4YNo0ePjkQiFy9ePHr06MyZM0eNGsUY69q16/79+3Nzc48dOzZr1qyrV6/STh35uVZa5edauq7bbLYDBw58/vnnzz777OLFi8+fP0/bzel01tTUrF271m63b9q0iYYRKs4450KIVatW+f3+UaNGTZw4UVXVQ4cOuVwuv9//ySefDBo06N///vecOXO8Xu+LL74YjUZXr14di8WMkaqD03It5McM2jhr1qwJhUIXLlyghYFA4JNPPqGPdeXKlddmo917MSrXKisr6QBj0qRJ48aNSyaT1p7+l5314ZaXoihff/11bW1tPB4/d+4c7RcjkUhJSUkkEhkyZEhRURHtj48dO7Z169by8nKHw5FIJBYuXLhv376HHnrIbrfv3r1bVdWePXueOnVq/PjxR44cicfjRUVF4XB42LBhDz/8sBDC4XDEYrGioqLrrnbFihWpE186GOf8zJkzly9fZozZbDZd16lD/vOf/zx48CDtWixpWKpYLEazYag9VPps2LDhoYcecrlcHbzpjALuvvvuq6+v79u378WLF5uamgoKCkpKSnbu3Hn69OnS0tK8vLy6ujpVVV0uV2Vl5Zw5c6ZMmcIY+/DDDx944AG6ctGpU6c5c+bYbLYnn3zy+eefj0ajOTk527dvP3/+vNvtDofDdO7k008//frrrz0eT1lZ2YcfflhbW8sYi0Qi06ZN83g8NpvN5XLRFKKO35cgP+ZRA/bv319SUlJeXr59+/arV6/27NlTVdX6+vqHH354zpw5J0+ePHPmzPHjxyORyDPPPDN+/HjO+dixYyORyIgRI1555ZWPP/548+bNR48e/d3vfrd8+XKXy0UFB2tN7Jtvvmmz2b7//e/TSPXuu+/SR2NtDYf8tA9dB2hqatqzZ88//vEPxlg8Huece71eSsW4ceOum41278VycnLq6+sPHDjQt2/fRCIxe/bsN95444knnkiTz0hWd/pyfwehe+hqa2t79OjR2NgoOna6QzweF0KsWrUqOzu7d+/e3bp1Y4x98803Qohly5b94Ac/oJdVVFTQOFheXj548GBaGAwGfT7f8ePHjX9u2bLlhRdemDdvnnGarU+fPvTTvXv3ZmdnCyFSF153tR2Mtrbf7+/UqdOmTZvWr1//6KOPUqKysrI455s2bbKkYTfi9XptNhsN7vn5+WvWrAkGg83Nzd27d+/I/NBfqa+vz83NzcvL+973vtezZ0/O+cqVK+kFf/vb3xYtWjRq1Ki33347Fot17txZCDF37txnn32WXhAKhbp169bc3EyNr6mpSSaTNTU1Xbt2FUKsWLFi4MCBdXV1LS0ts2fPXrx4sRAiNzc3GAzSr8+bN2/RokVCCLfb/c477zQ3N//nP/+hSVEdthEE8nPn0N8Nh8MPPPAATUtaunRpeXm5rusNDQ05OTl79+6lV/bp02fNmjVCiC5duggh1q5de8899zQ1NQkhvvrqq4KCAiHEihUrjCGlpaWlV69exh8Kh8PGSOVwOOgXrX3XyE+7GQNR9+7dGxoaaB6hEIK+EnTlypU3z8bt7sVycnLoKurx48fXr1+/adOm+++/f+HChaJ1Z9rBUvOzbt26ioqK6urqL774ora2NhwOp34rQ5rDGbj28/v9ZWVlmzZtYoydOnXql7/85eHDhxsbG2fNmsUYi0Qi06dPX7x4MWOMDkQoEy0tLbm5uY899hidRJk5c+bly5cfffRRt9tdUFDAOa+rq6M1RKPRsrKyJUuWMMaMhdddbUtLS1ZWllXboaWlZcCAAePHjz979mx5eXlTUxNrPehMJBIWzs9jrVMxgsEga53jVVpa+uc//7mgoIAxVlNT08HnDzRNs9vtW7du7dmzZ3V1dTKZVFX1xIkTc+bMmT9//rlz50pLS6dOnTpw4MDTp09PnjyZLq1Onz69qKiouLh4xIgRo0ePrq+vdzqdsViMDl455zQnmv6Eoigul+vQoUNvvvnmqlWrGGODBg0qKio6fPjwsWPH/vCHP/zmN7+hl9GB78yZM2tqamhinCWQHzPo9Ninn3765Zdfzp071+l0vvfee126dKGp6Pn5+WVlZdFo1O1204VyxhjdlJBIJBRFGTBgQCAQUFWVwhAMBmlIEULQBMorV67k5+erqjpjxozUkcrad50K+Wk3RVEURaHrznQGjua0tbS02Gy2G2WjHXuxpUuXOhyOqqqqiRMnPvnkkz6fr6CgwO12W/jeMwMuP7dfMpns1q1bYWFhYWHh9OnT6fFa3bt337VrF2MsKyursrKyvr6eMWaz2WKxmDH9k3MeiUTsdnswGDx8+PCFCxf+9Kc/TZ8+nXp4586dd+/ezRhzu90VFRWhUCh14Y1Wa91mYPR2gsHghAkTzp49u3btWrfbHYlE1LTBOadr0O+///4777xTUFDQ0tIihOj46ReKosRisQsXLrz88ssFBQWdO3fOy8ubNm3a0KFDz549u2vXrnvuuaewsNDn823cuNHv93fp0iUUCo0aNWr//v2zZ88eOHDgqFGjqP10vYN2AJzzgoICv9+/cuXK3NzcPn367NmzZ8yYMXR15r333svOzu7Xr9++ffuKiopisRhjbOfOnTNnzhwwYEC/fv169+5t4Y3MyI95K1asGDlyJJ2tnzx58tmzZ0+ePOn1egOBQEVFBe0pd+/eXVhYyBij4YLmXXz22WcNDQ01NTX/+te/6B3RzpvetaIoPXr0cLvdzc3NqSNVPB5Pn/eO/LRvoyUSCZ/P99RTTw0fPpwxRjccNDY2njlzxuv16rp+o2y0Yy8WCATcbvdf/vKXqVOn/vWvf33ttdfoIpJVbz9j4AycKbt27WpubhZCfP7553Q5f/ny5SdOnBg4cOCQIUN+//vfV1ZWMsbq6uqMy/xCCOPAy+v1jhs3bvDgwT/60Y927NiRSCQCgUB5eXlVVdWAAQOGDRu2Y8eOaDRqLLzJaq1FN1uFQqHCwsI1a9b89Kc/vXLlihAiTZrHGDty5AhNUqRRw6o76eiE2RtvvJGfny9a703hnB84cCAcDpeWltIzRPLy8qiR586d83g88Xh80qRJ4XCYMXb69OkdO3YwxjweD/2UMZaXl3fu3LmsrCxFUY4fP97Y2Jifn88Yi0QijDGHw3HtwilTphQXF2ua5vP5wuEwncG16nwA8tM+dPrtyy+/vHDhAt3vQstjsdi2bduGDh3q9/t//vOf//3vf6+uru7cuXN5eXlDQ4Pf729oaFi2bFlVVVVRUdHQoUM1Tbt06dK+fftouj2tWVXVUCj0zDPP5OXlbdy4ccKECakjlaXvuy3kpx1UVRVCrFu37uOPPx45cmS/fv2oaFu0aNGyZcuOHj16o2ywdu3FYrHYz372s0mTJrnd7v/+97+nTp0aPHiwpRsgE6TLUZRc6MhpxowZZWVldDfWwoULDx8+zDl3uVzV1dVPPPEEY+zYsWPTpk1jjD311FMzZsyg383KytqwYUN2djZjzG63v/vuu8XFxU6n89KlS6+++qrdbqc1jB07lobm1IU3Wm2aHA3TMyoDgUDv3r0ff/xxlgYNoyHG5/PR6Gk89tbCJimKkp+fT3Uba9332Gy23Nxcxlh+fj5Vb3TIS7tkv99fWlq6aNGi5557btiwYTt37szJyRFC5OTkGGfgPB6P8QAwqg4ZY1SWXXdhMpn0eDw+n0/TtOzsbMt3Jwz5aa/Lly9XVlZmZWW1tLTE43FN0zZu3FhcXBwKhbZu3frFF1/YbLaxY8dWV1c7nU6Xy7Vx40aXy+VyuU6ePDl69Gia9vSTn/xEVdXJkyeXlZUxxnRd93q9e/bsyc7OpqtsbUYqNQ3u7mwD+bkt1BK323369On58+fTmbOlS5dOnz5dVdVTp07dKBusXXsxTdNGjx799ttv2+32JUuWHD16dNiwYSwNPiOpWXDf2R1Btx/X1dX179+fHnYqrL6nnbRpRjtuk77uGzG/2juL2hMIBO67774FCxb07du3a9euXbt29fl82dnZdHxp3ExuOSEEnaswllibn2v/lrGE+qPxU5qpqijK/v37T5w4QbffFxUVUftT13Pd/7/5QuNvdXzfQX4scaPASAf5uXvuyM7lum/H8t2W4eb5oYcmpk+pfRNpdxQlkWQyaTz71JgSTrtDmlFuLKSXGR049elExotVVdV1nSZM3HzhjVabPmj2jNWt+BaN5la34lvXjgvGkjY/MgaRKVOm0GNEWMo4mPri6/7/zRfe6I9aDvm5LXS7XGoLhRDGEyuMG1xoGGGt40/qkMJaR5U2QwrNWOec0+W2NoNSB7/NW4f83C76oFnKzuV/ZqMdezFFUegP0WUrlpY7L7mkbydMf3QLz7XL6V6e1CVtYpo69qW+2Fj+Pxded7WQwa4dYQHItaMQlVysdfRoM27c+pBCT96/9sXpXL1BO6R+0OQu7cWu/UNgBvohgAQw8AEAQKo0Os8MAAAAALcCBRwAAACAZFDAAQAAAEgGBRwAAACAZFDAAQAAAEgGBRwAAACAZFDAAQAAAEgmE54DJ1pZ3ZDvENrambHNkZ+Oh/yAGcgPmJEx+ZG+gOOcOxwOKb62LJPQ1qbvHLS6LaYgP5ZAfsAM5AfMyJj8SF/AJRKJurq6RCJB3/nN0u+LHTMSfRlwc3Ozpmn0vb+0XLqNj/xYAvkBM5AfMCNj8iN3Aaeqqs1m+/GPf8w5p290pv9mzAnSdGZ8XbHD4aCvhZXuOBL5sRDyA2YgP2BGBuSHyVvA0db3eDwXLlwIBoPNzc11dXU1NTXffPNNXV2d3+8Ph8MtLS2aptFXgDP0B9OMcCuKoqqq0+nMzs7u1KmTx+OhJalHkGneE5Cfjof8WNtm2SE/1rZZdpmUH4PcBRznPD8/Pysry+Vy0dZPJpM2m83pdKZ2AET/DuKcp3YAn8/ncrkcDgcdTcpyOhr5sQryA2YgP2BGZuTHIGsBRzjniURC0zTqDHa73eVyZWVlaZqmqmo8Hqcf4R6fO4W3UlXV4XC43e7s7GyPx+N2u6kPyHUiGvnpYMgPmIH8gBkZlh8mewHHGFMUxWaz0Yfh8XgSiQTn3OVyRaNRTdN0XTdOQcOdQttcVVXqAD6fz+PxuFwuu92eegQjBeSn4yE/YAbyA2ZkUn7kLuCMatput7vdbk3TGGN2u93j8dDhi67rOHa54zjn1AGMcYcOYux2u6qqEh3BID+WQH7ADOQHzMiY/LAMKOComqYOwBhTVdXlchnpxwSCu8HY7NQHXC6X2+2mDtBmGkGaQ34sgfyAGcgPmJEx+WFSF3DGPFDqAPSp2O12mkOA9N9VqX2AuoExD5RLchcP8mMh5AfMQH7AjAzID5G4gGMpW5m2O91dkmzFWr+lxNI2ZiDjJLPSKvUWHolOQSM/lkB+wAzkB8zImPwwxrjs+TCeeZj6FETcudMB+P8v9f4diToA8mMV5AfMQH7AjMzIj/QFHEntBgzPPOxARuKli34q5McqyA+YgfyAGbLnJ0MKOHa90GfMW0tP12ZduvSnQn46GPIDZiA/YEZm5CdzCrg2MvV9pRUZE3+LkJ8OgPyAGcgPmJEB+cnYAg4AAAAgUylWNwAAAAAAbg8KOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJoIADAAAAkAwKOAAAAADJ/B/eW/3UOTf4qwAAAABJRU5ErkJggg==\" />"
 
@@ -47865,3 +47981,102 @@ msgstr "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.
 #~ "<img alt = \"icono\" src=\"../_static/lecturas/iconaAccio.png\" /> y del menú que \n"
 #~ "aparece seleccionamos la opción\n"
 #~ "<em>Dividir línea de movimiento</em>."
+
+#~ msgid "<a href=\"generacio_incidencies/\">Generació d'incidencies</a>"
+#~ msgstr "<a href=\"generacio_incidencies/\">Generación de incidencias</a>"
+
+#~ msgid ""
+#~ "Aquest mòdul permet la generació dels formularis de la Resolució 4131 relatius a l’inventari\n"
+#~ "de les instal·lacions en format TXT."
+#~ msgstr ""
+#~ "Este módulo permite la generación de los formularios de la Resolución 4131 relativos al inventario\n"
+#~ " de las instalaciones en formato TXT."
+
+#~ msgid "El mòdul permet generar 8 fitxers .txt corresponents als NODES descrits a la resolució 4131."
+#~ msgstr "El módulo permite generar 8 ficheros .txt correspondientes a los NODOS descritos en la resolución 4131."
+
+#~ msgid ""
+#~ "A totes les fitxes s'ha inclós el camp <code>CNMC Tipus Instal·lació</code> i el camp \n"
+#~ "<code>Bloquejar CNMC Tipus Instal·lació</code>. Amb\n"
+#~ "aquest camp es poden intorduïr els camps \n"
+#~ "<strong>TI-XXX</strong> que es defineixen a la \n"
+#~ "<em>Taula 3</em> de la resolució 4131. Si es\n"
+#~ "marca la variable de bloqueig, cap automatisme de càrrega o modificació automàtica del camp \n"
+#~ "<code>CNMC Tipus Instal·lació</code>\n"
+#~ "modificarà el valor actual."
+#~ msgstr ""
+#~ "A todas las fichas se ha incluido el campo <code>CNMC Tipo Instalación </code> y el campo \n"
+#~ "<code>Bloquear CNMC Tipo Instalación</code>. Con\n"
+#~ "este campo se pueden introducir los campos \n"
+#~ "<strong>TI-XXX</strong> que se definen a la \n"
+#~ "<em>Tabla 3</em> de la resolución 4131. Si se\n"
+#~ "marca la variable de bloqueo, ningún automatismo de carga o modificación automática del campo \n"
+#~ "<code>CNMC Tipo Instalación</code>\n"
+#~ "modificará el valor actual."
+
+#~ msgid ""
+#~ "Els informes de Maquines i condensadors s'han d'unificar en un sol fitxer. S'han separat en dos per facilitar-ne la\n"
+#~ "seva traçabilitat"
+#~ msgstr "Los informes de Máquinas y condensadores se deben unificar en un solo fichero. Se han separado en dos para facilitar la trazabilidad."
+
+#~ msgid ""
+#~ "Camps <strong>CALCULATS</strong>: En aquest cas el valor no existeix en un camp de la BD i es calculen els camps de la 4131\n"
+#~ "a partir de valors de camps de la BD i càlculs addicionals."
+#~ msgstr ""
+#~ "Campos <strong>CALCULADOS</strong>: En este caso el valor no existe en un campo de la BD y se calculan los campos de la 4131\n"
+#~ "a partir de valores de campos de la BD y cálculos adicionales."
+
+#~ msgid "<strong>Data acta posada en marxa</strong>: Aquesta data correspondria amb la data en que es presenta a industria la legalització de la línia BT."
+#~ msgstr "<strong>Fecha de puesta en marcha</strong>: Esta fecha correspondería con la fecha en la que se presenta a industria la legalización de la línea BT."
+
+#~ msgid ""
+#~ "El tipus de posició d'intemperie serà assimilable a la convencional i el tipus interior serà assimilable a la\n"
+#~ "posició blindada."
+#~ msgstr ""
+#~ "El tipo de posición de intemperie será asimilable a la convencional y el tipo interior será asimilable a la\n"
+#~ "posición blindada."
+
+#~ msgid "NODE: CENTROS DE TRANSFORMACIÓN"
+#~ msgstr "NODO: CENTROS DE TRANSFORMACIÓN"
+
+#~ msgid ""
+#~ "<strong>Tensió màxima de disseny</strong>: És la tensió per la que està dissenyat el tram de línia (V). Aquest camp permet\n"
+#~ "  classificar els trams de línia AT en funció de la tensió màxima per la que ha estat dissenyat i no per latensió\n"
+#~ "  a la que està treballant actualment."
+#~ msgstr ""
+#~ "<strong>Tensión máxima de diseño</strong>: Es la tensión por la que está diseñado el tramo de línea (V). Este campo permite\n"
+#~ " clasificar los tramos de línea AT en función de la tensión máxima para la que ha sido diseñado y no por la tensión\n"
+#~ " a la que está trabajando actualmente."
+
+#~ msgid "<strong>De L&#237;nia AT</strong>"
+#~ msgstr "<strong>De Línea AT</strong>"
+
+#~ msgid ""
+#~ "VALOR FUNCIÓ DEL CAMP <strong>INTESITAT M&#192;XIMA</strong> DE LA FITXA DEL CONDUCTOR ASSOCIAT AL TRAMB_BT I LA TENSI&#211; DEL TRAM AL CAMP \n"
+#~ "<strong>VOLTATGE</strong>"
+#~ msgstr ""
+#~ "VALOR FUNCIÓN DEL CAMPO <strong>INTENSIDAD MÁXIMA </strong> DE LA FICHA DEL CONDUCTOR ASOCIADO AL TRAMO_BT Y LA TENSIÓN DEL TRAMO AL CAMPO\n"
+#~ "<strong>VOLTAJE</strong>"
+
+#~ msgid ""
+#~ "DESCRIPCIO DE LA SUBESTACIÓ A LA QUE PERTANY. SI NO INSTAL·LAT O RESERVA, POSA <code>ALMACEN</code> . SI INSTAL&#183;LAT EN CT (RESERVA O TERCER), AFEGEIX SUFIX \n"
+#~ "<code>-CT</code>"
+#~ msgstr ""
+#~ "DESCRIPCIÓN DE LA SUBESTACIÓN A LA QUE PERTENECE. SI NO INSTALADO O RESERVA, PONE <code>ALMACEN</code>. SI INSTALADO EN CT (RESERVA O TERCERO), AÑADE SUFIJO\n"
+#~ "<code>CT</code>"
+
+#~ msgid ""
+#~ "\n"
+#~ "<li>CINI</li>\n"
+#~ msgstr ""
+#~ "\n"
+#~ "<li>CINI</li>\n"
+
+#~ msgid ""
+#~ "Per tal que el ERP pugui fer el calcul del camp estat de la 4131 del any 2017 \n"
+#~ "s'han de carregar els fitxers presentat de la 4131 del 2016. El fromat dels \n"
+#~ "fitxers que s'han de carregar es format ZIP en le cual a l'arrel del fitxer hi \n"
+#~ "hauran els 8 fitxers entregats."
+#~ msgstr ""
+#~ "Para que el ERP pueda calcular el campo estado de la 4131 del año 2017 se han de cargar los ficheros persentados en la 4771.\n"
+#~ "El formato de este fichero que se tiene que cargar es ZIP en la raiz del cual deben haber los 8 ficheros entregados."
