@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-05-19 14:58+0200\n"
-"PO-Revision-Date: 2017-05-19 15:18+0200\n"
+"POT-Creation-Date: 2017-05-23 09:19+0200\n"
+"PO-Revision-Date: 2017-05-23 09:21+0200\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -13023,14 +13023,17 @@ msgstr "<a href=\"../resoluciones/circular_1-2005/#circular-12005\">Circular 1/2
 msgid "<a href=\"../resoluciones/circular_4-2014/#circular-42014\">Circular 4/2014</a>"
 msgstr "<a href=\"../resoluciones/circular_4-2014/#circular-42014\">Circular 4/2014</a>"
 
-msgid "<a href=\"../resoluciones/circular_4-2015#circular-42015\">Circular 4/2015</a>"
-msgstr "<a href=\"../resoluciones/circular_4-2015#circular-42015\">Circular 4/2015</a>"
+msgid "<a href=\"../resoluciones/circular_4-2015/#circular-42015\">Circular 4/2015</a>"
+msgstr "<a href=\"../resoluciones/circular_4-2015/#circular-42015\">Circular 4/2015</a>"
 
-msgid "<a href=\"../resoluciones/circular_2-2016#generacio-de-informes-sobre-reclamacions-de-consumidors\">Circular 2/2016</a>"
-msgstr "<a href=\"../resoluciones/circular_2-2016#generacion-de-informes-sobre-reclamaciones-de-consumidores\">Circular 2/2016</a>"
+msgid "<a href=\"../resoluciones/circular_2-2016/#generacio-de-informes-sobre-reclamacions-de-consumidors\">Circular 2/2016</a>"
+msgstr "<a href=\"../resoluciones/circular_2-2016/#generacion-de-informes-sobre-reclamaciones-de-consumidores\">Circular 2/2016</a>"
 
 msgid "<a href=\"../resoluciones/4666/#inventari-4666\">Inventari 4666</a>"
 msgstr "<a href=\"../resoluciones/4666/#inventari-4666\">Inventario 4666</a>"
+
+msgid "<a href=\"../resoluciones/4667/\">Plans d'inversió 4667</a>"
+msgstr "<a href=\"../resoluciones/4667/\">Planes de Inversión 4667</a>"
 
 msgid "Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per distribuïdora"
 msgstr "Módulo para generar el archivo CSV según CNMC INF / DE / 0066/44 por distribuidora"

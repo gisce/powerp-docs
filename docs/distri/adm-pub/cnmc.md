@@ -5,9 +5,10 @@ Continguts:
 * [INF/DE/0066/44](#modul-per-generar-el-fixer-csv-segons-cnmc-infde006644-per-distribuidora)
 * [Circular 1/2005](resoluciones/circular_1-2005.md#circular-12005)
 * [Circular 4/2014](resoluciones/circular_4-2014.md#circular-42014)
-* [Circular 4/2015](resoluciones/circular_4-2015#circular-42015)
-* [Circular 2/2016](resoluciones/circular_2-2016#generacio-de-informes-sobre-reclamacions-de-consumidors)
+* [Circular 4/2015](resoluciones/circular_4-2015.md#circular-42015)
+* [Circular 2/2016](resoluciones/circular_2-2016.md#generacio-de-informes-sobre-reclamacions-de-consumidors)
 * [Inventari 4666](resoluciones/4666.md#inventari-4666)
+* [Plans d'inversió 4667](resoluciones/4667.md)
 
 
 ## Mòdul per generar el fixer CSV segons CNMC INF/DE/0066/44 per distribuïdora
