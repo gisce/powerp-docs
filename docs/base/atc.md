@@ -52,6 +52,108 @@ requerida per la CNMC:
 
 
 
+## Guia d'Atenció al Client
+
+El funcionament del procés d'atenció al client en el supòsit en què un client
+va a fer una reclamació a la comercialitzadora, des que s'obre fins que es
+tanca és el següent:
+
+
+ * Arriba una reclamació per algun canal: un client truca per telèfon, envia un
+ mail, ve a l'oficina, etc.
+
+
+ * Es busca la pòlissa del client en qüestió i s'utilitza l'assistent per obrir
+ un cas de ATC: pitjar el botó "Generar cas Atenció al Client"
+
+ ![](_static/atc/guia_atc1.png)
+
+
+ * Automàticament s'omple la descripció (que es pot canviar), la data (serà la
+ del dia en què es generi) i el canal. Per defecte el canal és "Directe", és a
+ dir, que el client ha anat a l'oficina. S'ha d'escollir el canal correcte
+ d'entre totes les opcions (telèfon, mail, web, etc.). També s'ha d'omplir el
+ subtipus al qual pertany la reclamació d'entre tots els definits segons la
+ circular 2/2016. S'ha de determinar segons la informació proporcionada pel
+ client a quin pertany. Si en aquell moment se n'escull un que acaba sent
+ incorrecte, sempre es pot canviar més endavant (a la pestanya "Extra Info").
+ Pitjant el botó "Crear" es generarà un cas de ATC amb la informació introduïda.
+
+ ![](_static/atc/guia_atc2.png)
+
+
+ * El següent pas és emplenar la resta d'informació del cas:
+     * A la pestanya "General":
+         * Reclamant: en l'exemple actual seria el client, però podrien ser
+         altres com una asseguradora, una persona no titular del CUPS, etc.
+         * Imputació de temps: es tracte de l'agent que tingui accions pendents
+         i que per tant se l'hi imputarà el temps. En el supòsit actual seria
+         la comercialitzadora. Aquest camp és un dels més importants, ja que
+         mesura al llarg del procés quant de temps ha trigat cada agent a
+         realitzar les seves accions, informació que s'inclourà en la generació
+         d'informes de la circular 2/2016. S'ha d'anar canviant al llarg del
+         procés perquè el temps s'imputi correctament.
+         * Descripció: en aquest camp s'escriu una breu descripció sobre la
+         reclamació. És un camp totalment informatiu en què es va explicant
+         l'estat en què es troba la reclamació.
+
+     ![](_static/atc/guia_atc3.png)
+
+     * A la pestanya "Extra Info":
+         * Numero total afectats: número total de punts de suministre afectats.
+         Per defecte és 1.
+
+     ![](_static/atc/guia_atc4.png)
+
+
+ * Un cop emplenada tota la informació, ja es pot obrir el cas. És molt
+ important que el camp "Imputació de temps" sigui correcte abans d'obrir el
+ cas perquè quedarà historitzat. Cada cop que es canvia d'estat en un cas
+ (de "Borrador" a "Obert", "Pendent", "Tancat", ...) es guardarà al històric
+ a quin agent se l'hi imputarà el temps gastat en aquell estat. En la situació
+ actual, tot el temps que el cas estigui en estat "Obert" fins que es passi a
+ un estat diferent s'imputaria a la comercialitzadora.
+
+ ![](_static/atc/guia_atc5.png)
+
+
+ * En aquest punt poden ocórrer diferents situacions depenguen de com es
+ resolgui la reclamació. Alguns exemples:
+
+     * La comercialitzadora pot resoldre la reclamació sense necessitar accions
+     de cap altre agent. Es selecciona el resultat de la reclamació que
+     pertoqui ("Procedent", "Improcedent", "No Gestionable") i es passa a estat
+     tancat.
+
+     * La comercialitzadora necessita que un altre agent realitzi accions.
+     Per exemple, necessita més informació del client i se l'hi envia un mail
+     demanant-la. En aquest cas es seleccionaria com a "Imputació de Temps" el
+     "Client" i es passaria a estat "Pendent" fins que el client proporcioni
+     la informació demanada. Un cop arribés la informació es canviaria la
+     "Imputació de Temps" un altre cop a "Comercialitzadora" i es passaria
+     a estat "Obert" per continuar amb la reclamació. Un altre exemple seria
+     el cas en què es requereixen accions per part de la distribuïdora, això
+     implicaria l'inici d'un cas de gestió ATR R1. El procediment seria el
+     mateix: passar "Imputació de Temps" a "Distribuïdora" i deixar l'estat
+     a "Pendent". En paral·lel es gestionaria el R1 i un cop es tanqués es
+     passaria "Imputació de Temps" a "Comercialitzadora" i es tornaria a obrir
+     el cas per continuar. És recomanable a cada pas anar escrivint al camp
+     "Descripció" l'estat de la reclamació per poder fer un seguiment més fàcil.
+
+ * L'últim pas sempre és passar el cas a "Tancat". Abans de fer això s'ha
+ d'emplenar correctament el camp "Resultat" que indica com ha acabat la
+ reclamació. També és important que el camp "subtipus" sigui el correcte,
+ ja que un cop tancat el cas no es podrà tornar a canviar.
+
+
+En el supòsit en què ens trobéssim en una distribuïdora, el procés és
+exactament el mateix. L'única diferència és que les reclamacions que es rebin
+de les comercialitzadores no es gestionen a través d'aquest mòdul, sinó que
+vindran directament com a casos R1 de gestió ATR. A efectes pràctics no implica
+cap diferència, tot es gestiona de la mateixa manera, senzillament hi haurà
+(o hi hauria d'haver) menys casos de ATC.    
+
+
 ## Generació de Informes
 
 La principal funcionalitat d'aquest mòdul és la de poder generar de forma
