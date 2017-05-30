@@ -37,4 +37,15 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
     ![2](_static/dialeg.png)
 
 
+# Actualitar el plugin de Giscegis
 
+Quan hi hagi una actualitzacio del plugin del Qgis aquest ens informara.
+    ![1](_static/qgis_update.png)
+    
+
+Per actualitzar el plugin hem de:
+
+1. Clickar sobre l'enllaç
+2. Selecionar el plugin de Giscegis
+3. Premer actualtizar tot
+    ![1](_static/update_2.png)
