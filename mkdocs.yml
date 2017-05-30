@@ -26,6 +26,8 @@ pages:
     - Gestió de comptadors: base/contadores.md
     - Equips de telecomunicació: base/telecom.md
     - Revisions internes: base/revisiones.md
+    - Administració Pública:
+        - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inici: distri/index.md
     - Telegestió: distri/telegestion.md
