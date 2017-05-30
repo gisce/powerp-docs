@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-05-25 15:33+0200\n"
-"PO-Revision-Date: 2017-05-25 15:36+0100\n"
+"POT-Creation-Date: 2017-05-30 16:22+0200\n"
+"PO-Revision-Date: 2017-05-30 16:31+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -27302,6 +27302,32 @@ msgstr ""
 "Poner el nombre del nuevo servidor y pulsar ok\n"
 "    <img alt=\"2\" src=\"../_static/dialeg.png\" />"
 
+msgid "Actualitar el plugin de Giscegis"
+msgstr "Actualtizar el plugin de Giscegis"
+
+msgid ""
+"Quan hi hagi una actualitzacio del plugin del Qgis aquest ens informara.\n"
+"    <img alt=\"1\" src=\"../_static/qgis_update.png\" />"
+msgstr ""
+"Cuando haya una nueva versión del plugin de Qgis este nos informara.\n"
+"    <img alt=\"1\" src=\"../_static/qgis_update.png\" />"
+
+msgid "Per actualitzar el plugin hem de:"
+msgstr "Para actualitzar el plugin tenemos que:"
+
+msgid "Clickar sobre l'enllaç"
+msgstr "Pulsar encima del enlace"
+
+msgid "Selecionar el plugin de Giscegis"
+msgstr "Selecionar el plugin de Giscegis"
+
+msgid ""
+"Premer actualtizar tot\n"
+"    <img alt=\"1\" src=\"../_static/update_2.png\" />"
+msgstr ""
+"Pulsar actualitzar todo\n"
+"    <img alt=\"1\" src=\"../_static/update_2.png\" />"
+
 msgid "Subestacións"
 msgstr "Subestaciones"
 
@@ -43096,6 +43122,9 @@ msgid ""
 msgstr ""
 "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png"
 "\" />"
+
+msgid "Actualitzar el plugin de Giscegis"
+msgstr "Actualizar el plugin de Giscegis"
 
 #~ msgid ""
 #~ "\n"
