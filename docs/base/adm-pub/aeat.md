@@ -20,8 +20,8 @@ blockdiag {
     A [label = "ERP", color = none];
     B [label = "Proxy", style = dashed, color = none];
     C [label = "AEAT", color = none];
-    A <-> B [label = "Certificat local"];
-    B <-> C [label = "Certificat empresa"];
+    A <-> B [label = "Certificado local"];
+    B <-> C [label = "Certificado empresa"];
 }
 
 ### Opció 2: Connexió directe
@@ -34,5 +34,5 @@ blockdiag {
     node_width = 50;
     A [label = "ERP", color = none];
     B [label = "AEAT", color = none];
-    A <-> B [label = "Certificat empresa"];
+    A <-> B [label = "Certificado empresa"];
 }
