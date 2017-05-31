@@ -1,7 +1,5 @@
 # Subministrament Immediat d'Informació (SII)
 
-## Introducció
-
 En els següents enllaços podrem trobar la informació referent al SII de la
 pàgina de l'AEAT (Agència Estatal d'Administració Tributària):
 
