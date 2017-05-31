@@ -13,10 +13,13 @@ La informació referent al SII de la pàgina de l'AEAT (Agència Estatal d'Admin
 
 ### Opció 1: Utilitzant proxy
 
-Aquesta opció ens permet utilitzar un servidor intermediari, el qual guardarà el certificat digital de l'empresa per l'AEAT. D'aquesta manera limitem
-l'accés al certificat a únicament les persones amb accés a aquest servidor i evitem que l'ERP hi tingui accés directe, afegint així una capa de seguretat extra.
+Aquesta opció ens permet utilitzar un servidor intermediari, el qual guardarà el
+certificat digital de l'empresa per l'AEAT. D'aquesta manera limitem
+l'accés al certificat a únicament les persones amb accés a aquest servidor i
+evitem que l'ERP hi tingui accés directe, afegint així una capa de seguretat extra.
 
-L'ERP farà peticions al servidor utilitzant un certificat local/client i aquest les reenviarà als serveis de l'AEAT afegint el certificat digital de l'empresa. 
+L'ERP farà peticions al servidor utilitzant un certificat local/client i aquest
+les reenviarà als serveis de l'AEAT afegint el certificat digital de l'empresa.
 L'esquema de connexió serà el següent:
 
 blockdiag {
@@ -31,8 +34,9 @@ blockdiag {
 
 ### Opció 2: Connexió directe
 
-Aquesta opció ens estalvia la necessitat d'utilitzar un servidor intermediari, però permet que qualsevol usuari amb permisos d'administrador en el
-servidor de l'ERP tingui accés directe al certificat oficial de l'empresa per l'AEAT.
+Aquesta opció ens estalvia la necessitat d'utilitzar un servidor intermediari,
+però permet que qualsevol usuari amb permisos d'administrador en el servidor de
+l'ERP tingui accés directe al certificat oficial de l'empresa per l'AEAT.
 
 blockdiag {
     span_width = 150;
