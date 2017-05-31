@@ -1,7 +1,12 @@
-# Subministrament Immediat d'Informació
+# Subministrament Immediat d'Informació (SII)
 
 ## Introducció
 
+La informació referent al SII de la pàgina de l'AEAT (Agència Estatal d'Administració Tributària )
+
+- [Informació general](http://www.agenciatributaria.es/AEAT.internet/G417/informacion.shtml)
+- [Normativa](http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Modelos__Procedimientos_y_Servicios/Ayuda_P_G417____IVA__Llevanza_de_libros_registro__SII_/Informacion_general/Nuevo_sistema_de_gestion_del_IVA_basado_en_el_Suministro_Inmediato_de_Informacion.shtml) referent
+- [Ajuda tècnica](http://www.agenciatributaria.es/AEAT.internet/G417/tecnica.shtml) per a la implantació del sistema
 
 ## Possibles configuracions
 
