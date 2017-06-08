@@ -148,12 +148,12 @@ tanca el cas, és el següent:
            canviaria la "Imputació de Temps" un altre cop a "Comercialitzadora"
            i es passaria a estat "Obert" per continuar amb la reclamació.
          * Es requereixen accions per part de la distribuïdora. Això implicaria
-         l'inici d'un cas de gestió ATR R1. El procediment seria el mateix:
-         passar "Imputació de Temps" a "Distribuïdora" i deixar l'estat
-         a "Pendent". En paral·lel es gestionaria el R1 i un cop es tanqués es
-         passaria "Imputació de Temps" a "Comercialitzadora" i es tornaria a obrir
-         el cas per continuar. És recomanable a cada pas anar escrivint al camp
-         "Descripció" l'estat de la reclamació per poder fer un seguiment més fàcil.
+           l'inici d'un cas de gestió ATR R1. El procediment seria el mateix:
+           passar "Imputació de Temps" a "Distribuïdora" i deixar l'estat
+           a "Pendent". En paral·lel es gestionaria el R1 i un cop es tanqués es
+           passaria "Imputació de Temps" a "Comercialitzadora" i es tornaria a obrir
+           el cas per continuar. És recomanable a cada pas anar escrivint al camp
+           "Descripció" l'estat de la reclamació per poder fer un seguiment més fàcil.
 
  * L'últim pas sempre és passar el cas a "Tancat". Abans de fer això s'ha
  d'emplenar correctament el camp "Resultat" que indica com ha acabat la
