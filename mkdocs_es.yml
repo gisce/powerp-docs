@@ -29,6 +29,8 @@ pages:
     - Gestión de contadores: base/contadores.md
     - Equipos de telecomunicación: base/telecom.md
     - Revisiones internas: base/revisiones.md
+    - Administración Pública:
+        - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Telegestión: distri/telegestion.md
