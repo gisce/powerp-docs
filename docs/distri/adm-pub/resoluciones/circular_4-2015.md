@@ -620,3 +620,38 @@ Exemple:
 
 Aquest fitxer contindrà el mateix numero de línies com clients té la
 distribuidora.
+
+### Casos habituals
+
+En aquest apartat trobareu informació sobre els casos o motius més habituals
+pels quals no apareixen certs elements als formularis.
+
+!!! note
+    Les caselles que no tenen cap data APM, es considera que son **més petites
+    o iguals** a l'últim dia de l'any informat.
+
+Actiu | Data APM   | Baixa | Data de baixa | Apareix | Observacions
+:-----|:-----------|:------|:--------------|:--------|:--------------------------
+   ✓  |            |   ✗   |               |    ✓    |
+   ✗  |            |   ✓   |               |    ✗    |
+   ✓  |  2017      |   ✗   |               |    ✗    | L'element s'ha donat d'alta al 2017.
+   ✗  |            |   ✓   |   2017        |    ✓    | Element donat de baixa al 2017. Els nusos es mostren com 1234_0, 1234_1. Al F9 surten sense coordenades.
+
+**Altres casos:**
+
+Aquest casos són molt poc probables que es puguin ocasionar, ja que implica
+incongruències a les dades. S'haurien de corregir per tal de poder generar
+correctament els fitxers.
+
+Actiu | Data APM   | Baixa | Data de baixa | Apareix | Observacions
+:-----|:-----------|:------|:--------------|:--------|:--------------------------
+   ✗  |            |   ✗   |   2016        |    ✗    |
+   ✗  |            |   ✗   |   2017        |    ✓    |
+   ✗  |            |   ✗   |   Buit        |    ✗    |
+   ✗  |            |   ✗   |   2000        |    ✗    |
+   ✓  |            |   ✓   |   2017        |    ✓    |
+   ✓  |            |   ✓   |   2016        |    ✗    |
+   ✓  |            |   ✓   |   Buit        |    ✓    |
+   ✓  |            |   ✗   |   2016        |    ✗    | Cal revisar la data de baixa de l'element i esborrar-la.
+   ✓  |            |   ✗   |   2017        |    ✓    |
+   ✓  |   Buit     |   ✗   |               |    ✓    | Cal revisar la data APM de **tots** els elements, ja que si se'n crea un durant el 2017, apareixerà al fitxer si no té data APM.
