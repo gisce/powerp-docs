@@ -130,7 +130,33 @@ com a periode d'energia:
 * Les dades dels consumidors s'extreuen de les modificacions contractuals, on
   la data especificada a la secció 'trimestre' es troba entre les data inicial i
   data final de la modificació contractual.
-* L'energia s'extreu de les factures, amb data de factura entre les data inicial
-  i data final de la secció 'periode d'energia'.
+* L'energia s'extreu de les factures, amb data inicial i final entre les data inicial
+  i data final respectivament de la secció 'periode d'energia'.
 * Ambdues es relacionen i s'agrupen per diferents comercialitzadores, tipus de
   punt de mesura, tarifa d'accés i provincia.
+
+#### Tarifes compatibles
+
+Només s'informarà de l'energia facturada d'aquelles factures que tinguin alguna de les
+següents tarifes.
+
+Tarifa  | Codi
+:-------|:-----
+2.0A    | 1
+2.0DHA  | 2
+3.0A    | 3
+3.0A LB | 3
+3.1A    | 4
+3.1A LB | 4
+6.1A    | 5
+6.1B    | 17
+6.2     | 6
+6.3     | 7
+6.4     | 8
+2.1A    | 10
+2.1DHA  | 11
+2.0DHS  | 12
+2.1DHS  | 13
+
+Qualsevol altre tarifa, com per exemple tarifes de generació, seràn ignorades i no
+s'informarà l'energia consumida d'aquestes factures.
