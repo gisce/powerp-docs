@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-06-09 13:29+0200\n"
-"PO-Revision-Date: 2017-06-09 13:36+0100\n"
+"POT-Creation-Date: 2017-06-12 09:54+0200\n"
+"PO-Revision-Date: 2017-06-12 09:58+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -22566,13 +22566,13 @@ msgstr ""
 " fecha final de la modificación contractual."
 
 msgid ""
-"L'energia s'extreu de les factures, amb data de factura entre les data "
+"L'energia s'extreu de les factures, amb data inicial i final entre les data "
 "inicial\n"
-"  i data final de la secció 'periode d'energia'."
+"  i data final respectivament de la secció 'periode d'energia'."
 msgstr ""
-"La energía se extrae de las facturas, con fecha de factura entre las fechas "
-"inicial\n"
-"y final de la sección 'periodo de energía'."
+"La energía se extrae de las facturas, con fecha inicial y final entre las "
+"fechas inicial\n"
+" y final respectivamente de la sección \"periodo de energía\"."
 
 msgid ""
 "Ambdues es relacionen i s'agrupen per diferents comercialitzadores, tipus "
@@ -22581,6 +22581,57 @@ msgid ""
 msgstr ""
 "Ambas se relacionan y se agrupan por distintas comercializadoras, tipo de "
 "punto de medida, tarifa de acceso y provincia."
+
+msgid "Tarifes compatibles"
+msgstr "Tarifas compatibles"
+
+msgid ""
+"Només s'informarà de l'energia facturada d'aquelles factures que tinguin "
+"alguna de les\n"
+"següents tarifes."
+msgstr ""
+"Sólo se informará de la energía facturada de aquellas facturas que tengan "
+"alguna de las\n"
+"siguientes tarifas."
+
+msgid "Tarifa"
+msgstr "Tarifa"
+
+msgid "Codi"
+msgstr "Codigo"
+
+msgid "2.0A"
+msgstr "2.0A"
+
+msgid "2.0DHA"
+msgstr "2.0DHA"
+
+msgid "3.0A"
+msgstr "3.0A"
+
+msgid "3.0A LB"
+msgstr "3.0A LB"
+
+msgid "2.1A"
+msgstr "2.1A"
+
+msgid "2.1DHA"
+msgstr "2.1DHA"
+
+msgid "2.0DHS"
+msgstr "2.0DHS"
+
+msgid "2.1DHS"
+msgstr "2.1DHS"
+
+msgid ""
+"Qualsevol altre tarifa, com per exemple tarifes de generació, seràn "
+"ignorades i no\n"
+"s'informarà l'energia consumida d'aquestes factures."
+msgstr ""
+"Cualquier otra tarifa, como por ejemplo tarifas de generación, serán "
+"ignoradas y no\n"
+"se informará la energía consumida de estas facturas."
 
 msgid "Circular 4/2014"
 msgstr "Circular 4/2014"
@@ -27962,9 +28013,6 @@ msgstr ""
 
 msgid "Linia AT"
 msgstr "Linea AT"
-
-msgid "Codi"
-msgstr "Codigo"
 
 msgid "Origen"
 msgstr "Origen"
@@ -40831,9 +40879,6 @@ msgstr "38"
 
 msgid "<strong>csv_polissa_tarifa</strong>"
 msgstr "<strong>csv_polissa_tarifa</strong>"
-
-msgid "Tarifa"
-msgstr "Tarifa"
 
 msgid "39"
 msgstr "39"
