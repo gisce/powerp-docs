@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-06-12 09:54+0200\n"
-"PO-Revision-Date: 2017-06-12 09:58+0100\n"
+"POT-Creation-Date: 2017-06-14 16:58+0200\n"
+"PO-Revision-Date: 2017-06-14 17:06+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -28388,6 +28388,40 @@ msgstr ""
 "Pulsar actualtizar todo\n"
 "     <img alt=\"1\" src=\"../_static/update_2.png\" />"
 
+msgid "Exportacio a PDF"
+msgstr "Exportación a PDF"
+
+msgid ""
+"Per exportar un planell des del Qgis ho podem fer mitjançant el icona "
+"d'impresio del plugin\n"
+"<img alt=\"\" src=\"../_static/qgis/print.png\" />"
+msgstr ""
+"Para exportar un plano des de Qgis lo podemos hacer mediante el icono de "
+"impresión del plugin\n"
+"<img alt=\"\" src=\"../_static/qgis/print.png\" />"
+
+msgid "Aquest ens obrira un menu que ens permet escollir:"
+msgstr "Este nos abrirá un menú que nos permite escoger:"
+
+msgid "El format de paper"
+msgstr "El formato del papel"
+
+msgid "La rotacio del mapa"
+msgstr "La rotación del mapa"
+
+msgid "El text del caixeti"
+msgstr "El texto del cajetin"
+
+msgid "<img alt=\"\" src=\"../_static/qgis/export_menu.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/qgis/export_menu.png\" />"
+
+msgid ""
+"Un cop escollides les opcions premem guardar i podrem gaurdar escollir on "
+"guardar el planell."
+msgstr ""
+"Una vez escogidas las opciones pulsamos guardar y podemos escoger donde "
+"guardar el plano."
+
 msgid "Subestacións"
 msgstr "Subestaciones"
 
@@ -44171,6 +44205,14 @@ msgstr ""
 "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png"
 "\" />"
 
+#, fuzzy
+msgid ""
+"Un cop escollides les opcions premem guardar i podrem escollir on guardar el "
+"planell."
+msgstr ""
+"Una vez escogidas las opciones pulsamos guardar y podemos escoger donde "
+"guardar el plano."
+
 #~ msgid ""
 #~ "<img src=\"data:image/png;base64,"
 #~ "iVBORw0KGgoAAAANSUhEUgAAA0AAAAB4CAIAAABUwAVIAAAZUUlEQVR4nO3de3BU5d0H8OfZc/"
@@ -52934,9 +52976,6 @@ msgstr ""
 #~ "<img alt=\"\" src=\"../_static/celles/add_producte_condensador.png\" />"
 #~ msgstr ""
 #~ "<img alt=\"\" src=\"../_static/celles/add_producte_condensador.png\" />"
-
-#~ msgid "<img alt=\"\" src=\"../_static/expedients/exp_menu.png\" />"
-#~ msgstr "<img alt=\"\" src=\"../_static/expedients/exp_menu.png\" />"
 
 #~ msgid "<img alt=\"\" src=\"../_static/expedients/exp_form.png\" />"
 #~ msgstr "<img alt=\"\" src=\"../_static/expedients/exp_form.png\" />"
