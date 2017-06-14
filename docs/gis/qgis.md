@@ -60,4 +60,6 @@ Aquest ens obrira un menu que ens permet escollir:
 * La rotacio del mapa
 * El text del caixeti
 
+![](_static/qgis/export_menu.png)
+
 Un cop escollides les opcions premem guardar i podrem gaurdar escollir on guardar el planell.
