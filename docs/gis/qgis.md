@@ -56,6 +56,7 @@ Per exportar un planell des del Qgis ho podem fer mitjançant el icona d'impresi
 ![](_static/qgis/print.png)
 
 Aquest ens obrira un menu que ens permet escollir:
+
 1. El format de paper
 2. La rotacio del mapa
 3. El text del caixeti
