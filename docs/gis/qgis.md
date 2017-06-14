@@ -23,6 +23,12 @@ Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
 7. Anar a la secció de "Tot" i buscar el plugin "TileLayer Plugin" i instal·lar-lo
 8. Buscar i instal·lar el plugin de "Giscegis"
 
+# Canviar escala
+El QGIS ens permet canviar l'escala del visor. Aixo ho podem fer mitjançant següent el cuadre de text de la part inferior
+
+![1](_static/qgis/scale.png)
+
+En aquest cuadre de text podem posar una escala concreta o be podem escollir una escala del desplegable
 
 # Configuració d'accés a Giscegis
 Per configurar l'accés al servidor de Giscegis s'han de fer els següents passos:
@@ -36,6 +42,8 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
 6. Posar el nom del nou servidor i premer ok
     ![2](_static/dialeg.png)
 
+    !!! note
+        El mapa s'exportara a la mateixa escala que hi ha al visor, per canviar la escala del visor veure el seguent [enllaç](#canviar-escala)
 
 # Actualitzar el plugin de Giscegis
 
