@@ -49,3 +49,15 @@ Per actualitzar el plugin hem de:
 2. Selecionar el plugin de Giscegis
 3. Premer actualtizar tot
     ![1](_static/update_2.png)
+
+# Exportacio a PDF
+
+Per exportar un planell des del Qgis ho podem fer mitjançant el icona d'impresio del plugin
+![](_static/qgis/print.png)
+
+Aquest ens obrira un menu que ens permet escollir:
+* El format de paper
+* La rotacio del mapa
+* El text del caixeti
+
+Un cop escollides les opcions premem guardar i podrem gaurdar escollir on guardar el planell.
