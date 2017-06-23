@@ -48,10 +48,6 @@ amb el caràcter ':', en aquest ordre:
   legals són: _“even”, “none”, “odd”, “mark”, “space”_.
 - **_stop_bits_**: bits de parada. És una cadena de caràcters i els possibles
   valors legals són: _“0”, “1”, “1.5”, “2”_.
-- **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
-  en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
-  de considerar que no es pot establir la connexió. Un valor típic i
-  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
 - **_direccion_de_enlace_**: Un enter.
 - **_direccion_del_punto_de_medida_**: Un enter.
 - **_contraseña_**: Un enter.
@@ -62,6 +58,10 @@ amb el caràcter ':', en aquest ordre:
     - Dades agregades cada 60 minuts, amb valors incrementals.
     - Dades agregades cada 15 minuts, amb valors absoluts.
     - Dades agregades cada 15 minuts, amb valors incrementals.
+- **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
+  en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
+  de considerar que no es pot establir la connexió. Un valor típic i
+  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
 
 Com es pot veure:
 
