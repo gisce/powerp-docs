@@ -51,6 +51,10 @@ amb el caràcter ':', en aquest ordre:
 - **_direccion_de_enlace_**: Un enter.
 - **_direccion_del_punto_de_medida_**: Un enter.
 - **_contraseña_**: Un enter.
+- **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
+  en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
+  de considerar que no es pot establir la connexió. Un valor típic i
+  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
 - **_tipo_de_curva_**: _Per sel·leccionar el tipus de corba que es desitja
   decarregar en l'apartat "Configuración" es pot sel·leccionar la corba a
   descarregar_:
@@ -58,10 +62,6 @@ amb el caràcter ':', en aquest ordre:
     - Dades agregades cada 60 minuts, amb valors incrementals.
     - Dades agregades cada 15 minuts, amb valors absoluts.
     - Dades agregades cada 15 minuts, amb valors incrementals.
-- **_timeout_**: temps d'espera. És un enter. Es tracta del valor límit,
-  en mil·lisegons, que GISCE-TPL esperarà a que el comptador respongui abans
-  de considerar que no es pot establir la connexió. Un valor típic i
-  raonable és _2000_, que correspon a 2000ms, és a dir, 2 segons.
 
 Com es pot veure:
 
