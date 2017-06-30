@@ -621,6 +621,41 @@ Exemple:
 Aquest fitxer contindrà el mateix numero de línies com clients té la
 distribuidora.
 
+### Casos habituals
+
+En aquest apartat trobareu informació sobre els casos o motius més habituals
+pels quals no apareixen certs elements als formularis.
+
+!!! note
+    Les caselles que no tenen cap data APM, es considera que son **més petites
+    o iguals** a l'últim dia de l'any informat.
+
+Actiu | Data APM   | Baixa | Data de baixa | Apareix | Observacions
+:-----|:-----------|:------|:--------------|:--------|:--------------------------
+   ✓  |            |   ✗   |               |    ✓    |
+   ✗  |            |   ✓   |               |    ✗    |
+   ✓  |  2017      |   ✗   |               |    ✗    | L'element s'ha donat d'alta al 2017.
+   ✗  |            |   ✓   |   2017        |    ✓    | Element donat de baixa al 2017. Els nusos es mostren com 1234_0, 1234_1. Al F9 surten sense coordenades.
+
+**Altres casos:**
+
+Aquest casos són molt poc probables que es puguin ocasionar, ja que implica
+incongruències a les dades. S'haurien de corregir per tal de poder generar
+correctament els fitxers.
+
+Actiu | Data APM   | Baixa | Data de baixa | Apareix | Observacions
+:-----|:-----------|:------|:--------------|:--------|:--------------------------
+   ✗  |            |   ✗   |   2016        |    ✗    |
+   ✗  |            |   ✗   |   2017        |    ✓    |
+   ✗  |            |   ✗   |   Buit        |    ✗    |
+   ✗  |            |   ✗   |   2000        |    ✗    |
+   ✓  |            |   ✓   |   2017        |    ✓    |
+   ✓  |            |   ✓   |   2016        |    ✗    |
+   ✓  |            |   ✓   |   Buit        |    ✓    |
+   ✓  |            |   ✗   |   2016        |    ✗    | Cal revisar la data de baixa de l'element i esborrar-la.
+   ✓  |            |   ✗   |   2017        |    ✓    |
+   ✓  |   Buit     |   ✗   |               |    ✓    | Cal revisar la data APM de **tots** els elements, ja que si se'n crea un durant el 2017, apareixerà al fitxer si no té data APM.
+
 ### Validació dels fitxers
 
 Aquest assistent ofereix la possibilitat d'analitzar els fitxers per trobar
@@ -629,25 +664,14 @@ errors i així poder corregir-los. Per fer-ho, cal fer click a la pestanya
 
 ![](../../_static/cnmc/4_2015/form_validador_informes.png)
 
-Durant el pas inicial, cal introduïr la ruta de la ubicació dels fitxers
-de la circular 4/2015 prèviament generats per aquest assistent.
+Durant el pas inicial, cal carregar un fitxer **.zip** amb els formularis
+que es desitgin validar.
 
-Per seleccionar la ruta, cal copiar el text superior de la barra de direccions
-de la finestra de l'explorador de fitxers de **Windows** de la carpeta que conté
-els fitxers:
+Un cop carregat cal fer click al botó "validar fitxers":
 
-![](../../_static/cnmc/4_2015/form_validador_ruta.png)
+![](../../_static/cnmc/4_2015/form_validador.png)
 
-Si el sistema operatiu es **Linux**, el procediment és el mateix:
+Un cop finalitzat el procés s'haurà generat un fitxer amb els resultats. Es pot
+descarregar des del propi assistent:
 
-![](../../_static/cnmc/4_2015/form_validador_ruta_linux.png)
-
-Un cop copiada la ruta, s'ha d'introduïr a l'assistent i fer click al botó
-"validar fitxers":
-
-![](../../_static/cnmc/4_2015/form_validador_ruta_2.png)
-
-Un cop finalitzat el procés s'haurà generat el fitxer "resultats.txt". Es pot
-trobar a la ruta especificada o bé es pot descarregar des del propi assistent:
-
-![](../../_static/cnmc/4_2015/form_validator_ruta_finish.png)
+![](../../_static/cnmc/4_2015/form_validador_finish.png)
