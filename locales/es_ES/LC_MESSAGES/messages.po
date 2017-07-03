@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-03 08:11+0200\n"
+"POT-Creation-Date: 2017-07-03 08:35+0200\n"
 "PO-Revision-Date: 2017-06-30 13:55+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
@@ -24797,9 +24797,6 @@ msgstr ""
 "si se crea uno durante el 2017, aparecerá en el fichero si no tiene fecha "
 "APM."
 
-msgid "<<<<<<< HEAD"
-msgstr ""
-
 msgid "Validació dels fitxers"
 msgstr "Validación de archivos"
 
@@ -24853,9 +24850,6 @@ msgid ""
 msgstr ""
 "<img alt=\"\" src=\"../../../_static/cnmc/4_2015/form_validador_finish.png"
 "\" />"
-
-msgid "origin/master"
-msgstr ""
 
 msgid "Generació de Informes sobre Reclamacions de Consumidors"
 msgstr "Generación de Informes sobre Reclamaciones de Consumidores"
