@@ -137,7 +137,7 @@ compleixin aquest format
     per descarregar els fitxers de totes les distribuïdores amb una sola
     configuració de proveïdor. Per exemple:
 
-    `P5D_()\d{4})_0888_(\d{8})`
+    `P5D_(\d{4})_0888_(\d{8})`
 
     En aquest cas es descarregaran tots els fitxers P5D de la nostra
     comercialitzadora (0888) independentment de la distribuidora, que sempre

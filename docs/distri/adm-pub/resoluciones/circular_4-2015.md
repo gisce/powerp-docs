@@ -675,3 +675,4 @@ Un cop finalitzat el procés s'haurà generat un fitxer amb els resultats. Es po
 descarregar des del propi assistent:
 
 ![](../../_static/cnmc/4_2015/form_validador_finish.png)
+

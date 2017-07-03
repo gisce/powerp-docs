@@ -26,6 +26,8 @@ pages:
     - Gestió de comptadors: base/contadores.md
     - Equips de telecomunicació: base/telecom.md
     - Revisions internes: base/revisiones.md
+    - Administració Pública:
+        - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inici: distri/index.md
     - Telegestió: distri/telegestion.md
@@ -49,7 +51,9 @@ pages:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
       - CNMC - Resolucions:
+        - 4131: distri/adm-pub/resoluciones/4131.md
         - 4666: distri/adm-pub/resoluciones/4666.md
+        - 4667 - Plans d'inversió: distri/adm-pub/resoluciones/4667.md
         - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
         - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md
         - Circular 4/2015: distri/adm-pub/resoluciones/circular_4-2015.md
