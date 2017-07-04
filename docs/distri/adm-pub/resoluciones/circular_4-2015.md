@@ -655,3 +655,24 @@ Actiu | Data APM   | Baixa | Data de baixa | Apareix | Observacions
    ✓  |            |   ✗   |   2016        |    ✗    | Cal revisar la data de baixa de l'element i esborrar-la.
    ✓  |            |   ✗   |   2017        |    ✓    |
    ✓  |   Buit     |   ✗   |               |    ✓    | Cal revisar la data APM de **tots** els elements, ja que si se'n crea un durant el 2017, apareixerà al fitxer si no té data APM.
+
+### Validació dels fitxers
+
+Aquest assistent ofereix la possibilitat d'analitzar els fitxers per trobar
+errors i així poder corregir-los. Per fer-ho, cal fer click a la pestanya
+**Validador d'informes**:
+
+![](../../_static/cnmc/4_2015/form_validador_informes.png)
+
+Durant el pas inicial, cal carregar un fitxer **.zip** amb els formularis
+que es desitgin validar.
+
+Un cop carregat cal fer click al botó "validar fitxers":
+
+![](../../_static/cnmc/4_2015/form_validador.png)
+
+Un cop finalitzat el procés s'haurà generat un fitxer amb els resultats. Es pot
+descarregar des del propi assistent:
+
+![](../../_static/cnmc/4_2015/form_validador_finish.png)
+
