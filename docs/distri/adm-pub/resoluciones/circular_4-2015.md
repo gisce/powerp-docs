@@ -426,6 +426,7 @@ condicions:
 * **Data de baixa de la cel·la**: Data de baixa ha de ser superior a l'ultim dia
   de l'any.    
   ( p.e. per l'any 2014, data_baixa > 31/12/2014) o bé estar buida.
+* **CINI**: El CINI ha de tenir el format I28XXXXX.
 
 Per obtenir el codi del transformador, aquest ha de complir els
 següents requisits:
@@ -443,6 +444,9 @@ CINI                             | CINI del centre de transformació
 Propietat                        | 0: pertany a tercers, 1: pertany a la companyia
 Data de posada en marxa          | Data APM de la cel·la de la posició. Es pot trobar a la pestanya Datos Administrativos de la cel·la.
 Any d'informació                 | Any del qual es genera aquest formulari
+
+!!! note
+    Si el camp Màquina fos buit, s'ompliria amb un valor per defecte igual a "999999".
 
 #### F13: Subestacions
 
@@ -515,8 +519,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 Només s'inclouràn les **posicions** que compleixin les següents
 condicions:
 
-* **Interruptor de la posició**: La **posició** ha de tenir un interruptor del
-  tipus **automàtic**.
+* **CINI**: El **CINI** ha de tenir el format I28XXXX.
 * **Activa**:
     * La **posició** ha d'estar activa
     * Si no està activa, hi ha d'haver el camp **data baixa** amb una data
@@ -576,6 +579,9 @@ condicions:
 
 * **Instal·lació**: Només s'inclouràn les **cel·les i elements de tall** que la
   instal·lació estigui en un suport.
+
+* **Categorització Inventari**: El valor d'aquest camp sigui "fiabilitat".
+* **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
 
 El formulari F15 està format pels següents camps:
 
@@ -675,4 +681,3 @@ Un cop finalitzat el procés s'haurà generat un fitxer amb els resultats. Es po
 descarregar des del propi assistent:
 
 ![](../../_static/cnmc/4_2015/form_validador_finish.png)
-
