@@ -1,5 +1,39 @@
 # Subministrament Immediat d'Informació (SII)
 
+## Índex
+
+1. [Introducció](introduccio)
+2. [Enviaments](enviaments)
+    1. [Esquema d'enviament](esquema-d-enviament)
+    2. [Enviament de forma manual](enviament-de-forma-manual)
+    3. [Camps referents al SII en una factura](camps-referents-al-sii-en-una-factura)
+3. [Preguntes freqüents](preguntes-frequents)
+
+## 1. Introducció
+
+El Subministrament Immediat d'Informació (SII) és un sistema de gestió dels llibres
+de registre de l'IVA a través de la Seu Electrònica de l'AEAT.
+
+## 2. Enviaments
+
+### 2.1. Esquema d'enviament
+
+blockdiag {
+    orientation = portrait;
+    default_shape = roundedbox;
+    default_fontsize = 20;
+    span_height = 100;
+    node_width = 200;
+    node_height = 150;
+    A [label = "Factura", width = 150, height = 50];
+    B [label = "Cola de \nenvíos", stacked, width = 150, height = 70];
+    C [label = "AEAT", shape = cloud];
+    D [label = "ERP", shape = "flowchart.database", width = 150, height = 50];
+    A -> B [label = "Abrir \nfactura", fontsize = 15];
+    B -> C [label = "Envío", fontsize = 15];
+    C -> D [label = "Respuesta", fontsize = 15];
+}
+
 En els següents enllaços podrem trobar la informació referent al SII de la
 pàgina de l'AEAT (Agència Estatal d'Administració Tributària):
 
