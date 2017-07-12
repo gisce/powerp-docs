@@ -545,6 +545,15 @@ L'assistent per generar els fitxers P5D de forma manual es troba al menú
 
 Les corbes de càrrega horàries facturades (CCH_FACT) cal entregar-les com a
 màxim el dia **7 del mes següent** amb els fitxers F5D.
+Els Fitxers F5D no s'envien fins que estan tots els CCH_FACT disponibles.
+Acabada la facturació, si no s'ha pogut enviar els F5D, es poden generar i
+enviar de la següent forma:
+
+### Generació dels fitxers P5D de forma manual
+
+L'assistent per generar els fitxers F5D de forma manual es troba al menú
+`Facturación/General/Lotes de facturación/`. Dentro de un lote de facturación:
+`Exportar Fichero Curvas del Lote`
 
 !!! note
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els fitxers
