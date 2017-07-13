@@ -125,7 +125,7 @@ les dades de les diferents pestanyes.
 * Tensió: S'indicarà la tensió del subministre (230, 400)
 * Potencia: En aquest camp s'indicarà la potència màxima contractada dels
   diferents periodes. El camp de _Potencia_ en els filtres de sel·lecció de les
-  pòlisses fa referencia a aquest camp. Veure [normalització potencia](#ajuda-normalitzacio-potencia)
+  pòlisses fa referencia a aquest camp. Veure [normalització potencia](#ajuda-normalitzacio-de-potencia)
 * Facturació Potencia: En aquest camp s'indicarà el tipus de facturació de la
   pòlissa sel·leccionant si es fa per ICP o per la regla del maxímetre.
 * ICP: S'indicarà la intensitat del ICP instal·lat i/o marca del mateix.
