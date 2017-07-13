@@ -125,7 +125,7 @@ les dades de les diferents pestanyes.
 * Tensió: S'indicarà la tensió del subministre (230, 400)
 * Potencia: En aquest camp s'indicarà la potència màxima contractada dels
   diferents periodes. El camp de _Potencia_ en els filtres de sel·lecció de les
-  pòlisses fa referencia a aquest camp.
+  pòlisses fa referencia a aquest camp. Veure [normalització potencia](#ajuda-normalitzacio-potencia)
 * Facturació Potencia: En aquest camp s'indicarà el tipus de facturació de la
   pòlissa sel·leccionant si es fa per ICP o per la regla del maxímetre.
 * ICP: S'indicarà la intensitat del ICP instal·lat i/o marca del mateix.
@@ -138,6 +138,22 @@ les dades de les diferents pestanyes.
 * Pot máx instalador: Es la potència màxima autoritzada en el boletí del
   instal·lador.
 * Potencia Acta: Es la potència del acta del instal·lador (camp informatiu)
+
+#### Ajuda normalització de potència
+
+Al costat de la potència contractada hi ha el botó de **Normalitzar**.
+
+![](_static/polizas/pot_norm_1.png)
+
+Aquest botó llança un assistent que ens ajuda a seleccionar una potència normalitzada nova o a normalitzar la potència contractada actual. S'utilitza la **tensió normalitzada** i la **tarifa d'accés** per a llistar les potències normalitzades possibles.
+
+Quan es llança l'assistent selecciona la potència normalitzada **més pròxima a l'actual**.
+
+![](_static/polizas/pot_norm_2.png)
+
+I amb el botó d'assignar s'actualitza la potència contractada amb la normalitzada
+
+![](_static/polizas/pot_norm_3.png)
 
 #### Pestanya de Comptadors
 
