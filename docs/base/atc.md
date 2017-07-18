@@ -177,6 +177,6 @@ definides en la circular 2/2016 mencionada anteriorment.
 
 El procediment complet per generar aquests informes es detalla en els apartats:
 
- * Distribuidora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
+ * [Distribuidora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors](../distri/adm-pub/resoluciones/circular_2-2016.md)
 
- * Comercialitzadora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
+ * [Comercialitzadora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors](../comer/adm-pub/cnmc.md#generacio-de-informes-sobre-reclamacions-de-consumidors)
