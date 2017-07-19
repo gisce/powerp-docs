@@ -529,32 +529,54 @@ Permet programar la validació automàtica de totes les lectures.
 ## Corbes de Carrega Horaries (CCH)
 
 Les corbes de càrrega horàries cal entregar-les a l'operador del sistema i a la
-comercialitzadora o client directe a mercat.
+comercialitzadora o client directe a mercat. Es fa mitjançant els següents fitxers:
+
+### Fitxers
+
+| Fitxer                     | Entrega                                        |
+|----------------------------|------------------------------------------------|
+| P5D                        | Setmanalment                                   |
+| F5D                        | Mensualment                                    |
+
 
 ### Fitxers P5D
 
 Les corbes de càrrega horàries validades (CCH_VAL) cal entregar-les com a
 màxim **setmanalment** amb els fitxers P5D.
+L'ERP realitza un enviament diari.
 
 #### Generació dels fitxers P5D de forma manual
 
 L'assistent per generar els fitxers P5D de forma manual es troba al menú
-`Infraestructura/Telegestión/Exportar CCH_VAL (P5D)`
+**Infraestructura > Telegestión > Exportar CCH_VAL (P5D)**
 
 ### Fitxers F5D
 
 Les corbes de càrrega horàries facturades (CCH_FACT) cal entregar-les com a
 màxim el dia **7 del mes següent** amb els fitxers F5D.
-Els Fitxers F5D no s'envien fins que estan tots els CCH_FACT disponibles.
+Els Fitxers F5D no poden tenir forats, i no s'envien fins que estan tots els
+CCH_FACT disponibles.
 Acabada la facturació, si no s'ha pogut enviar els F5D, es poden generar i
 enviar de la següent forma:
 
-### Generació dels fitxers P5D de forma manual
+### Generació i enviament dels fitxers F5D de forma manual
 
 L'assistent per generar els fitxers F5D de forma manual es troba al menú
-`Facturación/General/Lotes de facturación/`. Dentro de un lote de facturación:
-`Exportar Fichero Curvas del Lote`
+**Facturación > General > Lotes de facturación**. Dins d'un lot de facturació:
+`Exportar Fichero Curvas del Lote`. És important seleccionar
+`Marcar última corba` per recordar des de quina curva començarà quan es torni a
+generar fitxers. Si es vol enviar el fitxer directament un cop
+s'hagi generat cal marcar `Pujar fitxers al servidor CCH SFTP` tal com es
+mostra a la següent imatge:
+
+![](_static/telegestion/ExportarFitxerCorbesLot.png)
 
 !!! note
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els fitxers
     F5D i P5D.
+
+### Estat de pujada dels fitxers P5D i F5D
+
+Per comprovar l'estat de l'enviament d'aquests fitxers es pot accedir des de
+**Infraestructura > Telegestión > SFTP Estado subida**.
+Es pot forçar l'enviament manual dels fitxers tant P5D com F5D.
