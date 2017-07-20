@@ -26,6 +26,7 @@ pages:
     - Gestión de contadores: base/comptadors.md
   - Distribuidora:
     - Inicio: distri/index.md
+    - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
     - Manual de uso de TPL: distri/tpl.md
     - Manual de uso de TPL:
