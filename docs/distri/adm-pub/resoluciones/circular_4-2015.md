@@ -577,10 +577,6 @@ Any d'informació                 | Any del qual es genera aquest formulari
 Només s'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
-* **Instal·lació**: Només s'inclouràn les **cel·les i elements de tall** que la
-  instal·lació estigui en un suport.
-
-* **Categorització Inventari**: El valor d'aquest camp sigui "fiabilitat".
 * **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
 
 El formulari F15 està format pels següents camps:
