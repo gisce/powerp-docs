@@ -44,7 +44,7 @@ Per a generar una incidència a partir d'un descàrrec ho podem fer de dues form
 5. Quan el procés de generar la incidència hagi finalitzat l'assistent ens mostrara un missatge demanant-nos si voleu obrir la nova incidència creada o si volem finalitzar el procés i tancar l'assistent.
 
     ![](_static/descargos/wizard2.png)
-    
+
     ![](_static/descargos/incidenciagenerada.png)
 
 ### Opció 2
