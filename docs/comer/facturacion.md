@@ -71,7 +71,7 @@ En prémer en un lot d'importació veurem el formulari del lot en qüestió (veu
 una sèrie d'opcions a la dreta: Llistat de factures divergents,
 Llistat de factures i Llistat de fitxers que es detallen a continuació.
 
-* Llistat de fitxers:
+* **Llistat de fitxers:**
 
     Ens permet mostrar els fitxers xml que hi ha associats al lot d'importació
     després d'importar-los individualment o a través d'un fitxer zip. En prémer es
@@ -88,12 +88,12 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
     individualment. Es pot veure el wizard que ens apareixerà en la
     `Figura 9`.
 
-* Llistat de factures:
+* **Llistat de factures:**
 
     Ens mostrarà totes les factures associades al lot d'importació, sigui quin
     sigui el seu estat (típicament obert o borrador).
 
-* Llistat de factures divergents:
+* **Llistat de factures divergents:**
 
     Ens mostrarà aquelles factures que han resultat ser divergents respecte la
     facturada per l'ERP.  A continuació s'explicarà el concepte de divergència.
@@ -107,8 +107,6 @@ fitxers F1 (o línies d'importació) que hi fan referència. Veure `Figura 14`
 
 Procediment d'importació
 ------------------------
-
-# Com importar un fitxer
 
 Per tal d'importar un fitxer hem d'anar a `Facturació > General > Factures Proveidor > Importacions F1 > Importació fitxers F1`.
 
