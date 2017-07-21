@@ -17,7 +17,7 @@ markdown_extensions:
 
 extra_css:
   - extra/css/images.css
-  
+
 pages:
   - Home: index.md
   - Base:
@@ -29,8 +29,11 @@ pages:
     - Gestión de contadores: base/contadores.md
     - Equipos de telecomunicación: base/telecom.md
     - Revisiones internas: base/revisiones.md
+    - Administración Pública:
+        - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inicio: distri/index.md
+    - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
     - Manual de uso de TPL: distri/tpl.md
     - Manual de uso de TPL:
@@ -51,6 +54,14 @@ pages:
     - Administración Pública:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
+      - CNMC - Resoluciones:
+        - 4131: distri/adm-pub/resoluciones/4131.md
+        - 4666: distri/adm-pub/resoluciones/4666.md
+        - 4667 - Planes de inversión: distri/adm-pub/resoluciones/4667.md
+        - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
+        - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md
+        - Circular 4/2015: distri/adm-pub/resoluciones/circular_4-2015.md
+        - Circular 2/2016: distri/adm-pub/resoluciones/circular_2-2016.md
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
@@ -91,6 +102,7 @@ pages:
     - Facturación: comer/facturacion.md
     - Gestión impagados: comer/gestion_impago.md
     - Gestión ATR: comer/atr.md
+    - Curvas i CCH: comer/curvas.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
     - Administración Pública:

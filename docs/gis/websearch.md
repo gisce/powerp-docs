@@ -29,7 +29,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Final de la línia
 - Municipi de la línia
 - Tensió de la línia
-- Data APM
+- Data APM(permet buscar per any)
 - Codi(Permet "TZ-001-25" o 2TZ-001 25")
 - Origen
 - Final
@@ -64,7 +64,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Secció del cable
 - Material del cable
 - Voltatge(Cal afegir la V de volts al final)
-- Data APM(En format yyyy-mm-dd, permet usar "-" o "/" com a separador)
+- Data APM(En format yyyy-mm-dd, permet usar "-" o "/" com a separador)(permet buscar per any)
 
 ### Exemples de cerca
 - (LBT) CT-001 : Mostra les LBT del CT-001
@@ -76,7 +76,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Municipi
 - Potència Total del CT (Cal afegir kVA al final)
 - Adreça
-- Data APM
+- Data APM(permet buscar per any)
 - Tensió primari (Cal afegir V al final)
 - Circuit
 
@@ -92,7 +92,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Connexio UNE
 - Potencia nominal (Cal afegir kVA al final)
 - Estat
-- Data APM
+- Data APM(permet buscar per any)
 
 ### Exemples de cerca
 - (Transformador)  A.E.G: Transofrmadors de la marca A.E.G
