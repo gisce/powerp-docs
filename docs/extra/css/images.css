@@ -1,0 +1,97 @@
+/* Center all images */
+img{
+  display: block;
+  margin: auto;
+}
+
+/* Center all tables and width:100% */
+table{
+  display: inline-table !important;
+  margin: auto;
+}
+
+/*
+  All text in .MD files is inside divs with class="section"
+  This is to justify all text inside these divs
+*/
+.section {
+  text-align: justify;
+}
+
+/* Set all icons inline and 35x35px */
+img[alt="icona"], img[alt="icono"]{
+  height:35px !important;
+  display: inline;
+}
+
+/* docs/distri/tpl/proces_de_treball.md */
+img[src="../../_static/tpl/tpl_fitxers_de_ruta_i_lectures.png"]{
+  height: 400px !important;
+}
+
+/* Botons in-line */
+img[alt="desassignar"], img[alt="desasignar"],
+img[alt="assignar"], img[alt="asignar"],
+img[alt="treure"], img[alt="quitar"],
+img[alt="buscar"], img[alt="generar"]
+{
+  height:25px !important;
+  display: inline;
+}
+
+/* H: 125
+* docs/distri/sincronizacion_cups/winscp_download.png
+* docs/distri/calidad/TIEPI.png
+* docs/distri/calidad/NIEPI.png
+*/
+img[src="../_static/sincronizacion_cups/winscp_download.png"],
+img[src="../../_static/calidad/TIEPI.png"],
+img[src="../../_static/calidad/NIEPI.png"]{
+  height:125px !important;
+}
+
+/* H: 150
+* docs/distri/lbt/wizard_assignar_tipus.png
+*/
+img[src="../_static/lbt/wizard_assignar_tipus.png"]{
+  height:150px !important;
+}
+
+/* H: 200
+* docs/distri/lbt/fitxers_shps_lbt.png
+* docs/comer/facturacion/wizard_estat.png
+* docs/comer/facturacion/wizard_diari.png
+*/
+img[src="../_static/lbt/fitxers_shps_lbt.png"],
+img[src="../_static/print/wizard_estat.png"],
+img[src="../_static/print/wizard_diari.png"]{
+  height:200px !important;
+}
+
+/* H: 325
+* docs/comer/facturacion/menu_principal.png
+*/
+img[src="../_static/q1/menu_principal.png"]{
+  height:325px !important;
+}
+
+/* H: 400
+* docs/comer/facturacion/menu_fact_clients.png
+*/
+img[src="../_static/print/menu_fact_clients.png"]{
+  height:400px !important;
+}
+
+/*  H: 450
+* docs/comer/facturacion/accio_wizard.png
+*/
+img[src="../_static/print/accio_wizard.png"]{
+  height:400px !important;
+}
+
+/*  H: 500
+* docs/comer/adm-pub/informes/accio_wizard.png
+*/
+img[src="../../_static/informes/model_606/bandes.png"]{
+  height:500px !important;
+}

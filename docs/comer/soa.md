@@ -56,7 +56,7 @@ concrets dels que disposa el fitxer:
 | 45      | **csv_polissa_comercialitzadora**     | varchar(4)   | Comercialitzadora                                                  |
 | 46      | **csv_polissa_observacions**          | text(1024)   | Observacions                                                       |
 | 47      | **csv_polissa_titular**               | varchar(128) | Titular de la pòlissa                                              |
-| 48      | **csv_polissa_estat**                 | varchar(60)  | Estat de la pòlissa                                                |
+| 48      | **csv_polissa_estat**                 | varchar(60)  | Estat de la pòlissa, posar "BORRADOR" per pólissa en esborrany.    |
 | 49      | **csv_polissa_ref_distriuidora**      | varchar(60)  | Referència distribuïdora                                           |
 | 50      | **csv_polissa_tipus_punt_mesura**     | varchar(2)   | Tipus del punt de mesura                                           |
 | 51      | **csv_polissa_potencies_per_periode** | varchar(128) | Potència per període                                               |

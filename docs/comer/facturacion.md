@@ -127,33 +127,161 @@ Procediment d'importació
 En processar un fitxer xml, ja sigui provinent d'un zip o individualment, el
 mòdul realitza les següents accions:
 
-1. Facturar a partir de les lectures del fitxer xml.
-2. Generar una factura a partir de les línies de factura del fitxer xml.
-3. Comparar ambdues factures.
+1. Pujar el fitxer F1 al servidor
+2. Importar les dades generals de l'F1
+3. Realitzar validacions sobre les lectures proporcionades per l'F1
+4. Importar les lectures
 
-Del procés anterior poden resultar-ne les situacions següents:
+Durant aquests passos, es van realitzant un seguit de validacions, definides a
+continuació.
 
-* Mateix total en les dues factures:
+### Validacions a la importació d'F1
 
-    S'elimina la factura generada a partir de les lectures, quedant únicament la
-    factura importada. Aquest última es deixa en estat **obert**. El formulari de
-    la línia d'importació ens mostrarà un resum de les factures i ens donarà la
-    opció de llistar-ne tota la informació.
+Les validacions que es mostren a continuació es realitzen en la importació de F1.
 
-* Divergència en els totals:
+#### Identificadors de les validacions
 
-    En aquest cas es conserven les dues factures per un anàlisi posterior. Les
-    dues factures es deixen amb estat de **borrador**. El formulari de la línia
-    d'importació associada a l'xml ens mostrarà les factures i el valor de la
-    divergència en els totals. Veure `Figura 10`. Tal i com s'observa,
-    La factura realitzada per l'ERP a partir de les lectures de l'xml se li
-    assigna el mateix origen que la factura importada, juntament amb la
-    cadena de text '/comp'. Indicant que és la factura que s'usa per comparar.
-    L'altre factura, la importada a partir de les línies de factura, mostra en
-    el camp divergència la resta dels totals.
+Cada validació tindrà un codi a l'ERP. Aquest codi sempre comença amb la fase en
+la qual es crea, seguit del nombre de template que té l'error. Per exemple,
+[3001] seria la validació del template 001 de la fase 3. Tots els texts que
+tinguin el mateix codi seguiran el mateix format i seran deguts a la mateixa causa.
 
-    El formulari ens donarà la opció de reimportar el fitxer xml i llistar les
-    factures (`Figura 11`).
+Un sol fitxer F1 pot tenir dues o més vegades el mateix error si aquest error es repeteix.
+
+#### Nivells de les validacions
+
+Les validacions tenen tres nivells, descrits a continuació:
+
+- **Critical (E)**: Aquest és un error que ens impedeix seguir amb la importació. Això causarà que la importació s'aturi en la iteració a la que estigui.
+- **Warning (W)**: Aquest és un possible error que s'hauria de revisar però que no ha de ser necessàriament problematic. En aquest cas no s'aturarà la importació.
+- **Information (I)**: Aquest és un cas especial però que no hauria de portar mai problemes, simplement es dona la informació que ha passat. Tampoc atura la importació.
+
+#### Validacions que es realitzen
+
+##### Fase 1
+
+- **[1001] Error d'estructura (E)**: Error en la estructura de l'XML.
+- **[1002] Emissor no identificat (E)**: No s'ha trobat l'emissor amb el codi donat.
+- **[1003] Codi d'emissor repetit (E)**: Hi ha més d'un emissor amb el mateix codi.
+- **[1004] Comercialitzadora incorrecte (E)**: El destinatari d'aquest fitxer no és la nostra comercialitzadora.
+- **[1005] Cups no identificat (E)**: No hem trobat el cups amb el codi donat.
+- **[1006] Fitxer ja processat (E)**: Ja hem processat aquest fitxer previament.
+- **[1007] CUPS incorrecte segons distribuidora (E)**: El codi de la distribuidora del CUPS donat no és el de la distribuidora emissora de la factura.
+
+##### Fase 2
+
+- **[2001] Factura repetida (E)**: Ja existeix una factura amb el mateix origen i emissor.
+- **[2002] Total incorrecte (W)**: El total de la factura importada no coincideix amb el de l'XML.
+- **[2003] Periode incorrecte (E)**: No es pot identificar un dels periodes a importar.
+- **[2004] Diari incorrecte (E)**: No es pot trobar el diari indicat.
+- **[2005] CUPS sense pòlissa (E)**: No s'ha trobat cap pòlissa vinculada al CUPS donat en la data de la factura.
+- **[2006] Subtotal incorrecte (W)**: El subtotal de la factura no coincideix amb la suma dels preus que el formen.
+- **[2007] Factura de referència inexistent (E)**: No s'ha trobat la factura de referència indicada.
+- **[2008] Configuració no trobada (E)**: No s'ha trobat la configuració de switching per l'emissor de la factura.
+- **[2009] Producte no identificat (W)**: No s'ha pogut identificar un dels productes.
+- **[2010] Factura anuladora ja carregada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Té el mateix import que una factura anul·ladora ja carregada
+- **[2011] Factura anuladora no trobada (I)**: Una factura ha estat descartada per no complir condicions de coherència. Probablement falta una factura anul·ladora
+- **[2012] Creació forçada (I)**: No s'ha trobat la factura de referencia però s'ha forçat la creació de la factura.
+- **[2013] Numero de factura repetit (E)**: En el fitxer importat hi ha dues o més factures amb el mateix número de factura.
+
+##### Fase 3
+
+- **Comprovacions comptadors**
+
+    - **[3001] Adequar gir a lectura (I)**: És realitza una validació de que el gir que tenim a la base de dades és diferent al que ens donen al fitxer F1.
+    - **[3014] El gir de l'F1 no es correcte (I)**: És realitza una validació de que el gir que ens donen al fitxer F1 sigui suficient per les lectures que ens donen. Per exemple, si ens donen un gir de 100 i una lectura de 4560 sabem que com a mínim el gir ha de ser de 10000.
+    - **[3002] El comptador existeix (W)**: Comprovem que el comptador que ens donen existeix en la nostra base de dades. Tenim en compte que hi pot haver padding de zeros.
+    - **[3003] Comptador repetit (I)**: Comprovem si en una sola factura tenim dues vegades un mateix comptador.
+    - **[3004] Comptador de reactiva (I)**: Comprovem si algun dels comptadors només té lectures de reactiva (pels casos en que tenim un comptador per activa i un per reactiva).
+    - **[3005] Més d'un comptador actiu (W)**: Comprovem si la pòlissa té més d'un comptador actiu actualment.
+    - **[3030] Comptador nou amb conflictes (E)**: Quan importem un comptador nou comprovem que no causi conflictes de dates amb els comptadors que ja tenim per la pòlissa.
+
+- **Comprovacions dades CCH**
+
+    - **[3006] Coincidència amb estat del contracte (W)**: Comprovem quin és el valor del camp IndicativoCurvaCarga del fitxer F1. Depenent de la pòlissa esperarem els següents valors:
+        - Si la pòlissa té una tarifa 3.1 o 6.X sempre haurà de ser *03*.
+        - Si la pòlissa té una tarifa inferior a 3.1 dependrà de si tenim la telegestió activada o no
+            - Si la pòlissa té la telegestió operativa, esperarem el valor *01*.
+            - Si la pòlissa té la telegestió no operativa, esperarem el valor *02*.
+
+- **Lectures d'Energia i Reactiva**
+
+    - **[3007] Divergència entre la lectura existent i l'F1 (E)**: Si tenim una lectura entrada pel mateix dia que ens arriba amb el fitxer F1, comprovem si són iguals. Aquesta comprovació només es realitza per factures no rectificadores.
+    - **[3008] Nombre de períodes (E)**: Tenim un nombre incorrecte de períodes per un comptador segons la seva tarifa.
+    - **[3009] Lectures negatives (E)**: El consum d'alguna de les lectures importades és negatiu.
+    - **[3010] Ajust integrador (I)**: Alguna de les lectures importades té ajust integrador.
+    - **[3011] Possible gir de comptador (I)**: Alguna de les lectures finals són inferiors a les lectures inicials.
+    - **[3012] Factura rectificadora (I)**: La factura és rectificadora, de manera que les lectures es sobreescriuran.
+    - **[3013] Origen "Sin lectura (99)" (I)**: Alguna de les lectures té com a origen 99, és a dir, no hi ha lectura.
+    - **[3015] Unitats d'importació (I)**: S'indicaran quines són les unitats amb les que suposarem que ens venen els valors.
+    - **[3029] Conflicte en les lectures (E)**: El fitxer dona diferents valors per una mateixa lectura.
+
+- **Lectures de Maxímetre**
+
+    - **[3007] Divergència entre la lectura existent i l'F1 (E)**: Si tenim una lectura entrada pel mateix dia que ens arriba amb el fitxer F1, comprovem si són iguals. Aquesta comprovació només es realitza per factures no rectificadores.
+    - **[3008] Nombre de períodes (E)**: Tenim un nombre incorrecte de períodes per un comptador i un tipus.
+    - **[3009] Lectures negatives (E)**: El consum d'alguna de les lectures importades és negatiu.
+    - **[3010] Ajust integrador (I)**: Alguna de les lectures importades té ajust integrador.
+    - **[3029] Conflicte en les lectures (E)**: El fitxer dona diferents valors per una mateixa lectura. Només es tenen en compte les lectures finals.
+
+- **Lectures d'energia**
+
+    - **[3016] Lectura impossible (W)**: La lectura no és possible ja que el seu valor és superior a consumir la potència contractada durant totes les hores del període entre les dates de les lectures.
+
+- **Mode facturació**
+
+    - **[3017] Tarifes inconsistents (W)**: La tarifa que tenim guardada i la tarifa de l'XML no coincideixen.
+    - **[3018] Facturació de potència inconsistent (W)**: El mode de facturació de potència (Maxímetre o ICP) que tenim guardat per la pòlissa i el que indica l'XML no coincideixen.
+    - **[3019] Lectura en baixa inconsistent (W)**: L'indicador de si les lectures són en baixa no coincideix entre el que tenim guardat per la pòlissa i l'XML.
+    - **[3020] Autoconsum inconsistent (I)**: Hi ha algun concepte amb tipus corresponent a l'autoconsum però nosaltres tenim la pòlissa sense autoconsum.
+    - **[3027] Trafo a 0 en 3.1A LB (W)**: La tarifa de la factura importada és una 3.1A LB però en la nostra pòlissa la tarifa té el valor de trafo KVA a 0.
+
+- **Conceptes**
+
+    - **[3021] Falten les unitats (I)**: Un dels conceptes no té el nombre d'unitats.
+    - **[3022] Falta el preu (I)**: Un dels conceptes no té el preu per unitat.
+    - **[3023] Preu total incorrecte (I)**: Per un dels conceptes el total no és igual a la multiplicació del preu per el nombre d'unitats.
+    - **[3024] Concepte inexistent (I)**: Un dels conceptes té com a codi un valor que no correspon amb cap dels definits per la CNMC.
+
+- **Dates**
+
+    - **[3025] Dates incorrectes pel comptador (W)**: L'inici o el final d'alguna lectura està fora del període durant el qual el comptador està actiu.
+    - **[3026] Un període de dates inclou una modificació contractual (W)**: Hi ha una modificació contractual entre alguna de les lectures d'inici i de final.
+
+- **Simulació de la factura**
+
+    - **[3028] Simulació de la factura**: Creem una factura amb les dades que ens envien en l'F1 i comprovem que els totals siguin els mateixos que ens passen. Aquesta validació pot crear diferents subcodis d'error:
+        - **[3028-A] Error en la potència**: El preu de la potencia total de la simulació no coincideix amb el donat a l'F1.
+        - **[3028-B] Error en l'activa**: El preu de l'energia activa total de la simulació no coincideix amb el donat a l'F1.
+        - **[3028-C] Error en la reactiva**: El preu de l'energia reactiva total de la simulació no coincideix amb el donat a l'F1.
+        - **[3028-D] Error en l'excés de potència**: El preu de l'excés de potència total de la simulació no coincideix amb el donat a l'F1.
+        - **[3028-E] Base d'impost incorrecte**: La base d'un dels IVAs donats a l'XML no coincideix amb el que hem simulat.
+        - **[3028-F] Total d'impost incorrecte**: El total d'un dels IVAs donats a l'XML no coincideix amb el que hem simulat.
+        - **[3028-G] Impost inesperat**: En l'XML apareix un IVA amb un percentatge que no correspon a cap dels conceptes cobrats.
+        - **[3028-H] Impost faltant**: En l'XML falta un IVA amb un percentatge que hauria d'aparèixer segons els conceptes cobrats.
+        - **[3028-I] Error en el total**: El preu total de la simulació no coincideix amb el donat a l'F1.
+
+##### Fase 4
+
+En la fase 4 no hi ha validacions ja que totes les validacions necessaries s'han realitzat a la fase anterior.
+
+#### Activar i desactivar validacions
+
+Podem activar i desactivar algunes de les validacions. Per tal de fer-ho
+simplement ens hem de dirigir a
+`Facturació > General > Configuració > Switching > Error plantilles`.
+
+No totes les validacions es poden activar i desactivar. Concretament, hi ha
+validacions que estan incloses en el codi, de manera que no ens les podem
+saltar. D'altra banda, per qüestions de seguretat, s'ha decidit que les
+validacions de nivell crític no es podran desactivar mai.
+
+Existeix un camp que ens permet cercar les validacions segons si es poden
+desactivar o no, per facilitar la cerca de les validacions que es poden desactivar.
+
+El camp `actiu` es mostrarà en només lectura quan aquest no es pugi desactivar.
+Altrament, es mostrarà modificable si es pot desactivar.
+
 
 Aprovar factures divergents
 ---------------------------
@@ -326,7 +454,7 @@ els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
 ###Figures
 
 ### Figura 1
-![](_static/q1/_static/q1/menu_principal.png)
+![](_static/q1/menu_principal.png)
 
    Figura 1: Ubicació del formulari d'importacions.
 
@@ -608,20 +736,15 @@ La resta és com l'enviament massiu.
 
 ### Sistema d'enviament
 
-    blockdiag {
-        lot -> enviament -> enviar -> sortida -> email -> enviats;
-        sortida -> sortida [label = "Cada 5m"]
-
-        lot [shape = "note",
-             label = "Lot"];
-        enviament [label = "Enviament\nmassiu",
-                   shape = "diamond"];
-        email [shape = "mail"];
-        enviar[label =  "Enviar",
-               shape = "diamond"];
-        sortida -> email [folded];
-    }
-  ![](_static/email/diag.svg)
+blockdiag {
+    lot -> enviament -> enviar -> sortida -> email -> enviats;
+    sortida -> sortida [label = "Cada 5'"]
+    lot [shape = "note", label = "Lot"];
+    enviament [label = "Enviament\nmassiu", shape = "diamond"];
+    email [shape = "mail"];
+    enviar[label =  "Enviar", shape = "diamond"];
+    sortida -> email [folded];
+}
 
 Sempre que fem un enviament el correu es queda a la carpeta de **Sortida**, i el sistema cada 5 minuts
 comprova si hi ha correus per enviar. En cas que n'hi hagi s'envien i es mouen a la carpeta d'**Enviats**.
@@ -691,12 +814,12 @@ Per cridar aquest assistent ho podem fer de dues maneres:
 1. Seleccionem l'opció d'**Avançar facturació** en
 la llista d'opcions del lateral dret d'un contracte
 
-![](_static/avancar_facturacio/value_wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/value_wizard_avancar_facturacio.png)
 
 2. Seleccionem un contracte en el llistat de contractes i escollim l'acció
 d'**Avançar facturació**
 
-![](_static/avancar_facturacio/accio_wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/accio_wizard_avancar_facturacio.png)
 
 #### Assistent per avançar facturació
 
@@ -714,13 +837,13 @@ configuració **'pool_llindar_estimacio_lectures'**) des de la data de l'última
 L'assistent permet introduir la data per la qual volem que es generi la factura.
 
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio.png)
 
 Un cop generada la factura ens informarà entre quines dates s'ha generat.
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio2.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio2.png)
 
 En cas de no haver generat la factura ens mostrarà que no s'ha pogut facturar i
 el motiu pel qual no s'ha pogut facturar.
 
-![](_static/avancar_facturacio/wizard_avancar_facturacio3.png)
+![](_static/avanzar_facturacion/wizard_avancar_facturacio3.png)
