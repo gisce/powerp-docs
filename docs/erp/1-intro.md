@@ -582,6 +582,94 @@ Hi ha tres tipus d'acció:
 
 Explicació dels mòduls:
 
-Utilitzem un mecanisme de communicació distribuïda
+
+Server - Base distribution
+
+Utilitzem un mecanisme de communicació distribuïda dins del servidor del OpenERP. El nostre motor suporta les plantilles distribuides més comuns: petició/resposta  (request/reply), publicació/subscripció (publish/subscribe), monitorització (monitoring), disparador/devolució (trigers/callback),...
+
+Hi poden haver diferents Business Objects en diferents ordinadors o els mateixos objectes poden estar en múltiples ordinadors per a dur a terme balanç de càrrega en múltiples ordinadors.
+
+Server - Object Relational Mapping (ORM)
+
+Aquesta capa proveeix funcionalitats addicionals per sobre de PostgreSQL:
+
+ - Consistència: comprovació de validacions potent,
+ - Treball amb objectes (mètodes, referències,...)
+ - Seguretat de files (per usuari, grup, rol)
+ - Accions complexes en un grup de recursos
+ - Herència
+
+ Server - Web-Services
+
+ Aquest mòdul de servei web ofereix una interfície comuna per tots els serveis web.
+
+  - SOAP
+  - XML-RPC
+  - net-rpc
+
+  Els Business Objects poden ser accessibles també mitjançant el mecanisme de objectes distribuits. Poden ser modificats des de l'interfície del client amb les vistes contextuals.
+
+  Server - Workflow Engine
+
+  Els fluxos de treball (workflows) són gràfics representats per Business Objects que descriuen la dinàmica de la companyia. Els fluxos de treball també són usats per seguir processos que evolucionen al llarg del temps.
+
+  Un exemple de un flux de treball usat en l'OpenERP:
+
+  Un ordre de venta genera una factura i un ordre d'enviament.
+
+  Server - Report Engine
+
+  Els informes en l'OpenERP poden ser renderitzats de les maneres seguents:
+
+   - Informes personalitzats: aquests poden ser directament creats mitjançant la interfície del client sense necessitat de programar. Són representats per business objects (ir.report.custom)
+   - Informes personalitzats d'alta qualitat usant openreport: no requereixen programació però has d'escriure dos petits fitxers XML:
+      - Una plantilla que indica les dades que planejes
+      - una fulla d'estils XSL:RML
+   - Informes codificats directament
+   - Plantilles de OpenOffice Writer
+
+  Quasi tots els informes estàn produits en PDF:
+
+  Server - Business objects
+
+  Quasi tot és un Business Objects en l'OpenERP. Descriuen les dades del programa (fluxos de treball, factures, usuaris, informes personalitzats, ...). Els "business objects" són descrits usant els mòduls ORM. Són persistents i poden tenir múltiples vistes (descrits per l'usuari o calculades automàticament).
+
+  Els Business Objects estàn estructurats en el directori /module.
+
+  Client - Wizards
+
+  Els Wizards són gràfics d'accions/finestres que l'usuari pot efectuar durant una sessió.
+
+  Client - Widgets
+
+  Els Widgets són probablement, encara que l'origen sembla difícil de traçar, "WIndow gaDGETS" en el món IT, que vol dir que són gadgets abans de tot, que implementen funcionalitats elementals a través d'una eina virual portàtil.
+
+  Tots els widgets comuns estàn soportats:
+
+   - Entrades
+   - Caixes de text
+   - Nombres de coma flotant
+   - Dates (amb calendari)
+   - Caselles de verificació
+   - ...
+
+  També hi ha widgets especials:
+
+   - Botons i crides a accions
+   - Widgets de referències
+      - 1:1 (one2one)
+      - n:1 (many2one)
+      - n:m (many2many)
+      - 1:n en llista (one2many en llista)
+      - ...
+
+  Els Widgets tenen apariències diferents en les diferents vises. Per exemple, el widget de la data en el quadre de cerca representa dos dates normals per un rang de dates (des de...fins...).
+
+  Alguns Widgets poden tenir diferents representacions depenent del context. Per exemple, el widget 1:n (one2many) pot ser representat com un formulari amb pàgines múltiples o com una llista de múltuples columnes.
+
+  Els esdeveniments en els mòduls de Widgets són processats mitjançant un mecanisme de retorn (callback). Un mecanisme de retorn és un process on un element defineix el tipus d'esdeveniments que pot manipular, els mètodes del qual han de ser cridats quan un esdeveniment es "disparat" (triggered). Una vegada l'element es disparat, el sistema sap que l'esdeveniment està lligat a un mètode específic, i seguidament el crida. Per tant, fa un retorn (callback).
+
+
+
 
 # Arquitectura oberta a Objectes - MVC
