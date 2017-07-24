@@ -1,4 +1,4 @@
-# Entorn de desenvolupament
+..# Entorn de desenvolupament
 
 ## Treballant amb 'Launchpad'
 
@@ -533,7 +533,7 @@ L'OpenERP té les següents característiques:
 - El llenguatge de programació és Python.
 - Utilitza tecnologies orientades a objectes (Object-Oriented).
 - Emmagatzema les dades amb una base de dades relacional de PostgreSQL.
-- Els objectes de negoci estan modelats amb un sistema ORM (Object Relational
+- Els Business Objects estan modelats amb un sistema ORM (Object Relational
   Mapping).
 - Ofereix tres Human Machine Interfaces (HMI): un client GTK, un client QT i un
   client web (eTiny).
@@ -585,7 +585,7 @@ Explicació dels mòduls:
 
 Server - Base distribution
 
-Utilitzem un mecanisme de communicació distribuïda dins del servidor del OpenERP. El nostre motor suporta les plantilles distribuides més comuns: petició/resposta  (request/reply), publicació/subscripció (publish/subscribe), monitorització (monitoring), disparador/devolució (trigers/callback),...
+Utilitzem un mecanisme de communicació distribuïda dins del servidor del OpenERP. El nostre motor soporta les plantilles distribuides més comuns: petició/resposta  (request/reply), publicació/subscripció (publish/subscribe), monitorització (monitoring), disparador/devolució (triggers/callback),...
 
 Hi poden haver diferents Business Objects en diferents ordinadors o els mateixos objectes poden estar en múltiples ordinadors per a dur a terme balanç de càrrega en múltiples ordinadors.
 
@@ -632,7 +632,7 @@ Aquesta capa proveeix funcionalitats addicionals per sobre de PostgreSQL:
 
   Server - Business objects
 
-  Quasi tot és un Business Objects en l'OpenERP. Descriuen les dades del programa (fluxos de treball, factures, usuaris, informes personalitzats, ...). Els "business objects" són descrits usant els mòduls ORM. Són persistents i poden tenir múltiples vistes (descrits per l'usuari o calculades automàticament).
+  Quasi tot és un Business Objects en l'OpenERP. Descriuen les dades del programa (fluxos de treball, factures, usuaris, informes personalitzats, ...). Els Business Objects són descrits usant els mòduls ORM. Són persistents i poden tenir múltiples vistes (descrits per l'usuari o calculades automàticament).
 
   Els Business Objects estàn estructurats en el directori /module.
 
