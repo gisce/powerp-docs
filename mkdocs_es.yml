@@ -33,6 +33,7 @@ pages:
         - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inicio: distri/index.md
+    - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
     - Manual de uso de TPL: distri/tpl.md
     - Manual de uso de TPL:
