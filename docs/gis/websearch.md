@@ -84,6 +84,20 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - (CT) Salt: Cerca tots els CTs de Salt
 - (CT) Salt 2003: Cerca tots els CTs de Salt que es van donar d'alta el 2003
 
+## Subestació
+- CINI
+- Nom
+- Descripció
+- Municipi
+- Potencia(cal afegir kVA al final)
+- Adreça
+- Data posata den marxa
+- Tensio (Cal afegir kVA al final) 
+
+### Exemple de cerca
+- (Subestacio) Salt: Cerca totes les subescions de Salt
+- (subestacio) Salt 2003: Cerca totes les subestacions de Salt que es van donar d'alta el 2003
+
 ## Transformador
 - CINI
 - Numero de transformador
