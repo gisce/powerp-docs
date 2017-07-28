@@ -346,11 +346,6 @@ cap.
 
    Figura 3: Formulari d'un lot d'importació.
 
-### Figura 4
-![](_static/f1/zip_wizard.png)
-
-   Figura 4: Importació d'un zip.
-
 ### Figura 5
 ![](_static/f1/linies_tree.png)
 
@@ -369,18 +364,12 @@ cap.
 ### Figura 8
 ![](_static/f1/linies_form_error.png)
 
-   Figura 8: Formulari d'una línia d'importació errònia.
+   Figura 8: Formulari d'errors en la importacio d'una linia.
 
 ### Figura 9
 ![](_static/f1/wizard_xml.png)
 
    Figura 9: Importació d'un XML.
-
-### Figura 10
-![](_static/f1/linies_form_div.png)
-
-   Figura 10: Formulari d'una línia d'importació amb divergències en els
-   totals.
 
 ### Figura 11
 ![](_static/f1/fact_tree_div.png)
