@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-07-27 10:28+0200\n"
-"PO-Revision-Date: 2017-07-27 11:39+0200\n"
+"POT-Creation-Date: 2017-07-28 11:18+0200\n"
+"PO-Revision-Date: 2017-07-28 11:21+0200\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -34111,15 +34111,6 @@ msgstr "<img alt=\"\" src=\"../_static/f1/lot_form.png\" />"
 msgid "Figura 3: Formulari d'un lot d'importació."
 msgstr "Figura 3: Formulario de un lote de importación."
 
-msgid "Figura 4"
-msgstr "Figura 4"
-
-msgid "<img alt=\"\" src=\"../_static/f1/zip_wizard.png\" />"
-msgstr "<img alt=\"\" src=\"../_static/f1/zip_wizard.png\" />"
-
-msgid "Figura 4: Importació d'un zip."
-msgstr "Figura 4: Importación de un zip."
-
 msgid "Figura 5"
 msgstr "Figura 5"
 
@@ -34153,8 +34144,8 @@ msgstr "Figura 8"
 msgid "<img alt=\"\" src=\"../_static/f1/linies_form_error.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/f1/linies_form_error.png\" />"
 
-msgid "Figura 8: Formulari d'una línia d'importació errònia."
-msgstr "Figura 8: Formulario de una línea de importación errónea."
+msgid "Figura 8: Formulari d'errors en la importacio d'una linia."
+msgstr "Figura 8: Formulario de errores en la importacion de una linea"
 
 msgid "Figura 9"
 msgstr "Figura 9"
@@ -34164,19 +34155,6 @@ msgstr "<img alt=\"\" src=\"../_static/f1/wizard_xml.png\" />"
 
 msgid "Figura 9: Importació d'un XML."
 msgstr "Figura 9: Importación de un XML."
-
-msgid "Figura 10"
-msgstr "Figura 10"
-
-msgid "<img alt=\"\" src=\"../_static/f1/linies_form_div.png\" />"
-msgstr "<img alt=\"\" src=\"../_static/f1/linies_form_div.png\" />"
-
-msgid ""
-"Figura 10: Formulari d'una línia d'importació amb divergències en els\n"
-"   totals."
-msgstr ""
-"Figura 10: Formulario de una línea de importación con divergencias en los\n"
-"   totales."
 
 msgid "Figura 11"
 msgstr "Figura 11"
@@ -34389,8 +34367,14 @@ msgstr "<img alt=\"\" src=\"../_static/q1/lot_tree.png\" />"
 msgid "<img alt=\"\" src=\"../_static/q1/lot_form_inicial.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/lot_form_inicial.png\" />"
 
+msgid "Figura 4"
+msgstr "Figura 4"
+
 msgid "<img alt=\"\" src=\"../_static/q1/wiz_importar_q1.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/wiz_importar_q1.png\" />"
+
+msgid "Figura 4: Importació d'un zip."
+msgstr "Figura 4: Importación de un zip."
 
 msgid "<img alt=\"\" src=\"../_static/q1/lot_form_importat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/lot_form_importat.png\" />"
@@ -34413,8 +34397,14 @@ msgstr "Figura 7: Formulario de una línia de importación correcta."
 msgid "<img alt=\"\" src=\"../_static/q1/linia_form_erroni.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/linia_form_erroni.png\" />"
 
+msgid "Figura 8: Formulari d'una línia d'importació errònia."
+msgstr "Figura 8: Formulario de una línea de importación errónea."
+
 msgid "<img alt=\"\" src=\"../_static/q1/wiz_importar_xml.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/wiz_importar_xml.png\" />"
+
+msgid "Figura 10"
+msgstr "Figura 10"
 
 msgid "<img alt=\"\" src=\"../_static/q1/cups.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/q1/cups.png\" />"
@@ -39276,6 +39266,19 @@ msgid ""
 "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png\" />"
 msgstr ""
 "<img alt=\"Figura 5\" src=\"../_static/move_invoices_lot/wizard_bad_end.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../_static/f1/zip_wizard.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../_static/f1/zip_wizard.png\" />"
+
+#~ msgid "<img alt=\"\" src=\"../_static/f1/linies_form_div.png\" />"
+#~ msgstr "<img alt=\"\" src=\"../_static/f1/linies_form_div.png\" />"
+
+#~ msgid ""
+#~ "Figura 10: Formulari d'una línia d'importació amb divergències en els\n"
+#~ "   totals."
+#~ msgstr ""
+#~ "Figura 10: Formulario de una línea de importación con divergencias en los\n"
+#~ "   totales."
 
 #~ msgid ""
 #~ "<img src=\"data:image/png;base64,"
