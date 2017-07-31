@@ -8,7 +8,7 @@
     2.2. [Enviaments automàtics](#22-enviaments-automatics)    
     2.3. [Enviament de forma manual](#23-enviament-de-forma-manual)    
     2.4. [Possibles estats dels enviaments](#24-possibles-estats-dels-enviaments)    
-3. [Camps referents al SII](#3-camps-referents-al-sii)
+3. [Camps referents al SII](#3-camps-referents-al-sii)    
     3.1. [En una factura](#31-en-una-factura)    
     3.2. [En una posició fiscal](#32-en-una-posicio-fiscal)    
     3.3. [En un diari financer](#33-en-un-diari-financer)    
