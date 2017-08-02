@@ -135,7 +135,7 @@ opció es mostren totes les factures que compleixen les següents condicions:
 ### 3.1. En una factura
 
 Per veure els camps referents al SII en una factura s'ha d'obrir la pestanya
-"Informació SII". Allà es troben els següents camps:
+"Informació SII". Allà es troben els següents camps indicats en la imatge:
 
 1. **Per enviar al SII**: si està activat la factura es podrà enviar al SII. S'ha
     de desactivar en cas de que no es vulgui enviar. Aquest camp s'obté automàticament
@@ -158,8 +158,8 @@ Per veure els camps referents al SII en una factura s'ha d'obrir la pestanya
 
 Des d'una factura també es pot:
 
-7 -  Enviar-la de forma manual    
-8 - Veure els registres del SII associats a aquesta factura
+7 . Enviar-la de forma manual    
+8 . Veure els registres del SII associats a aquesta factura
 
 ![](../_static/aeat/campos_sii_factura.png)
 
