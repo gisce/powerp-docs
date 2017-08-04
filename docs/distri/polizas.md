@@ -1,10 +1,41 @@
 # Documentació del mòdul de pólissa
 
+## Estats de les pòlisses
+
+Les pòlisses tenen certs estats: esborrany, activa, baixa, etc. I aquests estats gobernen el comportament i el paper d'aquesta. Es tracta d'un fluxe de treball per el que passarà cada pòlissa i que forma un recorregut lògic.
+
+![Descripció dels \label{workflows}](_static/polizas/workflow_diagrama_ES.svg)
+*Fluxograma dels estat de les pòlisses i les transicions*
+
+![](_static/polizas/indicador_estat_polissa.png)
+*Vista general de la pòlissa amb el camp "estat" indicat*
+
+Per començar, al crear una pòlissa, aquesta per defecte s'estableix en un estat de **Esborrany**. Una pòlissa en Esborrany permet canviar les dades abans de confirmar-les.
+
+Després de prémer el botó de "Validar", l'estat de la pòlissa serà **Validar**.
+Aquest estat es l'anterior al de activa, en el que l'ERP t'informa de quines dades no compleixen els requeriments.
+
+Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres estats, com Impagament.
+
+Com s'ha dit, es pot passar a estat de **Impagament**. Des d'aquest, es podrà o bé donar de baixa la pòlissa, passar en estat de **Tall**, o bé reactivar-la.
+
+Des de Activa, també es poden fer **Modificacions Contractuals**. Per una explicació més detallada d'aquestes, consultar [aquesta](facturacion.md) pàgina.
+
+També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
+!!! warning
+    Una pòlissa cancel·lada no es pot tornar a activar ni canviar d'estat.
+
+## Històric de canvis en els estats d'una pòlissa
+
+En el formulari principal de la pòlissa, hi ha una pestanya que és **Històric**, on pots veure per tots els estats que ha passat la pòlissa, quan han sigut canviats i quin usuari els ha canviat. Això permet tenir un control sobre el fluxe d'aquesta.
+
+![](_static/polizas/historic_estats.png)
+
 ## Canvi data firma contracte
 
 En un contracte podem actualitzar la data de firma de contracte sense la
 necessitat de fer una modificació contractual mitjançant un assistent creat
-expresament
+expressament
 
 Des de una pólissa o des del botó acció del llistat de pólisses podem prèmer
 sobre el botó **Actualitzar data firma contracte**. Ens apareixerà el formulari
