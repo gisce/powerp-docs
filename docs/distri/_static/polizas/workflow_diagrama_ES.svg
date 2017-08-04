@@ -1,0 +1,135 @@
+<svg width="1585" height="527" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <filter height="1.504" id="filter_blur" width="1.1575" x="-0.07875" y="-0.252">
+   <feGaussianBlur id="feGaussianBlur3780" stdDeviation="4.2"/>
+  </filter>
+ </defs>
+ <title>blockdiag</title>
+ <desc/>
+ <g>
+  <title>background</title>
+  <rect x="-1" y="-1" width="1587" height="529" id="canvas_background" fill="none"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path d="m746.21128,441.94278l498.71265,0" fill="none" id="svg_113" stroke="rgb(0,0,0)"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="1173.0522" y="144.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_1"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="1173.0522" y="364.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_2"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="173.0522" y="144.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_3"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="923.0522" y="254.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_4"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="673.0522" y="144.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_5"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="923.0522" y="364.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_6"/>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="423.0522" y="144.06972" opacity="0.7" filter="url(#filter_blur)" id="svg_8"/>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="1170.0522" y="138.06972" id="svg_9"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="18" font-style="normal" font-weight="bold" text-anchor="middle" x="1244.54976" y="169.14725" id="svg_10">Baja</text>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="1170.0522" y="358.06972" id="svg_11"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="1245.35444" y="389.72539" id="svg_12">Corte</text>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="170.0522" y="138.06972" id="svg_13"/>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="920.0522" y="248.06972" id="svg_15"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="995.05751" y="269.8778" id="svg_16">Modificación</text>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="670.0522" y="138.06972" id="svg_17"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="745.0522" y="169.06972" id="svg_18">Activa</text>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="920.0522" y="358.06972" id="svg_19"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="994.77626" y="389.72539" id="svg_20">Impago</text>
+  <rect fill="rgb(255,255,255)" height="50" stroke="rgb(0,0,0)" width="150" x="420.0522" y="138.06972" id="svg_23"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="495.01848" y="169.72537" id="svg_24">Validar</text>
+  <path d="m820.0522,163.06972l50,0" fill="none" stroke="rgb(0,0,0)" id="svg_25"/>
+  <path d="m870.0522,163.06972l0,110" fill="none" stroke="rgb(0,0,0)" id="svg_26"/>
+  <path d="m870.0522,273.06972l42,0" fill="none" stroke="rgb(0,0,0)" id="svg_27"/>
+  <polygon fill="rgb(0,0,0)" points="919.0522119998932,273.0697250366211 912.0522119998932,269.0697250366211 912.0522119998932,277.0697250366211 919.0522119998932,273.0697250366211 " stroke="rgb(0,0,0)" id="svg_28"/>
+  <path d="m820.0522,174.64866l39.47368,0" fill="none" id="svg_29" stroke="rgb(0,0,0)"/>
+  <path d="m859.52588,174.12235l0,208.42105" fill="none" id="svg_30" stroke="rgb(0,0,0)"/>
+  <path d="m858.47325,383.06972l53.57894,0" fill="none" id="svg_31" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="919.0522119998932,383.0697250366211 912.0522119998932,379.0697250366211 912.0522119998932,387.0697250366211 919.0522119998932,383.0697250366211 " stroke="rgb(0,0,0)" id="svg_32"/>
+  <path d="m819.59765,153.06972l264.18183,0" fill="none" id="svg_33" stroke="rgb(0,0,0)"/>
+  <path d="m1083.77947,153.06972a4,4 0 0 1 8,0" fill="none" stroke="rgb(0,0,0)" id="svg_34"/>
+  <path d="m1105.41583,152.61517l56.63637,0" fill="none" id="svg_35" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="1169.0522119998932,174.4333267211914 1162.0522119998932,170.4333267211914 1162.0522119998932,178.4333267211914 1169.0522119998932,174.4333267211914 " stroke="rgb(0,0,0)" id="svg_36"/>
+  <path d="m1320.0522,157.80656l14.47369,0" fill="none" id="svg_37" stroke="rgb(0,0,0)"/>
+  <path d="m1333.99957,157.28024l0,-50.10526" fill="none" id="svg_38" stroke="rgb(0,0,0)"/>
+  <path d="m723.72562,106.64866l610.47734,0" fill="none" id="svg_39" stroke="rgb(0,0,0)"/>
+  <path d="m745.0522,115.06972l0,15" fill="none" stroke="rgb(0,0,0)" id="svg_40"/>
+  <polygon fill="rgb(0,0,0)" points="745.0522119998932,137.0697250366211 741.0522119998932,130.0697250366211 749.0522119998932,130.0697250366211 745.0522119998932,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_41"/>
+  <path d="m320.0522,163.06972l92,0" fill="none" stroke="rgb(0,0,0)" id="svg_42"/>
+  <polygon fill="rgb(0,0,0)" points="419.05218148231506,163.0697250366211 412.05218148231506,159.0697250366211 412.05218148231506,167.0697250366211 419.05218148231506,163.0697250366211 " stroke="rgb(0,0,0)" id="svg_43"/>
+  <path d="m1070.0522,273.06972l17.27273,0" fill="none" id="svg_44" stroke="rgb(0,0,0)"/>
+  <path d="m1087.32492,273.06972l0,-150.96875" fill="none" id="svg_45" stroke="rgb(0,0,0)"/>
+  <path d="m745.0522,115.06972l0,15" fill="none" stroke="rgb(0,0,0)" id="svg_47"/>
+  <polygon fill="rgb(0,0,0)" points="745.0522119998932,137.0697250366211 741.0522119998932,130.0697250366211 749.0522119998932,130.0697250366211 745.0522119998932,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_48"/>
+  <path d="m1070.0522,395.91071l92,0" fill="none" stroke="rgb(0,0,0)" id="svg_49"/>
+  <polygon fill="rgb(0,0,0)" points="1169.05224609375,395.2695925831795 1162.05224609375,391.2695925831795 1162.05224609375,399.2695925831795 1169.05224609375,395.2695925831795 " stroke="rgb(0,0,0)" id="svg_50"/>
+  <path d="m1070.05219,373.51574l30.00001,0" fill="none" id="svg_51" stroke="rgb(0,0,0)"/>
+  <path d="m1101.14367,373.51574l0,-258.44602" fill="none" id="svg_52" stroke="rgb(0,0,0)"/>
+  <path d="m744.33622,114.5434l356.50545,0" fill="none" id="svg_53" stroke="rgb(0,0,0)"/>
+  <path d="m745.0522,115.06972l0,15" fill="none" stroke="rgb(0,0,0)" id="svg_54"/>
+  <polygon fill="rgb(0,0,0)" points="745.0522119998932,137.0697250366211 741.0522119998932,130.0697250366211 749.0522119998932,130.0697250366211 745.0522119998932,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_55"/>
+  <path d="m1071.0522,383.40088l75,0" fill="none" stroke="rgb(0,0,0)" id="svg_56"/>
+  <path d="m1145.0522,383.11885l0,-209.14004" fill="none" id="svg_57" stroke="rgb(0,0,0)"/>
+  <path d="m1145.0522,174.43335l17,0" fill="none" stroke="rgb(0,0,0)" id="svg_58"/>
+  <polygon fill="rgb(0,0,0)" points="1169.0522119998932,174.4333267211914 1162.0522119998932,170.4333267211914 1162.0522119998932,178.4333267211914 1169.0522119998932,174.4333267211914 " stroke="rgb(0,0,0)" id="svg_59"/>
+  <path d="m1245.0522,358.06972l0,-162" fill="none" stroke="rgb(0,0,0)" id="svg_60"/>
+  <polygon fill="rgb(0,0,0)" points="1245.0522119998932,189.0697250366211 1241.0522119998932,196.0697250366211 1249.0522119998932,196.0697250366211 1245.0522119998932,189.0697250366211 " stroke="rgb(0,0,0)" id="svg_61"/>
+  <path d="m765.68744,122.1054l0,9.48278" fill="none" id="svg_65" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="745.0522119998932,137.0697250366211 741.0522119998932,130.0697250366211 749.0522119998932,130.0697250366211 745.0522119998932,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_66"/>
+  <path d="m570.0522,154.8879l25,0" fill="none" stroke="rgb(0,0,0)" id="svg_67"/>
+  <path d="m595.0522,155.34244l0,-40.27272" fill="none" id="svg_68" stroke="rgb(0,0,0)"/>
+  <path d="m245.0522,115.06972l350,0" fill="none" stroke="rgb(0,0,0)" id="svg_69"/>
+  <path d="m245.0522,115.06972l0,15" fill="none" stroke="rgb(0,0,0)" id="svg_70"/>
+  <polygon fill="rgb(0,0,0)" points="245.05219674110413,137.0697250366211 241.05219674110413,130.0697250366211 249.05219674110413,130.0697250366211 245.05219674110413,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_71"/>
+  <path d="m570.0522,165.79699l92,0" fill="none" stroke="rgb(0,0,0)" id="svg_72"/>
+  <polygon fill="rgb(0,0,0)" points="669.0521850585938,165.6174618601799 662.0521850585938,161.6174618601799 662.0521850585938,169.6174618601799 669.0521850585938,165.6174618601799 " stroke="rgb(0,0,0)" id="svg_73"/>
+  <rect fill="white" height="28.33333" width="89" x="866.57851" y="201.69724" id="svg_74" stroke="rgb(0,0,0)"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="910.96554" y="214.27597" id="svg_75" stroke="null">Modificación</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="77" x="820.99956" y="356.06972" id="svg_76"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="858.99956" y="366.50561" id="svg_77">Impago</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="47" x="837.29143" y="141.7635" id="svg_78"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="860.29143" y="152.71221" id="svg_79">Baja</text>
+  <rect fill="white" height="23.78947" width="65" x="1255.0522" y="94.85919" id="svg_80" stroke="rgb(0,0,0)"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1287.0522" y="110.92262" id="svg_81">Reactivar</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="59" x="334.32971" y="150.11278" id="svg_83"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="363.32971" y="161.2946" id="svg_84">Validar</text>
+  <rect fill="white" height="28" stroke="rgb(0,0,0)" width="89" x="1003.99337" y="208.57198" id="svg_85"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1048.50235" y="220.93505" id="svg_86">Deshacer mod.</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1048.79141" y="233.29812" id="svg_87">contractual</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="53" x="1081.50023" y="393.57069" id="svg_88"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1107.50023" y="405.03223" id="svg_89">Cortar</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="59" x="1066.0522" y="336.06972" id="svg_90"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1095.0522" y="347.53126" id="svg_91">Activar</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="47" x="1124.847" y="309.71987" id="svg_92"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1147.847" y="321.18141" id="svg_93">Baja</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="47" x="1223.48654" y="324.32304" id="svg_94"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1246.48654" y="335.90175" id="svg_95">Baja</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="59" x="1167.2674" y="434.41145" id="svg_96"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="1196.55682" y="445.873" id="svg_97">Activar</text>
+  <rect fill="white" height="18.90909" width="65" x="519.86081" y="100.50513" id="svg_98" stroke="rgb(0,0,0)"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="551.86081" y="113.50513" id="svg_99">Borrador</text>
+  <rect fill="white" height="15" stroke="rgb(0,0,0)" width="59" x="580.16703" y="163.82091" id="svg_101"/>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="609.48246" y="175.07364" id="svg_102">Activar</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="911.37179" y="226.59244" id="svg_103" stroke="null">contractual</text>
+  <text fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="995.06532" y="290.43335" id="svg_104">contractual</text>
+  <polygon fill="rgb(0,0,0)" points="1169.05224609375,153.1623837351799 1162.05224609375,149.1623837351799 1162.05224609375,157.1623837351799 1169.05224609375,153.1623837351799 " stroke="rgb(0,0,0)" id="svg_105"/>
+  <path d="m1096.96129,153.06972a4,4 0 0 1 8,0" fill="none" stroke="rgb(0,0,0)" id="svg_106"/>
+  <path d="m1092.23398,153.06972l4.36362,0" fill="none" id="svg_107" stroke="rgb(0,0,0)"/>
+  <path d="m723.99956,107.17499l0,22.89473" fill="none" id="svg_109" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="723.9999659061432,137.0697250366211 719.9999659061432,130.0697250366211 727.9999659061432,130.0697250366211 723.9999659061432,137.0697250366211 " stroke="rgb(0,0,0)" id="svg_110"/>
+  <path d="m765.53676,121.91182l321.62318,0" fill="none" id="svg_111" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="765.9166561961174,137.06973266601562 761.9166561961174,130.06973266601562 769.9166561961174,130.06973266601562 765.9166561961174,137.06973266601562 " stroke="rgb(0,0,0)" id="svg_112"/>
+  <path d="m746.0805,192.60974l0,248.7572" fill="none" id="svg_115" stroke="rgb(0,0,0)"/>
+  <polygon fill="rgb(0,0,0)" points="745.8926050662994,189.90996551513672 741.8926050662994,196.90996551513672 749.8926050662994,196.90996551513672 745.8926050662994,189.90996551513672 " id="svg_116" stroke="rgb(0,0,0)"/>
+  <path d="m1244.21186,441.263l0,-30.90756" fill="none" id="svg_117" stroke="rgb(0,0,0)"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="244.59662" y="169.73195" id="svg_118">Borrador</text>
+  <rect fill="rgb(0,0,0)" height="50" stroke="rgb(0,0,0)" width="150" x="172.07181" y="304.85403" opacity="0.7" filter="url(#filter_blur)" id="svg_119"/>
+  <rect fill="#cccccc" height="50" stroke="rgb(0,0,0)" width="150" x="169.07181" y="298.85403" id="svg_120" stroke-dasharray="2,2"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="19" font-style="normal" font-weight="bold" text-anchor="middle" x="242.93804" y="330.66718" id="svg_121">Cancelada</text>
+  <path stroke="rgb(0,0,0)" d="m245.10009,188.83077l0,108.41852" fill="none" id="svg_122" stroke-dasharray="2,2"/>
+  <polygon fill="rgb(0,0,0)" points="245.08832630515099,290.89971923828125 241.08832630515099,297.89971923828125 249.08832630515099,297.89971923828125 245.08832630515099,290.89971923828125 " id="svg_123" stroke="rgb(0,0,0)" transform="rotate(180 245.08833312988278,294.39971923828125) "/>
+  <path d="m721.10009,188.64099l0,133.70318" fill="none" id="svg_7" stroke-dasharray="2,2" stroke="rgb(0,0,0)"/>
+  <path d="m321.21128,322.94278l400.71267,0" fill="none" id="svg_14" stroke="rgb(0,0,0)" stroke-dasharray="2,2"/>
+  <polygon fill="rgb(0,0,0)" points="328.05218505859375,323.0697326660156 321.05218505859375,319.0697326660156 321.05218505859375,327.0697326660156 328.05218505859375,323.0697326660156 " stroke="rgb(0,0,0)" id="svg_21" transform="rotate(-180 324.55218505859375,323.0697326660156) "/>
+  <rect fill="white" height="18.90909" width="65" x="237.12506" y="207.70011" id="svg_22" stroke="rgb(0,0,0)"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="269.12506" y="220.70011" id="svg_46">Cancelar</text>
+  <rect fill="white" height="18.90909" width="65" x="664.4661" y="201.22524" id="svg_62" stroke="rgb(0,0,0)"/>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="696.4661" y="214.22524" id="svg_63">Cancelar</text>
+  <text style="cursor: move;" fill="rgb(0,0,0)" font-family="sans-serif" font-size="11" font-style="normal" font-weight="normal" text-anchor="middle" x="269.12506" y="220.70011" id="svg_64">Cancelar</text>
+ </g>
+</svg>
