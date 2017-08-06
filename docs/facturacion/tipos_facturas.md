@@ -51,9 +51,10 @@ de facturar l'energia correcta.
 La funció de les factures Anul·ladores amb Rectificadora és la d'anul·lar la factura
 original, de manera que el balanç sigui 0.
 
-**NOTA: A partir del 31/07/17 aquestes factures ja no es fan servir per enviar les
+!!! note
+A partir del 31/07/2017 aquestes factures ja no es fan servir per enviar les
 factures amb F1, sinó que s'han substituït per Rectificadora sense anul·ladora (RA).
-Tot i això, es poden seguir utilitzant per facturar a clients.**
+Tot i això, es poden seguir utilitzant per facturar a clients.
 
 ### Facturació
 
@@ -72,9 +73,10 @@ incorrectes i facturar els valors que s'haurien d'haver facturat. Un cop hem
 compensat la factura original amb l'Anul·ladora amb Rectificadora, la factura
 Rectificadora ens servirà per facturar els valors correctes.
 
-**NOTA: A partir del 31/07/17 aquestes factures ja no es fan servir per enviar les
+!!! note
+A partir del 31/07/2017 aquestes factures ja no es fan servir per enviar les
 factures amb F1, sinó que s'han substituït per Rectificadora sense anul·ladora (RA).
-Tot i això, es poden seguir utilitzant per facturar a clients.**
+Tot i això, es poden seguir utilitzant per facturar a clients.
 
 ### Facturació
 
@@ -89,7 +91,7 @@ Aquestes factures tenen la mateixa funcionalitat que la parella d'Anul·ladora a
 Rectificadora i Rectificadora. És a dir, s'utilitzen per a facturar correctament
 una factura que en el seu moment es va facturar amb valors incorrectes.
 
-A partir del 31/07/17, amb els nous formats de gestió ATR, els F1 de rectificació
+A partir del 31/07/2017, amb els nous formats de gestió ATR, els F1 de rectificació
 s'han d'enviar amb aquest format.
 
 ### Facturació
