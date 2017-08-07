@@ -2,7 +2,10 @@
 
 ## Estats de les pòlisses
 
-Les pòlisses tenen certs estats en els que es troben en un moment donat: esborrany, activa, baixa, etc, i aquests estats gobernen el comportament i el paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma un recorregut lògic.
+Les pòlisses tenen certs estats en els que es troben en un moment donat:
+esborrany, activa, baixa, etc, i aquests estats governen el comportament i el
+paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma
+un recorregut lògic.
 
 ![Descripció dels \label{workflows}](_static/polizas/workflow_diagrama_ES.svg)
 *Fluxograma dels estat de les pòlisses i les transicions*
@@ -10,16 +13,24 @@ Les pòlisses tenen certs estats en els que es troben en un moment donat: esborr
 ![](_static/polizas/indicador_estat_polissa.png)
 *Vista general de la pòlissa amb el camp "estat" indicat*
 
-Al crear una pòlissa, aquesta per defecte s'estableix en un estat de **Esborrany**. Una pòlissa en Esborrany permet canviar les dades abans de confirmar-les.
+Al crear una pòlissa, aquesta per defecte s'estableix en un estat de
+**Esborrany**. Una pòlissa en Esborrany permet canviar les dades abans de
+confirmar-les.
 
 Després de prémer el botó de "Validar", l'estat de la pòlissa serà **Validar**.
-Aquest estat es l'anterior al de activa, en el que l'ERP t'informa de quines dades no compleixen els requeriments.
+Aquest estat es l'anterior al de activa, en el que l'ERP t'informa de quines
+dades no compleixen els requeriments.
 
-Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres estats com Impagament.
+Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a
+ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa
+està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres 
+estats com Impagament.
 
-Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en estat de **Tall**, o bé reactivar-la.
+Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en estat
+de **Tall**, o bé reactivar-la.
 
-Des de Activa, també es poden fer **Modificacions Contractuals**. Per una explicació més detallada d'aquestes, consultar [aquesta](facturacion.md) pàgina.
+Des de Activa, també es poden fer **Modificacions Contractuals**. Per una
+explicació més detallada d'aquestes, consultar [aquesta](facturacion.md) pàgina.
 
 També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
 !!! warning
@@ -27,7 +38,10 @@ També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
 
 ## Històric de canvis en els estats d'una pòlissa
 
-En el formulari principal de la pòlissa, hi ha una pestanya que és **Històric**, on pots veure per tots els estats que ha passat la pòlissa, quan han sigut canviats i quin usuari els ha canviat. Això permet tenir un control sobre el flux d'aquesta.
+En el formulari principal de la pòlissa, hi ha una pestanya que és **Històric**,
+on pots veure per tots els estats que ha passat la pòlissa, quan han estat
+canviats i quin usuari els ha canviat. Això permet tenir un control sobre el
+flux d'aquesta.
 
 ![](_static/polizas/historic_estats.png)
 
