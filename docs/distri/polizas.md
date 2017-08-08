@@ -7,7 +7,7 @@ esborrany, activa, baixa, etc, i aquests estats governen el comportament i el
 paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma
 un recorregut lògic.
 
-![Descripció dels \label{workflows}](_static/polizas/workflows_ES.svg)
+![Descripció dels \label{workflows}](_static/polizas/workflows.svg)
 *Fluxograma dels estat de les pòlisses i les transicions*
 
 ![](_static/polizas/indicador_estat_polissa.png)
