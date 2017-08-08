@@ -6,9 +6,9 @@ passar dues coses:
   * S'ha emès una factura que **no** s'havia d'emetre.
   * S'ha emès una factura amb errors administratius o de càlcul.
 
-!!! info
+!!! note
     Per més informació sobre els tipus de factures rectificadores que hi ha
-    veure l'apartat [Tipus de factures](tipos_facturas)
+    veure l'apartat [Tipus de factures](tipos_facturas.md)
 
 Per totes les accions primer haurem de començar amb l'assistent de refacturació:
 
@@ -24,7 +24,7 @@ una factura **anul·ladora**·
 ![](_static/refacturacion/boton_anular.png)
 
 Aquest procés el que fa és crear una factura igual a la emesa però d'abonament i
-així compençar la original.
+així compensar la original.
 
 Quan acaba el procés ens obrirà una nova pestanya amb la factura anul·ladora en
 estat **esborrany**.
@@ -45,8 +45,8 @@ Més informació sobre el tipus de factura [rectificadora sense anul·ladora (RA
 
 ![](_static/refacturacion/boton_rectificadora_sin_anuladora.png)
 
-També ens gnenerarà una factura rectificadora en esborrany i podrem comprovar que
-fa la **compensasió** amb la factura original i ens queda en el camp **residual**
+També ens generarà una factura rectificadora en esborrany i podrem comprovar que
+fa la **compensació** amb la factura original i ens queda en el camp **residual**
 el pendent.
 
 ![](_static/refacturacion/rectificadora_ra_residual.png)
