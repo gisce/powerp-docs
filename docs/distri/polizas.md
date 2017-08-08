@@ -23,7 +23,7 @@ dades no compleixen els requeriments.
 
 Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a
 ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa
-està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres 
+està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres
 estats com Impagament.
 
 Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en estat
