@@ -7,7 +7,7 @@ esborrany, activa, baixa, etc, i aquests estats governen el comportament i el
 paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma
 un recorregut lògic.
 
-![Descripció dels \label{workflows}](_static/polizas/workflow_diagrama_ES.svg)
+![Descripció dels \label{workflows}](_static/polizas/workflows_ES.svg)
 *Fluxograma dels estat de les pòlisses i les transicions*
 
 ![](_static/polizas/indicador_estat_polissa.png)
@@ -30,11 +30,9 @@ Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en esta
 de **Tall**, o bé reactivar-la.
 
 Des de Activa, també es poden fer **Modificacions Contractuals**. Per una
-explicació més detallada d'aquestes, consultar [aquesta](facturacion.md) pàgina.
+explicació més detallada d'aquestes, consultar [aquesta](facturacion.md#modificacions-contractuals) pàgina.
 
 També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
-!!! warning
-    Una pòlissa cancel·lada no es pot tornar a activar ni canviar d'estat.
 
 ## Històric de canvis en els estats d'una pòlissa
 
