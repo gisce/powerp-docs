@@ -114,4 +114,5 @@ pages:
     - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Gestió de lectures: facturacion/lecturas.md
     - Lots: facturacion/lotes.md
+    - Anul·lació/Refacturació: facturacion/refacturacion.md
     - Tipus de factures: facturacion/tipos_facturas.md
