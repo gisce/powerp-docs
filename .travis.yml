@@ -5,7 +5,7 @@ python:
 install:
   - "pip install -r requirements.txt"
 script:
+  - python check_titles.py
   - mkdocs build -f mkdocs.yml
   - mkdocs build -f mkdocs_es.yml --clean
-  - python check_titles.py
   - python check_strings.py -v -l
