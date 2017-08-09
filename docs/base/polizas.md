@@ -307,7 +307,8 @@ Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en esta
 de **Tall**, o bé reactivar-la.
 
 Des de Activa, també es poden fer **Modificacions Contractuals**. Per una
-explicació més detallada d'aquestes, consultar [aquesta](facturacion.md#modificacions-contractuals) pàgina.
+explicació més detallada d'aquestes, consultar
+[aquesta](#modificacions-contractuals_1) pàgina.
 
 També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
 
