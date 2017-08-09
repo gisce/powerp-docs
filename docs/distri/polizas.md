@@ -4,7 +4,7 @@
 
 En un contracte podem actualitzar la data de firma de contracte sense la
 necessitat de fer una modificació contractual mitjançant un assistent creat
-expresament
+expressament
 
 Des de una pólissa o des del botó acció del llistat de pólisses podem prèmer
 sobre el botó **Actualitzar data firma contracte**. Ens apareixerà el formulari
