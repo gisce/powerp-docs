@@ -336,7 +336,7 @@ calcularà a partir d'una fórmula (Potència contractada * dies de contracte * 
 * **Contracte eventual amb comptador**: a diferencia del contracte anterior aquest
 sí que disposa de comptador per poder calcular el consum.
 
-## Càlcul del consum total per contractes eventuals sense comptador
+### Càlcul del consum total per contractes eventuals sense comptador
 
 Aquest tipus de contractes es caracteritzen per no tenir comptador, per tant no
 es pot tenir una mesura exacte del consum total, per calcular-ho s'utilitzarà la
