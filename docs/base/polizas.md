@@ -321,6 +321,59 @@ flux d'aquesta.
 
 ![](_static/polizas/historic_estats.png)
 
+## Contractes de tipus eventual
+
+Un contracte eventual és un tipus de contracte amb una duració determinada,
+aquests es solen realitzar per events de curta duració com poden ser
+fires, certamens, etc.
+
+Dins d'aquests contractes en podem distingir dos tipus:
+
+* **Contracte eventual sense comptador**: aquests son contractes d'una duració
+màxima de dos mesos en els quals per llei no fa falta un comptador, el consum es
+calculara a partir d'una formula (Potència contractada * dies de contracte * hores diaries).
+
+* **Contracte eventual amb comptador**: ha diferencia del contracte anterior aquest
+si que disposa de comptador per poder calcular el consum.
+
+## Càlcul del consum total per contractes eventuals sense comptador
+
+Aquest tipus de contractes es caracteritzen per no tenir comptador, per tant no
+es pot tenir una mesuara exacte del consum total, per calcular-ho s'utilitzara la
+següent fórmula:
+
+
+```Consum total = Potència contractada * dies de contracte * hores d'us diaries
+```
+
+### Assistent per calcular el consum total
+
+Per tal de facilitar aquest calcul s'ha afegit un assistent dins el menú de
+gestió de pòlissas.
+
+
+* Dins el menú de gestió de pòlissa, en cas de que el tipus de contracte sigui
+eventual sene comptador ens apareixerà la opció per calcular-ne el consum total:
+![](_static/polizas/assistent_consum_eventual/cat/polissa_cat.png)
+&nbsp;
+* Per iniciar l'assistent premerem el boto calcular:
+
+| Assistent amb camp sense precalcular                               | Assistent amb camp precalculat                         |
+|--------------------------------------------------------------------|--------------------------------------------------------|
+| ![](_static/polizas/assistent_consum_eventual/cat/wiz_no_pre_cat.png) |![](_static/polizas/assistent_consum_eventual/cat/wiz_pre_cat.png)|
+
+Un cop comprobat que les dades son correctes premem el boto calcular.
+
+!!! Note
+        La opció precalcular és opcional, serveix per comprobar els calculs
+        havans de calcular-los i apareixeran al camp consum de l'assistent.
+
+* Finalment, un cop calculat el camp ja apareixara al menu de gestió de pòlissa.
+![](_static/polizas/assistent_consum_eventual/cat/polissa_calc_cat.png)
+&nbsp;
+* En el cas que hi hagi una modificació contractual el camp del consum apareixerà
+a la pestanya de facturació de la modificació.
+![](_static/polizas/assistent_consum_eventual/cat/mod_contract_cat.png)
 
 ## Visualització deute d'una pòlissa/contracte
 
