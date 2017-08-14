@@ -351,12 +351,12 @@ Per tal de facilitar aquest càlcul s'ha afegit un assistent dins el menú de
 gestió de pòlisses.
 
 
-* Dins el menú de gestió de pòlissa, en cas de que el tipus de contracte sigui
+Dins el menú de gestió de pòlissa, en cas de que el tipus de contracte sigui
 eventual sense comptador ens apareixerà la opció per calcular-ne el consum total:
-&nbsp;
+
 ![](_static/polizas/assistent_consum_eventual/cat/polissa_cat.png)
-&nbsp;
-* Per iniciar l'assistent premerem el botó calcular:
+
+Per iniciar l'assistent premerem el botó calcular:
 
 | Assistent amb camp sense precalcular                               | Assistent amb camp precalculat                         |
 |--------------------------------------------------------------------|--------------------------------------------------------|
@@ -368,14 +368,14 @@ Un cop comprovat que les dades son correctes premem el botó calcular.
         L'opció precalcular és opcional, serveix per comprovar els càlculs
         abans de calcular-los i apareixeran al camp consum de l'assistent.
 
-* Finalment, un cop calculat el camp ja apareixarà al menú de gestió de pòlissa.
-&nbsp;
-![](_static/polizas/assistent_consum_eventual/cat/polissa_calc_cat.png)
-&nbsp;
+Finalment, un cop calculat el camp ja apareixarà al menú de gestió de pòlissa.
 
-* En el cas que hi hagi una modificació contractual el camp del consum apareixerà
+![](_static/polizas/assistent_consum_eventual/cat/polissa_calc_cat.png)
+
+
+En el cas que hi hagi una modificació contractual el camp del consum apareixerà
 a la pestanya de facturació de la modificació.
-&nbsp;
+
 ![](_static/polizas/assistent_consum_eventual/cat/mod_contract_cat.png)
 
 ## Visualització deute d'una pòlissa/contracte
