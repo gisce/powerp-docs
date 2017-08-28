@@ -115,3 +115,4 @@ pages:
     - Gestió de lectures: facturacion/lecturas.md
     - Lots: facturacion/lotes.md
     - Tipus de factures: facturacion/tipos_facturas.md
+    - Accions genèriques: facturacion/acciones.md
