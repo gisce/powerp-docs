@@ -57207,6 +57207,15 @@ msgstr ""
 #~ "estado \n"
 #~ "<code>cancelado</code>. Se tiene que generar un paso de anulación o rechazo."
 
+#~ msgid ""
+#~ "Existeix un estat <strong>Pendent</strong> en el CRM. Pel que fa a canvis d'ATR, "
+#~ "no &#233;s un\n"
+#~ "estat que tingui gaire sentit."
+#~ msgstr ""
+#~ "Existe un estado <strong> Pendiente </ strong> en el CRM. En cuanto a cambios de "
+#~ "ATR, no es un\n"
+#~ "estado que tenga mucho sentido."
+
 #~ msgid "<strong>Empresa</strong>: Empresa destinat&#224;ria"
 #~ msgstr "<strong>Empresa</strong>: Empresa destinataria"
 
