@@ -42,6 +42,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Reles: distri/reles.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
