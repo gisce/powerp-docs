@@ -324,20 +324,20 @@ les validades de color **negre**
 
 ![](_static/telegestion/CierresTG.png)
 
-#### Llista de lectures de Telegestió
-
-Des del llistat podem seleccionar un conjunt lectures i validar-les prement el
-botó **Acció**. S'ens obrirà un formulari on podrem escollir validar o
-invalidar els tancaments o lectures de telegestió. Cal tenir present que validar
-mitjançant aquest procediment **NO realitza cap de les comprovacions descrites en
-l'apartat [Validar TG Tancaments](#validar-tg-tancaments).** Únicament marca el
-tancament com a vàlid o el desmarca.
+Des del llistat podem seleccionar un conjunt de lectures i marcar-les com a
+vàlides o invàlides utilitzant el botó **Acció**. Se'ns obrirà seguidament un
+formulari on es permet escollir validar o invalidar les lectures de telegestió.
+Aquesta acció **NO realitza les comprovacions per validar lectures.**
 
 !!! warning
-    Aquesta acció NO valida les lectures, només marca el registre horari com a
-    vàlid.
+    Cal tenir molt present que aquest procediment **NO valida les lectures**,
+    només en marca el registre horari com a vàlid o invàlid. És recomanable
+    utilitzar aquest procediment en registres individuals i només pels casos de
+    necessitat, dels quals es coneix el motiu. Per validar lectures cal
+    utilitzar el mètode descrit en l'apartat:
+    [Validar TG Tancaments](#validar-tg-tancaments).
 
-![](_static/telegestion/ValidarTancamentTG.png)
+![](_static/telegestion/MarcarTancamentValid.png)
 
 #### Formulari de validació d'un tancament
 
