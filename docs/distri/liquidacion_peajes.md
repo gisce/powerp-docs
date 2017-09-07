@@ -163,3 +163,26 @@ o bé guardar-lo en un directori específic.
 !!! note
     En cas de perdre el nom del fitxer, es disposa del camp "_Nom del Fitxer_"
     que no es pot modificar.
+
+### Liquidacions Anuals ETU/35/2017
+
+!!! Warning
+    Aquest procés encara està en desenvolupament, pel que la inforació següent
+    únicament està disponible com a referència fins que s'hagi finalitzat el
+    disseny i l'implementació d'aquest assistent.
+
+Aquestes liquidacions s'han de generar una sola vegada, quan s'hagi facturat totes
+les línies extra amb el Suplement Territorial corresponent a la ETU/35/2017. Això
+serà aproximadament al Septembre del 2018.
+
+Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-ETU-35-2017))
+es buscarà totes les línies de Suplements Territorials i es generarà la liquidació
+corresponent a les línies facturades.
+
+!!! Warning
+    En aquest cas també cal facilitar les línies que no s'han facturat especificant el
+    perquè. Tant si és perquè el CUPS no està actiu o no existeix una pòlissa activa per
+    aquest.
+
+Per tal d'obtenir les línies no facturades, caldrà disposar del fitxer CSV
+corresponent a la generació de les línies extra i carregar-lo al assistent.
