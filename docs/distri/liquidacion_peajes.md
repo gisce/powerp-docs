@@ -112,3 +112,54 @@ i la podem veure apretant el botó **Mostrar liquidació**
 !!!note
     Podem anar regenerant la liquidació tantes vegades com volguem mentres estigui
     en estat **esborrany** que ens confirmarà si volem tornar a generar.
+
+## Generar Liquidacions Suplements Territorials ETU/35/2017
+
+Les liquidacions per als Suplements Territorials de la ETU/35/2017 es realitzen
+mitjançant un fitxer separat a la resta de liquidacions per informar a la CNMC
+únicament d'aquests suplements.
+
+Aquestes liquidacions consten de dos fitxers:
+
+- Liquidacions Mensuals, anomenats sota el format "STM\__aaaamm_._eeee_.xml"
+    - S'han d'enviar mensualment, juntament amb els altres fitxers de liquidacions
+- Liquidacions Anuals, anomenats sota el format "STA\__aaaa_._eeee_.xml"
+    - S'ha d'enviar una sola vegada quan s'hagin cobrat totes les línies amb
+      Suplement Territorial (aproximadament al Septembre de 2018)
+
+Per generar aquests fitxers cal tenir instal·lat el mòdul: **giscedata_liquidacions_etu35_2017**
+
+Aquest mòdul ens facilita dos assistents diferents, un per les liquidacions Mensuals
+i un per les liquidacions Anuals. Podem trobar els assistents en l'ERP en la direcció
+"**Menú OpenERP > Liquidacions**"
+
+![](_static/liquidacion_peajes/liquidacion_menu_etu.png)
+
+### Liquidacions Mensuals ETU/35/2017
+
+Aquestes liquidacions s'han de generar una vegada cobrades les diferents factures
+amb els Suplements Territorials del mes corresponent, de la mateixa manera que es
+liquida l'energia facturada (fins a 15 dies de la facturació).
+
+Utilitzant l'assistent especificat en l'apartat anterior, únicament ens fa falta
+saber quin mes volem liquidar. Aquest assistent utilitza el lot de facturació per
+sel·leccionar les factures amb Suplements per un mes en concret.
+Podem escriure el mes amb el format "_mm/aaaa_" o bé podem polsar el botó de lupa
+i sel·leccionar el lot de facturació corresponent.
+
+![](_static/liquidacion_peajes/wizard_etu_mes.png)
+
+Una vegada sel·leccionat el mes adequat, podem polsar el botó "_Crear_" i ens
+generarà el fitxer XML amb el format especificat per la CNMC.
+
+![](_static/liquidacion_peajes/wizard_etu_crear.png)
+
+Una vegada generat, els camps amb el nom del fitxer i fitxer generat
+s'actualitzaràn permetent mostrar el fitxer en la carpeta que es troba, obrir-lo
+o bé guardar-lo en un directori específic.
+
+![](_static/liquidacion_peajes/wizard_etu_generat.png)
+
+!!! note
+    En cas de perdre el nom del fitxer, es disposa del camp "_Nom del Fitxer_"
+    que no es pot modificar.
