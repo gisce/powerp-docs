@@ -141,6 +141,12 @@ Aquestes liquidacions s'han de generar una vegada cobrades les diferents facture
 amb els Suplements Territorials del mes corresponent, de la mateixa manera que es
 liquida l'energia facturada (fins a 15 dies de la facturació).
 
+Al [BOE referent a la ETU/35/2017](https://www.boe.es/boe/dias/2017/01/26/pdfs/BOE-A-2017-810.pdf),
+s'especifica que serà l'òrgan corresponent (CNMC) que s'encarregarà de definir
+i controlar els ingressos obtinguts per les distribuïdores per aquests regulaments.
+
+![](_static/liquidacion_peajes/liquidacion_etu_boe.png)
+
 Utilitzant l'assistent especificat en l'apartat anterior, únicament ens fa falta
 saber quin mes volem liquidar. Aquest assistent utilitza el lot de facturació per
 sel·leccionar les factures amb Suplements per un mes en concret.
@@ -173,7 +179,8 @@ o bé guardar-lo en un directori específic.
 
 Aquestes liquidacions s'han de generar una sola vegada, quan s'hagi facturat totes
 les línies extra amb el Suplement Territorial corresponent a la ETU/35/2017. Això
-serà aproximadament al Septembre del 2018.
+serà aproximadament al Septembre del 2018 tot i que no s'especifica la data límit
+ni en les reunions de la CNMC ni en el BOE.
 
 Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-etu352017))
 es buscarà totes les línies de Suplements Territorials i es generarà la liquidació
