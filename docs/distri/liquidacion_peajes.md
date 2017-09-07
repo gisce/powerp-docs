@@ -175,7 +175,7 @@ Aquestes liquidacions s'han de generar una sola vegada, quan s'hagi facturat tot
 les línies extra amb el Suplement Territorial corresponent a la ETU/35/2017. Això
 serà aproximadament al Septembre del 2018.
 
-Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-ETU-35-2017))
+Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-etu352017))
 es buscarà totes les línies de Suplements Territorials i es generarà la liquidació
 corresponent a les línies facturades.
 
