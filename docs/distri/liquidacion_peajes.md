@@ -115,17 +115,26 @@ i la podem veure apretant el botó **Mostrar liquidació**
 
 ## Generar Liquidacions Suplements Territorials ETU/35/2017
 
+Al [BOE referent a la ETU/35/2017](https://www.boe.es/boe/dias/2017/01/26/pdfs/BOE-A-2017-810.pdf),
+s'especifica que serà l'òrgan corresponent (CNMC) el que s'encarregarà de definir
+i controlar els ingressos obtinguts per les distribuïdores per aquests regulaments.
+
+![](_static/liquidacion_peajes/liquidacion_etu_boe.png)
+
 Les liquidacions per als Suplements Territorials de la ETU/35/2017 es realitzen
 mitjançant un fitxer separat a la resta de liquidacions per informar a la CNMC
 únicament d'aquests suplements.
 
+Aquests fitxers s'han de generar una vegada realitzades les factures amb les
+regularitzacions dels Suplements Territorials.
+
 Aquestes liquidacions consten de dos fitxers:
 
-- Liquidacions Mensuals, anomenats sota el format "STM\__aaaamm_._eeee_.xml"
+- Liquidacions Mensuals, s'han d'anomenar sota el format "STM\__aaaamm_._eeee_.xml"
     - S'han d'enviar mensualment, juntament amb els altres fitxers de liquidacions
-- Liquidacions Anuals, anomenats sota el format "STA\__aaaa_._eeee_.xml"
+- Liquidacions Anuals, s'han d'anomenar sota el format "STA\__aaaa_._eeee_.xml"
     - S'ha d'enviar una sola vegada quan s'hagin cobrat totes les línies amb
-      Suplement Territorial (aproximadament al Septembre de 2018)
+      Suplement Territorial (aproximadament al setembre de 2018)
 
 Per generar aquests fitxers cal tenir instal·lat el mòdul: **giscedata_liquidacions_etu35_2017**
 
@@ -137,59 +146,57 @@ i un per les liquidacions Anuals. Podem trobar els assistents en l'ERP en la dir
 
 ### Liquidacions Mensuals ETU/35/2017
 
-Aquestes liquidacions s'han de generar una vegada cobrades les diferents factures
+!!! Note "Fitxer de Referència"
+    Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
+    de información relativo al fichero de suplementos territoriales mensual
+    (Grupo BC)_" en la versió 1.0 compartit per la CNMC mitjançant la circular 168-17.
+
+Aquestes liquidacions s'han de generar una vegada generades totes les factures
 amb els Suplements Territorials del mes corresponent, de la mateixa manera que es
-liquida l'energia facturada (fins a 15 dies de la facturació).
+liquida l'energia facturada (abans del dia 15 del mes).
 
-Al [BOE referent a la ETU/35/2017](https://www.boe.es/boe/dias/2017/01/26/pdfs/BOE-A-2017-810.pdf),
-s'especifica que serà l'òrgan corresponent (CNMC) que s'encarregarà de definir
-i controlar els ingressos obtinguts per les distribuïdores per aquests regulaments.
-
-![](_static/liquidacion_peajes/liquidacion_etu_boe.png)
-
-Utilitzant l'assistent especificat en l'apartat anterior, únicament ens fa falta
-saber quin mes volem liquidar. Aquest assistent utilitza el lot de facturació per
+Utilitzant l'assistent especificat en l'apartat anterior, s'ha de sel·leccionar
+el mes a liquidar. Aquest assistent utilitza el lot de facturació per
 sel·leccionar les factures amb Suplements per un mes en concret.
-Podem escriure el mes amb el format "_mm/aaaa_" o bé podem polsar el botó de lupa
+S'ha d'escriure el mes amb el format "_mm/aaaa_" o bé es pot prémer el botó de lupa
 i sel·leccionar el lot de facturació corresponent.
 
 ![](_static/liquidacion_peajes/wizard_etu_mes.png)
 
-Una vegada sel·leccionat el mes adequat, podem polsar el botó "_Crear_" i ens
+Una vegada sel·leccionat el mes adequat es prem el botó "_Crear_" i es
 generarà el fitxer XML amb el format especificat per la CNMC.
 
 ![](_static/liquidacion_peajes/wizard_etu_crear.png)
 
-Una vegada generat, els camps amb el nom del fitxer i fitxer generat
-s'actualitzaràn permetent mostrar el fitxer en la carpeta que es troba, obrir-lo
+Una vegada generat, els camps "Nom del Fitxer" i "Fitxer Generat"
+s'actualitzaran permetent mostrar el fitxer en la carpeta que es troba, obrir-lo
 o bé guardar-lo en un directori específic.
 
 ![](_static/liquidacion_peajes/wizard_etu_generat.png)
 
-!!! note
-    En cas de perdre el nom del fitxer, es disposa del camp "_Nom del Fitxer_"
-    que no es pot modificar.
-
 ### Liquidacions Anuals ETU/35/2017
 
-!!! Warning
-    Aquest procés encara està en desenvolupament, pel que la inforació següent
-    únicament està disponible com a referència fins que s'hagi finalitzat el
-    disseny i l'implementació d'aquest assistent.
+!!! Note "Fitxer de Referència"
+    Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
+    de información relativo al fichero de suplementos territoriales anual
+    (Grupo BC)_" en la versió 1.0 compartit per la CNMC mitjançant la circular 168-17.
 
-Aquestes liquidacions s'han de generar una sola vegada, quan s'hagi facturat totes
-les línies extra amb el Suplement Territorial corresponent a la ETU/35/2017. Això
-serà aproximadament al Septembre del 2018 tot i que no s'especifica la data límit
-ni en les reunions de la CNMC ni en el BOE.
+!!! Danger "Atenció"
+    Aquest procés encara està en desenvolupament i estarà disponible properament,
+    pel que la informació següent es mostra com a referència fins que s'hagi
+    finalitzat el disseny i la implementació d'aquest assistent.
+
+Aquest fitxer de liquidacions s'ha de crear una sola vegada, quan s'hagin generat
+totes les factures amb les línies extra del Suplement Territorial corresponent a
+l'ordre ETU/35/2017. Això serà aproximadament al setembre del 2018 tot i que no
+s'especifica la data límit ni en les reunions de la CNMC ni en el BOE.
 
 Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-etu352017))
-es buscarà totes les línies de Suplements Territorials i es generarà la liquidació
+es buscaran totes les línies de Suplements Territorials i es generarà la liquidació
 corresponent a les línies facturades.
 
-!!! Warning
-    En aquest cas també cal facilitar les línies que no s'han facturat especificant el
-    perquè. Tant si és perquè el CUPS no està actiu o no existeix una pòlissa activa per
-    aquest.
-
-Per tal d'obtenir les línies no facturades, caldrà disposar del fitxer CSV
-corresponent a la generació de les línies extra i carregar-lo al assistent.
+!!! Warning "Atenció"
+    En aquest cas també cal facilitar les línies que no s'han facturat especificant-ne el
+    motiu, tant si és perquè el CUPS està de baixa, com si hi ha hagut un canvi de titular.
+    Per tal d'obtenir aquests casos, cal disposar del fitxer CSV que correspon
+    a la generació de les línies extra per carregar-lo a l'assistent.
