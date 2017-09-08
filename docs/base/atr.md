@@ -195,7 +195,7 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
     Un cas que ja ha tingut missatgeria amb un altre agent, **no** pot passar a
     estat ``cancel·lat``. S'ha de generar un pas d'anul·lació o rebuig.
 
-!!! note:
+!!! note
     Existeix un estat **Pendent** en el CRM. Pel que fa a canvis d'ATR, no és un
     estat que tingui gaire sentit.
 
