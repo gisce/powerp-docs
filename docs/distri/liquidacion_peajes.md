@@ -132,9 +132,17 @@ Aquestes liquidacions consten de dos fitxers:
 
 - Liquidacions Mensuals, s'han d'anomenar sota el format "STM\__aaaamm_._eeee_.xml"
     - S'han d'enviar mensualment, juntament amb els altres fitxers de liquidacions
-- Liquidacions Anuals, s'han d'anomenar sota el format "STA\__aaaa_._eeee_.xml"
+- Liquidacions Anuals, s'han d'anomenar sota el format "STA\__aaaamm_._eeee_.xml"
     - S'ha d'enviar una sola vegada quan s'hagin cobrat totes les línies amb
       Suplement Territorial (aproximadament al setembre de 2018)
+
+En el format utilitzat, s'utilitza la següent nomenclatura:
+
+| Nomenclatura | Definició                                                                                                                           |
+|:------------:|:------------------------------------------------------------------------------------------------------------------------------------|
+|    _aaaa_    | Any corresponent a les liquidacions presentades en el fitxer, cas de les liquidacions anuals correspon a l'any d'entrega del fitxer |
+|     _mm_     | Mes corresponent a les liquidacions presentades en el fitxer, cas de les liquidacions anuals correspon al mes d'entrega del fitxer  |
+|    _eeee_    | Codi de l'empresa distribuïdora que presenta el fitxer                                                                              |
 
 Per generar aquests fitxers cal tenir instal·lat el mòdul: **giscedata_liquidacions_etu35_2017**
 
