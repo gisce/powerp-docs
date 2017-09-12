@@ -163,11 +163,11 @@ Aquestes liquidacions s'han de generar una vegada generades totes les factures
 amb els Suplements Territorials del mes corresponent, de la mateixa manera que es
 liquida l'energia facturada (abans del dia 15 del mes).
 
-Utilitzant l'assistent especificat en l'apartat anterior, s'ha de sel·leccionar
+Utilitzant l'assistent especificat en l'apartat anterior, s'ha de seleccionar
 el mes a liquidar. Aquest assistent utilitza el lot de facturació per
-sel·leccionar les factures amb Suplements per un mes en concret.
+seleccionar les factures amb Suplements per un mes en concret.
 S'ha d'escriure el mes amb el format "_mm/aaaa_" o bé es pot prémer el botó de lupa
-i sel·leccionar el lot de facturació corresponent.
+i seleccionar el lot de facturació corresponent.
 
 ![](_static/liquidacion_peajes/wizard_etu_mes.png)
 
