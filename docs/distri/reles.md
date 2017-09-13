@@ -1,6 +1,6 @@
 # DOCUMENTACIÓ DEL MÒDUL DE RELÉS
 ## CONFIGURACIÓ DELS GRUPS DE PARÀMETRES DELS RELÉS
-* Els **Grups de Paràmetres dels Relés** són uns grups de paràmetres que estan relacionats amb una o més categories de productes. En l'ERP Tot producte, en aquest cas ens centrarem en els **Relés**, ha de tenir assignada una categoria de producte obligatòriament.
+* Els **Grups de Paràmetres dels Relés** estan relacionats amb una o més categories de productes. En l'ERP Tot producte, en aquest cas ens centrarem en els **Relés**, ha de tenir assignada una categoria de producte obligatòriament.
 
 * A partir d'aquesta característica s'ha afegit una nova funcionalitat que ens permet, havent configurat prèviament unes categories de productes de relés i uns grups de paràmetres de relé, poder crear productes relé i **assignar automàticament** a aquests elements els paràmetres que li corresponguin en comptes de fer-ho un a un per a cada element.
 
@@ -15,7 +15,7 @@
 
           ![](_static/reles/creacio_cat_prod.png)
 
-    2. **Definir els Grups de Paràmetres:**
+    2. **Definir els Grups de Paràmetres de reles:**
         * El següent pas és definir els **Grups de paràmetres** i assigna'ls-hi les categories de productes de relés que compartiran aquests paràmetres. Per accedir a aquesta vista haurem d'anar al menú de l'ERP i obrir l'apartat **Centres Transformadors>Manteniment>Cel·les i elements de tall>Configuració>Grups Relés**
 
           ![](_static/reles/acces_grup_params.png)
@@ -53,4 +53,4 @@
 
           ![](_static/reles/creacio_rele.png)
 
-        * Queda dir que si en el futur **es realitza algun canvi sobre la categoria del producte o sobre el grup**, tornant a premer el botó **Carregar Paràmetres**, aquests s'actualitzarien acord amb les noves dades.
+        * Queda dir que si en el futur **es realitza algun canvi sobre la categoria del producte o sobre el grup**, tornant a premer el botó **Carregar Paràmetres**, aquests s'actualitzarien acord amb els parametres actualitzats.
