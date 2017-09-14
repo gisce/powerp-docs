@@ -13,7 +13,7 @@ aquests elements els paràmetres que li corresponguin en comptes de fer-ho un a
 un per a cada element.
 
 A continuació s'explicarà **pas a pas** com es realitza aquesta configuració
-i les possibilitats que ofereix:
+i les possibilitats que ofereix.
 
 ### 1.- Definir les categories de Relés
 
