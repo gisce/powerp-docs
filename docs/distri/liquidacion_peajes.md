@@ -130,9 +130,9 @@ regularitzacions dels Suplements Territorials.
 
 Aquestes liquidacions consten de dos fitxers:
 
-- Liquidacions Mensuals, s'han d'anomenar sota el format "STM\__aaaamm_._eeee_.xml"
+- Liquidacions Mensuals: s'han d'anomenar sota el format "STM\__aaaamm_._eeee_.xml"
     - S'han d'enviar mensualment, juntament amb els altres fitxers de liquidacions
-- Liquidacions Anuals, s'han d'anomenar sota el format "STA\__aaaamm_._eeee_.xml"
+- Liquidacions Anuals: s'han d'anomenar sota el format "STA\__aaaamm_._eeee_.xml"
     - S'ha d'enviar una sola vegada quan s'hagin cobrat totes les línies amb
       Suplement Territorial (aproximadament al setembre de 2018)
 
@@ -144,11 +144,9 @@ En el format utilitzat, s'utilitza la següent nomenclatura:
 |     _mm_     | Mes corresponent a les liquidacions presentades en el fitxer, cas de les liquidacions anuals correspon al mes d'entrega del fitxer  |
 |    _eeee_    | Codi de l'empresa distribuïdora que presenta el fitxer                                                                              |
 
-Per generar aquests fitxers cal tenir instal·lat el mòdul: **giscedata_liquidacions_etu35_2017**
-
 Aquest mòdul ens facilita dos assistents diferents, un per les liquidacions Mensuals
 i un per les liquidacions Anuals. Podem trobar els assistents en l'ERP en la direcció
-"**Menú OpenERP > Liquidacions**"
+"**Menú > Liquidacions**"
 
 ![](_static/liquidacion_peajes/liquidacion_menu_etu.png)
 
@@ -157,15 +155,16 @@ i un per les liquidacions Anuals. Podem trobar els assistents en l'ERP en la dir
 !!! Note "Fitxer de Referència"
     Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
     de información relativo al fichero de suplementos territoriales mensual
-    (Grupo BC)_" en la versió 1.0 compartit per la CNMC mitjançant la circular 168-17.
+    (Grupo BC)_" per a distribuidores en la versió 1.0 compartit per la CNMC
+    mitjançant la circular 168-17.
 
 Aquestes liquidacions s'han de generar una vegada generades totes les factures
 amb els Suplements Territorials del mes corresponent, de la mateixa manera que es
 liquida l'energia facturada (abans del dia 15 del mes).
 
-Utilitzant l'assistent especificat en l'apartat anterior, s'ha de seleccionar
-el mes a liquidar. Per tal d'ajustar correctament aquest valor, cal escollir el mes
-i l'any en els camps de selecció corresponents.
+Utilitzant l'assistent "_Generar XML suplement territorial ETU/35/2017 mensual_",
+s'ha de seleccionar el mes a liquidar. Per tal d'ajustar correctament aquest valor,
+cal escollir el mes i l'any en els camps de selecció corresponents.
 
 ![](_static/liquidacion_peajes/wizard_etu_mes.png)
 
@@ -185,7 +184,8 @@ o bé guardar-lo en un directori específic.
 !!! Note "Fitxer de Referència"
     Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
     de información relativo al fichero de suplementos territoriales anual
-    (Grupo BC)_" en la versió 1.0 compartit per la CNMC mitjançant la circular 168-17.
+    (Grupo BC)_" per a distribuidores en la versió 1.0 compartit per la CNMC
+    mitjançant la circular 168-17.
 
 !!! Danger "Atenció"
     Aquest procés encara està en desenvolupament i estarà disponible properament,
@@ -197,7 +197,7 @@ totes les factures amb les línies extra del Suplement Territorial corresponent 
 l'ordre ETU/35/2017. Això serà aproximadament al setembre del 2018 tot i que no
 s'especifica la data límit ni en les reunions de la CNMC ni en el BOE.
 
-Utilitzant l'assistent Anual (localitzat [al principi de l'apartat](#generar-liquidacions-suplements-territorials-etu352017))
+Utilitzant l'assistent "_Generar XML suplement territorial ETU/35/2017 anual_",
 es buscaran totes les línies de Suplements Territorials i es generarà la liquidació
 corresponent a les línies facturades.
 
