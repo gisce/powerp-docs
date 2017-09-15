@@ -553,3 +553,26 @@ màxim el dia **7 del mes següent** amb els fitxers F5D.
 !!! note
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els fitxers
     F5D i P5D.
+
+#### Procés de generació dels F5D
+
+Per tal que es generin correctament els fitxers F5D és necessari disposar de totes
+les corbes horàries facturades i sense cap forat. El procés per generar totes les
+corbes i omplir els forats s'executa automàticament un cop s'ha tancat el lot de
+facturació. Amb això es creen tots els registres CCH_FACT necessaris en segon pla.
+
+Una vegada disposem de totes aquestes dades, un procès automatitzat s'executa durant
+la nit per generar els fitxers F5D i en el cas que hi hagi servidor FTP configurat a
+l'ERP també els pujarà. Si per algun motiu la generació dels fitxers no funciona, es
+crearà un cas amb informació a `Infraestructura > Telegestió > Casos Telegestió > Tots els casos`.
+
+Per aquest tipus de situacions existeix un assistent al qual es pot
+accedir des del lot de facturació anomenat **Exportar Fitxer Curves del Lot**.
+Dins aquest assistent podem escollir diferents coses. Primer de tot, ens ofereix
+l'opció de sobreescriure els fitxers F5D si ja existeixen, molt útil si tenim fitxers
+incorrectes. La segona opció indica si volem que els fitxers que es generin es pujin
+o no al servidor FTP. Per últim l'opció de marcar l'última corba és per guardar fins
+quina data s'han creat els fitxers F5D per cada comptador, d'aquesta manera quan es
+tornin a generar seguiran des de la data on s'havia arribat.
+
+![](_static/telegestion/exportar_fichero_curva_del_lote.png)
