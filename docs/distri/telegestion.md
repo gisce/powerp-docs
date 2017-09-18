@@ -593,3 +593,24 @@ seguiran des de la data on s'havia arribat.
 Per comprovar l'estat de l'enviament d'aquests fitxers es pot accedir des de
 **Infraestructura > Telegestión > SFTP Estado subida**.
 Es pot forçar l'enviament manual dels fitxers tant P5D com F5D.
+
+### Variables de configuració
+
+Existeixen diverses variables de configuració per tal de personalitzar el
+comportament de les corbes de càrrega horàries. Per accedir a al menú que
+permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
+
+* **tg_max_days_back**: Utilitza un máxim de dies per retrocedir quan el CCH no
+  está habilitat:
+  * Valor `1` activat.
+  * Valor `2` desactivat.
+
+* **tg_f5d_create_zip_file**: Per crear un fitxer zip amb tots els F5D.
+    * Valor `1` crea el zip.
+    * Valor `0` no el crea.
+
+* **tg_f5d_last_day**: Marge de temps en dies, en el que superat, es creará un
+  cas de telegestió alertant que no s'ha generat els F5D si és el cas.
+
+* **tg_cch_fact_invoice_length**: Utilitza les dates inici i final de
+  facturació per generar els F5D.
