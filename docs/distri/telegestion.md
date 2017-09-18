@@ -600,13 +600,15 @@ Existeixen diverses variables de configuració per tal de personalitzar el
 comportament de les corbes de càrrega horàries. Per accedir al menú que
 permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 
+![](_static/telegestion/VariablesConfiguracio.png)
+
 * **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
   màxim de dies laborables que es poden entregar les CCH
 
 * **tg_max_days_back**: Utilitza un máxim de dies per retrocedir quan el CCH no
   està disponible i estimar-les:
-  * Valor `1` activat.
-  * Valor `0` desactivat.
+    * Valor `1` activat.
+    * Valor `0` desactivat.
 
 * **tg_f5d_create_zip_file**: Crea un fitxer zip amb tots els F5D.
     * Valor `1` crea el zip.
