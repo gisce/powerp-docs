@@ -554,19 +554,23 @@ L'ERP realitza un enviament diari.
 L'assistent per generar els fitxers P5D de forma manual es troba al menú
 `Infraestructura > Telegestió > Exportar CCH_VAL (P5D)`.
 
+![](_static/telegestion/ExportarFitxerCorbesLot.png)
+
 ### Fitxers F5D
 
 Les corbes de càrrega horàries facturades (CCH_FACT) cal entregar-les com a
 màxim el dia **7 del mes següent** amb els fitxers F5D.
+
 Els Fitxers F5D no poden tenir forats, i no s'envien fins que estan tots els
 CCH_FACT disponibles. El procés per generar totes les corbes i omplir els
 forats s'executa automàticament un cop s'ha tancat el lot de facturació. Amb
 això es creen tots els registres CCH_FACT necessaris en segon pla. Una vegada
 disposem de totes aquestes dades, el procés automatitzat que s'executa durant
 la nit generarà els fitxers F5D i en el cas que hi hagi servidor FTP
-configurat a l'ERP també els pujarà. Si per algun motiu la generació dels
-fitxers no funciona, es crearà un cas amb informació a
-`Infraestructura > Telegestió > Casos Telegestió > Tots els casos`.
+configurat a l'ERP també els pujarà.
+
+Si per algun motiu la generació dels fitxers no funciona, es crearà un cas amb
+informació a `Infraestructura > Telegestió > Casos Telegestió > Tots els casos`.
 Per aquest tipus de situacions, es pot generar i enviar els F5D, de la següent
 forma:
 
@@ -600,22 +604,23 @@ Existeixen diverses variables de configuració per tal de personalitzar el
 comportament de les corbes de càrrega horàries. Per accedir al menú que
 permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 
-![](_static/telegestion/VariablesConfiguracio.png)
+![](_static/telegestion/ExportCCHVal.png)
 
 * **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
   màxim de dies laborables que es poden entregar les CCH
 
 * **tg_max_days_back**: Utilitza un máxim de dies per retrocedir quan el CCH no
   està disponible i estimar-les:
-    * Valor `1` activat.
-    * Valor `0` desactivat.
 
 * **tg_f5d_create_zip_file**: Crea un fitxer zip amb tots els F5D.
-    * Valor `1` crea el zip.
-    * Valor `0` no el crea.
 
 * **tg_f5d_last_day**: Marge de temps en dies, en el que superat, es crearà un
   cas de telegestió alertant que no s'han generat els F5D si és el cas.
 
 * **tg_cch_fact_invoice_length**: Utilitza les dates inici i final de
   facturació per generar els F5D.
+
+  Valor                   | Descripció
+  ------------------------|------------------------------------
+  tg_max_days_back        | `1` activat, `0` desactivat
+  tg_f5d_create_zip_file  | `1` crea el zip, `0` no crea el zip
