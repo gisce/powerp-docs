@@ -28,11 +28,12 @@ requerida per la CNMC:
 
     * **Imputació de Temps**: Agent al que se l'hi imputarà el temps gastat en
         l'estat actual. Hi ha 4 agents definits per la CNMC: Comercilitzador,
-        Distribuidor, Client i Altres.
+        Distribuidor, Client i Altres. Només es pot modificar a través de
+        **l'assistent de canvi d'estat**.
 
     * **Agent Actual**: Agent que te accions pendents. Coincideix amb l'agent al
-        que se l'hi imputa el temps peró en el cas que aquest sigui 'Altres'
-        s'ha de indicar especificament quin és.
+        que se l'hi imputa el temps excepte en el cas que aquest sigui 'Altres',
+        que s'ha de indicar especificament quin és.
 
     * **Reclamant**: Agent que planteja la reclamació.
 
@@ -51,6 +52,26 @@ requerida per la CNMC:
 ![](_static/atc/camps_nous_extra.png)
 
 
+## Assistent Canvi d'Estat
+En un cas d'atenció al client, quan es vol canviar d'estat s'utilitza un assistent.
+Aquest assistent es crida des del propi cas amb un botó en la pestanya "General" a la part inferior:
+
+
+![](_static/atc/assistent_atc.png)
+
+
+Al clicar el botó apareix una finestra en que es demana:
+
+*   **Imputació de Temps**: s'ha de escollir a quin agent se l'hi imputarà
+el temps que es gasti en el nou estat del cas.
+*   **Agent Actual**: quan s'escull 'Otros' a "imputacio de Temps", s'ha
+d'especificar l'agent.
+*  ** Nou Estat **: estat al que es passarà el cas.
+*  ** Resultat **: quan el cas es passa a "Tancat", s'ha de indicar el
+resultat final.
+
+Clicant a "Acceptar" es pasarà el cas a l'estat escollit i s'actualitzaran
+la imputació de temps i l'agent actual amb la informació escollida.
 
 ## Guia d'Atenció al Client
 
@@ -102,11 +123,7 @@ tanca el cas, és el següent:
              del procés quant de temps ha trigat cada agent a realitzar les
              seves accions, informació que s'inclourà en la generació d'informes
               de la circular 2/2016.
-             * S'ha d'anar canviant al llarg del procés perquè el temps s'imputi
-             correctament: quan es canvia l'estat d'un cas, es guarda a
-             l'historial l'agent que hi hagués en el moment del canvi. Tot el
-             temps gastat en aquest estat nou s'imputarà a aquest agent guardat
-            en l'historial.
+             * Es canvia a través de l'assistent de canvi d'estat.
          * Descripció: en aquest camp s'escriu una breu descripció sobre la
          reclamació. És un camp totalment informatiu en què es va explicant
          l'estat en què es troba la reclamació.
@@ -120,45 +137,35 @@ tanca el cas, és el següent:
      ![](_static/atc/guia_atc4.png)
 
 
- * Un cop emplenada tota la informació, ja es pot obrir el cas. És molt
- important que el camp "Imputació de temps" sigui correcte abans d'obrir el
- cas perquè quedarà historitzat. Cada cop que es canvia d'estat en un cas
- (de "Borrador" a "Obert", "Pendent", "Tancat", ...) es guardarà al històric
- a quin agent se l'hi imputarà el temps gastat en aquell estat. En la situació
- actual, tot el temps que el cas estigui en estat "Obert" fins que es passi a
- un estat diferent s'imputaria a la comercialitzadora.
+ * Un cop emplenada tota la informació, ja es pot obrir el cas (utilitzant l'assistent).
+ Es demanarà a quin estat es vol passar (en aquest cas seria a "Obert") i a
+ qui se l'hi imputarà el temps que el cas es mantingui en el nou estat.
 
- ![](_static/atc/guia_atc5.png)
+En aquest punt poden ocórrer diferents situacions depenguen de com es
+resolgui la reclamació. Alguns exemples:
 
+ * La comercialitzadora pot resoldre la reclamació sense necessitar accions
+ de cap altre agent. S'utilitza l'assistent per passar el cas a tancat i seleccionar
+ el resultat que pertoqui.
 
- * En aquest punt poden ocórrer diferents situacions depenguen de com es
- resolgui la reclamació. Alguns exemples:
+ * La comercialitzadora necessita que un altre agent realitzi accions.
+ Per exemple:
+     * Necessita més informació del client i se l'hi envia un mail
+       demanant-la. En aquest cas s'utilitzaria l'assistent per passar el cas
+       a "Pendent" i seleccionar com a "Imputació de Temps" el "Client" fins
+       que el client proporcioni la informació demanada. Un cop arribés la informació es
+       passaria a "Obert" seleccionant com a "Imputació de Temps" un altre cop la
+       "Comercialitzadora" per continuar amb la reclamació.
+     * Es requereixen accions per part de la distribuïdora. Això implicaria
+       l'inici d'un cas de gestió ATR R1. El procediment seria el mateix:
+       passar a "Pendent" amb "Distribuïdora" com a "Imputació de Temps".
+       En paral·lel es gestionaria el R1 i un cop es tanqués es
+       passaria a "Obert" seleccionant com a "Imputació de Temps" la
+       "Comercialitzadora". És recomanable a cada pas anar escrivint al camp
+       "Descripció" l'estat de la reclamació per poder fer un seguiment més fàcil.
 
-     * La comercialitzadora pot resoldre la reclamació sense necessitar accions
-     de cap altre agent. Es selecciona el resultat de la reclamació que
-     pertoqui ("Procedent", "Improcedent", "No Gestionable") i es passa a estat
-     tancat.
-
-     * La comercialitzadora necessita que un altre agent realitzi accions.
-     Per exemple:
-         * Necessita més informació del client i se l'hi envia un mail
-           demanant-la. En aquest cas es seleccionaria com a "Imputació de Temps"
-           el "Client" i es passaria a estat "Pendent" fins que el client
-           proporcioni la informació demanada. Un cop arribés la informació es
-           canviaria la "Imputació de Temps" un altre cop a "Comercialitzadora"
-           i es passaria a estat "Obert" per continuar amb la reclamació.
-         * Es requereixen accions per part de la distribuïdora. Això implicaria
-           l'inici d'un cas de gestió ATR R1. El procediment seria el mateix:
-           passar "Imputació de Temps" a "Distribuïdora" i deixar l'estat
-           a "Pendent". En paral·lel es gestionaria el R1 i un cop es tanqués es
-           passaria "Imputació de Temps" a "Comercialitzadora" i es tornaria a obrir
-           el cas per continuar. És recomanable a cada pas anar escrivint al camp
-           "Descripció" l'estat de la reclamació per poder fer un seguiment més fàcil.
-
- * L'últim pas sempre és passar el cas a "Tancat". Abans de fer això s'ha
- d'emplenar correctament el camp "Resultat" que indica com ha acabat la
- reclamació. També és important que el camp "subtipus" sigui el correcte,
- ja que un cop tancat el cas no es podrà tornar a canviar.
+ * L'últim pas sempre és passar el cas a "Tancat". En aquest cas en l'assistent
+ es demanarà com a informació extra el resultat final de la reclamació.
 
 
 ## Generació de Informes
@@ -170,6 +177,6 @@ definides en la circular 2/2016 mencionada anteriorment.
 
 El procediment complet per generar aquests informes es detalla en els apartats:
 
- * Distribuidora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
+ * [Distribuidora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors](../distri/adm-pub/resoluciones/circular_2-2016.md)
 
- * Comercialitzadora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors
+ * [Comercialitzadora -> Administració Pública -> CNMC -> Generació de Informes sobre Reclamacions de Consumidors](../comer/adm-pub/cnmc.md#generacio-de-informes-sobre-reclamacions-de-consumidors)

@@ -277,6 +277,107 @@ inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
 
 * **Observacions**
 
+## Estats de les pòlisses
+
+Les pòlisses tenen certs estats en els que es troben en un moment donat:
+esborrany, activa, baixa, etc, i aquests estats governen el comportament i el
+paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma
+un recorregut lògic.
+
+![Descripció dels \label{workflows}](_static/polizas/workflows.svg)
+*Fluxograma dels estat de les pòlisses i les transicions*
+
+![](_static/polizas/indicador_estat_polissa.png)
+*Vista general de la pòlissa amb el camp "estat" indicat*
+
+Al crear una pòlissa, aquesta per defecte s'estableix en un estat de
+**Esborrany**. Una pòlissa en Esborrany permet canviar les dades abans de
+confirmar-les.
+
+Després de prémer el botó de "Validar", l'estat de la pòlissa serà **Validar**.
+Aquest estat es l'anterior al de activa, en el que l'ERP t'informa de quines
+dades no compleixen els requeriments.
+
+Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a
+ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa
+està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres
+estats com Impagament.
+
+Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en estat
+de **Tall**, o bé reactivar-la.
+
+Des de Activa, també es poden fer **Modificacions Contractuals**. Per una
+explicació més detallada d'aquestes, consultar
+[aquesta](#modificacions-contractuals_1) pàgina.
+
+També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
+
+## Històric de canvis en els estats d'una pòlissa
+
+En el formulari principal de la pòlissa, hi ha una pestanya que és **Històric**,
+on pots veure per tots els estats que ha passat la pòlissa, quan han estat
+canviats i quin usuari els ha canviat. Això permet tenir un control sobre el
+flux d'aquesta.
+
+![](_static/polizas/historic_estats.png)
+
+## Contractes de tipus eventual
+
+Un contracte eventual és un tipus de contracte amb una duració determinada,
+aquests es solen realitzar per events de curta duració, com poden ser
+fires, certàmens, etc.
+
+Dins d'aquests contractes en podem distingir dos tipus:
+
+* **Contracte eventual sense comptador**: aquests són contractes d'una duració
+màxima de dos mesos en els quals per llei no fa falta un comptador, el consum es
+calcularà a partir d'una fórmula (Potència contractada * dies de contracte * hores diaries).
+
+* **Contracte eventual amb comptador**: a diferencia del contracte anterior aquest
+sí que disposa de comptador per poder calcular el consum.
+
+### Càlcul del consum total per contractes eventuals sense comptador
+
+Aquest tipus de contractes es caracteritzen per no tenir comptador, per tant no
+es pot tenir una mesura exacte del consum total, per calcular-ho s'utilitzarà la
+següent fórmula:
+
+
+`Consum total = Potència contractada * dies de contracte * hores d'ús diàries`
+
+### Assistent per calcular el consum total
+
+Per tal de facilitar aquest càlcul s'ha afegit un assistent dins el menú de
+gestió de pòlisses.
+
+
+Dins el menú de gestió de pòlissa, en cas de que el tipus de contracte sigui
+eventual sense comptador ens apareixerà la opció per calcular-ne el consum total:
+
+![](_static/polizas/assistent_consum_eventual/cat/polissa_cat.png)
+
+Per iniciar l'assistent premerem el botó calcular:
+
+| Assistent amb camp sense precalcular                               | Assistent amb camp precalculat                         |
+|--------------------------------------------------------------------|--------------------------------------------------------|
+| ![](_static/polizas/assistent_consum_eventual/cat/wiz_no_pre_cat.png) |![](_static/polizas/assistent_consum_eventual/cat/wiz_pre_cat.png)|
+
+Un cop comprovat que les dades son correctes premem el botó calcular.
+
+!!! Note
+        L'opció precalcular és opcional, serveix per comprovar els càlculs
+        abans de calcular-los i apareixeran al camp consum de l'assistent.
+
+Finalment, un cop calculat el camp ja apareixarà al menú de gestió de pòlissa.
+
+![](_static/polizas/assistent_consum_eventual/cat/polissa_calc_cat.png)
+
+
+En el cas que hi hagi una modificació contractual el camp del consum apareixerà
+a la pestanya de facturació de la modificació.
+
+![](_static/polizas/assistent_consum_eventual/cat/mod_contract_cat.png)
+
 ## Visualització deute d'una pòlissa/contracte
 
 Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
@@ -361,7 +462,7 @@ subministrament no tallable
 
 Aquesta funcionalitat està reservada pels usuaris que siguin del grup
 **GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos específics per
-interactuar amb els motius de subministrament no tallable.
+interactuar amb els motius de subministrament no tallable.    
 La resta d'usuaris podran llistar totes les pòlisses que tenen un motiu de
 subministrament no tallable, i veure el motiu de no tall. Però no podran crear
 ni assignar motius.

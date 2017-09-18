@@ -30,6 +30,7 @@ pages:
         - AEAT: base/adm-pub/aeat.md
   - Distribuidora:
     - Inici: distri/index.md
+    - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
     - Manual d'ús de TPL: distri/tpl.md
     - Manual d'ús de TPL:
@@ -41,6 +42,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Reles: distri/reles.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
@@ -113,3 +115,4 @@ pages:
     - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Gestió de lectures: facturacion/lecturas.md
     - Lots: facturacion/lotes.md
+    - Tipus de factures: facturacion/tipos_facturas.md
