@@ -15,6 +15,8 @@ un per a cada element.
 A continuació s'explicarà **pas a pas** com es realitza aquesta configuració
 i les possibilitats que ofereix.
 
+![](_static/reles/diagrama_reles_params.png)
+
 ### 1.- Definir les categories de Relés
 
 Primer de tot haurem de definir les **categories de productes relés**,
