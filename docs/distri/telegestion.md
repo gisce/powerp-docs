@@ -617,7 +617,7 @@ permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 ![](_static/telegestion/ExportCCHVal.png)
 
 * **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
-  màxim de dies laborables dels que es disposa per poder poden entregar les CCH.
+  màxim de dies laborables dels que es disposa per poder entregar les CCH.
 
 * **tg_max_days_back**: S'utilitza per els contractes que no són operatius amb CCH.
   Indica la màxima quantitat de dies que serà possible retrocedir quan es creïn
