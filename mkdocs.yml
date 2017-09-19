@@ -9,6 +9,7 @@ theme: readthedocs
 markdown_extensions:
   - admonition
   - grid_tables
+  - inline_graphviz
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 

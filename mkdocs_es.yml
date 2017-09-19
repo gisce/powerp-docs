@@ -9,6 +9,7 @@ theme: readthedocs
 markdown_extensions:
   - admonition
   - grid_tables
+  - inline_graphviz
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
