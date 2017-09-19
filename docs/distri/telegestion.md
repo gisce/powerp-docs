@@ -581,7 +581,11 @@ forma:
 
 L'assistent per generar els fitxers F5D de forma manual es troba al menú
 `Facturació > General > Lots de facturació`. Dins d'un lot de facturació:
-`Exportar Fitxer Corbes del Lot`. Primer de tot, ens ofereix l'opció de
+`Exportar Fitxer Corbes del Lot`.
+
+![](_static/telegestion/BotoWizardExportarF5D.png)
+
+Primer de tot, ens ofereix l'opció de
 sobreescriure els fitxers F5D si ja existeixen, molt útil si tenim fitxers
 incorrectes. La segona opció indica si volem que els fitxers que es generin es
 pujin o no al servidor FTP, tal com es mostra a la següent imatge. Per últim
