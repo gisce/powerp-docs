@@ -571,6 +571,9 @@ configurat a l'ERP també els pujarà.
 
 Si per algun motiu la generació dels fitxers no funciona, es crearà un cas amb
 informació a `Infraestructura > Telegestió > Casos Telegestió > Tots els casos`.
+
+![](_static/telegestion/CasGeneracioF5D.png)
+
 Per aquest tipus de situacions, es pot generar i enviar els F5D, de la següent
 forma:
 
@@ -596,6 +599,9 @@ seguiran des de la data on s'havia arribat.
 
 Per comprovar l'estat de l'enviament d'aquests fitxers es pot accedir des de
 `Infraestructura > Telegestió > SFTP Estat de pujada`.
+
+![](_static/telegestion/MenuEstatPujadaSFTP.png)
+
 Es pot forçar l'enviament manual dels fitxers tant P5D com F5D.
 
 ### Variables de configuració
@@ -607,20 +613,22 @@ permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 ![](_static/telegestion/ExportCCHVal.png)
 
 * **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
-  màxim de dies laborables que es poden entregar les CCH
+  màxim de dies laborables dels que es disposa per poder poden entregar les CCH.
 
-* **tg_max_days_back**: Utilitza un máxim de dies per retrocedir quan el CCH no
-  està disponible i estimar-les:
+* **tg_max_days_back**: S'utilitza per els contractes que no són operatius amb CCH.
+  Indica la màxima quantitat de dies que serà possible retrocedir quan es creïn
+  noves lectures. En els contractes operatius amb CCH aquest valor és fixe i només
+  permet tres dies de retrocés.
 
 * **tg_f5d_create_zip_file**: Crea un fitxer zip amb tots els F5D.
 
-* **tg_f5d_last_day**: Marge de temps en dies, en el que superat, es crearà un
-  cas de telegestió alertant que no s'han generat els F5D si és el cas.
+* **tg_f5d_last_day**: Marge de temps en dies, en el que superat, si no s'han generat
+  els F5D es crearà un cas de telegestió amb aquest avís per tal de notificar l'usuari.
 
-* **tg_cch_fact_invoice_length**: Utilitza les dates inici i final de
-  facturació per generar els F5D.
+* **tg_cch_fact_invoice_length**: Si es té activat utilitza les dates inici i final
+  de les factures per realitzar la generació dels F5D.
 
-  Valor                   | Descripció
-  ------------------------|------------------------------------
-  tg_max_days_back        | `1` activat, `0` desactivat
-  tg_f5d_create_zip_file  | `1` crea el zip, `0` no crea el zip
+  Valor                      | Descripció
+  ---------------------------|------------------------------------
+  tg_f5d_create_zip_file     | `1` crea el zip, `0` no crea el zip
+  tg_cch_fact_invoice_length | `1` activat, `0` desactivat
