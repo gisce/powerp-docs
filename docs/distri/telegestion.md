@@ -554,7 +554,9 @@ L'ERP realitza un enviament diari.
 L'assistent per generar els fitxers P5D de forma manual es troba al menú
 `Infraestructura > Telegestió > Exportar CCH_VAL (P5D)`.
 
-![](_static/telegestion/ExportarFitxerCorbesLot.png)
+![](_static/telegestion/MenuWizardExportarP5D.png)
+
+![](_static/telegestion/wizardExportP5D.png)
 
 ### Fitxers F5D
 
@@ -606,6 +608,8 @@ Per comprovar l'estat de l'enviament d'aquests fitxers es pot accedir des de
 
 ![](_static/telegestion/MenuEstatPujadaSFTP.png)
 
+![](_static/telegestion/LlistaEstatPujadaFitxers.png)
+
 Es pot forçar l'enviament manual dels fitxers tant P5D com F5D.
 
 ### Variables de configuració
@@ -614,7 +618,7 @@ Existeixen diverses variables de configuració per tal de personalitzar el
 comportament de les corbes de càrrega horàries. Per accedir al menú que
 permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 
-![](_static/telegestion/ExportCCHVal.png)
+![](_static/telegestion/VariablesConfiguracio.png)
 
 * **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
   màxim de dies laborables dels que es disposa per poder entregar les CCH.
