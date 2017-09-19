@@ -587,13 +587,13 @@ L'assistent per generar els fitxers F5D de forma manual es troba al menú
 
 ![](_static/telegestion/BotoWizardExportarF5D.png)
 
-Primer de tot, ens ofereix l'opció de
-sobreescriure els fitxers F5D si ja existeixen, molt útil si tenim fitxers
-incorrectes. La segona opció indica si volem que els fitxers que es generin es
-pujin o no al servidor FTP, tal com es mostra a la següent imatge. Per últim
-l'opció de marcar l'última corba és per guardar fins quina data s'han creat els
-fitxers F5D per cada comptador, d'aquesta manera quan es tornin a generar
-seguiran des de la data on s'havia arribat.
+Primer de tot, ens ofereix l'opció de sobreescriure els fitxers F5D si ja
+existeixen, molt útil si tenim fitxers incorrectes. La segona opció indica
+si volem que els fitxers que es generin es pugin o no al servidor FTP, tal
+com es mostra a la següent imatge. Per últim l'opció de marcar l'última
+corba és per guardar fins quina data s'han creat els fitxers F5D per cada
+comptador, d'aquesta manera quan es tornin a generar seguiran des de la
+data on s'havia arribat.
 
 ![](_static/telegestion/ExportarFitxerCorbesLot.png)
 
