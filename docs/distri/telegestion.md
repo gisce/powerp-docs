@@ -5,18 +5,80 @@
 
 El modul de telegestió gestiona la lectura dels fitxers de tancament diaris i
 mensuals de comptadors PRIME, la seva validació i posterior inserció de les
-lectures de facturació
+lectures de facturació.
 
 Les lectures que es recullen de telegestió es troben separades de les de
-facturació. Només es carregaràn a facturació les lectures necessaries.
+facturació. Només es carregaràn a facturació les lectures necessàries.
+
+### Pestanya General
+
+![](_static/telegestion/ComptadorTGGeneral.png)
+
+   Pestanya General amb telegestió
+
+Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG info``:
+
+* **TG Comptador**: Si aquest camp està marcat, inidica que l'equip és
+  telegestionat. Es marca automàticament quan es validen lectures d'aquest
+  comptador.
+* **Connectat**: Indica si l'equip està connectat al concentrador i està
+  preparat per enviar informació. (Només lectura)
+* **Mostrar TG**: Botó que ens permet mostrar el llistat de les lectures de
+  telegestió rebudes per el comptador. No són les de facturació.
+* **Lectura des de TG**: Aquest botó permet crear una lectura de facturació a
+  partir de les lectures validades de telegestió que s'hagin obtingut. Es
+  demana la data en la qual es vol generar la lectura. Si d'aquest dia no n'hi
+  ha cap de vàlida, anirà buscant lectures en dies **anteriors** fins a trobar
+  una lectura de telegestió vàlida o una lectura de facturació. En aquest
+  darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
+  nova.
+
+!!! note
+    El nom del producte del comptador de telegestió és important. Per facilitar
+    el switching va bé que la marca i el model estiguin separats per un espai
+
+!!! note
+    Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
+    Aquest prefix ha de ser el mateix que afegeix el comptador als números de
+    sèrie. (veure `nota prefix`_ )
+
+##### Fitxa producte d'un comptador de telegestió
+
+![](_static/telegestion/FitxaProducteComptadorTG.png)
+
+### Pestanya Telegestió
+
+![](_static/telegestion/ComptadorTGTelegestio.png)
+
+   Pestanya Telegestió de comptador
 
 El módul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
-nova pestanya Telegestió si el comptador es marca que es de telegestió.
-
-En aquesta pestanya hi ha una casella de checkbox la qual indica si el comptador
-té actualment alguna excepció.
+nova pestanya Telegestió. Aquesta pestanya només es mostra en aquells
+comptadors que tenen la opció ``TG Comptador`` marcada.
 
 ![](_static/telegestion/grupo_TG_info.png)
+
+* **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
+  mesura està activat. Si s'activa apareixeràn 2 camps més a l'apartat de
+  ``Control de potència``
+
+  * **Potència programada**: Potència màxima que permet l'ICP del comptador
+  * **Intensitat**: Indica la intensitat máxima a la qual està programat el
+    ICP. Aquest es llegeix automàticament del comptador (Només lectura)
+
+* **Darrera lectura**: Data de la última lectura de telegestió validada per
+  aquest comptador
+* **Concentrador**: Concentrador al qual està assignat aquest comptador. Un
+  comptador s'assigna a un concentrador en el moment que se li validen lectures
+  enviades des d'aquest concentrador.
+* **Mostrar events TG**: Aquest botó ens obrirà un llistat dels esdeveniments
+  del comptador.
+* **Excepcions de validació**: En aquesta llista es poden afegis les excepcions
+  de validació que no es tindran en compte. Al validar una lectura de
+  telegestió, es poden generar un seguit d'excepcions que provocarà que la
+  lectura no sigui vàlida. Si l'excepció és dins la llista, no es tindrà en
+  compte i validarà la lectura. Podem veure la llista de les
+  [possibles excepcions](#configuracio-excepcions)
 
 ![](_static/telegestion/pestanya_telegestion.png)
 
@@ -67,75 +129,6 @@ estandaritzats:
 * **S09**: Esdeveniments de comptador
 * **S12**: Configuració del concentrador
 * **S13**: Esdeveniments de comptador espontanis
-
-## Ampliació Pestanya General
-
-![](_static/telegestion/ComptadorTGGeneral.png)
-
-   Pestanya General amb telegestió
-
-Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG
-info``:
-
-* **TG Comptador**: Si aquest camp està marcat, inidica que l'equip és
-  telegestionat. Es marca automàticament quan es validen lectures d'aquest
-  comptador.
-* **Connectat**: Indica si l'equip està connectat al concentrador i està
-  preparat per enviar informació. (Només lectura)
-* **Mostrar TG**: Botó que ens permet mostrar el llistat de les lectures de
-  telegestió rebudes per el comptador. No són les de facturació.
-* **Lectura des de TG**: Aquest botó permet crear una lectura de facturació a
-  partir de les lectures validades de telegestió que s'hagin obtingut. Es
-  demana la data en la qual es vol generar la lectura. Si d'aquest dia no n'hi
-  ha cap de vàlida, anirà buscant lectures en dies **anteriors** fins a trobar
-  una lectura de telegestió vàlida o una lectura de facturació. En aquest
-  darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
-  nova.
-
-!!! note
-    El nom del producte del comptador de telegestió és important. Per facilitar
-    el switching va bé que la marca i el model estiguin separats per un espai
-
-!!! note
-    Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
-    Aquest prefix ha de ser el mateix que afegeix el comptador als números de
-    sèrie. (veure `nota prefix`_ )
-
-##### Fitxa producte d'un comptador de telegestió
-
-![](_static/telegestion/FitxaProducteComptadorTG.png)
-
-Pestanya Telegestió
--------------------
-
-![](_static/telegestion/ComptadorTGTelegestio.png)
-
-   Pestanya Telegestió de comptador
-
-La pestanya de telegestió només es mostra en aquells comptadors que tenen la
-opció ``TG Comptador`` marcada
-
-* **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
-  mesura està activat. Si s'activa apareixeràn 2 camps més a l'apartat de
-  ``Control de potència``
-
-  * **Potència programada**: Potència màxima que permet l'ICP del comptador
-  * **Intensitat**: Indica la intensitat máxima a la qual està programat el
-    ICP. Aquest es llegeix automàticament del comptador (Només lectura)
-
-* **Darrera lectura**: Data de la última lectura de telegestió validada per
-  aquest comptador
-* **Concentrador**: Concentrador al qual està assignat aquest comptador. Un
-  comptador s'assigna a un concentrador en el moment que se li validen lectures
-  enviades des d'aquest concentrador.
-* **Mostrar events TG**: Aquest botó ens obrirà un llistat dels esdeveniments
-  del comptador.
-* **Excepcions de validació**: En aquesta llista es poden afegis les excepcions
-  de validació que no es tindran en compte. Al validar una lectura de
-  telegestió, es poden generar un seguit d'excepcions que provocarà que la
-  lectura no sigui vàlida. Si l'excepció és dins la llista, no es tindrà en
-  compte i validarà la lectura. Podem veure la llista de les
-  [possibles excepcions](#configuracio-excepcions)
 
 ## Gestió i configuració de Telegestió
 
