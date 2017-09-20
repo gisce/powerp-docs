@@ -52,14 +52,14 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG i
 
    Pestanya Telegestió de comptador
 
-El módul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
+El mòdul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
 nova pestanya Telegestió. Aquesta pestanya només es mostra en aquells
-comptadors que tenen la opció ``TG Comptador`` marcada.
+comptadors que tenen l'opció ``TG Comptador`` marcada.
 
 ![](_static/telegestion/grupo_TG_info.png)
 
 * **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
-  mesura està activat. Si s'activa apareixeràn 2 camps més a l'apartat de
+  mesura està activat. Si s'activa apareixeran 2 camps més a l'apartat de
   ``Control de potència``
 
   * **Potència programada**: Potència màxima que permet l'ICP del comptador
@@ -102,8 +102,8 @@ mitjançant el botó comptadors.
 
 ### Camps de connectivitat
 
-Per els concentradors connectats mitjançant Modem existeix la pestanya **Modem 3G**
-on es troben diferents camps d'informació del Modem. És important tenir configurat
+Per els concentradors connectats mitjançant Mòdem existeix la pestanya **Modem 3G**
+on es troben diferents camps d'informació del Mòdem. És important tenir configurat
 el camp `Modem IP` que és on es guarda l'adreça de connexió al concentrador.
 
 ![](_static/telegestion/ConcentratorModemTab.png)
@@ -123,13 +123,13 @@ habitualment seguint tres passos:
 1.  **Càrrega de dades**: Els concentradors deixen les dades de lectures,
     corbes i esdeveniments en un servidor FTP en format XML. GISCE-ERP recull
     aquests fitxers, els processa i els carrega a la base de dades. Aquesta
-    operació la podem realitzar manualment des de la configuracio d'els FTP
+    operació la podem realitzar manualment des de la configuracio dels FTP
     prement el [boto de connexió ftp](#configuracio-connexions-ftp). Si es
     produeix un error, es registra al
     [llistat d'errors de lectura](#registre-de-lectura-tg-reader-errors)
 
 2.  **Validació de lectures**: Per preparar les lectures abans d'ésser passades
-    a la facturació, cal validar-les. Per fer-ho podem anar a la opció del menú
+    a la facturació, cal validar-les. Per fer-ho podem anar a l'opció del menú
     [Validar Tancaments](#validar-tg-tancaments) o fer-ho des d'un comptador
     en concret. Si hi ha algun error es genera un cas en el CRM,
     secció [Telegestió i CRM](#telegestio-i-crm)
@@ -153,7 +153,7 @@ blockdiag {
     validación -> "CRM (Telegestión)" [label = "errores", textcolor="#FF0000"]
 }
 
-Actualment, GISCE-ERP és capaç de llegir els seguents fitxers XML
+Actualment, GISCE-ERP és capaç de llegir els següents fitxers XML
 estandaritzats:
 
 * **S02**: Perfils
