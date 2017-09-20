@@ -31,12 +31,12 @@ Actualment, aquest mòdul és capaç de llegir i generar:
 
 * **A3**: Alta directa a mercat. En el procés intervé la comercialitzadora
   entrant i la distribuidora.
- 
+
 * **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora 
   actual.
- 
+
 * **W1**: Notificació de autolectures a la distribuïdora des de la comercialitzadora.
- 
+
 Per facilitar el processat massiu de casos, s'han afegit diverses eines i
 assistents per realitzar accions en múltiples casos.
 
@@ -195,7 +195,7 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
     Un cas que ja ha tingut missatgeria amb un altre agent, **no** pot passar a
     estat ``cancel·lat``. S'ha de generar un pas d'anul·lació o rebuig.
 
-!!! note:
+!!! note
     Existeix un estat **Pendent** en el CRM. Pel que fa a canvis d'ATR, no és un
     estat que tingui gaire sentit.
 
@@ -843,4 +843,3 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 # Documentació específica
 
 [Gestió ATR Comercialitzadores](../comer/atr.md)
-

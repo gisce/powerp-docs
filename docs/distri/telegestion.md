@@ -324,16 +324,20 @@ les validades de color **negre**
 
 ![](_static/telegestion/CierresTG.png)
 
-#### Llista de lectures de Telegestió
+Des del llistat podem seleccionar un conjunt de lectures i marcar-les com a
+vàlides o invàlides utilitzant el botó **Acció**. Se'ns obrirà seguidament un
+formulari on es permet escollir validar o invalidar les lectures de telegestió.
+Aquesta acció **NO realitza les comprovacions per validar lectures.**
 
-Des del llistat podem seleccionar un conjunt lectures i validar-les prement el
-botó **Acció**. S'ens obrirà un formulari on podrem escollir validar o
-invalidar els tancaments o lectures de telegestió. Cal tenir present que validar
-mitjançant aquest procediment no realitza cap de les comprovacions descrites en
-l'apartat [Validar TG Tancaments](#validar-tg-tancaments). Únicament marca el
-tancament com a vàlid o el desmarca.
+!!! warning
+    Cal tenir molt present que aquest procediment **NO valida les lectures**,
+    només en marca el registre horari com a vàlid o invàlid. És recomanable
+    utilitzar aquest procediment en registres individuals i només pels casos de
+    necessitat, dels quals es coneix el motiu. Per validar lectures cal
+    utilitzar el mètode descrit en l'apartat:
+    [Validar TG Tancaments](#validar-tg-tancaments).
 
-![](_static/telegestion/ValidarTancamentTG.png)
+![](_static/telegestion/MarcarTancamentValid.png)
 
 #### Formulari de validació d'un tancament
 
@@ -529,23 +533,112 @@ Permet programar la validació automàtica de totes les lectures.
 ## Corbes de Carrega Horaries (CCH)
 
 Les corbes de càrrega horàries cal entregar-les a l'operador del sistema i a la
-comercialitzadora o client directe a mercat.
+comercialitzadora o client directe a mercat. Es fa mitjançant els següents fitxers:
+
+### Fitxers
+
+| Fitxer                     | Entrega                                        |
+|----------------------------|------------------------------------------------|
+| P5D                        | Setmanalment                                   |
+| F5D                        | Mensualment                                    |
+
 
 ### Fitxers P5D
 
 Les corbes de càrrega horàries validades (CCH_VAL) cal entregar-les com a
 màxim **setmanalment** amb els fitxers P5D.
+L'ERP realitza un enviament diari.
 
 #### Generació dels fitxers P5D de forma manual
 
 L'assistent per generar els fitxers P5D de forma manual es troba al menú
-`Infraestructura/Telegestión/Exportar CCH_VAL (P5D)`
+`Infraestructura > Telegestió > Exportar CCH_VAL (P5D)`.
+
+![](_static/telegestion/MenuWizardExportarP5D.png)
+
+![](_static/telegestion/wizardExportP5D.png)
 
 ### Fitxers F5D
 
 Les corbes de càrrega horàries facturades (CCH_FACT) cal entregar-les com a
 màxim el dia **7 del mes següent** amb els fitxers F5D.
 
+Els Fitxers F5D no poden tenir forats, i no s'envien fins que estan tots els
+CCH_FACT disponibles. El procés per generar totes les corbes i omplir els
+forats s'executa automàticament un cop s'ha tancat el lot de facturació. Amb
+això es creen tots els registres CCH_FACT necessaris en segon pla. Una vegada
+disposem de totes aquestes dades, el procés automatitzat que s'executa durant
+la nit generarà els fitxers F5D i en el cas que hi hagi servidor FTP
+configurat a l'ERP també els pujarà.
+
+Si per algun motiu la generació dels fitxers no funciona, es crearà un cas amb
+informació a `Infraestructura > Telegestió > Casos Telegestió > Tots els casos`.
+
+![](_static/telegestion/CasGeneracioF5D.png)
+
+Per aquest tipus de situacions, es pot generar i enviar els F5D, de la següent
+forma:
+
+### Generació i enviament dels fitxers F5D de forma manual
+
+L'assistent per generar els fitxers F5D de forma manual es troba al menú
+`Facturació > General > Lots de facturació`. Dins d'un lot de facturació:
+`Exportar Fitxer Corbes del Lot`.
+
+![](_static/telegestion/MenuLotsdeFacturacio.png)
+
+![](_static/telegestion/BotoWizardExportarF5D.png)
+
+Primer de tot, ens ofereix l'opció de sobreescriure els fitxers F5D si ja
+existeixen, molt útil si tenim fitxers incorrectes. La segona opció indica
+si volem que els fitxers que es generin es pugin o no al servidor FTP, tal
+com es mostra a la següent imatge. Per últim l'opció de marcar l'última
+corba és per guardar fins quina data s'han creat els fitxers F5D per cada
+comptador, d'aquesta manera quan es tornin a generar seguiran des de la
+data on s'havia arribat.
+
+![](_static/telegestion/ExportarFitxerCorbesLot.png)
+
 !!! note
-    Es poden configurar servidors SFTP per tal de pujar-hi automàticament els fitxers
-    F5D i P5D.
+    Es poden configurar servidors SFTP per tal de pujar-hi automàticament els
+    fitxers F5D i P5D.
+
+### Estat de pujada dels fitxers P5D i F5D
+
+Per comprovar l'estat de l'enviament d'aquests fitxers es pot accedir des de
+`Infraestructura > Telegestió > SFTP Estat de pujada`.
+
+![](_static/telegestion/MenuEstatPujadaSFTP.png)
+
+![](_static/telegestion/LlistaEstatPujadaFitxers.png)
+
+Es pot forçar l'enviament manual dels fitxers tant P5D com F5D.
+
+### Variables de configuració
+
+Existeixen diverses variables de configuració per tal de personalitzar el
+comportament de les corbes de càrrega horàries. Per accedir al menú que
+permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
+
+![](_static/telegestion/VariablesConfiguracio.png)
+
+* **change_to_remote_managed_with_cch_deadline_working_days**: Canvia el termini
+  màxim de dies laborables dels que es disposa per poder entregar les CCH.
+
+* **tg_max_days_back**: S'utilitza per els contractes que no són operatius amb CCH.
+  Indica la màxima quantitat de dies que serà possible retrocedir quan es creïn
+  noves lectures. En els contractes operatius amb CCH aquest valor és fixe i només
+  permet tres dies de retrocés.
+
+* **tg_f5d_create_zip_file**: Crea un fitxer zip amb tots els F5D.
+
+* **tg_f5d_last_day**: Marge de temps en dies, en el que superat, si no s'han generat
+  els F5D es crearà un cas de telegestió amb aquest avís per tal de notificar l'usuari.
+
+* **tg_cch_fact_invoice_length**: Si es té activat utilitza les dates inici i final
+  de les factures per realitzar la generació dels F5D.
+
+  Valor                      | Descripció
+  ---------------------------|------------------------------------
+  tg_f5d_create_zip_file     | `1` crea el zip, `0` no crea el zip
+  tg_cch_fact_invoice_length | `1` activat, `0` desactivat
