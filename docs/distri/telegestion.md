@@ -82,6 +82,39 @@ comptadors que tenen la opció ``TG Comptador`` marcada.
 
 ![](_static/telegestion/pestanya_telegestion.png)
 
+## Concentradors de telegestió
+
+El mòdul de telegestió afegeix al sistema els concentradors de dades de telegestió.
+Són els concentradors instal·lats a la xarxa elèctrica. Es donen d'alta
+automàticament quan es llegeix el primer fitxer enviat per ells i s'associen als
+comptadors instal·lats de forma automàtica.
+
+En el llistat de concentradors es pot veure el número de comptadors que gestiona
+cadasacun i el tipus de connexió a internet que utilitza cada concentrador.
+
+![](_static/telegestion/ConcentratorListView.png)
+
+La fitxa del concentrador s'omple quan arriba un fitxer amb forma S12. Des de
+la fitxa també es pot accedir al llistat de comptadors associats a ell
+mitjançant el botó comptadors.
+
+![](_static/telegestion/ConcentratorMetersButton.png)
+
+### Camps de connectivitat
+
+Per els concentradors connectats mitjançant Modem existeix la pestanya **Modem 3G**
+on es troben diferents camps d'informació del Modem. És important tenir configurat
+el camp `Modem IP` que és on es guarda l'adreça de connexió al concentrador.
+
+![](_static/telegestion/ConcentratorModemTab.png)
+
+Si tenim configurat aquest camp correctament, els camps que indiquen les adreces
+de connexió al portal web del concentrador i als serveis web s'ompliran.
+El camp WEB de la part superior de la vista disposa d'un botó en forma de fletxa
+que ens obrirà el navegador i ens portarà directament al portal web del concentrador.
+
+![](_static/telegestion/ConcentratorGeneralTab.png)
+
 ## Procediment de càrrega de lectures
 
 La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
@@ -261,18 +294,7 @@ Permet un accés directe als casos generats pel sistema de telegestió (veure
 estructura dels casos del CRM , creant accessos directes als casos oberts i
 als casos propis per facilitar-ne la gestió.
 
-### TG Concentrador
 
-Concentradors instal·lats. Es donen d'alta automàticament quan es llegeix el
-primer fitxer enviat per ells i s'associen als comptadors instal·lats de forma
-automàtica.
-
-En el llistat de contadors es pot veure el número de comptadors connectats a
-cada concentrador.
-
-La fitxa del concentrador s'omple quan arriba un fitxer amb forma S12. Des de
-la fitxa també es pot accedir al llistat de comptadors associats a ell
-mitjançant el botó comptadors.
 
 ### Registre de lectura
 
