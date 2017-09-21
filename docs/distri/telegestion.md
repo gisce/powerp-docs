@@ -16,7 +16,7 @@ facturació. Només es carregaràn a facturació les lectures necessàries.
 
    Pestanya General amb telegestió
 
-Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG info``:
+Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG info`:
 
 * **TG Comptador**: Si aquest camp està marcat, inidica que l'equip és
   telegestionat. Es marca automàticament quan es validen lectures d'aquest
@@ -54,13 +54,13 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG i
 
 El mòdul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
 nova pestanya Telegestió. Aquesta pestanya només es mostra en aquells
-comptadors que tenen l'opció ``TG Comptador`` marcada.
+comptadors que tenen l'opció `TG Comptador` marcada.
 
 ![](_static/telegestion/grupo_TG_info.png)
 
 * **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
   mesura està activat. Si s'activa apareixeran 2 camps més a l'apartat de
-  ``Control de potència``
+  `Control de potència`
 
   * **Potència programada**: Potència màxima que permet l'ICP del comptador
   * **Intensitat**: Indica la intensitat máxima a la qual està programat el
@@ -142,7 +142,7 @@ habitualment seguint tres passos:
     de tots els comptadors d'un lot de facturació podem prémer en el botó
     [importar lectures del lot](#importar-lectures-des-del-lot-de-facturacio).
 
-!!! note
+!!! note "Nota"
     Es pot configurar el sistema de telegestió per no carregar les lectures de
     reactiva i així no facturar-la. No obstant, si la potència contractada és
     superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
