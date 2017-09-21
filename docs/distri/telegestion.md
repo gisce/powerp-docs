@@ -14,8 +14,6 @@ facturació. Només es carregaràn a facturació les lectures necessàries.
 
 ![](_static/telegestion/ComptadorTGGeneral.png)
 
-   Pestanya General amb telegestió
-
 Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG info`:
 
 * **TG Comptador**: Si aquest camp està marcat, inidica que l'equip és
@@ -33,11 +31,11 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG in
   darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
   nova.
 
-!!! note
+!!! note "Nota"
     El nom del producte del comptador de telegestió és important. Per facilitar
     el switching va bé que la marca i el model estiguin separats per un espai
 
-!!! note
+!!! note "Nota"
     Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
     Aquest prefix ha de ser el mateix que afegeix el comptador als números de
     sèrie. (veure `nota prefix`_ )
@@ -49,8 +47,6 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG in
 ### Pestanya Telegestió
 
 ![](_static/telegestion/ComptadorTGTelegestio.png)
-
-   Pestanya Telegestió de comptador
 
 El mòdul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
 nova pestanya Telegestió. Aquesta pestanya només es mostra en aquells
@@ -170,8 +166,6 @@ infraestructura.
 
 ![](_static/telegestion/MenuInfraestructuraTG.png)
 
-   El menú Infraestructura amb les opcions de telegestió
-
 ### Configuració > Connexions FTP
 
 Els concentradors de telegestió deixen les dades en format XML en un servidor
@@ -182,8 +176,6 @@ GISCE-ERP mai esborra els fitxers importats, només els mourà per evitar
 tornar-los a carregar.
 
 ![](_static/telegestion/FitxaFTPTG.png)
-
-   Fitxa de configuració servidor FTP de telegestió
 
 * **Descripció**: Descripció de l'FTP
 * **Codi**: Codi de l'FTP per si es volen tenir codificats
@@ -281,7 +273,7 @@ la norma s'aniran afegint en aquestes llistes en properes actualitzacions.
 * **Descripció**: Descripció de l'error.
 * **Categoria**: Si es tracta d'un error, a quina categoria pertany.
 
-!!! note
+!!! note "Nota"
     Aquests errors són específics del concentrador i no estan relacionats amb
     l'ERP. S'ha de tenir en compte que l'error es genera en el moment de generar
     el fitxer. Es podria donar el cas que el problema ja estigui solucionat
@@ -332,7 +324,7 @@ Registre dels tancaments diaris i mensuals amb accessos directes a:
 Les lectures que encara no han estat validades es llisten de color **blau** i
 les validades de color **negre**
 
-!!! note
+!!! note "Nota"
     El comptador de registres d'aquests llistats no s'actualitzen, ja que el
     càlcul d'aquest valor és molt lent. Per tant, encara que hi hagi milers de
     lectures, sempre sortirà com 1/80
@@ -360,8 +352,6 @@ Podem veure la informació completa en el detall d'un tancament:
 
 ![](_static/telegestion/FitxaCierreTG.png)
 
-   Detall d'un tancament
-
 En el detall hi trobem:
 
 * **Comptador**: Nom complet del comptador tal i com ens l'envia el
@@ -383,7 +373,7 @@ En el detall hi trobem:
   mensuals)
 * **Vàlid**: Si està validad i quan es va validar
 
-!!! note
+!!! note "Nota"
     Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
     els números de sèrie en els concentradors afegeixen un prefix segons el
     producte. p.e. per comptadors ZIV afegeixen el prefix **ZIV**. Aquest
@@ -440,8 +430,6 @@ El procediment per validar les lectures és a través del wizard que es troba en
 
 ![](_static/telegestion/BotoValidacio.png)
 
-   Ubicació del wizard de validació de lectures
-
 Podem validar les lectures amb aquest botó. Si no entrem cap número de
 comptador, es validaran **totes** les lectures pendents de validar.
 
@@ -449,8 +437,6 @@ comptador, es validaran **totes** les lectures pendents de validar.
   lectures
 
 ![](_static/telegestion/ValidarTancamentsBotoTG.png)
-
-   Formulari de validar tots els tancaments d'un comptador
 
 ## Importar lectures des del Lot de Facturació
 
@@ -465,9 +451,7 @@ comptadors que siguin de telegestió.
 
 ![](_static/telegestion/LotImportarLectures.png)
 
-   Botó per importar les lectures des del lot de facturació
-
-!!! note
+!!! note "Nota"
     Quan s'importen les lectures d'un comptador de telegestió, s'agafa la
     lectura validada del dia que es demana o la de l'anterior més proper que en
     tingui. Per tant es pot donar el cas que les lectures no siguin del dia de
@@ -614,7 +598,7 @@ data on s'havia arribat.
 
 ![](_static/telegestion/ExportarFitxerCorbesLot.png)
 
-!!! note
+!!! note "Nota"
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els
     fitxers F5D i P5D.
 
