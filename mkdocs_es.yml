@@ -16,6 +16,13 @@ markdown_extensions:
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
+extra:
+font: fonts/DejaVuSans.ttf
+logo:
+  icon: 'description'
+feature:
+  tabs: true
+
 extra_css:
   - extra/css/images.css
 
