@@ -17,11 +17,11 @@ markdown_extensions:
       fontpath: fonts/DejaVuSans.ttf
 
 extra:
-font: fonts/DejaVuSans.ttf
-logo:
-  icon: 'description'
-feature:
-  tabs: true
+  font: fonts/DejaVuSans.ttf
+  logo:
+    icon: 'description'
+  feature:
+    tabs: true
 
 extra_css:
   - extra/css/images.css
