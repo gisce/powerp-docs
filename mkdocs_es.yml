@@ -22,6 +22,9 @@ extra:
     icon: 'description'
   feature:
     tabs: true
+  palette:
+    primary: 'blue'
+    accent: 'blue'
 
 extra_css:
   - extra/css/images.css
