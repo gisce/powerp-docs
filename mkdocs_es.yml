@@ -4,7 +4,7 @@ repo_url: https://github.com/gisce/powerp-docs
 edit_uri: edit/master/docs
 site_author: GISCE-TI, S.L.
 google_analytics: ['UA-27668469-4', 'builds.gisce.net']
-theme: readthedocs
+theme: material
 
 markdown_extensions:
   - admonition
