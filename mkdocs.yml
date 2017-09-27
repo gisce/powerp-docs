@@ -19,7 +19,7 @@ extra:
   feature:
     tabs: true
   palette:
-    primary: 'blue'
+    primary: 'indigo'
     accent: 'blue'
 
 extra_css:
