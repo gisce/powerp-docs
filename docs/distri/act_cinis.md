@@ -1,14 +1,3 @@
-# Índex
-
-1. [CINI Línies d'Alta Tensió](#1-cini-linies-dalta-tensio)
-2. [CINI Línies de Baixa Tensió](#2-cini-linies-de-baixa-tensio)
-3. [Transformadors](#3-transformadors)
-4. [Centres transformadors](#4-centres-transformadors)
-5. [Posicions](#5-posicions)
-6. [Parcs de Distribució](#6-parcs-de-distribucio)
-7. [Subestacions](#7-subestacions)
-8. [Cel·les i elements de tall (Fiabilitat)](#8-celles-i-elements-de-tall-fiabilitat)
-
 El document de referència de CINI serà la
 [circular 4/2015](https://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
 
