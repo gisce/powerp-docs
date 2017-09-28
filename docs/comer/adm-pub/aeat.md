@@ -20,7 +20,7 @@ Un cop seleccionat, apareix la informació del model 347 generat:
 
 ### Generar un nou model 347
 
-!!! note
+!!! Info "Nota"
     Per tal de poder generar el model 347 **cal haver entrat prèviament els**
     **trimestres** per els **períodes fiscals**.
 

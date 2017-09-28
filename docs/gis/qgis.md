@@ -42,7 +42,7 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
 6. Posar el nom del nou servidor i premer ok
     ![2](_static/dialeg.png)
 
-    !!! note
+    !!! Info "Nota"
         El mapa s'exportara a la mateixa escala que hi ha al visor, per canviar la escala del visor veure el seguent [enllaç](#canviar-escala)
 
 # Actualitzar el plugin de Giscegis

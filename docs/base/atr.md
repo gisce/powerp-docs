@@ -32,7 +32,7 @@ Actualment, aquest mòdul és capaç de llegir i generar:
 * **A3**: Alta directa a mercat. En el procés intervé la comercialitzadora
   entrant i la distribuidora.
 
-* **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora 
+* **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora
   actual.
 
 * **W1**: Notificació de autolectures a la distribuïdora des de la comercialitzadora.
@@ -195,7 +195,7 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
     Un cas que ja ha tingut missatgeria amb un altre agent, **no** pot passar a
     estat ``cancel·lat``. S'ha de generar un pas d'anul·lació o rebuig.
 
-!!! note
+!!! Info "Nota"
     Existeix un estat **Pendent** en el CRM. Pel que fa a canvis d'ATR, no és un
     estat que tingui gaire sentit.
 
@@ -690,7 +690,7 @@ pólissa.
 
    Resultat creació passos
 
-!!! note
+!!! Info "Nota"
     Si el CUPS de la pólissa només té 20 caracters, afegeix el sufix ``1P`` en
     el cas que la distribuidora sigui **Unión Fenosa** o ``0F`` en els altres
     casos.

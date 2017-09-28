@@ -10,14 +10,14 @@ El document de referència dels TI serà el document
 6. [TIs de Màquines](#6-tis-de-maquines)
 7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall-fiabilitat)
 
-!!! Note
+!!! Info "Nota"
     Quan el sistema no pogui assignar un TI a la instal·lació
     deixarà **en blanc** el camp.
 
     El **TI-000 no s’assignarà mai de forma automàtica** i es reserva
     per què l’usuari l’assigni a un element i premi la tecla “**Bloquear TI**”
 
-!!! Note
+!!! Info "Nota"
     S’han detectat alguns TIs sospitosos ja que no segueixen
     el mateix ordre que la resta, són els següents:
 
@@ -29,12 +29,12 @@ El document de referència dels TI serà el document
     Tot i que possiblement siguin errors tipogràfics,
     **s’han implementat com estan al BOE**.
 
-!!! Note
+!!! Info "Nota"
     El **TI-100U** no indica si és intempèrie, interior o mòbil.
     S’ha suposat que és **interior** a partir del patró
     que segueixen la resta de les posicions híbrides.
 
-!!! Note
+!!! Info "Nota"
     S’ha detectat una incoherència dels següents TIs en la documentació:
 
     TI-157U i TI-158U: Tenen les **mateixes** característiques per a **diferents** TIs
@@ -44,7 +44,7 @@ El document de referència dels TI serà el document
     **s’ha decidit utilitzar els TIs 158U i 158V**
     **en comptes dels 157U i 157V**.
 
-!!! Note
+!!! Info "Nota"
     Ara trobem 2 valors per al TI:
 
     - CNMC Tipus Instal·lació: el valor que s’ha entrat manualment
@@ -236,7 +236,7 @@ _Cel·les i elements de tall → Configuració → Tipus element_ :
 
 ![](_static/act_tis/celes_list_elements_menu.png)
 
-!!! Note
+!!! Info "Nota"
     Al ser personalitzable, cal tenir en compte de no barrejar conceptes.
     Error freqüent: el CINI de fusible ha de tenir un TI de fusible.
 
@@ -251,6 +251,6 @@ els TI’s de les cel·les i elements de tall es consulten els següents camps:
     En aquest exemple, el **codi TI** equivalent a
     **Fusible de Alta Tensión = TI-181 Seccionador Fusible (XS-SXS)**
 
-!!! Note
+!!! Info "Nota"
     Si el TI calculat és el **TI-187** i té activada la opció
     de **telemando** s’assignarà el **TI-187A**

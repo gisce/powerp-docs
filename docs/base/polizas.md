@@ -64,7 +64,7 @@ les dades de les diferents pestanyes.
 
 ![](_static/polizas/polissa_contacte.png)
 
-!!! Note
+!!! Info "Nota"
     En l'apartat _Tipo de pago_ es pot introduïr uns valors com els que es mostren
     en l'última imatge de la sèrie.
 
@@ -91,7 +91,7 @@ les dades de les diferents pestanyes.
 * Activa: La pòlissa per defecte està activa i només es desactivarà quan s'hagi
   donat de baixa i s'hagi realitzat la última facturació.
 
-    !!! Note
+    !!! Info "Nota"
         No es pot desactivar una pòlissa fins que s'hagi realitzat la última
         facturació. Veure l'apartat [Donar de baixa una pòlissa].
 
@@ -107,7 +107,7 @@ les dades de les diferents pestanyes.
 
     ![](_static/polizas/tarifes.png)
 
-    !!! Note
+    !!! Info "Nota"
         Una vegada sel·leccionada la tarifa, i **després de guardar el registre**,
         en la part inferior aparaixeràn els periodes de la tarifa, que s'haurà
         d'emplenar amb la potenca contractada en cadascún d'ells.
@@ -162,7 +162,7 @@ relacionats amb la pòlissa. Apareixen tots els que han passat per la pòlissa q
 es troben en estat _"No Actiu"_ i únicament el que es troba actualment
 instal·lat està _"Actiu"_.
 
-!!! Note
+!!! Info "Nota"
     Recorda que el campo _N. comptador_ ha de contenir el mateix **número de
     serie** del comptador actiu de la llista de la part inferior del formulari.   
     Les cerques a les pòlisses del número de comptador, són les del camp _N.
@@ -232,7 +232,7 @@ suposi un canvi de tarifa de peatge, s'haurà de fer un canvi de comptador. Per
 realitzar-ho cal [donar de baixa el comptador] i [donar d'alta un nou comptador]
 inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
 
-!!! Note
+!!! Info "Nota"
     Sempre s'ha d'inicialitzar un nou comptador amb les lectures dels periodes
     de la nova tarifa.   
     Recorda que cada peruide d'una tarifa es un producte diferent. (p.e. P1(2.0)
@@ -364,7 +364,7 @@ Per iniciar l'assistent premerem el botó calcular:
 
 Un cop comprovat que les dades son correctes premem el botó calcular.
 
-!!! Note
+!!! Info "Nota"
         L'opció precalcular és opcional, serveix per comprovar els càlculs
         abans de calcular-los i apareixeran al camp consum de l'assistent.
 
@@ -411,7 +411,7 @@ dos tipus de motius per fer-ho: els que vénen definits en el BOE
 ([24/2013 Article 52 punt 4](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13645)),
 o els que anem creant nosaltres mateixos
 
-!!! note
+!!! Info "Nota"
     En el cas de les distribuidores un subministrament no tallable, hauria
     de venir definit pel BOE (que ja venen pre-carregats)
     En el cas de les comercialitzadores un subministrament no tallable pot ser
@@ -506,7 +506,7 @@ Si es confirma, la modificació contractual activa serà eliminada i la
 modificació contractual anterior es reactivarà. Altrament, la modificació
 contractual es mantindrà sense canvis.
 
-!!! note
+!!! Info "Nota"
     No es podrà desfer cap modificació contractual si la pòlissa no es troba
     en estat **actiu**
 

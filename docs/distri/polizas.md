@@ -42,7 +42,7 @@ Al fer click al botó apareix l'assistent.
 
 ![](_static/polizas/assistent_modcon_1.png)
 
-!!! note
+!!! Info "Nota"
     Si el mòdul de facturació **està instal·lat**, apareixerà a l'assistent
     l'opció **forçar canvi de data**.
     Amb el mòdul de facturació instal·lat l'assistent fa unes comprovacions
@@ -104,7 +104,7 @@ Sense el mòdul de facturació, la informació mostrada és la següent:
 * **Data inici modificació contractual següent:** nova data inicial assignada a
   la modificació contractual següent (si existeix).
 
-!!! Note
+!!! Info "Nota"
     La modificació de les dates d'inici i final de les modificacions
     contractuals anteriors i / o següents es realitzen **automàticament** per
     evitar solapaments entre les modificacions contractuals de la pòlissa.

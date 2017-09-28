@@ -12,12 +12,12 @@
 El document de referència de CINI serà la
 [circular 4/2015](https://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
 
-!!! Note
+!!! Info "Nota"
     Tots els CINI es poden bloquejar marcant la casella “Bloquejar CINI”,
     i tots els càlculs que aquí es descriuen deixaràn de tenir efecte i
     es mantindrà el CINI que li assigni l’usuari.
 
-!!! Note
+!!! Info "Nota"
     Si al fer el càlcul del CINI, una de les posicions del CINI,
     no es pot calcular perquè el camp del que s’ha d’obtenir el valor
     està buit o fora del rang esperat, la posició apareixerà en **blanc**.
@@ -240,7 +240,7 @@ Segons indica la circular 4771, a la pàgina 37859:
 
 *Todas las posiciones deben constar de interruptor.”*
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 315 kVA, com que els barems CNMC són 250KVA
     o 400KVA, hem d’agafar el valor immediatament superior (400 KVA),
@@ -249,12 +249,12 @@ Segons indica la circular 4771, a la pàgina 37859:
 Quan hi hagin **dues màquines** el càlcul de la potència de la màquines
 es farà fent la semisuma de les potencies de les dues màquines.
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 400 kVA i una de 630 kVA,
     1030/2= 515 el valor adoptat serà S 2x630 kVA
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 500 kVA i una de 1000 kVA,
     1500/2= 750 el valor adoptat serà T 2x1000 kVA.
