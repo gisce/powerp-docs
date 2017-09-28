@@ -49,7 +49,7 @@ correctament.
 | **FECHA_ACTIVACION**       | Data inici de la modificació contractual nova  |
 
 
-!!! note
+!!! Info "Nota"
     Codi R2 (R2-xxx) de la CNMC gestionable en el camp `Ref2` de la fitxa de
     l'empresa comercialitzadora accessible des del menú `Empreses`
 
@@ -122,7 +122,7 @@ Seleccionar el camp que es vol recalcular:
 
 ![](../_static/cnmc/as_cinis/camp.png)
 
-!!! note
+!!! Info "Nota"
     El requadre de selecció ens permet indicar si volem canviar el codi
     seleccionat per tots els elements o només per els que no estiguin
     bloquejats, en el cas que volguem mantenir alguns codis.

@@ -45,7 +45,7 @@ pages:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
-    - Manual de uso de TPL: distri/tpl.md
+    - Manual de uso de TPL - Índice: distri/tpl.md
     - Manual de uso de TPL:
       - Requisitos del sistema e instalación: distri/tpl/requisitos.md
       - Proceso de trabajo: distri/tpl/proceso_de_trabajo.md
@@ -97,7 +97,7 @@ pages:
         - CINI - Generación Automática: distri/act_cinis.md
         - TI - Generación Automática: distri/act_tis.md
       - ERP: gis/erp.md
-    - Calidad de servicio: distri/calidad.md
+    - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md
       - Marco de referencia del modelo de calidad: distri/calidad/marco_ref_modelo.md

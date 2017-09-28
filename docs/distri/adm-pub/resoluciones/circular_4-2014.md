@@ -4,7 +4,7 @@
 
 Aquest mòdul genera els formularis _F1, F1bis i F11_ de la _Circular 4/2014_
 
-!!! note
+!!! Info "Nota"
     Aquest mòdul va ser afegit a partir de la versió **v2.44** on es van afegir
     una sèrie de camps nous a la base de dades per tal de complementar la
     informació requerida en els formularis
@@ -13,7 +13,7 @@ Aquest mòdul genera els formularis _F1, F1bis i F11_ de la _Circular 4/2014_
 
 #### CUPS
 
-!!! note
+!!! Info "Nota"
     Tots els camps referents a dades de la **CNMC** s'han mogut a una pestanya
     anomendada **Estadistiques** dins del formulari del CUPS.
 
@@ -38,7 +38,7 @@ S'afegeix el codi CINI al comptador
 * **Calcular CINI (auto.)**: Aquest camp permet el càlcul del codi CINI mitjançant
   el lloguer del comptador.
 
-!!! note
+!!! Info "Nota"
     El sistema de càlcul de CINI automàtic només està disponible utilitzant el
     mòdul de facturació de distribució de GISCE-ERP.
 
@@ -86,7 +86,7 @@ Se ha añadido el campo **Número máximo de máquinas**
 
 ![](../../_static/cnmc/4_2014/form_cts_num_maquines.png)
 
-!!! note
+!!! Info "Nota"
     En el procés d'actualització aquest camp s'inicialitza de forma automàtica
     segons el número de transformadors instal·lats el CT. Després s'ha de
     **revisar** que el valor sigui el corresponent.
@@ -103,7 +103,7 @@ A través d'aquest assistent podem realitzar dues operacions:
 2. Actualitzar dades estadístiques de la CNMC que s'utilitzen en aquests
    informes
 
-!!! note
+!!! Info "Nota"
     Abans de generar els informes, hem d'haver actualtizat les dades de la CNMC
     amb l'aque que volem realitzar l'informe.
 
@@ -149,7 +149,7 @@ Tenim dues accions disponibles:
 Podem apretar el botó **Generar el ficher** per tal que comenci el procés de
 generació de l'informe.
 
-!!! note
+!!! Info "Nota"
     Depenguent de la quantitat de dades els informes poden tardar força temps
     en generar-se.
 

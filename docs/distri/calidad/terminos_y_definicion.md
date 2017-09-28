@@ -483,7 +483,7 @@ Que es correspon amb els següents criteris:
     incidència, que podrà ser modificada amb la informació recollida
     posteriorment.
 
-!!! Note
+!!! Info "Nota"
     Per definir els tipus d’incidència s’ha d’accedir a “_Menú → Qualitat →
     Configuració → Tipus Incidències_”.
 
@@ -635,7 +635,7 @@ el percentil 80 del TIEPI serà el propi TIEPI del mateix municipi.
 
 ## Metodologia per la obtenció d'informació zonal d'interrupcions en BT
 
-!!! Note
+!!! Info "Nota"
     **Definició**: Una interrupció en baixa tensió es aquella interrupció en el
     subministrament causada per una incidència en la xarxa de BT i que no afecta
     a instal·lacions de tensió superior (centres de transformació).

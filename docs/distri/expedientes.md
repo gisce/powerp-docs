@@ -76,7 +76,7 @@ li assignarem l'expedient que li correspon.
 
 ### Assignar un expedient a una línia de Mitja Tensió
 
-!!! note
+!!! Info "Nota"
     Els expedients s'assignen als trams (no a la línia).
     Un expedient pot estar assignat a diversos trams de la línia.
 
@@ -118,7 +118,7 @@ perquè la data real és una altra ...; haruem de:
 
 ![](_static/expedientes/tram_apm.png)
 
-!!! note
+!!! Info "Nota"
     Poden haver diversos expedients assignats a un mateix centre i/o línia.    
     En aquest cas l'ERP agafarà la **data APM més recent** i la assignarà al
     centre. En cas de voler conservar l'altre data, cal bloquejar la data

@@ -176,7 +176,7 @@ En el formulari tenim diferents camps que s'expliquen a continuació:
 * **SQL**: És un camp que ens mostrarà el domini transformat en SQL per si ens
   interessa provar si els resultats són els esperats.
 
-!!! note
+!!! Info "Nota"
     Les dates s'utilitzen a l'hora d'assignar els ítems a revisar i es fa
     segons la data de la revisió.
 
@@ -204,7 +204,7 @@ per a cada base de dades.
 ![](_static/revisiones/guardat_normativa_general.png)
 
 
-!!! note
+!!! Info "Nota"
     Abans de crear ítems a revisar s'ha d'haver guardat la normativa.
 
 **Pestanya Ítems a revisar**
@@ -295,7 +295,7 @@ el nom del model que volem revisar.
 
 ![](_static/revisiones/menu_creat_models.png)
 
-!!! note
+!!! Info "Nota"
     El menú _"Menú > Revisions Internes > Revisions"_ mostra **totes** les
     revisions definides sense filtrar el model.
 
@@ -366,7 +366,7 @@ Una part general per tal d'identificar la revisió on hi ha els camps:
 * **Periodicitat tipus**: Tipus de temps a aplicar per planificar la següent
   revisió.
 
-!!! note
+!!! Info "Nota"
     El camp **Núm. defectes reparats** només mostra informació vàlida quan
     l'estat de la revisió és **Tancada**.
 
@@ -467,7 +467,7 @@ per llistar quines revisions volem planificar a futur.
 ![](_static/revisiones/formulari_revisions_item_list.png)
 
 
-!!! note
+!!! Info "Nota"
     Si tenim més de **80** registres, s'ha d'amliar el límit per tal de poder
     actuar amb tot el llistat a través de l'icona ![](_static/revisiones/mostrar_limit_80.png) i després
     canviar el límit al valor necessari ![](_static/revisiones/canvi_limit_80.png).
@@ -510,7 +510,7 @@ de planificacions futures.
 ![](_static/revisiones/planificacio_revisions_concreta.png)
 
 
-!!! note
+!!! Info "Nota"
     Si no ens crea la planificació és perquè ja hi ha una revisió planificada amb
     data posterior a la que volem planificar.
 

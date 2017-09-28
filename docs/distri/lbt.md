@@ -95,7 +95,7 @@ línies aèries: **_Posada en façana_**: Si / NO
 
 **NOTES ACLARÀTORIES:**
 
-!!! Note
+!!! Info "Nota"
     **NOTA 1. Sel·lecció dels suports**
 
     Es tindran en compte tots els suports **tan de AT com de BT**, sempre i
@@ -107,7 +107,7 @@ línies aèries: **_Posada en façana_**: Si / NO
     Els TUB no els considerem suports.
     _En la versió 1, els SM, SM1 i TUB no els consideràvem suports._
 
-!!! Note
+!!! Info "Nota"
     **NOTA 2. Selecció de LBT “Tensada sobre poste”**
 
     Es considera "**Tensada sobre poste**" les línies de tipusLinia Aeri i que
@@ -120,7 +120,7 @@ línies aèries: **_Posada en façana_**: Si / NO
 
     En cas que no es doni la condició anterior s’assignara com a cable en façana
 
-!!! Note
+!!! Info "Nota"
     **NOTA 3. Com carregar el SHAPE en el ERP**
 
     Al menú de GIS > Carregador de fitxers SHP LAT i LBT
@@ -129,7 +129,7 @@ línies aèries: **_Posada en façana_**: Si / NO
     ![Mostra carrega de fitxers shp utilitzant el ERP]
     (_static/lbt/carrega_fitxers_shp.png)
 
-!!! Note
+!!! Info "Nota"
     **NOTA 4. Com actualitzar el tipus de línia en el ERP**
 
     Al menú de GIS > Assignar tipus LBT
@@ -156,7 +156,7 @@ En el dibuix està dibuixat com a Continuo, i fins ara l’hem considerat aeri i
 
 En el dibuix està com a Continuo, així que de moment es considera aeri i el tipus aeri/façana depèn de on estigui posat.
 
-!!! Note
+!!! Info "Nota"
     Els trams de AT, no es recalculen amb el Shape del GIS, tal com es fa en BT,
     ja que les dades s’agafen de les dades entrades en el ERP.
 
