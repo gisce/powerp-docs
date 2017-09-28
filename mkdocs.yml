@@ -94,7 +94,7 @@ pages:
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
       - ERP: gis/erp.md
-    - Qualitat de servei: distri/calidad.md
+    - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
       - Marc de referència del model de qualitat: distri/calidad/marco_ref_modelo.md
