@@ -51,7 +51,7 @@
     Està previst que més endavant desapareixi el camp
     “CNMC Tipus Instal·lació” i únicament es mostri el calculat per l’ERP.
 
-# 1. TIs de Línies d’Alta Tensió
+## 1. TIs de Línies d’Alta Tensió
 Per calcular els TI’s de les línies d’Alta tensió es consulten els següents camps:
 
 - **Tensió**: S’obté del camp “**Tensió màxima de disseny**”
@@ -93,7 +93,7 @@ Per calcular els TI’s de les línies d’Alta tensió es consulten els següen
 
     ![](_static/act_tis/lat_trams_tipus.png)
 
-# 2. TIs de Línies de Baixa Tensió
+## 2. TIs de Línies de Baixa Tensió
 Per calcular els TI’s de les línies de Baixa tensió
 es consulten els següents camps:
 
@@ -114,7 +114,7 @@ es consulten els següents camps:
 
     ![](_static/act_tis/lbt_tipus_linia.png)
 
-# 3. TIs de Centres Transformadors
+## 3. TIs de Centres Transformadors
 Per calcular els TI’s dels CTs es consulten els següents camps:
 
 - **Tensió**: S’obté del camp “**Tensió primari**” del centre transformador.
@@ -155,7 +155,7 @@ no es contempla perquè:
 - En les taules de TI’s tampoc hi surt cap valor de TI
   que compleixi per a Subestacions.
 
-# 5. TIs de Posicions
+## 5. TIs de Posicions
 Per calcular els TI’s de les posicions es consulten els següents camps:
 
 - **Tensió**: s’obté de la “**Tensió a aplicar**”
@@ -189,7 +189,7 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 
   ![](_static/act_tis/posicio_tec_tipus.png)
 
-# 6. TIs de Màquines
+## 6. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
 de reserva i móbils.    
 Formulari 5 de la [4666](adm-pub/resoluciones/4666.md#inventari-4666).
@@ -221,7 +221,7 @@ es consulten els següents camps:
 
     ![](_static/act_tis/maq_enlace_v_sec.png)
 
-# 7. TIs de cel·les i elements de tall (fiabilitat)
+## 7. TIs de cel·les i elements de tall (fiabilitat)
 Per tal de poder fer l’assignació dels TIs de fiabilitat,
 a les cel·les i elements de tall s’ha creat un
 **camp addicional** als **tipus d’element**. Per accedir,
