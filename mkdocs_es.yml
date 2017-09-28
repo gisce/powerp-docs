@@ -45,7 +45,7 @@ pages:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
-    - Manual de uso de TPL: distri/tpl.md
+    - Manual de uso de TPL - Índice: distri/tpl.md
     - Manual de uso de TPL:
       - Requisitos del sistema e instalación: distri/tpl/requisitos.md
       - Proceso de trabajo: distri/tpl/proceso_de_trabajo.md
