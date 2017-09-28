@@ -1,5 +1,8 @@
-El document de referència dels TI serà el document
-[2015-13488](https://www.boe.es/diario_boe/verifica.php?c=BOE-A-2015-13488&acc=Verificar)
+# Generació Automàtica de TI
+
+!!! Note "Fitxer de referéncia"
+    El document de referència dels TI serà el document
+    [2015-13488](https://www.boe.es/diario_boe/verifica.php?c=BOE-A-2015-13488&acc=Verificar)
 
 # Índex
 1. [TIs de Línies d’Alta Tensió](#1-tis-de-linies-dalta-tensio)
