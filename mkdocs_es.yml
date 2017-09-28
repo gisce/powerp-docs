@@ -3,8 +3,9 @@ repo_name: GitHub
 repo_url: https://github.com/gisce/powerp-docs
 edit_uri: edit/master/docs
 site_author: GISCE-TI, S.L.
-google_analytics: ['UA-27668469-4', 'builds.gisce.net']
-theme: readthedocs
+site_favicon: extra/gisce.ico
+google_analytics: ['UA-27668469-4', 'manuales.gisce.net']
+theme: material
 
 markdown_extensions:
   - admonition
@@ -14,6 +15,15 @@ markdown_extensions:
       i18n_dir:   locales
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
+
+extra:
+  font: fonts/DejaVuSans.ttf
+  logo: extra/gisce.png
+  feature:
+    tabs: true
+  palette:
+    primary: 'indigo'
+    accent: 'blue'
 
 extra_css:
   - extra/css/images.css
