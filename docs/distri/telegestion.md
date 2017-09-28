@@ -336,7 +336,7 @@ vàlides o invàlides utilitzant el botó **Acció**. Se'ns obrirà seguidament 
 formulari on es permet escollir validar o invalidar les lectures de telegestió.
 Aquesta acció **NO realitza les comprovacions per validar lectures.**
 
-!!! warning
+!!! Warning "Atenció"
     Cal tenir molt present que aquest procediment **NO valida les lectures**,
     només en marca el registre horari com a vàlid o invàlid. És recomanable
     utilitzar aquest procediment en registres individuals i només pels casos de

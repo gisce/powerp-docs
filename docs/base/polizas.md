@@ -68,7 +68,7 @@ les dades de les diferents pestanyes.
     En l'apartat _Tipo de pago_ es pot introduïr uns valors com els que es mostren
     en l'última imatge de la sèrie.
 
-!!! Warning
+!!! Warning "Atenció"
     A la fitxa de la comercialitzadora, recorda que el camp _Empresa ID_ es el
     **codi de comercialitzadora de REE**.
 
@@ -82,7 +82,7 @@ les dades de les diferents pestanyes.
 
     * Si l'escomesa es nova, s'haurà de [crear un nou CUPS].
 
-    !!! Warning
+    !!! Warning "Atenció"
         Abans de crear un nou CUPS comproba que realment no existeix un en la
         direcció que busques. Comproba també que no estigui desactivat.
 
@@ -112,7 +112,7 @@ les dades de les diferents pestanyes.
         en la part inferior aparaixeràn els periodes de la tarifa, que s'haurà
         d'emplenar amb la potenca contractada en cadascún d'ells.
 
-    !!! Warning
+    !!! Warning "Atenció"
         Al sel·leccionar una tarifa 3.1, s'ha d'observar que la tarifa amb la
         descripció **"Tarifa 3.1A LB"** indica que la lectura es realitza en baixa
         tensió.
@@ -191,7 +191,7 @@ els següents punts.
   d'aquesta pòlissa.   
   Dependrà de si es "mensual" o "bimestral".
 
-!!! Warning
+!!! Warning "Atenció"
     No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
 
 **A la pestanya Comptadors:**
@@ -207,7 +207,7 @@ Al comptador actiu s'han de completar els següents camps:
   de la pòlissa.   
   Dependrà de si es "mensual" o "bimestral".
 
-!!! Warning
+!!! Warning "Atenció"
     No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
 
 ### Realitzar canvi de titularitat
@@ -480,7 +480,7 @@ de contracte actual (si en té). Prement en el botó continuar, actualitzarà la
 data de firma de contracte de la **pólissa** i la **modificació contractual
 activa**.
 
-!!! warning
+!!! Warning "Atenció"
     No es farà cap tipus de validació sobre la data introduïda. Si és una data
     vàlida es modificarà la data actual sense tenir en compte cap altra
     consideració com la data d'alta i de baixa de la pòlissa o la data actual

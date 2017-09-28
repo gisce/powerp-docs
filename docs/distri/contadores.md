@@ -90,7 +90,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
     Quan la lectura actual es inferior a la anterior, aplica el valor del gir
     per fer el càlcul correctament.    
 
-    !!! Warning
+    !!! Warning "Atenció"
         Es important que aquest camp sigui cumplimentat correctament.
 
 + **Constant de multiplicació**: Per defecte aquest valor serà 1. Per equips

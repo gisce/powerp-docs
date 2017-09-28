@@ -35,7 +35,7 @@ En cada linia del llistat consta de vuit columnes amb els camps:
 
 El camp de **Dret a descompte** tindrà un tic de correcte si el **Temps Total Interrupció** és major que el temps de **Limit Temps de la Zona**, d'altre forma sortirà el quadre buit si no es compleix la condició anterior.
 
-!!! warning
+!!! Warning "Atenció"
 	Aquest llistat no té en compte les incidències amb intèrvals inferiors a 3 minuts, ni les incidències que siguin del tipus *Programada*, ni les causes *Transport*, *Tercers* i *Força Major*.
 
 

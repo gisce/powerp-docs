@@ -38,7 +38,7 @@ punt de subministre desapareixi, s'hagin retirat les línies de subministre i ha
 desaparegut la vivenda i no existeix la possibilitat de que es torni a connectar
 ningun altre client a aquest mateix punt.
 
-!!! Warning
+!!! Warning "Atenció"
     El CUPS no es borra en cap cas, només s'haurà de desactivar.
 
 Desmarcant la casella _Actiu_ de la fitxa general del CUPS, aquest ja no

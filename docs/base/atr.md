@@ -191,7 +191,7 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
 * **Cancel·lat**: Un cas que s'ha obert, però no s'ha arribat a enviar cap
   missatge, es pot passar a cancel·lat si vols mantenir-lo a històric.
 
-!!! warning
+!!! Warning "Atenció"
     Un cas que ja ha tingut missatgeria amb un altre agent, **no** pot passar a
     estat ``cancel·lat``. S'ha de generar un pas d'anul·lació o rebuig.
 
@@ -803,7 +803,7 @@ caràcter més.
 Aquestes distribuidores demanen que els casos generats portin en el codi REE de
 destinatari el de la distribuidora original.
 
-!!! warning
+!!! Warning "Atenció"
     És molt important que les distribuidores estiguin creades i tinguin com a
     **Empresa principal** la empresa segons el CUPS. Si no és així, no es
     validaran correctament els XML's de resposta

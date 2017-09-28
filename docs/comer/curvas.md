@@ -157,6 +157,6 @@ el la ruta on volem que es guardin els fitxers descarregats dels
 servidors sftp.
 **_Administració > Configuració > Propietats > Configuration Variables_**
 
-!!! warning
+!!! Warning "Atenció"
 
     Els fitxers descarregats no s'esborrán
