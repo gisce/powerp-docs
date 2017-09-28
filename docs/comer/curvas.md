@@ -132,7 +132,7 @@ equival a la data del fitxer en format YYYYMMDD.
 Es farà una cerca recursiva en el servidor SFTP buscant els fitxers que
 compleixin aquest format
 
-!!! tip
+!!! Tip "Consell"
     En un servidor SFTP compartit, es poden utilitzar les expressions regulars
     per descarregar els fitxers de totes les distribuïdores amb una sola
     configuració de proveïdor. Per exemple:

@@ -23,7 +23,7 @@ Apretem el botó **Generar liquidacions** i ens esperem a que finalitzi el càlc
     incloses en el període de liquidació seleccionat. Veurem que el botó es queda
     _clavat_, ens hem d'esperar que finalitzi l'operació.
 
-!!! tip   
+!!! Tip "Consell"   
     Si volem continuar treballant, podem obrir un altre client de l'ERP i continuar
     fent feina.
 
@@ -348,7 +348,7 @@ Els camps imprescindibles per qualsevol fitxer són:
     La generació de fitxers utilitza processos independents amb capacitat de
     multiprocés per accelerar-ne la generació.
 
-!!! tip
+!!! Tip "Consell"
     El número de processos afecta a la velocitat de la generació del fitxer,
     però també als recursos del servidor utilitzats. Normalment, el valor per
     defecte **Automàtic** és una bona opció no obstant, en servidors compartits

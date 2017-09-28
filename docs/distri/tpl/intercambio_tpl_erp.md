@@ -60,7 +60,7 @@ crear les lectures
   pot triar la data real de la lectura (**Real TPL**) o el dia de lectura que
   es va omplir al generar el fitxer de _.ruta_ (**Planificada (fitxer ruta)**).
 
-!!! tip
+!!! Tip "Consell"
 
     * Es genera un fitxer _.ruta_ amb _dia de lectura_ 31/03/2017
     * Es llegeix el comptador el dia 16/04/2017 a les 13:46
@@ -85,7 +85,7 @@ d'incidència que selecciona l'orígen **Sense Lectura**. Alguns exemples:
 * Codis que comencen per _I_. En aquest cas les incidències _I910_ ,_I912_, ...
 * Codi _I910_. En aquest cas només la incidència _I910_.
 
-!!! tip
+!!! Tip "Consell"
     La configuració de la selecció de origen sense lectura es realitza
     mitjançant la variable de configuració `pda_no_lect_origin_incidence_prefix`
 

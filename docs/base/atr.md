@@ -283,7 +283,7 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
   dades del pas es generaran automàticament segons les dades de CUPS i pólissa
   introduïts anteriorment.
 
-!!! tip
+!!! Tip "Consell"
     Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
     que no es guardi el cas, aquest pas no estarà emmagatzemat. Caldrà tancar el
     formulari amb el botó **Tancar** i guardar el Cas
@@ -384,7 +384,7 @@ El nom del fitxer generat tindrà el format
 * *[NNNNNNNNNNNNNNN]*: Codi de sol·licitud
 * *[CCCCCCCCCCCCCCCCCCCCCC]*: CUPS
 
-!!! tip
+!!! Tip "Consell"
     Si es vol que el camp destinitari *[DDDD]* contingui un nom d'empresa per
     facilitar la seva gestió, es pot configurar el nom comercial de la fitxa
     d'empresa segons es veu a la imatge següent
@@ -465,7 +465,7 @@ A la pestanya ``Switching``:
 * **Ref. Contracte**: La referència al contracte a la distribuidora. És
   obligatori i s'omplirà amb el valor que tingui a la Pólissa seleccionada
 
-!!! tip
+!!! Tip "Consell"
     Els camps ``CUPS``, ``Pòlissa`` i ``Ref. Contracte`` s'ompliran
     automàticament un cop s'ha escollit el cups o la pólissa.
 

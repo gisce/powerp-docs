@@ -241,7 +241,7 @@ El procés es descriu a continuació:
 5. Si s'accedeix al comptador desde la pestanya _comptadors_ de la fitxa de la
    pòlissa, s'observa el resultat de la inicialització del comptador.
 
-!!! tip
+!!! Tip "Consell"
     Veure la [importació i exportació de lectures de TPL](tpl.md)
 
 ## Importar full de lectures
@@ -456,7 +456,7 @@ d'alta a la base de dades de productes. Podem accedir a la fitxa de productes
 des del menú **Productes**. Per crear o cercar el producte, és millor anar a la
 categoria de producte corresponent des del menú **Productes per categoria**
 
-!!! tip
+!!! Tip "Consell"
     Es recomana crear una categoria de producte **Comptador** o **Equips de
     mesura** per tenir localitzats els comptadors.
 
@@ -467,7 +467,7 @@ A la figura podem veure els camps de la fitxa de producte
 És molt important que els impostos de client i proveïdor estiguin introduïts
 correctament. (A la imatge es mostra l'IVA vigent en aquell moment)
 
-!!! tip
+!!! Tip "Consell"
     Quan es creen productes, es recomana duplicar un producte de la mateixa
     categoria que tingui tots els camps omplerts i així s'estalvia temps de
     creació del producte. S'ha de fer des de **Formulari > Duplicar**

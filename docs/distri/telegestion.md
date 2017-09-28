@@ -192,10 +192,10 @@ tornar-los a carregar.
   lectures i errors que vagi trobant. Si un fitxer no el processa, podrem veure
   l'error corresponent al registre de lectura.
 
-!!! tip
+!!! Tip "Consell"
     Els directoris han de començar i acabar sempre amb la barra de directori
     ("/"), p.e. **/root/upload/**
-!!! tip
+!!! Tip "Consell"
     Els caracters ``,``, ``*``, ``?``, ``<``, ``>``, ``:``, ``\``, ``'``, ``"``
     i ``|`` no estan permesos en el nom d'un directori
 
@@ -238,7 +238,7 @@ Les excepcions que es gestionen actualment són:
 * **(CC) Comparison Month vs Day**: La lectura mensual absoluta no coincideix
   amb la lectura diaria del mateix dia.
 
-!!! tip
+!!! Tip "Consell"
     L'excepció **(NC) No Communication** depèn del paràmetre de configuració
     **tg_last_read_advice** que per defecte és de 2 dies. Es pot configurar per
     a què utilitzi un altre període.
