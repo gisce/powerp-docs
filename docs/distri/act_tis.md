@@ -4,15 +4,6 @@
     El document de referència dels TI serà el document
     [2015-13488](https://www.boe.es/diario_boe/verifica.php?c=BOE-A-2015-13488&acc=Verificar)
 
-# Índex
-1. [TIs de Línies d’Alta Tensió](#1-tis-de-linies-dalta-tensio)
-2. [TIs de Línies de Baixa Tensió](#2-tis-de-linies-de-baixa-tensio)
-3. [TIs de Centres Transformadors](#3-tis-de-centres-transformadors)
-4. [TIs de Subestacions](#4-subestacions)
-5. [TIs de Posicions](#5-tis-de-posicions)
-6. [TIs de Màquines](#6-tis-de-maquines)
-7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall-fiabilitat)
-
 !!! Info "Nota"
     Quan el sistema no pogui assignar un TI a la instal·lació
     deixarà **en blanc** el camp.
