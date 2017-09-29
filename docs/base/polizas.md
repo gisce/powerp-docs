@@ -531,3 +531,16 @@ Per fer-ho cal fer click al botó de la lupa a l'apartat **CNAE** al **crear **
 Llavors apareix la llista de CNAEs a escollir:
 
 ![](_static/polizas/llista_cnae.png)
+
+
+## Autoconsum
+
+El camp _"autoconsumo"_ ens indica el tipus de consum que te el client, segons aquest camp seran requerits uns tipus de comptadors els quals estan definits a la següent taula:
+
+|Tipus | PF | G | C |
+|-|-|-|-|
+|**Sense Autoconsum**|x | | |
+|**Tipus 1**|x |x | |
+|**Tipus 2 a)**| |x |x|
+|**Tipus 2 b)**|x|x| |
+|**Serveis Auxiliars**|x | | | |
