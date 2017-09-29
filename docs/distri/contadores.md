@@ -79,6 +79,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
       Si està desmarcada, no es cobrarà cap lloguer.
 + **Gir**: En aquest camp s'indica numéricament en quin valor el comptador es
   reinicia a 0.
++ **Tipus de comptador**: Permet seleccionar el tipus de comptador (PuntFrontera, Generació o de Consum)
 
     !!! Note
         Si es un comptador amb 5 rodes, s'ha d'indicar el valor de la casella
