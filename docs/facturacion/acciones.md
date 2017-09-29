@@ -40,7 +40,7 @@ de prémer el botó **següent**.
 
 ![](_static/acciones/wiz_pagar_factures_step_2_ca.png)
 
-!!! note "Nota"
+!!! Info "Nota"
     En el segon camp si seleccionem que volem pagar factures rebudes, a
     diferència de les factures generades s'ens demanarà el partner en el següent
     pas.

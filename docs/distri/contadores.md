@@ -48,7 +48,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 * **Introduïr lectures**: Aquest botó permet entrar les lectures de forma
   manual des de la fitxa del comptador
 
-!!! note
+!!! Info "Nota"
     La *data de primera lectura* ha de conincidir amb la *data de alta del
     comptador*
 
@@ -81,7 +81,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
   reinicia a 0.
 + **Tipus de comptador**: Permet seleccionar el tipus de comptador (PuntFrontera, Generació o de Consum)
 
-    !!! Note
+    !!! Info "Nota"
         Si es un comptador amb 5 rodes, s'ha d'indicar el valor de la casella
         _Gir_ amb 100.000. Quan el comptador arribi a 99.999, el següent valor
         serà 0.
@@ -91,7 +91,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
     Quan la lectura actual es inferior a la anterior, aplica el valor del gir
     per fer el càlcul correctament.    
 
-    !!! Warning
+    !!! Warning "Atenció"
         Es important que aquest camp sigui cumplimentat correctament.
 
 + **Constant de multiplicació**: Per defecte aquest valor serà 1. Per equips
@@ -102,7 +102,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
   facturació es el 31-01-2010, es facturarà la part proporcional de la potencia
   als 16 dies d'estar donat d'alta.
 
-    !!! Note
+    !!! Info "Nota"
         Aquesta data també és important per la generació dels perfils de consum.
 
 + **Actiu**: El comptador que es dona d'alta ha d'estar sempre actiu.    
@@ -150,7 +150,7 @@ El resultat final ha de ser tal i com es mostra en les següents imatges:
 
 ![](_static/contadores/polissa_comptadors.png)
 
-!!! Note
+!!! Info "Nota"
     S'observa que en data 31/01/2013 es dona de baixa el comptador amb el que es
     realitzaven les lectures en 3 periodes.    
     En data 01/02/2013 es dona d'alta el nou comptador amb el mateix número de
@@ -161,13 +161,13 @@ dels dos comptadors.
 
 ![](_static/contadores/canvi_comptador_3_6-3.png)
 
-!!! Note
+!!! Info "Nota"
     S'observa que les lectures tant d'activa com de reactiva estan en tres
     periodes. Aquest es el comptador que es dona de baixa el 30/10/2009.
 
 ![](_static/contadores/canvi_comptador_3_6-6.png)
 
-!!! Note
+!!! Info "Nota"
     En el nou comptador, que es l'actiu, s'observa que ara ja introdueix
     lectures en 6 periodes.
 
@@ -217,7 +217,7 @@ El procés es descriu a continuació:
 
     ![](_static/contadores/lectura_comptador_contacte.png)
 
-    !!! Note
+    !!! Info "Nota"
         Si es dona d'alta el comptador en data 01/02/2010:
 
         * Si la pòlissa és bimestral, la lectura s'introduirà en data
@@ -225,7 +225,7 @@ El procés es descriu a continuació:
         * Si la pòlissa es factura mensualment, la data de la lectura inicial
           del comptador seria 31/01/2010.
 
-    !!! Note
+    !!! Info "Nota"
         La _hora_ de la lectura es pot introduïr segons dos opcions:
 
         * Si el tancament és _Manual_ la hora és 12:00.
@@ -242,7 +242,7 @@ El procés es descriu a continuació:
 5. Si s'accedeix al comptador desde la pestanya _comptadors_ de la fitxa de la
    pòlissa, s'observa el resultat de la inicialització del comptador.
 
-!!! tip
+!!! Tip "Consell"
     Veure la [importació i exportació de lectures de TPL](tpl.md)
 
 ## Importar full de lectures
@@ -457,7 +457,7 @@ d'alta a la base de dades de productes. Podem accedir a la fitxa de productes
 des del menú **Productes**. Per crear o cercar el producte, és millor anar a la
 categoria de producte corresponent des del menú **Productes per categoria**
 
-!!! tip
+!!! Tip "Consell"
     Es recomana crear una categoria de producte **Comptador** o **Equips de
     mesura** per tenir localitzats els comptadors.
 
@@ -468,7 +468,7 @@ A la figura podem veure els camps de la fitxa de producte
 És molt important que els impostos de client i proveïdor estiguin introduïts
 correctament. (A la imatge es mostra l'IVA vigent en aquell moment)
 
-!!! tip
+!!! Tip "Consell"
     Quan es creen productes, es recomana duplicar un producte de la mateixa
     categoria que tingui tots els camps omplerts i així s'estalvia temps de
     creació del producte. S'ha de fer des de **Formulari > Duplicar**
@@ -582,7 +582,7 @@ partir dels preus de compra introduïts a la base de dades.
 Un cop introduïdes totes les línies de sol·licitud de compra i confirmats els
 preus de compra es pot prèmer el el botó **Confirmar comanda de compra**
 
-!!! note
+!!! Info "Nota"
     Es pot anul·lar posteriorment si es decideix no realitzar-la prement el botó
     **Cancel·la comanda de compra**
 

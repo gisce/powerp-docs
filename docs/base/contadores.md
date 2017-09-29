@@ -47,7 +47,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 * **Introduïr lectures**: Aquest botó permet entrar les lectures de forma
   manual des de la fitxa del comptador
 
-!!! note
+!!! Info "Nota"
     La **data de primera lectura** ha de conincidir amb la data de alta del
     comptador
 
