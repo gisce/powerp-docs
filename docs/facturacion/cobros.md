@@ -122,3 +122,43 @@ les factures incloses a la remesa polsant el botó "Pagar Remesa".
 
 Totes les factures passaran llavors a estat "Realizado" i el valor residual a
 zero amb els corresponents assentaments creats.
+
+## Agrupacions de Factures
+
+L'agrupació de factures serveix per a gestionar més fàcilment un conjunt de factures de manera que les accions que es realitzen a una factura del grup es realitzen a la resta.
+
+Quan s'agrupen vàries factures es crea un moviment comptable amb la suma dels imports de les factures. Aquest moviment queda lligat a les factures en el camp "**Grup Moviment**".
+Un cop agrupades unes factures hi ha una sèrie d'accions que es realitzen sobre aquest moviment en comptes de sobre cada factura. Això implica que realitzar una d'aquestes
+accions a una factura agrupada afecta a totes les factures del grup. Aquestes accions són:
+
+  * Pagar factura
+  * Desfer pagament
+  * Devolució de pagamentº
+  * Afegir factures a la remesa
+
+
+Per tant, al fer per exemple el pagament d'una factura agrupada, el que es fa és una sola operació amb el moviment del grup en comptes d'una acció per cada factura.
+
+### Assistent per agrupar factures
+El procés per agrupar factures és el següent:
+
+
+  * Des de el llistat de factures del menú "**Facturació**" seleccionem les factures que vulguem agrupar.
+  ![](_static/cobros/agrup2.png)
+
+  * Cridem l'assistent "**Agrupar pago facturas**".
+  ![](_static/cobros/agrup4.png)
+
+  * Es mostrarà un resum amb l'import resultant i dues opcions:
+      * **Grupo facturas seleccionadas**: Es farà l'agrupació de les factures seleccionades. Un cop pitjat el botó d'agrupar el wizard no es tancarà, s'ha de tancar manualment.
+      * **Agrupar y remesar**: Es farà l'agrupació de les factures seleccionades i després s'obrirà automàticament l'assistent per remesar ja explicat anteriorment. S'afegiran totes les factures del grup a la remesa.
+  ![](_static/cobros/agrup5.png)
+
+  * Un cop finalitzat es pot veure com ja tenen ple el camp "**Grup Moviment**".
+  ![](_static/cobros/agrup7.png)
+
+L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que mostraran un missatge d'error si:
+
+  * Alguna de les factures ja està agrupada.
+  * Alguna de les factures no està oberta.
+  * Hi ha factures amb diferents IBANs.
