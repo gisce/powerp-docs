@@ -50,18 +50,23 @@ La primera comprovació que farem serà la següent:
 
 #### Pòlisses a assignar
 
-A la finestra de la part superior on esta escrit "**Pòlisses a assignar**",
+A la finestra de la part superior on està escrit "**Pòlisses a assignar**",
 si cliquem el botó ![buscar](_static/perfiles/a_pf.PNG) apareixeran les
 pòlisses facturades en aquest període de perfilació i que no estan incloses
 en el lot de perfilació. Al cap d'uns segons es mostraran totes les pòlisses
 que s'han donat d'alta en el període de perfilació, més les que tenen
 una potència superior a 450kW.
 
+!!! Info "Nota"
+    Aquest procés assigna totes les pòlisses que apareixen en el requadre. Si
+    per algun motiu no es vol assignar alguna pòlissa en concret, es pot marcar
+    i fer clic al botó d'eliminar.
+
 De la llista de pòlisses que apareixen en la finestra superior s'han de
 seleccionar les que no tinguin una potència superior a 450kW.
 
-Un cop tinguem seleccionades les pòlisses s'ha de clicar el botó
-![assignar](_static/perfiles/b.PNG) perquè s'afegeixin al lot de perfilació.
+Un cop tinguem en el requadre, totes les pòlisses que volem incloure, s'ha de
+clicar el botó ![assignar](_static/perfiles/b.PNG) perquè s'afegeixin al lot de perfilació.
 El botó ![buscar](_static/perfiles/a_pf.PNG) pot clicar-se tantes vegades com
 es cregui necessari, i finalment només han d'aparèixer sense assignar les
 pòlisses que tinguin la potència contractada superior a 450kW.
