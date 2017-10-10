@@ -162,3 +162,23 @@ L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que 
   * Alguna de les factures ja està agrupada.
   * Alguna de les factures no està oberta.
   * Hi ha factures amb diferents IBANs.
+
+
+### Desfer agrupació de factures
+El procés per desfer l'agrupació de factures consisteix basicament en eliminar el moviment comptable que les agrupar.
+
+Els passos son els següents:
+
+  * Es va al menú  "**Contabilidad y finanzas -> Informe -> Buscar Asientos**".
+  ![](_static/cobros/agrup8.png)
+
+  * Es selecciona l'assentament corresponent a l'agrupació de factures
+  ![](_static/cobros/agrup9.png)
+
+
+!!! tip "Concell"
+    Per trobar l'assentament de l'agrupació de factures es pot introduïr el codi de l'agrupació al camp **Referència**.
+
+
+  * Es cancel.la l'assentament mitjançant el botó **Cancelar** i després es suprimeix l'assentament.
+  ![](_static/cobros/agrup10.png)
