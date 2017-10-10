@@ -133,7 +133,7 @@ accions a una factura agrupada afecta a totes les factures del grup. Aquestes ac
 
   * Pagar factura
   * Desfer pagament
-  * Devolució de pagamentº
+  * Devolució de pagament
   * Afegir factures a la remesa
 
 
