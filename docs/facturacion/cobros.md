@@ -125,11 +125,18 @@ zero amb els corresponents assentaments creats.
 
 ## Agrupacions de Factures
 
-L'agrupació de factures serveix per a gestionar més fàcilment un conjunt de factures de manera que les accions que es realitzen a una factura del grup es realitzen a la resta.
+L'agrupació de factures serveix per a gestionar més fàcilment un conjunt de
+factures de manera que les accions que es realitzen a una factura del grup es
+realitzen a la resta.
 
-Quan s'agrupen vàries factures es crea un moviment comptable amb la suma dels imports de les factures. Aquest moviment queda lligat a les factures en el camp "**Grup Moviment**".
-Un cop agrupades unes factures hi ha una sèrie d'accions que es realitzen sobre aquest moviment en comptes de sobre cada factura. Això implica que realitzar una d'aquestes
-accions a una factura agrupada afecta a totes les factures del grup. Aquestes accions són:
+Quan s'agrupen vàries factures es crea un moviment comptable amb la suma dels
+imports de les factures. Aquest moviment queda lligat a les factures en el
+camp "**Grup Moviment**".
+Un cop agrupades unes factures hi ha una sèrie d'accions que es realitzen sobre
+aquest moviment en comptes de sobre cada factura. Això implica que realitzar
+una d'aquestes
+accions a una factura agrupada afecta a totes les factures del grup. Aquestes
+accions són:
 
   * Pagar factura
   * Desfer pagament
@@ -137,27 +144,36 @@ accions a una factura agrupada afecta a totes les factures del grup. Aquestes ac
   * Afegir factures a la remesa
 
 
-Per tant, al fer per exemple el pagament d'una factura agrupada, el que es fa és una sola operació amb el moviment del grup en comptes d'una acció per cada factura.
+Per tant, al fer per exemple el pagament d'una factura agrupada, el que es fa
+és una sola operació amb el moviment del grup en comptes d'una acció per cada
+factura.
 
 ### Assistent per agrupar factures
 El procés per agrupar factures és el següent:
 
 
-  * Des de el llistat de factures del menú "**Facturació**" seleccionem les factures que vulguem agrupar.
+  * Des del llistat de factures del menú "**Facturació**" es seleccionen les
+  factures que es vulguin agrupar.
   ![](_static/cobros/agrup2.png)
 
-  * Cridem l'assistent "**Agrupar pago facturas**".
+  * Es crida l'assistent "**Agrupar pago facturas**".
   ![](_static/cobros/agrup4.png)
 
   * Es mostrarà un resum amb l'import resultant i dues opcions:
-      * **Grupo facturas seleccionadas**: Es farà l'agrupació de les factures seleccionades. Un cop pitjat el botó d'agrupar el wizard no es tancarà, s'ha de tancar manualment.
-      * **Agrupar y remesar**: Es farà l'agrupació de les factures seleccionades i després s'obrirà automàticament l'assistent per remesar ja explicat anteriorment. S'afegiran totes les factures del grup a la remesa.
+      * **Grupo facturas seleccionadas**: Es farà l'agrupació de les factures
+      seleccionades. Un cop pitjat el botó d'agrupar el wizard no es tancarà,
+      s'ha de tancar manualment.
+      * **Agrupar y remesar**: Es farà l'agrupació de les factures
+      seleccionades i després s'obrirà automàticament l'assistent per remesar
+      ja explicat anteriorment. S'afegiran totes les factures del grup a la
+      remesa.
   ![](_static/cobros/agrup5.png)
 
   * Un cop finalitzat es pot veure com ja tenen ple el camp "**Grup Moviment**".
   ![](_static/cobros/agrup7.png)
 
-L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que mostraran un missatge d'error si:
+L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que
+mostraran un missatge d'error si:
 
   * Alguna de les factures ja està agrupada.
   * Alguna de les factures no està oberta.
@@ -165,9 +181,10 @@ L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que 
 
 
 ### Desfer agrupació de factures
-El procés per desfer l'agrupació de factures consisteix basicament en eliminar el moviment comptable que les agrupar.
+El procés per desfer l'agrupació de factures consisteix bàsicament en eliminar
+el moviment comptable que les agrupar.
 
-Els passos son els següents:
+Els passos són els següents:
 
   * Es va al menú  "**Contabilidad y finanzas -> Informe -> Buscar Asientos**".
   ![](_static/cobros/agrup8.png)
@@ -176,9 +193,11 @@ Els passos son els següents:
   ![](_static/cobros/agrup9.png)
 
 
-!!! tip "Concell"
-    Per trobar l'assentament de l'agrupació de factures es pot introduïr el codi de l'agrupació al camp **Referència**.
+!!! tip "Consell"
+    Per trobar l'assentament de l'agrupació de factures es pot introduïr el
+    codi de l'agrupació al camp **Referència**.
 
 
-  * Es cancel.la l'assentament mitjançant el botó **Cancelar** i després es suprimeix l'assentament.
+  * Es cancel.la l'assentament mitjançant el botó **Cancelar** i després es
+  suprimeix l'assentament.
   ![](_static/cobros/agrup10.png)
