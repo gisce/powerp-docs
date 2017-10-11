@@ -123,19 +123,19 @@ les factures incloses a la remesa polsant el botó "Pagar Remesa".
 Totes les factures passaran llavors a estat "Realizado" i el valor residual a
 zero amb els corresponents assentaments creats.
 
-## Agrupacions de Factures
+## Agrupació del pagament de Factures
 
-L'agrupació de factures serveix per a gestionar més fàcilment un conjunt de
-factures de manera que les accions que es realitzen a una factura del grup es
+L'agrupació del pagament de factures serveix per a gestionar més fàcilment
+un conjunt de factures de manera que les accions que es realitzen a una del grup es
 realitzen a la resta.
 
 Quan s'agrupen vàries factures es crea un moviment comptable amb la suma dels
 imports de les factures. Aquest moviment queda lligat a les factures en el
-camp "**Grup Moviment**".
+camp "**Grupo Moviment**".
+
 Un cop agrupades unes factures hi ha una sèrie d'accions que es realitzen sobre
-aquest moviment en comptes de sobre cada factura. Això implica que realitzar
-una d'aquestes
-accions a una factura agrupada afecta a totes les factures del grup. Aquestes
+tot el conjunt. Això implica que realitzar una d'aquestes accions a una
+factura agrupada afecta a totes les factures del grup. Aquestes
 accions són:
 
   * Pagar factura
@@ -144,12 +144,8 @@ accions són:
   * Afegir factures a la remesa
 
 
-Per tant, al fer per exemple el pagament d'una factura agrupada, el que es fa
-és una sola operació amb el moviment del grup en comptes d'una acció per cada
-factura.
-
-### Assistent per agrupar factures
-El procés per agrupar factures és el següent:
+### Assistent per agrupar pagaments de factures
+El procés per agrupar el pagament de factures és el següent:
 
 
   * Des del llistat de factures del menú "**Facturació**" es seleccionen les
@@ -169,7 +165,7 @@ El procés per agrupar factures és el següent:
       remesa.
   ![](_static/cobros/agrup5.png)
 
-  * Un cop finalitzat es pot veure com ja tenen ple el camp "**Grup Moviment**".
+  * Un cop finalitzat es pot veure com ja tenen ple el camp "**Grupo Moviment**".
   ![](_static/cobros/agrup7.png)
 
 L'assistent d'agrupar realitza una sèrie de validacions sobre les factures que
@@ -180,8 +176,8 @@ mostraran un missatge d'error si:
   * Hi ha factures amb diferents IBANs.
 
 
-### Desfer agrupació de factures
-El procés per desfer l'agrupació de factures consisteix bàsicament en eliminar
+### Desfer agrupació de pagament de factures
+El procés per desfer l'agrupació de pagament de factures consisteix bàsicament en eliminar
 el moviment comptable que les agrupar.
 
 Els passos són els següents:
@@ -201,3 +197,6 @@ Els passos són els següents:
   * Es cancel·la l'assentament mitjançant el botó **Cancelar** i després es
   suprimeix l'assentament.
   ![](_static/cobros/agrup10.png)
+
+!!! warning "Atenció"
+    Només es pot desfer l'agrupació de factures que no hagin estat pagades.
