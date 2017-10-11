@@ -194,10 +194,10 @@ Els passos són els següents:
 
 
 !!! tip "Consell"
-    Per trobar l'assentament de l'agrupació de factures es pot introduïr el
+    Per trobar l'assentament de l'agrupació de factures es pot introduir el
     codi de l'agrupació al camp **Referència**.
 
 
-  * Es cancel.la l'assentament mitjançant el botó **Cancelar** i després es
+  * Es cancel·la l'assentament mitjançant el botó **Cancelar** i després es
   suprimeix l'assentament.
   ![](_static/cobros/agrup10.png)
