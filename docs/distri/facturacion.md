@@ -200,13 +200,13 @@ Igualment es pot fer amb un grup de factures des del assistent 'Acció / Desfer 
 
 !!! Resposta
     Si no s'han produït modificacions contractuals en el període de facturació
-    del lot nomès es genera una factura per pòlissa i lot.
+    del lot només es genera una factura per pòlissa i lot.
 
 Es generan 2 factures si:
 
-1. La Modificació contractual que es realiza en mitat del període de facturació
-   es un 'augment / disminució' de potència, amb o sense canvio de tarifa.
-2. La Modificació contractual es per un canvi de comercializadora.
+1. La Modificació contractual que es realitza a la meitat del període de
+facturació, és un 'augment / disminució' de potència, amb o sense canvi de tarifa.
+2. La Modificació contractual és per un canvi de comercializadora.
 
 Per veure quantes pòlisses tenen més d'una factura en el període es pot
 comprovar des de el lot de facturació filtrant per el camp “Factures Generades”.
