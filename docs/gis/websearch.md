@@ -29,7 +29,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Final de la línia
 - Municipi de la línia
 - Tensió de la línia
-- Data APM
+- Data APM(permet buscar per any)
 - Codi(Permet "TZ-001-25" o 2TZ-001 25")
 - Origen
 - Final
@@ -64,7 +64,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Secció del cable
 - Material del cable
 - Voltatge(Cal afegir la V de volts al final)
-- Data APM(En format yyyy-mm-dd, permet usar "-" o "/" com a separador)
+- Data APM(En format yyyy-mm-dd, permet usar "-" o "/" com a separador)(permet buscar per any)
 
 ### Exemples de cerca
 - (LBT) CT-001 : Mostra les LBT del CT-001
@@ -76,13 +76,27 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Municipi
 - Potència Total del CT (Cal afegir kVA al final)
 - Adreça
-- Data APM
+- Data APM(permet buscar per any)
 - Tensió primari (Cal afegir V al final)
 - Circuit
 
 ### Exemple de cerca
 - (CT) Salt: Cerca tots els CTs de Salt
 - (CT) Salt 2003: Cerca tots els CTs de Salt que es van donar d'alta el 2003
+
+## Subestació
+- CINI
+- Nom
+- Descripció
+- Municipi
+- Potencia(cal afegir kVA al final)
+- Adreça
+- Data posata den marxa
+- Tensio (Cal afegir kVA al final) 
+
+### Exemple de cerca
+- (Subestacio) Salt: Cerca totes les subescions de Salt
+- (subestacio) Salt 2003: Cerca totes les subestacions de Salt que es van donar d'alta el 2003
 
 ## Transformador
 - CINI
@@ -92,7 +106,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Connexio UNE
 - Potencia nominal (Cal afegir kVA al final)
 - Estat
-- Data APM
+- Data APM(permet buscar per any)
 
 ### Exemples de cerca
 - (Transformador)  A.E.G: Transofrmadors de la marca A.E.G

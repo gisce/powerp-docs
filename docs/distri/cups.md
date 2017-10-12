@@ -18,11 +18,11 @@ associació es fa al Mòdul de GIS.
 Els camps ET i Línia tampoc s'han d'emplenar si es té instal·lat el mòdul de GIS.
 En cas contrari es poden emplenar manualment.
 
-!!! Note
+!!! Info "Nota"
     En General, a qualsevol formulari: Tots els camps amb **el fons gris**, són
     de només lectura.
 
-!!! Note
+!!! Info "Nota"
     En General, a qualsevol formulari: Tots els camps amb **el fons blau**, són
     obligatoris.
 
@@ -38,7 +38,7 @@ punt de subministre desapareixi, s'hagin retirat les línies de subministre i ha
 desaparegut la vivenda i no existeix la possibilitat de que es torni a connectar
 ningun altre client a aquest mateix punt.
 
-!!! Warning
+!!! Warning "Atenció"
     El CUPS no es borra en cap cas, només s'haurà de desactivar.
 
 Desmarcant la casella _Actiu_ de la fitxa general del CUPS, aquest ja no
@@ -46,6 +46,6 @@ aparaixerà més en els llistats ni en les cerques, i només podrà tornar a ser
 localitzat si explícitament es sel·lecciona la opció "_Actiu = No_" en el
 filtre.
 
-!!! Note
+!!! Info "Nota"
     En General: Recorda que per buscar un registre **no actiu** s'ha de fer
     seleccionant la opció "_Actiu = No_" en els filtres de sel·lecció.

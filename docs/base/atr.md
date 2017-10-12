@@ -31,12 +31,12 @@ Actualment, aquest mòdul és capaç de llegir i generar:
 
 * **A3**: Alta directa a mercat. En el procés intervé la comercialitzadora
   entrant i la distribuidora.
- 
-* **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora 
+
+* **R1**: Reclamacions a distribuïdora. En el procés intervé la comercialitzadora
   actual.
- 
+
 * **W1**: Notificació de autolectures a la distribuïdora des de la comercialitzadora.
- 
+
 Per facilitar el processat massiu de casos, s'han afegit diverses eines i
 assistents per realitzar accions en múltiples casos.
 
@@ -191,11 +191,11 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
 * **Cancel·lat**: Un cas que s'ha obert, però no s'ha arribat a enviar cap
   missatge, es pot passar a cancel·lat si vols mantenir-lo a històric.
 
-!!! warning
+!!! Warning "Atenció"
     Un cas que ja ha tingut missatgeria amb un altre agent, **no** pot passar a
     estat ``cancel·lat``. S'ha de generar un pas d'anul·lació o rebuig.
 
-!!! note:
+!!! Info "Nota"
     Existeix un estat **Pendent** en el CRM. Pel que fa a canvis d'ATR, no és un
     estat que tingui gaire sentit.
 
@@ -283,7 +283,7 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
   dades del pas es generaran automàticament segons les dades de CUPS i pólissa
   introduïts anteriorment.
 
-!!! tip
+!!! Tip "Consell"
     Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
     que no es guardi el cas, aquest pas no estarà emmagatzemat. Caldrà tancar el
     formulari amb el botó **Tancar** i guardar el Cas
@@ -384,7 +384,7 @@ El nom del fitxer generat tindrà el format
 * *[NNNNNNNNNNNNNNN]*: Codi de sol·licitud
 * *[CCCCCCCCCCCCCCCCCCCCCC]*: CUPS
 
-!!! tip
+!!! Tip "Consell"
     Si es vol que el camp destinitari *[DDDD]* contingui un nom d'empresa per
     facilitar la seva gestió, es pot configurar el nom comercial de la fitxa
     d'empresa segons es veu a la imatge següent
@@ -465,7 +465,7 @@ A la pestanya ``Switching``:
 * **Ref. Contracte**: La referència al contracte a la distribuidora. És
   obligatori i s'omplirà amb el valor que tingui a la Pólissa seleccionada
 
-!!! tip
+!!! Tip "Consell"
     Els camps ``CUPS``, ``Pòlissa`` i ``Ref. Contracte`` s'ompliran
     automàticament un cop s'ha escollit el cups o la pólissa.
 
@@ -690,7 +690,7 @@ pólissa.
 
    Resultat creació passos
 
-!!! note
+!!! Info "Nota"
     Si el CUPS de la pólissa només té 20 caracters, afegeix el sufix ``1P`` en
     el cas que la distribuidora sigui **Unión Fenosa** o ``0F`` en els altres
     casos.
@@ -803,7 +803,7 @@ caràcter més.
 Aquestes distribuidores demanen que els casos generats portin en el codi REE de
 destinatari el de la distribuidora original.
 
-!!! warning
+!!! Warning "Atenció"
     És molt important que les distribuidores estiguin creades i tinguin com a
     **Empresa principal** la empresa segons el CUPS. Si no és així, no es
     validaran correctament els XML's de resposta
@@ -843,4 +843,3 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 # Documentació específica
 
 [Gestió ATR Comercialitzadores](../comer/atr.md)
-

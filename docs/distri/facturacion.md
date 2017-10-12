@@ -74,7 +74,7 @@ Una vegada revisades, per part del usuari, totes les factures generades en el
 lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
 de factura i realitzar els assentaments comptables corresponents.
 
-!!! note
+!!! Info "Nota"
     Des del menú de Lots de facturació pots accedir a les pòlisses directament
     obrint la fitxa. Així si desitjes modificar algúna dada d'una pòlissa pots
     accedir des del propi lot a la pòlissa sense necessitat d'obrir una nova pestanya.
@@ -97,7 +97,7 @@ de factura i realitzar els assentaments comptables corresponents.
 * Pòlisses en el lot: Aquesta opció obre una nova pestanya en la que apareix
   el llistat de pòlisses i l'estat en que es troben.
 
-!!! note
+!!! Info "Nota"
     Des del menú de les “pòlisses en el lot” pots accedir a les pòlisses
     directament obrint la fitxa. Així si desitjes modificar algúna dada
     d'una pòlissa pots accedir-hi des de “pòlisses en el lot” a la pòlissa
@@ -106,7 +106,7 @@ de factura i realitzar els assentaments comptables corresponents.
 * Factures generades: Aquesta opció obre una nova pestanya en la que apareix
   el llistat de factures generades a partir del lot de facturació.
 
-!!! note
+!!! Info "Nota"
     Utiliza el menú contextual per accedir a les dades de forma ràpida.
     Per exemple: si estàs a qualsevol factura, i et situes sobre del camp de
     la pòlissa prement el botó dret podràs obrir directament una nova
@@ -134,7 +134,7 @@ S'accedeix al assistent en el que es indicarà:
 * Diari: S'ha de indicar a quin diari es desitja assignar a la factura
   a realitzar. Si es una factura de energia normal s'asignarà al diari _Factures Energía_.
 
-!!! note
+!!! Info "Nota"
     Aquesta factura manual es pot realitzar en qualsevol moment, i la/es
     factura/es que realiza queden en estat _borrador_. Pots utilitzar aquesta
     opció per comprovar si el resultat de la facturació d'aquesta pòlissa es
@@ -158,7 +158,7 @@ S'accedeix al assistent en el que es indicarà:
 
 ![](_static/facturacion/estado_abierto.png)
 
-!!! note
+!!! Info "Nota"
     Per saber quines factures estàn pendents de cobrament pots filtrar les
     que estàn en estat 'obert'. Després afegint el filtre de 'Empresa' i el
     de 'data factura'. Es sabràn les factures pendents de cada comercializadora
@@ -458,7 +458,7 @@ Els camps més importants a emplenar són:
 
 ![](_static/facturacion/comercialitzadora_creada.png)
 
-!!! note
+!!! Info "Nota"
     El camp **Posició fiscal** s'utilitza pel cas que a qui vagi destinada
     la factura sigui una comercialitzadora, no se li aplicarà l'IESE, en
     canvi si la factura va a un client final se li aplicarà l'IESE encara

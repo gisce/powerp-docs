@@ -1,23 +1,17 @@
-El document de referència dels TI serà el document
-[2015-13488](https://www.boe.es/diario_boe/verifica.php?c=BOE-A-2015-13488&acc=Verificar)
+# Generació Automàtica de TI
 
-# Índex
-1. [TIs de Línies d’Alta Tensió](#1-tis-de-linies-dalta-tensio)
-2. [TIs de Línies de Baixa Tensió](#2-tis-de-linies-de-baixa-tensio)
-3. [TIs de Centres Transformadors](#3-tis-de-centres-transformadors)
-4. [TIs de Subestacions](#4-subestacions)
-5. [TIs de Posicions](#5-tis-de-posicions)
-6. [TIs de Màquines](#6-tis-de-maquines)
-7. [TIs de cel·les i elements de tall (fiabilitat)](#7-tis-de-celles-i-elements-de-tall-fiabilitat)
+!!! Note "Fitxer de referéncia"
+    El document de referència dels TI serà el document
+    [2015-13488](https://www.boe.es/diario_boe/verifica.php?c=BOE-A-2015-13488&acc=Verificar)
 
-!!! Note
+!!! Info "Nota"
     Quan el sistema no pogui assignar un TI a la instal·lació
     deixarà **en blanc** el camp.
 
     El **TI-000 no s’assignarà mai de forma automàtica** i es reserva
     per què l’usuari l’assigni a un element i premi la tecla “**Bloquear TI**”
 
-!!! Note
+!!! Info "Nota"
     S’han detectat alguns TIs sospitosos ja que no segueixen
     el mateix ordre que la resta, són els següents:
 
@@ -29,12 +23,12 @@ El document de referència dels TI serà el document
     Tot i que possiblement siguin errors tipogràfics,
     **s’han implementat com estan al BOE**.
 
-!!! Note
+!!! Info "Nota"
     El **TI-100U** no indica si és intempèrie, interior o mòbil.
     S’ha suposat que és **interior** a partir del patró
     que segueixen la resta de les posicions híbrides.
 
-!!! Note
+!!! Info "Nota"
     S’ha detectat una incoherència dels següents TIs en la documentació:
 
     TI-157U i TI-158U: Tenen les **mateixes** característiques per a **diferents** TIs
@@ -44,7 +38,7 @@ El document de referència dels TI serà el document
     **s’ha decidit utilitzar els TIs 158U i 158V**
     **en comptes dels 157U i 157V**.
 
-!!! Note
+!!! Info "Nota"
     Ara trobem 2 valors per al TI:
 
     - CNMC Tipus Instal·lació: el valor que s’ha entrat manualment
@@ -57,7 +51,7 @@ El document de referència dels TI serà el document
     Està previst que més endavant desapareixi el camp
     “CNMC Tipus Instal·lació” i únicament es mostri el calculat per l’ERP.
 
-# 1. TIs de Línies d’Alta Tensió
+## 1. TIs de Línies d’Alta Tensió
 Per calcular els TI’s de les línies d’Alta tensió es consulten els següents camps:
 
 - **Tensió**: S’obté del camp “**Tensió màxima de disseny**”
@@ -99,7 +93,7 @@ Per calcular els TI’s de les línies d’Alta tensió es consulten els següen
 
     ![](_static/act_tis/lat_trams_tipus.png)
 
-# 2. TIs de Línies de Baixa Tensió
+## 2. TIs de Línies de Baixa Tensió
 Per calcular els TI’s de les línies de Baixa tensió
 es consulten els següents camps:
 
@@ -120,7 +114,7 @@ es consulten els següents camps:
 
     ![](_static/act_tis/lbt_tipus_linia.png)
 
-# 3. TIs de Centres Transformadors
+## 3. TIs de Centres Transformadors
 Per calcular els TI’s dels CTs es consulten els següents camps:
 
 - **Tensió**: S’obté del camp “**Tensió primari**” del centre transformador.
@@ -154,14 +148,14 @@ Per calcular els TI’s dels CTs es consulten els següents camps:
 Encara que en el ERP existeix el camp per a completar el TI,
 no es contempla perquè:
 
-- En l’Inventari de la 4131, formulari 3:
+  - En l’Inventari de la 4666, formulari 3:
     - No es sol·licita aquesta informació.
 - 4707 no es sol·licita
 - 4/2015 no es sol·licita
 - En les taules de TI’s tampoc hi surt cap valor de TI
   que compleixi per a Subestacions.
 
-# 5. TIs de Posicions
+## 5. TIs de Posicions
 Per calcular els TI’s de les posicions es consulten els següents camps:
 
 - **Tensió**: s’obté de la “**Tensió a aplicar**”
@@ -195,10 +189,10 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 
   ![](_static/act_tis/posicio_tec_tipus.png)
 
-# 6. TIs de Màquines
+## 6. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
 de reserva i móbils.    
-Formulari 5 de la [4131](adm-pub/cnmc/#inventari-4131).
+Formulari 5 de la [4666](adm-pub/resoluciones/4666.md#inventari-4666).
 
 Els TI’s de les màquines de Reserva, seràn sempre TI-000.
 
@@ -227,7 +221,7 @@ es consulten els següents camps:
 
     ![](_static/act_tis/maq_enlace_v_sec.png)
 
-# 7. TIs de cel·les i elements de tall (fiabilitat)
+## 7. TIs de cel·les i elements de tall (fiabilitat)
 Per tal de poder fer l’assignació dels TIs de fiabilitat,
 a les cel·les i elements de tall s’ha creat un
 **camp addicional** als **tipus d’element**. Per accedir,
@@ -236,7 +230,7 @@ _Cel·les i elements de tall → Configuració → Tipus element_ :
 
 ![](_static/act_tis/celes_list_elements_menu.png)
 
-!!! Note
+!!! Info "Nota"
     Al ser personalitzable, cal tenir en compte de no barrejar conceptes.
     Error freqüent: el CINI de fusible ha de tenir un TI de fusible.
 
@@ -251,6 +245,6 @@ els TI’s de les cel·les i elements de tall es consulten els següents camps:
     En aquest exemple, el **codi TI** equivalent a
     **Fusible de Alta Tensión = TI-181 Seccionador Fusible (XS-SXS)**
 
-!!! Note
+!!! Info "Nota"
     Si el TI calculat és el **TI-187** i té activada la opció
     de **telemando** s’assignarà el **TI-187A**
