@@ -14,7 +14,7 @@ table{
   All text in .MD files is inside divs with class="section"
   This is to justify all text inside these divs
 */
-.section {
+.md-content {
   text-align: justify;
 }
 
