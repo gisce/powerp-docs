@@ -46,6 +46,8 @@ comercialitzadores s'implementen en els mòduls
 processar els fitxers **F1** i **Q1** respectivament i no es tracten en aquest
 document.
 
+---
+
 ## Conceptes
 
 
@@ -427,6 +429,8 @@ l'intercanvi de informació generat.
 
 El mail es veurà a la pestanya ``Communication`` per referències posteriors.
 
+---
+
 ## Operació
 
 ### Creació d'un cas com a originador
@@ -519,6 +523,8 @@ mòdul ``Power Email`` ens demanarà:
 * **Passos**: Sol·licitarà l'XML de quin pas volem adjuntar al mail
 * Podrem escriure el contingut del mail que creguem necessari a l'àrea de text
   que hi ha a sota
+
+---
 
 ## Creació d'un cas a partir d'un XML entrant
 
@@ -640,6 +646,8 @@ podem procedir amb l'enviament. Prement el botó "_enviar correus pendents_":
 Aquest procés pot tardar una estona segons la quantitat de casos sel·leccionats.
 Una vegada finalitzat el procés, l'assistent s'actualitzarà i mostrarà els casos
 notificats i si ha trobat algun error en el procés que ha impedit la notificació.
+
+---
 
 ## Automatització
 
@@ -847,6 +855,7 @@ conté s'actúa de la següent forma:
 | ``proces: C2``       | Un **C2** de la mateixa forma que el cas ``canvi_titular: 1``  |
 | ``proces: A3``       | **A3**                                                         |
 
+---
 
 ## Altres automatitzacions
 
