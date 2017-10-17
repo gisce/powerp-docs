@@ -109,7 +109,7 @@ El fitxer es pot emmagatzemar a disc amb el nom
   accents i amb els espais substituïts per `_`
 * **YYYY**: Es substitueix per l'any amb 4 dígits.
 
-!!! note
+!!! Info "Nota"
     Les especificacions ESCILA indiquen que els CNAE's s'han d'agrupar segons
     els seus propis criteris. El mòdul implementa la agrupació d'aquests CNAE's
     automaticament al generar el XML

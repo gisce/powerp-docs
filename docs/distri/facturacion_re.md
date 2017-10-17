@@ -21,7 +21,7 @@ Si escollim la tarifa **RE** podrem seleccionar el període de facturació
 Això el que ens farà és moure la pòlissa en els lots de facturació, segons
 haguem indicat.
 
-!!! note
+!!! Info "Nota"
     En el cas que tinguem **facturació anual**, abans de validar la factura per
     tal d'assignar-hi número, s'haurà d'assegurar que existeix el lot de facturació
     del següent any.

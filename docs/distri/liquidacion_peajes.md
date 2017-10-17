@@ -11,7 +11,7 @@ A través del menú de **Liquidacions** podem llistar les diferents liquidacions
 
 ![](_static/liquidacion_peajes/liquidacio_menu_general.png)
 
-!!!note
+!!!Info "Nota"
     L'únic sistema que es genera de forma automàtica és el de liquidació per
     facturació de peatges. Veure [Generar les liquidacions després de facturar](#generar-les-liquidacions-despres-de-facturar)
 
@@ -27,7 +27,7 @@ Per exemple: Les liquidacions de facturació per peatges
 En el llistat podem veure totes les liquidacions que tinguem i filtrar per **mes**,
 **any** i **estat** de la liquidació.
 
-!!!note
+!!!Info "Nota"
     Al finalitzar l'any es generen totes les liquidacions en estat **esborrany**
     pel pròxim any, per tant ens sortirant totes les liquidacions encara que no
     tinguem facturat encara aquell període.
@@ -109,7 +109,7 @@ i la podem veure apretant el botó **Mostrar liquidació**
 
 ![](_static/liquidacion_peajes/liquidacion_generada.png)
 
-!!!note
+!!!Info "Nota"
     Podem anar regenerant la liquidació tantes vegades com volguem mentres estigui
     en estat **esborrany** que ens confirmarà si volem tornar a generar.
 
@@ -152,7 +152,7 @@ i un per les liquidacions Anuals. Podem trobar els assistents en l'ERP en la dir
 
 ### Liquidacions Mensuals ETU/35/2017
 
-!!! Note "Fitxer de Referència"
+!!! Info "Fitxer de Referència"
     Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
     de información relativo al fichero de suplementos territoriales mensual
     (Grupo BC)_" per a distribuidores en la versió 1.0 compartit per la CNMC
@@ -181,7 +181,7 @@ o bé guardar-lo en un directori específic.
 
 ### Liquidacions Anuals ETU/35/2017
 
-!!! Note "Fitxer de Referència"
+!!! Info "Fitxer de Referència"
     Aquestes liquidacions es basen en el fitxer "_Especificaciones para el envio
     de información relativo al fichero de suplementos territoriales anual
     (Grupo BC)_" per a distribuidores en la versió 1.0 compartit per la CNMC

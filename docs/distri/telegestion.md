@@ -31,11 +31,11 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG in
   darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
   nova.
 
-!!! note "Nota"
+!!! Info "Nota"
     El nom del producte del comptador de telegestió és important. Per facilitar
     el switching va bé que la marca i el model estiguin separats per un espai
 
-!!! note "Nota"
+!!! Info "Nota"
     Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
     Aquest prefix ha de ser el mateix que afegeix el comptador als números de
     sèrie. (veure `nota prefix`_ )
@@ -138,7 +138,7 @@ habitualment seguint tres passos:
     de tots els comptadors d'un lot de facturació podem prémer en el botó
     [importar lectures del lot](#importar-lectures-des-del-lot-de-facturacio).
 
-!!! note "Nota"
+!!! Info "Nota"
     Es pot configurar el sistema de telegestió per no carregar les lectures de
     reactiva i així no facturar-la. No obstant, si la potència contractada és
     superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
@@ -214,10 +214,10 @@ tornar-los a carregar.
   lectures i errors que vagi trobant. Si un fitxer no el processa, podrem veure
   l'error corresponent al registre de lectura.
 
-!!! tip
+!!! Tip "Consell"
     Els directoris han de començar i acabar sempre amb la barra de directori
     ("/"), p.e. **/root/upload/**
-!!! tip
+!!! Tip "Consell"
     Els caracters ``,``, ``*``, ``?``, ``<``, ``>``, ``:``, ``\``, ``'``, ``"``
     i ``|`` no estan permesos en el nom d'un directori
 
@@ -260,7 +260,7 @@ Les excepcions que es gestionen actualment són:
 * **(CC) Comparison Month vs Day**: La lectura mensual absoluta no coincideix
   amb la lectura diaria del mateix dia.
 
-!!! tip
+!!! Tip "Consell"
     L'excepció **(NC) No Communication** depèn del paràmetre de configuració
     **tg_last_read_advice** que per defecte és de 2 dies. Es pot configurar per
     a què utilitzi un altre període.
@@ -295,7 +295,7 @@ la norma s'aniran afegint en aquestes llistes en properes actualitzacions.
 * **Descripció**: Descripció de l'error.
 * **Categoria**: Si es tracta d'un error, a quina categoria pertany.
 
-!!! note "Nota"
+!!! Info "Nota"
     Aquests errors són específics del concentrador i no estan relacionats amb
     l'ERP. S'ha de tenir en compte que l'error es genera en el moment de generar
     el fitxer. Es podria donar el cas que el problema ja estigui solucionat
@@ -346,7 +346,7 @@ Registre dels tancaments diaris i mensuals amb accessos directes a:
 Les lectures que encara no han estat validades es llisten de color **blau** i
 les validades de color **negre**
 
-!!! note "Nota"
+!!! Info "Nota"
     El comptador de registres d'aquests llistats no s'actualitzen, ja que el
     càlcul d'aquest valor és molt lent. Per tant, encara que hi hagi milers de
     lectures, sempre sortirà com 1/80
@@ -358,7 +358,7 @@ vàlides o invàlides utilitzant el botó **Acció**. Se'ns obrirà seguidament 
 formulari on es permet escollir validar o invalidar les lectures de telegestió.
 Aquesta acció **NO realitza les comprovacions per validar lectures.**
 
-!!! warning
+!!! Warning "Atenció"
     Cal tenir molt present que aquest procediment **NO valida les lectures**,
     només en marca el registre horari com a vàlid o invàlid. És recomanable
     utilitzar aquest procediment en registres individuals i només pels casos de
@@ -395,7 +395,7 @@ En el detall hi trobem:
   mensuals)
 * **Vàlid**: Si està validad i quan es va validar
 
-!!! note "Nota"
+!!! Info "Nota"
     Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
     els números de sèrie en els concentradors afegeixen un prefix segons el
     producte. p.e. per comptadors ZIV afegeixen el prefix **ZIV**. Aquest
@@ -473,7 +473,7 @@ comptadors que siguin de telegestió.
 
 ![](_static/telegestion/LotImportarLectures.png)
 
-!!! note "Nota"
+!!! Info "Nota"
     Quan s'importen les lectures d'un comptador de telegestió, s'agafa la
     lectura validada del dia que es demana o la de l'anterior més proper que en
     tingui. Per tant es pot donar el cas que les lectures no siguin del dia de
@@ -620,7 +620,7 @@ data on s'havia arribat.
 
 ![](_static/telegestion/ExportarFitxerCorbesLot.png)
 
-!!! note "Nota"
+!!! Info "Nota"
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els
     fitxers F5D i P5D.
 

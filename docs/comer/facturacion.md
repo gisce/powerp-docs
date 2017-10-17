@@ -720,7 +720,7 @@ del compte que ho volem enviar.
 
 Finalment apretem el botó **Envia tots els correus** i ens esperem a que faci la feina.
 
-!!! note "Nota"
+!!! Info "Nota"
       Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
       la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
 
@@ -735,7 +735,7 @@ Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail 
 
 Després ens sortirà la plantilla igual que en l'enviament massiu.
 
-!!! note "Nota"
+!!! Info "Nota"
       Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
       sigut enviat.
 
@@ -752,7 +752,7 @@ Mail Form**.
 
 La resta és com l'enviament massiu.
 
-!!! note "Nota"
+!!! Info "Nota"
       Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
       sigut enviat.
 
@@ -820,7 +820,7 @@ Aquest és un llistat de factures amb alguns filtres per defecte fets:
 * La factura estigui marcada per enviar
 * No s'hagi enviat
 
-!!!note "Nota"
+!!! Info "Nota"
       Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
       factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
       una factura ha de ser enviada per email.

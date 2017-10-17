@@ -1,23 +1,5 @@
 # Subministrament Immediat d'Informació (SII)
 
-## Índex
-
-1. [Introducció](#1-introduccio)
-2. [Enviaments](#2-enviaments)    
-    2.1. [Esquema d'enviament](#21-esquema-denviament)    
-    2.2. [Enviaments automàtics](#22-enviaments-automatics)    
-    2.3. [Enviament de forma manual](#23-enviament-de-forma-manual)    
-    2.4. [Possibles estats dels enviaments](#24-possibles-estats-dels-enviaments)    
-    2.5. [Registres d'enviament](#25-registres-denviament)    
-    2.6. [Factures pendents d'enviar](#26-factures-pendents-denviar)    
-3. [Camps referents al SII](#3-camps-referents-al-sii)    
-    3.1. [En una factura](#31-en-una-factura)    
-    3.2. [En una posició fiscal](#32-en-una-posicio-fiscal)    
-    3.3. [En un diari financer](#33-en-un-diari-financer)    
-    3.4. [En una persona física/jurídica](#34-en-una-persona-fisicajuridica)    
-4. [Possibles configuracions](#4-possibles-configuracions)
-
-
 ## 1. Introducció
 
 El Subministrament Immediat d'Informació (SII) és un sistema de gestió dels llibres
