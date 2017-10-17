@@ -169,7 +169,9 @@ infraestructura.
 ## Configuració de la càrrega reactiva
 
 Hi ha dos maneres de configurar com volem la càrrega reactiva:
-- Configuració individualitzada per polissa (prioritaria):
+
+Configuració individualitzada per polissa (prioritaria):
+
  - **Generar sempre la càrrega reactiva (always):** sempre generarem càrrega reactiva.
  - **Càrrega reactiva sempre 0 (zero):** la càrrega reactiva sera sempre 0
  excepte per potències superiors a 15 KW.
@@ -179,7 +181,9 @@ Hi ha dos maneres de configurar com volem la càrrega reactiva:
 
 ![](_static/telegestion/Reactive_charge_field_conf.png)
 
-- Configuració per variable global (es fara servir per les polisses no configurades):
+Configuració per variable global (es fara servir per les polisses no
+  configurades):
+
  - **always:** sempre generarem càrrega reactiva.
  - **zero:** Generarà càrrega reactiva 0 excepte si te una potència contrectada
   superior a 15 KW.
