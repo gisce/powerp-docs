@@ -166,6 +166,28 @@ infraestructura.
 
 ![](_static/telegestion/MenuInfraestructuraTG.png)
 
+## Configuració de la càrrega reactiva
+
+Hi ha dos maneres de configurar com volem la càrrega reactiva:
+- Configuració individualitzada per polissa (prioritaria):
+ - **Generar sempre la càrrega reactiva (always):** sempre generarem càrrega reactiva.
+ - **Càrrega reactiva sempre 0 (zero):** la càrrega reactiva sera sempre 0
+ excepte per potències superiors a 15 KW.
+ - **Sense càrrega reactiva (never):** No generarà càrrega reactiva excepte per potències superiors a 15 KW.
+ - **Ús de la variable de configuració (Per defecte):** fara ús de la variable de
+ configuració `tg_reactive_insert`.
+
+![](_static/telegestion/Reactive_charge_field_conf.png)
+
+- Configuració per variable global (es fara servir per les polisses no configurades):
+ - **always:** sempre generarem càrrega reactiva.
+ - **zero:** Generarà càrrega reactiva 0 excepte si te una potència contrectada
+  superior a 15 KW.
+ - **never:** No generarà càrrega reactiva excepte si te una potència contrectada
+  superior a 15 KW.
+
+![](_static/telegestion/tg_reactive_insert_var.png)
+
 ### Configuració > Connexions FTP
 
 Els concentradors de telegestió deixen les dades en format XML en un servidor
