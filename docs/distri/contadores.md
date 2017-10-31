@@ -1,9 +1,9 @@
-# Continguts
+# Documentació del mòdul de comptadors
+
+## Continguts
 
 * [Documentació del mòdul de comptadors](#documentacio-del-modul-de-comptadors)
 * [Documentació de lectures per distribuïdores](#documentacio-de-lectures-per-distribuidores)
-
-# Documentació del mòdul de comptadors
 
 A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
@@ -311,11 +311,28 @@ data concreta:
 | 26 | EXC6      | float      | Excessos de Potència P6 en kW                  |
 
 
-!!!tip
-
+!!! Tip "Consell"
     Qualsevol fila que comenci per **#** (coixinet) no es tindrà en compte i es
     tractarà com un comentari
 
+## Importació de telemesures
+
+### Introducció
+
+És un procés preparat per portar a terme la importació de les telemesures des de la
+base de dades **mssql**. Importa per el mes indicat les lectures actives, reactives
+i maxímetres del comptador que s'hagi seleccionat.
+
+### Assistent
+
+L'assistent es troba disponible dins de cada comptador i s'anomena **Carregar telemesures**.
+
+![](_static/contadores/assistent_import_telemedidas.png)
+!!! Tip "Consell"
+    És important tenir en compte que la data a introduir ha de ser el primer dia del
+    següent mes del que ens interessa importar. Per exemple si volem importar les
+    telemesures del mes de Setembre de 2017 haurem d'introduir com a data el dia 1
+    d'Octubre.
 
 ## Comparativa de consums
 
