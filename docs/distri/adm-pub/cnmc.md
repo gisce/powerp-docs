@@ -49,7 +49,7 @@ correctament.
 | **FECHA_ACTIVACION**       | Data inici de la modificació contractual nova  |
 
 
-!!! note
+!!! Info "Nota"
     Codi R2 (R2-xxx) de la CNMC gestionable en el camp `Ref2` de la fitxa de
     l'empresa comercialitzadora accessible des del menú `Empreses`
 
@@ -86,3 +86,60 @@ Camp            | Descripció
 :---------------|:----------------------------------------------
 Número de sèrie | Número de sèrie del comptador
 CINI            | Codi CINI del comptador
+
+## Assistent per actualitzar CINIs i TIs
+
+### Introducció
+
+Per tal de facilitar l'actualització de tots els codis CINI's i els TI's, es pot fer
+desde l'assistent corresponent, aquest permet actualitzar tant els codis TI com
+els codis CINI.
+
+### Localització de l'assistent
+
+** Administració pública > CNMC > Circulars > Recalcular CINIs / Tis **
+
+![](../_static/cnmc/as_cinis/localitzacio_assistent.png)
+
+
+### Instruccións de l'assistent
+
+Seleccionar el model d'entre les següents opcions:
+
+  * CTS.
+  * Subestacions.
+  * Línies de baixa tensió.
+  * Línies d'alta tensió.
+  * Transformadors
+  * Cel·les
+
+![](../_static/cnmc/as_cinis/models.png)
+
+Seleccionar el camp que es vol recalcular:
+
+  * CINI
+  * TI
+
+![](../_static/cnmc/as_cinis/camp.png)
+
+!!! Info "Nota"
+    El requadre de selecció ens permet indicar si volem canviar el codi
+    seleccionat per tots els elements o només per els que no estiguin
+    bloquejats, en el cas que volguem mantenir alguns codis.
+    ![](../_static/cnmc/as_cinis/check.png)
+
+Finalment premem el boto recalcular per que es recalculin els camps
+seleccionats:  
+
+![](../_static/cnmc/as_cinis/rect.png)
+
+CINIs actualitzats                                |TIs actualitzats
+:-------------------------------------------------|:-----------------------------------------------
+![](../_static/cnmc/as_cinis/actualitzat_cini.png)|![](../_static/cnmc/as_cinis/actualitzat_ti.png)
+
+### Dades a recalcular
+
+Camp a recalcular| Descripció                                        | Longitud| Tipus
+:----------------|:--------------------------------------------------|:-------:|:------
+CINI             | Codi d'identificació normalitzada d'instal·lacions|   8     | cadena
+TI               | Tipus d'instalació de la CNMC                     |   -     | cadena

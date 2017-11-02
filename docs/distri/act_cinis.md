@@ -1,33 +1,25 @@
-# Índex
+# Generació automàtica de CINI
 
-1. [CINI Línies d'Alta Tensió](#1-cini-linies-dalta-tensio)
-2. [CINI Línies de Baixa Tensió](#2-cini-linies-de-baixa-tensio)
-3. [Transformadors](#3-transformadors)
-4. [Centres transformadors](#4-centres-transformadors)
-5. [Posicions](#5-posicions)
-6. [Parcs de Distribució](#6-parcs-de-distribucio)
-7. [Subestacions](#7-subestacions)
-8. [Cel·les i elements de tall (Fiabilitat)](#8-celles-i-elements-de-tall-fiabilitat)
+!!! Note "Fitxer de referéncia"
+    El document de referència de CINI serà la
+    [circular 4/2015](https://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
 
-El document de referència de CINI serà la
-[circular 4/2015](https://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
-
-!!! Note
+!!! Info "Nota"
     Tots els CINI es poden bloquejar marcant la casella “Bloquejar CINI”,
     i tots els càlculs que aquí es descriuen deixaràn de tenir efecte i
     es mantindrà el CINI que li assigni l’usuari.
 
-!!! Note
+!!! Info "Nota"
     Si al fer el càlcul del CINI, una de les posicions del CINI,
     no es pot calcular perquè el camp del que s’ha d’obtenir el valor
     està buit o fora del rang esperat, la posició apareixerà en **blanc**.
 
-P.e. en aquest cas la 5a posició apareix en blanc perquè falta entrar
-el valor del tipus de element de la CNMC, en la taula corresponent.
+    P.e. en aquest cas la 5a posició apareix en blanc perquè falta entrar
+    el valor del tipus de element de la CNMC, en la taula corresponent.
 
-![exemle-5a-posicio-buida](_static/act_cini/lat_5a_posicio_buida.png)
+    ![exemle-5a-posicio-buida](_static/act_cini/lat_5a_posicio_buida.png)   
 
-# 1. CINI Línies d'Alta Tensió
+## 1. CINI Línies d'Alta Tensió
 
 El CINI de cada tram d’Alta Tensió és calculat a partir de les dades del
 propi tram i de les dades de la **línia d’AT** que té vinculada:
@@ -89,7 +81,7 @@ associada al tram d’AT:
 - La tensió s’obté del camp **Tensió** de la **línia** vinculada al
   tram d’Alta Tensió, igual que a la **tercera posició**.
 
-# 2. CINI Línies de Baixa Tensió
+## 2. CINI Línies de Baixa Tensió
 
 **Primera posició**: 2
 **Segona posició**: 0
@@ -131,7 +123,7 @@ associada al tram d’AT:
 - La tensió s’obté del camp **Voltatge** de **l’element de Baixa Tensió**,
   igual que a la **tercera posició**.
 
-# 3. Transformadors
+## 3. Transformadors
 
 **Primera posició**: 2    
 **Segona posició**: 7    
@@ -183,7 +175,7 @@ associada al tram d’AT:
 
 El CINI dels transformadors que es troben en el magatzem serà: **I2900600**.
 
-# 4. Centres transformadors
+## 4. Centres transformadors
 
 **Primera posició**: 2    
 **Segona posició**: 2    
@@ -240,7 +232,7 @@ Segons indica la circular 4771, a la pàgina 37859:
 
 *Todas las posiciones deben constar de interruptor.”*
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 315 kVA, com que els barems CNMC són 250KVA
     o 400KVA, hem d’agafar el valor immediatament superior (400 KVA),
@@ -249,18 +241,18 @@ Segons indica la circular 4771, a la pàgina 37859:
 Quan hi hagin **dues màquines** el càlcul de la potència de la màquines
 es farà fent la semisuma de les potencies de les dues màquines.
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 400 kVA i una de 630 kVA,
     1030/2= 515 el valor adoptat serà S 2x630 kVA
 
-!!! Note
+!!! Info "Nota"
     **Exemple:**
     Si el CT te una màquina de 500 kVA i una de 1000 kVA,
     1500/2= 750 el valor adoptat serà T 2x1000 kVA.
     (és l’immediatament superior)
 
-# 5. Posicions
+## 5. Posicions
 
 **Primera posició**: 2    
 **Segona posició**: 8    
@@ -308,7 +300,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
 - S’obté del camp “**Tensió a aplicar**” de la tensió de la posició,
   de igual forma que a la **tercera posició**.
 
-# 6. Parcs de distribució
+## 6. Parcs de distribució
 
 **Primera posició**: 2     
 **Segona posició**: 8     
@@ -338,7 +330,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
 - S’obté del camp “**Tensió a aplicar**” de la tensió del parc,
   de igual forma que a la **tercera posició**.
 
-# 7. Subestacions
+## 7. Subestacions
 
 **Primera posició**: 2     
 **Segona posició**: 1    
@@ -381,7 +373,7 @@ es farà fent la semisuma de les potencies de les dues màquines.
 
 **Setena posició**: posició no utilitzada = 0
 
-# 8. Cel·les i elements de tall (Fiabilitat)
+## 8. Cel·les i elements de tall (Fiabilitat)
 
 **CINI: I26** - element de fiabilitat    
 **3a posició**: tensió normalitzada

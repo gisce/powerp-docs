@@ -70,7 +70,7 @@ Una vez generadas todas las líneas se puede imprimir el informe para el instala
 
 Generar las facturas: Al pulsar este botón se genera/n la/s factura/s a partir de las líneas de la pestaña Cálculos.
 
-!!!note "Nota"
+!!! Info "Nota"
     Los diferentes conceptos, van asociados a un tipo de concepto, y éste a un diario de facturación. Los conceptos se pueden asociar a diferentes tipos (por defecto todos están a un solo tipo), y de esta forma generar varias facturas, una por cada tipo.
 
 Esto se puede configurar dentro del menú Gestión de pólizas/ Configuración / contratación/Conceptos. En algún caso cada contratación puede generar 3 facturas diferentes.

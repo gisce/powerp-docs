@@ -7,7 +7,7 @@ Les llistes de preus....
 
 ## Pool de lectures
 
-## Importació fitxers F1 (Revisar)
+## Importació fitxers F1
 
 
 El mòdul de Switching permet, de moment, processar els fitxers XML de
@@ -19,6 +19,13 @@ Aquest document descriu les funcionalitats del mòdul de Switching de facturaci�
 ### Comportament importació fitxer F1
 
 #### Comportament importació F1 normal
+
+En els F1 amb factures de tipus "normal" el que es fa és importar les lectures al
+Pool de lectures. A més, es crea la factura que ens han enviat des de la distribuidora
+com a factura de proveidor.
+
+Per tal de generar la factura amb les lectures que haurem rebut a través de l'F1
+el que hem de fer és copiar les lectures del Pool i generar una factura per la pòlissa.
 
 #### Comportament importació F1 rectificadora
 
@@ -61,33 +68,10 @@ línia d'importació) des del sub-menú *Fitxers F1 importats*
 
 En prémer en un lot d'importació veurem el formulari del lot en qüestió (veure
 `Figura 3`). El formulari mostra juntament amb la informació del llistat,
-una sèrie d'opcions a la dreta: Importar F1, Llistat de factures divergents,
+una sèrie d'opcions a la dreta: Llistat de factures divergents,
 Llistat de factures i Llistat de fitxers que es detallen a continuació.
 
-* Importar F1:
-
-    Ens permetrà importar un nou fitxer zip i associar-lo al lot d'importació. El
-    widget que ens apareixerà es mostra en la `Figura 4`. Aquest ens
-    demanarà el nom de l'emprea emisora, i ens permetrà sel·leccionar el fitxer a
-    importar.
-
-    En el cas de voler importar un nou fitxer zip en un lot d'importació existent,
-    l'empresa emisora haurà de coincidir amb l'empresa emisora associada a lot
-    d'importació i que haurà quedat vinculada a partir de l'importació anterior.
-
-    En prémer Importar, es realitzarà la importació en *background*. El que
-    significa que podrem seguir treballant mentre l'ERP va important els xmls. En
-    finalitzar el procés se'ns notificarà a través d'una nova sol·licitud (*Request*
-    que es mostra abaix a la dreta de la `Figura 3`).
-
-    També podem anar prement el refrescar del formulari veure l'estat de la barra
-    de progrés.
-
-    En finalitzar la importació se'ns actualitzarà la informació del lot
-    d'importació, mostrant en el cas que no hi hagin hagut incidents, el nombre de
-    fitxers xmls importats i factures creades.
-
-* Llistat de fitxers:
+* **Llistat de fitxers:**
 
     Ens permet mostrar els fitxers xml que hi ha associats al lot d'importació
     després d'importar-los individualment o a través d'un fitxer zip. En prémer es
@@ -104,12 +88,12 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
     individualment. Es pot veure el wizard que ens apareixerà en la
     `Figura 9`.
 
-* Llistat de factures:
+* **Llistat de factures:**
 
     Ens mostrarà totes les factures associades al lot d'importació, sigui quin
     sigui el seu estat (típicament obert o borrador).
 
-* Llistat de factures divergents:
+* **Llistat de factures divergents:**
 
     Ens mostrarà aquelles factures que han resultat ser divergents respecte la
     facturada per l'ERP.  A continuació s'explicarà el concepte de divergència.
@@ -123,6 +107,55 @@ fitxers F1 (o línies d'importació) que hi fan referència. Veure `Figura 14`
 
 Procediment d'importació
 ------------------------
+
+Per tal d'importar un fitxer hem d'anar a `Facturació > General > Factures Proveidor > Importacions F1 > Importació fitxers F1`.
+
+![](_static/f1/ruta_importacio_fitxers.png)
+
+Això obrirà un assistent que ens permetrà importar el fitxer com el que podem
+veure a la següent figura.
+
+![](_static/f1/wizard_importacio.png)
+
+En aquest assistent hem de seleccionar el fitxer xml o zip que volem importar.
+El procés soporta tots dos tipus de fitxers.
+
+Un cop seleccionat el fitxer hem de premer el botó "Importar". D'aquesta manera iniciarem un
+procés en background que importarà els F1 que hem penjat. Això vol dir que podrem
+seguir utilitzant l'ERP mentre s'estan important els fitxers.
+
+Després de fer això, podrem obrir el formulari de la importació per veure l'estat
+de la barra de progrés. Si anem refrescant el formulari podrem veure com es va actualitzant
+el progés. En aquest mateix formulari podem veure el nombre de fitxers xmls importats
+i quantes factures s'han creat.
+
+## Reimportacions d'un fitxer
+
+En alguns casos es pot donar que el fitxer que intentem importar no acaba el procés.
+Això passarà quan alguna de les validacions de nivell "Critical" no es passi correctament
+(veure apartat "Validacions a la importació d'F1" per més informació en les validacion
+i els seus nivells).
+
+Aquests casos, generalment, seràn deguts a una inconsistencia de les dades entre
+els valors que ens venen a l'F1 i els que tenim guardats a l'ERP. El que haurem de
+fer en aquests casos és, primer de tot, solucionar la inconsistencia de les dades.
+Generalment s'hauran de canviar les dades que es tenen guardades per tal que cuadrin
+amb les que ens envia la distribuidora.
+
+![](_static/f1/wizard_reimportacio.png)
+
+Un cop fet això haurem de reimportar el fitxer. Per tal de fer-ho hem d'entrar a
+la linia de la importació que hagi fallat i premer el botó de "Importar XML". Això
+obrirà un assistent que ens permetrà reimportar el mateix F1. També ens permet importar
+un nou fitxer si hem hagut de modificar manualment el fitxer, tot i que aquest no
+és el cas habitual.
+
+Després de decidir quin fitxer volem importar hem de premer el botó de "Importar".
+Això reimportarà el fitxer i tornarà a passar les validacions amb les noves dades.
+Si aquest cop es passen totes les validacions el fitxer s'importarà correctament.
+Si torna a fallar algúna validació es crearà el nou error.
+
+# Passos que es realitzen en una importació
 
 En processar un fitxer xml, ja sigui provinent d'un zip o individualment, el
 mòdul realitza les següents accions:
@@ -313,11 +346,6 @@ cap.
 
    Figura 3: Formulari d'un lot d'importació.
 
-### Figura 4
-![](_static/f1/zip_wizard.png)
-
-   Figura 4: Importació d'un zip.
-
 ### Figura 5
 ![](_static/f1/linies_tree.png)
 
@@ -336,18 +364,12 @@ cap.
 ### Figura 8
 ![](_static/f1/linies_form_error.png)
 
-   Figura 8: Formulari d'una línia d'importació errònia.
+   Figura 8: Formulari d'errors en la importacio d'una linia.
 
 ### Figura 9
 ![](_static/f1/wizard_xml.png)
 
    Figura 9: Importació d'un XML.
-
-### Figura 10
-![](_static/f1/linies_form_div.png)
-
-   Figura 10: Formulari d'una línia d'importació amb divergències en els
-   totals.
 
 ### Figura 11
 ![](_static/f1/fact_tree_div.png)
@@ -698,7 +720,7 @@ del compte que ho volem enviar.
 
 Finalment apretem el botó **Envia tots els correus** i ens esperem a que faci la feina.
 
-!!! note "Nota"
+!!! Info "Nota"
       Pot ser que se'ns quedi el client de l'ERP bloquejat, si ens passa el deixem continuar ja que està preparant
       la sortida dels correus electrònics. Podem obrir un altre client i continuar treballant.
 
@@ -713,7 +735,7 @@ Obrim la factura i al marge dret veurem l'assistent **Enviar factura per e-mail 
 
 Després ens sortirà la plantilla igual que en l'enviament massiu.
 
-!!! note "Nota"
+!!! Info "Nota"
       Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
       sigut enviat.
 
@@ -730,7 +752,7 @@ Mail Form**.
 
 La resta és com l'enviament massiu.
 
-!!! note "Nota"
+!!! Info "Nota"
       Aquest assistent no contempla si la factura ja s'ha enviat, això vol dir que no ens avisarà si un correu ja ha
       sigut enviat.
 
@@ -798,7 +820,7 @@ Aquest és un llistat de factures amb alguns filtres per defecte fets:
 * La factura estigui marcada per enviar
 * No s'hagi enviat
 
-!!!note "Nota"
+!!! Info "Nota"
       Si en comptes de fer una modificació contractual nova, hem sobreescrit l'existent pot ser que en aquest llistat ens surtin
       factures antigues pendents d'enviar. Això és degut a que és la modificació contractual qui marca a partir de quina data
       una factura ha de ser enviada per email.
