@@ -50,18 +50,23 @@ La primera comprovació que farem serà la següent:
 
 #### Pòlisses a assignar
 
-A la finestra de la part superior on esta escrit "**Pòlisses a assignar**",
+A la finestra de la part superior on està escrit "**Pòlisses a assignar**",
 si cliquem el botó ![buscar](_static/perfiles/a_pf.PNG) apareixeran les
 pòlisses facturades en aquest període de perfilació i que no estan incloses
 en el lot de perfilació. Al cap d'uns segons es mostraran totes les pòlisses
 que s'han donat d'alta en el període de perfilació, més les que tenen
 una potència superior a 450kW.
 
+!!! Info "Nota"
+    Aquest procés assigna totes les pòlisses que apareixen en el requadre. Si
+    per algun motiu no es vol assignar alguna pòlissa en concret, es pot marcar
+    i fer clic al botó d'eliminar.
+
 De la llista de pòlisses que apareixen en la finestra superior s'han de
 seleccionar les que no tinguin una potència superior a 450kW.
 
-Un cop tinguem seleccionades les pòlisses s'ha de clicar el botó
-![assignar](_static/perfiles/b.PNG) perquè s'afegeixin al lot de perfilació.
+Un cop tinguem en el requadre, totes les pòlisses que volem incloure, s'ha de
+clicar el botó ![assignar](_static/perfiles/b.PNG) perquè s'afegeixin al lot de perfilació.
 El botó ![buscar](_static/perfiles/a_pf.PNG) pot clicar-se tantes vegades com
 es cregui necessari, i finalment només han d'aparèixer sense assignar les
 pòlisses que tinguin la potència contractada superior a 450kW.
@@ -121,7 +126,7 @@ el període que es desitja:
 
 ![](_static/perfiles/4.PNG)
 
-!!! note
+!!! Info "Nota"
     S'ha de tenir en compte les pòlisses que tenen més d'una factura en
     el període i restar-les.
 
@@ -200,7 +205,7 @@ Així un cop seleccionats els tres camps ens hauria de quedar com la imatge:
 
 ![](_static/perfiles/corbes_003.png)
 
-!!! note
+!!! Info "Nota"
     Es pot observar com en el camp de 'Fitxer' hi apareix la mida del
     fitxer que es vol importar.
 
@@ -221,7 +226,7 @@ en una nova finestra.
 
 ![](_static/perfiles/corbes_005.png)
 
-!!! note
+!!! Info "Nota"
     A la nova finestra podem observar que en el camp de 'Resultats' ens
     mostra informació complementària dels fitxers ja importats, que és el CUPS,
     l'energia total i les hores totals. En el cas que estiguem important varies
@@ -245,7 +250,7 @@ les pòlisses incloses en el lot. Ens fixarem especialment en el camp
   el perfil de càrrega de la pòlissa. *corba*, en el cas que s'hagi importat la
   corba de càrrega, o *perfil* en el cas que s'hagi perfilat.
 
-!!! note
+!!! Info "Nota"
     És important comprovar la llista i localitzar casos atípics (Estat: obert,
     Origen teòric: corba , indica que està pendent de importar la corba).
     Primer s'han de importar totes les corbes de les que es disposi.
@@ -256,7 +261,7 @@ les pòlisses incloses en el lot. Ens fixarem especialment en el camp
 
 ## Perfilat
 
-!!! note
+!!! Info "Nota"
     Abans de perfilar és important tenir totes les corbes importades
     ja que el procés perfilarà totes les pòlisses en *Obert*.
 
@@ -267,7 +272,7 @@ Dins del menú de "**Lots de perfilació**", just sota de les pestanyes de
 '**Pòlisses**' i '**Fitxers REE**' trobarem el botó de '**Perfilar**',
 que el clicarem per inicialitzar la perfilació.
 
-!!! note
+!!! Info "Nota"
     Cal tenir en compte de que aquest botó només està disponible si el lot
     en que ens trobem es troba en l'estat 'Obert'.
 
@@ -392,7 +397,7 @@ Seguits aquests passos l'assistent mostra la següent informació:
 ![](_static/perfiles/assistent_f1_3.png)
 
 
-!!! note
+!!! Info "Nota"
     El número de CUPS només es pot editar abans de generar el fitxer.
 
 ### Descàrrega del fitxer F1

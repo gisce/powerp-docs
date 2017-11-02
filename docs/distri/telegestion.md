@@ -5,77 +5,16 @@
 
 El modul de telegestió gestiona la lectura dels fitxers de tancament diaris i
 mensuals de comptadors PRIME, la seva validació i posterior inserció de les
-lectures de facturació
+lectures de facturació.
 
 Les lectures que es recullen de telegestió es troben separades de les de
-facturació. Només es carregaràn a facturació les lectures necessaries.
+facturació. Només es carregaràn a facturació les lectures necessàries.
 
-El módul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
-nova pestanya Telegestió si el comptador es marca que es de telegestió.
-
-En aquesta pestanya hi ha una casella de checkbox la qual indica si el comptador
-té actualment alguna excepció.
-
-![](_static/telegestion/grupo_TG_info.png)
-
-![](_static/telegestion/pestanya_telegestion.png)
-
-## Procediment de càrrega de lectures
-
-La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
-habitualment seguint tres passos:
-
-1.  **Càrrega de dades**: Els concentradors deixen les dades de lectures,
-    corbes i esdeveniments en un servidor FTP en format XML. GISCE-ERP recull
-    aquests fitxers, els processa i els carrega a la base de dades. Aquesta
-    operació la podem realitzar manualment des de la configuracio d'els FTP
-    prement el [boto de connexió ftp](#configuracio-connexions-ftp). Si es
-    produeix un error, es registra al
-    [llistat d'errors de lectura](#registre-de-lectura-tg-reader-errors)
-
-2.  **Validació de lectures**: Per preparar les lectures abans d'ésser passades
-    a la facturació, cal validar-les. Per fer-ho podem anar a la opció del menú
-    [Validar Tancaments](#validar-tg-tancaments) o fer-ho des d'un comptador
-    en concret. Si hi ha algun error es genera un cas en el CRM,
-    secció [Telegestió i CRM](#telegestio-i-crm)
-
-3.  **Lectura TG**: Per poder facturar, necessitem carregar les lectures al
-    sistema de facturació, igual que si ho haguéssim llegit manualment o amb
-    TPL. Per fer-ho anem al comptador en qüestió i premem al botó de lectures de
-    la fitxa o directament des del botó
-    [Lectura des de TG](#lectura-des-de-tg-boto). Per entrar totes les lectures
-    de tots els comptadors d'un lot de facturació podem prémer en el botó
-    [importar lectures del lot](#importar-lectures-des-del-lot-de-facturacio).
-
-!!! note
-    Es pot configurar el sistema de telegestió per no carregar les lectures de
-    reactiva i així no facturar-la. No obstant, si la potència contractada és
-    superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
-
-blockdiag {
-    ftp -> carga -> validación -> lectura
-    carga -> "TG Errores de lectura" [label = "errores", textcolor="#FF0000"]
-    validación -> "CRM (Telegestión)" [label = "errores", textcolor="#FF0000"]
-}
-
-Actualment, GISCE-ERP és capaç de llegir els seguents fitxers XML
-estandaritzats:
-
-* **S02**: Perfils
-* **S04**: Tancaments mensuals
-* **S05**: Tancaments diaris
-* **S09**: Esdeveniments de comptador
-* **S12**: Configuració del concentrador
-* **S13**: Esdeveniments de comptador espontanis
-
-## Ampliació Pestanya General
+### Pestanya General
 
 ![](_static/telegestion/ComptadorTGGeneral.png)
 
-   Pestanya General amb telegestió
-
-Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat ``TG
-info``:
+Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG info`:
 
 * **TG Comptador**: Si aquest camp està marcat, inidica que l'equip és
   telegestionat. Es marca automàticament quan es validen lectures d'aquest
@@ -92,11 +31,11 @@ info``:
   darrer cas, voldrà dir que no tenim cap lectura de telegestió vàlida més
   nova.
 
-!!! note
+!!! Info "Nota"
     El nom del producte del comptador de telegestió és important. Per facilitar
     el switching va bé que la marca i el model estiguin separats per un espai
 
-!!! note
+!!! Info "Nota"
     Els productes comptadors de telegestió han de tenir un prefix al camp Codi.
     Aquest prefix ha de ser el mateix que afegeix el comptador als números de
     sèrie. (veure `nota prefix`_ )
@@ -105,19 +44,19 @@ info``:
 
 ![](_static/telegestion/FitxaProducteComptadorTG.png)
 
-Pestanya Telegestió
--------------------
+### Pestanya Telegestió
 
 ![](_static/telegestion/ComptadorTGTelegestio.png)
 
-   Pestanya Telegestió de comptador
+El mòdul de telegestió afegeix opcions a la fitxa de comptadors, inclosa una
+nova pestanya Telegestió. Aquesta pestanya només es mostra en aquells
+comptadors que tenen l'opció `TG Comptador` marcada.
 
-La pestanya de telegestió només es mostra en aquells comptadors que tenen la
-opció ``TG Comptador`` marcada
+![](_static/telegestion/grupo_TG_info.png)
 
 * **ICP actiu**: Si la casella està activada, indica que l'ICP de l'equip de
-  mesura està activat. Si s'activa apareixeràn 2 camps més a l'apartat de
-  ``Control de potència``
+  mesura està activat. Si s'activa apareixeran 2 camps més a l'apartat de
+  `Control de potència`
 
   * **Potència programada**: Potència màxima que permet l'ICP del comptador
   * **Intensitat**: Indica la intensitat máxima a la qual està programat el
@@ -137,6 +76,89 @@ opció ``TG Comptador`` marcada
   compte i validarà la lectura. Podem veure la llista de les
   [possibles excepcions](#configuracio-excepcions)
 
+![](_static/telegestion/pestanya_telegestion.png)
+
+## Concentradors de telegestió
+
+El mòdul de telegestió afegeix al sistema els concentradors de dades de telegestió.
+Són els concentradors instal·lats a la xarxa elèctrica. Es donen d'alta
+automàticament quan es llegeix el primer fitxer enviat per ells i s'associen als
+comptadors instal·lats de forma automàtica.
+
+En el llistat de concentradors es pot veure el número de comptadors que gestiona
+cadasacun i el tipus de connexió a internet que utilitza cada concentrador.
+
+![](_static/telegestion/ConcentratorListView.png)
+
+La fitxa del concentrador s'omple quan arriba un fitxer amb forma S12. Des de
+la fitxa també es pot accedir al llistat de comptadors associats a ell
+mitjançant el botó comptadors.
+
+![](_static/telegestion/ConcentratorMetersButton.png)
+
+### Camps de connectivitat
+
+Per els concentradors connectats mitjançant Mòdem existeix la pestanya **Modem 3G**
+on es troben diferents camps d'informació del Mòdem. És important tenir configurat
+el camp `Modem IP` que és on es guarda l'adreça de connexió al concentrador.
+
+![](_static/telegestion/ConcentratorModemTab.png)
+
+Si tenim configurat aquest camp correctament, els camps que indiquen les adreces
+de connexió al portal web del concentrador i als serveis web s'ompliran.
+El camp WEB de la part superior de la vista disposa d'un botó en forma de fletxa
+que ens obrirà el navegador i ens portarà directament al portal web del concentrador.
+
+![](_static/telegestion/ConcentratorGeneralTab.png)
+
+## Procediment de càrrega de lectures
+
+La gestió de lectures de consum de comptadors mitjançant telegestió es realitza
+habitualment seguint tres passos:
+
+1.  **Càrrega de dades**: Els concentradors deixen les dades de lectures,
+    corbes i esdeveniments en un servidor FTP en format XML. GISCE-ERP recull
+    aquests fitxers, els processa i els carrega a la base de dades. Aquesta
+    operació la podem realitzar manualment des de la configuracio dels FTP
+    prement el [boto de connexió ftp](#configuracio-connexions-ftp). Si es
+    produeix un error, es registra al
+    [llistat d'errors de lectura](#registre-de-lectura-tg-reader-errors)
+
+2.  **Validació de lectures**: Per preparar les lectures abans d'ésser passades
+    a la facturació, cal validar-les. Per fer-ho podem anar a l'opció del menú
+    [Validar Tancaments](#validar-tg-tancaments) o fer-ho des d'un comptador
+    en concret. Si hi ha algun error es genera un cas en el CRM,
+    secció [Telegestió i CRM](#telegestio-i-crm)
+
+3.  **Lectura TG**: Per poder facturar, necessitem carregar les lectures al
+    sistema de facturació, igual que si ho haguéssim llegit manualment o amb
+    TPL. Per fer-ho anem al comptador en qüestió i premem al botó de lectures de
+    la fitxa o directament des del botó
+    [Lectura des de TG](#lectura-des-de-tg-boto). Per entrar totes les lectures
+    de tots els comptadors d'un lot de facturació podem prémer en el botó
+    [importar lectures del lot](#importar-lectures-des-del-lot-de-facturacio).
+
+!!! Info "Nota"
+    Es pot configurar el sistema de telegestió per no carregar les lectures de
+    reactiva i així no facturar-la. No obstant, si la potència contractada és
+    superior a 15 kW, s'insertaran **sempre** les lectures de reactiva.
+
+blockdiag {
+    ftp -> carga -> validación -> lectura
+    carga -> "TG Errores de lectura" [label = "errores", textcolor="#FF0000"]
+    validación -> "CRM (Telegestión)" [label = "errores", textcolor="#FF0000"]
+}
+
+Actualment, GISCE-ERP és capaç de llegir els següents fitxers XML
+estandaritzats:
+
+* **S02**: Perfils
+* **S04**: Tancaments mensuals
+* **S05**: Tancaments diaris
+* **S09**: Esdeveniments de comptador
+* **S12**: Configuració del concentrador
+* **S13**: Esdeveniments de comptador espontanis
+
 ## Gestió i configuració de Telegestió
 
 Tots els menús d'accés a telegestió es troben centralitzats dins el menú
@@ -144,7 +166,31 @@ infraestructura.
 
 ![](_static/telegestion/MenuInfraestructuraTG.png)
 
-   El menú Infraestructura amb les opcions de telegestió
+## Configuració de la càrrega reactiva
+
+Hi ha dos maneres de configurar com volem la càrrega reactiva:
+
+Configuració individualitzada per polissa (prioritaria):
+
+ - **Generar sempre la càrrega reactiva (always):** sempre generarem càrrega reactiva.
+ - **Càrrega reactiva sempre 0 (zero):** la càrrega reactiva sera sempre 0
+ excepte per potències superiors a 15 KW.
+ - **Sense càrrega reactiva (never):** No generarà càrrega reactiva excepte per potències superiors a 15 KW.
+ - **Ús de la variable de configuració (Per defecte):** fara ús de la variable de
+ configuració `tg_reactive_insert`.
+
+![](_static/telegestion/Reactive_charge_field_conf.png)
+
+Configuració per variable global (es fara servir per les polisses no
+  configurades):
+
+ - **always:** sempre generarem càrrega reactiva.
+ - **zero:** Generarà càrrega reactiva 0 excepte si te una potència contrectada
+  superior a 15 KW.
+ - **never:** No generarà càrrega reactiva excepte si te una potència contrectada
+  superior a 15 KW.
+
+![](_static/telegestion/tg_reactive_insert_var.png)
 
 ### Configuració > Connexions FTP
 
@@ -156,8 +202,6 @@ GISCE-ERP mai esborra els fitxers importats, només els mourà per evitar
 tornar-los a carregar.
 
 ![](_static/telegestion/FitxaFTPTG.png)
-
-   Fitxa de configuració servidor FTP de telegestió
 
 * **Descripció**: Descripció de l'FTP
 * **Codi**: Codi de l'FTP per si es volen tenir codificats
@@ -174,10 +218,10 @@ tornar-los a carregar.
   lectures i errors que vagi trobant. Si un fitxer no el processa, podrem veure
   l'error corresponent al registre de lectura.
 
-!!! tip
+!!! Tip "Consell"
     Els directoris han de començar i acabar sempre amb la barra de directori
     ("/"), p.e. **/root/upload/**
-!!! tip
+!!! Tip "Consell"
     Els caracters ``,``, ``*``, ``?``, ``<``, ``>``, ``:``, ``\``, ``'``, ``"``
     i ``|`` no estan permesos en el nom d'un directori
 
@@ -220,7 +264,7 @@ Les excepcions que es gestionen actualment són:
 * **(CC) Comparison Month vs Day**: La lectura mensual absoluta no coincideix
   amb la lectura diaria del mateix dia.
 
-!!! tip
+!!! Tip "Consell"
     L'excepció **(NC) No Communication** depèn del paràmetre de configuració
     **tg_last_read_advice** que per defecte és de 2 dies. Es pot configurar per
     a què utilitzi un altre període.
@@ -255,7 +299,7 @@ la norma s'aniran afegint en aquestes llistes en properes actualitzacions.
 * **Descripció**: Descripció de l'error.
 * **Categoria**: Si es tracta d'un error, a quina categoria pertany.
 
-!!! note
+!!! Info "Nota"
     Aquests errors són específics del concentrador i no estan relacionats amb
     l'ERP. S'ha de tenir en compte que l'error es genera en el moment de generar
     el fitxer. Es podria donar el cas que el problema ja estigui solucionat
@@ -268,18 +312,7 @@ Permet un accés directe als casos generats pel sistema de telegestió (veure
 estructura dels casos del CRM , creant accessos directes als casos oberts i
 als casos propis per facilitar-ne la gestió.
 
-### TG Concentrador
 
-Concentradors instal·lats. Es donen d'alta automàticament quan es llegeix el
-primer fitxer enviat per ells i s'associen als comptadors instal·lats de forma
-automàtica.
-
-En el llistat de contadors es pot veure el número de comptadors connectats a
-cada concentrador.
-
-La fitxa del concentrador s'omple quan arriba un fitxer amb forma S12. Des de
-la fitxa també es pot accedir al llistat de comptadors associats a ell
-mitjançant el botó comptadors.
 
 ### Registre de lectura
 
@@ -317,7 +350,7 @@ Registre dels tancaments diaris i mensuals amb accessos directes a:
 Les lectures que encara no han estat validades es llisten de color **blau** i
 les validades de color **negre**
 
-!!! note
+!!! Info "Nota"
     El comptador de registres d'aquests llistats no s'actualitzen, ja que el
     càlcul d'aquest valor és molt lent. Per tant, encara que hi hagi milers de
     lectures, sempre sortirà com 1/80
@@ -329,7 +362,7 @@ vàlides o invàlides utilitzant el botó **Acció**. Se'ns obrirà seguidament 
 formulari on es permet escollir validar o invalidar les lectures de telegestió.
 Aquesta acció **NO realitza les comprovacions per validar lectures.**
 
-!!! warning
+!!! Warning "Atenció"
     Cal tenir molt present que aquest procediment **NO valida les lectures**,
     només en marca el registre horari com a vàlid o invàlid. És recomanable
     utilitzar aquest procediment en registres individuals i només pels casos de
@@ -344,8 +377,6 @@ Aquesta acció **NO realitza les comprovacions per validar lectures.**
 Podem veure la informació completa en el detall d'un tancament:
 
 ![](_static/telegestion/FitxaCierreTG.png)
-
-   Detall d'un tancament
 
 En el detall hi trobem:
 
@@ -368,7 +399,7 @@ En el detall hi trobem:
   mensuals)
 * **Vàlid**: Si està validad i quan es va validar
 
-!!! note
+!!! Info "Nota"
     Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
     els números de sèrie en els concentradors afegeixen un prefix segons el
     producte. p.e. per comptadors ZIV afegeixen el prefix **ZIV**. Aquest
@@ -425,8 +456,6 @@ El procediment per validar les lectures és a través del wizard que es troba en
 
 ![](_static/telegestion/BotoValidacio.png)
 
-   Ubicació del wizard de validació de lectures
-
 Podem validar les lectures amb aquest botó. Si no entrem cap número de
 comptador, es validaran **totes** les lectures pendents de validar.
 
@@ -434,8 +463,6 @@ comptador, es validaran **totes** les lectures pendents de validar.
   lectures
 
 ![](_static/telegestion/ValidarTancamentsBotoTG.png)
-
-   Formulari de validar tots els tancaments d'un comptador
 
 ## Importar lectures des del Lot de Facturació
 
@@ -450,9 +477,7 @@ comptadors que siguin de telegestió.
 
 ![](_static/telegestion/LotImportarLectures.png)
 
-   Botó per importar les lectures des del lot de facturació
-
-!!! note
+!!! Info "Nota"
     Quan s'importen les lectures d'un comptador de telegestió, s'agafa la
     lectura validada del dia que es demana o la de l'anterior més proper que en
     tingui. Per tant es pot donar el cas que les lectures no siguin del dia de
@@ -599,7 +624,7 @@ data on s'havia arribat.
 
 ![](_static/telegestion/ExportarFitxerCorbesLot.png)
 
-!!! note
+!!! Info "Nota"
     Es poden configurar servidors SFTP per tal de pujar-hi automàticament els
     fitxers F5D i P5D.
 

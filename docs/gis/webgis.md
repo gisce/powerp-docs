@@ -75,20 +75,20 @@
 2. Prémer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
     ![](_static/sim_at/step_2.png)
     
-    !!! note
+    !!! Info "Nota"
         Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). També el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
     ![](_static/sim_at/step_3.png)
     
-    !!! note
+    !!! Info "Nota"
         A la capçalera del llistat d'interruptors podem veure el nombre d'interruptors oberts
 
  
 4. Prémer el botó de "Simula" que haurà canviat a un simbol de "Play".
     ![](_static/sim_at/step_4.png)
     
-    !!! note
+    !!! Info "Nota"
         - Es dibuixaran els trams desconnectats en vermell i els connectats en verd.
         - En la part inferior de la targeta apareix el llistat de clients afectats.
  
@@ -104,7 +104,7 @@
 2. Prémer "Simula". Aixo obrirà el llistat d'interruptors maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
     ![](_static/sim_bt/step_2.png)
     
-    !!! note
+    !!! Info "Nota"
         Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
  
 3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa. També el podem modificar l'estat del interruptor en el llistat d'interruptors, en el cas que no estigui tancat el podem buscar. 
@@ -113,7 +113,7 @@
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
     ![](_static/sim_bt/step_4.png)
     
-    !!! note
+    !!! Info "Nota"
         - Es dibuixaran en vermell els trams desconnectats i els connectats en verd.
         - En la part interior de la targeta apareix el llistat de clients afectats.
 
@@ -158,7 +158,7 @@
     
     ![](_static/calidad_at/crear.png)
 
-!!! note
+!!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
 
 ## Qualitat BT 
@@ -197,5 +197,5 @@
     
     ![](_static/calidad_bt/crear.png)
 
-!!! note
+!!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
