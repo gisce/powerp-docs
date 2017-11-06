@@ -667,3 +667,80 @@ permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
   ---------------------------|------------------------------------
   tg_f5d_create_zip_file     | `1` crea el zip, `0` no crea el zip
   tg_cch_fact_invoice_length | `1` activat, `0` desactivat
+
+## Sistema de tele gestió
+
+### Peticions
+
+Existeixen dos tipus de peticions diferents, les síncrones i les asíncrones.
+
+#### Síncrones
+
+Els dispositius que reben una petició síncrona la responen el més aviat possible omplint
+l’informe amb les dades que estiguin disponibles en el moment. Per aquest motiu, si la
+petició es procesa correctament, es rep la resposta en poc temps. Un cop rebuda la resposta
+es podrà visualitzar des del mateix assistent.
+
+A la següent imatge podem veure l'assistent un cop s'ha demanat un informe síncron i se n'ha
+rebut la resposta. Tenim l'opció d'obrir el fitxer directament per veure'n el contingut o
+desar-l'ho.
+
+![](_static/telegestion/stg_peticions_sincrona.png)
+
+#### Asíncrones
+
+Les peticions asíncrones treballen de manera diferent i són les més fiables quan el nostre
+objectiu és obtenir dades útils i vàlides. Com bé indica el seu nom aquestes peticions no
+responen immediatament amb la informació requerida sino que envien una confirmació per
+informar que s'ha rebut la petició. Un cop arribats a aquest punt el concentrador al qual
+s'ha fet la petició es posarà a treballar per recollir tota la informació necessària dels
+comptadors que té connectats. Quan el concentrador hagi generat l'informe més complet que
+l'hi hagi sigut possible l'enviarà directament al servidor FTP per tal que sigui llegit.
+
+### Informes disponibles
+
+Actualment el sistema de tele gestió suporta els següents informes:
+
+* **Instant data (S01)**: És un informe que s’ha de demanar de manera síncrona a un comptador.
+    Conté la informació sobre la lectura instantània actual d’aquest.
+* **Meter events (S09)**: Conté els esdeveniments dels comptadors.
+* **Meter parameters (S06)**: Conté els paràmetres de dels comptadors.
+* **Concentrator parameters (S12)**: Conté els paràmetres del concentrador.
+* **Daily absolute (S05)**: Conté els tancaments diaris.
+* **Monthly billing (S04)**: Conté els tancaments mensuals.
+* **Daily incremental (S02)**: Conté les corbes horàries.
+
+### Components
+
+El sistema de tele gestió està format per diferents components els quals podem utilitzar des
+de l’aplicació client de l’ERP.
+A l’encendre l’assistent aquest consulta al STG quin informes suporta i crea la llista des
+de la qual es podrà seleccionar l’informe a enviar.
+
+#### Assistent de comptador
+
+S’accedeix a aquest assistent des de la vista d’un comptador concret. Ens serveix per fer
+peticions directament i concretament al comptador seleccionat.
+
+![](_static/telegestion/stg_boto_assistent_comptador.png)
+
+![](_static/telegestion/stg_assistent_comptador.png)
+
+Dins l’assistent tenim diferents opcions per configurar la petició que enviarem al comptador.
+Primer de tot podem veure el codi del comptador que hem seleccionat. El segon camp és el que
+indica quin informe es demanarà.
+
+![](_static/telegestion/stg_assistent_desplegable_informe.png)
+
+Tot seguit tenim els camps de data que serveixen per indicar de quin període de temps volem
+obtenir la informació.
+I el camp "Font" que indica d'on volem que el concentrador obtingui la informació. Per aquest
+existeixen tres valors diferents:
+
+* **DC Condicional**: Intenta obtenir la informació directament de la base de dades del
+concentrador i si no la troba consulta al comptador.
+* **DC Force**: Retornarà solament la informació disponible a la base de dades del concentrador
+la qual cosa la converteix en la font més ràpida.
+* **Meter Force**: Obliga a obtenir totes la informació del comptador.
+
+![](_static/telegestion/stg_assistent_font_dades.png)
