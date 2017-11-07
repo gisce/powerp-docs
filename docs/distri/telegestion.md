@@ -710,12 +710,34 @@ Actualment el sistema de tele gestió suporta els següents informes:
 * **Monthly billing (S04)**: Conté els tancaments mensuals.
 * **Daily incremental (S02)**: Conté les corbes horàries.
 
-### Components
+### Camps de la petició
+
+1. **Identificador del dispositiu**: Mostra el nom del comptador o concentrador al qual es farà
+la petició.
+2. **Informe**: Llista on es pot seleccionar quin dels informes llistats a l'apartat anterior
+[Informes disponibles](#informes-disponibles) es vol demanar al dispositiu.
+3. **Dates**: Delimiten el període de temps del qual volem rebre la informació.
+4. **Font**: Llista per seleccionar l'origen del qual volem que s'extreguin les dades.
+5. **Info**: Text informatiu sobre l'estat de la petició.
+
+![](_static/telegestion/stg_assistent_camps.png)
+
+Per el camp **Font** existeixen tres opcions diferents:
+
+* **DC Condicional**: Intenta obtenir la informació directament de la base de dades del
+concentrador i si no la troba consulta al comptador.
+* **DC Force**: Retornarà solament la informació disponible a la base de dades del concentrador
+la qual cosa la converteix en la font més ràpida.
+* **Meter Force**: Força la obtenció de tota la informació exclusivament dels comptadors.
+
+![](_static/telegestion/stg_assistent_font_dades.png)
+
+### Assistents
 
 El sistema de tele gestió està format per diferents components els quals podem utilitzar des
 de l’aplicació client de l’ERP.
-A l’encendre l’assistent aquest consulta al STG quin informes suporta i crea la llista des
-de la qual es podrà seleccionar l’informe a enviar.
+Al moment d’encendre els diferents assistents, es realitza una consulta al STG per saber quins
+informes són suportats i crear la llista des la qual es podrà seleccionar l’informe a enviar.
 
 #### Assistent de comptador
 
@@ -726,21 +748,20 @@ peticions directament i concretament al comptador seleccionat.
 
 ![](_static/telegestion/stg_assistent_comptador.png)
 
-Dins l’assistent tenim diferents opcions per configurar la petició que enviarem al comptador.
-Primer de tot podem veure el codi del comptador que hem seleccionat. El segon camp és el que
-indica quin informe es demanarà.
+#### Assistent d'un concentrador
 
-![](_static/telegestion/stg_assistent_desplegable_informe.png)
+S’accedeix a aquest assistent des de la vista d’un concentrador concret. Ens serveix per fer
+peticions directament i concretament al concentrador seleccionat.
 
-Tot seguit tenim els camps de data que serveixen per indicar de quin període de temps volem
-obtenir la informació.
-I el camp "Font" que indica d'on volem que el concentrador obtingui la informació. Per aquest
-existeixen tres valors diferents:
+![](_static/telegestion/stg_boto_assistent_concentrador.png)
 
-* **DC Condicional**: Intenta obtenir la informació directament de la base de dades del
-concentrador i si no la troba consulta al comptador.
-* **DC Force**: Retornarà solament la informació disponible a la base de dades del concentrador
-la qual cosa la converteix en la font més ràpida.
-* **Meter Force**: Obliga a obtenir totes la informació del comptador.
+![](_static/telegestion/stg_assistent_concentrador.png)
 
-![](_static/telegestion/stg_assistent_font_dades.png)
+#### Assistent de tots els concentradors
+
+S’accedeix a aquest assistent des de la llista de concentradors o des d’un comptador concret.
+Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió.
+
+![](_static/telegestion/stg_assistent_tots_concentradors.png)
+
+![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
