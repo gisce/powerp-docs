@@ -146,25 +146,31 @@ Las menu las empresas deben realizar facturas de trabajos o servicios ofrecidos 
 
 ### Assistent per a la reconnexió de pòlisses i generació de factures de reconnexió
 
+Aquest assistent serà llençat en premer el botó `Activar` dins una pòlissa en estat de **tall**.
 
-  Aquest assistent serà llençat en premer el botó `Activar` dins una pòlissa en estat de **tall**.
+![](_static/facturacion_contratacion/w_1.png)
 
-  ![](_static/facturacion_contratacion/w_1.png)
+#### Reconnectar una pólissa
 
-  * **Reconnectar una pólissa**
+A la primera pantalla mostrarà un missatge amb el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
 
-    A la primera pantalla sen's mostrara un missatget amb el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
-    La casella de selecció amb el missatge **Generar factura...** ens permetrà seleccionar si a més de la reconnexió, volem generar una factura de reconnexió.
+La casella de selecció amb el missatge **Generar factura...** permet
+sel·leccionar si a més de la reconnexió, es vol generar una factura de
+reconnexió.
 
-    ![](_static/facturacion_contratacion/w_2.png)
+![](_static/facturacion_contratacion/w_2.png)
 
-    En el cas d'haver seleccionat el requadre, sen's demanarà una data per a la generació de la factura.
+En el cas d'haver seleccionat el requadre, demanarà una data per a la
+generació de la factura.
 
-    ![](_static/facturacion_contratacion/w_3.png)
+![](_static/facturacion_contratacion/w_3.png)
 
-    Finalment sen's mostrara un missatge de confirmació en el qual haurem de prèmer el botó `Ok` per continuar.
-    Si anteriorment haviem marcat la casella ens donara la opció de mostrar la factura generada altrament es tancara l'assistent i la pòlissa ja estara reconnectada.
+Finalment mostrarà un missatge de confirmació en el qual s'haurà de prèmer
+el botó `Ok` per continuar.
 
-    ![](_static/facturacion_contratacion/w_4.png)
+Si anteriorment s'havia marcat la casella donara la opció de mostrar la
+factura generada altrament es tancarà l'assistent i la pòlissa ja estarà reconnectada.
 
-    ![](_static/facturacion_contratacion/w_5.png)
+![](_static/facturacion_contratacion/w_4.png)
+
+![](_static/facturacion_contratacion/w_5.png)
