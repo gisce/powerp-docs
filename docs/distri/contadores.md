@@ -185,7 +185,7 @@ tarifa ni de potència contractada no tindrem modificació contractual del dia
 
 --------------------------------------------------------------------------------
 
-# Documentació de lectures per distribuïdores
+## Documentació de lectures per distribuïdores
 
 Continguts:
 
@@ -194,7 +194,7 @@ Continguts:
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
 
-## Introducció de Lectures
+### Introducció de Lectures
 
 Existeixes diversos mètodes per l'entrada de lectures de comptadors. A partir
 de les lectures obtingudes per TPL, entrada manual per ruta, entrada de lectures
@@ -245,9 +245,9 @@ El procés es descriu a continuació:
 !!! Tip "Consell"
     Veure la [importació i exportació de lectures de TPL](tpl.md)
 
-## Importar full de lectures
+### Importar full de lectures
 
-### Introducció
+#### Introducció
 
 Aquest assistent ens permet carregar lectures massivament a partir d'un fitxer
 CSV
@@ -273,7 +273,7 @@ i diversos resums del procés realitzat:
 * comptadors sense lectura
 * comptadors que ja tenien lectura
 
-### Format del full de lectures
+#### Format del full de lectures
 
 El format és CSV ASCII de 26 camps separats per **;** (punt i coma) on els camps
  han d'estar ordenats i amb el format que es detalla a continuació. Els float
@@ -398,7 +398,6 @@ A continuació es descriu cada un dels camps del fitxer:
     Comportament en percentatge entre el *Consum_diari_actual* i *Consum_diari_factura_any_anterior*.
     (Per exemple: un 14%, significa que el consum actual és un 13% superior al
     consum de la factura de l'any anterior)
-
 
 * **Data_inici_factura_anterior**
     Data d'inici de la factura anterior.
