@@ -22,13 +22,13 @@ municipal de subministraments a tots els clients acollits al mercat lliure.
 
 ### Generació
 
-Per generar el fitxer, hem d'executar l'assistent que trobarem a
+Executant l'assistent que trobarem a
 **Administració pública > ICAEN > Informació de la distribució d'energia
 elèctrica**.
 
 ![](../_static/adm-pub/icaen/icaen_1.png)
 
-Ara simplement s'ha de seleccionar el tipus de fitxer que es vol generar i l'any
+Sel·leccionar el tipus de fitxer que es vol generar i l'any
 per el qual ho volem fer, per defecte l'any sera l'actual.
 
 ![](../_static/adm-pub/icaen/icaen_2.png)
