@@ -153,8 +153,8 @@ Las menu las empresas deben realizar facturas de trabajos o servicios ofrecidos 
 
   * **Reconnectar una pólissa**
 
-    A la primera pantalla sen's mostrara un missatget amb el el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
-    La casella de selecció a,b el missatge **Generar factura...** ens permetrà seleccionar si a més de la reconnexió, volem generar una factura de reconnexió.
+    A la primera pantalla sen's mostrara un missatget amb el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
+    La casella de selecció amb el missatge **Generar factura...** ens permetrà seleccionar si a més de la reconnexió, volem generar una factura de reconnexió.
 
     ![](_static/facturacion_contratacion/w_2.png)
 
