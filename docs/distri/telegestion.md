@@ -762,6 +762,6 @@ peticions directament i concretament al concentrador seleccionat.
 S’accedeix a aquest assistent des de la llista de concentradors o des d’un comptador concret.
 Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió.
 
-![](_static/telegestion/stg_assistent_tots_concentradors.png)
-
 ![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
+
+![](_static/telegestion/stg_assistent_tots_concentradors.png)
