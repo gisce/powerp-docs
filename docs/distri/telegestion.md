@@ -741,8 +741,8 @@ informes són suportats i crear la llista des la qual es podrà seleccionar l’
 
 #### Assistent de comptador
 
-S’accedeix a aquest assistent des de la vista d’un comptador concret. Ens serveix per fer
-peticions directament i concretament al comptador seleccionat.
+S’accedeix a aquest assistent des de la vista d’un comptador concret o des de la llista de
+comptadors. Ens serveix per fer peticions directament i concretament al comptador seleccionat.
 
 ![](_static/telegestion/stg_boto_assistent_comptador.png)
 
@@ -750,8 +750,9 @@ peticions directament i concretament al comptador seleccionat.
 
 #### Assistent d'un concentrador
 
-S’accedeix a aquest assistent des de la vista d’un concentrador concret. Ens serveix per fer
-peticions directament i concretament al concentrador seleccionat.
+S’accedeix a aquest assistent des de la vista d’un concentrador concret o des de la llista de
+concentradors. Ens serveix per fer peticions directament i concretament al concentrador
+seleccionat.
 
 ![](_static/telegestion/stg_boto_assistent_concentrador.png)
 
@@ -759,8 +760,10 @@ peticions directament i concretament al concentrador seleccionat.
 
 #### Assistent de tots els concentradors
 
-S’accedeix a aquest assistent des de la llista de concentradors o des d’un comptador concret.
-Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió.
+S’accedeix a aquest assistent des de la llista de concentradors o des d’un concentrador concret.
+Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió
+per aquesta raó, a diferència dels altres assistents aquest no indica el nom del dispositiu al
+que es farà la petició.
 
 ![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
 
