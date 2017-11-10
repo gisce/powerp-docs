@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-10 10:20+0100\n"
+"POT-Creation-Date: 2017-11-10 10:36+0100\n"
 "PO-Revision-Date: 2017-11-10 10:17+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
@@ -10751,6 +10751,274 @@ msgid ""
 msgstr ""
 "<code>1</code> activado, \n"
 "<code>0</code> desactivado"
+
+#, fuzzy
+msgid "Sistema de tele gestió"
+msgstr "Contadores de telegestión"
+
+#, fuzzy
+msgid "Peticions"
+msgstr "Posiciones"
+
+msgid ""
+"Existeixen dos tipus de peticions diferents, les síncrones i les asíncrones."
+msgstr ""
+
+msgid "Síncrones"
+msgstr ""
+
+msgid ""
+"Els dispositius que reben una petició síncrona la responen el més aviat "
+"possible omplint\n"
+"l’informe amb les dades que estiguin disponibles en el moment. Per aquest "
+"motiu, si la\n"
+"petició es procesa correctament, es rep la resposta en poc temps. Un cop "
+"rebuda la resposta\n"
+"es podrà visualitzar des del mateix assistent."
+msgstr ""
+
+msgid ""
+"A la següent imatge podem veure l'assistent un cop s'ha demanat un informe "
+"síncron i se n'ha\n"
+"rebut la resposta. Tenim l'opció d'obrir el fitxer directament per veure'n "
+"el contingut o\n"
+"desar-l'ho."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_peticions_sincrona.png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/tg_reactive_insert_var.png\" />"
+
+msgid "Asíncrones"
+msgstr ""
+
+msgid ""
+"Les peticions asíncrones treballen de manera diferent i són les més fiables "
+"quan el nostre\n"
+"objectiu és obtenir dades útils i vàlides. Com bé indica el seu nom aquestes "
+"peticions no\n"
+"responen immediatament amb la informació requerida sino que envien una "
+"confirmació per\n"
+"informar que s'ha rebut la petició. Un cop arribats a aquest punt el "
+"concentrador al qual\n"
+"s'ha fet la petició es posarà a treballar per recollir tota la informació "
+"necessària dels\n"
+"comptadors que té connectats. Quan el concentrador hagi generat l'informe "
+"més complet que\n"
+"l'hi hagi sigut possible l'enviarà directament al servidor FTP per tal que "
+"sigui llegit."
+msgstr ""
+
+#, fuzzy
+msgid "Informes disponibles"
+msgstr "Tenemos dos acciones disponibles:"
+
+#, fuzzy
+msgid "Actualment el sistema de tele gestió suporta els següents informes:"
+msgstr "Actualmente, este genera los siguientes informes:"
+
+msgid ""
+"<strong>Instant data (S01)</strong>: És un informe que s’ha de demanar de "
+"manera síncrona a un comptador.\n"
+"    Conté la informació sobre la lectura instantània actual d’aquest."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<strong>Meter events (S09)</strong>: Conté els esdeveniments dels comptadors."
+msgstr "<strong>S09</strong>: Eventos de contador"
+
+#, fuzzy
+msgid ""
+"<strong>Meter parameters (S06)</strong>: Conté els paràmetres de dels "
+"comptadors."
+msgstr ""
+"<strong>Mostrar eventos TG</strong>: Este botón nos abrirá un listado de los "
+"eventos del contador."
+
+#, fuzzy
+msgid ""
+"<strong>Concentrator parameters (S12)</strong>: Conté els paràmetres del "
+"concentrador."
+msgstr "<strong>S12</strong>: Configuración del concentrador"
+
+#, fuzzy
+msgid "<strong>Daily absolute (S05)</strong>: Conté els tancaments diaris."
+msgstr "<strong>S05</strong>: Cierres diarios"
+
+#, fuzzy
+msgid "<strong>Monthly billing (S04)</strong>: Conté els tancaments mensuals."
+msgstr "<strong>S04</strong>: Cierres mensuales"
+
+#, fuzzy
+msgid "<strong>Daily incremental (S02)</strong>: Conté les corbes horàries."
+msgstr ""
+"<strong>[2004] Diario incorrecto (E)</strong>: No se puede encontrar el "
+"diario indicado."
+
+#, fuzzy
+msgid "Camps de la petició"
+msgstr "Codigo de la subestación"
+
+msgid ""
+"<strong>Identificador del dispositiu</strong>: Mostra el nom del comptador o "
+"concentrador al qual es farà\n"
+"la petició."
+msgstr ""
+
+msgid ""
+"<strong>Informe</strong>: Llista on es pot seleccionar quin dels informes "
+"llistats a l'apartat anterior\n"
+"\n"
+"<a href=\"#informes-disponibles\">Informes disponibles</a> es vol demanar al "
+"dispositiu."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<strong>Dates</strong>: Delimiten el període de temps del qual volem rebre "
+"la informació."
+msgstr ""
+"<strong>Fecha de fin</strong>. Fecha de fin del período por el cual se desea "
+"hacer el informe (excluida)."
+
+#, fuzzy
+msgid ""
+"<strong>Font</strong>: Llista per seleccionar l'origen del qual volem que "
+"s'extreguin les dades."
+msgstr ""
+"<strong>Utilidad</ strong>: Dsitribuidor para el que se descargan ficheros"
+
+#, fuzzy
+msgid "<strong>Info</strong>: Text informatiu sobre l'estat de la petició."
+msgstr "<strong>Valoración</strong>: Texto informativo de la valoración"
+
+#, fuzzy
+msgid "<img alt=\"\" src=\"../_static/telegestion/stg_assistent_camps.png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/tg_reactive_insert_var.png\" />"
+
+#, fuzzy
+msgid "Per el camp <strong>Font</strong> existeixen tres opcions diferents:"
+msgstr ""
+"Para el cálculo del campo <strong> tipo </strong> se efectúan las siguientes "
+"operaciones:"
+
+msgid ""
+"<strong>DC Condicional</strong>: Intenta obtenir la informació directament "
+"de la base de dades del\n"
+"concentrador i si no la troba consulta al comptador."
+msgstr ""
+
+msgid ""
+"<strong>DC Force</strong>: Retornarà solament la informació disponible a la "
+"base de dades del concentrador\n"
+"la qual cosa la converteix en la font més ràpida."
+msgstr ""
+
+msgid ""
+"<strong>Meter Force</strong>: Força la obtenció de tota la informació "
+"exclusivament dels comptadors."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_assistent_font_dades.png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/tg_reactive_insert_var.png\" />"
+
+#, fuzzy
+msgid "Assistents"
+msgstr "Asistente"
+
+msgid ""
+"El sistema de tele gestió està format per diferents components els quals "
+"podem utilitzar des\n"
+"de l’aplicació client de l’ERP.\n"
+"Al moment d’encendre els diferents assistents, es realitza una consulta al "
+"STG per saber quins\n"
+"informes són suportats i crear la llista des la qual es podrà seleccionar "
+"l’informe a enviar."
+msgstr ""
+
+#, fuzzy
+msgid "Assistent de comptador"
+msgstr "Listado de contadores"
+
+msgid ""
+"S’accedeix a aquest assistent des de la vista d’un comptador concret o des "
+"de la llista de\n"
+"comptadors. Ens serveix per fer peticions directament i concretament al "
+"comptador seleccionat."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_boto_assistent_comptador.png"
+"\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_assistent_comptador.png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
+
+msgid "Assistent d'un concentrador"
+msgstr ""
+
+msgid ""
+"S’accedeix a aquest assistent des de la vista d’un concentrador concret o "
+"des de la llista de\n"
+"concentradors. Ens serveix per fer peticions directament i concretament al "
+"concentrador\n"
+"seleccionat."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_boto_assistent_concentrador."
+"png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_assistent_concentrador.png\" /"
+">"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
+
+#, fuzzy
+msgid "Assistent de tots els concentradors"
+msgstr "Listado de todos los relés"
+
+msgid ""
+"S’accedeix a aquest assistent des de la llista de concentradors o des d’un "
+"concentrador concret.\n"
+"Aquest assistent ens serveix per fer peticions massives a tots els "
+"concentradors de tele gestió\n"
+"per aquesta raó, a diferència dels altres assistents aquest no indica el nom "
+"del dispositiu al\n"
+"que es farà la petició."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/"
+"stg_boto_assistent_tots_concentradors.png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
+
+#, fuzzy
+msgid ""
+"<img alt=\"\" src=\"../_static/telegestion/stg_assistent_tots_concentradors."
+"png\" />"
+msgstr ""
+"<img alt=\"\" src=\"../_static/telegestion/crm_pantalla_contador.png\" />"
 
 msgid "Índex"
 msgstr "Índice"
