@@ -320,14 +320,18 @@ data concreta:
 ### Introducció
 
 És un procés preparat per portar a terme la importació de les telemesures des de la
-base de dades **mssql**. Importa per el mes indicat les lectures actives, reactives
-i maxímetres del comptador que s'hagi seleccionat.
+base de dades **mssql**. Importa les lectures actives, reactives i maxímetres del
+comptador seleccionat per el mes indicat.
 
 ### Assistent
 
-L'assistent es troba disponible dins de cada comptador i s'anomena **Carregar telemesures**.
+L'assistent es troba disponible dins de la vista de cada comptador i s'anomena
+**Carregar telemesures**. Per poder-hi accedir, el camp `Tecnologia` del comptador
+en qüestió ha d'estar marcat com a Telemesures SQL.
 
 ![](_static/contadores/assistent_import_telemedidas.png)
+
+![](_static/contadores/assistent_import_telemedidas2.png)
 !!! Tip "Consell"
     És important tenir en compte que la data a introduir ha de ser el primer dia del
     següent mes del que ens interessa importar. Per exemple si volem importar les
@@ -497,7 +501,7 @@ referències de cada proveïdor per aquest producte.
 
 ![](_static/contadores/Captura07.png)
 
-####Pestanya preus i proveïdors de la fitxa de producte
+#### Pestanya preus i proveïdors de la fitxa de producte
 
 * **Preu cost**: És el preu que s'utilitzarà a l'ordre de compra d'aquest
   producte
