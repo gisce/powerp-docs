@@ -869,7 +869,7 @@ de forma massiva. En ambdós situacions el seu funcionament és el mateix:
     En la fase inicial es mostra quants casos s'han seleccionat.
 
 
-    ![](_static/atr/wizard_pas_atr1.png)
+    ![](_static/atr/wizard_pas_atr2.png)
 
 
 * Clicant a "Continuar" s'intentarà crear el pas seleccionat en els casos.
