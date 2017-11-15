@@ -150,17 +150,17 @@ Aquest assistent serà llençat en premer el botó `Activar` dins una pòlissa e
 
 ![](_static/facturacion_contratacion/w_1.png)
 
-#### Reconnectar una pólissa
+#### Reconnectar una pòlissa
 
 A la primera pantalla mostrarà un missatge amb el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
 
-La casella de selecció amb el missatge **Generar factura...** permet
+La casella de selecció amb el missatge **Generar factura de reconnexió** permet
 sel·leccionar si a més de la reconnexió, es vol generar una factura de
 reconnexió.
 
 ![](_static/facturacion_contratacion/w_2.png)
 
-En el cas d'haver seleccionat el requadre, demanarà una data per a la
+En el cas d'haver seleccionat el requadre, demanarà una data per la
 generació de la factura.
 
 ![](_static/facturacion_contratacion/w_3.png)
