@@ -142,4 +142,35 @@ Las menu las empresas deben realizar facturas de trabajos o servicios ofrecidos 
     Si no se resalta ninguna de las facturas de la lista se pagaran todas las facturas de la lista. Si dentro de la lista se hace una selección resaltando algunas de ellas en azul solo se darán por pagadas las resaltadas.
 
     2. Una vez listada/s la/s factura que se desean dar por pagadas. Se debe pulsar el botón “Acción” y escoger la opción “Pagar grupo de facturas”. En el caso que se desee hacer el pago de una sola factura puede realizarse desde la propia factura pulsando bien el botón “Pagar factura” o bien desde el botón “Acción” “Pagar factura”.
-    3. El estado de una factura antes de ser pagada es “Abierto”. Una vez se ha pagado se realizan, de forma automática, los asientos contables necesarios para conciliar los asientos. La factura pasa entonces al estado “ Realizado” y la casilla “Pagado/Conciliado:” aparece marcada. Esto indica que los asientos de la factura han sido conciliados con los asientos del pago/s.  
+    3. El estado de una factura antes de ser pagada es “Abierto”. Una vez se ha pagado se realizan, de forma automática, los asientos contables necesarios para conciliar los asientos. La factura pasa entonces al estado “ Realizado” y la casilla “Pagado/Conciliado:” aparece marcada. Esto indica que los asientos de la factura han sido conciliados con los asientos del pago/s.
+
+### Assistent per a la reconnexió de pòlisses i generació de factures de reconnexió
+
+Aquest assistent serà llençat en premer el botó `Activar` dins una pòlissa en estat de **tall**.
+
+![](_static/facturacion_contratacion/w_1.png)
+
+#### Reconnectar una pòlissa
+
+A la primera pantalla mostrarà un missatge amb el número de pòlissa sobre la que procedirem a realitzar la reconnexió.
+
+La casella de selecció amb el missatge **Generar factura de reconnexió** permet
+sel·leccionar si a més de la reconnexió, es vol generar una factura de
+reconnexió.
+
+![](_static/facturacion_contratacion/w_2.png)
+
+En el cas d'haver seleccionat el requadre, demanarà una data per la
+generació de la factura.
+
+![](_static/facturacion_contratacion/w_3.png)
+
+Finalment mostrarà un missatge de confirmació en el qual s'haurà de prèmer
+el botó `Ok` per continuar.
+
+Si anteriorment s'havia marcat la casella donara la opció de mostrar la
+factura generada altrament es tancarà l'assistent i la pòlissa ja estarà reconnectada.
+
+![](_static/facturacion_contratacion/w_4.png)
+
+![](_static/facturacion_contratacion/w_5.png)
