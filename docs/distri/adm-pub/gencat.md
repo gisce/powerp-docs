@@ -4,7 +4,7 @@
 
 ### Introducció
 
-L'ICAEN demana una serie de documents per poder portar un contol de la
+L'ICAEN demana una sèrie de documents per poder portar un contol de la
 distribució d'energia.
 
 
@@ -29,10 +29,10 @@ elèctrica**.
 ![](../_static/adm-pub/icaen/icaen_1.png)
 
 Sel·leccionar el tipus de fitxer que es vol generar i l'any
-per el qual ho volem fer, per defecte l'any sera l'actual.
+per el qual ho volem fer, per defecte l'any serà l'actual.
 
 ![](../_static/adm-pub/icaen/icaen_2.png)
 
-Finalment s'haura generat el fitxer, i donarà l'opció d'obrir-lo o desar-lo.
+Una vegada generat el fitxer, hi ha l'opció d'obrir-lo o desar-lo.
 
 ![](../_static/adm-pub/icaen/icaen_3.png)
