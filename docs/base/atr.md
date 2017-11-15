@@ -288,6 +288,56 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
     que no es guardi el cas, aquest pas no estarà emmagatzemat. Caldrà tancar el
     formulari amb el botó **Tancar** i guardar el Cas
 
+!!! Tip "Consell"
+    Per crear un pas d'una manera més fàcil i ràpida es pot utilitzar
+    l'assistent "Crear passos ATR" explicat a continuació.
+
+
+##### Assistent de Creació de Passos ATR
+
+
+Aquest assistent permet la creació de passos dels casos ATR, tan per un cas com
+de forma massiva. En ambdós situacions el seu funcionament és el mateix:
+
+
+* Seleccionar els casos dels quals es vulgui generar un pas i obrir l'assistent
+(si s'esta dins el formulari de un cas, obrir l'assitent directament).
+
+
+* Es mostrara una finestra amb els següents camps:
+
+    * *Pas*: desplegable amb la llista de pasos que es poden crear per els casos seleccionats.
+
+    * *Ignorar repetits*: amb aquesta opció marcada s'evitarà que es crein pasos repetits en els casos.
+    Per exemple: si un cas ja té el pas 02 i es selecciona crear passos 02 en el desplegable, no es tornarà a crear el pas.
+
+    * *Info*: quadre de text amb informació útil sobre el procés de creació de pasos.
+    En la fase inicial es mostra quants casos s'han seleccionat.
+
+
+    ![](_static/atr/wizard_pas_atr1.png)
+
+
+* Clicant a "Continuar" s'intentarà crear el pas seleccionat en els casos.
+Un cop fet es mostra una pantalla amb un resum en que s'indica:
+
+  * Numero de casos en que s'ha creat el pas correctament
+
+  * Numero de casos en que no s'ha creat el pas perquè ja existia en el cas.
+  Si abans s'ha desmarcat la opció "Ignorar Repetits", aquest numero serà sempre 0.
+
+  * Numero de casos en que hi ha hagut algún error i no s'ha creat el pas.
+
+  * Informació detallada dels casos en que no s'ha creat el pas.
+
+  ![](_static/atr/wizard_pas_atr1.png)
+
+
+* Finalment tenim la opció de tancar l'assistent o de obrir els casos en que
+s'ha generat correctament el pas.
+
+
+
 ##### Exemple de dades d'un pas. (C1) 01
 ![](_static/atr/FormulariDades.png)
 
