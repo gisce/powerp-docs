@@ -851,14 +851,14 @@ talls.
 
 
 Aquest assistent permet la creació de passos dels casos ATR, tan per un cas com
-de forma massiva. En ambdós situacions el seu funcionament és el mateix:
+de forma massiva. En ambdues situacions el seu funcionament és el mateix:
 
 
 * Seleccionar els casos dels quals es vulgui generar un pas i obrir l'assistent
-(si s'esta dins el formulari de un cas, obrir l'assitent directament).
+(si s'està dins el formulari d'un cas, obrir l'assitent directament).
 
 
-* Es mostrara una finestra amb els següents camps:
+* Es mostrarà una finestra amb els següents camps:
 
     * *Pas*: desplegable amb la llista de pasos que es poden crear per els casos seleccionats.
 
@@ -875,19 +875,19 @@ de forma massiva. En ambdós situacions el seu funcionament és el mateix:
 * Clicant a "Continuar" s'intentarà crear el pas seleccionat en els casos.
 Un cop fet es mostra una pantalla amb un resum en que s'indica:
 
-  * Numero de casos en que s'ha creat el pas correctament
+    * Número de casos en que s'ha creat el pas correctament
 
-  * Numero de casos en que no s'ha creat el pas perquè ja existia en el cas.
-  Si abans s'ha desmarcat la opció "Ignorar Repetits", aquest numero serà sempre 0.
+    * Número de casos en que no s'ha creat el pas perquè ja existía en el cas.
+    Si abans s'ha desmarcat la opció "Ignorar Repetits", aquest numero serà sempre 0.
 
-  * Numero de casos en que hi ha hagut algún error i no s'ha creat el pas.
+    * Número de casos en que hi ha hagut algún error i no s'ha creat el pas.
 
-  * Informació detallada dels casos en que no s'ha creat el pas.
+    * Informació detallada dels casos en que no s'ha creat el pas.
 
   ![](_static/atr/wizard_pas_atr1.png)
 
 
-* Finalment tenim la opció de tancar l'assistent o de obrir els casos en que
+* Finalment tenim la opció de tancar l'assistent o d'obrir els casos en que
 s'ha generat correctament el pas.
 
 
