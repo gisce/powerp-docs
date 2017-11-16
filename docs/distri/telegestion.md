@@ -667,3 +667,104 @@ permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
   ---------------------------|------------------------------------
   tg_f5d_create_zip_file     | `1` crea el zip, `0` no crea el zip
   tg_cch_fact_invoice_length | `1` activat, `0` desactivat
+
+## Sistema de tele gestió
+
+### Peticions
+
+Existeixen dos tipus de peticions diferents, les síncrones i les asíncrones.
+
+#### Síncrones
+
+Els dispositius que reben una petició síncrona la responen el més aviat possible omplint
+l’informe amb les dades que estiguin disponibles en el moment. Per aquest motiu, si la
+petició es procesa correctament, es rep la resposta en poc temps. Un cop rebuda la resposta
+es podrà visualitzar des del mateix assistent.
+
+A la següent imatge podem veure l'assistent un cop s'ha demanat un informe síncron i se n'ha
+rebut la resposta. Tenim l'opció d'obrir el fitxer directament per veure'n el contingut o
+desar-l'ho.
+
+![](_static/telegestion/stg_peticions_sincrona.png)
+
+#### Asíncrones
+
+Les peticions asíncrones treballen de manera diferent i són les més fiables quan el nostre
+objectiu és obtenir dades útils i vàlides. Com bé indica el seu nom aquestes peticions no
+responen immediatament amb la informació requerida sino que envien una confirmació per
+informar que s'ha rebut la petició. Un cop arribats a aquest punt el concentrador al qual
+s'ha fet la petició es posarà a treballar per recollir tota la informació necessària dels
+comptadors que té connectats. Quan el concentrador hagi generat l'informe més complet que
+l'hi hagi sigut possible l'enviarà directament al servidor FTP per tal que sigui llegit.
+
+### Informes disponibles
+
+Actualment el sistema de tele gestió suporta els següents informes:
+
+* **Instant data (S01)**: És un informe que s’ha de demanar de manera síncrona a un comptador.
+    Conté la informació sobre la lectura instantània actual d’aquest.
+* **Meter events (S09)**: Conté els esdeveniments dels comptadors.
+* **Meter parameters (S06)**: Conté els paràmetres de dels comptadors.
+* **Concentrator parameters (S12)**: Conté els paràmetres del concentrador.
+* **Daily absolute (S05)**: Conté els tancaments diaris.
+* **Monthly billing (S04)**: Conté els tancaments mensuals.
+* **Daily incremental (S02)**: Conté les corbes horàries.
+
+### Camps de la petició
+
+1. **Identificador del dispositiu**: Mostra el nom del comptador o concentrador al qual es farà
+la petició.
+2. **Informe**: Llista on es pot seleccionar quin dels informes llistats a l'apartat anterior
+[Informes disponibles](#informes-disponibles) es vol demanar al dispositiu.
+3. **Dates**: Delimiten el període de temps del qual volem rebre la informació.
+4. **Font**: Llista per seleccionar l'origen del qual volem que s'extreguin les dades.
+5. **Info**: Text informatiu sobre l'estat de la petició.
+
+![](_static/telegestion/stg_assistent_camps.png)
+
+Per el camp **Font** existeixen tres opcions diferents:
+
+* **DC Condicional**: Intenta obtenir la informació directament de la base de dades del
+concentrador i si no la troba consulta al comptador.
+* **DC Force**: Retornarà solament la informació disponible a la base de dades del concentrador
+la qual cosa la converteix en la font més ràpida.
+* **Meter Force**: Força la obtenció de tota la informació exclusivament dels comptadors.
+
+![](_static/telegestion/stg_assistent_font_dades.png)
+
+### Assistents
+
+El sistema de tele gestió està format per diferents components els quals podem utilitzar des
+de l’aplicació client de l’ERP.
+Al moment d’encendre els diferents assistents, es realitza una consulta al STG per saber quins
+informes són suportats i crear la llista des la qual es podrà seleccionar l’informe a enviar.
+
+#### Assistent de comptador
+
+S’accedeix a aquest assistent des de la vista d’un comptador concret o des de la llista de
+comptadors. Ens serveix per fer peticions directament i concretament al comptador seleccionat.
+
+![](_static/telegestion/stg_boto_assistent_comptador.png)
+
+![](_static/telegestion/stg_assistent_comptador.png)
+
+#### Assistent d'un concentrador
+
+S’accedeix a aquest assistent des de la vista d’un concentrador concret o des de la llista de
+concentradors. Ens serveix per fer peticions directament i concretament al concentrador
+seleccionat.
+
+![](_static/telegestion/stg_boto_assistent_concentrador.png)
+
+![](_static/telegestion/stg_assistent_concentrador.png)
+
+#### Assistent de tots els concentradors
+
+S’accedeix a aquest assistent des de la llista de concentradors o des d’un concentrador concret.
+Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió
+per aquesta raó, a diferència dels altres assistents aquest no indica el nom del dispositiu al
+que es farà la petició.
+
+![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
+
+![](_static/telegestion/stg_assistent_tots_concentradors.png)
