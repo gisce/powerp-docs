@@ -331,14 +331,14 @@ qualsevol procés.
   mitjançant l'assitent [enviar xml](#formulari-power-email-dun-fitxer-xml-enviar-des-del-cas-corresponent)
   o quan s'exporta el fitxer ZIP i es marca la casella corresponent a
   l'assistent [exportar xml](#formulari-per-exportar-un-fitxer-xml). Els pasos
-  que estan per enviar i els casos que tenen algun dels seus pasos per enviar,
+  que estan per enviar i els casos que tenen algun dels seus passos per enviar,
   es llisten de color **blau**.
 
 * **Per validar**: En alguns passos generats automàticament cal validar que les
   dades són correctes. En aquests casos, quan es detecta que hi ha alguna
   incongruència que necessita la intervenció d'un operador, marca el pas per
   validar. Mitjançant aquest camp es pot desmarcar un cop arreglades les dades.
-  Es pot veure en detall a l'apartat [automatització](#automatitzacio). Els pasos que estan
+  Es pot veure en detall a l'apartat [automatització](#automatitzacio). Els passos que estan
   pendents de validar, es llisten de color **vermell**.
 
 
@@ -569,7 +569,7 @@ nosaltres hi som implicats.
 
 #### Creació del cas
 
-Premem sobre la opció ``Importar XML`` del menú de Switching i carreguem el
+Premem sobre l'opció ``Importar XML`` del menú de Switching i carreguem el
 fitxer. Si tot és correcte ens apareixerà un diàleg explicatiu amb el que ha
 passat i podrem anar al llistat de casos directament.
 
@@ -609,7 +609,7 @@ compte de correu des del qual es vol enviar el correu a la fitxa PowerEmail.
 
 Quan la comercialitzadora rep un XML d'activació de canvi de comercialitzadora
 (C1-05, C2-05 o C2-07) es pot notificar al client que el procés de canvi s'ha
-acabat i que per tan ja és client de la nova comercialitzadora. Per fer-ho
+acabat i que per tant ja és client de la nova comercialitzadora. Per fer-ho
 podem anar a l'acció **Switching: Notifiació activacio Polissa (Canvi
 Comercialitzador)** i omplir el compte de correu des del qual es vol enviar el
 correu a la fitxa PowerEmail.
@@ -850,7 +850,7 @@ talls.
 #### Assistent de Creació de Passos ATR
 
 
-Aquest assistent permet la creació de passos dels casos ATR, tan per un cas com
+Aquest assistent permet la creació de passos dels casos ATR, tant per un cas com
 de forma massiva. En ambdues situacions el seu funcionament és el mateix:
 
 
@@ -860,12 +860,12 @@ de forma massiva. En ambdues situacions el seu funcionament és el mateix:
 
 * Es mostrarà una finestra amb els següents camps:
 
-    * *Pas*: desplegable amb la llista de pasos que es poden crear per els casos seleccionats.
+    * *Pas*: desplegable amb la llista de passos que es poden crear per els casos seleccionats.
 
-    * *Ignorar repetits*: amb aquesta opció marcada s'evitarà que es crein pasos repetits en els casos.
+    * *Ignorar repetits*: amb aquesta opció marcada s'evitarà que es creïn passos repetits en els casos.
     Per exemple: si un cas ja té el pas 02 i es selecciona crear passos 02 en el desplegable, no es tornarà a crear el pas.
 
-    * *Info*: cuadre de text amb informació útil sobre el procés de creació de pasos.
+    * *Info*: quadre de text amb informació útil sobre el procés de creació de pasos.
     En la fase inicial es mostra quants casos s'han seleccionat.
 
 
@@ -873,21 +873,21 @@ de forma massiva. En ambdues situacions el seu funcionament és el mateix:
 
 
 * Clicant a "Continuar" s'intentarà crear el pas seleccionat en els casos.
-Un cop fet es mostra una pantalla amb un resum en que s'indica:
+Un cop fet es mostra una pantalla amb un resum en què s'indica:
 
-    * Número de casos en que s'ha creat el pas correctament
+    * Número de casos en què s'ha creat el pas correctament
 
-    * Número de casos en que no s'ha creat el pas perquè ja existía en el cas.
-    Si abans s'ha desmarcat la opció "Ignorar Repetits", aquest numero serà sempre 0.
+    * Número de casos en què no s'ha creat el pas perquè ja existía en el cas.
+    Si abans s'ha desmarcat l'opció "Ignorar Repetits", aquest número serà sempre 0.
 
-    * Número de casos en que hi ha hagut algún error i no s'ha creat el pas.
+    * Número de  casos en què hi ha hagut algun error i no s'ha creat el pas.
 
-    * Informació detallada dels casos en que no s'ha creat el pas.
+    * Informació detallada dels casos en què no s'ha creat el pas.
 
   ![](_static/atr/wizard_pas_atr1.png)
 
 
-* Finalment tenim la opció de tancar l'assistent o d'obrir els casos en que
+* Finalment tenim l'opció de tancar l'assistent o d'obrir els casos en què
 s'ha generat correctament el pas.
 
 
@@ -899,7 +899,7 @@ s'ha generat correctament el pas.
 El càlcul del codi REE de la distribuidora té algunes particularitats en el cas
 que el CUPS pertanyi a les distribuidores **ENDESA** (0031) o **FENOSA** (0390)
 
-S'utilitza la part del CUPS que correspon al codi de la distribuidora i algún
+S'utilitza la part del CUPS que correspon al codi de la distribuidora i algun
 caràcter més.
 
 Aquestes distribuidores demanen que els casos generats portin en el codi REE de
