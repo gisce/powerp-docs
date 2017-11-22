@@ -215,8 +215,10 @@ Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
 2. Preparar actualitzacio:
     
     Aquest pas es opicional ja que la seva funcio es fer que la carrega de les dades des del autocad sigui mes rapida.
-    L'assistent per preparar l'actualtizacio es pot trobar a "GIS>"
-->imatge
+    L'assistent per preparar l'actualtizacio es pot trobar a "GIS>Preparar actualtizació de dades"
+    
+    ![](_static/update/wizard_preparar.png)
+    
 3. Fer bolcat amb el autocad
 
 4. Carregar shapes:
