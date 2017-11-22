@@ -199,3 +199,47 @@
 
 !!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
+    
+# Actualització de les dades
+
+Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
+->esquema del proces>
+
+1. Activar el mode actualització:
+    Per activar el mode actualitzacio hem d'anar a "GIS>Mode actualització de dades"
+    
+    ![](_static/update/wizard_mode_update.png)
+    
+    Un cop activat el mode actualització es apareixera un missatge al entrar al visor web avisant de que s'estar relaitzant una actualització de dades
+       
+2. Preparar actualitzacio:
+    
+    Aquest pas es opicional ja que la seva funcio es fer que la carrega de les dades des del autocad sigui mes rapida.
+    L'assistent per preparar l'actualtizacio es pot trobar a "GIS>"
+->imatge
+3. Fer bolcat amb el autocad
+
+4. Carregar shapes:
+
+    La carrega de shapes dependra de les capes que usem o que volguem actualitzar.Les disponibles son les seguents:
+    - LAT i LBT
+    - Cartografia
+    - Rases
+    - Cabines
+    - Fibra optica
+    - Fora de servei
+    - Defectes
+    
+    La carrega es pot realitzar mitjançant els assistents que es troben a "GIS>Carregadors".
+    Aquests assistents ens obriran la pagina web per a la carrega dels fitxers. 
+    
+5. Desactivar el mode actualitzacio: 
+
+    Per desactivar el mode actualitzacio hem d'anar a "GIS>Mode actualització de dades"
+    
+    ![](_static/update/wizard_mode_update.png)
+    
+    Quan es desactivi el mode actualització desapareixera l'avis al visor web 
+
+!!!Note "En cas d'error"
+    En cas d'algun error en en proces de s'ha de repetir el pas
