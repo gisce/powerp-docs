@@ -203,7 +203,8 @@
 # Actualització de les dades
 
 Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
-->esquema del proces>
+
+![](_static/update/esquema_update.png)
 
 1. Activar el mode actualització:
     Per activar el mode actualitzacio hem d'anar a "GIS>Mode actualització de dades"
@@ -219,7 +220,9 @@ Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
     
     ![](_static/update/wizard_preparar.png)
     
-3. Fer bolcat amb el autocad
+3. Fer actualitzacio de dades amb el Autocad:
+
+    Realitzar la actualitzacio de dades mitjançant les eines de l'Autocad
 
 4. Carregar shapes:
 
