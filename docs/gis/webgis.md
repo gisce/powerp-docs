@@ -199,3 +199,68 @@
 
 !!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
+    
+# Actualització de les dades
+
+## Introducció
+
+Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés:
+
+![](_static/update/esquema_update.png)
+
+## Procediment
+
+1. Activar el mode actualització:
+
+    Per activar el mode actualització hem d'anar a "GIS>Mode actualització de dades"
+    
+    ![](_static/update/wizard_mode_update.png)
+    
+    Un cop activat el mode actualització apareixerà un missatge al entrar al visor web avisant de que s'està realitzant una actualització de dades.
+       
+2. Preparar actualització:
+    
+    Aquest pas es opcional ja que la seva funció es fer que la carrega de les dades des del Autocad sigui mes rapida.
+    L'assistent per preparar l'actualització es pot trobar a "GIS>Preparar actualització de dades".
+    
+    ![](_static/update/wizard_preparar.png)
+    
+3. Fer actualitzacio de dades amb el Autocad:
+
+    Realitzar la actualització de dades mitjançant les eines de l'Autocad
+
+4. Carregar shapes:
+
+    La carrega de shapes dependrà de les capes que usem o que vulguem actualitzar. Les disponibles son les següents:
+    
+    * LAT i LBT
+    * Cartografia
+    * Rases
+    * Cabines
+    * Fibra òptica
+    * Fora de servei
+    * Defectes BT
+    
+    La carrega es pot realitzar mitjançant els assistents que es troben a "GIS>Carregadors".
+    
+    ![](_static/update/wizard_web.png)
+    
+    Aquests assistents ens obriran la pagina web per a la carrega dels fitxers.
+    
+    ![](_static/update/web_load.png)
+    
+    Un cop carregat el fitxer ens apareixerà la seguent pagina informant-nos de que s'iniciara una tasca en segon pla:
+    
+    ![](_static/update/carrega_shapes_background.png)
+    
+    
+5. Desactivar el mode actualització: 
+
+    Per desactivar el mode actualització hem d'anar a "GIS>Mode actualització de dades"
+    
+    ![](_static/update/wizard_mode_update.png)
+    
+    Quan es desactivi el mode actualització desapareixerà l'avís al visor web 
+
+!!!Note "En cas d'error"
+    En cas d'algun error en el proces s'ha de repetir el pas
