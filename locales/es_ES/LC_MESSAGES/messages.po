@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-11-23 09:15+0100\n"
+"POT-Creation-Date: 2017-11-23 11:01+0100\n"
 "PO-Revision-Date: 2017-11-21 10:36+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
@@ -1384,6 +1384,19 @@ msgstr ""
 "<strong>Receptor (Para)</strong>: Se llenará automáticamente con la "
 "dirección de la pestaña\n"
 "  Contactos"
+
+#, fuzzy
+msgid "<strong>CC</strong>: Compte de correu on es vol enviar una còpia"
+msgstr ""
+"<strong>Des de</strong>:Cuenta de correo que se quiere utilizar para enviar "
+"el mail"
+
+#, fuzzy
+msgid ""
+"<strong>CCO</strong>: Compte de correu on es vol enviar una còpia oculta"
+msgstr ""
+"<strong>Des de</strong>:Cuenta de correo que se quiere utilizar para enviar "
+"el mail"
 
 msgid "<strong>Passos</strong>: Pas del qual es vol adjuntar l'XML"
 msgstr "<strong>Pasos</strong>: Paso del cual se quiere adjuntar el XML"
