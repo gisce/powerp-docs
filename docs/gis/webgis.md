@@ -263,4 +263,4 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
     Quan es desactivi el mode actualització desapareixerà l'avís al visor web 
 
 !!!Note "En cas d'error"
-    En cas d'algun error en en proces de s'ha de repetir el pas
+    En cas d'algun error en el proces s'ha de repetir el pas
