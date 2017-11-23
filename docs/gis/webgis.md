@@ -1,4 +1,5 @@
-# Autentificació
+# Visor web
+## Autentificació
 
  El primer que ens trobem al entrar es la pantalla d'autentificació
  
@@ -6,7 +7,7 @@
 
  Per accedir s'ha d'introduir el nostre usuari i contrasenya i prémer retorn o el boto de login. El usuari i la contrasenya es el mateix que per al ERP.
 
-# Interfície
+## Interfície
 
  ![](_static/interficie.png)
  
@@ -19,11 +20,11 @@
  5. Exportació
  6. Quadre de coordenades
  
-## Control de cerca
+### Control de cerca
  
  Esta situat a la parte superior esquerra i ens permet cercar elements al GIS. 
 
-## Selector de capes
+### Selector de capes
  
  El selector de capes es l'eina que ens permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
  
@@ -37,13 +38,13 @@
  - Capes sobreposades:
     - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
 
-## Control de zoom
+### Control de zoom
  
  Aquest control ens permet escollir el zoom del GIS , aquest va des de nivell 0 (tot el mon)  25 (màxim detall).
  
  També podem canviar el nivel de zoom mitjançant el ratolí o en el cas d'usar dispositius tàctils amb el gest d'apmpliar/reduir.
 
-## Control d'ubicació
+### Control d'ubicació
  
  Aquest control permet situar el mapa a la nostra ubicació.
  
@@ -55,19 +56,19 @@
  
  ![](_static/ubicacio.png)
 
-## Exportació
+### Exportació
   
   Control que permet exportar dades del GIS a diferents formats 
  
-## Quadre de coordenades
+### Quadre de coordenades
 
  Aquest control esta situat a la cantonada inferior esquerra i ens permt verue les coordenades del punt on tenim el ratolí. També permet buscar una coordenada concreta, clicant sobre el control apareixerà un formulari per indicar la coordenada a bucar. Un Cop introduïda la coordenada prement retorn apereixerà un indicador de la situacio de la coordenada.
   
  ![](_static/coordenades.png)
 
-# Simulacions
+## Simulacions
 
-## Simulacions AT
+### Simulacions AT
 
 1. Seleccionar un tram de AT. Això farà aparèixer en pantalla una targeta amb la informació del tram i del botó "Simula".
     ![](_static/sim_at/step_1.png)
@@ -96,7 +97,7 @@
     ![](_static/sim_at/step_5.png)
 
 
-## Simulacions BT
+### Simulacions BT
 
 1. Seleccionar el CT que volem simular.
     ![](_static/sim_bt/step_1.png)
@@ -120,9 +121,9 @@
 5. Per sortir de la simulació podem tancar o prémer "ESC".
     ![](_static/sim_bt/step_5.png)
     
-# Qualitat
+## Qualitat
 
-## Qualitat AT
+### Qualitat AT
 
 1. Fer una simulacio AT i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
@@ -161,7 +162,7 @@
 !!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
 
-## Qualitat BT 
+### Qualitat BT 
 
 1. Fer una simulacio BT i en lloc de tancar-la convertir-la en una inicidencia de qualitat.
 
@@ -200,15 +201,15 @@
 !!! Info "Nota"
     Un cop creada la incidència la podem consultar al ERP a Qualitat/Traçabilitat/Incidències
     
-# Actualització de les dades
+## Actualització de les dades
 
-## Introducció
+### Introducció
 
 Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés:
 
 ![](_static/update/esquema_update.png)
 
-## Procediment
+### Procediment
 
 1. Activar el mode actualització:
 
