@@ -639,6 +639,11 @@ saber si els nous passos creats s'han de notificar.
 Els passos per notificar es poden notificar manualment o bé,
 amb [l'assistent per notificar casos ATR](#assistent-per-notificar-casos-atr)
 
+!!! Warning "Atenció"
+    Els casos "pendents de notificar" només es marcaràn com a notificats si
+    s'utilitza l'assistent o si s'utilitza la funció "notifica_a_client".
+    Aquesta funció es crida quan s'utilitza el botó "aplicar canvis".
+
 #### Configuració
 
 Per a que funcioni correctament l'assistent, cal configurar les següents
