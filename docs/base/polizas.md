@@ -510,6 +510,44 @@ contractual es mantindrà sense canvis.
     No es podrà desfer cap modificació contractual si la pòlissa no es troba
     en estat **actiu**
 
+## Gestió del dipòsit de garantia (fiança)
+
+La gestió del dipòsit de garantia va integrada amb el mòdul de facturació,
+tant en distribuïdora com en comercialitzadora. En aquest aparat s'explica
+l'aspecte general de la gestió.
+
+En la fitxa del contracte s'afegeix un camp **Dipòsit**.
+
+![](_static/polizas/deposit_camp.png)
+
+Aquest camp sempre és el **saldo** del dipòsit que tenim en aquests moments.
+Funciona igual que la comptabilitat, però només tenint en compte els
+moviments del producte que tinguem configurat com a diposit de garantia.
+
+Amb l'avantatge que tenim una **traçabilitat completa** i un **històric** de tots
+els moviments de fiances que hi ha hagut. Per tant es poden generar els informes
+necessaris per l'administració sense que afecti el dia a dia.
+
+![](_static/polizas/deposit_conf.png)
+
+Quan es factura un producte fiança s'increment aquest saldo i quan es retorna
+es redueix.
+
+### Devolució del dipòsit de garantia
+
+Es disposa d'un assistent per tal de fer la devolució de la fiança, està en
+el marge dret a la llista d'assistents disponibles d'un contracte.
+
+![](_static/polizas/deposit_devolucio.png)
+
+Aquest assistent agafa com a valors predeterminats:
+
+  * A qui es retorna la fiança: **el titular**.
+  * La quanitat a retornar: **saldo actual**
+  * El número de compte: **el compte associat al contracte** (En el cas que es
+    vulgui afegir a una remesa.)
+
+![](_static/polizas/deposit_assistent_devolucio.png)
 
 ## CNAE
 
