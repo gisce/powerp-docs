@@ -227,13 +227,14 @@ Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
 4. Carregar shapes:
 
     La carrega de shapes dependra de les capes que usem o que volguem actualitzar.Les disponibles son les seguents:
-    - LAT i LBT
-    - Cartografia
-    - Rases
-    - Cabines
-    - Fibra optica
-    - Fora de servei
-    - Defectes
+    
+    * LAT i LBT
+    * Cartografia
+    * Rases
+    * Cabines
+    * Fibra optica
+    * Fora de servei
+    * Defectes
     
     La carrega es pot realitzar mitjançant els assistents que es troben a "GIS>Carregadors".
     
