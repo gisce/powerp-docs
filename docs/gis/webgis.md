@@ -213,7 +213,7 @@ Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
     
     Un cop activat el mode actualització es apareixera un missatge al entrar al visor web avisant de que s'estar relaitzant una actualització de dades
        
-2. Preparar actualitzacio:
+2. Preparar actualització:
     
     Aquest pas es opicional ja que la seva funcio es fer que la carrega de les dades des del autocad sigui mes rapida.
     L'assistent per preparar l'actualtizacio es pot trobar a "GIS>Preparar actualtizació de dades"
@@ -236,7 +236,13 @@ Per tal d'actualtizar les dades del visor web s'ha de seguir el seguent proces:
     - Defectes
     
     La carrega es pot realitzar mitjançant els assistents que es troben a "GIS>Carregadors".
-    Aquests assistents ens obriran la pagina web per a la carrega dels fitxers. 
+    
+    ![](_static/update/wizard_web.png)
+    
+    Aquests assistents ens obriran la pagina web per a la carrega dels fitxers.
+    
+    ![](_static/update/web_load.png)
+    
     
 5. Desactivar el mode actualitzacio: 
 
