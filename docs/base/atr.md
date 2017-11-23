@@ -455,6 +455,8 @@ l'intercanvi de informació generat.
 * **Des de**: Compte de correu que es vol utilitzar per enviar el mail
 * **Receptor (Per a)**: S'omple automàticament amb l'adreça de la pestanya
   Contactes
+* **CC**: Compte de correu on es vol enviar una còpia
+* **CCO**: Compte de correu on es vol enviar una còpia oculta
 * **Passos**: Pas del qual es vol adjuntar l'XML
 * Podrem escriure el contingut del mail que creguem necessari a l'àrea de text
   que hi ha a sota

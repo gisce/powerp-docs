@@ -174,3 +174,18 @@ factura generada altrament es tancarà l'assistent i la pòlissa ja estarà reco
 ![](_static/facturacion_contratacion/w_4.png)
 
 ![](_static/facturacion_contratacion/w_5.png)
+
+### Assistent per llistar pòlisses sense contractacions (sense facturació de drets)
+
+Aquest assistent permet llistar totes les pòlisses que no tenen cap contractació.
+
+#### Llistar pòlisses sense contractacions
+
+L'assistent el podem localitzar en el menú genèric de pòlisses, en el botó
+**Contractes sense facturació de drets**.
+
+![](_static/facturacion_contratacion/wiz_contracts_no_engangement_menu.png)
+
+Ens llistarà totes les pòlisses que no tinguin contractacions.
+
+![](_static/facturacion_contratacion/wiz_contracts_no_engangement_list.png)
