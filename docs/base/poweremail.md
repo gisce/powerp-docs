@@ -122,5 +122,15 @@ Si tots els camps estan plens, es pot aprobar el compte utilitzant el botó
 Quan un compte està aprobat es pot utilitzar la funcionalitat `enviar/rebre`
 per enviar i rebre tots els correus pendents en el compte.
 
+![](_static/poweremail/pwmail_account_send_recieve.png)
+
 Alternativament es pot utilitzar la funcionalitat `enviar aquest correu` des
 d'un `poweremail_mailbox`.
+
+### Suspensió d'un compte de PowerEmail
+
+Si es desitja deixar d'enviar o rebre correus per un
+[compte PowerEmail aprobat](#aprobar-un-compte-poweremail), podem suspendre el
+compte per a que quedi en estat `esborrany`.
+
+![](_static/poweremail/pwmail_account_suspend.png)
