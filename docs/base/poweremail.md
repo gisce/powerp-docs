@@ -34,7 +34,7 @@ Configuració → Tots els comptes**" i fer _click_ al botó `NEW`.
 Independentment del tipus de compte a crear, sempre cal inicialitzar el `nom
 del compte`. Aquest ha de ser únic entre els comptes PowerEmail.
 
-#### Configuració d'un compte per l'enviament de correu electrònic
+#### Compte per l'enviament de correu electrònic
 
 Quan creem (o editem) un nou compte de PowerEmail, ens mostrarà un formulari
 amb els camps necessaris per la connexió amb un servidor _smtp_.
@@ -60,7 +60,7 @@ _smtp_ amb el botó `comprobar connexió de sortida`.
 
 ![](_static/poweremail/pwmail_account_sortida_check.png)
 
-##### Configuració d'un compte per l'enviament de correu de la companyia
+##### Compte per l'enviament de correu de la companyia
 
 Creant un compte normal per a l'enviament de correu electrònic, caldrà
 seleccionar el camp `Compte de correu de la companyia` amb el valor `Si`.
