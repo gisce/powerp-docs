@@ -18,4 +18,9 @@ d'OpenERP `server/bin/addons`.
 Com que s'ha canviat el codi, caldrà reiniciar el servidor (o iniciar-lo en un
 altre port) i procedir a la instal·lació com qualsevol mòdul de OpenERP.
 
+Una vegada instal·lat el mòdul, ja disposarem de diferents vistes noves en un
+nou menú:
+
+![](_static/poweremail/poweremail_main_menu.png)
+
 ## Enviar/Rebre Correus
