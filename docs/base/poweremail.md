@@ -134,3 +134,11 @@ Si es desitja deixar d'enviar o rebre correus per un
 compte per a que quedi en estat `suspesa`.
 
 ![](_static/poweremail/pwmail_account_suspend.png)
+
+### Reactivació d'un compte PowerEmail
+
+Quan un compte està suspés, és pot reactivar mitjançant el botó `solicitar
+reactivació` fent que passi al estat `esborrany` tornant a habilitar el botó
+`Abrobar el compte`.
+
+![](_static/poweremail/pwmail_account_reactivate.png)
