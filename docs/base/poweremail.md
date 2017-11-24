@@ -61,3 +61,21 @@ Una vegada entrats els valors, es pot comprobar la connexió amb el servidor
 _smtp_ amb el botó `comprobar connexió de sortida`.
 
 ![](_static/poweremail/pwmail_account_sortida_check.png)
+
+##### Configuració d'un compte per l'enviament de correu de la companyia
+
+Creant un compte normal per a l'enviament de correu electrònic, caldrà
+seleccionar el camp `Compte de correu de la companyia` amb el valor `Si`.
+
+Això farà que ens aparegui una pestanya `seguretat` en la vista del compte.
+
+![](_static/poweremail/pwmail_account_sortida_example.png)
+
+Per tal d'utilitzar un compte de companyia és necessari assignar un grup
+d'usuaris al compte. En la pestanya `seguretat` es pot seleccionar quins
+grups poden utilitzar aquest compte que estem creant.
+
+!!! Note "Exemple"
+    Podem fer un compte genèric afegint el grup `Employee`.
+
+    ![](_static/poweremail/pwmail_account_sortida_example_security.png)
