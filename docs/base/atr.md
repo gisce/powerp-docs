@@ -628,9 +628,9 @@ correu a la fitxa PowerEmail.
 
 ### Notificacions a clients de casos ATR
 
-Hem desenvolupat un sistema que permet notificar als clients dels casos atr.
+Hem desenvolupat un sistema que permet notificar als clients dels casos ATR.
 
-Aquest sistema es basa amb plantilles PowerEmail i un assistent per enviar
+Aquest sistema es basa en plantilles PowerEmail i un assistent per enviar
 les notificacions als casos corresponents.
 
 Per defecte s'utilitza la variable `sw_mail_user_notification_on_activation` per
@@ -640,7 +640,7 @@ Els passos per notificar es poden notificar manualment o bé,
 amb [l'assistent per notificar casos ATR](#assistent-per-notificar-casos-atr)
 
 !!! Warning "Atenció"
-    Els casos "pendents de notificar" només es marcaràn com a notificats si
+    Els casos "pendents de notificar" només es marcaran com a notificats si
     s'utilitza l'assistent o si s'utilitza la funció "notifica_a_client".
     Aquesta funció es crida quan s'utilitza el botó "aplicar canvis".
 
@@ -688,14 +688,14 @@ ATR pendents de notificar_".
 ![](_static/atr/WizardNotificarAccio.png)
 
 Seguidament l'assistent ens informarà sobre els passos marcats com "_pendent de
-notificar_" dels casos sel·leccionats.
+notificar_" dels casos seleccionats.
 
-Si ens sembla correcte (podem repassar els passos de cada cas sel·leccionat),
+Si ens sembla correcte (podem repassar els passos de cada cas seleccionat),
 podem procedir amb l'enviament. Prement el botó "_enviar correus pendents_":
 
 ![](_static/atr/WizardNotificarPrevi.png)
 
-Aquest procés pot tardar una estona segons la quantitat de casos sel·leccionats.
+Aquest procés pot tardar una estona segons la quantitat de casos seleccionats.
 Una vegada finalitzat el procés, l'assistent s'actualitzarà i mostrarà els casos
 notificats i si ha trobat algun error en el procés que ha impedit la notificació.
 
