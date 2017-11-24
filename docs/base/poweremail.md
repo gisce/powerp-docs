@@ -23,4 +23,12 @@ nou menú:
 
 ![](_static/poweremail/poweremail_main_menu.png)
 
-## Enviar/Rebre Correus
+### Creació d'un compte PowerEmail
+
+PowerEmail funciona amb comptes _smtp_. Tant si volem enviar com si volem rebre
+correus, és necessari afegir un compte PowerEmail.
+
+En un mateix compte s'hi pot configurar l'entrada o sortida de correu.
+
+Per afegir un compte, cal accedir al menú "**Menú OpenERP → PowerEmail →
+Configuració → Tots els comptes**" i fer _click_ al botó `NEW`.
