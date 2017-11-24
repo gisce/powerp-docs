@@ -32,3 +32,32 @@ En un mateix compte s'hi pot configurar l'entrada o sortida de correu.
 
 Per afegir un compte, cal accedir al menú "**Menú OpenERP → PowerEmail →
 Configuració → Tots els comptes**" i fer _click_ al botó `NEW`.
+
+Independentment del tipus de compte a crear, sempre cal inicialitzar el `nom
+del compte`. Aquest ha de ser únic entre els comptes PowerEmail.
+
+#### Configuració d'un compte per l'enviament de correu electrònic
+
+Quan creem (o editem) un nou compte de PowerEmail, ens mostrarà un formulari
+amb els camps necessaris per la connexió amb un servidor _smtp_.
+
+![](_static/poweremail/pwmail_account_sortida.png)
+
+Es disposa dels camps:
+
+|          Nom del Camp            |                                  Descripció                                |
+|:--------------------------------:|:---------------------------------------------------------------------------|
+| Servidor                         | Nom del servidor de correu                                                 |
+| Port SMTP                        | Port SMTP utilitzat per el servidor de correu                              |
+| Utilitzar TLS                    | Si es desitja utilitzar transmissió segura mitjançant claus                |
+| ID correu electrònic             | Nom del correu electrònic a utilitzar en el servidor                       |
+| Nom d'usuari                     | Nom d'usuari a utilitzar en el servidor (Per defecte el correu electrònic) |
+| Contrasenya                      | Contrasenya a utilitzar en el servidor                                     |
+| Usuari Relacionat                | Usuari del OpenERP relacionat amb aquest compte de PowerEmail              |
+| Compte de correu de la companyia | Si es desitja configurar com a compte de la companyia                      |
+| Format del correu electrònic     | Format a utilitzar per construir el "body" del correu                      |
+
+Una vegada entrats els valors, es pot comprobar la connexió amb el servidor
+_smtp_ amb el botó `comprobar connexió de sortida`.
+
+![](_static/poweremail/pwmail_account_sortida_check.png)
