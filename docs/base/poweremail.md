@@ -21,6 +21,8 @@ nou menú:
 
 ![](_static/poweremail/poweremail_main_menu.png)
 
+## Configuració de Comptes PowerEmail
+
 ### Creació d'un compte PowerEmail
 
 PowerEmail funciona amb comptes _smtp_. Tant si volem enviar com si volem rebre
@@ -97,3 +99,9 @@ la connexió i obtenció de correus per un compte.
 !!! Nota "Nota"
     Per la recepció de correus per la companyia, cal inicialitzar el compte
     com un [compte per enviament de la companyia](http://localhost:8000/base/poweremail/#compte-per-lenviament-de-correu-de-la-companyia).
+
+De la mateixa manera que amb la configuració de comtpes de sortida. Una vegada
+introduïdes les dades necessaries, es pot comprobar la connexió mitjançant el
+botó `Comprobar la connexió d'entrada`.
+
+![](_static/poweremail/pwmail_account_entrada_check.png)
