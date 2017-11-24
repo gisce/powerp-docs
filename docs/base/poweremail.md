@@ -105,3 +105,22 @@ introduïdes les dades necessaries, es pot comprobar la connexió mitjançant el
 botó `Comprobar la connexió d'entrada`.
 
 ![](_static/poweremail/pwmail_account_entrada_check.png)
+
+### Aprobar un compte PowerEmail
+
+Després de la
+[creació d'un compte PowerEmail](http://localhost:8000/base/poweremail/#creacio-dun-compte-poweremail)
+o de
+la reactivació d'un compte PowerEmail ,
+es pot aprobar un compte PowerEmail.
+
+Si tots els camps estan plens, es pot aprobar el compte utilitzant el botó
+`Aprobar el compte`.
+
+![](_static/poweremail/pwmail_account_approve.png)
+
+Quan un compte està aprobat es pot utilitzar la funcionalitat `enviar/rebre`
+per enviar i rebre tots els correus pendents en el compte.
+
+Alternativament es pot utilitzar la funcionalitat `enviar aquest correu` des
+d'un `poweremail_mailbox`.
