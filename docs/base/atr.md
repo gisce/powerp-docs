@@ -696,8 +696,13 @@ podem procedir amb l'enviament. Prement el botó "_enviar correus pendents_":
 ![](_static/atr/WizardNotificarPrevi.png)
 
 Aquest procés pot tardar una estona segons la quantitat de casos seleccionats.
+
 Una vegada finalitzat el procés, l'assistent s'actualitzarà i mostrarà els casos
 notificats i si ha trobat algun error en el procés que ha impedit la notificació.
+El resultat de la tasca es quedarà registrat en la finestra de peticions, que
+es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
+
+![](_static/atr/WizardNotificarPeticions.png)
 
 ---
 
