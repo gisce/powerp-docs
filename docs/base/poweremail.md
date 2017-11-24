@@ -98,7 +98,7 @@ la connexió i obtenció de correus per un compte.
 
 !!! Nota "Nota"
     Per la recepció de correus per la companyia, cal inicialitzar el compte
-    com un [compte per enviament de la companyia](http://localhost:8000/base/poweremail/#compte-per-lenviament-de-correu-de-la-companyia).
+    com un [compte per enviament de la companyia](#compte-per-lenviament-de-correu-de-la-companyia).
 
 De la mateixa manera que amb la configuració de comtpes de sortida. Una vegada
 introduïdes les dades necessaries, es pot comprobar la connexió mitjançant el
@@ -109,7 +109,7 @@ botó `Comprobar la connexió d'entrada`.
 ### Aprobar un compte PowerEmail
 
 Després de la
-[creació d'un compte PowerEmail](http://localhost:8000/base/poweremail/#creacio-dun-compte-poweremail)
+[creació d'un compte PowerEmail](#creacio-dun-compte-poweremail)
 o de
 la reactivació d'un compte PowerEmail ,
 es pot aprobar un compte PowerEmail.
