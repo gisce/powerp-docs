@@ -131,6 +131,6 @@ d'un `poweremail_mailbox`.
 
 Si es desitja deixar d'enviar o rebre correus per un
 [compte PowerEmail aprobat](#aprobar-un-compte-poweremail), podem suspendre el
-compte per a que quedi en estat `esborrany`.
+compte per a que quedi en estat `suspesa`.
 
 ![](_static/poweremail/pwmail_account_suspend.png)
