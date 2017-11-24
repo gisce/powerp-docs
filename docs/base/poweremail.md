@@ -77,3 +77,23 @@ grups poden utilitzar aquest compte que estem creant.
     Podem fer un compte genèric afegint el grup `Employee`.
 
     ![](_static/poweremail/pwmail_account_sortida_example_security.png)
+
+#### Compte per la recepció de correu electrònic
+
+Aquest tipus de comptes extenen els comptes d'enviament de correu electrònic.
+Per aquest motiu, cal realitzar prèviament les
+[configuracions per comptes d'enviament](#compte-per-lenviament-de-correu-electronic).
+
+Accedint a la pestanya `entrada` podem configurar la recepció de correu
+mitjançant PowerEmail. En aquesta pestanya es mostren els camps necessaris per
+la connexió i obtenció de correus per un compte.
+
+![](_static/poweremail/pwmail_account_entrada_example.png)
+
+!!! Note "Nota"
+    Si el camp `servidor d'entrada` està buit, no es configura com a compte de
+    recepció i per tant la resta de camps no són obligatoris.
+
+!!! Nota "Nota"
+    Per la recepció de correus per la companyia, cal inicialitzar el compte
+    com un [compte per enviament de la companyia](http://localhost:8000/base/poweremail/#compte-per-lenviament-de-correu-de-la-companyia).
