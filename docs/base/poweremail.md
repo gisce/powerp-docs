@@ -170,3 +170,37 @@ Les bústies funcionen de forma intuïtiva:
     l'usuari i companyia del usuari.
 
 ## Gestió de Plantilles PowerEmail
+
+Podem trobar totes les plantilles en el menú "**Menú OpenERP → PowerEmail →
+Plantilles de PowerEmail**".
+
+![](_static/poweremail/pwmail_mailbox_new.png)
+
+Totes les plantilles tenen les mateixes configuracions essencials, excloguent
+les típiques configuracions d'un correu:
+
++------------------------+------------------------------------------------------------+
+|      Nom del camp      | Descripció                                                 |
++========================+============================================================+
+|   Nom de la plantilla  | Referència a utilitzar per aquesta plantilla.              |
++------------------------+------------------------------------------------------------+
+|           Model        | Model relacionat amb aquesta plantilla.                    |
+|                        | Permet l'ús de camps d'aquest model.                       |
++------------------------+------------------------------------------------------------+
+| Idioma de la plantilla | Llenguatge utilitzat en la generació del correu des de les |
+|                        | dades de la plantilla                                      |
++------------------------+------------------------------------------------------------+
+
+Cal emplenar aquests camps per utilitzar les plantilles. Juntament amb els camps
+referents al correu a enviar, com per a qui seria el correu, l'assumpte o el cos
+del missatge.
+
+!!! Tip "Consell"
+    Es pot utilitzar l'assistent d'expressions per generar el codi per obtenir
+    el valor d'un camp del model de la plantilla.
+
+    ![](_static/poweremail/pwmail_mailbox_new_expression.png)
+
+Tots els camps referents a la generació del correu (adreces i cos del missatge)
+són analitzats per si són del llenguatge de la plantilla, és a dir, s'hi pot
+utilitzar les expressions generades en l'assistent.
