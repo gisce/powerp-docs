@@ -250,6 +250,9 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
     
     ![](_static/update/web_load.png)
     
+    !!!Note "Format dels fitxers"
+        Els fitxers només es poden carregar en format WINZIP
+    
     Un cop carregat el fitxer ens apareixerà la seguent pagina informant-nos de que s'iniciara una tasca en segon pla:
     
     ![](_static/update/carrega_shapes_background.png)
