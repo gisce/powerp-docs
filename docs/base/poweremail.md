@@ -204,3 +204,42 @@ del missatge.
 Tots els camps referents a la generació del correu (adreces i cos del missatge)
 són analitzats per si són del llenguatge de la plantilla, és a dir, s'hi pot
 utilitzar les expressions generades en l'assistent.
+
+La pestanya de seguretat, permet definir quins usuaris poden utilitzar aquesta
+plantilla per enviar correus.
+
+Per altra banda, a la pestanya `Avançat` hi podem trobar diverses utilitats.
+
+![](_static/poweremail/pwmail_mailbox_new_advanced.png)
+
+En la primera secció, podem configurar automatismes de cares a l'enviament del
+correu:
+
++------------------------+------------------------------------------------------------+
+|      Nom del camp      | Descripció                                                 |
++========================+============================================================+
+| Forçar des del compte  | Utilitzar sempre un compte de PowerEmail quan es generi    |
+|                        | un correu electrònic des de l'actual plantilla.            |
++------------------------+------------------------------------------------------------+
+|                        | Cada vegada que s'actualitza un registre del model         |
+|                        | mitjançant un `Flux de treball`, generarà un correu        |
+| Correu electrònic      | electrònic utilitzant aquesta plantilla.                   |
+| automàtic.             | (requereix `Forçar des del compte`, `Flux de treball` i    |
+|                        | `Activitat`)                                               |
++------------------------+------------------------------------------------------------+
+| Flux de treball        | Quan el Correu automàtic està activat, cal assignar un flux|
++------------------------+------------------------------------------------------------+
+| Activitat              | Estat del Flux de Treball on s'activarà el correu automàtic|
++------------------------+------------------------------------------------------------+
+| Enviar al crear        | Permet l'enviament automàtic dels correus generats per la  |
+|                        | plantilla.                                                 |
++------------------------+------------------------------------------------------------+
+| Guardar en borradors   | Guarda els correus generats en la carpeta `esborranys`     |
+|                        | enlloc de en la carpeta `sortida`.                         |
++------------------------+------------------------------------------------------------+
+| Enviar al actualitzar  | Cada vegada que es modifica un registre del model es       |
+|                        | genera un nou correu mitjançant aquesta plantilla.         |
++------------------------+------------------------------------------------------------+
+| Filtre actiu           | Permet utilitzar un filtre amb python per evitar la creació|
+|                        | de correus mitjançant la plantilla.                        |
++------------------------+------------------------------------------------------------+
