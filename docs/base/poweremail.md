@@ -145,4 +145,28 @@ reactivació` fent que passi al estat `esborrany` tornant a habilitar el botó
 
 ## Gestió de Bústies de correu
 
+Segons la configuració utilitzada en la [creació d'un compte PowerEmail](#creacio-dun-compte-poweremail),
+Els correus enviats o rebuts es trobaran en el menú de bústies "`Personal`", quan
+el compte està assignat al nostre usuari, o "`Companyia`", quan el nostre usuari
+està assignat a la mateixa companyia que el compte de correu (per l'usuari
+que té assignat) i el compte és un "`Compte de la companyia`".
+
+![](_static/poweremail/pwmail_mailbox_mailbox.png)
+
+Les bústies funcionen de forma intuïtiva:
+
+| Tipus de Bústia | Descripció                                                   |
+|:---------------:|:-------------------------------------------------------------|
+| Converses       | (Només personal) Conté els correus relacionats pel assumpte  |
+| Entrada         | Correus rebuts                                               |
+| Esborrany       | Correus que escriu un usuari, però no es volen enviar encara |
+| Enviats         | Correus ja enviats                                           |
+| Seguiment       | Correus on estem com a observadors                           |
+| Sortida         | Correus pendents d'enviar                                    |
+| Papelera        | Correus esborrats                                            |
+
+!!! Note "Nota"
+    Les bústies no distingeixen entre els diversos comptes configurats per
+    l'usuari i companyia del usuari.
+
 ## Gestió de Plantilles PowerEmail
