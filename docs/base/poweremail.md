@@ -142,3 +142,7 @@ reactivació` fent que passi al estat `esborrany` tornant a habilitar el botó
 `Abrobar el compte`.
 
 ![](_static/poweremail/pwmail_account_reactivate.png)
+
+## Gestió de Bústies de correu
+
+## Gestió de Plantilles PowerEmail
