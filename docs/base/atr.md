@@ -636,7 +636,7 @@ les notificacions als casos corresponents.
 Per defecte s'utilitza la variable `sw_mail_user_notification_on_activation` per
 saber si els nous passos creats s'han de notificar.
 
-Els passos per notificar es poden notificar manualment o bé,
+Els passos per notificar es poden notificar manualment, o bé
 amb [l'assistent per notificar casos ATR](#assistent-per-notificar-casos-atr)
 
 !!! Warning "Atenció"
@@ -681,7 +681,7 @@ S'ha de tenir en compte que el `object` que s'utilitza és el cas ATR.
 #### Assistent per notificar casos ATR
 
 Aquest assistent ens permet notificar de forma agrupada diversos passos i casos
-ATR. Podem fer-ho desde la vista de casos ATR "**Menú OpenERP > Gestió ATR >
+ATR. Podem fer-ho des de la vista de casos ATR "**Menú OpenERP > Gestió ATR >
 Casos ATR**", prement sobre accions i escollint "_Enviar correu als casos
 ATR pendents de notificar_".
 
