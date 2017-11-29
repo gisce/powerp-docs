@@ -139,7 +139,7 @@ compte per a que quedi en estat `suspesa`.
 
 Quan un compte està suspés, és pot reactivar mitjançant el botó `solicitar
 reactivació` fent que passi al estat `esborrany` tornant a habilitar el botó
-`Abrobar el compte`.
+`Aprobar el compte`.
 
 ![](_static/poweremail/pwmail_account_reactivate.png)
 
