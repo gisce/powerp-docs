@@ -169,6 +169,10 @@ Les bústies funcionen de forma intuïtiva:
     Les bústies no distingeixen entre els diversos comptes configurats per
     l'usuari i companyia del usuari.
 
+### Correus PowerEmail
+
+### Converses PowerEmail
+
 ## Gestió de Plantilles PowerEmail
 
 Podem trobar totes les plantilles en el menú "**Menú OpenERP → PowerEmail →
