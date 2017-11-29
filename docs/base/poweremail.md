@@ -171,6 +171,40 @@ Les bústies funcionen de forma intuïtiva:
 
 ### Correus PowerEmail
 
+En obrir un correu d'una bústia o creant un nou correu dins d'una bústia, ens
+trobem amb diversos camps.
+
+![](_static/poweremail/pwmail_mail_new.png)
+
+Com podem veure, el ERP ens desglossa tots els camps típics del correu electrònic.
+
+En aquesta pàgina únicament cal destacar els següents camps:
+
+|            Camp            |  Descripció                                                        |
+|:--------------------------:|:-------------------------------------------------------------------|
+| Data de recepció/Enviament | Data en que s'ha rebut o enviat el correu en el servidor de correu |
+|          Rebut el          | Data en que el ERP va importar el correu electrònic                |
+|         Prioritat          | Paràmetre utilitzat al ERP per a filtres en les bústies            |
+
+També cal destacar el botó `Enviar Correu` que permet el reenviament del correu.
+
+En la pestanya _Adjunts_ es poden trobar els diferents fitxers adjunts que s'han
+enviat o rebut en el correu electrònic.
+
+En la pestanya _Raw Content_ es troba tot el correu electrònic en format de text pla.
+
+En la pestanya _Avançat_ hi trobem les configuracions relacionades amb el compte
+de PowerEmail i amb les tasques realitzades amb aquest correu en l'historial
+(vegades enviat, rebut o mogut de bústia).
+
+![](_static/poweremail/pwmail_mail_advanced.png)
+
+!!! Note "Nota"
+    Aquesta pestanya conté dades relacionades amb el tipus de missatge a enviar,
+    el compte a utilitzar i referéncies del servidor de correu.
+    Per aquest motiu, tot i que es puguin editar els camps, no és aconsellable
+    canviar-los.
+
 ### Converses PowerEmail
 
 ## Gestió de Plantilles PowerEmail
