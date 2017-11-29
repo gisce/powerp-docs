@@ -3556,7 +3556,7 @@ msgid ""
 "explicació més detallada d'aquestes, consultar\n"
 "\n"
 "<a href=\"#modificacions-contractuals_1\">aquesta</a> pàgina."
-msgstr "Desde Activa también se pueden hacer <strong>Modificaciones Contractuales</strong>. Para una explicación más detallada de éstas, consultar <a href=\"../#modificaciones-contractuales_1\">esta</a> página."
+msgstr "Desde Activa también se pueden hacer <strong>Modificaciones Contractuales</strong>. Para una explicación más detallada de éstas, consultar <a href=\"#modificaciones-contractuales_1\">esta</a> página."
 
 msgid ""
 "També es podrà donar de <strong>Baixa</strong> una pòlissa o \n"
