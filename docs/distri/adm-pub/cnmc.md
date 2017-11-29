@@ -176,6 +176,6 @@ Un cop obert, obrirà una finestra amb el botó **Exportar**. En premer el botó
 
 ![](../_static/cnmc/sips_3.png)
 
-Un cop a la darrera finestra, amb el botó **Abrir** podrem accedir directament al contingut del **ZIP** generat.
+Un cop a la darrera finestra, amb el botó **Abrir** accedira directament al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
