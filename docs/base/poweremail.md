@@ -178,7 +178,7 @@ Les bústies funcionen de forma intuïtiva:
 Podem trobar totes les plantilles en el menú "**Menú OpenERP → PowerEmail →
 Plantilles de PowerEmail**".
 
-![](_static/poweremail/pwmail_mailbox_new.png)
+![](_static/poweremail/pwmail_template_new.png)
 
 Totes les plantilles tenen les mateixes configuracions essencials, excloguent
 les típiques configuracions d'un correu:
@@ -203,7 +203,7 @@ del missatge.
     Es pot utilitzar l'assistent d'expressions per generar el codi per obtenir
     el valor d'un camp del model de la plantilla.
 
-    ![](_static/poweremail/pwmail_mailbox_new_expression.png)
+    ![](_static/poweremail/pwmail_template_new_expression.png)
 
 Tots els camps referents a la generació del correu (adreces i cos del missatge)
 són analitzats per si són del llenguatge de la plantilla, és a dir, s'hi pot
@@ -214,7 +214,7 @@ plantilla per enviar correus.
 
 Per altra banda, a la pestanya `Avançat` hi podem trobar diverses utilitats.
 
-![](_static/poweremail/pwmail_mailbox_new_advanced.png)
+![](_static/poweremail/pwmail_template_new_advanced.png)
 
 En la primera secció, podem configurar automatismes de cares a l'enviament del
 correu:
