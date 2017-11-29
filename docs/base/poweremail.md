@@ -207,6 +207,20 @@ de PowerEmail i amb les tasques realitzades amb aquest correu en l'historial
 
 ### Converses PowerEmail
 
+El mòdul poweremail permet mantenir converses de correu electrònic, és a dir,
+detecta quan un correu és una resposta a un dels correus enviats o si un correu
+enviat és la resposta d'un rebut.
+
+Aquests correus es troben en una bústia especial en la carpeta "**Personal**".
+
+Símplement es mostra una llista de les converses que s'ha tingut, amb quin usuari
+i quants correus hi ha a la conversa.
+
+Si entrem en una conversa únicament es mostra una llista de correus que són els
+que estan relacionats amb la conversa.
+
+![](_static/poweremail/pwmail_mailbox_conversation.png)
+
 ## Gestió de Plantilles PowerEmail
 
 Podem trobar totes les plantilles en el menú "**Menú OpenERP → PowerEmail →
