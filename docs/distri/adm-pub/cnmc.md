@@ -150,14 +150,14 @@ TI               | Tipus d'instalació de la CNMC                     |   -     
 Segons la llei 24/2013 del 26 de desembre i juntament amb el 3r article del
 Reial decret 1011/2009 del 19 de juny, amb la finalitat de tenir una base de
 dades actualitzada de consumidors i punts de subministrament la CNMC requereix
-de l'enviament d'una serie de fitxer per part de les distribuïdores.
+l'enviament d'una sèrie de fitxers per part de les distribuïdores.
 
 ### Tipus de fitxers CNMC SIPS
 
-**Consums:** Fitxer filtrat per codis **CUPS** amb els consums efectuats
+- **Consums:** Fitxer filtrat per codis **CUPS** amb els consums efectuats
 separats per periodes.
 
-**Punts de subministrament:** Fitxer filtrat per codis **CUPS** amb informació
+- **Punts de subministrament:** Fitxer filtrat per codis **CUPS** amb informació
 sobre els punts de subministrament donats d'alta.
 
 ### Assistent per a la generació de fitxers CNMC SIPS
@@ -170,12 +170,12 @@ Per localitzar l'assistent es pot fer a
 
 ![](../_static/cnmc/sips_1.png)
 
-Un cop obert, obrirà una finestra amb el botó **Exportar**. En premer el botó automaticament generarà el fitxer **ZIP** i canviara de finestre.
+L'assistent obra una finestra amb el botó **Exportar**. En prémer el botó automàticament generarà el fitxer **ZIP** i canviarà de finestra.
 
 ![](../_static/cnmc/sips_2.png)
 
 ![](../_static/cnmc/sips_3.png)
 
-Un cop a la darrera finestra, amb el botó **Abrir** accedira directament al contingut del **ZIP** generat.
+Un cop a la darrera finestra, amb el botó **Obrir** accedira directament al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
