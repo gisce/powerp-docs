@@ -243,3 +243,22 @@ correu:
 | Filtre actiu           | Permet utilitzar un filtre amb python per evitar la creació|
 |                        | de correus mitjançant la plantilla.                        |
 +------------------------+------------------------------------------------------------+
+
+En la segona secció, podem configurar la creació d'accions o assistents per
+l'enviament de correus electrònics utilitzant aquesta plantilla.
+
+Com es pot observar els camps de referència en aquesta secció són únicament
+de lectura. Això és per tal de generar una acció o assistent mitjançant únicament
+els botons que es proporcionen:
+
+- `Create action and value`: Afegeix un assistent mitjançant acció en el model assignat.
+- `Crear accés directe`: Afegeix un accés directe als correus/plantilles
+  que utilitzen el model seleccionat.
+
+Finalment existeix una secció per afegir informes generats per una acció del ERP.
+En aquesta secció es pot forçar aquests informes com a fitxers adjunts.
+
+Per un costat es pot afegir un únic informe relacionat amb el model de la plantilla
+i canviar-li o assignar-li un nom per defecte.
+Per altra banda es pot utilitzar la taula inferior per afegir tots els informes
+desitjats amb el nom per defecte que es vulgui i afegir-hi parámetres de cerca.
