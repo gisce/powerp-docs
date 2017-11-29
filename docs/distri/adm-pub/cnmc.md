@@ -147,9 +147,8 @@ TI               | Tipus d'instalació de la CNMC                     |   -     
 
 ## Generació de fitxer oficials CNMC SIPS
 
-Segons la [llei 24/2013](https://www.boe.es/boe/dias/2013/12/27/pdfs/BOE-A-2013-13645.pdf) del 26 de desembre i juntament amb el 3r article del
-[Reial decret
-1011/2009](https://www.boe.es/boe/dias/2009/06/20/pdfs/BOE-A-2009-10220.pdf) del 19 de juny, amb la finalitat de tenir una base de
+Segons la llei 24/2013 del 26 de desembre esmentada en el [BOE 2013/13645](https://www.boe.es/boe/dias/2013/12/27/pdfs/BOE-A-2013-13645.pdf) i juntament amb el 3r article del Reial decret 1011/2009
+esmentat en el [BOE 2009/10220](https://www.boe.es/boe/dias/2009/06/20/pdfs/BOE-A-2009-10220.pdf) del 19 de juny, amb la finalitat de tenir una base de
 dades actualitzada de consumidors i punts de subministrament la CNMC requereix
 l'enviament d'una sèrie de fitxers per part de les distribuïdores.
 
@@ -171,7 +170,7 @@ Per localitzar l'assistent es pot fer a
 
 ![](../_static/cnmc/sips_1.png)
 
-L'assistent obra una finestra amb el botó **Exportar**. En prémer el botó generarà el fitxer **ZIP**.
+L'assistent obra una finestra amb el botó **Exportar**. Prement el botó es genera el fitxer **ZIP**.
 
 ![](../_static/cnmc/sips_2.png)
 
