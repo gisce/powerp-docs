@@ -150,7 +150,7 @@ TI               | Tipus d'instalació de la CNMC                     |   -     
 Segons la llei 24/2013 del 26 de desembre i juntament amb el 3r article del
 Reial decret 1011/2009 del 19 de juny, amb la finalitat de tenir una base de
 dades actualitzada de consumidors i punts de subministrament la CNMC requereix
-de l'enviament d'una serie de fitxer per part de les distribuidores.
+de l'enviament d'una serie de fitxer per part de les distribuïdores.
 
 ### Tipus de fitxers CNMC SIPS
 
