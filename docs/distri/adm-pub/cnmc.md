@@ -143,3 +143,39 @@ Camp a recalcular| Descripció                                        | Longitud
 :----------------|:--------------------------------------------------|:-------:|:------
 CINI             | Codi d'identificació normalitzada d'instal·lacions|   8     | cadena
 TI               | Tipus d'instalació de la CNMC                     |   -     | cadena
+
+
+## Generació de fitxer oficials CNMC SIPS
+
+Segons la llei 24/2013 del 26 de desembre i juntament amb el 3r article del
+Reial decret 1011/2009 del 19 de juny, amb la finalitat de tenir una base de
+dades actualitzada de consumidors i punts de subministrament la CNMC requereix
+de l'enviament d'una serie de fitxer per part de les distribuidores.
+
+### Tipus de fitxers CNMC SIPS
+
+**Consums:** Fitxer filtrat per codis **CUPS** amb els consums efectuats
+separats per periodes.
+
+**Punts de subministrament:** Fitxer filtrat per codis **CUPS** amb informació
+sobre els punts de subministrament donats d'alta.
+
+### Assistent per a la generació de fitxers CNMC SIPS
+
+L'assistent facilita la generació automàtica d'un fitxer **ZIP** amb els dos
+fitxers especificats anteriorment.
+
+Per localitzar l'assistent es pot fer a
+**Administració pública > CNMC > SIPS > Exportación fichero CNMC SIPS**
+
+![](../_static/cnmc/sips_1.png)
+
+Un cop obert, obrirà una finestra amb el botó **Exportar**. En premer el botó automaticament generarà el fitxer **ZIP** i canviara de finestre.
+
+![](../_static/cnmc/sips_2.png)
+
+![](../_static/cnmc/sips_3.png)
+
+Un cop a la darrera finestra, amb el botó **Abrir** podrem accedir directament al contingut del **ZIP** generat.
+
+![](../_static/cnmc/sips_4.png)
