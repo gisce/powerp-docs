@@ -155,7 +155,7 @@ l'enviament d'una sèrie de fitxers per part de les distribuïdores.
 ### Tipus de fitxers CNMC SIPS
 
 - **Consums:** Fitxer filtrat per codis **CUPS** amb els consums efectuats
-separats per periodes.
+separats per períodes.
 
 - **Punts de subministrament:** Fitxer filtrat per codis **CUPS** amb informació
 sobre els punts de subministrament donats d'alta.
@@ -170,12 +170,12 @@ Per localitzar l'assistent es pot fer a
 
 ![](../_static/cnmc/sips_1.png)
 
-L'assistent obra una finestra amb el botó **Exportar**. Prement el botó es genera el fitxer **ZIP**.
+L'assistent obre una finestra amb el botó **Exportar**. Prement el botó es genera el fitxer **ZIP**.
 
 ![](../_static/cnmc/sips_2.png)
 
 ![](../_static/cnmc/sips_3.png)
 
-Un cop a la darrera finestra, amb el botó **Obrir** accedira directament al contingut del **ZIP** generat.
+Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix directament al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
