@@ -162,7 +162,7 @@ sobre els punts de subministrament donats d'alta.
 
 ### Assistent per a la generació de fitxers CNMC SIPS
 
-L'assistent facilita la generació automàtica d'un fitxer **ZIP** amb els dos
+L'assistent facilita la generació d'un fitxer **ZIP** amb els dos
 fitxers especificats anteriorment.
 
 Per localitzar l'assistent es pot fer a
@@ -176,6 +176,6 @@ L'assistent obre una finestra amb el botó **Exportar**. Prement el botó es gen
 
 ![](../_static/cnmc/sips_3.png)
 
-Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix directament al contingut del **ZIP** generat.
+Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
