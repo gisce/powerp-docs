@@ -5,20 +5,20 @@
 Podem generar casos ATR de forma automatica si utilitzem un wizard. Per tal d'utilitzar
 aquest wizard hem d'anar a *Gestió de Pòlisses>Pòlisses* (Figura 1).
 
-![Figura 1](_static/switching/menu.png)
+![Figura 1](_static/atr/menu.png)
 
 Allà haurem de seleccionar una pòlissa i premer el botò d'accions, on haurem de
 seleccionar *Generar cas Gestió ATR* (Figura 2).
 
-![Figura 2](_static/switching/selection.png)
+![Figura 2](_static/atr/selection.png)
 
 Altrament podem entrar a la polissa i també premer el botò que diu *Generar cas Gestió ATR* (Figura 3).
 
-![Figura 3](_static/switching/actions.png)
+![Figura 3](_static/atr/actions.png)
 
 Això ens obrirà la següent finestra amb el wizard:
 
-![Figura 4](_static/switching/wizard_general.png)
+![Figura 4](_static/atr/wizard_general.png)
 
 Des d'aqui podrem crear diferents casos segons l'estat de la polissa.
 Aquestses són les condicions que haurem de complir per crear un cas:
@@ -36,25 +36,25 @@ Per tal de crear el cas que volem simplement hem de premer el botò corresponent
 Si seleccionem que volem crear un M1 o un C2 la pantalla del wizard canviarà i podrem
 entrar les dades necessaries per crear-lo.
 
-![Figura 5](_static/switching/wizard_modcon.png)
+![Figura 5](_static/atr/wizard_modcon.png)
 
 Podem crear un canvi de tarifa o potència, un canvi de titular o un canvi de totes
 dues a la vegada. Segons el que seleccionem haurem d'entrar unes dades o altres.
 
-![Figura 6](_static/switching/wizard_modcon_changes.png)
+![Figura 6](_static/atr/wizard_modcon_changes.png)
 
 Les primeres dades que hem d'entrar són sobre qui serà el contacte per la pòlissa.
 Si premem la lupa i seleccionem una altre persona ens hauria d'omplir correctament la
 resta de camps, però sempre es preferible comprovar-ho.
 
-![Figura 7](_static/switching/wizard_modcon_contact.png)
+![Figura 7](_static/atr/wizard_modcon_contact.png)
 
 Tot seguit tenim l'opció de canviar de tarifa comercialitzadora. Per defecte no es
 canviarà i es deixarà la que té assignada la polissa però si no és possible s'haurà
 de seleccionar quina tarifa volem aplicar. Si només existeix una tarifa comercialitzadora
 per la tarifa ATR seleccionada aquesta es triarà automaticament.
 
-![Figura 8](_static/switching/wizard_modcon_tariff.png)
+![Figura 8](_static/atr/wizard_modcon_tariff.png)
 
 Llavors, si hem seleccionat un canvi de tarifa o potència, ens apareixarà la part del
 formulari per triar la tarifa que vol el client, si vol anar per ICP o Maxímetre i
@@ -66,7 +66,7 @@ Es permeten crear casos amb valors de potència no normalitzats però si que s'h
 complir les dues altres condicions. També destacar que un canvi en la tarifa ATR seleccionada
 ens pot fer canviar la tarifa comercialitzadora o borrar la que teniem assignada.
 
-![Figura 9](_static/switching/wizard_modcon_powers.png)
+![Figura 9](_static/atr/wizard_modcon_powers.png)
 
 Si hem seleccionat un canvi de propietari també ens apareixarà el formulari per fer un
 canvi de titular. Aqui podem seleccionar el tipus de canvi que volem fer, un document
@@ -76,7 +76,7 @@ l'altre sentit, de manera que si triem un titular s'omplirà automaticament el d
 d'identitat. A més, sempre que no haguem canviat el contacte aquest s'actualitzarà
 automàticament al assignar un titular.
 
-![Figura 10](_static/switching/wizard_modcon_owner.png)
+![Figura 10](_static/atr/wizard_modcon_owner.png)
 
 Finalment tenim un quadre de text per afegir comentaris, que poden tenir fins a un
 màxim de 120 caracters.
@@ -89,4 +89,4 @@ el cas correctament o no i en cas que hi hagui hagut algún error ens indicarà 
 raò per la qual ha fallat. A més, ens permetrà obrir els casos creats si premem el
 botò de **Obrir casos generats**.
 
-![Figura 11](_static/switching/wizard_modcon_fin.png)
+![Figura 11](_static/atr/wizard_modcon_fin.png)
