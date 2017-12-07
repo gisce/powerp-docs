@@ -100,7 +100,7 @@ la connexió i obtenció de correus per un compte.
     Per la recepció de correus per la companyia, cal inicialitzar el compte
     com un [compte per enviament de la companyia](#compte-per-lenviament-de-correu-de-la-companyia).
 
-De la mateixa manera que amb la configuració de comtpes de sortida. Una vegada
+De la mateixa manera que amb la configuració de comptes de sortida. Una vegada
 introduïdes les dades necessaries, es pot comprovar la connexió mitjançant el
 botó `comprovar la connexió d'entrada`.
 
