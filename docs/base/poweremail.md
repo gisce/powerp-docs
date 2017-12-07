@@ -57,8 +57,8 @@ Es disposa dels camps:
 | Compte de correu de la companyia | Si es desitja configurar com a compte de la companyia                      |
 | Format del correu electrònic     | Format a utilitzar per construir el "body" del correu                      |
 
-Una vegada entrats els valors, es pot comprobar la connexió amb el servidor
-_smtp_ amb el botó `comprobar connexió de sortida`.
+Una vegada entrats els valors, es pot comprovar la connexió amb el servidor
+_smtp_ amb el botó `comprovar connexió de sortida`.
 
 ![](_static/poweremail/pwmail_account_sortida_check.png)
 
@@ -101,8 +101,8 @@ la connexió i obtenció de correus per un compte.
     com un [compte per enviament de la companyia](#compte-per-lenviament-de-correu-de-la-companyia).
 
 De la mateixa manera que amb la configuració de comtpes de sortida. Una vegada
-introduïdes les dades necessaries, es pot comprobar la connexió mitjançant el
-botó `Comprobar la connexió d'entrada`.
+introduïdes les dades necessaries, es pot comprovar la connexió mitjançant el
+botó `comprovar la connexió d'entrada`.
 
 ![](_static/poweremail/pwmail_account_entrada_check.png)
 
