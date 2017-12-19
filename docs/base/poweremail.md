@@ -8,13 +8,13 @@ Aquest mòdul no està integrat en el codi del ERP, però està disponible a
 Aquest mòdul no està integrat en el codi de GISCE-ERP, pel que cal descarregar-lo
 com un repositori apart. Des de GISCE-TI tenim un FORK a GitHub on mantenim la
 branca `v5_backport`, ja que aquest mòdul està pensat per Odoo i nosaltres
-utilitzem la versió 5 de OpenERP.
+utilitzem la versió 5 d'OpenERP.
 
 Com tots els mòduls externs, cal realitzar els links adients a la carpeta
 d'OpenERP `server/bin/addons`.
 
 Com que s'ha canviat el codi, caldrà reiniciar el servidor (o iniciar-lo en un
-altre port) i procedir a la instal·lació com qualsevol mòdul de OpenERP.
+altre port) i procedir a la instal·lació com qualsevol mòdul d'OpenERP.
 
 Una vegada instal·lat el mòdul, ja disposarem de diferents vistes noves en un
 nou menú:
@@ -100,22 +100,21 @@ la connexió i obtenció de correus per un compte.
     Per la recepció de correus per la companyia, cal inicialitzar el compte
     com un [compte per enviament de la companyia](#compte-per-lenviament-de-correu-de-la-companyia).
 
-De la mateixa manera que amb la configuració de comptes de sortida. Una vegada
+De la mateixa manera que amb la configuració de comptes de sortida, una vegada
 introduïdes les dades necessaries, es pot comprovar la connexió mitjançant el
 botó `comprovar la connexió d'entrada`.
 
 ![](_static/poweremail/pwmail_account_entrada_check.png)
 
-### Aprobar un compte PowerEmail
+### Aprovar un compte PowerEmail
 
-Després de la
-[creació d'un compte PowerEmail](#creacio-dun-compte-poweremail)
+Després de la [creació d'un compte PowerEmail](#creacio-dun-compte-poweremail)
 o de
-la reactivació d'un compte PowerEmail ,
-es pot aprobar un compte PowerEmail.
+[la reactivació d'un compte PowerEmail](#reactivacio-dun-compte-poweremail),
+es pot aprovar un compte PowerEmail.
 
-Si tots els camps estan plens, es pot aprobar el compte utilitzant el botó
-`Aprobar el compte`.
+Si tots els camps estan plens, es pot aprovar el compte utilitzant el botó
+`Aprovar el compte`.
 
 ![](_static/poweremail/pwmail_account_approve.png)
 
@@ -130,23 +129,23 @@ d'un `poweremail_mailbox`.
 ### Suspensió d'un compte de PowerEmail
 
 Si es desitja deixar d'enviar o rebre correus per un
-[compte PowerEmail aprobat](#aprobar-un-compte-poweremail), podem suspendre el
+[compte PowerEmail aprobat](#aprovar-un-compte-poweremail), podem suspendre el
 compte per a que quedi en estat `suspesa`.
 
 ![](_static/poweremail/pwmail_account_suspend.png)
 
 ### Reactivació d'un compte PowerEmail
 
-Quan un compte està suspés, és pot reactivar mitjançant el botó `solicitar
-reactivació` fent que passi al estat `esborrany` tornant a habilitar el botó
-`Aprobar el compte`.
+Quan un compte està suspès, es pot reactivar mitjançant el botó `solicitar
+reactivació` fent que passi a l'estat `esborrany` tornant a habilitar el botó
+`Aprovar el compte`.
 
 ![](_static/poweremail/pwmail_account_reactivate.png)
 
 ## Gestió de Bústies de correu
 
 Segons la configuració utilitzada en la [creació d'un compte PowerEmail](#creacio-dun-compte-poweremail),
-Els correus enviats o rebuts es trobaran en el menú de bústies "`Personal`", quan
+els correus enviats o rebuts es trobaran en el menú de bústies "`Personal`", quan
 el compte està assignat al nostre usuari, o "`Companyia`", quan el nostre usuari
 està assignat a la mateixa companyia que el compte de correu (per l'usuari
 que té assignat) i el compte és un "`Compte de la companyia`".
@@ -157,7 +156,7 @@ Les bústies funcionen de forma intuïtiva:
 
 | Tipus de Bústia | Descripció                                                   |
 |:---------------:|:-------------------------------------------------------------|
-| Converses       | (Només personal) Conté els correus relacionats pel assumpte  |
+| Converses       | (Només personal) Conté els correus relacionats per l'assumpte|
 | Entrada         | Correus rebuts                                               |
 | Esborrany       | Correus que escriu un usuari, però no es volen enviar encara |
 | Enviats         | Correus ja enviats                                           |
@@ -167,7 +166,7 @@ Les bústies funcionen de forma intuïtiva:
 
 !!! Note "Nota"
     Les bústies no distingeixen entre els diversos comptes configurats per
-    l'usuari i companyia del usuari.
+    l'usuari i companyia de l'usuari.
 
 ### Correus PowerEmail
 
@@ -182,9 +181,9 @@ En aquesta pàgina únicament cal destacar els següents camps:
 
 |            Camp            |  Descripció                                                        |
 |:--------------------------:|:-------------------------------------------------------------------|
-| Data de recepció/Enviament | Data en que s'ha rebut o enviat el correu en el servidor de correu |
-|          Rebut el          | Data en que el ERP va importar el correu electrònic                |
-|         Prioritat          | Paràmetre utilitzat al ERP per a filtres en les bústies            |
+| Data de recepció/Enviament | Data en què s'ha rebut o enviat el correu en el servidor de correu |
+|          Rebut el          | Data en què el ERP va importar el correu electrònic                |
+|         Prioritat          | Paràmetre utilitzat a l'ERP per a filtres en les bústies            |
 
 També cal destacar el botó `Enviar Correu` que permet el reenviament del correu.
 
@@ -193,7 +192,7 @@ enviat o rebut en el correu electrònic.
 
 En la pestanya _Raw Content_ es troba tot el correu electrònic en format de text pla.
 
-En la pestanya _Avançat_ hi trobem les configuracions relacionades amb el compte
+En la pestanya _Avançat_ s'hi troben les configuracions relacionades amb el compte
 de PowerEmail i amb les tasques realitzades amb aquest correu en l'historial
 (vegades enviat, rebut o mogut de bústia).
 
@@ -201,7 +200,7 @@ de PowerEmail i amb les tasques realitzades amb aquest correu en l'historial
 
 !!! Note "Nota"
     Aquesta pestanya conté dades relacionades amb el tipus de missatge a enviar,
-    el compte a utilitzar i referéncies del servidor de correu.
+    el compte a utilitzar i referències del servidor de correu.
     Per aquest motiu, tot i que es puguin editar els camps, no és aconsellable
     canviar-los.
 
@@ -228,7 +227,7 @@ Plantilles de PowerEmail**".
 
 ![](_static/poweremail/pwmail_template_new.png)
 
-Totes les plantilles tenen les mateixes configuracions essencials, excloguent
+Totes les plantilles tenen les mateixes configuracions essencials, excloent
 les típiques configuracions d'un correu:
 
 +------------------------+------------------------------------------------------------+
@@ -243,7 +242,7 @@ les típiques configuracions d'un correu:
 |                        | dades de la plantilla                                      |
 +------------------------+------------------------------------------------------------+
 
-Cal emplenar aquests camps per utilitzar les plantilles. Juntament amb els camps
+Cal emplenar aquests camps per utilitzar les plantilles, juntament amb els camps
 referents al correu a enviar, com per a qui seria el correu, l'assumpte o el cos
 del missatge.
 
@@ -254,7 +253,7 @@ del missatge.
     ![](_static/poweremail/pwmail_template_new_expression.png)
 
 Tots els camps referents a la generació del correu (adreces i cos del missatge)
-són analitzats per si són del llenguatge de la plantilla, és a dir, s'hi pot
+són analitzats per si són del llenguatge de la plantilla, és a dir, s'hi poden
 utilitzar les expressions generades en l'assistent.
 
 La pestanya de seguretat, permet definir quins usuaris poden utilitzar aquesta
@@ -308,9 +307,9 @@ els botons que es proporcionen:
   que utilitzen el model seleccionat.
 
 Finalment existeix una secció per afegir informes generats per una acció del ERP.
-En aquesta secció es pot forçar aquests informes com a fitxers adjunts.
+En aquesta secció es poden forçar aquests informes com a fitxers adjunts.
 
 Per un costat es pot afegir un únic informe relacionat amb el model de la plantilla
 i canviar-li o assignar-li un nom per defecte.
 Per altra banda es pot utilitzar la taula inferior per afegir tots els informes
-desitjats amb el nom per defecte que es vulgui i afegir-hi parámetres de cerca.
+desitjats amb el nom per defecte que es vulgui i afegir-hi paràmetres de cerca.
