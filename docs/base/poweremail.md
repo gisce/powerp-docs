@@ -1,6 +1,6 @@
 # Documentació del mòdul de PowerEmail
 
-Aquest mòdul no està integrat en el codi del ERP, però està disponible a
+Aquest mòdul no està integrat en el codi de l'ERP, però està disponible a
 [GitHub/gisce/PowerEmail](https://github.com/gisce/poweremail).
 
 ## Instal·lació
@@ -306,7 +306,7 @@ els botons que es proporcionen:
 - `Crear accés directe`: Afegeix un accés directe als correus/plantilles
   que utilitzen el model seleccionat.
 
-Finalment existeix una secció per afegir informes generats per una acció del ERP.
+Finalment existeix una secció per afegir informes generats per una acció de l'ERP.
 En aquesta secció es poden forçar aquests informes com a fitxers adjunts.
 
 Per un costat es pot afegir un únic informe relacionat amb el model de la plantilla
