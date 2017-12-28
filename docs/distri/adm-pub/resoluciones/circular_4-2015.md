@@ -286,6 +286,11 @@ Per les **línies de BT** s'inclouràn les que compleixin el següent:
 
 Les dades referents a **l'alta tensió** estàn formades pels següents camps:
 
+!!! Info "Nota"
+    Degut a que no hi poden haver nodes iguals amb tensions diferents per tal 
+    de saber la tensió d'un node fa falta que tots els trams AT adjacents a un 
+    transformador reductor tinguin posada la tensió del tram. 
+
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
 Tram                             | Codi del tram
