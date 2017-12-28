@@ -47,7 +47,7 @@ pages:
         - Operaciones: base/ges-atr/operacions.md
         - Notificaciones: base/ges-atr/notificacions.md
         - Automatitzación de procesos: base/ges-atr/automatitzacio.md
-        - Apéndice: apendix.md
+        - Apéndice: base/ges-atr/apendix.md
   - Distribuidora:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
