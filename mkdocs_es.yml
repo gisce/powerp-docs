@@ -33,7 +33,6 @@ pages:
   - Base:
     - Clientes y Empresas: base/partners.md
     - PowerEmail: base/poweremail.md
-    - Gestión ATR: base/atr.md
     - Atención al Cliente: base/atc.md
     - Gestión de pólizas: base/polizas.md
     - Gestión de contadores: base/contadores.md
@@ -41,6 +40,14 @@ pages:
     - Revisiones internas: base/revisiones.md
     - Administración Pública:
         - AEAT: base/adm-pub/aeat.md
+    - Gestión ATR:
+        - Introducción y conceptos: base/ges-atr/atr.md
+        - Funcionamiento general: base/ges-atr/funcionament.md
+        - Generación y envío de XMLs: base/ges-atr/gestioxml.md
+        - Operaciones: base/ges-atr/operacions.md
+        - Notificaciones: base/ges-atr/notificacions.md
+        - Automatitzación de procesos: base/ges-atr/automatitzacio.md
+        - Apéndice: base/ges-atr/apendix.md
   - Distribuidora:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
