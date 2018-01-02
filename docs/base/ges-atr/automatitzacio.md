@@ -1,4 +1,4 @@
-## Automatització
+# Automatització
 
 La gestió ATR, a més d'intercanviar informació entre diferents agents, implica
 modificacions el l'estat de les pólisses, els clients , etc... en els diferents
@@ -19,7 +19,7 @@ Aquesta automatització consisteix bàsicament en dos processos diferenciats:
    `Generar cas Gestió ATR` ( [wizard genenrar cas ATR](#wizard-generar-cas-atr))
 
 
-### Activació automàtica de pas (Activar contracte o canvis)
+## Activació automàtica de pas (Activar contracte o canvis)
 
 La informació d'un pas de gestió ATR ens permet en alguns casos aplicar els
 canvis al l'ERP sense la necessitat de fer els passos mecànics manualment.
@@ -55,33 +55,33 @@ a un cas de gestió ATR
 | **W1**  |                |        |        |        |         |                   |
 +---------+----------------+--------+--------+--------+---------+-------------------+
 
-#### (ac) Activació de contracte (A3,C1,C2) a Comercialitzadora
+### (ac) Activació de contracte (A3,C1,C2) a Comercialitzadora
 
 !!! TODO
     Explicació
 
-#### (bc) Baixa de contracte (B1,C1,C2) a Comercialitzadora
+### (bc) Baixa de contracte (B1,C1,C2) a Comercialitzadora
 
 !!! TODO
     Explicació
 
-#### (dc) Activació (D1) a Comercialitzadora
+### (dc) Activació (D1) a Comercialitzadora
 
 !!! TODO
     Explicació
 
-#### (mc) Modificació de contracte (M1) a Comercialitzadora
+### (mc) Modificació de contracte (M1) a Comercialitzadora
 
 !!! TODO
     Explicació
 
-#### Nou contracte (A3) a Distribuidora
+### Nou contracte (A3) a Distribuidora
 
 !!! TODO
     Explicació
 
 
-### Creació de Procés automàtic des de pòlissa (Generar cas Gestió ATR)
+## Creació de Procés automàtic des de pòlissa (Generar cas Gestió ATR)
 
 La creació d'un cas des d'una pòlissa permet generar automàticament el cas amb
 el pas normalment **01** des d'una pòlissa agafant la informació que ja conté.
@@ -96,7 +96,7 @@ quin procés volem crear. En funció de l'estat de la pólissa ens permetrà
 escollir uns processos i altres no.
 
 
-###### Wizard Generar Cas ATR
+##### Wizard Generar Cas ATR
 ![](../_static/atr/WizardGenerarATR.png)
 
    Asistent generació Casos a partir de pólisses
@@ -124,7 +124,7 @@ pólissa.
     casos.
 
 
-#### Creació Cas A3/C1/C2
+### Creació Cas A3/C1/C2
 
 Un cas habitual és la entrada automatitzada de peticions de canvi de
 comercialitzadora, per exemple via web. També es pot donar el cas que
@@ -154,31 +154,31 @@ El seu funcionament és el següent:
   realitza a [apèndix B](atr.md#apendix-b-traduccio-de-codi-ree)
 
 
-#### Creació Cas B1 (Baixa)
+### Creació Cas B1 (Baixa)
 
 !!! TODO
     Explicació pas addicional (tipus canvi)
 
 
-#### Creació Cas D1 (Notificació canvi a TG)
+### Creació Cas D1 (Notificació canvi a TG)
 
 !!! TODO
     Explicació
 
 
-#### Creació Cas M1 (Canvis contracte)
+### Creació Cas M1 (Canvis contracte)
 
 !!! TODO
     Explicació pas addicional (tipus canvi i dades)
 
 
-#### Creació Cas W1 (Autolectures)
+### Creació Cas W1 (Autolectures)
 
 !!! TODO
     Explicació
 
 
-#### Validació nom titular
+### Validació nom titular
 
 Els casos de Gestió ATR necessiten els noms i cognoms separats. L'ERP
 emmagatzema aquesta informació en un sol camp i per tant s'hauran de
@@ -197,7 +197,7 @@ Si el client és una empresa, només es comprova el nom i que sigui de menys
 de 50 caracters
 
 
-#### Segons dades Formulari: Generació casos C1, C2 i A3
+### Segons dades Formulari: Generació casos C1, C2 i A3
 
 Per automatitzar la creació de C1 , C2 i A3 quan una pòlissa en esborrany es
 genera des d'un sistema extern, p.e. Web, es poden utilitzar les observacions
@@ -214,19 +214,19 @@ conté s'actúa de la següent forma:
 | ``proces: A3``       | **A3**                                                         |
 
 
-### Altres automatitzacions
+## Altres automatitzacions
 
 També s'ha automatitzat la creació d'alguns processos i passos a partir
 d'altres procediments
 
 
-#### B1 i devolucions
+### B1 i devolucions
 
 S'ha integrat la generació de casos i processo B1 amb les devolucions i els
 talls.
 
 
-#### Assistent de Creació de Passos ATR
+### Assistent de Creació de Passos ATR
 
 
 Aquest assistent permet la creació de passos dels casos ATR, tant per un cas com

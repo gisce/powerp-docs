@@ -1,7 +1,7 @@
-## Generació i enviament de XML's
+# Generació i enviament de XML's
 
 
-### Generació del fitxer
+## Generació del fitxer
 
 El fitxers XML es generen a partir de la informació del pas actual, es a dir,
 el pas en el qual està el cas.
@@ -11,7 +11,7 @@ el camp **Encoding XML switching** de la pestanya **Ventas y Compras** de la
 fitxa de l'empresa corresponent.
 
 
-###### Camp per modificar la codificació XML a la fitxa d'empresa
+##### Camp per modificar la codificació XML a la fitxa d'empresa
 ![](../_static/atr/EncodingXML.png)
 
 Per intercanviar XML's tenim dues opcions:
@@ -21,7 +21,7 @@ Per intercanviar XML's tenim dues opcions:
 * **Enviar XML**: En via el XML per mail al destinatari
 
 
-#### Exportar XML
+### Exportar XML
 
 Es genera el fitxer XML d'un pas per poder-lo emmagatzemar en l'ordinador de
 l'usuari i enviar-lo al receptor per altres vies. Si s'utilitza aquesta opció,
@@ -30,7 +30,7 @@ automàticament si no s'utilitzen les utilitats d'historització del CRM
 (``Pestanya General``)
 
 
-###### Formulari per exportar un fitxer XML
+##### Formulari per exportar un fitxer XML
 ![](../_static/atr/FormulariExportarXML.png)
 
 * **Passos**: Podrem escollir el pas del qual volem generar l'XML
@@ -57,7 +57,7 @@ El nom del fitxer generat tindrà el format
     d'empresa segons es veu a la imatge següent
 
 
-###### Camp *Nom comercial* a fitxa de l'empresa
+##### Camp *Nom comercial* a fitxa de l'empresa
 ![](../_static/atr/NomComercial.png)
 
 Es pot exportar més d'un cas al mateix temps i es generarà un fitxer ZIP amb
@@ -78,10 +78,10 @@ El nom dels fitxers ZIP de cada empresa seguirà el format
   començat a generar el fitxer ZIP contenidor.
 
 
-#### Enviar XML
+### Enviar XML
 
 
-###### Formulari per enviar el XML del pas per mail des del Cas
+##### Formulari per enviar el XML del pas per mail des del Cas
 ![](../_static/atr/FormulariEmailXML.png)
 
 Es pot utilitzar el PowerEmail per enviar els XML's i historitzar tot

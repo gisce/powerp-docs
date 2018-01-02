@@ -1,7 +1,7 @@
-## Operació
+# Operació
 
 
-### Creació d'un cas com a originador
+## Creació d'un cas com a originador
 
 ![](../_static/atr/NouCas.png)
 
@@ -13,7 +13,7 @@ En alguns casos haurem de partir d'una pólissa ja existent. Per exemple, en el
 cas d'un C1, necessitem que el contracte ja estigui en esborrany.
 
 
-#### Creació del cas
+### Creació del cas
 
 Des del llistat de tots els casos, premem sobre el botó **Nou** i se'ns obrirà
 el formulari del cas. Haurem d'anar omplint les dades de les diferents
@@ -46,7 +46,7 @@ A la pestanya ``Switching``:
 Guardem el cas amb el botó **Guardar** i ens quedarà en estat ``Esborrany``
 
 
-#### Obrir Cas
+### Obrir Cas
 
 Per poder treballar amb el cas cal primer que l'obrim. per fer-ho podem prèmer
 al botó **Obrir** de la pestanya ``General``
@@ -64,7 +64,7 @@ quan guardem el cas
 Tanquem el formulari i Guardem el cas amb el botó **Guardar**
 
 
-#### Informació del cas
+### Informació del cas
 
 Tota la informació relativa a la sol·licitud es podrà editar a la informació
 del Pas.
@@ -81,7 +81,7 @@ modificar els paràmetres del pas, etc... Aquesta informació serà la que
 s'inclourà dins de l'XML.
 
 
-#### Generació Pas 1
+### Generació Pas 1
 
 Per generar l'XML podem utilitzar el formulari d'exportació amb el botó
 **Exportar XML**. Podrem descarregar el fitxer XML al nostre ordinador per
@@ -105,7 +105,7 @@ Rebem una petició a partir d'un XML enviat per un altre agent en un procés on
 nosaltres hi som implicats.
 
 
-#### Creació del cas
+### Creació del cas
 
 Premem sobre l'opció ``Importar XML`` del menú de Switching i carreguem el
 fitxer. Si tot és correcte ens apareixerà un diàleg explicatiu amb el que ha

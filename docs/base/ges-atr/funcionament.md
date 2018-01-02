@@ -1,4 +1,4 @@
-## Funcionament General
+# Funcionament General
 
 
 La funció actual del mòdul de switching és la gestió i enviament dels fitxers
@@ -12,13 +12,13 @@ passos necessaris del procés i els fitxers XML associats.
 les accions que s'han de realitzar per portar-lo a terme.
 
 
-### Menú Switching
+## Menú Switching
 
 A GISCE-ERP hi ha definit el Menú **Switching** que dóna accés als casos
 implicats en processos de switching i a la importació de fitxers XML.
 
 
-###### Opcions del menú Switching
+##### Opcions del menú Switching
 ![](../_static/atr/MenuSwitching.png)
 
 * **Tots els casos**: Llistat de qualsevol dels casos de la secció Switching.
@@ -39,17 +39,17 @@ implicats en processos de switching i a la importació de fitxers XML.
   fitxers XML i generar el cas o afegir el pas al cas que correspongui.
 
 
-###### Assitent per accedir al cas des d'un pas
+##### Assitent per accedir al cas des d'un pas
 ![](../_static/atr/WizardProcessarPas.png)
 
 
-### Formulari del Cas
+## Formulari del Cas
 
 
 Quan entrem en un cas, tenim la informació principal i diferents pestanyes:
 
 
-#### Informació principal
+### Informació principal
 
 * **Descripció**: Aquest text sortirà al llistat de Casos i ens ha de permetre
   trobar el cas
@@ -63,7 +63,7 @@ Quan entrem en un cas, tenim la informació principal i diferents pestanyes:
   ``Normal``
 
 
-#### Pestanya General (CRM)
+### Pestanya General (CRM)
 
 
 Aquesta pestanya és la genèrica de qualsevol cas del CRM de GISCE-ERP. Podem
@@ -88,7 +88,7 @@ Mitjançant els botons, podem gestionar els diferents estats del cas:
     estat que tingui gaire sentit.
 
 
-#### Pestanya Contactes
+### Pestanya Contactes
 
 ![](../_static/atr/PestanyaContactes.png)
 
@@ -96,7 +96,7 @@ En aquesta pestanya tenim les dades dels agents implicats en un procés.
 Depenent de l'agent i del procés es mostraran mes o menys camps.
 
 
-##### Destinatari
+#### Destinatari
 
 Empresa amb la qual es mantindrà la comunicació. En el cas de les
 comercialitzadores és la distribuidora del CUPS afectat pel procés i en el cas
@@ -112,14 +112,14 @@ Amb el botó **Send Reminder** podem enviar un mail al destinatari per
 validar-ne el funcionament
 
 
-##### Comercialitzadora Sortint
+#### Comercialitzadora Sortint
 
 En alguns casos, és necessari intercanviar informació amb altres Agents com la
 comercialitzadora sortint. En el cas de la distribuidora, caldrà seleccionar la
 empresa comercialitzadora de la pólissa subjecte del procés.
 
 
-#### Pestanya Etapes
+### Pestanya Etapes
 
 ![](../_static/atr/PestanyaEtapes.png)
 
@@ -127,7 +127,7 @@ Aquesta pestanya és merament informativa i ens dóna informació de quin o quin
  serien els possibles següents passos en el procés.
 
 
-#### Pestanya Switching
+### Pestanya Switching
 
 ![](../_static/atr/PestanyaSwitching.png)
 
@@ -135,7 +135,7 @@ Aquesta pestanya ens permet gestionar la informació del procés i els diferents
 passos que es van generant.
 
 
-##### Dades generals
+#### Dades generals
 
 * **Procés**: (Obligatori) Procés afectat per aquest cas, pe. C1, C2 o M1
 * **Pas**: Pas en el qual es troba el procés des del nostre punt de vista.
@@ -157,7 +157,7 @@ passos que es van generant.
   valor que el camp ``Pólissa``.
 
 
-##### Detall de passos
+#### Detall de passos
 
 Llistat amb tots els passos que s'han generat. Es poden crear, esborrar i
 obrir. Per generar qualsevol pas, el cas ha d'estar obert.
@@ -165,7 +165,7 @@ obrir. Per generar qualsevol pas, el cas ha d'estar obert.
 Quan obres o crees un Pas, accedeixes al formulari del Pas.
 
 
-###### Formulari de nou pas
+##### Formulari de nou pas
 ![](../_static/atr/FormulariNouPas.png)
 
 * **Cas**: S'omple automàticament amb les dades la descripció del Procés
@@ -189,14 +189,14 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
     l'[Assistent de Creació de Passos ATR](#assistent-de-creacio-de-passos-atr).
 
 
-###### Exemple de dades d'un pas. (C1) 01
+##### Exemple de dades d'un pas. (C1) 01
 ![](../_static/atr/FormulariDades.png)
 
 Cada parell Procés/Pas té el seu formulari de dades específic en funció de les
 dades que s'han d'omplir en el XML corresponent.
 
 
-###### Exemple de dades d'un pas. (M1) 01
+##### Exemple de dades d'un pas. (M1) 01
 ![](../_static/atr/FormulariDadesM101.png)
 
 
@@ -220,7 +220,7 @@ qualsevol procés.
   pendents de validar, es llisten de color **vermell**.
 
 
-### Pestanya History
+## Pestanya History
 
 Llistat amb totes les accions que s'han realitzat, com Obrir, Tancar,
 Historitzar, etc...
@@ -228,7 +228,7 @@ Historitzar, etc...
 ![](../_static/atr/PestanyaHistory.png)
 
 
-### Pestanya Communication
+## Pestanya Communication
 
 Llistat amb tots els mails enviats des del cas mitjançant el botó **Enviar XML**
 
@@ -237,5 +237,5 @@ missatge enviat com destinatari, compte utilitzat, text, adjunts, etc... Fins i
 tot, es pot tornar a enviar el correu mitjançant el botó **Enviar Correu**
 
 
-###### Formulari Power Email d'un fitxer XML enviar des del cas corresponent
+##### Formulari Power Email d'un fitxer XML enviar des del cas corresponent
 ![](../_static/atr/FormulariPowerEmail.png)

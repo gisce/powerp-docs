@@ -1,4 +1,4 @@
-## Notificacions a client Final
+# Notificacions a client Final
 
 Durant un procés de switching es dónen diverses situacions on és recomanable
 una notificació al client final per part de la Comercialitzadora entrant.
@@ -13,7 +13,7 @@ S'han definit tres notificacions:
  * [Notificació de cas ATR](#notificacions-a-clients-de-casos-atr)
 
 
-### Acceptació de procés
+## Acceptació de procés
 
 Quan la comercialitzadora entrant rep un XML d'acceptació (C1-02, C2-02 o
 M1-02) es pot notificar al client que ja s'ha acceptat la seva petició de canvi
@@ -22,11 +22,11 @@ l'acció **Switching: Notificació acceptació procés Mail Form** i omplir el
 compte de correu des del qual es vol enviar el correu a la fitxa PowerEmail.
 
 
-###### Formulari notificació acceptació canvi
+##### Formulari notificació acceptació canvi
 ![](../_static/atr/PowerEmailAcceptacio.png)
 
 
-### Activació del procés de canvi de comercialitzadora
+## Activació del procés de canvi de comercialitzadora
 
 Quan la comercialitzadora rep un XML d'activació de canvi de comercialitzadora
 (C1-05, C2-05 o C2-07) es pot notificar al client que el procés de canvi s'ha
@@ -36,11 +36,11 @@ Comercialitzador)** i omplir el compte de correu des del qual es vol enviar el
 correu a la fitxa PowerEmail.
 
 
-###### Formulari notificació activació canvi de comercialitzadora
+##### Formulari notificació activació canvi de comercialitzadora
 
 ![](../_static/atr/PowerEmailActivacio.png)
 
-### Notificacions a clients de casos ATR
+## Notificacions a clients de casos ATR
 
 Hem desenvolupat un sistema que permet notificar als clients dels casos ATR.
 
@@ -58,7 +58,7 @@ amb [l'assistent per notificar casos ATR](#assistent-per-notificar-casos-atr)
     s'utilitza l'assistent o si s'utilitza la funció "notifica_a_client".
     Aquesta funció es crida quan s'utilitza el botó "aplicar canvis".
 
-#### Configuració
+### Configuració
 
 Per a que funcioni correctament l'assistent, cal configurar les següents
 variables de configuració en "**Menú OpenERP > Administració > Configuració >
@@ -79,7 +79,7 @@ Propietats**":
 | sw_mail_user_notification_on_activation |  `all` // `['A3-01', 'A3-02']` |
 | sw_email_address_user_notification      |  `atr@company.com`             |
 
-#### Plantilles PowerEmail
+### Plantilles PowerEmail
 
 Aquestes notificacions utilitzen plantilles PowerEmail inicialitzades en el
 mòdul de Gestió ATR. Aquestes plantilles són bastant simples però es poden
@@ -92,7 +92,7 @@ Per exemple: `ATR A301:`.
 
 S'ha de tenir en compte que el `object` que s'utilitza és el cas ATR.
 
-#### Assistent per notificar casos ATR
+### Assistent per notificar casos ATR
 
 Aquest assistent ens permet notificar de forma agrupada diversos passos i casos
 ATR. Podem fer-ho des de la vista de casos ATR "**Menú OpenERP > Gestió ATR >
