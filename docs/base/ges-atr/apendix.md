@@ -1,9 +1,9 @@
-# Apendix
+# Apèndix
 
-## Apendix A: Exemple de procés C1
+## Apèndix A: Exemple de procés C1
 
 
-## Apendix B: Traducció de codi REE
+## Apèndix B: Traducció de codi REE
 
 El càlcul del codi REE de la distribuidora té algunes particularitats en el cas
 que el CUPS pertanyi a les distribuidores **ENDESA** (0031) o **FENOSA** (0390)
