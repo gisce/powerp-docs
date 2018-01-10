@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-02 13:55+0100\n"
-"PO-Revision-Date: 2018-01-02 13:59+0100\n"
+"POT-Creation-Date: 2018-01-10 17:05+0100\n"
+"PO-Revision-Date: 2018-01-10 17:12+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -6882,6 +6882,295 @@ msgstr ""
 "Si el CUPS empieza por <strong>03900</strong>:\n"
 " <strong>0022</strong> (\n"
 "<code>Jallas</code>)"
+
+msgid "Configuracions sincronització SOA"
+msgstr "Configuraciones sincronitzación SOA"
+
+#, fuzzy
+msgid "Documentació general del mòdul de sincronització mitjançant fitxers SOA."
+msgstr "Documentación del módulo de Revisiones Internas"
+
+msgid "Menús"
+msgstr "Menús"
+
+msgid ""
+"El mòdul de sincronització proveeix dos llistats ubicats a \"<strong><em>OpenERP Menu >\n"
+"Sync</em></strong>\":"
+msgstr ""
+"El módulo de sincronización provee dos listados ubicados en \"<strong><em>OpenERP Menu >\n"
+"Sync</em></strong>\":"
+
+#, fuzzy
+msgid "<a href=\"#fitxers-importats\">Fitxers Importats</a>"
+msgstr "<a href=\"#generar-ficheros\">Generar ficheros</a>"
+
+#, fuzzy
+msgid "<a href=\"#configuracio\">Configuració</a>"
+msgstr "<a href=\"#4-posibles-configuraciones\">Posibles configuraciones</a>"
+
+msgid "<img alt=\"\" src=\"../_static/soa/oerp_menu_soa.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/oerp_menu_soa.png\" />"
+
+msgid "Fitxers Importats"
+msgstr "Ficheros Importados"
+
+msgid ""
+"En aquest menú es mostra un llistat dels fitxers de sincronització (SOA) importats.\n"
+"Des del llistat podem veure:"
+msgstr ""
+"En este menú se muestra un listado de ficheros de sincronización (SOA) importados.\n"
+"Desde el listado podemos ver:"
+
+#, fuzzy
+msgid "Data de la importació"
+msgstr "Campos de la petición"
+
+#, fuzzy
+msgid "Nom del fitxer importat"
+msgstr "Nombre de los ficheros de Curvas"
+
+#, fuzzy
+msgid "Tipus de sincrontizació:"
+msgstr "Tipo de numeración"
+
+msgid "Sincronització massiva: Importació de moltes actualitzacions"
+msgstr "Sincronización masiva: Importación de muchas actualizaciones"
+
+msgid "Sincronització immediata: Importació d'una sola actualització"
+msgstr "Sincronización inmediata: Importación de una sola actualización"
+
+#, fuzzy
+msgid "Total de línies importades"
+msgstr "Figura 5: Llistado de línias de importación."
+
+msgid "Total de línies correctes"
+msgstr "Total de líneas correctas"
+
+msgid "Total de línies amb error"
+msgstr "Total de líneas con error"
+
+#, fuzzy
+msgid "Estat de la importació"
+msgstr "Figura 2: Listado de lotes de importación."
+
+#, fuzzy
+msgid "Missatge descriptiu amb l'estat de la importació"
+msgstr "Figura 2: Listado de lotes de importación."
+
+msgid ""
+"Si accedim a un d'aquests registres, podrem trobar com a adjunt el fitxer\n"
+"de sincronització importat."
+msgstr ""
+
+msgid "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
+
+msgid ""
+"En aquest menú es mostren les configuracions per la importació dels fitxers de\n"
+"sincrontizació (SOA) i de la notificació dels resultats d'aquesta importació."
+msgstr ""
+
+#, fuzzy
+msgid "Podem trobar les següents columnes:"
+msgstr "El CSV de las tarifas incluye las siguientes columnas:"
+
+msgid "Ordre en que es mostren al llistat"
+msgstr "Orden en que se muestran al listado"
+
+msgid ""
+"Mòdul al que pertany la configuració,\n"
+"  únicament hauria d'haver \"giscesoa_sync\" en aquest llistat."
+msgstr ""
+
+msgid "Clau utilitzada per l'ERP"
+msgstr "Clave utilizada por el ERP"
+
+msgid "Valor utilitzar per l'ERP per una clau concreta"
+msgstr ""
+
+msgid "Descripció de com ha de ser el valor per una clau concreta"
+msgstr ""
+
+msgid "<img alt=\"\" src=\"../_static/soa/soa_configuracio.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/soa_configuracio.png\" />"
+
+#, fuzzy
+msgid "Configuracions SOA"
+msgstr "Configuración"
+
+#, fuzzy
+msgid "En el fitxer de configuracions hi ha les següents configuracions:"
+msgstr "Todos los ficheros respetan las siguientes especificaciones:"
+
+msgid "Clau"
+msgstr "Clave"
+
+msgid "configurat"
+msgstr "configurat"
+
+msgid "\"1\" vol dir que el mòdul ja s'ha configurat; \"0\" és el valor per defecte per assegurar que el mòdul no nomes s'ha instal.lat sino que a mes a mes s'ha configurat."
+msgstr ""
+
+msgid "sufix_massiva"
+msgstr "sufix_massiva"
+
+msgid "Extensió que s'espera pels fitxers d'intercanvi per sincronització massiva."
+msgstr ""
+
+msgid "sufix_immediata"
+msgstr "sufix_immediata"
+
+msgid "Extensió que s'espera pels fitxers d'intercanvi per sincronització immediata."
+msgstr ""
+
+msgid "sufix_fitxer_duplicat"
+msgstr "sufix_fitxer_duplicat"
+
+msgid "Sufix que s'afegira quan es trobi al directori d'entrada un fitxer amb un nom que ja s'havia processat."
+msgstr ""
+
+msgid "sufix_correctes"
+msgstr "sufix_correctes"
+
+msgid "Extensió dels fitxers que han de contenir les linies que s'han processat correctament."
+msgstr ""
+
+msgid "sufix_errors"
+msgstr "sufix_errors"
+
+msgid "Extensió dels fitxers que han de contenir les línies que s'han intentat processat sense èxit."
+msgstr ""
+
+msgid "sufix_informes"
+msgstr "sufix_informes"
+
+msgid "Extensió dels fitxers que han de contenir els informes amb els errors trobats durant el procès."
+msgstr ""
+
+msgid "directori_entrada"
+msgstr "directori_entrada"
+
+msgid "Directori a on s'esperen els fitxers d'intercanvi per processar."
+msgstr ""
+
+msgid "directori_sortida"
+msgstr "directori_sortida"
+
+msgid "Directori a on s'han de deixar els fitxers d'intercanvi que resulten del procès."
+msgstr ""
+
+msgid "marge_minuts_sincronitzacio_immediata"
+msgstr "marge_minuts_sincronitzacio_immediata"
+
+msgid "Temps en minuts que ha de passar des de l'últim accès d'escriptura a un fitxer per que es consideri candidat a ser processat. Aquest temps ha de ser una garantia de que el procès que ha creat el fitxer ja ha acabat."
+msgstr ""
+
+msgid "marge_minuts_sincronitzacio_massiva"
+msgstr "marge_minuts_sincronitzacio_massiva"
+
+msgid "email_notificacio_gisce_adreca"
+msgstr "email_notificacio_gisce_adreca"
+
+msgid "Llista de destinataris a GISCE, una adreça de correu a cada línia, opcionalment amb format \"Nom wzxhzdk:2test@example.comwzxhzdk:3\""
+msgstr ""
+
+msgid "email_notificacio_assumpte"
+msgstr "email_notificacio_assumpte"
+
+#, python-format
+msgid "Text que es fa servir com a assumpte a les notificacions; Es poden afegir: \"%f\" nom de fitxer tractat; \"%r\" resultat; \"%d\" base de dades."
+msgstr ""
+
+msgid "email_notificacio_client_adreca"
+msgstr "email_notificacio_client_adreca"
+
+msgid "Llista de destinataris al CLIENT, una adreça de correu a cada línia, opcionalment amb format \"Nom wzxhzdk:0test@example.comwzxhzdk:1\""
+msgstr ""
+
+msgid "email_notificacio_client_explicacio"
+msgstr "email_notificacio_client_explicacio"
+
+#, python-format
+msgid "Text que es fa servir al correu de notificacio; Es poden afegir: \"%f\" nom de fitxer tractat; \"%r\" resultat; \"%d\" base de dades."
+msgstr ""
+
+msgid "informe_linies_frequencia_capcalera"
+msgstr "informe_linies_frequencia_capcalera"
+
+msgid "Freqüència amb que s'afegeix la capçalera a l'informe de línies amb problemes. Per exemple el valor 2 vol dir que es repetira la capçalera amb cada dos línies."
+msgstr ""
+
+msgid "informe_ok_gisce"
+msgstr "informe_ok_gisce"
+
+msgid "Enviar informe quan NO s'han trobat errors? 0=no; 1=si"
+msgstr ""
+
+msgid "informe_ok_client"
+msgstr "informe_ok_client"
+
+msgid "informe_error_gisce"
+msgstr "informe_error_gisce"
+
+msgid "Enviar informe si s'han trobat errors? 0=no; 1=si"
+msgstr ""
+
+msgid "informe_error_client"
+msgstr "informe_error_client"
+
+msgid "email_notificacio_remitent"
+msgstr "email_notificacio_remitent"
+
+msgid "Adreça d'orígen per correus de notificació."
+msgstr ""
+
+msgid "email_notificacio_smtp_host"
+msgstr "email_notificacio_smtp_host"
+
+msgid "Adreça IP o nom DNS del servidor MTA a qui s'han d'entregar els correus."
+msgstr ""
+
+msgid "email_notificacio_css"
+msgstr "email_notificacio_css"
+
+msgid "Estils CSS que es volen per l'informe HTML"
+msgstr ""
+
+msgid "encoding_fitxers_intercanvi"
+msgstr "encoding_fitxers_intercanvi"
+
+msgid "Nom (Python) de l'encoding dels fitxers d'intercanvi"
+msgstr ""
+
+msgid "baixa_automatica_de_polissa"
+msgstr "baixa_automatica_de_polissa"
+
+msgid "0 = es considera ERROR una línia amb un CUPS i una polissa associada si aquest CUPS ja tenia una pòlissa activa a l'ERP, perque s'espera que abans ens enviïn una línia amb una baixa; 1 = Es donara automàticament de baixa la pòlissa activa abans de continuar el procès de la línia."
+msgstr ""
+
+msgid "verbose"
+msgstr "verbose"
+
+msgid "\"1\" vol dir que mostrarà missatges 'verbose' pel log; \"0\" no."
+msgstr ""
+
+msgid "silenciar_baixes_sense_efecte"
+msgstr "silenciar_baixes_sense_efecte"
+
+msgid "\"1\" ignorarà la baixa de la pòlissa en el cas de no existir la pòlissa o estar de baixa. \"0\" pel contrari."
+msgstr ""
+
+msgid "canvi_automatic_de_cups"
+msgstr "canvi_automatic_de_cups"
+
+msgid "\"1\" en rebre una pòlissa que ja existeix activa l'ERP amb un CUPS diferent, donarà de baixa el CUPS actual i hi vincularà el nou CUPS. \"0\" notificarà l'error i no farà cap modificació."
+msgstr ""
+
+msgid "validar_nif"
+msgstr "validar_nif"
+
+msgid "\"1\" indica que es validaran els NIFs de manera habitual. \"0\" no validarà."
+msgstr ""
 
 msgid "Documentació PowERP distribuidora"
 msgstr "Documentación PoweERP distribuïdora"
@@ -38519,9 +38808,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 #~ msgid "<a href=\"#omplir-resums\">Omplir resums</a>"
 #~ msgstr "<a href=\"#rellenar-resumenes\">Rellenar resumenes</a>"
 
-#~ msgid "<a href=\"#generar-fitxers\">Generar fitxers</a>"
-#~ msgstr "<a href=\"#generar-ficheros\">Generar ficheros</a>"
-
 #~ msgid ""
 #~ "\n"
 #~ "<p>Omplir les dades de LAT(1), LBT(2), Altres(3), Posicions(4), Maquines(5), Despatxos(6), Fiabilitat(7), CTs(8)</p>\n"
@@ -42128,9 +42414,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 
 #~ msgid "Conectors"
 #~ msgstr "Conecores"
-
-#~ msgid "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
-#~ msgstr "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
 
 #~ msgid ""
 #~ "Per començar el procés de perfilació s'ha de clicar a '<strong>Lots de Perfilació</strong>',\n"
@@ -55194,9 +55477,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 #~ "<br />\n"
 #~ "    3.4. \n"
 #~ "<a href=\"#34-en-una-persona-fisicajuridica\">En una persona física/jurídica</a>    "
-
-#~ msgid "<a href=\"#4-possibles-configuracions\">Possibles configuracions</a>"
-#~ msgstr "<a href=\"#4-posibles-configuraciones\">Posibles configuraciones</a>"
 
 #~ msgid "<img alt=\"\" src=\"../_static/menu_acciones/asistente_pagar_facturas_csv/CA/step_3b.png\" />"
 #~ msgstr "<img alt=\"\" src=\"../_static/menu_acciones/asistente_pagar_facturas_csv/ES/step_3b.png\" />"
