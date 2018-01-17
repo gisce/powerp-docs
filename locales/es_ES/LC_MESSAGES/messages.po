@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-11 16:43+0100\n"
-"PO-Revision-Date: 2018-01-11 16:53+0100\n"
+"POT-Creation-Date: 2018-01-17 17:41+0100\n"
+"PO-Revision-Date: 2018-01-17 17:43+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -4842,7 +4842,7 @@ msgid ""
 "La generació dels fitxers XML on l'origen siguem nosaltres, utilitzarà la\n"
 "informació ja disponible dels diferents passos emmagatzemats en el cas."
 msgstr ""
-"La generación de ficheros XML donde el orígen seamos nosotros, \n"
+"La generación de ficheros XML donde el origen seamos nosotros, \n"
 "utilizará la información ya disponible de los distintos pasos guardados\n"
 "en el caso."
 
@@ -5528,7 +5528,7 @@ msgstr ""
 "<code>OOOO_DDDD_YYYYMMDDHHMMSS</code> donde:"
 
 msgid "<em>[OOOO]</em>: Nom de la base de dades de l'ERP, normalment nom empresa origen"
-msgstr "<em>[OOOO]</em>: Nombre de la base de datos del ERP, normalmente nombre empresa orígen"
+msgstr "<em>[OOOO]</em>: Nombre de la base de datos del ERP, normalmente nombre empresa origen"
 
 msgid ""
 "<em>[YYYYMMMDDHHMMSS]</em>: Any, mes, dia, hora, minut i segon en el qual s'ha\n"
@@ -6924,14 +6924,16 @@ msgstr "Fecha de la importación"
 msgid "Nom del fitxer importat"
 msgstr "Nombre del fichero importado"
 
-msgid "Tipus de sincrontizació:"
-msgstr "Tipo de sincronización:"
-
-msgid "Sincronització massiva: Importació de moltes actualitzacions"
-msgstr "Sincronización masiva: Importación de muchas actualizaciones"
-
-msgid "Sincronització immediata: Importació d'una sola actualització"
-msgstr "Sincronización inmediata: Importación de una sola actualización"
+msgid ""
+"Tipus de sincrontizació:<ul>\n"
+"<li>Sincronització massiva: Importació de moltes actualitzacions</li>\n"
+"<li>Sincronització immediata: Importació d'una sola actualització</li>\n"
+"</ul>\n"
+msgstr ""
+"Tipos de sincronización:<ul>\n"
+"<li>Sincronización masiva: Importación de muchas actualizaciones</li>\n"
+"<li>Sincronización inmediata: Importación de una sola actualización</li>\n"
+"</ul>\n"
 
 msgid "Total de línies importades"
 msgstr "Total de líneas importadas"
@@ -6957,7 +6959,7 @@ msgid "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
 
 msgid ""
-"En aquest menú es mostren les configuracions per la importació dels fitxers de\n"
+"En aquest menú es mostren les configuracions per a la importació dels fitxers de\n"
 "sincrontizació (SOA) i de la notificació dels resultats d'aquesta importació."
 msgstr ""
 "En este menú se muestran las configuraciones para la importación de los ficheros\n"
@@ -6979,7 +6981,7 @@ msgstr ""
 msgid "Clau utilitzada per l'ERP"
 msgstr "Clave utilizada por el ERP"
 
-msgid "Valor utilitzar per l'ERP per una clau concreta"
+msgid "Valor a utilitzar per l'ERP per una clau concreta"
 msgstr "Valor a utilizar para el ERP para una clave concreta"
 
 msgid "Descripció de com ha de ser el valor per una clau concreta"
@@ -6991,7 +6993,7 @@ msgstr "<img alt=\"\" src=\"../_static/soa/soa_configuracio.png\" />"
 msgid "Configuracions SOA"
 msgstr "Configuraciones SOA"
 
-msgid "En el fitxer de configuracions hi ha les següents configuracions:"
+msgid "En el fitxer de configuracions hi ha les següents opcions:"
 msgstr "En el fichero de configuraciones hay las siguientes configuraciones:"
 
 msgid "Clau"
@@ -7000,7 +7002,7 @@ msgstr "Clave"
 msgid "<code>configurat</code>"
 msgstr "<code>configurat</code>"
 
-msgid "\"1\" vol dir que el mòdul ja s'ha configurat; \"0\" és el valor per defecte per assegurar que el mòdul no nomes s'ha instal.lat sino que a mes a mes s'ha configurat."
+msgid "\"1\" vol dir que el mòdul ja s'ha configurat; \"0\" és el valor per defecte per assegurar que el mòdul no només s'ha instal·lat sinó que a més a més s'ha configurat."
 msgstr "\"1\" significa que el módulo ya se ha configurado; \"0\" es el valor por defecto pasa asegurar que el módulo no solo está instalado sino que a más se ha configurado."
 
 msgid "<code>sufix_massiva</code>"
@@ -7018,7 +7020,7 @@ msgstr "Extensión que se espera para los ficheros de intercambio para sincroniz
 msgid "<code>sufix_fitxer_duplicat</code>"
 msgstr "<code>sufix_fitxer_duplicat</code>"
 
-msgid "Sufix que s'afegira quan es trobi al directori d'entrada un fitxer amb un nom que ja s'havia processat."
+msgid "Sufix que s'afegirà quan es trobi al directori d'entrada un fitxer amb un nom que ja s'havia processat."
 msgstr "Sufijo que se añadirá cuando se encuentre en el directorio de entrada de un fichero con un nombre que ya se había procesado."
 
 msgid "<code>sufix_correctes</code>"
@@ -7030,13 +7032,13 @@ msgstr "Extensión de los ficheros que deben contener las líneas que se han pro
 msgid "<code>sufix_errors</code>"
 msgstr "<code>sufix_errors</code>"
 
-msgid "Extensió dels fitxers que han de contenir les línies que s'han intentat processat sense èxit."
-msgstr "Extensión de los ficheros que deben contener las líneas que se han procesado sin éxito."
+msgid "Extensió dels fitxers que han de contenir les línies que s'han intentat processar sense èxit."
+msgstr "Extensión de los ficheros que deben contener las líneas que se han intentado procesar sin éxito."
 
 msgid "<code>sufix_informes</code>"
 msgstr "<code>sufix_informes</code>"
 
-msgid "Extensió dels fitxers que han de contenir els informes amb els errors trobats durant el procès."
+msgid "Extensió dels fitxers que han de contenir els informes amb els errors trobats durant el procés."
 msgstr "Extensión de los ficheros que deben contener los informes con los errores encontrados durante el proceso."
 
 msgid "<code>directori_entrada</code>"
@@ -7048,13 +7050,13 @@ msgstr "Directorio donde se esperan los ficheros de intercambio para procesar."
 msgid "<code>directori_sortida</code>"
 msgstr "<code>directori_sortida</code>"
 
-msgid "Directori a on s'han de deixar els fitxers d'intercanvi que resulten del procès."
+msgid "Directori a on s'han de deixar els fitxers d'intercanvi que resulten del procés."
 msgstr "Directorio donde se deben dejar los ficheros de intercambio que resulten del proceso."
 
 msgid "<code>marge_minuts_sincronitzacio_immediata</code>"
 msgstr "<code>marge_minuts_sincronitzacio_immediata</code>"
 
-msgid "Temps en minuts que ha de passar des de l'últim accès d'escriptura a un fitxer per que es consideri candidat a ser processat. Aquest temps ha de ser una garantia de que el procès que ha creat el fitxer ja ha acabat."
+msgid "Temps en minuts que ha de passar des de l'últim accés d'escriptura a un fitxer per a que es consideri candidat a ser processat. Aquest temps ha de ser una garantia de que el procés que ha creat el fitxer ja ha acabat."
 msgstr "Tiempo en minutos que debe pasar desde el último acceso de escritura a un fichero para que se considere candidato a ser procesado. Este tiempo debe ser una garantía de que el proceso que ha creado el fichero ya ha finalizado."
 
 msgid "<code>marge_minuts_sincronitzacio_massiva</code>"
@@ -7090,7 +7092,7 @@ msgstr "<code>email_notificacio_client_explicacio</code>"
 
 #, python-format
 msgid ""
-"Text que es fa servir al correu de notificacio; Es poden afegir: \"<code>%f</code>\" nom de fitxer tractat; \"\n"
+"Text que es fa servir al correu de notificació; Es poden afegir: \"<code>%f</code>\" nom de fitxer tractat; \"\n"
 "<code>%r</code>\" resultat; \"\n"
 "<code>%d</code>\" base de dades."
 msgstr ""
@@ -7101,8 +7103,8 @@ msgstr ""
 msgid "<code>informe_linies_frequencia_capcalera</code>"
 msgstr "<code>informe_linies_frequencia_capcalera</code>"
 
-msgid "Freqüència amb que s'afegeix la capçalera a l'informe de línies amb problemes. Per exemple el valor 2 vol dir que es repetira la capçalera amb cada dos línies."
-msgstr "Frequencia con que se añade la cabecera al informe de líneas con problemas. Por ejemplo el valor 2 quiere decir que se repetirá la cabecera cada dos líneas."
+msgid "Freqüència amb què s'afegeix la capçalera a l'informe de línies amb problemes. Per exemple el valor 2 vol dir que es repetirà la capçalera cada dues línies."
+msgstr "Frecuencia con que se añade la cabecera al informe de líneas con problemas. Por ejemplo el valor 2 quiere decir que se repetirá la cabecera cada dos líneas."
 
 msgid "<code>informe_ok_gisce</code>"
 msgstr "<code>informe_ok_gisce</code>"
@@ -7125,8 +7127,8 @@ msgstr "informe_error_client"
 msgid "<code>email_notificacio_remitent</code>"
 msgstr "<code>email_notificacio_remitent</code>"
 
-msgid "Adreça d'orígen per correus de notificació."
-msgstr "Dirección de orígen en los correos de notificación."
+msgid "Adreça d'origen per correus de notificació."
+msgstr "Dirección de origen en los correos de notificación."
 
 msgid "<code>email_notificacio_smtp_host</code>"
 msgstr "<code>email_notificacio_smtp_host</code>"
@@ -7149,7 +7151,7 @@ msgstr "Nombre (Python) del encoding de los ficheros de intercambio"
 msgid "<code>baixa_automatica_de_polissa</code>"
 msgstr "<code>baixa_automatica_de_polissa</code>"
 
-msgid "0 = es considera ERROR una línia amb un CUPS i una polissa associada si aquest CUPS ja tenia una pòlissa activa a l'ERP, perque s'espera que abans ens enviïn una línia amb una baixa; 1 = Es donara automàticament de baixa la pòlissa activa abans de continuar el procès de la línia."
+msgid "0 = es considera ERROR una línia amb un CUPS i una pòlissa associada si aquest CUPS ja tenia una pòlissa activa a l'ERP, perquè s'espera que abans ens enviïn una línia amb una baixa; 1 = Es donarà automàticament de baixa la pòlissa activa abans de continuar el procés de la línia."
 msgstr "0 = se considera ERROR una línea con un CUPS y una póliza asociada si éste CUPS ya tenía una póliza activa en el ERP, porque se espera que antes se envíe una línea con una baja; 1 = Se dará automáticamente de baja la póliza activa antes de continuar el proceso de la línea."
 
 msgid "<code>verbose</code>"
@@ -7167,8 +7169,8 @@ msgstr "\"1\" ingnorará la baja de la póliza en el caso de no existir la póli
 msgid "<code>canvi_automatic_de_cups</code>"
 msgstr "<code>canvi_automatic_de_cups</code>"
 
-msgid "\"1\" en rebre una pòlissa que ja existeix activa l'ERP amb un CUPS diferent, donarà de baixa el CUPS actual i hi vincularà el nou CUPS. \"0\" notificarà l'error i no farà cap modificació."
-msgstr "\"1\" en recibir una póliza que ya exista activa en el ERP con un CUPS distinto, dará de baja el CUPS actual y se vinculará a el nuevo CUPS. \"0\" notificará el error y no hará ninguna modificación."
+msgid "\"1\" en rebre una pòlissa que ja existeix en l'ERP i estigui activa amb un CUPS diferent, es donarà de baixa el CUPS actual i hi vincularà el nou CUPS. \"0\" notificarà l'error i no farà cap modificació."
+msgstr "\"1\" en recibir una póliza que ya exista en el ERP y esté activa con un CUPS distinto, dará de baja el CUPS actual y se vinculará a el nuevo CUPS. \"0\" notificará el error y no hará ninguna modificación."
 
 msgid "<code>validar_nif</code>"
 msgstr "<code>validar_nif</code>"
@@ -12908,7 +12910,7 @@ msgid "<strong>Planificada (fitxer ruta)</strong>: La lectura es crearà amb dat
 msgstr "<strong>Planificada (fichero ruta)</strong>:La lectura se creará con la fecha 31/03/2017"
 
 msgid "Selecció de orígen \"Sense lectura\""
-msgstr "Selección del orígen \"Sin lectura\""
+msgstr "Selección del origen \"Sin lectura\""
 
 msgid ""
 "Per defecte, totes les lectures carregades des de TPL tindran com a origen\n"
@@ -12921,7 +12923,7 @@ msgid ""
 msgstr ""
 "Por defecto, todas las lecturas cargadas desde TPL tendrán como oríggen\n"
 "<strong>TPL</strong>. En los casos en los que no se pueda obtener la lectura por algun\n"
-"motivo, como la imposibilidad de acceso al contador, se puede cargar la lectura con orígen\n"
+"motivo, como la imposibilidad de acceso al contador, se puede cargar la lectura con origen\n"
 "<strong>Sin Lectura</strong>. Cuando se desee esta funcionalidad /y si GISCE-ERP\n"
 "está correctamente configurado) hará falta escoger una incidéncia adecuada en la lectura\n"
 "y copiar la lectura anterior en el TPL."
@@ -19216,7 +19218,7 @@ msgid ""
 "comunitat autónoma i acaben en una altra de diferent orígen."
 msgstr ""
 "CODIGO_CCAA_2 este campo es sólo para los tramos de línea que empiecen en una\n"
-"comunidad autónoma y acaben en otra de diferente orígen."
+"comunidad autónoma y acaben en otra de diferente origen."
 
 msgid ""
 "En aquests casos es pot contemplar de crear una línia nova quan es faci un\n"
@@ -21229,7 +21231,7 @@ msgid "Node inicial"
 msgstr "Nodo inicial"
 
 msgid "Codi del node d'origen del tram"
-msgstr "Código del nodo de orígen del tramo"
+msgstr "Código del nodo de origen del tramo"
 
 msgid "Node final"
 msgstr "Nodo final"
@@ -23980,7 +23982,7 @@ msgstr ""
 "directamente desde el contador."
 
 msgid "Formats d'origen suportats:"
-msgstr "Formatos de orígen suportados:"
+msgstr "Formatos de origen suportados:"
 
 msgid "Fitxer de corba obtingut a través del TPL de GISCE-ERP"
 msgstr "Fichero de curva obtenido a través del TPL de GISCE-ERP"
@@ -24149,7 +24151,7 @@ msgid "Conversió del fitxer de corba a F1"
 msgstr "Conversión de la curva a F1"
 
 msgid "Els fitxers origen suportats són:"
-msgstr "Los ficheros orígen soportados son:"
+msgstr "Los ficheros origen soportados son:"
 
 msgid "<strong>Fitxer TPL de GISCE-ERP</strong>"
 msgstr "<strong>Fichero TPL de GISCE-ERP</strong>"
@@ -37720,6 +37722,15 @@ msgstr ""
 
 msgid "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_ca.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png\" />"
+
+#~ msgid "Tipus de sincrontizació:"
+#~ msgstr "Tipo de sincronización:"
+
+#~ msgid "Sincronització massiva: Importació de moltes actualitzacions"
+#~ msgstr "Sincronización masiva: Importación de muchas actualizaciones"
+
+#~ msgid "Sincronització immediata: Importació d'una sola actualització"
+#~ msgstr "Sincronización inmediata: Importación de una sola actualización"
 
 #~ msgid "configurat"
 #~ msgstr "configurat"
