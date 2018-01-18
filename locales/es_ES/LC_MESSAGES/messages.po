@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-02 13:55+0100\n"
-"PO-Revision-Date: 2018-01-02 13:59+0100\n"
+"POT-Creation-Date: 2018-01-17 17:41+0100\n"
+"PO-Revision-Date: 2018-01-17 17:43+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -4842,7 +4842,7 @@ msgid ""
 "La generació dels fitxers XML on l'origen siguem nosaltres, utilitzarà la\n"
 "informació ja disponible dels diferents passos emmagatzemats en el cas."
 msgstr ""
-"La generación de ficheros XML donde el orígen seamos nosotros, \n"
+"La generación de ficheros XML donde el origen seamos nosotros, \n"
 "utilizará la información ya disponible de los distintos pasos guardados\n"
 "en el caso."
 
@@ -5528,7 +5528,7 @@ msgstr ""
 "<code>OOOO_DDDD_YYYYMMDDHHMMSS</code> donde:"
 
 msgid "<em>[OOOO]</em>: Nom de la base de dades de l'ERP, normalment nom empresa origen"
-msgstr "<em>[OOOO]</em>: Nombre de la base de datos del ERP, normalmente nombre empresa orígen"
+msgstr "<em>[OOOO]</em>: Nombre de la base de datos del ERP, normalmente nombre empresa origen"
 
 msgid ""
 "<em>[YYYYMMMDDHHMMSS]</em>: Any, mes, dia, hora, minut i segon en el qual s'ha\n"
@@ -6882,6 +6882,301 @@ msgstr ""
 "Si el CUPS empieza por <strong>03900</strong>:\n"
 " <strong>0022</strong> (\n"
 "<code>Jallas</code>)"
+
+msgid "Configuracions sincronització SOA"
+msgstr "Configuraciones sincronitzación SOA"
+
+msgid "Documentació general del mòdul de sincronització mitjançant fitxers SOA."
+msgstr "Documentación general del módulo de sincronización mediante ficheros SOA."
+
+msgid "Menús"
+msgstr "Menús"
+
+msgid ""
+"El mòdul de sincronització proveeix dos llistats ubicats a \"<strong><em>OpenERP Menu >\n"
+"Sync</em></strong>\":"
+msgstr ""
+"El módulo de sincronización provee dos listados ubicados en \"<strong><em>OpenERP Menu >\n"
+"Sync</em></strong>\":"
+
+msgid "<a href=\"#fitxers-importats\">Fitxers Importats</a>"
+msgstr "<a href=\"#ficheros-importados\">Ficheros importados</a>"
+
+msgid "<a href=\"#configuracio\">Configuració</a>"
+msgstr "<a href=\"#configuracion\">Configuración</a>"
+
+msgid "<img alt=\"\" src=\"../_static/soa/oerp_menu_soa.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/oerp_menu_soa.png\" />"
+
+msgid "Fitxers Importats"
+msgstr "Ficheros Importados"
+
+msgid ""
+"En aquest menú es mostra un llistat dels fitxers de sincronització (SOA) importats.\n"
+"Des del llistat podem veure:"
+msgstr ""
+"En este menú se muestra un listado de ficheros de sincronización (SOA) importados.\n"
+"Desde el listado podemos ver:"
+
+msgid "Data de la importació"
+msgstr "Fecha de la importación"
+
+msgid "Nom del fitxer importat"
+msgstr "Nombre del fichero importado"
+
+msgid ""
+"Tipus de sincrontizació:<ul>\n"
+"<li>Sincronització massiva: Importació de moltes actualitzacions</li>\n"
+"<li>Sincronització immediata: Importació d'una sola actualització</li>\n"
+"</ul>\n"
+msgstr ""
+"Tipos de sincronización:<ul>\n"
+"<li>Sincronización masiva: Importación de muchas actualizaciones</li>\n"
+"<li>Sincronización inmediata: Importación de una sola actualización</li>\n"
+"</ul>\n"
+
+msgid "Total de línies importades"
+msgstr "Total de líneas importadas"
+
+msgid "Total de línies correctes"
+msgstr "Total de líneas correctas"
+
+msgid "Total de línies amb error"
+msgstr "Total de líneas con error"
+
+msgid "Estat de la importació"
+msgstr "Estado de la importación"
+
+msgid "Missatge descriptiu amb l'estat de la importació"
+msgstr "Mensaje descriptivo con el estado de la importación"
+
+msgid ""
+"Si accedim a un d'aquests registres, podrem trobar com a adjunt el fitxer\n"
+"de sincronització importat."
+msgstr "Si accedemos a uno de estos registros podremos encontrar como adjunto el fichero de sincronización importado."
+
+msgid "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/soa_llistat.png\" />"
+
+msgid ""
+"En aquest menú es mostren les configuracions per a la importació dels fitxers de\n"
+"sincrontizació (SOA) i de la notificació dels resultats d'aquesta importació."
+msgstr ""
+"En este menú se muestran las configuraciones para la importación de los ficheros\n"
+"de sincronización (SOA) y de la notificación de los resultados de esta importación."
+
+msgid "Podem trobar les següents columnes:"
+msgstr "Podemos encontrar las siguientes columnas:"
+
+msgid "Ordre en que es mostren al llistat"
+msgstr "Orden en que se muestran al listado"
+
+msgid ""
+"Mòdul al que pertany la configuració,\n"
+"  únicament hauria d'haver \"giscesoa_sync\" en aquest llistat."
+msgstr ""
+"Módulo al que pertenece la configuración,\n"
+" únicamente debería haber \"giscesoa_sync\" en este listado."
+
+msgid "Clau utilitzada per l'ERP"
+msgstr "Clave utilizada por el ERP"
+
+msgid "Valor a utilitzar per l'ERP per una clau concreta"
+msgstr "Valor a utilizar para el ERP para una clave concreta"
+
+msgid "Descripció de com ha de ser el valor per una clau concreta"
+msgstr "Descripción de como debe ser el valor para una clave concreta"
+
+msgid "<img alt=\"\" src=\"../_static/soa/soa_configuracio.png\" />"
+msgstr "<img alt=\"\" src=\"../_static/soa/soa_configuracio.png\" />"
+
+msgid "Configuracions SOA"
+msgstr "Configuraciones SOA"
+
+msgid "En el fitxer de configuracions hi ha les següents opcions:"
+msgstr "En el fichero de configuraciones hay las siguientes configuraciones:"
+
+msgid "Clau"
+msgstr "Clave"
+
+msgid "<code>configurat</code>"
+msgstr "<code>configurat</code>"
+
+msgid "\"1\" vol dir que el mòdul ja s'ha configurat; \"0\" és el valor per defecte per assegurar que el mòdul no només s'ha instal·lat sinó que a més a més s'ha configurat."
+msgstr "\"1\" significa que el módulo ya se ha configurado; \"0\" es el valor por defecto pasa asegurar que el módulo no solo está instalado sino que a más se ha configurado."
+
+msgid "<code>sufix_massiva</code>"
+msgstr "<code>sufix_massiva</code>"
+
+msgid "Extensió que s'espera pels fitxers d'intercanvi per sincronització massiva."
+msgstr "Extensión que se espera para los ficheros de intercambio para sincronización masiva."
+
+msgid "<code>sufix_immediata</code>"
+msgstr "<code>sufix_immediata</code>"
+
+msgid "Extensió que s'espera pels fitxers d'intercanvi per sincronització immediata."
+msgstr "Extensión que se espera para los ficheros de intercambio para sincronización inmediata."
+
+msgid "<code>sufix_fitxer_duplicat</code>"
+msgstr "<code>sufix_fitxer_duplicat</code>"
+
+msgid "Sufix que s'afegirà quan es trobi al directori d'entrada un fitxer amb un nom que ja s'havia processat."
+msgstr "Sufijo que se añadirá cuando se encuentre en el directorio de entrada de un fichero con un nombre que ya se había procesado."
+
+msgid "<code>sufix_correctes</code>"
+msgstr "<code>sufix_correctes</code>"
+
+msgid "Extensió dels fitxers que han de contenir les linies que s'han processat correctament."
+msgstr "Extensión de los ficheros que deben contener las líneas que se han procesado correctamente."
+
+msgid "<code>sufix_errors</code>"
+msgstr "<code>sufix_errors</code>"
+
+msgid "Extensió dels fitxers que han de contenir les línies que s'han intentat processar sense èxit."
+msgstr "Extensión de los ficheros que deben contener las líneas que se han intentado procesar sin éxito."
+
+msgid "<code>sufix_informes</code>"
+msgstr "<code>sufix_informes</code>"
+
+msgid "Extensió dels fitxers que han de contenir els informes amb els errors trobats durant el procés."
+msgstr "Extensión de los ficheros que deben contener los informes con los errores encontrados durante el proceso."
+
+msgid "<code>directori_entrada</code>"
+msgstr "<code>directori_entrada</code>"
+
+msgid "Directori a on s'esperen els fitxers d'intercanvi per processar."
+msgstr "Directorio donde se esperan los ficheros de intercambio para procesar."
+
+msgid "<code>directori_sortida</code>"
+msgstr "<code>directori_sortida</code>"
+
+msgid "Directori a on s'han de deixar els fitxers d'intercanvi que resulten del procés."
+msgstr "Directorio donde se deben dejar los ficheros de intercambio que resulten del proceso."
+
+msgid "<code>marge_minuts_sincronitzacio_immediata</code>"
+msgstr "<code>marge_minuts_sincronitzacio_immediata</code>"
+
+msgid "Temps en minuts que ha de passar des de l'últim accés d'escriptura a un fitxer per a que es consideri candidat a ser processat. Aquest temps ha de ser una garantia de que el procés que ha creat el fitxer ja ha acabat."
+msgstr "Tiempo en minutos que debe pasar desde el último acceso de escritura a un fichero para que se considere candidato a ser procesado. Este tiempo debe ser una garantía de que el proceso que ha creado el fichero ya ha finalizado."
+
+msgid "<code>marge_minuts_sincronitzacio_massiva</code>"
+msgstr "<code>marge_minuts_sincronitzacio_massiva</code>"
+
+msgid "<code>email_notificacio_gisce_adreca</code>"
+msgstr "<code>email_notificacio_gisce_adreca</code>"
+
+msgid "Llista de destinataris a GISCE, una adreça de correu a cada línia, opcionalment amb format <code>\"Nom <test@example.com>\"</code>"
+msgstr "Lista de destinatarios a GISCE, una dirección de correo en cada línea, opcionalmente con formato <code>\"Nombre <test@example.com>\"</code>"
+
+msgid "<code>email_notificacio_assumpte</code>"
+msgstr "<code>email_notificacio_assumpte</code>"
+
+#, python-format
+msgid ""
+"Text que es fa servir com a assumpte a les notificacions; Es poden afegir: \"<code>%f</code>\" nom de fitxer tractat; \"\n"
+"<code>%r</code>\" resultat; \"\n"
+"<code>%d</code>\" base de dades."
+msgstr ""
+"Texto que se utiliza como asunto en el correo de notificación; Se pueden añadir: \"<code>%f</code>\" nombre del fichero tratado;\"\n"
+"<code>%r</code>\" resultado; \"\n"
+"<code>%d</code>\" base de datos."
+
+msgid "<code>email_notificacio_client_adreca</code>"
+msgstr "<code>email_notificacio_client_adreca</code>"
+
+msgid "Llista de destinataris al CLIENT, una adreça de correu a cada línia, opcionalment amb format <code>\"Nom <test@example.com>\"</code>"
+msgstr "Lista de destinatarios al CLIENTE, una dirección de correo en cada línea, opcionalmente con formato <code>\"Nombre <test@example.com>\"</code>"
+
+msgid "<code>email_notificacio_client_explicacio</code>"
+msgstr "<code>email_notificacio_client_explicacio</code>"
+
+#, python-format
+msgid ""
+"Text que es fa servir al correu de notificació; Es poden afegir: \"<code>%f</code>\" nom de fitxer tractat; \"\n"
+"<code>%r</code>\" resultat; \"\n"
+"<code>%d</code>\" base de dades."
+msgstr ""
+"Texto que se utiliza en el correo de notificación; Se pueden añadir: \"<code>%f</code>\" nombre del fichero tratado; \"\n"
+"<code>%r</code>\" resultado; \"\n"
+"<code>%d</code>\" base de datos."
+
+msgid "<code>informe_linies_frequencia_capcalera</code>"
+msgstr "<code>informe_linies_frequencia_capcalera</code>"
+
+msgid "Freqüència amb què s'afegeix la capçalera a l'informe de línies amb problemes. Per exemple el valor 2 vol dir que es repetirà la capçalera cada dues línies."
+msgstr "Frecuencia con que se añade la cabecera al informe de líneas con problemas. Por ejemplo el valor 2 quiere decir que se repetirá la cabecera cada dos líneas."
+
+msgid "<code>informe_ok_gisce</code>"
+msgstr "<code>informe_ok_gisce</code>"
+
+msgid "Enviar informe quan NO s'han trobat errors? 0=no; 1=si"
+msgstr "Enviar informe cuando NO se han encontrado errores? 0=no; 1=si"
+
+msgid "<code>informe_ok_client</code>"
+msgstr "<code>informe_ok_client</code>"
+
+msgid "<code>informe_error_gisce</code>"
+msgstr "<code>informe_error_gisce</code>"
+
+msgid "Enviar informe si s'han trobat errors? 0=no; 1=si"
+msgstr "Enviar informe cuando si se han encontrado errores? 0=no; 1=si"
+
+msgid "<code>informe_error_client</code>"
+msgstr "informe_error_client"
+
+msgid "<code>email_notificacio_remitent</code>"
+msgstr "<code>email_notificacio_remitent</code>"
+
+msgid "Adreça d'origen per correus de notificació."
+msgstr "Dirección de origen en los correos de notificación."
+
+msgid "<code>email_notificacio_smtp_host</code>"
+msgstr "<code>email_notificacio_smtp_host</code>"
+
+msgid "Adreça IP o nom DNS del servidor MTA a qui s'han d'entregar els correus."
+msgstr "Dirección IP o nombre DNS del servidor MTA a quien se deben entregar los correos."
+
+msgid "<code>email_notificacio_css</code>"
+msgstr "<code>email_notificacio_css</code>"
+
+msgid "Estils CSS que es volen per l'informe HTML"
+msgstr "Estilos CSS que se quieren para el informe HTML"
+
+msgid "<code>encoding_fitxers_intercanvi</code>"
+msgstr "<code>encoding_fitxers_intercanvi</code>"
+
+msgid "Nom (Python) de l'encoding dels fitxers d'intercanvi"
+msgstr "Nombre (Python) del encoding de los ficheros de intercambio"
+
+msgid "<code>baixa_automatica_de_polissa</code>"
+msgstr "<code>baixa_automatica_de_polissa</code>"
+
+msgid "0 = es considera ERROR una línia amb un CUPS i una pòlissa associada si aquest CUPS ja tenia una pòlissa activa a l'ERP, perquè s'espera que abans ens enviïn una línia amb una baixa; 1 = Es donarà automàticament de baixa la pòlissa activa abans de continuar el procés de la línia."
+msgstr "0 = se considera ERROR una línea con un CUPS y una póliza asociada si éste CUPS ya tenía una póliza activa en el ERP, porque se espera que antes se envíe una línea con una baja; 1 = Se dará automáticamente de baja la póliza activa antes de continuar el proceso de la línea."
+
+msgid "<code>verbose</code>"
+msgstr "<code>verbose</code>"
+
+msgid "\"1\" vol dir que mostrarà missatges 'verbose' pel log; \"0\" no."
+msgstr "\"1\" significa que mostrará mensajes 'verbose' por el log; \"0\" no."
+
+msgid "<code>silenciar_baixes_sense_efecte</code>"
+msgstr "<code>silenciar_baixes_sense_efecte</code>"
+
+msgid "\"1\" ignorarà la baixa de la pòlissa en el cas de no existir la pòlissa o estar de baixa. \"0\" pel contrari."
+msgstr "\"1\" ingnorará la baja de la póliza en el caso de no existir la póliza o estar de baja. \"0\" para el contrario."
+
+msgid "<code>canvi_automatic_de_cups</code>"
+msgstr "<code>canvi_automatic_de_cups</code>"
+
+msgid "\"1\" en rebre una pòlissa que ja existeix en l'ERP i estigui activa amb un CUPS diferent, es donarà de baixa el CUPS actual i hi vincularà el nou CUPS. \"0\" notificarà l'error i no farà cap modificació."
+msgstr "\"1\" en recibir una póliza que ya exista en el ERP y esté activa con un CUPS distinto, dará de baja el CUPS actual y se vinculará a el nuevo CUPS. \"0\" notificará el error y no hará ninguna modificación."
+
+msgid "<code>validar_nif</code>"
+msgstr "<code>validar_nif</code>"
+
+msgid "\"1\" indica que es validaran els NIFs de manera habitual. \"0\" no validarà."
+msgstr "\"1\" indica que se validarán los NIFs de forma habitual. \"0\" no validará."
 
 msgid "Documentació PowERP distribuidora"
 msgstr "Documentación PoweERP distribuïdora"
@@ -12615,7 +12910,7 @@ msgid "<strong>Planificada (fitxer ruta)</strong>: La lectura es crearà amb dat
 msgstr "<strong>Planificada (fichero ruta)</strong>:La lectura se creará con la fecha 31/03/2017"
 
 msgid "Selecció de orígen \"Sense lectura\""
-msgstr "Selección del orígen \"Sin lectura\""
+msgstr "Selección del origen \"Sin lectura\""
 
 msgid ""
 "Per defecte, totes les lectures carregades des de TPL tindran com a origen\n"
@@ -12628,7 +12923,7 @@ msgid ""
 msgstr ""
 "Por defecto, todas las lecturas cargadas desde TPL tendrán como oríggen\n"
 "<strong>TPL</strong>. En los casos en los que no se pueda obtener la lectura por algun\n"
-"motivo, como la imposibilidad de acceso al contador, se puede cargar la lectura con orígen\n"
+"motivo, como la imposibilidad de acceso al contador, se puede cargar la lectura con origen\n"
 "<strong>Sin Lectura</strong>. Cuando se desee esta funcionalidad /y si GISCE-ERP\n"
 "está correctamente configurado) hará falta escoger una incidéncia adecuada en la lectura\n"
 "y copiar la lectura anterior en el TPL."
@@ -18923,7 +19218,7 @@ msgid ""
 "comunitat autónoma i acaben en una altra de diferent orígen."
 msgstr ""
 "CODIGO_CCAA_2 este campo es sólo para los tramos de línea que empiecen en una\n"
-"comunidad autónoma y acaben en otra de diferente orígen."
+"comunidad autónoma y acaben en otra de diferente origen."
 
 msgid ""
 "En aquests casos es pot contemplar de crear una línia nova quan es faci un\n"
@@ -20936,7 +21231,7 @@ msgid "Node inicial"
 msgstr "Nodo inicial"
 
 msgid "Codi del node d'origen del tram"
-msgstr "Código del nodo de orígen del tramo"
+msgstr "Código del nodo de origen del tramo"
 
 msgid "Node final"
 msgstr "Nodo final"
@@ -23687,7 +23982,7 @@ msgstr ""
 "directamente desde el contador."
 
 msgid "Formats d'origen suportats:"
-msgstr "Formatos de orígen suportados:"
+msgstr "Formatos de origen suportados:"
 
 msgid "Fitxer de corba obtingut a través del TPL de GISCE-ERP"
 msgstr "Fichero de curva obtenido a través del TPL de GISCE-ERP"
@@ -23856,7 +24151,7 @@ msgid "Conversió del fitxer de corba a F1"
 msgstr "Conversión de la curva a F1"
 
 msgid "Els fitxers origen suportats són:"
-msgstr "Los ficheros orígen soportados son:"
+msgstr "Los ficheros origen soportados son:"
 
 msgid "<strong>Fitxer TPL de GISCE-ERP</strong>"
 msgstr "<strong>Fichero TPL de GISCE-ERP</strong>"
@@ -37428,6 +37723,27 @@ msgstr ""
 msgid "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_ca.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png\" />"
 
+#~ msgid "Tipus de sincrontizació:"
+#~ msgstr "Tipo de sincronización:"
+
+#~ msgid "Sincronització massiva: Importació de moltes actualitzacions"
+#~ msgstr "Sincronización masiva: Importación de muchas actualizaciones"
+
+#~ msgid "Sincronització immediata: Importació d'una sola actualització"
+#~ msgstr "Sincronización inmediata: Importación de una sola actualización"
+
+#~ msgid "configurat"
+#~ msgstr "configurat"
+
+#~ msgid "sufix_errors"
+#~ msgstr "sufix_errors"
+
+#~ msgid "verbose"
+#~ msgstr "verbose"
+
+#~ msgid "validar_nif"
+#~ msgstr "validar_nif"
+
 #~ msgid "<img src=\"data:image/png;base64,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\" />"
 #~ msgstr "<img src=\"data:image/png;base64,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\" />"
 
@@ -38518,9 +38834,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 
 #~ msgid "<a href=\"#omplir-resums\">Omplir resums</a>"
 #~ msgstr "<a href=\"#rellenar-resumenes\">Rellenar resumenes</a>"
-
-#~ msgid "<a href=\"#generar-fitxers\">Generar fitxers</a>"
-#~ msgstr "<a href=\"#generar-ficheros\">Generar ficheros</a>"
 
 #~ msgid ""
 #~ "\n"
@@ -42128,9 +42441,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 
 #~ msgid "Conectors"
 #~ msgstr "Conecores"
-
-#~ msgid "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
-#~ msgstr "<img alt=\"connectors\" src=\"../_static/configuracio.png\" />"
 
 #~ msgid ""
 #~ "Per començar el procés de perfilació s'ha de clicar a '<strong>Lots de Perfilació</strong>',\n"
@@ -55194,9 +55504,6 @@ msgstr "<img alt=\"\" src=\"../_static/acciones/wiz_pagar_factures_step_4_es.png
 #~ "<br />\n"
 #~ "    3.4. \n"
 #~ "<a href=\"#34-en-una-persona-fisicajuridica\">En una persona física/jurídica</a>    "
-
-#~ msgid "<a href=\"#4-possibles-configuracions\">Possibles configuracions</a>"
-#~ msgstr "<a href=\"#4-posibles-configuraciones\">Posibles configuraciones</a>"
 
 #~ msgid "<img alt=\"\" src=\"../_static/menu_acciones/asistente_pagar_facturas_csv/CA/step_3b.png\" />"
 #~ msgstr "<img alt=\"\" src=\"../_static/menu_acciones/asistente_pagar_facturas_csv/ES/step_3b.png\" />"
