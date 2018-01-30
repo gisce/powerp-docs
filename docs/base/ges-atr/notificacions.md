@@ -42,12 +42,13 @@ correu a la fitxa PowerEmail.
 
 ## Notificacions a clients de casos ATR
 
-Hem desenvolupat un sistema que permet notificar als clients dels casos ATR.
+Hem desenvolupat un sistema que permet notificar als clients dels casos ATR
+de forma massiva.
 
-Aquest sistema es basa en plantilles PowerEmail i un assistent per enviar
-les notificacions als casos corresponents.
+Aquest sistema es basa en [plantilles PowerEmail](../poweremail.md#gestio-de-plantilles-poweremail)
+i un assistent per enviar les notificacions als casos corresponents.
 
-Per defecte s'utilitza la variable `sw_mail_user_notification_on_activation` per
+Per defecte s'utilitzen la variable `sw_mail_user_notification_on_activation` per
 saber si els nous passos creats s'han de notificar.
 
 Els passos per notificar es poden notificar manualment, o bé
@@ -91,6 +92,53 @@ Es poden trobar filtrant amb el nom de plantilla "_ATR {nom_del_cas}{nom_del_pas
 Per exemple: `ATR A301:`.
 
 S'ha de tenir en compte que el `object` que s'utilitza és el cas ATR.
+
+!!! Warning "Atenció"
+    Canviar el nom d'aquestes plantilles no afectarà al funcionament de les
+    notificacions, tot i que no recomanem canviar-lo.
+
+!!! Note "Nota"
+    En el cas dels rebuigs, les plantilles per defecte contenen el text:
+    `${notificacio_text}`, aquest es substituïrà per el text configurat en el
+    menú de Notificacions ATR.
+
+#### Plantilles de Rebuig
+
+Per tal de processar correctament tots els rebuigs de forma diferent, s'ha
+afegit el menú de Notificacions de Rebuig: **"_Menú OpenERP > Gestió ATR >
+Configuració > Notificacions rebuigs ATR_"**.
+
+![](../_static/atr/NotificacionsRebuigs_Menu.png)
+
+En aquest menú es pot configurar un text personalitzat per cada rebuig o
+grup de rebuigs.
+
+Els camps d'aquests registres són molt senzills:
+
+- Procés ATR al que està relacionat
+- Pas del Procés al que està relacionat
+- Si aquesta notificació està activa
+- Text adicional de la notificació
+- Rebuigs pels quals respon aquesta notificació
+
+![](../_static/atr/NotificacionsRebuigs.png)
+
+Per afegir rebuigs relacionats amb aquesta notificació, senzillament premem el
+botó `Afegir` i sel·leccionem els rebuigs que ens interessa.
+
+Si volem deixar d'utilitzar una d'aquestes notificacions, senzillament desmarquem
+la casella `Notificació Activa`. Per tornar-la a utilitzar cal que estigui marcada.
+
+El text de la plantilla correspon al format [MAKO](http://www.makotemplates.org/),
+es a dir, Python + HTML. Adicionalment, es disposa dels següents objectes Python
+per a facilitar la informació a la plantilla:
+
+- `cas`: Cas ATR solicitat per notificar
+- `pas`: Pas del cas ATR solicitat per notificar
+
+!!! Hint "Consell"
+    Es poden utilitzar funcions com: `${pas.name}` per mostrar el nom del pas.
+    Tant el `pas` com el `cas` poden utilitzar camps i funcions encadenades.
 
 ### Assistent per notificar casos ATR
 
