@@ -41,13 +41,13 @@ pages:
     - Administración Pública:
         - AEAT: base/adm-pub/aeat.md
     - Gestión ATR:
-        - Introducción y conceptos: base/ges-atr/atr.md
-        - Funcionamiento general: base/ges-atr/funcionament.md
-        - Generación y envío de XMLs: base/ges-atr/gestioxml.md
-        - Operaciones: base/ges-atr/operacions.md
-        - Notificaciones: base/ges-atr/notificacions.md
-        - Automatitzación de procesos: base/ges-atr/automatitzacio.md
-        - Apéndice: base/ges-atr/apendix.md
+        - Introducción y conceptos: base/GestionATR/atr.md
+        - Funcionamiento general: base/GestionATR/funcionament.md
+        - Generación y envío de XMLs: base/GestionATR/gestioxml.md
+        - Operaciones: base/GestionATR/operacions.md
+        - Notificaciones: base/GestionATR/notificacions.md
+        - Automatitzación de procesos: base/GestionATR/automatitzacio.md
+        - Apéndice: base/GestionATR/apendix.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inicio: distri/index.md
