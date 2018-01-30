@@ -3,14 +3,24 @@ repo_name: GitHub
 repo_url: https://github.com/gisce/powerp-docs
 edit_uri: edit/master/docs
 site_author: GISCE-TI, S.L.
-google_analytics: ['UA-27668469-4', 'builds.gisce.net']
-theme: readthedocs
+site_favicon: extra/gisce.ico
+google_analytics: ['UA-27668469-4', 'manuals.gisce.net']
+theme: material
 
 markdown_extensions:
   - admonition
   - grid_tables
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
+
+extra:
+  font: fonts/DejaVuSans.ttf
+  logo: extra/gisce.png
+  feature:
+    tabs: true
+  palette:
+    primary: 'indigo'
+    accent: 'blue'
 
 extra_css:
   - extra/css/images.css
@@ -20,7 +30,6 @@ pages:
   - Base:
     - Clients i Empreses: base/partners.md
     - PowerEmail: base/poweremail.md
-    - Gestió ATR: base/atr.md
     - Atenció al Client: base/atc.md
     - Gestió de pòlisses: base/polizas.md
     - Gestió de comptadors: base/contadores.md
@@ -28,10 +37,20 @@ pages:
     - Revisions internes: base/revisiones.md
     - Administració Pública:
         - AEAT: base/adm-pub/aeat.md
+    - Gestió ATR:
+        - Introducció i conceptes: base/ges-atr/atr.md
+        - Funcionament general: base/ges-atr/funcionament.md
+        - Generació i enviament de XMLs: base/ges-atr/gestioxml.md
+        - Operacions: base/ges-atr/operacions.md
+        - Notificacions: base/ges-atr/notificacions.md
+        - Automatització de prosessos: base/ges-atr/automatitzacio.md
+        - Apèndix: base/ges-atr/apendix.md
+    - SOA: base/soa.md
   - Distribuidora:
     - Inici: distri/index.md
+    - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
-    - Manual d'ús de TPL: distri/tpl.md
+    - Manual d'ús de TPL - Índex: distri/tpl.md
     - Manual d'ús de TPL:
       - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
       - Procés de treball: distri/tpl/proceso_de_trabajo.md
@@ -41,6 +60,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Reles: distri/reles.md
     - Facturació: distri/facturacion.md
     - Facturació:
       - Peatges: distri/facturacion_peajes.md
@@ -82,7 +102,7 @@ pages:
         - CINI - Generació Automàtica: distri/act_cinis.md
         - TI - Generació Automàtica: distri/act_tis.md
       - ERP: gis/erp.md
-    - Qualitat de servei: distri/calidad.md
+    - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
       - Marc de referència del model de qualitat: distri/calidad/marco_ref_modelo.md
@@ -113,3 +133,5 @@ pages:
     - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Gestió de lectures: facturacion/lecturas.md
     - Lots: facturacion/lotes.md
+    - Tipus de factures: facturacion/tipos_facturas.md
+    - Accions genèriques: facturacion/acciones.md

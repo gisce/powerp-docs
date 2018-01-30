@@ -64,11 +64,11 @@ les dades de les diferents pestanyes.
 
 ![](_static/polizas/polissa_contacte.png)
 
-!!! Note
+!!! Info "Nota"
     En l'apartat _Tipo de pago_ es pot introduïr uns valors com els que es mostren
     en l'última imatge de la sèrie.
 
-!!! Warning
+!!! Warning "Atenció"
     A la fitxa de la comercialitzadora, recorda que el camp _Empresa ID_ es el
     **codi de comercialitzadora de REE**.
 
@@ -82,7 +82,7 @@ les dades de les diferents pestanyes.
 
     * Si l'escomesa es nova, s'haurà de [crear un nou CUPS].
 
-    !!! Warning
+    !!! Warning "Atenció"
         Abans de crear un nou CUPS comproba que realment no existeix un en la
         direcció que busques. Comproba també que no estigui desactivat.
 
@@ -91,7 +91,7 @@ les dades de les diferents pestanyes.
 * Activa: La pòlissa per defecte està activa i només es desactivarà quan s'hagi
   donat de baixa i s'hagi realitzat la última facturació.
 
-    !!! Note
+    !!! Info "Nota"
         No es pot desactivar una pòlissa fins que s'hagi realitzat la última
         facturació. Veure l'apartat [Donar de baixa una pòlissa].
 
@@ -107,12 +107,12 @@ les dades de les diferents pestanyes.
 
     ![](_static/polizas/tarifes.png)
 
-    !!! Note
+    !!! Info "Nota"
         Una vegada sel·leccionada la tarifa, i **després de guardar el registre**,
         en la part inferior aparaixeràn els periodes de la tarifa, que s'haurà
         d'emplenar amb la potenca contractada en cadascún d'ells.
 
-    !!! Warning
+    !!! Warning "Atenció"
         Al sel·leccionar una tarifa 3.1, s'ha d'observar que la tarifa amb la
         descripció **"Tarifa 3.1A LB"** indica que la lectura es realitza en baixa
         tensió.
@@ -125,7 +125,7 @@ les dades de les diferents pestanyes.
 * Tensió: S'indicarà la tensió del subministre (230, 400)
 * Potencia: En aquest camp s'indicarà la potència màxima contractada dels
   diferents periodes. El camp de _Potencia_ en els filtres de sel·lecció de les
-  pòlisses fa referencia a aquest camp.
+  pòlisses fa referencia a aquest camp. Veure [normalització potencia](#ajuda-normalitzacio-de-potencia)
 * Facturació Potencia: En aquest camp s'indicarà el tipus de facturació de la
   pòlissa sel·leccionant si es fa per ICP o per la regla del maxímetre.
 * ICP: S'indicarà la intensitat del ICP instal·lat i/o marca del mateix.
@@ -139,6 +139,22 @@ les dades de les diferents pestanyes.
   instal·lador.
 * Potencia Acta: Es la potència del acta del instal·lador (camp informatiu)
 
+#### Ajuda normalització de potència
+
+Al costat de la potència contractada hi ha el botó de **Normalitzar**.
+
+![](_static/polizas/pot_norm_1.png)
+
+Aquest botó llança un assistent que ens ajuda a seleccionar una potència normalitzada nova o a normalitzar la potència contractada actual. S'utilitza la **tensió normalitzada** i la **tarifa d'accés** per a llistar les potències normalitzades possibles.
+
+Quan es llança l'assistent selecciona la potència normalitzada **més pròxima a l'actual**.
+
+![](_static/polizas/pot_norm_2.png)
+
+I amb el botó d'assignar s'actualitza la potència contractada amb la normalitzada
+
+![](_static/polizas/pot_norm_3.png)
+
 #### Pestanya de Comptadors
 
 En la pestanya de Comptadors es troba l'històric dels comptadors que han estat
@@ -146,7 +162,7 @@ relacionats amb la pòlissa. Apareixen tots els que han passat per la pòlissa q
 es troben en estat _"No Actiu"_ i únicament el que es troba actualment
 instal·lat està _"Actiu"_.
 
-!!! Note
+!!! Info "Nota"
     Recorda que el campo _N. comptador_ ha de contenir el mateix **número de
     serie** del comptador actiu de la llista de la part inferior del formulari.   
     Les cerques a les pòlisses del número de comptador, són les del camp _N.
@@ -175,7 +191,7 @@ els següents punts.
   d'aquesta pòlissa.   
   Dependrà de si es "mensual" o "bimestral".
 
-!!! Warning
+!!! Warning "Atenció"
     No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
 
 **A la pestanya Comptadors:**
@@ -191,7 +207,7 @@ Al comptador actiu s'han de completar els següents camps:
   de la pòlissa.   
   Dependrà de si es "mensual" o "bimestral".
 
-!!! Warning
+!!! Warning "Atenció"
     No es pot desactivar la pòlissa fins haver realitzat l'última facturació.
 
 ### Realitzar canvi de titularitat
@@ -216,7 +232,7 @@ suposi un canvi de tarifa de peatge, s'haurà de fer un canvi de comptador. Per
 realitzar-ho cal [donar de baixa el comptador] i [donar d'alta un nou comptador]
 inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
 
-!!! Note
+!!! Info "Nota"
     Sempre s'ha d'inicialitzar un nou comptador amb les lectures dels periodes
     de la nova tarifa.   
     Recorda que cada peruide d'una tarifa es un producte diferent. (p.e. P1(2.0)
@@ -261,6 +277,107 @@ inicialitzat amb les lectures dels diferents periodes de la nova tarifa.
 
 * **Observacions**
 
+## Estats de les pòlisses
+
+Les pòlisses tenen certs estats en els que es troben en un moment donat:
+esborrany, activa, baixa, etc, i aquests estats governen el comportament i el
+paper d'aquesta. Es tracta d'una dinàmica que segueix cada pòlissa i que forma
+un recorregut lògic.
+
+![Descripció dels \label{workflows}](_static/polizas/workflows.svg)
+*Fluxograma dels estat de les pòlisses i les transicions*
+
+![](_static/polizas/indicador_estat_polissa.png)
+*Vista general de la pòlissa amb el camp "estat" indicat*
+
+Al crear una pòlissa, aquesta per defecte s'estableix en un estat de
+**Esborrany**. Una pòlissa en Esborrany permet canviar les dades abans de
+confirmar-les.
+
+Després de prémer el botó de "Validar", l'estat de la pòlissa serà **Validar**.
+Aquest estat es l'anterior al de activa, en el que l'ERP t'informa de quines
+dades no compleixen els requeriments.
+
+Quan les dades estàn validades i són correctes, l'estat de la pòlissa passa a
+ser **Activa**. Com indica el nom, l'estat de Activa indica que una pòlissa
+està en vigor; que s'hi poden fer modificacions contractuals, i passar a altres
+estats com Impagament.
+
+Des de **Impagament** es podrà o bé donar de baixa la pòlissa, passar en estat
+de **Tall**, o bé reactivar-la.
+
+Des de Activa, també es poden fer **Modificacions Contractuals**. Per una
+explicació més detallada d'aquestes, consultar
+[aquesta](#modificacions-contractuals_1) pàgina.
+
+També es podrà donar de **Baixa** una pòlissa o **Cancel·lar-la**.
+
+## Històric de canvis en els estats d'una pòlissa
+
+En el formulari principal de la pòlissa, hi ha una pestanya que és **Històric**,
+on pots veure per tots els estats que ha passat la pòlissa, quan han estat
+canviats i quin usuari els ha canviat. Això permet tenir un control sobre el
+flux d'aquesta.
+
+![](_static/polizas/historic_estats.png)
+
+## Contractes de tipus eventual
+
+Un contracte eventual és un tipus de contracte amb una duració determinada,
+aquests es solen realitzar per events de curta duració, com poden ser
+fires, certàmens, etc.
+
+Dins d'aquests contractes en podem distingir dos tipus:
+
+* **Contracte eventual sense comptador**: aquests són contractes d'una duració
+màxima de dos mesos en els quals per llei no fa falta un comptador, el consum es
+calcularà a partir d'una fórmula (Potència contractada * dies de contracte * hores diaries).
+
+* **Contracte eventual amb comptador**: a diferencia del contracte anterior aquest
+sí que disposa de comptador per poder calcular el consum.
+
+### Càlcul del consum total per contractes eventuals sense comptador
+
+Aquest tipus de contractes es caracteritzen per no tenir comptador, per tant no
+es pot tenir una mesura exacte del consum total, per calcular-ho s'utilitzarà la
+següent fórmula:
+
+
+`Consum total = Potència contractada * dies de contracte * hores d'ús diàries`
+
+### Assistent per calcular el consum total
+
+Per tal de facilitar aquest càlcul s'ha afegit un assistent dins el menú de
+gestió de pòlisses.
+
+
+Dins el menú de gestió de pòlissa, en cas de que el tipus de contracte sigui
+eventual sense comptador ens apareixerà la opció per calcular-ne el consum total:
+
+![](_static/polizas/assistent_consum_eventual/cat/polissa_cat.png)
+
+Per iniciar l'assistent premerem el botó calcular:
+
+| Assistent amb camp sense precalcular                               | Assistent amb camp precalculat                         |
+|--------------------------------------------------------------------|--------------------------------------------------------|
+| ![](_static/polizas/assistent_consum_eventual/cat/wiz_no_pre_cat.png) |![](_static/polizas/assistent_consum_eventual/cat/wiz_pre_cat.png)|
+
+Un cop comprovat que les dades son correctes premem el botó calcular.
+
+!!! Info "Nota"
+        L'opció precalcular és opcional, serveix per comprovar els càlculs
+        abans de calcular-los i apareixeran al camp consum de l'assistent.
+
+Finalment, un cop calculat el camp ja apareixarà al menú de gestió de pòlissa.
+
+![](_static/polizas/assistent_consum_eventual/cat/polissa_calc_cat.png)
+
+
+En el cas que hi hagi una modificació contractual el camp del consum apareixerà
+a la pestanya de facturació de la modificació.
+
+![](_static/polizas/assistent_consum_eventual/cat/mod_contract_cat.png)
+
 ## Visualització deute d'una pòlissa/contracte
 
 Podem visualitzar el deute d'una pòlissa/contracte a través del seu formulari,
@@ -294,7 +411,7 @@ dos tipus de motius per fer-ho: els que vénen definits en el BOE
 ([24/2013 Article 52 punt 4](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2013-13645)),
 o els que anem creant nosaltres mateixos
 
-!!! note
+!!! Info "Nota"
     En el cas de les distribuidores un subministrament no tallable, hauria
     de venir definit pel BOE (que ja venen pre-carregats)
     En el cas de les comercialitzadores un subministrament no tallable pot ser
@@ -345,7 +462,7 @@ subministrament no tallable
 
 Aquesta funcionalitat està reservada pels usuaris que siguin del grup
 **GISCEDATA Pòlissa /CutOff**, per tant que tinguin permisos específics per
-interactuar amb els motius de subministrament no tallable.
+interactuar amb els motius de subministrament no tallable.    
 La resta d'usuaris podran llistar totes les pòlisses que tenen un motiu de
 subministrament no tallable, i veure el motiu de no tall. Però no podran crear
 ni assignar motius.
@@ -363,7 +480,7 @@ de contracte actual (si en té). Prement en el botó continuar, actualitzarà la
 data de firma de contracte de la **pólissa** i la **modificació contractual
 activa**.
 
-!!! warning
+!!! Warning "Atenció"
     No es farà cap tipus de validació sobre la data introduïda. Si és una data
     vàlida es modificarà la data actual sense tenir en compte cap altra
     consideració com la data d'alta i de baixa de la pòlissa o la data actual
@@ -389,10 +506,48 @@ Si es confirma, la modificació contractual activa serà eliminada i la
 modificació contractual anterior es reactivarà. Altrament, la modificació
 contractual es mantindrà sense canvis.
 
-!!! note
+!!! Info "Nota"
     No es podrà desfer cap modificació contractual si la pòlissa no es troba
     en estat **actiu**
 
+## Gestió del dipòsit de garantia (fiança)
+
+La gestió del dipòsit de garantia va integrada amb el mòdul de facturació,
+tant en distribuïdora com en comercialitzadora. En aquest aparat s'explica
+l'aspecte general de la gestió.
+
+En la fitxa del contracte s'afegeix un camp **Dipòsit**.
+
+![](_static/polizas/deposit_camp.png)
+
+Aquest camp sempre és el **saldo** del dipòsit que tenim en aquests moments.
+Funciona igual que la comptabilitat, però només tenint en compte els
+moviments del producte que tinguem configurat com a diposit de garantia.
+
+Amb l'avantatge que tenim una **traçabilitat completa** i un **històric** de tots
+els moviments de fiances que hi ha hagut. Per tant es poden generar els informes
+necessaris per l'administració sense que afecti el dia a dia.
+
+![](_static/polizas/deposit_conf.png)
+
+Quan es factura un producte fiança s'increment aquest saldo i quan es retorna
+es redueix.
+
+### Devolució del dipòsit de garantia
+
+Es disposa d'un assistent per tal de fer la devolució de la fiança, està en
+el marge dret a la llista d'assistents disponibles d'un contracte.
+
+![](_static/polizas/deposit_devolucio.png)
+
+Aquest assistent agafa com a valors predeterminats:
+
+  * A qui es retorna la fiança: **el titular**.
+  * La quanitat a retornar: **saldo actual**
+  * El número de compte: **el compte associat al contracte** (En el cas que es
+    vulgui afegir a una remesa.)
+
+![](_static/polizas/deposit_assistent_devolucio.png)
 
 ## CNAE
 
@@ -414,3 +569,16 @@ Per fer-ho cal fer click al botó de la lupa a l'apartat **CNAE** al **crear **
 Llavors apareix la llista de CNAEs a escollir:
 
 ![](_static/polizas/llista_cnae.png)
+
+
+## Autoconsum
+
+El camp _"autoconsumo"_ ens indica el tipus de consum que te el client, segons aquest camp seran requerits uns tipus de comptadors els quals estan definits a la següent taula:
+
+|Tipus | PF | G | C |
+|-|-|-|-|
+|**Sense Autoconsum**|x | | |
+|**Tipus 1**|x |x | |
+|**Tipus 2 a)**| |x |x|
+|**Tipus 2 b)**|x|x| |
+|**Serveis Auxiliars**|x | | | |

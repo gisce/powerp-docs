@@ -34,7 +34,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
   torna a reiniciar-se a 0.
 * **Propietat de**: En aquest quadre de selecció s'ha d'escollir si el
   comptador es de la empresa distribuïdora o del client
-* **Data alta**: S'ha d'indicar la data de alta del comptador (Veure `Nota 1`_)
+* **Data alta**: S'ha d'indicar la data de alta del comptador (Veure `Nota 1`)
 * **Actiu**: Aquest camp indica si el comptador està actiu a la pólissa a la
   qual està associada. Quant es desitja donar de baixa un comptador, es
   desmarca aquesta casella i apareix a sota el camp ``Data de baixa``
@@ -47,6 +47,12 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 * **Introduïr lectures**: Aquest botó permet entrar les lectures de forma
   manual des de la fitxa del comptador
 
-!!! note
+!!! Info "Nota"
     La **data de primera lectura** ha de conincidir amb la data de alta del
     comptador
+
+## Tipus de comptadors
+
+* **Punt Frontera**: Aquest tipus de comptadors son punts d'unio entre la xarxa interior (pot haver-hi més comptadors) i la exterior.
+* **Generació**: Els comptadors de generació son els encarregats de gestionar l'energia generada per instalacions d'autoconsum.
+* **Consumo**: Els comptadors de consum, s'encarregan de la gestió de l'energia consumida de l'exterior en instal·lacions d'autoconsum.

@@ -49,7 +49,7 @@ correctament.
 | **FECHA_ACTIVACION**       | Data inici de la modificació contractual nova  |
 
 
-!!! note
+!!! Info "Nota"
     Codi R2 (R2-xxx) de la CNMC gestionable en el camp `Ref2` de la fitxa de
     l'empresa comercialitzadora accessible des del menú `Empreses`
 
@@ -86,3 +86,96 @@ Camp            | Descripció
 :---------------|:----------------------------------------------
 Número de sèrie | Número de sèrie del comptador
 CINI            | Codi CINI del comptador
+
+## Assistent per actualitzar CINIs i TIs
+
+### Introducció
+
+Per tal de facilitar l'actualització de tots els codis CINI's i els TI's, es pot fer
+desde l'assistent corresponent, aquest permet actualitzar tant els codis TI com
+els codis CINI.
+
+### Localització de l'assistent
+
+** Administració pública > CNMC > Circulars > Recalcular CINIs / Tis **
+
+![](../_static/cnmc/as_cinis/localitzacio_assistent.png)
+
+
+### Instruccións de l'assistent
+
+Seleccionar el model d'entre les següents opcions:
+
+  * CTS.
+  * Subestacions.
+  * Línies de baixa tensió.
+  * Línies d'alta tensió.
+  * Transformadors
+  * Cel·les
+
+![](../_static/cnmc/as_cinis/models.png)
+
+Seleccionar el camp que es vol recalcular:
+
+  * CINI
+  * TI
+
+![](../_static/cnmc/as_cinis/camp.png)
+
+!!! Info "Nota"
+    El requadre de selecció ens permet indicar si volem canviar el codi
+    seleccionat per tots els elements o només per els que no estiguin
+    bloquejats, en el cas que volguem mantenir alguns codis.
+    ![](../_static/cnmc/as_cinis/check.png)
+
+Finalment premem el boto recalcular per que es recalculin els camps
+seleccionats:  
+
+![](../_static/cnmc/as_cinis/rect.png)
+
+CINIs actualitzats                                |TIs actualitzats
+:-------------------------------------------------|:-----------------------------------------------
+![](../_static/cnmc/as_cinis/actualitzat_cini.png)|![](../_static/cnmc/as_cinis/actualitzat_ti.png)
+
+### Dades a recalcular
+
+Camp a recalcular| Descripció                                        | Longitud| Tipus
+:----------------|:--------------------------------------------------|:-------:|:------
+CINI             | Codi d'identificació normalitzada d'instal·lacions|   8     | cadena
+TI               | Tipus d'instalació de la CNMC                     |   -     | cadena
+
+
+## Generació de fitxers oficials CNMC SIPS
+
+Segons la llei 24/2013 del 26 de desembre esmentada en el [BOE 2013/13645](https://www.boe.es/boe/dias/2013/12/27/pdfs/BOE-A-2013-13645.pdf) i juntament amb el 3r article del Reial decret 1011/2009
+esmentat en el [BOE 2009/10220](https://www.boe.es/boe/dias/2009/06/20/pdfs/BOE-A-2009-10220.pdf) del 19 de juny, amb la finalitat de tenir una base de
+dades actualitzada de consumidors i punts de subministrament la CNMC requereix
+l'enviament d'una sèrie de fitxers per part de les distribuïdores.
+
+### Tipus de fitxers CNMC SIPS
+
+- **Consums:** Fitxer filtrat per codis **CUPS** amb els consums efectuats
+separats per períodes.
+
+- **Punts de subministrament:** Fitxer filtrat per codis **CUPS** amb informació
+sobre els punts de subministrament donats d'alta.
+
+### Assistent per a la generació de fitxers CNMC SIPS
+
+L'assistent facilita la generació d'un fitxer **ZIP** amb els dos
+fitxers especificats anteriorment.
+
+Per localitzar l'assistent es pot fer a
+**Administració pública > CNMC > SIPS > Exportación fichero CNMC SIPS**
+
+![](../_static/cnmc/sips_1.png)
+
+L'assistent obre una finestra amb el botó **Exportar**. Prement el botó es genera el fitxer **ZIP**.
+
+![](../_static/cnmc/sips_2.png)
+
+![](../_static/cnmc/sips_3.png)
+
+Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del **ZIP** generat.
+
+![](../_static/cnmc/sips_4.png)

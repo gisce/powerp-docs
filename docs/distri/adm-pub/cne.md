@@ -18,12 +18,12 @@ pel qual volem generar la liquidació de la CNE.
 
 Apretem el botó **Generar liquidacions** i ens esperem a que finalitzi el càlcul.
 
-!!! note
+!!! Info "Nota"
     Pot ser que el programa es bloquegi, segons el número de factures que estiguin
     incloses en el període de liquidació seleccionat. Veurem que el botó es queda
     _clavat_, ens hem d'esperar que finalitzi l'operació.
 
-!!! tip   
+!!! Tip "Consell"   
     Si volem continuar treballant, podem obrir un altre client de l'ERP i continuar
     fent feina.
 
@@ -62,12 +62,12 @@ l'assistent que permetrà descarregar-nos el fitxer CSV generat.
 
 ![](../_static/adm-pub/cne/liq_8.png)
 
-!!! note
+!!! Info "Nota"
     El Fitxer s'anomenarà automàticament amb el format
     **liquidacio_RRRR_YYYYMM.csv** on _RRRR_ és el codi de referència de la
     distribuidora i _YYYYMM_ l'any i mes de la liquidació.
 
-!!! note
+!!! Info "Nota"
     El fitxer CSV generat separa els camps per punt i coma (**;**) i pels valors numèrics
     utilitza el punt (**.**) com a separador de decimals.
 
@@ -327,7 +327,7 @@ Es poden generar els següents fitxers georefereniats de la CNE:
 * **F7**: CUPS _(CUPS)_
 * **F8**: Règim Especial _(RE)_
 
-!!! note
+!!! Info "Nota"
     En el cas de les subestacions:
     La generació dels fitxers **F1** i **F1bis** només estarà disponible en aquelles
     instal·lacions que disposin del mòdul de Subestacions
@@ -344,11 +344,11 @@ Els camps imprescindibles per qualsevol fitxer són:
 * **Codi R1**: Codi de l'empresa distribuidora segons circular 1/2012 de la CNE
 * **Num. Processadors**: Numero de processos que utilitzarem per la generació del fitxer.
 
-!!! note
+!!! Info "Nota"
     La generació de fitxers utilitza processos independents amb capacitat de
     multiprocés per accelerar-ne la generació.
 
-!!! tip
+!!! Tip "Consell"
     El número de processos afecta a la velocitat de la generació del fitxer,
     però també als recursos del servidor utilitzats. Normalment, el valor per
     defecte **Automàtic** és una bona opció no obstant, en servidors compartits
@@ -403,7 +403,7 @@ Apareixen dos camps nous:
 * **Recalcula camps energia**:
   Si es marca aquest ''checkbox'' s'omplen els camps d'energia abans de la generació del fitxer utilitzant les factures de l'any seleccionat
 
-!!! note
+!!! Info "Nota"
     Un cop calculades les energies, no fa falta tornar a seleccionar el camp en successives generacions
     del fitxer, ja que les dades queden emmagatzemades permanentment.
 
@@ -432,11 +432,11 @@ Un exemple:
 
 > `...`
 
-!!! note
+!!! Info "Nota"
     Un cop carregades les energies mitjançant CSV, no fa falta tornar-les a carregar en
     successives generacions del fitxer, ja que les dades queden emmagatzemades permanentment.
 
-!!! note
+!!! Info "Nota"
 
     Link al repositori del projecte georef
 

@@ -7,7 +7,7 @@ F12bis, F13, F13bis, F13c, F14 , F15 i F20 de la Circular 4/2015.
 
 * [Disposición 8624 del BOE núm. 182 de 2015](http://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
 
-!!! note
+!!! Info "Nota"
     Aquest mòdul va ser afegit a partir de la versió **v2.55** on es van afegir
     una sèrie de camps nous a la base de dades per tal de cumplimentar la
     informació requerida en els formularis.
@@ -45,7 +45,7 @@ A través d'aquest assistent podem realitzar dues operacions:
   2. Actualitzar dades estadístiques de la CNMC que s'utilitzen en aquests
      informes
 
-!!! note
+!!! Info "Nota"
     Abans de generar els informes, hem d'haver actualtizat les dades de la CNMC
     amb l'aque que volem realitzar l'informe.
 
@@ -94,7 +94,7 @@ Tenim dues accions disponibles:
 Podem polsar el botó **Generar el fitxer** per tal que comenci el procés de
 generació de l'informe.
 
-!!! note
+!!! Info "Nota"
     Depenguent de la quantitat de dades els informes poden tardar força temps
     en generar-se.
 
@@ -151,7 +151,7 @@ Energia activa anual consumida   | Energia activa anual consumida del CUPS, expr
 Energia reactiva anual consumida | Energia reactiva anual consumida del CUPS, expressada en kVArh
 Any d'informació                 | Any del qual es genera aquest formulari.
 
-!!! note
+!!! Info "Nota"
     Per tal d'evitar problemes de validació, veure documentació del camp
     [**CNAE**](../../../base/polizas.md#cnae)
 
@@ -285,6 +285,11 @@ Per les **línies de BT** s'inclouràn les que compleixin el següent:
   ( p.e. per l'any 2014, data_baixa > 31/12/2014) o bé estar buida.
 
 Les dades referents a **l'alta tensió** estàn formades pels següents camps:
+
+!!! Info "Nota"
+    Degut a que no hi poden haver nodes iguals amb tensions diferents per tal 
+    de saber la tensió d'un node fa falta que tots els trams AT adjacents a un 
+    transformador reductor tinguin posada la tensió del tram. 
 
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
@@ -445,7 +450,7 @@ Propietat                        | 0: pertany a tercers, 1: pertany a la company
 Data de posada en marxa          | Data APM de la cel·la de la posició. Es pot trobar a la pestanya Datos Administrativos de la cel·la.
 Any d'informació                 | Any del qual es genera aquest formulari
 
-!!! note
+!!! Info "Nota"
     Si el camp Màquina fos buit, s'ompliria amb un valor per defecte igual a "999999".
 
 #### F13: Subestacions
@@ -577,10 +582,6 @@ Any d'informació                 | Any del qual es genera aquest formulari
 Només s'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
-* **Instal·lació**: Només s'inclouràn les **cel·les i elements de tall** que la
-  instal·lació estigui en un suport.
-
-* **Categorització Inventari**: El valor d'aquest camp sigui "fiabilitat".
 * **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
 
 El formulari F15 està format pels següents camps:
@@ -632,7 +633,7 @@ distribuidora.
 En aquest apartat trobareu informació sobre els casos o motius més habituals
 pels quals no apareixen certs elements als formularis.
 
-!!! note
+!!! Info "Nota"
     Les caselles que no tenen cap data APM, es considera que son **més petites
     o iguals** a l'últim dia de l'any informat.
 
