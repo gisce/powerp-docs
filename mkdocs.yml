@@ -36,7 +36,7 @@ pages:
     - Equips de telecomunicació: base/telecom.md
     - Revisions internes: base/revisiones.md
     - Administració Pública:
-        - AEAT: base/adm-pub/aeat.md
+        - AEAT: base/AdministracionPublica/aeat.md
     - Gestió ATR:
         - Introducció i conceptes: base/GestionATR/atr.md
         - Funcionament general: base/GestionATR/funcionamiento.md
