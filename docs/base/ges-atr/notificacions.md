@@ -6,40 +6,6 @@ GISCE-ERP permet estandaritzar aquestes notificacions mitjançant plantilles
 **PowerEmail** per facilitar aquestes notificacions via email i incloure-les
 dins el propi cas.
 
-S'han definit tres notificacions:
-
- * [Acceptació del procés](#acceptacio-de-proces).
- * [Activació del procés](#activacio-del-proces-de-canvi-de-comercialitzadora).
- * [Notificació de cas ATR](#notificacions-a-clients-de-casos-atr)
-
-
-## Acceptació de procés
-
-Quan la comercialitzadora entrant rep un XML d'acceptació (C1-02, C2-02 o
-M1-02) es pot notificar al client que ja s'ha acceptat la seva petició de canvi
-o modificació de dades i properament serà activada. Per fer-ho podem anar a
-l'acció **Switching: Notificació acceptació procés Mail Form** i omplir el
-compte de correu des del qual es vol enviar el correu a la fitxa PowerEmail.
-
-
-##### Formulari notificació acceptació canvi
-![](../_static/atr/PowerEmailAcceptacio.png)
-
-
-## Activació del procés de canvi de comercialitzadora
-
-Quan la comercialitzadora rep un XML d'activació de canvi de comercialitzadora
-(C1-05, C2-05 o C2-07) es pot notificar al client que el procés de canvi s'ha
-acabat i que per tant ja és client de la nova comercialitzadora. Per fer-ho
-podem anar a l'acció **Switching: Notifiació activacio Polissa (Canvi
-Comercialitzador)** i omplir el compte de correu des del qual es vol enviar el
-correu a la fitxa PowerEmail.
-
-
-##### Formulari notificació activació canvi de comercialitzadora
-
-![](../_static/atr/PowerEmailActivacio.png)
-
 ## Notificacions a clients de casos ATR
 
 Hem desenvolupat un sistema que permet notificar als clients dels casos ATR
@@ -57,7 +23,10 @@ amb [l'assistent per notificar casos ATR](#assistent-per-notificar-casos-atr)
 !!! Warning "Atenció"
     Els casos "pendents de notificar" només es marcaran com a notificats si
     s'utilitza l'assistent o si s'utilitza la funció "notifica_a_client".
-    Aquesta funció es crida quan s'utilitza el botó "aplicar canvis".
+    Aquesta funció es crida quan s'utilitza els assistents:
+
+    - `Activar canvis o modificacións`
+    - `Enviar correu als casos ATR pendents de notificar`
 
 ### Configuració
 
@@ -165,5 +134,3 @@ El resultat de la tasca es quedarà registrat en la finestra de peticions, que
 es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
 
 ![](../_static/atr/WizardNotificarPeticions.png)
-
----
