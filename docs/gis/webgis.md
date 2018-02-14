@@ -30,9 +30,9 @@
  
  ![](_static/capes.png)
  
- En aquest control es poden diferenciar en dos tipus, capes de base (part superior del contol) i capes sobreposades(part inferior del control)
+ En aquest control es poden diferenciar en dos tipus:
  
- - Capes base:
+ - Cartografia:
     -  Només podem seelcionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
 
  - Capes sobreposades:
