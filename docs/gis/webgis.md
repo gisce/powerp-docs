@@ -59,8 +59,9 @@
   
   Camps de la bombolla:
   
+  ![](_static/comptador_popup.png)
+  
   - **Titol**: Numero de serie , marca i model 
-
   - Ultima data de tancament valida
   - Nom del titular
   - Adreça del CUPS
