@@ -45,11 +45,28 @@
     - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies
     - No comunica:Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
   
+  ![](_static/comptador_cch.png)
+  
   - Sin CCH: Apareixen el comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “No operativa” o “Sin CCH”
     - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies.
     - No comunica: Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
   
+  ![](_static/comptadors_no_cch.png)
+  
   - Sense concentrador: Apareixen els comptadors amb el camp “TG Contador” actiu i “Conectado” desactivat
+  
+  ![](_static/comptador_no_concentrador.png)
+  
+  Camps de la bombolla:
+  
+  - **Titol**: Numero de serie , marca i model 
+
+  - Ultima data de tancament valida
+  - Nom del titular
+  - Adreça del CUPS
+  - Concentrador
+
+  
   
 
 ### Control de zoom
