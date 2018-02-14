@@ -37,6 +37,20 @@
 
  - Capes sobreposades:
     - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
+#### Capes de telegestio
+
+  Aquest grup de capes ens permet veure informacio sobre la telelgesio. 
+
+  - Amb CCH: Apareixen els comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “Operativa con CCH”
+    - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies
+    - No comunica:Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
+  
+  - Sin CCH: Apareixen el comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “No operativa” o “Sin CCH”
+    - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies.
+    - No comunica: Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
+  
+  - Sense concentrador: Apareixen els comptadors amb el camp “TG Contador” actiu i “Conectado” desactivat
+  
 
 ### Control de zoom
  
