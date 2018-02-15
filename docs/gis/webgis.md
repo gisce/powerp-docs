@@ -30,13 +30,45 @@
  
  ![](_static/capes.png)
  
- En aquest control es poden diferenciar en dos tipus, capes de base (part superior del contol) i capes sobreposades(part inferior del control)
+ En aquest control es poden diferenciar en dos tipus:
  
- - Capes base:
+ - Cartografia:
     -  Només podem seelcionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
 
  - Capes sobreposades:
     - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
+#### Capes de telegestio
+
+  Aquest grup de capes ens permet veure informacio sobre la telelgesio. 
+
+  - Amb CCH: Apareixen els comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “Operativa con CCH”
+    - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies
+    - No comunica:Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
+  
+  ![](_static/comptador_cch.png)
+  
+  - Sin CCH: Apareixen el comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “No operativa” o “Sin CCH”
+    - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies.
+    - No comunica: Mostra tots els comptadors que la ultima lectura valida es de tres dies o més
+  
+  ![](_static/comptadors_no_cch.png)
+  
+  - Sense concentrador: Apareixen els comptadors amb el camp “TG Contador” actiu i “Conectado” desactivat
+  
+  ![](_static/comptador_no_concentrador.png)
+  
+  Camps de la bombolla:
+  
+  ![](_static/comptador_popup.png)
+  
+  - **Titol**: Numero de serie , marca i model 
+  - Ultima data de tancament valida
+  - Nom del titular
+  - Adreça del CUPS
+  - Concentrador
+
+  
+  
 
 ### Control de zoom
  
