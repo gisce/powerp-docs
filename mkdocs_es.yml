@@ -91,20 +91,20 @@ pages:
         - Visor Web: gis/webgis.md
         - Buscador: gis/websearch.md
       - QGIS: gis/qgis.md
-      - Instalaciones:
-        - Subestaciones: distri/subestaciones.md
-        - CTS: distri/cts.md
-        - CTS:
-          - Celdas i elementos de corte: distri/celdas.md
-        - LAT: distri/lat.md
-        - LBT: distri/lbt.md
-        - Instalaciones RE: distri/re.md
-        - Expedientes: distri/expedientes.md
-        - Despachos: distri/despachos.md
-        - Sincronización CUPS: distri/sincronizacion_cups.md
-        - CINI - Generación Automática: distri/act_cinis.md
-        - TI - Generación Automática: distri/act_tis.md
       - ERP: gis/erp.md
+    - Instalaciones:
+      - Subestaciones: distri/subestaciones.md
+      - CTS: distri/cts.md
+      - CTS:
+        - Celdas i elementos de corte: distri/celdas.md
+      - LAT: distri/lat.md
+      - LBT: distri/lbt.md
+      - Instalaciones RE: distri/re.md
+      - Expedientes: distri/expedientes.md
+      - Despachos: distri/despachos.md
+      - Sincronización CUPS: distri/sincronizacion_cups.md
+      - CINI - Generación Automática: distri/act_cinis.md
+      - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md

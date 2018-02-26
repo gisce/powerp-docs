@@ -88,20 +88,20 @@ pages:
         - Visor web: gis/webgis.md
         - Buscador: gis/websearch.md
       - Qgis: gis/qgis.md
-      - Instal·lacions:
-        - Subestacions: distri/subestaciones.md
-        - CTS: distri/cts.md
-        - CTS:
-          - Cel·les i elements de tall: distri/celdas.md
-        - LAT: distri/lat.md
-        - LBT: distri/lbt.md
-        - Instal·lacions RE: distri/re.md
-        - Expedients: distri/expedientes.md
-        - Despatxos: distri/despachos.md
-        - Sincronització CUPS: distri/sincronizacion_cups.md
-        - CINI - Generació Automàtica: distri/act_cinis.md
-        - TI - Generació Automàtica: distri/act_tis.md
       - ERP: gis/erp.md
+    - Instal·lacions:
+      - Subestacions: distri/subestaciones.md
+      - CTS: distri/cts.md
+      - CTS:
+        - Cel·les i elements de tall: distri/celdas.md
+      - LAT: distri/lat.md
+      - LBT: distri/lbt.md
+      - Instal·lacions RE: distri/re.md
+      - Expedients: distri/expedientes.md
+      - Despatxos: distri/despachos.md
+      - Sincronització CUPS: distri/sincronizacion_cups.md
+      - CINI - Generació Automàtica: distri/act_cinis.md
+      - TI - Generació Automàtica: distri/act_tis.md
     - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
