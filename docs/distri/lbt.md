@@ -41,6 +41,21 @@ En l'apartat de **Dades Administratives** tenim els camps:
   * **Obres**: Amb quines obres relacionem aquest element.
   * **Expedients**: Amb quins expedients relacionem aquest element.
 
+## Calcul del voltatge
+
+El voltatge de un Element de Baixa tensió es calcula de la seguent manera:
+
+Si el cable del element de baixa tensió te assignat un nivell tensió 
+s'aplicara la "tensió a aplicar" del nivell de tensió assignat.
+  ![Voltatge LBT](_static/lbt/bt_nivell_tensio.png)
+  ![Nivell tensio cable](_static/lbt/lbt_voltatge.png)
+  ![Tensio a aplicar](_static/lbt/tensio_aplicar.png)
+
+Altrement s'aplicara el que que marca cuadre de baixa tensió del centre transformador.
+
+!!!Note "Valor del voltatge"
+    El camp tensió no es un camp obligatori , pot estar en blanc, buit.
+   
 ## Mètode d'actualització de tipus de línia BT
 
 * 1 tensada sobre poste (1 circuit)
