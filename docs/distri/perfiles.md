@@ -301,6 +301,47 @@ En l'accés directe de '**Pòlisses amb l'origen real diferent del teòric**'
 ens mostra un llistat amb els mateixos camps que l'altre llista però amb
 tant sols les pòlisses que origen real i teòric son diferents.
 
+## Validacions de Mesures
+
+A la pestanya Fitxers REE, es poden comprobar les agregacions informades a REE.
+D'aquesta manera es pot validar que les agregacions i els seus consums que hem
+generat a l'ERP són els mateixos que s'han informat i han rebut i processat a
+REE.
+REE publica els següents fitxers:
+
+* AGCL: Inventariat d'Agregacions de punts frontera de clients tipus 3, 4 i 5
+* AGCLACUM: Dades acumulades mensuals d'energia d'agregacions de clients tipus 3
+  i 4
+* AGCLACUM5: Dades acumulades mensuals d'energia d'agregacions de clients tipus
+  5
+
+Utilitzant el botó **Importar fitxers de validacions**, apareix un assistent
+com el de la imatge que procedeix. Es poden importar els 3 fitxers alhora, peró
+és important saber que hem d'importar sempre el fitxer AGCL (o haver-lo
+importat anteriorment), ja que al ser l'inventari d'agregacions, l'ERP
+detectaría que REE no té cap agregació comunicada.
+
+![](_static/perfiles/import_acums.png)
+
+Un cop importats els fitxers, l'ERP analitza i contrasta les agregacions a les
+dues bandes i treu una taula com la següent:
+
+![](_static/perfiles/ree_validations.png)
+
+L'anàlisi que es fa a la taula d'agregacions ERP és el següent:
+
+* Validat REE: marca que l'agregació está vigent a REE amb les mateixes dades.
+Si no es compleix, l'agregació apareix en vermell
+
+L'anàlisi que es fa a la taula d'agregacions REE és el següent:
+
+* Validat REE: marca que l'agregació comunicada a REE és la mateixa que tenim a
+l'ERP
+* CO: Consum de l'agregació calculat per l'ERP
+* CONSUM_REE: Consum de l'agregació comunicat i processat per ree_validations
+* Si no es compleix algún dels requisits anteriors, l'agregació apareix en
+vermell
+
 ## Reperfilat
 
 Una vegada ja haguem generat un perfil per una pòlissa i un lot, podem
@@ -341,12 +382,21 @@ Formats d'origen suportats:
 
 En el menú de generació de fitxers de la Red Eléctrica Española (REE)
 es troben els apartats indicats a la imatge inferior. Dins de l'apartat
-d'**Agregacions de Règim Especial** es generen els fitxers **MAGRE**
-(Dades horaries d'energia d'agregacions d'instal·lacions de producció
-d'energia elèctrica a partir de fonts d'energia renovables, cogeneració
-i residus tipus 3 i 5) i **INMERE** (Acumulat mensual d'energia de punts
-frontera d'instal·lacions de producció d'energia elèctrica a partir de
-fonts d'energia renovables, cogeneració de residus tipus 3 i 5 desagregats).
+d'**Agregacions de Règim Especial** es generen els fitxers:
+
+* **MAGRE:** Dades horaries d'energia d'agregacions d'instal·lacions de
+  producció d'energia elèctrica a partir de fonts d'energia renovables,
+  cogeneració i residus tipus 3 i 5.
+* **INMERE:** Acumulat mensual d'energia de punts frontera d'instal·lacions de
+  producció d'energia elèctrica a partir de fonts d'energia renovables,
+  cogeneració de residus tipus 3 i 5 desagregats.
+* **MEDIDAS:**: Dades horàries d'energia per codi CIL d'instal·lacions de
+  producció d'energia elèctrica a partir de fonts d'energia renovables,
+  cogeneració i residus tipus 3 i 5.
+
+!!! Info "Nota"
+  Aquests fitxers es poden generar en format comprimit .bz2
+
 Per a més informació, consultar apartats 4.2.12 (MAGRE) i 4.2.13
 (INMERE) del document de REE.
 
@@ -362,6 +412,20 @@ A l'apartat de REE es generen els següents fitxers:
   el document de REE, apartat 4.2.1.
 
 ![](_static/perfiles/menu_ree.png)
+
+## Menú de generació de fitxers de la CNMC
+
+Des de l'apartat de l'antic projecte SICILIA, es pot generar el fitxer MEDIDAS.
+Per gernerar-lo el trobem a la següent ruta **Adminitració Pública  > CNMC >
+SICILIA > Generar MEDIDAS`.**
+
+!!! Info "Nota"
+  A diferència del fitxer MEDIDAS per REE, aquest es generen n fitxers per n
+  CILS
+
+* **Contingut del fitxer MEDIDAS per la CNMC:** Dades horàries d'energia per
+  codi CIL d'instal·lacions de producció d'energia elèctrica a partir de fonts
+  d'energia renovables, cogeneració i residus tipus 3 i 5.
 
 ## Generació de fitxers F1
 
