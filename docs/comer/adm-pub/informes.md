@@ -326,11 +326,16 @@ i fent doble click els podem editar si fos necessari.
 
 ![Figura 13](../_static/informes/model_159/linia_tree.png)
 
+### Exportar el document per l'entrega
+
 Amb el botó "Exportar Document" podem exportar l'informe en el format d'entrega.
+
 S'inicia un assistent que ens demana la informació relativa a la
 persona de contacte, informació relativa al suport que s'utilitzarà
-per la transmissió del document i el número d'informe que es correspon. El
-número d'informe és un número seqüencial relatiu a cada informe entregat.
+per la transmissió del document i el número d'informe que es correspon.
+
+El número d'informe és un número seqüencial relatiu a cada informe entregat, si
+aquest s'ha de rectificar, el número ha d'augmentar.
 
 ![Figura 14](../_static/informes/model_159/wiz_exportar.png)
 
@@ -351,11 +356,22 @@ en la línia del registre de tipus 2 i el valor assignat per defecte.
 
 ### Errors de validació
 
-
-El programa de validació del model 159, en la versió [v1.0 de 2011](http://www.agenciatributaria.es/static_files/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Descarga_Programas/Descarga/prevalid/2011/CobolWindows/Prevalidacion_159_2011_v10.exe)
-, genera una sèrie d'errors pels quals no hi ha sol·lució. Es llisten a continuació:
+L'Agencia Tributaria proveeix d'un programa per [validar el model generat per Windows](http://www.agenciatributaria.es/static_files/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Descarga_Programas/Descarga/prevalid/2011/CobolWindows/Prevalidacion_159_2011_v10.exe).
+Aquest genera una sèrie d'errors que coneixem, pels que cal adaptar els registres:
 
   Codi d'error  |  Camp                                                 | Motiu
 :--------------:|:------------------------------------------------------|:------------------------------------------------------------
    2 0801       |  Tipus de via (Direcció del subministre)              | Certs tipus de via proporcionats pel catastre.
    2 0701       |  Cognoms i nom, raó social o denominació del titular  | Noms que contenen nombres. També noms amb una única paraula.
+
+### Solució d'errors post-entrega
+
+En cas de que ens retornin el fitxer amb errors, ens indicaràn en la notificació
+quins errors corresponen a quines línies o contractes.
+
+El que farem serà accedir al informe que vam generar, accedir als registres i
+arreclar els que faci falta (segons els errors que ens han comunicat).
+
+Una vegada arreclats i guardats els registres, tornarem a [exportar l'informe](#exportar-el-document-per-lentrega).
+Aquesta vegada caldrà augmentar l'identificador d'informe, ja que serà el següent
+informe entregat per l'exercici corresponent.
