@@ -293,14 +293,13 @@ Les dades a calcular són les següents:
 
 ## Model 159
 
+Assistent per la generació del informe del _Model 159_ tal com es detalla en el
+[BOE nº182 de 2009 secció 1 Pàgina 64838](http://www.boe.es/boe/dias/2009/07/29/pdfs/BOE-A-2009-12534.pdf).
+
 Podem trobar el llistat d'informes generats i l'assistent per generar l'informe
 a "**_OpenERP Menú → Administració Pública → Model 159_**"
 
 ![Figura 8](../_static/informes/model_159/menu.png)
-
-Es troba el menú per a la generació de l'informe del model 159,
-tal i com es detalla en el
-[BOE nº182 de 2009 secció 1 Pàgina 64838](http://www.boe.es/boe/dias/2009/07/29/pdfs/BOE-A-2009-12534.pdf).
 
 Utilitzant l'acció ens mostrarà l'assistent per la generació del informe.
 Únicament hem de sel·leccionar la data final de l'informe i generarà tots els
