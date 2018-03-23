@@ -172,7 +172,7 @@ També s'inclourà informació de les **pòlisses** dels CUPS que compleixin les
 següents característiques:
 
 * **Data alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12/2014).
-* **Modificacions contractuals**_ Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any de la resolucio
+* **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any de la resolucio
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 
 Per obtenir els comptadors de les pòlisses s'han de complir els requisits
