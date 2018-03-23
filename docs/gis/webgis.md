@@ -90,9 +90,8 @@
 
 ### Exportació
 
-  Control que permet exportar les dades del visor tot seleccionant el format del fitxer de sortida i les capes que s'hi han de representar.
-  En l'assistent hi trobem les següents opcions de configuració:
-  
+  Control que permet exportar les dades del visor en el format de fitxer seleccionat. En l'assistent hi trobem les següents opcions de configuració:
+
   * Capes: S'utilitza per escollir les capes que es representaran en l'exportació.
   ![](_static/export_doc/capes.png)
 
