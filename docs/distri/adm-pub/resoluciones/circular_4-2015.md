@@ -115,15 +115,15 @@ S'inclourà informació relativa dels CUPS que compleixin les següents
 característiques:
 
 * **Actiu**: El **CUPS** ha d'estar actiu.
-* **Data de creació**: La data de creació del **CUPS** ha de ser inferior al 01/01/2015 o estar buida.
+* **Data de creació**: La data de creació del **CUPS** ha de ser inferior al 01/01 del any del inventari de les dades o estar buida.
 
 També s'inclourà informació de les **pòlisses** dels CUPS que compleixin les
 següents característiques:
 
-* **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any(01/01) .
-* **Data de baixa de la pòlissa**: Ha de ser superior a l'ultim dia de l'any (31/12) o bé ha
+* **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12) .
+* **Data de baixa de la pòlissa**: Ha de ser inferior a l'ultim dia de l'any (31/12) de l'any d'inventari de les dades o bé ha
   pot estar buida.
-* **Modificacions contractuals**_ Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any de la resolucio 
+* **Modificacions contractuals**_ Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 
 El formulari F1 està format pels següents camps:
@@ -160,25 +160,25 @@ Any d'informació                 | Any del qual es genera aquest formulari.
 #### F1bis: Informació relativa a la lectura dels equips de mesura dels clients
 
 Aquest formulari ens mostrarà la informació relativa als CUPS actius que la seva
-data de creació és inferior a 01/01/2015.
+data de creació és inferior a 01/01 del any del inventari de les dades.
 
 S'inclourà informació relativa dels CUPS que compleixin les següents
 característiques:
 
 * **Actiu**: El **CUPS** ha d'estar actiu.
-* **Data de creació**: La data de creació del **CUPS** ha de ser inferior al 01/01/2015 o estar buida.
+* **Data de creació**: La data de creació del **CUPS** ha de ser inferior al 01/01 del any del inventari de les dades o estar buida.
 
 També s'inclourà informació de les **pòlisses** dels CUPS que compleixin les
 següents característiques:
 
-* **Data alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12/2014).
-* **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any de la resolucio
+* **Data alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any del inventari de les dades (31/12).
+* **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades.
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 
 Per obtenir els comptadors de les pòlisses s'han de complir els requisits
 següents:
 
-* **Data d'alta del comptador**: La data d'alta ha de ser inferior a 01/01/2015.
+* **Data d'alta del comptador**: La data d'alta ha de ser inferior a 01/01 del any del inventari de les dades.
 
 El formulari F1 bis està format pels següents camps:
 
