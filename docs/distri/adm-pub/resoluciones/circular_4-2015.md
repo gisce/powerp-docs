@@ -7,11 +7,6 @@ F12bis, F13, F13bis, F13c, F14 , F15 i F20 de la Circular 4/2015.
 
 * [Disposición 8624 del BOE núm. 182 de 2015](http://www.boe.es/boe/dias/2015/07/31/pdfs/BOE-A-2015-8624.pdf)
 
-!!! Info "Nota"
-    Aquest mòdul va ser afegit a partir de la versió **v2.55** on es van afegir
-    una sèrie de camps nous a la base de dades per tal de cumplimentar la
-    informació requerida en els formularis.
-
 ### Nous camps a la base de dades: circular 4/2015
 
 #### Transformador
@@ -58,7 +53,7 @@ de distribució de GISCE-ERP o no.
 
 ![](../../_static/cnmc/4_2015/form_wizard_update_facturacio.png)
 
-En el cas que el tinguem instal·lat, només ens apareix un botó per recalcular aquest
+En el cas que el tinguem instal·lat, ens apareix un botó per recalcular aquest
 valors depenguent de l'any que tinguem introduït en la pestanya "Generador d'informes".
 
 **Sense mòdul de facturació**
@@ -257,7 +252,7 @@ END
 El formulari 10 conté informació sobre les instal·lacions d'alta i baixa tensió,
 tot dins d'un sol fitxer.
 
-Només s'inclouràn les **línies d'AT** que compleixin les següents
+S'inclouràn les **línies d'AT** que compleixin les següents
 condicions:
 
 * **Actiu**:
@@ -346,7 +341,8 @@ Per el càlcul del camp **tipus** s'efectuen les següents operacions:
 
 #### F11: Característiques de centres de transformació
 
-Només s'inclouràn els **CTs** que compleixin les següents
+
+S'inclouràn els **CTs** que compleixin les següents
 condicions:
 
 * **Actiu**:
@@ -385,7 +381,7 @@ Any d'informació                 | Any del qual es genera aquest formulari.
 
 #### F12: Composició de centres de transformació (Màquines)
 
-Només s'inclouràn els **transformadors** que compleixin les següents
+S'inclouràn els **transformadors** que compleixin les següents
 condicions:
 
 * **Actiu**:
@@ -418,7 +414,7 @@ Any d'informació                 | Any del qual es genera aquest formulari.
 
 #### F12 bis: Posicions en centres de transformació
 
-Només s'inclouràn les **cel·les i elements de tall** que compleixin les següents
+S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
 * **Instal·lació**: Només s'inclouràn les **cel·les i elements de tall** que la
@@ -457,7 +453,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F13: Subestacions
 
-Només s'inclouràn les **subestacions** que compleixin les següents
+S'inclouràn les **subestacions** que compleixin les següents
 condicions:
 
 * **Propietari de la subestació**: Només s'inclouràn les **subestacions** que
@@ -489,7 +485,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F13 bis: Composició de subestacions: parcs
 
-Només s'inclouràn els **parcs** que compleixin les següents
+S'inclouràn els **parcs** que compleixin les següents
 condicions:
 
 * **Tensió del parc**: Hi ha d'haver una tensió entrada.
@@ -523,7 +519,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F13 C: Posicions
 
-Només s'inclouràn les **posicions** que compleixin les següents
+S'inclouràn les **posicions** que compleixin les següents
 condicions:
 
 * **CINI**: El **CINI** ha de tenir el format I28XXXX.
@@ -552,7 +548,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F14: Màquines
 
-Només s'inclouràn els **transformadors** que compleixin les següents
+S'inclouràn els **transformadors** que compleixin les següents
 condicions:
 
 * **Reductor**: El **transformador** ha de tenir marcat el checkbox **reductor**
@@ -581,7 +577,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F15: Fiabilitat
 
-Només s'inclouràn les **cel·les i elements de tall** que compleixin les següents
+S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
 * **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
@@ -604,7 +600,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F20: Informació relativa a la connectivitat dels clients
 
-Només s'inclouràn els **CUPS** que compleixin les següents
+S'inclouràn els **CUPS** que compleixin les següents
 condicions:
 
 * **Actiu**: El **CUPS** ha d'estar actiu.
