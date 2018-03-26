@@ -116,7 +116,7 @@ També s'inclourà informació de les **pòlisses** dels CUPS que compleixin les
 següents característiques:
 
 * **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12) .
-* **Data de baixa de la pòlissa**: Ha de ser inferior a l'ultim dia de l'any (31/12) de l'any d'inventari de les dades o bé
+* **Data de baixa de la pòlissa**: Ha de ser superior a l'ultim dia de l'any (01/01) de l'any d'inventari de les dades o bé
   pot estar buida.
 * **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
@@ -166,7 +166,9 @@ característiques:
 També s'inclourà informació de les **pòlisses** dels CUPS que compleixin les
 següents característiques:
 
-* **Data alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any del inventari de les dades (31/12).
+* **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12) .
+* **Data de baixa de la pòlissa**: Ha de ser superior a l'ultim dia de l'any (01/01) de l'any d'inventari de les dades o bé
+  pot estar buida.
 * **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades.
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 
