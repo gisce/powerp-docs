@@ -120,6 +120,7 @@ següents característiques:
   pot estar buida.
 * **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
+* **Tarifa**: No pot ser ni RE ni RE12
 
 El formulari F1 està format pels següents camps:
 
@@ -171,6 +172,7 @@ següents característiques:
   pot estar buida.
 * **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades.
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
+* **Tarifa**: No pot ser ni RE ni RE12
 
 Per obtenir els comptadors de les pòlisses s'han de complir els requisits
 següents:
