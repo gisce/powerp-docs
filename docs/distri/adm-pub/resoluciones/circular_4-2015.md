@@ -118,7 +118,7 @@ següents característiques:
 * **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12) .
 * **Data de baixa de la pòlissa**: Ha de ser superior a l'ultim dia de l'any (01/01) de l'any d'inventari de les dades o bé
   pot estar buida.
-* **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
+* **Modificacions contractuals**: Ha d'haver tingut una modificació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 * **Tarifa**: No pot ser ni RE ni RE12
 
@@ -170,7 +170,7 @@ següents característiques:
 * **Data d'alta de la pòlissa**: Ha de ser més petita o igual que l'últim dia de l'any (31/12) .
 * **Data de baixa de la pòlissa**: Ha de ser superior a l'ultim dia de l'any (01/01) de l'any d'inventari de les dades o bé
   pot estar buida.
-* **Modificacions contractuals**: Ha d'haver tingut una modifiació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades.
+* **Modificacions contractuals**: Ha d'haver tingut una modificació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades.
 * **Estat de la pòlissa**: No pot ser ni "esborrany" ni "validar".
 * **Tarifa**: No pot ser ni RE ni RE12
 
@@ -288,9 +288,9 @@ Per les **línies de BT** s'inclouràn les que compleixin el següent:
 Les dades referents a **l'alta tensió** estàn formades pels següents camps:
 
 !!! Info "Nota"
-    Degut a que no hi poden haver nodes iguals amb tensions diferents per tal 
-    de saber la tensió d'un node fa falta que tots els trams AT adjacents a un 
-    transformador reductor tinguin posada la tensió del tram. 
+    Degut a que no hi poden haver nodes iguals amb tensions diferents per tal
+    de saber la tensió d'un node fa falta que tots els trams AT adjacents a un
+    transformador reductor tinguin posada la tensió del tram.
 
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
@@ -610,6 +610,8 @@ condicions:
 * **Actiu**: El **CUPS** ha d'estar actiu.
 * **Data de creació del CUPS**: La data de creació ha de ser inferior al
   01/01/2015 o estar buida.
+* **Modificacions contractuals**: Ha d'haver tingut una modificació contractual activa en el periode del 01/01 al 31/12 del any del inventari de les dades
+* **Tarifa**: No pot ser ni RE ni RE12
 
 El formulari F20 conté, per cadascún dels clients de l'empresa distribuidora,
 la relació amb les instal·lacions a les que es troba connectat. Conté 4 camps,
