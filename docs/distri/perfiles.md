@@ -420,8 +420,8 @@ Per gernerar-lo el trobem a la següent ruta **Adminitració Pública  > CNMC >
 SICILIA > Generar MEDIDAS`.**
 
 !!! Info "Nota"
-  A diferència del fitxer MEDIDAS per REE, aquest es generen n fitxers per n
-  CILS
+    A diferència del fitxer MEDIDAS per REE, aquest es generen n fitxers per n
+    CILS
 
 * **Contingut del fitxer MEDIDAS per la CNMC:** Dades horàries d'energia per
   codi CIL d'instal·lacions de producció d'energia elèctrica a partir de fonts
