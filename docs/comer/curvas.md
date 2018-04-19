@@ -29,8 +29,6 @@ diferents tipus de corbes definits per la CNMC:
 Les corbes s'emmagatzemen en el servidor *mongodb*, cadascuna en una
 col·lecció diferent, i són accessibles des del ERP a través del comptador.
 
-També es poden utilitzar per facturar.
-
 El sistema es configura de la següent forma:
 
 * **Servidors SFTP**: Servidor SFTP definits per les distribuïdores. En
@@ -113,7 +111,7 @@ Es defineixen 6 apartats:
 La descàrrega s'automatitzarà mitjançant un cron o tasca programada del
 servidor, normalment un cop al dia. Cada cop es descarregaran els fitxers dels
 apartats "habilitats" de tots els proveïdors "habilitats" que tinguin el format
-definit i amb data de fitxer en el servidor SFTP posterior a la emmagatzemada.
+definit.
 
 Els fitxers s'emmagatzemaran localment en el servidor per al seu posterior
 procés en l'adreça definida per la variable de configuració _tg_comer_cch_dir_
