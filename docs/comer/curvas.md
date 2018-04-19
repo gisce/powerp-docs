@@ -1,18 +1,15 @@
-# Configuració de càrrega de corbes horàries
+# Càrrega de corbes horàries
 
 En aquest apartat es documentarà el procediment necessari a seguir per
 tal de tenir configurat l'ERP perquè carregui periòdicament tots els
 documents amb les corbes horàries.
 
-
-## Configurar el client ERP
-
-### Funcionament
+## Funcionament
 Aquesta funcionalitat ens permet descarregar dels portals de les distribuïdores
 les corbes CCH generades per els contractes integrats en el sistema de
-telegestió. Aquest servei s'ha d'oferir a través del protocol SFTP
-(FTP per SSH). Es poden descarregar els diferents tipus de corbes definits per
-la CNMC:
+telegestió i dels integrats en el sistema de telemesura. Aquest servei s'ha
+d'oferir a través del protocol SFTP (FTP per SSH). Es poden descarregar els
+diferents tipus de corbes definits per la CNMC:
 
 * **CCH_FACT**: Corba utilitzada per facturar. Es distribueix en el format
     **F5D** i no pot tenir forats. El format **RF5D** és idèntic al format F5D
@@ -22,6 +19,12 @@ la CNMC:
     no estar completa i per tant no és utilitzable per facturar mitjançant corba
 * **CCH_CONS**: Corba facturada (CCH_FACT) en format CCH_CONS preparada
      per distribuïr-la al consumidor
+* **TG_F1**: Corba utilitzada per facturar. Es distribueix en el format **F1**
+    i no pot tenir forats.
+* **TG_P1**: Corba validada. Només inclou aquells registres horaris que el
+    comptador ha donat per vàlid i es distribueix en el format **P1**. És
+    possible que no estigui completa per tant, no és utilitzable per facturar
+    mitjançant corba.
 
 Les corbes s'emmagatzemen en el servidor *mongodb*, cadascuna en una
 col·lecció diferent, i són accessibles des del ERP a través del comptador.
@@ -37,6 +40,7 @@ compartit
 defineix quins fitxers dels disponibles es vol descarregar. Es registra la
 data del darrer fitxer descarregat per poder portar-ne el control.
 
+## Configurar el client ERP
 
 ### Instal·lar el mòdul
 
@@ -97,19 +101,21 @@ Per cada apartat:
 * **Remote Folder**: Fitxer on començar la cerca recursiva. per defecte l'arrel del servidor FTP (*/*)
 * **Acces date**: Data del fitxer descarregat més recent
 
-Es defineixen 4 apartats:
+Es defineixen 6 apartats:
 
 * **F5D Settings**: Fitxers CCH_FACT en format F5D.
 * **P5D Settings**: Fitxers CCH_VAL en format P5D.
 * **CCHCONS Settings**: Fitxers CCH_CONS en format CCH_CONS.
-* **RF5D Settings**: Sobreescriuen les corves CCH_FACT
+* **RF5D Settings**: Sobreescriuen les corbes CCH_FACT
+* **F1 Settings**: Fitxers TG_F1 en format F1
+* **P1 Settings**: Fitxers TG_P1 en format P1
 
 La descàrrega s'automatitzarà mitjançant un cron o tasca programada del
-servidor, normalment un cop al dia. Cada cop es descarregaràn els fitxers dels
+servidor, normalment un cop al dia. Cada cop es descarregaran els fitxers dels
 apartats "habilitats" de tots els proveïdors "habilitats" que tinguin el format
 definit i amb data de fitxer en el servidor SFTP posterior a la emmagatzemada.
 
-Els fitxers s'emmagatzemaràn localment en el servidor per al seu posterior
+Els fitxers s'emmagatzemaran localment en el servidor per al seu posterior
 procés en l'adreça definida per la variable de configuració _tg_comer_cch_dir_
 tal com es comenta a [aquí](#creacio-de-nova-variable-de-configuracio)
 
@@ -121,16 +127,39 @@ tal com es comenta a [aquí](#creacio-de-nova-variable-de-configuracio)
 Els fitxers de corbes tenen un nom definit per la CNMC. El sistema de
 descàrrega de corbes utilitza expressions regulars per decidir quins fitxers es
 descarrega i a quina col·lecció els emmagatzema.
- En l'exemple es pot veure la definició més habitual:
 
- `F5D_0999_0888_(\d{8})`
+El format definit pot variar segons els fitxers.
 
-On *F5D_* serà el format, *0999* la distribuïdora (codi REE), *0888* la nostra
-comercialitzadora (codi REE) i *(\d{8})* indica 8 caràcters numèrics, que
-equival a la data del fitxer en format YYYYMMDD.
+* **Fitxers F5D, P5D i RF5D**: El format és `Z5D_YYYY_XXXX_aaaammdd.v`.
+La `Z` s'ha de substituir per el tipus de fitxer **F**, **P** o **RF**.
+Les `YYYY` s'han de substituir per el codi de distribuïdora (codi REE).
+Les `XXXX` s'han de substituir per el codi de comercialitzadora (codi REE).
+La `aaaammdd` s'ha de substituir per la data de generació del fitxer.
+la `v` s'ha de substituir per la versió del fitxer.
 
-Es farà una cerca recursiva en el servidor SFTP buscant els fitxers que
-compleixin aquest format
+* **Fitxers F1 i P1**: El format és `Z1_YYYY_AAAAMMDD_aaaammdd.v`.
+La `Z` s'ha de substituir per el tipus de fitxer **F** o **P**.
+Les `YYYY` s'han de substituir per el codi de distribuïdora (codi REE).
+La `AAAAMMDD` s'ha de substituir per la data a la que corresponen les dades que
+conté el fitxer.
+La `aaaammdd` s'ha de substituir per la data de generació del fitxer.
+la `v` s'ha de substituir per la versió del fitxer.
+
+#### Expressió del format de fitxer
+
+El sistema farà una cerca recursiva en el servidor SFTP buscant els fitxers que
+compleixin amb el format especificat.
+Per tal d'especificar un format de fitxer genèric que permeti al sistema
+trobar tots els fitxers correctes, es pot utilitzar una expressió regular.
+
+Per exemple:
+
+`F5D_0999_0888_(\d{8})`
+
+Amb aquest format el sistema trobarà tots els fitxers F5D de la nostra distribuïdora
+d'exemple **0999** i de la comercialitzadora específica **0888** sense filtrar per
+dates, només necessitarà 8 caràcters numèrics després de l'últim guió baix. Com que no
+especifiquem res per la versió del fitxer que volem els agafarà totes.
 
 !!! Tip "Consell"
     En un servidor SFTP compartit, es poden utilitzar les expressions regulars
@@ -140,14 +169,13 @@ compleixin aquest format
     `P5D_(\d{4})_0888_(\d{8})`
 
     En aquest cas es descarregaran tots els fitxers P5D de la nostra
-    comercialitzadora (0888) independentment de la distribuidora, que sempre
+    comercialitzadora (0888) independentment de la distribuïdora, que sempre
     serà un codi de quatre caràcters numèrics *(\d{4})*
 
 #### Data de descàrrega
 
-Per no descarregar el mateix fitxer més d'un cop, s'emmagatzema la data del
-últim fitxer descarregat. Només es descarregaran els fitxers més nous d'aquesta
-data
+És una data purament informativa per saber quan va ser l'última vegada que es va
+llegir el contingut del servidor SFTP.
 
 
 ### Creació de nova variable de configuració
