@@ -4,11 +4,12 @@
 ## Comptadors de telemesura i electrònics
 Aquest mòdul gestiona dos tipus de comptadors diferents, els comptadors
 electrònics i els electrònics tele-mesurats. En el cas dels comptadors
-electrònics el mòdul s'utilitzarà per crear les lectures des dels tancaments
-que s'hagin introduït a l'ERP. Per els comptadors tele-mesurats en canvi,
-el mòdul disposa de més funcionalitats. Pot fer la importació dels tancaments
-i corbes dels comptadors a través de la connexió que es configuri a l'ERP,
-un cop importades aquestes dades, es podran validar i crear les lectures
+electrònics el mòdul s'utilitzarà per importar les corbes obtingudes a
+través dels dispositius TPL per tal de validar-les i poder-les utilitzar
+per a la facturació. També permetrà crear els fitxers F1 de perfils. Per
+els comptadors tele-mesurats a més a més, pot fer la importació dels tancaments
+i corbes dels comptadors a través de la connexió que es configuri a l'ERP.
+Un cop importades aquestes dades, es podran validar i crear les lectures
 corresponents i per últim, es podrà fer l'ajustament i estimació de la corba
 de consum del comptador a l'hora d'obrir la factura sempre i quan la tarifa
 sigui estimable.
@@ -150,8 +151,8 @@ veure si hi ha casos recents que facin referència a la validació de perfils.
 
 ## Generació de fitxers de perfils F1
 Els fitxers F1 de perfils són diaris per tant cada un conté les 24 corbes horàries
-que corresponen. La generació d'aquests fitxers la porta a terme l'assistent **Infraestructura
-> Exportar REE F1**.
+que corresponen. La generació d'aquests fitxers la porta a terme l'assistent
+**Infraestructura > Exportar REE F1**.
 
 ![](_static/telemedida/ExportREEF1Menu.png)
 
