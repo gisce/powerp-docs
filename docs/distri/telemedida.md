@@ -1,5 +1,6 @@
 # Documentació del mòdul de telemesura
 
+
 ## Comptadors de telemesura i electrònics
 Aquest mòdul gestiona dos tipus de comptadors diferents, els comptadors
 electrònics i els electrònics tele-mesurats. En el cas dels comptadors
@@ -11,6 +12,7 @@ un cop importades aquestes dades, es podran validar i crear les lectures
 corresponents i per últim, es podrà fer l'ajustament i estimació de la corba
 de consum del comptador a l'hora d'obrir la factura sempre i quan la tarifa
 sigui estimable.
+
 
 ## Configuració dels Comptadors
 Per tal de poder utilitzar aquest mòdul correctament s'hauran de configurar
@@ -58,6 +60,7 @@ En aquesta pestanya trobem diferents camps configurables i informatius.
     El programa demanarà tots els que tinguem seleccionats i si algun d'ells no està configurat
     simplement no crearà els tancaments d'aquest.
 
+
 ## Càrrega de fitxers .curva de TPL
 Per tal de carregar els perfils horaris que s'extreuen dels comptadors mitjançant els
 dispositius TPL, s'utilitza l'assistent següent:
@@ -84,6 +87,7 @@ on se'ns mostren únicament els comptadors que tinguin configurada la tecnologia
 o **Electronic**. Dins la fitxa del comptador, amb el botó **Mostrar tancaments TM** accedirem
 a la llista de perfils del comptador on hauríem de poder veure tots els que hem importat en estat
 **No vàlid**.
+
 
 ## Validació de perfils de telemesura
 El procés de validació dels perfils s'inicia mitjançant un assistent que podem trobar o bé dins
@@ -134,3 +138,31 @@ del perfil. Per exemple si tenim una tolerància del 120%, es permetran com a v�
 mesures d'activa entrant un 20% superiors a la potència total. Per configurar aquesta
 tolerància s'utilitza la variable de configuració **tm_profile_power_tolerance**. Al mateix
 temps, si el valor d'aquesta variable es configura a 0, la validació es desactiva.
+
+### Resultat de les Validacions
+Amb les validacions finalitzades, els perfils processats correctament estaran en estat
+vàlid i els que presentin algun problema seguiran en estat no vàlid. La millor manera
+de comprovar si s'han validat tots correctament o hi ha hagut algun problema és revisar
+si s'han creat nous casos de Telemesures que indiquin validacions incorrectes. Per fer-ho
+ens dirigim al menú **Infraestructura > Telemesura > Casos TM > Casos oberts** on podrem
+veure si hi ha casos recents que facin referència a la validació de perfils.
+
+
+## Generació de fitxers de perfils F1
+Els fitxers F1 de perfils són diaris per tant cada un conté les 24 corbes horàries
+que corresponen. La generació d'aquests fitxers la porta a terme l'assistent **Infraestructura
+> Exportar REE F1**.
+
+![](_static/telemedida/ExportREEF1Menu.png)
+
+L'assistent necessita que li indiquem per quin comptador i quin període volem
+generar els F1s. Per posar un nom correcte als fitxer generats, és necessari indicar
+el codi R1 de la nostra distribuïdora. Si el tenim ben configurat al ERP l'assistent
+l'agafarà automàticament. També disposem del camp **Versió** el qual ens servirà per
+enumerar els fitxers generats, és a dir, si generem més d'un F1 per el mateix comptador
+i dates, la versió ens servirà per diferenciar-los i saber quin és el més nou.
+Per crear els fitxers F1 de tot un mes sencer, podem posar com a data inicial el primer
+dia del mes i com a final el primer dia del mes següent. A la imatge podem veure les
+dates necessàries per crear tots els F1 del mes de Març.
+
+![](_static/telemedida/ExportREEF1Wizard.png)
