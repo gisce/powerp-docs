@@ -57,7 +57,7 @@ distribuïdora que ens interessi.
 Haurem d'indicar:
 
 * **Descripció**: Nom descriptiu del servidor
-* **Servidor**: Direcció del servidor sftp
+* **Servidor**: Direcció del servidor SFTP
 * **Port**: Port en el qual està escoltant el servidor
 * **Usuari**: Usuari d'accés subministrat per la Distrïbuidora
 * **Password**: Paraula clau d'accés al servidor

@@ -6,13 +6,14 @@ Aquest mòdul gestiona dos tipus de comptadors diferents, els comptadors
 electrònics i els electrònics tele-mesurats. En el cas dels comptadors
 electrònics el mòdul s'utilitzarà per importar les corbes obtingudes a
 través dels dispositius TPL per tal de validar-les i poder-les utilitzar
-per a la facturació. També permetrà crear els fitxers F1 de perfils. Per
-els comptadors tele-mesurats a més a més, pot fer la importació dels tancaments
-i corbes dels comptadors a través de la connexió que es configuri a l'ERP.
-Un cop importades aquestes dades, es podran validar i crear les lectures
-corresponents i per últim, es podrà fer l'ajustament i estimació de la corba
-de consum del comptador a l'hora d'obrir la factura sempre i quan la tarifa
-sigui estimable.
+per a la facturació. També permetrà crear els fitxers F1 de perfils.
+
+Per els comptadors tele-mesurats a més a més, pot fer la importació dels
+tancaments i corbes dels comptadors a través de la connexió que es
+configuri a l'ERP. Un cop importades aquestes dades, es podran validar i
+crear les lectures corresponents i per últim, es podrà fer l'ajustament i
+estimació de la corba de consum del comptador a l'hora d'obrir la factura
+sempre i quan la tarifa sigui estimable.
 
 
 ## Configuració dels Comptadors
@@ -111,34 +112,46 @@ iniciarà una validació per tots els comptadors de telemesura.
 Documentació de quines comprovacions es passen per els diferents perfiles per tal de
 decidir si són o no vàlids.
 
-1.  **Neteja de duplicats**: El primer pas de la validació busca tots els perfils que
+1. **Neteja de duplicats**: El primer pas de la validació busca tots els perfils que
 tinguin duplicats i els elimina deixant només un dels registres.
 
-2.  **Diferents mesures**: Es comprova que no existeixin registres per la mateixa hora
+2. **Diferents mesures**: Es comprova que no existeixin registres per la mateixa hora
 i que tinguin valors de mesura diferents.
 
-3.  **Mesures impossibles**: Comprova que un perfil no tingui un valor de mesura massa
-elevat i que es consideri fora dels límits. Aquests límit es pot configurar a la variable
-**tm_profile_impossible**.
+3. **Mesures impossibles**: Comprova que un perfil no tingui un valor de mesura massa
+   elevat i que es consideri fora dels límits.
 
-4.  **Mesures negatives**: Assegura que no hi hagi cap perfil que contingui una valor de
+    !!! Info "Variable"
+        Existeix una variable de configuració anomenada **tm_profile_impossible** que ens
+        permetrà configurar quest límit.
+
+4. **Mesures negatives**: Assegura que no hi hagi cap perfil que contingui una valor de
 mesura negatiu.
 
-5.  **Bits de control**: Comprova que els registres no tinguin un valor al camp de bits
+5. **Bits de control**: Comprova que els registres no tinguin un valor al camp de bits
 de control que indiqui error.
 
-6.  **Reactiva alta**: Comprova que no hi hagi cap perfil que tingui una reactiva al
-quadrant 1 amb un valor superior a l'activa entrant. Aquesta validació es pot activar
-i desactivar amb la variable de configuració **tm_reactive_check**.
+6. **Reactiva alta**: Comprova que no hi hagi cap perfil que tingui una reactiva al
+quadrant 1 amb un valor superior a l'activa entrant.
 
-7.  **Superior a la potència**: Comprova que cap perfil tingui un valor d'activa
+    !!! Info "Variable"
+        Existeix una variable de configuració anomenada **tm_reactive_check** que ens
+        permetrà activar i desactivar aquesta validació.
+
+7. **Superior a la potència**: Comprova que cap perfil tingui un valor d'activa
 entrant superior al màxim permès segons la potència contractada al període en que es
 troba el perfil. Aquesta validació té un paràmetre de tolerància que serveix per
 configurar fins a quin percentatge de la potència màxima es considera vàlid el consum
-del perfil. Per exemple si tenim una tolerància del 120%, es permetran com a vàlids
-mesures d'activa entrant un 20% superiors a la potència total. Per configurar aquesta
-tolerància s'utilitza la variable de configuració **tm_profile_power_tolerance**. Al mateix
-temps, si el valor d'aquesta variable es configura a 0, la validació es desactiva.
+del perfil.
+
+    !!! Info "Variable"
+        Existeix una variable de configuració anomenada **tm_profile_power_tolerance** que
+        ens permetrà configurar aquesta tolerància . Al mateix temps, si el valor d'aquesta
+        variable es configura a 0, la validació es desactiva.
+
+    !!! Note "Exemple"
+        Si tenim una tolerància del 120%, es permetran com a vàlides mesures d'activa
+        entrant un 20% superiors a la potència total.
 
 ### Resultat de les Validacions
 Amb les validacions finalitzades, els perfils processats correctament estaran en estat
@@ -158,12 +171,26 @@ que corresponen. La generació d'aquests fitxers la porta a terme l'assistent
 
 L'assistent necessita que li indiquem per quin comptador i quin període volem
 generar els F1s. Per posar un nom correcte als fitxer generats, és necessari indicar
-el codi R1 de la nostra distribuïdora. Si el tenim ben configurat al ERP l'assistent
-l'agafarà automàticament. També disposem del camp **Versió** el qual ens servirà per
-enumerar els fitxers generats, és a dir, si generem més d'un F1 per el mateix comptador
-i dates, la versió ens servirà per diferenciar-los i saber quin és el més nou.
-Per crear els fitxers F1 de tot un mes sencer, podem posar com a data inicial el primer
-dia del mes i com a final el primer dia del mes següent. A la imatge podem veure les
-dates necessàries per crear tots els F1 del mes de Març.
+el codi R1 de la nostra distribuïdora.
 
-![](_static/telemedida/ExportREEF1Wizard.png)
+També disposem del camp **Versió** el qual ens servirà per enumerar els fitxers
+generats, és a dir, si generem més d'un F1 per el mateix comptador i dates, la
+versió ens servirà per diferenciar-los i saber quin és el més nou.
+
+Respecte els camps de dates inici i final s'ha de tenir en compte que la data inici
+és inclosa dins el període del F1 i la data final no.
+
+!!! Note "Exemple F1 mensual"
+    Per crear el fitxer F1 del mes de Març sencer hem de posar com a data inicial
+    el 01/03/2018 i com a data final el 01/04/2018.
+    ![](_static/telemedida/ExportREEF1Wizard.png)
+
+!!! Note "Exemple F1 diari"
+    Per generar el fitxer F1 del primer dia de Març hem d'introduir com a data
+    inicial el 01/03/2018 i com a data final el 02/03/2018.
+
+!!! Tip "Codi R1"
+    Si tenim el codi ben configurat al ERP l'assistent l'agafarà automàticament.
+    El codi es troba a la fitxa de la nostra empresa distribuïdora.
+
+    ![](_static/telemedida/ConfigureREECode.png)
