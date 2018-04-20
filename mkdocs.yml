@@ -50,6 +50,7 @@ pages:
     - Inici: distri/index.md
     - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
+    - Telemesura: distri/telemedida.md
     - Manual d'ús de TPL - Índex: distri/tpl.md
     - Manual d'ús de TPL:
       - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
