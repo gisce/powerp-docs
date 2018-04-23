@@ -13,7 +13,7 @@ En la fitxa del producte podem trobar els camps bàsics d'un producte:
 
 | Camp              | Descripció                                                                 |
 |-------------------|----------------------------------------------------------------------------|
-| Nom del producte  | Text amb el nom del producte, utilitzarem el format <Descripció> - <model> |
+| Nom del producte  | Text amb el nom del producte, utilitzarem el format `<Descripció> - <model>` |
 | Variants          | Noms alternatius del produte o model                                       |
 | Code              | Codi del model/produte                                                     |
 | EAN13             | Codi utilitzat per la generació de codis de barra EAN13                    |
