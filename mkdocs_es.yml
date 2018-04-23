@@ -48,6 +48,7 @@ pages:
         - Notificaciones: base/ges-atr/notificacions.md
         - Automatitzación de procesos: base/ges-atr/automatitzacio.md
         - Apéndice: base/ges-atr/apendix.md
+    - Gestión de Productos: base/productos.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inicio: distri/index.md
