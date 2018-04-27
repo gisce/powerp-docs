@@ -189,6 +189,28 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
     Per crear un pas d'una manera més fàcil i ràpida es pot utilitzar
     l'[Assistent de Creació de Passos ATR](#assistent-de-creacio-de-passos-atr).
 
+##### Pestanya Documents
+
+Si es disposa d'una URL amb documentació a adjuntar a un cas es
+pot afegir al pas actual accedint a l'informació del cas
+(_doble click sobre el pas > click sobre la carpeta de l'informació del pas_).
+Allà trobarem la pestanya Documents.
+
+En aquesta pestanya podem trobar un llistat amb els diferents documents
+relacionats amb el pas.
+
+Els documents relacionats amb un cas tenen dos camps:
+
+- Tipus de document (Segons `TABLA 61` de la CNMC)
+- URL del document (camp de text amb la URL per accedir al document)
+
+Si el XML importat disposa de documents, ens mostrarà els docuements aqui
+amb aquestes dades.
+
+Si volem afegir-hi documentació, senzillament fem click sobre "Nou" i
+es complimenten els camps que ens mostra OpenERP.
+
+![](../_static/atr/atr_pas_info_documentacio.png)
 
 ##### Exemple de dades d'un pas. (C1) 01
 ![](../_static/atr/FormulariDades.png)
