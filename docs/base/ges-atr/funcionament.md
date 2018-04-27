@@ -172,12 +172,13 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
 * **Procés**: Procés al que està associat el Pas. S'omple automàticament amb el
   del Procés
 * **Pas**: Número de Pas.
-* **Info del Pas**: Escollim la informació que associarem al Pas. Haurà de ser
-  la del mateix procés/pas que hem escollit anteriorment. Amb la icona de la
-  carpeta, podrem accedir al formulari de la informació del Pas que serà
-  diferent en funció del Procés i Pas seleccionat en el desplegable. Totes les
-  dades del pas es generaran automàticament segons les dades de CUPS i pólissa
-  introduïts anteriorment.
+* **Informació del Pas**: Escollim la informació que associarem al Pas.
+  Haurà de ser la del mateix procés/pas que hem escollit anteriorment.
+  Amb la icona de la carpeta, podrem accedir al formulari de la informació
+  del Pas que serà diferent en funció del Procés i Pas seleccionat en el
+  desplegable.
+  Totes les dades del pas es generaran automàticament segons les dades de
+  CUPS i pólissa introduïts anteriorment.
 
 !!! Tip "Consell"
     Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
@@ -220,7 +221,7 @@ qualsevol procés.
   pendents de validar, es llisten de color **vermell**.
 
 
-## Pestanya History
+### Pestanya History
 
 Llistat amb totes les accions que s'han realitzat, com Obrir, Tancar,
 Historitzar, etc...
@@ -228,7 +229,7 @@ Historitzar, etc...
 ![](../_static/atr/PestanyaHistory.png)
 
 
-## Pestanya Communication
+### Pestanya Communication
 
 Llistat amb tots els mails enviats des del cas mitjançant el botó **Enviar XML**
 
