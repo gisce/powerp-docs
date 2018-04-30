@@ -204,7 +204,7 @@ Els documents relacionats amb un cas tenen dos camps:
 - Tipus de document (Segons `TABLA 61` de la CNMC)
 - URL del document (camp de text amb la URL per accedir al document)
 
-Si el XML importat disposa de documents, ens mostrarà els docuements aqui
+Si el XML importat disposa de documents, ens mostrarà els documents aquí
 amb aquestes dades.
 
 Si volem afegir-hi documentació, senzillament fem click sobre "Nou" i
