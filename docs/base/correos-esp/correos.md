@@ -11,6 +11,11 @@ Aquests fitxers venen definits per **CORREOS ESPAÑA**.
 
 **SICER** (**S**istema d'**I**nformació i **C**ontrol dels **E**nviaments **R**egistrats)
 
+<p align="center">
+  ![](../_static/correos/sicer_workflow.png)
+</p>
+
+
 #### Pas 1 (Client&rarr;Correos)
 
 **CLIENT > SICER > GESTIÓ DE L'ENTREGA > GESTIÓ DELS ENVIAMENTS AMB
@@ -28,6 +33,22 @@ i entrega, així com la gestió de reemborsaments.
 
 En el sentit contrari, ***SICER*** recull els resultats de l'entrega i els pagaments realitzats d'enviaments amb la modelitat de reemborsament, remetent periòdicament aquesta informació al client.
 
+
 ### Remesa
 
-### Línia de remesa
+Una remesa identifica la agrupació d'enviaments que diposita un client de forma conjunta per a la seva distribució.
+
+El client determina el número d'enviaments que formen una remesa. Amb aquests
+enviaments, agrupats en una o varies remeses, generara un fitxer segons l'estructura especificada a la secció ($$$$$TODO$$$$)
+
+Una remesa s'inicia en el moment que es rep el fitxer de dades ($$$$$TODO$$$$) abans del diposit fisic dels enviaments i es tenca quan es determina que ha finalitzat el proces de distribució i es te constancia dels events d'entrega d'aquests.
+
+Durant tot el proces descrit una remesa passa per els següents estats:
+
+- **Bloquejada**: Informació rebuda i carregada en el sistema **SICER** a la espera de que es faci el dipósit fisic dels enviaments.
+
+
+- **Oberta**: Periode d'actualitzacións dels enviaments que conformen la remesa.
+
+
+- **Tancada**: Fi del periode d'actualitzacions del enviaments de les remeses.
