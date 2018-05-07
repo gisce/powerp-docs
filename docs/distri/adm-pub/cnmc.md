@@ -8,7 +8,7 @@ Continguts:
 * [Circular 4/2015](resoluciones/circular_4-2015.md#circular-42015)
 * [Circular 2/2016](resoluciones/circular_2-2016.md#generacio-de-informes-sobre-reclamacions-de-consumidors)
 * [Inventari 4131 (2014)](resoluciones/4131.md)
-* [Inventari 4666](resoluciones/4666.md#inventari-4666)
+* [Inventari 5784 (4666/2017)](resoluciones/5784.md#inventari-5784)
 * [Plans d'inversió 4667](resoluciones/4667.md)
 
 
