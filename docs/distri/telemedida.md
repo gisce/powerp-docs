@@ -44,6 +44,12 @@ pestanya de la fitxa del comptador **Electrònic**.
 3.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
     contractes disponibles en un comptador 1, 2 o 3 volem utilitzar per crear les lectures.
 
+    - _Contracte 1:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa amb discriminació de dies festius.
+
+    - _Contracte 2:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa sense discriminació de dies festius.
+
 ![](_static/telemedida/ConfigureElectronicMeter.png)
 
 ### Configuració del comptador tele-mesurat
@@ -63,6 +69,12 @@ En aquesta pestanya trobem diferents camps configurables i informatius.
 
 3.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
     contractes disponibles en un comptador volem utilitzar per crear les lectures.
+
+    - _Contracte 1:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa amb discriminació de dies festius.
+
+    - _Contracte 2:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa sense discriminació de dies festius.
 
 4.  **Protocol de connexió**: Tenim tres camps als quals hem d'assignar el valor correcte
     per establir la connexió amb el comptador.
