@@ -49,6 +49,10 @@ pages:
         - Automatitzación de procesos: base/ges-atr/automatitzacio.md
         - Apéndice: base/ges-atr/apendix.md
     - SOA: base/soa.md
+    - Correos:
+        - Introducción y conceptos: base/correos-esp/correos.md
+        - Integración y funcionamiento: base/correos-esp/correos-funcionament-integracio.md
+        - Formato de ficheros: base/correos-esp/formats-fitxers.md
   - Distribuidora:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
