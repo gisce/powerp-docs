@@ -85,8 +85,40 @@ la carta al client.
 
 
 ## Assistent per a la importació de fitxers de resultats
-Aquest assisten ens permét importar els fitxers resultats dels enviaments de les remeses emesos per **Correos**
+Aquest assisten permét importar els fitxers resultats dels enviaments de les remeses emesos per **Correos**
 
 ![](../_static/correos/correos_loc_wiz_importacio_resultats.png)
 
+**Pas 1: (Seleccio del fitxer de resultats)**
+
+En el primer pas s'ha de seleccionar el fitxer de resultats que es vol importar.
+Un cop seleccionat mitjançant el botó importar i actualitzar es procesara el fitxer i s'actualitzaran les linies de les remeses que siguin possibles.
+
 ![](../_static/correos/wiz_imp_res_1.png)
+
+**Pas 2: (Resultat d'actualització)**
+
+En el segon pas tindrem dos possibilitats:
+
+1. Alguna linia no s'ha pogut processar/actualitzar (**Errors**)
+
+2. Totes les linias s'han pogut processar
+
+Un com processat el fitxer amb el boto **Remesas actualitzades** s'accedeix a la
+llista de remeses que s'han actualitzat.
+
+**Pas 2.1: (Importació amb errors)**
+
+En el cas qua alguna línia no s'hagi pogut processar es generara un fitxer ***CSV*** amb la informació corresponent a aquestes, i les que si que es puguin processar s'actualitzaran seguint el procés normal.
+
+![](../_static/correos/importacio_resultats_errors.png)
+
+![Fitxer d'errors](../_static/correos/importacio_resultats_file_errors.png)
+
+
+**Pas 2.2: (Importació sense errors)**
+
+En el cas que totes les linies s'hagin pogut processar correctament es mostrara
+el següent missatge que indica.
+
+![](../_static/correos/importacio_resultats_correcte.png)

@@ -52,3 +52,22 @@ Durant tot el proces descrit una remesa passa per els següents estats:
 
 
 - **Tancada**: Fi del periode d'actualitzacions del enviaments de les remeses.
+
+Durant el process de remesar la remesa també pasa per els seguents estats a l'ERP:
+
+- **Esborrany**: Estat inicial de la remesa.
+
+- **Enviament**: Indica que la remesa es troba en estat d'enviament.
+
+- **Finalitzada**: Indica que l'enviament de la remesa ha finalitzat.
+
+- **Tancada**: Dona la remesa per finalitzada.
+
+**Possibles canvis d'estat (Workflow):**
+
+|                 | Esborrany | Enviament | Finalitzada | Tancada |
+|-----------------|:---------:|:---------:|:-----------:|:-------:|
+| **Esborrany**   |           |     x     |             |    x    |
+| **Enviament**   |           |           |      x      |    x    |
+| **Finalitzada** |           |           |      x      |         |
+| **Tancada**     |           |           |             |         ||
