@@ -5,16 +5,17 @@
 Aquest mòdul gestiona dos tipus de comptadors diferents, els comptadors
 electrònics i els electrònics tele-mesurats. En el cas dels comptadors
 electrònics el mòdul s'utilitzarà per importar les corbes obtingudes a
-través dels dispositius TPL per tal de validar-les i poder-les utilitzar
-per a la facturació. També permetrà crear els fitxers F1 de perfils.
-
-Per els comptadors tele-mesurats a més a més, pot fer la importació dels
+través dels dispositius TPL.
+Per els comptadors tele-mesurats, permet fer la importació dels
 tancaments i corbes dels comptadors a través de la connexió que es
-configuri a l'ERP. Un cop importades aquestes dades, es podran validar i
-crear les lectures corresponents i per últim, es podrà fer l'ajustament i
-estimació de la corba de consum del comptador a l'hora d'obrir la factura
-sempre i quan la tarifa sigui estimable.
+configuri a l'ERP.
 
+Amb els tancaments importats, podrem portar a terme la seva validació
+i crear les lectures corresponents.
+Els perfils que s'importin també podran ser validats i a més a més es
+podrà fer l'ajustament i estimació de la corba de consum del comptador
+a l'hora d'obrir la factura. Sempre i quan la tarifa sigui estimable.
+El mòdul també ens permetrà crear els fitxers F1 i P1 amb els perfils.
 
 ## Configuració dels Comptadors
 Per tal de poder utilitzar aquest mòdul correctament s'hauran de configurar
@@ -30,38 +31,68 @@ o **Telemesura**.
 Per tal de configurar el comptador purament electrònic ens hem de dirigir a la
 pestanya de la fitxa del comptador **Electrònic**.
 
-1.  **Dates de validació**: La data **última lectura** ens indica de quin dia són els
-    últims tancaments que s'han validat d'aquest comptador. La data **últim perfil**
-    indica de quin dia és l'última corba que s'ha validat per aquest comptador.
+1.  **Dates de validació**: La data **Última tancament validat** ens indica de
+    quin dia són els últims tancaments que s'han validat d'aquest comptador.
+    La data **Últim perfil validat** indica de quin dia és l'última corba que
+    s'ha validat per aquest comptador.
 
-2.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
-    contractes disponibles en un comptador volem utilitzar per crear les lectures.
+2.  **Dates de importació**: La data **Última tancament carregat** ens indica de
+    quin dia són els últims tancaments que s'han importat d'aquest comptador.
+    La data **Últim perfil carregat** indica de quin dia i hora és l'última corba
+    que s'ha carregat per aquest comptador.
+
+3.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
+    contractes disponibles en un comptador 1, 2 o 3 volem utilitzar per crear les lectures.
+
+    - _Contracte 1:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa amb discriminació de dies festius.
+
+    - _Contracte 2:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa sense discriminació de dies festius.
+
+![](_static/telemedida/ConfigureElectronicMeter.png)
 
 ### Configuració del comptador tele-mesurat
 Per tal de configurar el comptador tele-mesurat ens hem de dirigir a la
 pestanya de la fitxa del comptador **Electrònic**.
 En aquesta pestanya trobem diferents camps configurables i informatius.
 
-1.  **Dates de validació**: La data **última lectura** ens indica de quin dia són els
-    últims tancaments que s'han validat d'aquest comptador. La data **últim perfil**
-    indica de quin dia és l'última corba que s'ha validat per aquest comptador.
+1.  **Dates de validació**: La data **Última tancament validat** ens indica de
+    quin dia són els últims tancaments que s'han validat d'aquest comptador.
+    La data **Últim perfil validat** indica de quin dia és l'última corba que
+    s'ha validat per aquest comptador.
 
-2.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
+2.  **Dates de importació**: La data **Última tancament carregat** ens indica de
+    quin dia són els últims tancaments que s'han importat d'aquest comptador.
+    La data **Últim perfil carregat** indica de quin dia i hora és l'última corba
+    que s'ha carregat per aquest comptador.
+
+3.  **Contracte per importar**: Aquest seleccionable ens permet decidir quin dels tres
     contractes disponibles en un comptador volem utilitzar per crear les lectures.
 
-3.  **Protocol de connexió**: Tenim tres camps als quals hem d'assignar el valor correcte
+    - _Contracte 1:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa amb discriminació de dies festius.
+
+    - _Contracte 2:_ Al perfilar corbes horàries de comptadors amb aquest contracte
+    s'utilitzarà una tarifa sense discriminació de dies festius.
+
+4.  **Protocol de connexió**: Tenim tres camps als quals hem d'assignar el valor correcte
     per establir la connexió amb el comptador.
 
-4.  **Paràmetres de connexió**: Caldrà configurar e dos paràmetres. El número de port del
+5.  **Paràmetres de connexió**: Caldrà configurar e dos paràmetres. El número de port del
     comptador al camp **Port** i seguidament un camp d'adreça que dependrà del tipus de
     connexió del comptador. Si el comptador és amb mòdem haurem d'introduir el número de
     telèfon del comptador, altrament caldrà entrar l'adreça IP.
 
-5.  **Contractes per demanar**: Aquí podem seleccionar quins dels tres contractes existents
+6.  **Contractes per demanar**: Aquí podem seleccionar quins dels tres contractes existents
     a la configuració d'un comptador volem que es demanin a l'hora de carregar tancaments.
     El programa demanarà tots els que tinguem seleccionats i si algun d'ells no està configurat
     simplement no crearà els tancaments d'aquest.
 
+7. **Accions de càrrega**: Aquests dos botons són els assistents per importar els tancaments
+    i els perfils del comptador.
+
+![](_static/telemedida/ConfigureTelemeasureMeter.png)
 
 ## Càrrega de fitxers .curva de TPL
 Per tal de carregar els perfils horaris que s'extreuen dels comptadors mitjançant els
@@ -72,23 +103,40 @@ dispositius TPL, s'utilitza l'assistent següent:
 
 ![](_static/telemedida/LoadTPLProfilesWizard.png)
 
-Seleccionant el fitxer **.curva** dins l'assistent i indicant la unitat d'energia que s'utilitza
-en el fitxer especificat ja està llest per polsar el botó **Carregar**.
-El primer pas que executa el procés de càrrega és el de comprovar si el comptador referenciat
-dins el fitxer té o no perfils existents per el període entre les dates d'inici i final del
-fitxer. Si es troben perfils els eliminarà. El següent pas és crear tets els perfils nous.
+Aquest assistent suporta fitxers en format **.curva** i també un conjunt d'aquests fitxers
+comprimits en ".zip".
+Dins l'assistent i indicant la unitat d'energia que s'utilitza en el fitxer especificat ja
+està llest per polsar el botó **Carregar**. El primer pas que executa el procés de càrrega
+és el de comprovar si el comptador referenciat dins el fitxer té o no perfils existents
+per el període entre les dates d'inici i final del fitxer. Si es troben perfils els eliminarà.
+El següent pas és crear tots els perfils nous.
 
-Un cop hagi acabat el procés veurem el següent missatge a la finestra de l'assistent indicant
-la quantitat de perfils que s'han creat.
+Si hem introduït un sol fitxer i no un ".zip", un cop hagi acabat el procés veurem el mateix
+missatge que es mostra a la següent imatge. A la finestra de l'assistent indica la quantitat
+de perfils que s'han creat.
 
 ![](_static/telemedida/LoadTPLProfilesResult.png)
 
-Una vegada importats, ens podem dirigir a la fitxa del comptador per visualitzar-los i revisar
-que tot sigui correcte. Podem buscar-lo a **Infraestructura > Telemesura > Contadors TM**
-on se'ns mostren únicament els comptadors que tinguin configurada la tecnologia **Telemesura**
-o **Electronic**. Dins la fitxa del comptador, amb el botó **Mostrar tancaments TM** accedirem
-a la llista de perfils del comptador on hauríem de poder veure tots els que hem importat en estat
-**No vàlid**.
+Si el fitxer que hem introduït per importar és un ".zip" la tasca d'importació es portarà a
+terme en segon pla.
+
+Una vegada importats els fitxers, es crearà un registre de lectura per cada fitxer llegit, tan
+si l'hem introduït sol o comprimit en un ".zip". Per analitzar si tots els fitxers s'han llegit
+correctament o hi ha hagut algun error podem consultar el llistat de registres **Infraestructura >
+Telemesura > Registre de lectura**. Cada registre ens informarà del nom del fitxer al que fa
+referència, la data de lectura, l'estat de la lectura, bàsicament si s'ha llegit correctament
+o si hi ha hagut error i el tipus de fitxer que és.
+
+![](_static/telemedida/ReaderRegisterMenu.png)
+
+![](_static/telemedida/ReaderRegisterList.png)
+
+Si els fitxer s'han llegit correctament, ens podem dirigir a la fitxa del comptador per
+visualitzar-los i revisar que tot sigui correcte. Podem trobar el comptador a **Infraestructura >
+Telemesura > Contadors TM** on se'ns mostren únicament els comptadors que tinguem configurats
+com electrònics o telemesurats. Dins la fitxa del comptador, amb el botó **Mostrar tancaments
+TM** accedirem a la llista de perfils del comptador on hauríem de poder veure tots els que hem
+importat en estat **No vàlid**.
 
 
 ## Validació de perfils de telemesura
@@ -103,13 +151,13 @@ perfils del comptador en qüestió.
 
 
 En el segon cas, executant l'assistent des del menú, podem utilitzar-lo per validar els perfils
-d'un comptador concret seleccionant aquest o executar la validació sense cap comptador, la qual cosa
-iniciarà una validació per tots els comptadors de telemesura.
+d'un comptador concret seleccionant aquest o executar la validació sense cap comptador, la qual
+cosa iniciarà una validació per tots els comptadors de telemesura.
 
 ![](_static/telemedida/ValidateTmProfilesMeter.png)
 
 ### Validacions realitzades sobre els Perfils
-Documentació de quines comprovacions es passen per els diferents perfiles per tal de
+Documentació de quines comprovacions es passen per els diferents perfils per tal de
 decidir si són o no vàlids.
 
 1. **Neteja de duplicats**: El primer pas de la validació busca tots els perfils que
@@ -122,14 +170,14 @@ i que tinguin valors de mesura diferents.
    elevat i que es consideri fora dels límits.
 
     !!! Info "Variable"
-        Existeix una variable de configuració anomenada **tm_profile_impossible** que ens
-        permetrà configurar quest límit.
+        Existeix una variable de configuració anomenada **tm_profile_impossible** que
+        ens permetrà configurar quest límit.
 
 4. **Mesures negatives**: Assegura que no hi hagi cap perfil que contingui una valor de
 mesura negatiu.
 
 5. **Bits de control**: Comprova que els registres no tinguin un valor al camp de bits
-de control que indiqui error.
+de control que indiqui algun tipus d'error.
 
 6. **Reactiva alta**: Comprova que no hi hagi cap perfil que tingui una reactiva al
 quadrant 1 amb un valor superior a l'activa entrant.
