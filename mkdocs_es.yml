@@ -53,6 +53,7 @@ pages:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
+    - Telemedida: distri/telemedida.md
     - Manual de uso de TPL - Índice: distri/tpl.md
     - Manual de uso de TPL:
       - Requisitos del sistema e instalación: distri/tpl/requisitos.md
@@ -75,7 +76,7 @@ pages:
       - CNMC: distri/adm-pub/cnmc.md
       - CNMC - Resoluciones:
         - 4131: distri/adm-pub/resoluciones/4131.md
-        - 4666: distri/adm-pub/resoluciones/4666.md
+        - 5784 (4666): distri/adm-pub/resoluciones/5784.md
         - 4667 - Planes de inversión: distri/adm-pub/resoluciones/4667.md
         - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
         - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md
@@ -91,20 +92,20 @@ pages:
         - Visor Web: gis/webgis.md
         - Buscador: gis/websearch.md
       - QGIS: gis/qgis.md
-      - Instalaciones:
-        - Subestaciones: distri/subestaciones.md
-        - CTS: distri/cts.md
-        - CTS:
-          - Celdas i elementos de corte: distri/celdas.md
-        - LAT: distri/lat.md
-        - LBT: distri/lbt.md
-        - Instalaciones RE: distri/re.md
-        - Expedientes: distri/expedientes.md
-        - Despachos: distri/despachos.md
-        - Sincronización CUPS: distri/sincronizacion_cups.md
-        - CINI - Generación Automática: distri/act_cinis.md
-        - TI - Generación Automática: distri/act_tis.md
       - ERP: gis/erp.md
+    - Instalaciones:
+      - Subestaciones: distri/subestaciones.md
+      - CTS: distri/cts.md
+      - CTS:
+        - Celdas i elementos de corte: distri/celdas.md
+      - LAT: distri/lat.md
+      - LBT: distri/lbt.md
+      - Instalaciones RE: distri/re.md
+      - Expedientes: distri/expedientes.md
+      - Despachos: distri/despachos.md
+      - Sincronización CUPS: distri/sincronizacion_cups.md
+      - CINI - Generación Automática: distri/act_cinis.md
+      - TI - Generación Automática: distri/act_tis.md
     - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md

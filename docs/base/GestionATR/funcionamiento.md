@@ -172,12 +172,13 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
 * **Procés**: Procés al que està associat el Pas. S'omple automàticament amb el
   del Procés
 * **Pas**: Número de Pas.
-* **Info del Pas**: Escollim la informació que associarem al Pas. Haurà de ser
-  la del mateix procés/pas que hem escollit anteriorment. Amb la icona de la
-  carpeta, podrem accedir al formulari de la informació del Pas que serà
-  diferent en funció del Procés i Pas seleccionat en el desplegable. Totes les
-  dades del pas es generaran automàticament segons les dades de CUPS i pólissa
-  introduïts anteriorment.
+* **Informació del Pas**: Escollim la informació que associarem al Pas.
+  Haurà de ser la del mateix procés/pas que hem escollit anteriorment.
+  Amb la icona de la carpeta, podrem accedir al formulari de la informació
+  del Pas que serà diferent en funció del Procés i Pas seleccionat en el
+  desplegable.
+  Totes les dades del pas es generaran automàticament segons les dades de
+  CUPS i pólissa introduïts anteriorment.
 
 !!! Tip "Consell"
     Amb el botó **Acceptar** creem el pas, però no es tanca el formulari. Fins
@@ -188,6 +189,28 @@ Quan obres o crees un Pas, accedeixes al formulari del Pas.
     Per crear un pas d'una manera més fàcil i ràpida es pot utilitzar
     l'[Assistent de Creació de Passos ATR](#assistent-de-creacio-de-passos-atr).
 
+##### Pestanya Documents
+
+Si es disposa d'una URL amb documentació a adjuntar a un cas es
+pot afegir al pas actual accedint a l'informació del cas
+(_doble click sobre el pas > click sobre la carpeta de l'informació del pas_).
+Allà trobarem la pestanya Documents.
+
+En aquesta pestanya podem trobar un llistat amb els diferents documents
+relacionats amb el pas.
+
+Els documents relacionats amb un cas tenen dos camps:
+
+- Tipus de document (Segons `TABLA 61` de la CNMC)
+- URL del document (camp de text amb la URL per accedir al document)
+
+Si el XML importat disposa de documents, ens mostrarà els documents aquí
+amb aquestes dades.
+
+Si volem afegir-hi documentació, senzillament fem click sobre "Nou" i
+es complimenten els camps que ens mostra OpenERP.
+
+![](../_static/atr/atr_pas_info_documentacio.png)
 
 ##### Exemple de dades d'un pas. (C1) 01
 ![](../_static/atr/FormulariDades.png)
@@ -220,7 +243,7 @@ qualsevol procés.
   pendents de validar, es llisten de color **vermell**.
 
 
-## Pestanya History
+### Pestanya History
 
 Llistat amb totes les accions que s'han realitzat, com Obrir, Tancar,
 Historitzar, etc...
@@ -228,7 +251,7 @@ Historitzar, etc...
 ![](../_static/atr/PestanyaHistory.png)
 
 
-## Pestanya Communication
+### Pestanya Communication
 
 Llistat amb tots els mails enviats des del cas mitjançant el botó **Enviar XML**
 

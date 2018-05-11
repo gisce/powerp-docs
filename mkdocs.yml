@@ -50,6 +50,7 @@ pages:
     - Inici: distri/index.md
     - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
+    - Telemesura: distri/telemedida.md
     - Manual d'ús de TPL - Índex: distri/tpl.md
     - Manual d'ús de TPL:
       - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
@@ -72,7 +73,7 @@ pages:
       - CNMC: distri/adm-pub/cnmc.md
       - CNMC - Resolucions:
         - 4131: distri/adm-pub/resoluciones/4131.md
-        - 4666: distri/adm-pub/resoluciones/4666.md
+        - 5784 (4666): distri/adm-pub/resoluciones/5784.md
         - 4667 - Plans d'inversió: distri/adm-pub/resoluciones/4667.md
         - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
         - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md
@@ -88,20 +89,20 @@ pages:
         - Visor web: gis/webgis.md
         - Buscador: gis/websearch.md
       - Qgis: gis/qgis.md
-      - Instal·lacions:
-        - Subestacions: distri/subestaciones.md
-        - CTS: distri/cts.md
-        - CTS:
-          - Cel·les i elements de tall: distri/celdas.md
-        - LAT: distri/lat.md
-        - LBT: distri/lbt.md
-        - Instal·lacions RE: distri/re.md
-        - Expedients: distri/expedientes.md
-        - Despatxos: distri/despachos.md
-        - Sincronització CUPS: distri/sincronizacion_cups.md
-        - CINI - Generació Automàtica: distri/act_cinis.md
-        - TI - Generació Automàtica: distri/act_tis.md
       - ERP: gis/erp.md
+    - Instal·lacions:
+      - Subestacions: distri/subestaciones.md
+      - CTS: distri/cts.md
+      - CTS:
+        - Cel·les i elements de tall: distri/celdas.md
+      - LAT: distri/lat.md
+      - LBT: distri/lbt.md
+      - Instal·lacions RE: distri/re.md
+      - Expedients: distri/expedientes.md
+      - Despatxos: distri/despachos.md
+      - Sincronització CUPS: distri/sincronizacion_cups.md
+      - CINI - Generació Automàtica: distri/act_cinis.md
+      - TI - Generació Automàtica: distri/act_tis.md
     - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
