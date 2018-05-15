@@ -10,6 +10,7 @@ theme: material
 markdown_extensions:
   - admonition
   - grid_tables
+  - codehilite
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
