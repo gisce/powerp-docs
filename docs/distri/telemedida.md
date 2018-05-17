@@ -94,22 +94,29 @@ En aquesta pestanya trobem diferents camps configurables i informatius.
 
 ![](_static/telemedida/ConfigureTelemeasureMeter.png)
 
-## Càrrega de fitxers .curva de TPL
-Per tal de carregar els perfils horaris que s'extreuen dels comptadors mitjançant els
-dispositius TPL, s'utilitza l'assistent següent:
-**Infraestructura > Telemesura > Carrega perfils TPL**
+## Càrrega de corbes de telemesura mitjançant fitxers
+Per tal de carregar els perfils horaris de telemesura s'utilitza l'assistent següent:
+**Infraestructura > Telemesura > Càrrega perfils TPL**
 
 ![](_static/telemedida/LoadTPLProfilesPath.png)
 
 ![](_static/telemedida/LoadTPLProfilesWizard.png)
 
-Aquest assistent suporta fitxers en format **.curva** i també un conjunt d'aquests fitxers
-comprimits en ".zip".
-Dins l'assistent i indicant la unitat d'energia que s'utilitza en el fitxer especificat ja
-està llest per polsar el botó **Carregar**. El primer pas que executa el procés de càrrega
-és el de comprovar si el comptador referenciat dins el fitxer té o no perfils existents
-per el període entre les dates d'inici i final del fitxer. Si es troben perfils els eliminarà.
-El següent pas és crear tots els perfils nous.
+Aquest assistent suporta dos tipus de fitxers diferents:
+
+* Format **.curva** que s'extreu dels comptadors mitjançant els dispositius TPL.
+
+* Format [P1D](_/static/telemedida/P1D.pdf) definit per la REE.
+
+A més a més es poden introduir un o altre d'aquests dos formats de fitxers massivament
+comprimits en un fitxer ".zip".
+
+Dins l'assistent ens caldrà seleccionar el fitxer que volem carregar **1** i el tipus de
+fitxer del que es tracta **2**. Per últim haurem d'indicar la unitat d'energia que
+s'utilitza en el fitxer introduït **3**.
+El primer pas que executa el procés de càrrega és el de comprovar si el comptador referenciat
+dins el fitxer té o no perfils existents per el període entre les dates d'inici i final del
+fitxer. Si es troben perfils els eliminarà. El següent pas és crear tots els perfils nous.
 
 Si hem introduït un sol fitxer i no un ".zip", un cop hagi acabat el procés veurem el mateix
 missatge que es mostra a la següent imatge. A la finestra de l'assistent indica la quantitat
