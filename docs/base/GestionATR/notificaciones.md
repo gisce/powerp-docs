@@ -126,11 +126,24 @@ podem procedir amb l'enviament. Prement el botó "_enviar correus pendents_":
 
 ![](../_static/atr/WizardNotificarPrevi.png)
 
-Aquest procés pot tardar una estona segons la quantitat de casos seleccionats.
+Aquest botó generarà els correus a la carpeta de sortida per al seu enviament.
 
-Una vegada finalitzat el procés, l'assistent s'actualitzarà i mostrarà els casos
-notificats i si ha trobat algun error en el procés que ha impedit la notificació.
+!!! Info "Nota"
+    Si es disposa del mòdul `poweremail_oorq`, s'encuaràn els processos de
+    creació de correus.
+
+!!! Warning "Atenció"
+    Aquest procés pot tardar una estona segons la quantitat de casos seleccionats,
+    ja que ha de realitzar la creació de correus.
+
+Una vegada finalitzat el procés, l'assistent s'actualitzarà i mostrarà el nombre
+de casos notificats i si ha trobat algun error en el procés que ha impedit la notificació.
+
 El resultat de la tasca es quedarà registrat en la finestra de peticions, que
 es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
+
+!!! Warning "Atenció"
+    El resultat contempla únicament errors en la creació dels correus de
+    notificació i no amb l'enviament.
 
 ![](../_static/atr/WizardNotificarPeticions.png)
