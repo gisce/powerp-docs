@@ -21,6 +21,7 @@ markdown_extensions:
   - fontawesome_markdown
   - grid_tables
   - codehilite
+  - markdown_checklist.extension
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
