@@ -1,27 +1,37 @@
 site_name: PowERP Docs
-repo_name: GitHub
+repo_name: PowERP Docs
 repo_url: https://github.com/gisce/powerp-docs
 edit_uri: edit/master/docs
 site_author: GISCE-TI, S.L.
-site_favicon: extra/gisce.ico
 google_analytics: ['UA-27668469-4', 'manuals.gisce.net']
-theme: material
+theme:
+  name: material
+  favicon: extra/gisce.ico
+  palette:
+    primary: 'indigo'
+    accent: 'blue'
+  font: fonts/DejaVuSans.ttf
+  logo: extra/gisce.png
+  feature:
+    tabs: true
+  language: 'ca'
 
 markdown_extensions:
   - admonition
+  - fontawesome_markdown
   - grid_tables
   - codehilite
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
 extra:
-  font: fonts/DejaVuSans.ttf
-  logo: extra/gisce.png
-  feature:
-    tabs: true
-  palette:
-    primary: 'indigo'
-    accent: 'blue'
+  social:
+    - type: 'github'
+      link: 'https://github.com/gisce'
+    - type: 'twitter'
+      link: 'https://twitter.com/gisce'
+    - type: 'globe'
+      link: 'https://gisce.net'
 
 extra_css:
   - extra/css/images.css
