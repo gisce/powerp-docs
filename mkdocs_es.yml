@@ -40,15 +40,15 @@ pages:
     - Equipos de telecomunicación: base/telecom.md
     - Revisiones internas: base/revisiones.md
     - Administración Pública:
-        - AEAT: base/adm-pub/aeat.md
+        - AEAT: base/AdministracionPublica/aeat.md
     - Gestión ATR:
-        - Introducción y conceptos: base/ges-atr/atr.md
-        - Funcionamiento general: base/ges-atr/funcionamiento.md
-        - Generación y envío de XMLs: base/ges-atr/gestionxml.md
-        - Operaciones: base/ges-atr/operaciones.md
-        - Notificaciones: base/ges-atr/notificaciones.md
-        - Automatitzación de procesos: base/ges-atr/automatizacion.md
-        - Apéndice: base/ges-atr/apendice.md
+        - Introducción y conceptos: base/GestionATR/atr.md
+        - Funcionamiento general: base/GestionATR/funcionamiento.md
+        - Generación y envío de XMLs: base/GestionATR/gestionxml.md
+        - Operaciones: base/GestionATR/operaciones.md
+        - Notificaciones: base/GestionATR/notificaciones.md
+        - Automatitzación de procesos: base/GestionATR/automatizacion.md
+        - Apéndice: base/GestionATR/apendice.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inicio: distri/index.md
