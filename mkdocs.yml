@@ -11,6 +11,7 @@ markdown_extensions:
   - admonition
   - grid_tables
   - codehilite
+  - markdown_checklist.extension
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
