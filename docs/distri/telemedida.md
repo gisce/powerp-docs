@@ -106,7 +106,7 @@ Aquest assistent suporta dos tipus de fitxers diferents:
 
 * Format **.curva** que s'extreu dels comptadors mitjançant els dispositius TPL.
 
-* Format [P1D](_/static/telemedida/P1D.pdf) definit per la REE.
+* Format [P1D](_static/telemedida/P1D.pdf) definit per la REE.
 
 A més a més es poden introduir un o altre d'aquests dos formats de fitxers massivament
 comprimits en un fitxer ".zip".
