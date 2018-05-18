@@ -28,7 +28,7 @@ Aquest assistent funciona de la següent manera:
 
 * Al guardar el fitxer s'assignarà un nom amb el següent format:
 
-        "AAAA-MM-DD_electricidad_reclamaciones.csv"
+        AAAA-MM-DD_electricidad_reclamaciones.csv
 
      on AAAA-MM-DD és la data en que s'ha generat l'informe. Aquest nom no s'ha
      de modificar ja que és el demanat per la CNMC.

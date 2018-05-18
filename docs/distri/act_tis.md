@@ -148,7 +148,7 @@ Per calcular els TI’s dels CTs es consulten els següents camps:
 Encara que en el ERP existeix el camp per a completar el TI,
 no es contempla perquè:
 
-  - En l’Inventari de la 4666, formulari 3:
+  - En l’Inventari de la 5784 (4666), formulari 3:
     - No es sol·licita aquesta informació.
 - 4707 no es sol·licita
 - 4/2015 no es sol·licita
@@ -192,7 +192,7 @@ Per calcular els TI’s de les posicions es consulten els següents camps:
 ## 6. TIs de Màquines
 En aquest apartat s’inclouen els transformadors de subsestació,
 de reserva i móbils.    
-Formulari 5 de la [4666](adm-pub/resoluciones/4666.md#inventari-4666).
+Formulari 5 de la [5784](adm-pub/resoluciones/5784.md#inventari-5784-4666).
 
 Els TI’s de les màquines de Reserva, seràn sempre TI-000.
 

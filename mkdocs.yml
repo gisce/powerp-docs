@@ -10,6 +10,7 @@ theme: material
 markdown_extensions:
   - admonition
   - grid_tables
+  - codehilite
   - markdown_blockdiag:
       fontpath: fonts/DejaVuSans.ttf
 
@@ -36,20 +37,21 @@ pages:
     - Equips de telecomunicació: base/telecom.md
     - Revisions internes: base/revisiones.md
     - Administració Pública:
-        - AEAT: base/adm-pub/aeat.md
+        - AEAT: base/AdministracionPublica/aeat.md
     - Gestió ATR:
-        - Introducció i conceptes: base/ges-atr/atr.md
-        - Funcionament general: base/ges-atr/funcionament.md
-        - Generació i enviament de XMLs: base/ges-atr/gestioxml.md
-        - Operacions: base/ges-atr/operacions.md
-        - Notificacions: base/ges-atr/notificacions.md
-        - Automatització de prosessos: base/ges-atr/automatitzacio.md
-        - Apèndix: base/ges-atr/apendix.md
+        - Introducció i conceptes: base/GestionATR/atr.md
+        - Funcionament general: base/GestionATR/funcionamiento.md
+        - Generació i enviament de XMLs: base/GestionATR/gestionxml.md
+        - Operacions: base/GestionATR/operaciones.md
+        - Notificacions: base/GestionATR/notificaciones.md
+        - Automatització de prosessos: base/GestionATR/automatizacion.md
+        - Apèndix: base/GestionATR/apendice.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inici: distri/index.md
     - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
+    - Telemesura: distri/telemedida.md
     - Manual d'ús de TPL - Índex: distri/tpl.md
     - Manual d'ús de TPL:
       - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
@@ -72,7 +74,7 @@ pages:
       - CNMC: distri/adm-pub/cnmc.md
       - CNMC - Resolucions:
         - 4131: distri/adm-pub/resoluciones/4131.md
-        - 4666: distri/adm-pub/resoluciones/4666.md
+        - 5784 (4666): distri/adm-pub/resoluciones/5784.md
         - 4667 - Plans d'inversió: distri/adm-pub/resoluciones/4667.md
         - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
         - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md
