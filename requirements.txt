@@ -2,6 +2,7 @@
 Markdown
 # Extensions
 markdown-checklist
+fontawesome-markdown
 mkdocs-material
 markdown-blockdiag>=0.3.0
 markdown-i18n>=2.1.1
