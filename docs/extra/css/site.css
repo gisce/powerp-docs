@@ -1,3 +1,9 @@
-[data-md-color-primary=indigo] .md-header, [data-md-color-primary=indigo] .md-tabs{
+[data-md-color-primary=indigo] .md-header
+{
     background-color: #4D77A4;
+}
+
+[data-md-color-primary=indigo] .md-tabs
+{
+    background-color: #436491;
 }
