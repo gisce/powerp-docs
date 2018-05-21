@@ -8,7 +8,7 @@ echo "Reset po file from local branch"
 git reset HEAD locales/es_ES/LC_MESSAGES/messages.po
 git checkout -- locales/es_ES/LC_MESSAGES/messages.po
 echo "Merging from master"
-git fetch
+git fetch --prune
 git merge origin/master
 echo "Are there any conflicts (not the po file)? [y/N]"
 read input
@@ -29,7 +29,7 @@ echo "Cleaning repository"
 rm messages.local.po
 rm messages.remote.po
 echo "Updating python versions"
-pip install -r requirements.txt
+pip install -r requirements.txt --upgrade
 echo "Updating pot file to check strings after merge..."
 if [ -f locales/messages.pot ];
 then
