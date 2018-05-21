@@ -1,15 +1,27 @@
 site_name: PowERP Docs
-repo_name: GitHub
+repo_name: PowERP Docs
 repo_url: https://github.com/gisce/powerp-docs
 edit_uri: edit/master/docs
 site_author: GISCE-TI, S.L.
-site_favicon: extra/gisce.ico
 google_analytics: ['UA-27668469-4', 'manuales.gisce.net']
-theme: material
+theme:
+  name: material
+  favicon: extra/gisce.ico
+  palette:
+    primary: 'indigo'
+    accent: 'blue'
+  font: fonts/DejaVuSans.ttf
+  logo: extra/gisce.png
+  feature:
+    tabs: true
+  language: 'es'
 
 markdown_extensions:
   - admonition
+  - fontawesome_markdown
   - grid_tables
+  - codehilite
+  - markdown_checklist.extension
   - markdown_i18n:
       i18n_lang:  es_ES
       i18n_dir:   locales
@@ -17,13 +29,13 @@ markdown_extensions:
       fontpath: fonts/DejaVuSans.ttf
 
 extra:
-  font: fonts/DejaVuSans.ttf
-  logo: extra/gisce.png
-  feature:
-    tabs: true
-  palette:
-    primary: 'indigo'
-    accent: 'blue'
+  social:
+    - type: 'github'
+      link: 'https://github.com/gisce'
+    - type: 'twitter'
+      link: 'https://twitter.com/gisce'
+    - type: 'globe'
+      link: 'https://gisce.net'
 
 extra_css:
   - extra/css/images.css
@@ -39,20 +51,21 @@ pages:
     - Equipos de telecomunicación: base/telecom.md
     - Revisiones internas: base/revisiones.md
     - Administración Pública:
-        - AEAT: base/adm-pub/aeat.md
+        - AEAT: base/AdministracionPublica/aeat.md
     - Gestión ATR:
-        - Introducción y conceptos: base/ges-atr/atr.md
-        - Funcionamiento general: base/ges-atr/funcionament.md
-        - Generación y envío de XMLs: base/ges-atr/gestioxml.md
-        - Operaciones: base/ges-atr/operacions.md
-        - Notificaciones: base/ges-atr/notificacions.md
-        - Automatitzación de procesos: base/ges-atr/automatitzacio.md
-        - Apéndice: base/ges-atr/apendix.md
+        - Introducción y conceptos: base/GestionATR/atr.md
+        - Funcionamiento general: base/GestionATR/funcionamiento.md
+        - Generación y envío de XMLs: base/GestionATR/gestionxml.md
+        - Operaciones: base/GestionATR/operaciones.md
+        - Notificaciones: base/GestionATR/notificaciones.md
+        - Automatitzación de procesos: base/GestionATR/automatizacion.md
+        - Apéndice: base/GestionATR/apendice.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inicio: distri/index.md
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
+    - Telemedida: distri/telemedida.md
     - Manual de uso de TPL - Índice: distri/tpl.md
     - Manual de uso de TPL:
       - Requisitos del sistema e instalación: distri/tpl/requisitos.md
@@ -75,7 +88,7 @@ pages:
       - CNMC: distri/adm-pub/cnmc.md
       - CNMC - Resoluciones:
         - 4131: distri/adm-pub/resoluciones/4131.md
-        - 4666: distri/adm-pub/resoluciones/4666.md
+        - 5784 (4666): distri/adm-pub/resoluciones/5784.md
         - 4667 - Planes de inversión: distri/adm-pub/resoluciones/4667.md
         - Circular 1/2005: distri/adm-pub/resoluciones/circular_1-2005.md
         - Circular 4/2014: distri/adm-pub/resoluciones/circular_4-2014.md

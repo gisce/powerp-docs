@@ -293,20 +293,22 @@ Les dades a calcular són les següents:
 
 ## Model 159
 
-En la ubicació que es mostra en la següent imatge:
+Assistent per la generació del informe del _Model 159_ tal com es detalla en el
+[BOE nº182 de 2009 secció 1 Pàgina 64838](http://www.boe.es/boe/dias/2009/07/29/pdfs/BOE-A-2009-12534.pdf).
+
+Podem trobar el llistat d'informes generats i l'assistent per generar l'informe
+a "**_OpenERP Menú → Administració Pública → Model 159_**"
 
 ![Figura 8](../_static/informes/model_159/menu.png)
 
-Es troba el menú per a la generació de l'informe del model 159,
-tal i com es detalla en el BOE n. 182 Sec. I. Pàg. 64838.
-
-La següent imatge mostra el wizard de generació de l'informe:
+Utilitzant l'acció ens mostrarà l'assistent per la generació del informe.
+Únicament hem de sel·leccionar la data final de l'informe i generarà tots els
+registres per l'exercici corresponent.
 
 ![Figura 9](../_static/informes/model_159/wiz_generar.png)
 
-Es generarà un nou informe amb la data final indicada en prémer 'Generar informe'.
-
-En finalitzar el procés de realització de l'informe es mostren els errors trobats:
+En finalitzar el procés de realització de l'informe es mostren els errors
+trobats i un botó que ens enllaça amb l'informe generat:
 
 ![Figura 10](../_static/informes/model_159/wiz_mostrar.png)
 
@@ -314,16 +316,28 @@ Prement 'Veure Informe' es llista l'informe generat:
 
 ![Figura 11](../_static/informes/model_159/imp_inf.png)
 
-Finalment, fent doble click en l'informe generat, veurem les línies de l'informe:
+Entrant en l'informe generat podem veure les dades de la capçalera i un enllaç
+al llistat dels registres d'aquest informe.
 
-![Figura 12](../_static/informes/model_159/linia_tree.png)
+![Figura 12](../_static/informes/model_159/informe_form.png)
 
-I tindrem la possibilitat d'exportar-lo prement 'Exportar document'.
+Prement en l'enllaç de "registres", podem visualitzar el llistat de registres
+i fent doble click els podem editar si fos necessari.
 
-En exportar el document, es sol·licita informació relativa a la
+![Figura 13](../_static/informes/model_159/linia_tree.png)
+
+### Exportar el document per l'entrega
+
+Amb el botó "Exportar Document" podem exportar l'informe en el format d'entrega.
+
+S'inicia un assistent que ens demana la informació relativa a la
 persona de contacte, informació relativa al suport que s'utilitzarà
-per la transmissió del document i el número d'informe que es correspon. El
-número d'informe és un número seqüencial relatiu a cada informe entregat.
+per la transmissió del document i el número d'informe que es correspon.
+
+El número d'informe és un número seqüencial relatiu a cada informe entregat, si
+aquest s'ha de rectificar, el número ha d'augmentar.
+
+![Figura 14](../_static/informes/model_159/wiz_exportar.png)
 
 ### Valors per defecte
 
@@ -342,20 +356,22 @@ en la línia del registre de tipus 2 i el valor assignat per defecte.
 
 ### Errors de validació
 
-
-El programa de validació del model 159, en la versió [v1.0 de 2011](http://www.agenciatributaria.es/static_files/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Descarga_Programas/Descarga/prevalid/2011/CobolWindows/Prevalidacion_159_2011_v10.exe)
-, genera una sèrie d'errors pels quals no hi ha sol·lució. Es llisten a continuació:
+L'Agencia Tributaria proveeix d'un programa per [validar el model generat per Windows](http://www.agenciatributaria.es/static_files/AEAT/Contenidos_Comunes/La_Agencia_Tributaria/Descarga_Programas/Descarga/prevalid/2011/CobolWindows/Prevalidacion_159_2011_v10.exe).
+Aquest genera una sèrie d'errors que coneixem, pels que cal adaptar els registres:
 
   Codi d'error  |  Camp                                                 | Motiu
 :--------------:|:------------------------------------------------------|:------------------------------------------------------------
    2 0801       |  Tipus de via (Direcció del subministre)              | Certs tipus de via proporcionats pel catastre.
    2 0701       |  Cognoms i nom, raó social o denominació del titular  | Noms que contenen nombres. També noms amb una única paraula.
 
+### Solució d'errors post-entrega
 
-##### Figura 13: Wizard per exportar l'informe.
+En cas de que ens retornin el fitxer amb errors, ens indicaràn en la notificació
+quins errors corresponen a quines línies o contractes.
 
-![](../_static/informes/model_159/wiz_exportar.png)
+El que farem serà accedir al informe que vam generar, accedir als registres i
+arreclar els que faci falta (segons els errors que ens han comunicat).
 
-##### Figura 14: Llistat de tots els informes generats.
-
-![](../_static/informes/model_159/imp_tree.png)
+Una vegada arreclats i guardats els registres, tornarem a [exportar l'informe](#exportar-el-document-per-lentrega).
+Aquesta vegada caldrà augmentar l'identificador d'informe, ja que serà el següent
+informe entregat per l'exercici corresponent.
