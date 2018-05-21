@@ -66,6 +66,8 @@
   - Nom del titular
   - Adreça del CUPS
   - Concentrador
+  - CUPS
+  - Numero de polissa
   - Versió de firmware / Versió de firmware PRIME
 
 
