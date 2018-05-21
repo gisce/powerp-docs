@@ -106,14 +106,17 @@ Aquest assistent suporta dos tipus de fitxers diferents:
 
 * Format **.curva** que s'extreu dels comptadors mitjançant els dispositius TPL.
 
-* Format [P1D](_static/telemedida/P1D.pdf) definit per la REE.
+* Format [P1D](_static/telemedida/P1D.pdf) definit per la REE al Sistema d'informació
+de mesures elèctriques al document d'especificació: Fitxers per l'intercanvi d'informació
+de mesura publicat l'agost de 2017. Pàgines 52 i 53.
 
-A més a més es poden introduir un o altre d'aquests dos formats de fitxers massivament
-comprimits en un fitxer ".zip".
+!!! Tip "Consell"
+    A més a més es poden introduir un o altre d'aquests dos formats de fitxers massivament
+    comprimits en un fitxer ".zip".
 
-Dins l'assistent ens caldrà seleccionar el fitxer que volem carregar **1** i el tipus de
-fitxer del que es tracta **2**. Per últim haurem d'indicar la unitat d'energia que
-s'utilitza en el fitxer introduït **3**.
+Dins l'assistent ens caldrà seleccionar el fitxer que volem carregar (**1**) i el tipus de
+fitxer del que es tracta (**2**). Per últim haurem d'indicar la unitat d'energia que
+s'utilitza en el fitxer introduït (**3**).
 
 Si hem introduït un sol fitxer i no un ".zip", un cop hagi acabat el procés veurem el mateix
 missatge que es mostra a la següent imatge. A la finestra de l'assistent indica la quantitat
