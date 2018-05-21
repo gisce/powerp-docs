@@ -1,8 +1,7 @@
 #!/bin/bash
-if [ -f locales/messages.pot ];
-then
-echo "Erasing old pot file (local cache)..."
-rm locales/messages.pot
+if [ -f locales/messages.pot ]; then
+    echo "Erasing old pot file (local cache)..."
+    rm locales/messages.pot
 fi
 echo "Building docs to get new pot file..."
 mkdocs build -f mkdocs_es.yml --clean
