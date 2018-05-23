@@ -15,6 +15,7 @@ theme:
   feature:
     tabs: true
   language: 'es'
+  custom_dir: custom
 
 markdown_extensions:
   - admonition

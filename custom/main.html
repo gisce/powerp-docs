@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block footer %}
+{% include "partials/footer.html" %}
+<script>
+// Get all afected elements (copyright)
+var elements = document.getElementsByClassName("md-footer-copyright")
+var locale = navigator.language || navigator.languages[0] || "en"
+for(footer_idx=0; footer_idx< elements.length; footer_idx++){
+  var footer = elements[footer_idx]
+  footer_date=document.createElement("div")
+  // <OFFSET>minutes * 60 seconds * 1000 miliseconds * -1 local time
+  offset=new Date().getTimezoneOffset()*60*1000*-1
+  build_date=new Date("{{ build_date_utc }}").getTime()
+  build_date=new Date(build_date+offset)
+  if (locale == 'es' || locale == 'es_ES'){
+    build_text = 'Fecha última modificación: '
+  } else if (locale == 'ca' || locale == 'ca_ES') {
+    build_text = "Data d'última modificació: "
+  } else {
+    build_text = "Last build on: "
+  }
+  footer_date.innerHTML=build_text + build_date.getFullYear() + "-" + (build_date.getMonth()+1) + "-" + build_date.getDate() + " " + build_date.toLocaleTimeString(locale, {hourCycle:"h24", hour: "2-digit", minute: "2-digit",second: "2-digit"})
+  footer.appendChild(footer_date)
+}
+</script>
+{% endblock %}
