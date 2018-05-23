@@ -200,3 +200,25 @@ Els passos són els següents:
 
 !!! warning "Atenció"
     Només es pot desfer l'agrupació de factures que no hagin estat pagades.
+
+### Generar fitxer Excel (_.xlsx_) d'un informe N57
+
+Per poder generar el fitxer, haurem d'anar als informes N57:
+
+![](_static/cobros/menu_wizard_generate_excel_n57_1.png)
+
+Un cop s'obri la vista dels informes, podrem generar l'informe seguint les següents passes:
+
+![](_static/cobros/form_wizard_generate_excel_n57_2.png)
+
+1. Seleccionem l'informe que volem. També es pot obtenir l'Excel des de la vista de formulari ja que les passes 2 i 3 seran les mateixes.
+
+    !!! danger "Perill"
+        Si estem a la vista d'arbre, és molt important que abans de fer la passa dos, assegurar-se de que tenim un registre seleccionat.
+
+2. Obrirem l'assisten clicant el boto `Action`
+
+3. Generarem l'Excel clicant al botó `Exportar`. Si el volem desar farem clicarem el botó amb l'ícona de desar i si només el volem obrir clicarem el botó `Obrir`.
+
+    !!! note "Nota"
+        Si es desa l'arxiu, es farà amb el nom _n57_NOM_FITXER.xlsx_
