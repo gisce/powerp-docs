@@ -433,7 +433,6 @@ condicions:
 * **Data de baixa de la cel·la**: Data de baixa ha de ser superior a l'ultim dia
   de l'any.    
   ( p.e. per l'any 2014, data_baixa > 31/12/2014) o bé estar buida.
-* **CINI**: El CINI ha de tenir el format I28XXXXX.
 
 Per obtenir el codi del transformador, aquest ha de complir els
 següents requisits:
