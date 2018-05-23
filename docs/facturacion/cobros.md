@@ -201,6 +201,8 @@ Els passos són els següents:
 !!! warning "Atenció"
     Només es pot desfer l'agrupació de factures que no hagin estat pagades.
 
+## Norma 57
+
 ### Generar fitxer Excel (_.xlsx_) d'un informe N57
 
 Per poder generar el fitxer, s'ha d'anar als informes N57: **Contabilidad y finanzas -> Pago -> Cobros por ventanilla -> N57 Cobros ventanilla**:
