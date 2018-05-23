@@ -1,4 +1,4 @@
-[data-md-color-primary=indigo] .md-header
+[data-md-color-primary=indigo] .md-header, .md-header
 {
     background-color: #4D77A4;
 }
@@ -6,4 +6,29 @@
 [data-md-color-primary=indigo] .md-tabs
 {
     background-color: #436491;
+}
+
+@media only screen and (max-width: 76.1875em){
+    html [data-md-color-primary=indigo] .md-nav--primary .md-nav__title--site{
+        background-color: #4D77A4;
+    }
+    [data-md-color-primary=indigo] .md-header, .md-header
+    {
+        background-color: #4D77A4;
+    }
+
+    [data-md-color-primary=indigo] .md-nav__source
+    {
+        background-color: #436491;
+    }
+
+    html .md-nav--primary .md-nav__title
+    {
+        background-color: #436491;
+        color:white;
+    }
+    html .md-nav--primary .md-nav__title:before
+    {
+        color:white;
+    }
 }
