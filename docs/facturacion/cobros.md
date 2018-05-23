@@ -216,7 +216,7 @@ Un cop s'obri la vista dels informes, es pot generar l'informe seguint les segü
     !!! danger "Perill"
         Si es selecciona des del llistat, cal assegurar-se de que es té seleccionat un únic registre.
 
-2. L'assistent s'obre clicant el boto `Action`
+2. L'assistent s'obre clicant el botó `Action`
 
 3. Es generarà l'Excel clicant al botó `Exportar`.
 
