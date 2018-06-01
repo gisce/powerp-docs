@@ -580,6 +580,7 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F15: Fiabilitat
 
+##### Cel·les
 S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
@@ -587,7 +588,7 @@ condicions:
 * **Instal·lació**: La cel·la ha d'estat en un suport
 * **Tipus d'element**: No pot ser tele
 
-El formulari F15 està format pels següents camps:
+El formulari F15(cel·les) està format pels següents camps:
 
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
@@ -604,12 +605,14 @@ Propietat                        | 0: pertany a tercers, 1: pertany a la company
 Any d'informació                 | Any del qual es genera aquest formulari
 
 
+##### Posicions
+
 S'inclouràn les **posicions** que compleixin les següents condicions:
 
 * **Interruptor**: La posició ha de ser sense interruptor
 
 
-El formulari F15 està format pels següents camps:
+El formulari F15(posicions) està format pels següents camps:
 
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
