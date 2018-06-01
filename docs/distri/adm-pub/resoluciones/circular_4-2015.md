@@ -129,7 +129,7 @@ Camp                             | Descripció
 :--------------------------------|:---------------------------------------------------------------------------------------------------
 Node                             | Node del graf
 Coordenades UTM                  | Coordenades UTM (X, Y, Z) del node
-CNAE                             | Codi CNAE de la pòlissa.
+CNAE                             | Codi CNAE de la pòlissa.(en data 31/12/20XX)
 Equip de mesura                  | Codi de l'equip de mesura, el qual serà SMT, MEC o CNA
 COD_TFA                          | Codi de tarifa
 Zona de qualitat                 | Codi referent a la zona de qualitat. Prendrà el valor de U, RC, RD o SU.
@@ -138,7 +138,7 @@ COD_DIS                          | Codi de la distribuidora. S'obté a través d
 Municipi                         | Codi INE del municipi del node
 Provincia                        | Codi INE de la provincia del node
 Connexió                         | Pot prendre dos valors: A (aèria) o S (subterrània)
-Tensió d'alimentació             | La tensió de l'alimentació, expressada en kV
+Tensió d'alimentació             | La tensió de l'alimentació, expressada en kV(en data 31/12/20XX)
 Estat del contracte              | 0: amb contracte en vigor el 31/12/20XX
                                  | 1: sense contracte en vigor el 31/12/20XX
 Potencia contractada             | Potencia contractada a la pòlissa, expressada en kW
@@ -580,12 +580,15 @@ Any d'informació                 | Any del qual es genera aquest formulari
 
 #### F15: Fiabilitat
 
+##### Cel·les
 S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
-* **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
+* **Inventari**: La Cel·la ha de ser de fiabilitat
+* **Instal·lació**: La cel·la ha d'estat en un suport
+* **Tipus d'element**: No pot ser tele
 
-El formulari F15 està format pels següents camps:
+El formulari F15(cel·les) està format pels següents camps:
 
 Camp                             | Descripció
 :--------------------------------|:----------------------------------------------
@@ -597,6 +600,30 @@ Coordenades UTM                  | X, Y i Z, separades per ';'
 Municipi                         | Codi INE del municipi de l'equip de fiabilitat
 Provincia                        | Codi INE de la provincia de l'equip de fiabilitat
 Nivell de tensió                 | Tensió de la línia d'AT de l'equip de fiabilitat, en kV
+COD_DIS                          | Codi R1 de la companyia distribuidora. S'obté de l'assistent.
+Propietat                        | 0: pertany a tercers, 1: pertany a la companyia
+Any d'informació                 | Any del qual es genera aquest formulari
+
+
+##### Posicions
+
+S'inclouràn les **posicions** que compleixin les següents condicions:
+
+* **Interruptor**: La posició ha de ser sense interruptor
+
+
+El formulari F15(posicions) està format pels següents camps:
+
+Camp                             | Descripció
+:--------------------------------|:----------------------------------------------
+Node                             | Codi del node de la subestació on esta la posició
+Element de fiabilitat            | Nom de la posició
+Tram                             | En blanc
+CINI                             | CINI de posició
+Coordenades UTM                  | X, Y i Z, separades per ';'
+Municipi                         | Codi INE del municipi de la subestació on esta la posició
+Provincia                        | Codi INE de la provincia de la subestació on esta la posició
+Nivell de tensió                 | Tensio de la posicio en Kv
 COD_DIS                          | Codi R1 de la companyia distribuidora. S'obté de l'assistent.
 Propietat                        | 0: pertany a tercers, 1: pertany a la companyia
 Any d'informació                 | Any del qual es genera aquest formulari
