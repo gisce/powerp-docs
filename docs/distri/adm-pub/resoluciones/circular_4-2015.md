@@ -583,7 +583,9 @@ Any d'informació                 | Any del qual es genera aquest formulari
 S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
-* **CINI**: El CINI ha de tenir un format diferent a I28X2XX.
+* **Inventari**: La Cel·la ha de ser de fiabilitat
+* **Instal·lació**: La cel·la ha d'estat en un suport
+* **Tipus d'element**: No pot ser tele
 
 El formulari F15 està format pels següents camps:
 
