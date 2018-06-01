@@ -31,11 +31,11 @@ with open('mkdocs.yml', 'r') as mkdocs_conf:
 
 def check_conf(key, src, dest):
     if key in NOT_CHECK:
-        return {key: 0}
+        return {str(src[key]): 0}
     if key not in src:
-        return {key: -1}
+        return {str(src[key]): -1}
     if key not in dest:
-        return {key: -2}
+        return {str(src[key]): -2}
     if isinstance(src[key], dict):
         errs = 0
         for k in src[key].keys():
@@ -44,12 +44,12 @@ def check_conf(key, src, dest):
                 return errs
     elif isinstance(src[key], str):
         if src[key] != dest[key]:
-            return {key: -2}
+            return {str(src[key]): -2}
     elif isinstance(src[key], (tuple, list)):
         errs = 0
         for elem in src[key]:
-            if len(dest) < src[key].index(elem):
-                return {key: -2}
+            if len(dest[key])-1 < src[key].index(elem):
+                return {str(src[key]): -2}
             elem2 = dest[key][src[key].index(elem)]
             if isinstance(elem, dict):
                 for k in elem.keys():
@@ -58,8 +58,8 @@ def check_conf(key, src, dest):
                         return errs
             elif isinstance(elem, str):
                 if elem != elem2:
-                    return {key: -2}
-    return {key: 0}
+                    return {str(src[key]): -2}
+    return {str(src[key]): 0}
 
 
 for suffix in alt_configs:
