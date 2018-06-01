@@ -12,14 +12,14 @@ git fetch --prune
 git merge origin/master
 echo "Are there any conflicts (not the po file)? [y/N]"
 read input
-if [[ $input == 'y' || $input == 'Y' ]]; then 
+if [[ $input == 'y' || $input == 'Y' ]]; then
   abort=1
   echo "Solve the conflicts from another terminal"
   echo "Can we continue? Or should we (A)bort?"
   read input
   if [[ $input == 'A' ]]; then
     git merge --abort
-    exit 
+    exit
   fi
 fi
 echo "Merging pofile using msgcat"
@@ -41,7 +41,7 @@ mkdocs build -f mkdocs_es.yml --clean
 echo "Merging pofiles..."
 msgmerge -U locales/es_ES/LC_MESSAGES/messages.po locales/messages.pot
 git add locales/es_ES/LC_MESSAGES/messages.po
-if python check_strings.py;
+if python tests/check_strings.py;
 then
   echo "DONE - remember to 'git commit' to end merging"
 else
