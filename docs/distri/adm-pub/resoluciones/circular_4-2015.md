@@ -129,7 +129,7 @@ Camp                             | Descripció
 :--------------------------------|:---------------------------------------------------------------------------------------------------
 Node                             | Node del graf
 Coordenades UTM                  | Coordenades UTM (X, Y, Z) del node
-CNAE                             | Codi CNAE de la pòlissa.(en fecha 31/12/20XX)
+CNAE                             | Codi CNAE de la pòlissa.(en data 31/12/20XX)
 Equip de mesura                  | Codi de l'equip de mesura, el qual serà SMT, MEC o CNA
 COD_TFA                          | Codi de tarifa
 Zona de qualitat                 | Codi referent a la zona de qualitat. Prendrà el valor de U, RC, RD o SU.
@@ -138,7 +138,7 @@ COD_DIS                          | Codi de la distribuidora. S'obté a través d
 Municipi                         | Codi INE del municipi del node
 Provincia                        | Codi INE de la provincia del node
 Connexió                         | Pot prendre dos valors: A (aèria) o S (subterrània)
-Tensió d'alimentació             | La tensió de l'alimentació, expressada en kV(en fecha 31/12/20XX)
+Tensió d'alimentació             | La tensió de l'alimentació, expressada en kV(en data 31/12/20XX)
 Estat del contracte              | 0: amb contracte en vigor el 31/12/20XX
                                  | 1: sense contracte en vigor el 31/12/20XX
 Potencia contractada             | Potencia contractada a la pòlissa, expressada en kW
