@@ -603,6 +603,28 @@ COD_DIS                          | Codi R1 de la companyia distribuidora. S'obt�
 Propietat                        | 0: pertany a tercers, 1: pertany a la companyia
 Any d'informació                 | Any del qual es genera aquest formulari
 
+
+S'inclouràn les **posicions** que compleixin les següents condicions:
+
+* **Interruptor**: La posicio ha de ser sense interruptor
+
+
+El formulari F15 està format pels següents camps:
+
+Camp                             | Descripció
+:--------------------------------|:----------------------------------------------
+Node                             | Codi del node de la subestacio on esta la posicio
+Element de fiabilitat            | Nom de la posicio
+Tram                             | En blanc
+CINI                             | CINI de posicio
+Coordenades UTM                  | X, Y i Z, separades per ';'
+Municipi                         | Codi INE del municipi de la subestacio on esta la posicio
+Provincia                        | Codi INE de la provincia de la subestacio on esta la posicio
+Nivell de tensió                 | Tensio de la posicio en Kv
+COD_DIS                          | Codi R1 de la companyia distribuidora. S'obté de l'assistent.
+Propietat                        | 0: pertany a tercers, 1: pertany a la companyia
+Any d'informació                 | Any del qual es genera aquest formulari
+
 #### F20: Informació relativa a la connectivitat dels clients
 
 S'inclouràn els **CUPS** que compleixin les següents
