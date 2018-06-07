@@ -42,15 +42,14 @@ indicat en el pas 01
 
 ### ContratacionIncondicionalBS
 
-Informa que es vol contractar o modificar el contracte encara que estigui
-adherit al bo social i el sol·licitant sigui una Comercialitzadora del Mercat
-Lliure.
+Informa que es vol contractar encara que el contracte estigui adherit al bo
+social i el sol·licitant sigui una Comercialitzadora del Mercat Lliure.
 
 !!! warning "Atenció"
     En el cas que es sol·liciti, el client perd els beneficis d'estar adherit al
     bo social
 
-Nomé en els processos de canvi de Comercialitzadora (C1/C2)
+Només en els processos de canvi de Comercialitzadora (C1/C2)
 
 La etiqueta informada és `ContratacionIncondicionalBS` i pot tenir els valors
 indicats en la Taula adjunta (TAULA 26):
@@ -67,7 +66,7 @@ social
 
 ### IndBonoSocial
 
-Informa que el contracte sortint està adherit al bo social o no
+Informa si el contracte sortint està adherit al bo social o no
 
 La etiqueta informada és `IndBonoSocial` i pot tenir els valors
 indicats en la Taula adjunta (TAULA 26):
@@ -91,7 +90,7 @@ en el moment de generar el pas.
 Els contractes disposen d'un camp per poder gestionar si un contracte està
 adherit o no al Bo Social. El camp **Bo Social** es pot trobar a la pestanya
 general de la fitxa del contracte i pot tenir els mateixos valors que la taula
-_BonoSocial_
+`BonoSocial`
 
 ![Figura 3](_static/atr/BSContrato.png)
 
