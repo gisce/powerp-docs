@@ -47,7 +47,7 @@ adherit al bo social i el sol·licitant sigui una Comercialitzadora del Mercat
 Lliure.
 
 !!! warning "Atenció"
-    En el cas que es sol·liciti, el client per els beneficis d'estar adherit al
+    En el cas que es sol·liciti, el client perd els beneficis d'estar adherit al
     bo social
 
 Nomé en els processos de canvi de Comercialitzadora (C1/C2)
@@ -58,10 +58,12 @@ indicats en la Taula adjunta (TAULA 26):
 | CODI | DESCRIPCIÓ | COMENTARIS |
 |-|-|-|
 | S | Si | Contractar encara que tingui Bo Social |
-| N | No | No contractar si té Bo Social (per defecte si no existeix)|
+| N | No | No contractar si té Bo Social (valor per defecte si no s'informa)|
 
 * **Pas 01**: Permet o no la contractació si el contracte està adherit al bo
 social
+
+![Figura 1](_static/atr/BSC101BonoSocial.png)
 
 ### IndBonoSocial
 
@@ -79,11 +81,14 @@ indicats en la Taula adjunta (TAULA 26):
 
 * **Pas 11**: Informa si el contracte sortint té *(S)* o no *(N)* Bo social
 
+Aquest camp s'omple automàticament amb el valor del camp Bo Social del contracte
+en el moment de generar el pas.
+
 ![Figura 2](_static/atr/BSC106IndBonoSocial.png)
 
 ### Bo Social en els contractes
 
-Els contractes tenen disposen d'un camp per poder gestionar si un contracte està
+Els contractes disposen d'un camp per poder gestionar si un contracte està
 adherit o no al Bo Social. El camp **Bo Social** es pot trobar a la pestanya
 general de la fitxa del contracte i pot tenir els mateixos valors que la taula
 _BonoSocial_
@@ -92,6 +97,14 @@ _BonoSocial_
 
 Està controlat per modificació contractual per poder controlar a partir de quin
 moment el contracte es va adherir al bo social.
+
+### Rebuigs automàtics relacionats amb el Bo Social
+
+S'ha automatitzat el rebuig **D1: Suministro acogido a bono social**
+
+* **Rebuig D1**: Es genera un rebuig automàtic si el C1/M1 el genera una
+si no porta el camp `contratacionIncondicionalBS` i el contracte està habilitat
+per el Bo Social.
 
 ### Gestió del Bo Social mitjançant ATR
 
@@ -104,93 +117,16 @@ Per facilitar-ho, hem afegit la informació al camp `informació addicional`
 
 ![Figura 5](_static/atr/BSAdditionalInfoForm.png)
 
+El procediment és el següent:
 
+* Analitzar si el cas C1/C2/M1 entrant porta el camp `BonoSocial` mitjançant el
+camp d'informació adicional o entrant dins el pas
 
-Podem generar casos ATR de forma automatica si utilitzem un wizard. Per tal d'utilitzar
-aquest wizard hem d'anar a *Gestió de Pòlisses>Pòlisses* (Figura 1).
+* Si no hi ha cap rebuig, es podrà crear el pas 02 d'acceptació. El camp
+`BonoSocial` es copiarà del pas 01 corresponent
 
-![Figura 1](_static/atr/menu.png)
+* Un cop fetes les tasques necessàries, la modificació contractual ha de
+modificar el camp *Bo Social* del contracte amb la informació del pas
 
-Allà haurem de seleccionar una pòlissa i premer el botò d'accions, on haurem de
-seleccionar *Generar cas Gestió ATR* (Figura 2).
-
-![Figura 2](_static/atr/selection.png)
-
-Altrament podem entrar a la polissa i també premer el botò que diu *Generar cas Gestió ATR* (Figura 3).
-
-![Figura 3](_static/atr/actions.png)
-
-Això ens obrirà la següent finestra amb el wizard:
-
-![Figura 4](_static/atr/wizard_general.png)
-
-Des d'aqui podrem crear diferents casos segons l'estat de la polissa.
-Aquestses són les condicions que haurem de complir per crear un cas:
-
- * **C1/C2/A3**: La polissa ha d'estar en estat borrador
- * **M1/B1**: La polissa ha d'estar en estat actiu
- * **W1**: La polissa ha d'estar en estat actiu i amb autolectures
-
-A més, mai no pot haver-hi un altre cas de gestió ATR actiu si en volem crear un de nou.
-
-Per tal de crear el cas que volem simplement hem de premer el botò corresponent.
-
-### Wizard per M1 i C2
-
-Si seleccionem que volem crear un M1 o un C2 la pantalla del wizard canviarà i podrem
-entrar les dades necessaries per crear-lo.
-
-![Figura 5](_static/atr/wizard_modcon.png)
-
-Podem crear un canvi de tarifa o potència, un canvi de titular o un canvi de totes
-dues a la vegada. Segons el que seleccionem haurem d'entrar unes dades o altres.
-
-![Figura 6](_static/atr/wizard_modcon_changes.png)
-
-Les primeres dades que hem d'entrar són sobre qui serà el contacte per la pòlissa.
-Si premem la lupa i seleccionem una altre persona ens hauria d'omplir correctament la
-resta de camps, però sempre es preferible comprovar-ho.
-
-![Figura 7](_static/atr/wizard_modcon_contact.png)
-
-Tot seguit tenim l'opció de canviar de tarifa comercialitzadora. Per defecte no es
-canviarà i es deixarà la que té assignada la polissa però si no és possible s'haurà
-de seleccionar quina tarifa volem aplicar. Si només existeix una tarifa comercialitzadora
-per la tarifa ATR seleccionada aquesta es triarà automaticament.
-
-![Figura 8](_static/atr/wizard_modcon_tariff.png)
-
-Llavors, si hem seleccionat un canvi de tarifa o potència, ens apareixarà la part del
-formulari per triar la tarifa que vol el client, si vol anar per ICP o Maxímetre i
-les potencies de la tarifa. A l'hora d'entrar les potencies ens avisarà si estem posant
-un valor de potencia incorrecte, ja sigui perquè el valor és massa gran o massa petit
-per la tarifa seleccionada, perquè els valors de potència no tenen valors ascendents
-en una tarifa que ho demana o perquè algun valor de potència no està normalitzat.
-Es permeten crear casos amb valors de potència no normalitzats però si que s'han de
-complir les dues altres condicions. També destacar que un canvi en la tarifa ATR seleccionada
-ens pot fer canviar la tarifa comercialitzadora o borrar la que teniem assignada.
-
-![Figura 9](_static/atr/wizard_modcon_powers.png)
-
-Si hem seleccionat un canvi de propietari també ens apareixarà el formulari per fer un
-canvi de titular. Aqui podem seleccionar el tipus de canvi que volem fer, un document
-d'identitat i el titular. Si posem el mateix document d'identitat que un dels clients
-que tenim entrats s'assignarà automaticament a aquest titular. El mateix passa en
-l'altre sentit, de manera que si triem un titular s'omplirà automaticament el document
-d'identitat. A més, sempre que no haguem canviat el contacte aquest s'actualitzarà
-automàticament al assignar un titular.
-
-![Figura 10](_static/atr/wizard_modcon_owner.png)
-
-Finalment tenim un quadre de text per afegir comentaris, que poden tenir fins a un
-màxim de 120 caracters.
-
-Un cop entrades totes les dades podem premer el botò que apareixarà a sota, que dirà
-**M1-Modificació contractual** o **C2-Canvi de comercialitzadora amb canvis** segons
-el cas que estiguem intentant crear. Això comprovarà totes les dades entrades i
-intentarà crear el cas corresponent. Finalment el wizard ens dirà si ha pogut crear
-el cas correctament o no i en cas que hi hagui hagut algún error ens indicarà la
-raò per la qual ha fallat. A més, ens permetrà obrir els casos creats si premem el
-botò de **Obrir casos generats**.
-
-![Figura 11](_static/atr/wizard_modcon_fin.png)
+* El pas 05 ja llegirà aquesta informació segons el valor del contracte per
+omplir el camp *IndBonoSocial*
