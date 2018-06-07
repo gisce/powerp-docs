@@ -89,8 +89,7 @@ en el moment de generar el pas.
 
 Els contractes disposen d'un camp per poder gestionar si un contracte està
 adherit o no al Bo Social. El camp **Bo Social** es pot trobar a la pestanya
-general de la fitxa del contracte i pot tenir els mateixos valors que la taula
-`BonoSocial`
+general de la fitxa del contracte i pot tenir els mateixos valors que la taula `BonoSocial`
 
 ![Figura 3](_static/atr/BSContrato.png)
 
