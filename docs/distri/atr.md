@@ -102,8 +102,7 @@ moment el contracte es va adherir al bo social.
 
 S'ha automatitzat el rebuig **D1: Suministro acogido a bono social**
 
-* **Rebuig D1**: Es genera un rebuig automàtic si el C1/M1 el genera una
-si no porta el camp `contratacionIncondicionalBS` i el contracte està habilitat
+* **Rebuig D1**: Es genera un rebuig automàtic si el C1/M1 no porta el camp `contratacionIncondicionalBS` i el contracte està habilitat
 per el Bo Social.
 
 ### Gestió del Bo Social mitjançant ATR
