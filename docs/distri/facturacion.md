@@ -397,11 +397,13 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 
     En aquest camp indiquem per a quina comercialitzadora volem exportar els fitxers F1s.
     Aquí podrem escollir o `Totes` les comercialitzadores o la comercialitzadora per la qual volem generar els fitxers
+
 2.  **Filtra per dates**
 
     Serveix per filtrar entre quines dates de factura es vol exportar els fitxers F1s.
     Per defecte el camp no està marcat exporta totes les facturas.
     Si aquest camp està marcat
+
 3. **Genera resumen**
 
     Si està marcada aquesta opció generar el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
