@@ -1,6 +1,6 @@
 # Documentacion de Facturacion
 
-# Veure també
+## Veure també
 
 - [Facturacion Contratació](facturacion_contratacion)
 
