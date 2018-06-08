@@ -75,6 +75,7 @@ pages:
     - CUPS: distri/cups.md
     - Pòlisses: distri/polizas.md
     - Comptadors: distri/contadores.md
+    - Gestió ATR: distri/atr.md
     - Reles: distri/reles.md
     - Facturació: distri/facturacion.md
     - Facturació:
