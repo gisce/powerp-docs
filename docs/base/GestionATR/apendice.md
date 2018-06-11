@@ -47,7 +47,7 @@ L'algoritme que es segueix és el següent i en aquest ordre:
 | 00313 | 0120 (Aragonesa Act.)                |
 | 00315 | 0288 (Balears Gas y E.)              |
 | 00316 | 0363 (Unión Eléctrica Canarias SUP)  |
-
+| 02240 | 0224 (Elèctrica de Jafre)            |
 
 ### FENOSA 0039
 
