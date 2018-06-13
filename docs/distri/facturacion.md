@@ -1,6 +1,6 @@
 # Documentacion de Facturacion
 
-# Veure també
+## Veure també
 
 - [Facturacion Contratació](facturacion_contratacion)
 
@@ -386,6 +386,27 @@ quin període temporal ens interessa.
 Per exportar les factures generades en format XML F1 per enviar a les
 comercialitzadores hem de fer servir l'assistent accessible des del formulari
 del lot de facturació, amb el botó _Exportar factures XML_.
+
+![](_static/facturacion/export_f1_1.png)
+
+### Comportament de l'assistent
+
+![](_static/facturacion/export_f1_2.png)
+
+1. **Comercialitzadora**
+
+    En aquest camp indiquem per a quina comercialitzadora volem exportar els fitxers F1s.
+    Aquí podrem escollir o `Totes` les comercialitzadores o la comercialitzadora per la qual volem generar els fitxers
+
+2.  **Filtra per dates**
+
+    Serveix per filtrar entre quines dates de factura es vol exportar els fitxers F1s.
+    Per defecte el camp no està marcat exporta totes les factures.
+    Si aquest camp està marcat només exportarà les factures que compleixin el rang de dates indicades.
+
+3. **Genera resum**
+
+    Si està marcada aquesta opció generarà el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
 
 ### Exportació de la facturació d'un període
 
