@@ -401,12 +401,12 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 2.  **Filtra per dates**
 
     Serveix per filtrar entre quines dates de factura es vol exportar els fitxers F1s.
-    Per defecte el camp no està marcat exporta totes les facturas.
-    Si aquest camp està marcat només exportarpa les factures que compleixin el rang de dates indicades.
+    Per defecte el camp no està marcat exporta totes les factures.
+    Si aquest camp està marcat només exportarà les factures que compleixin el rang de dates indicades.
 
 3. **Genera resum**
 
-    Si està marcada aquesta opció generar el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
+    Si està marcada aquesta opció generarà el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
 
 ### Exportació de la facturació d'un període
 
