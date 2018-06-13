@@ -37,12 +37,12 @@ Propietats**":
 ![](../_static/atr/correo_notificacion_variable.png)
 
 * `sw_mail_user_notification_on_activation`:
-    Adreça del compte des del que enviar els correus amb l'assistent.
-    Cal tenir un compte PowerEmail actiu amb aquest valor.
-
-* `sw_email_address_user_notification`:
     Passos ATR a notificar al activar-se.
     Es poden marcar tots o bé alguns amb un format de llista.
+
+* `sw_email_address_user_notification`:
+    Adreça del compte des del que enviar els correus amb l'assistent.
+    Cal tenir un compte PowerEmail actiu amb aquest valor.
 
 |               Nom de la Variable        |           Exemple              |
 |:---------------------------------------:|:------------------------------:|
