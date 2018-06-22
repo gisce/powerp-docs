@@ -1,9 +1,9 @@
-# Continguts
+# Documentació del mòdul de comptadors
+
+## Continguts
 
 * [Documentació del mòdul de comptadors](#documentacio-del-modul-de-comptadors)
 * [Documentació de lectures per distribuïdores](#documentacio-de-lectures-per-distribuidores)
-
-# Documentació del mòdul de comptadors
 
 A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
@@ -185,7 +185,7 @@ tarifa ni de potència contractada no tindrem modificació contractual del dia
 
 --------------------------------------------------------------------------------
 
-# Documentació de lectures per distribuïdores
+## Documentació de lectures per distribuïdores
 
 Continguts:
 
@@ -194,7 +194,7 @@ Continguts:
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
 
-## Introducció de Lectures
+### Introducció de Lectures
 
 Existeixes diversos mètodes per l'entrada de lectures de comptadors. A partir
 de les lectures obtingudes per TPL, entrada manual per ruta, entrada de lectures
@@ -245,9 +245,9 @@ El procés es descriu a continuació:
 !!! Tip "Consell"
     Veure la [importació i exportació de lectures de TPL](tpl.md)
 
-## Importar full de lectures
+### Importar full de lectures
 
-### Introducció
+#### Introducció
 
 Aquest assistent ens permet carregar lectures massivament a partir d'un fitxer
 CSV
@@ -273,7 +273,7 @@ i diversos resums del procés realitzat:
 * comptadors sense lectura
 * comptadors que ja tenien lectura
 
-### Format del full de lectures
+#### Format del full de lectures
 
 El format és CSV ASCII de 26 camps separats per **;** (punt i coma) on els camps
  han d'estar ordenats i amb el format que es detalla a continuació. Els float
@@ -311,11 +311,32 @@ data concreta:
 | 26 | EXC6      | float      | Excessos de Potència P6 en kW                  |
 
 
-!!!tip
-
+!!! Tip "Consell"
     Qualsevol fila que comenci per **#** (coixinet) no es tindrà en compte i es
     tractarà com un comentari
 
+## Importació de telemesures
+
+### Introducció
+
+És un procés preparat per portar a terme la importació de les telemesures des de la
+base de dades **mssql**. Importa les lectures actives, reactives i maxímetres del
+comptador seleccionat per el mes indicat.
+
+### Assistent
+
+L'assistent es troba disponible dins de la vista de cada comptador i s'anomena
+**Carregar telemesures**. Per poder-hi accedir, el camp `Tecnologia` del comptador
+en qüestió ha d'estar marcat com a Telemesures SQL.
+
+![](_static/contadores/assistent_import_telemedidas.png)
+
+![](_static/contadores/assistent_import_telemedidas2.png)
+!!! Tip "Consell"
+    És important tenir en compte que la data a introduir ha de ser el primer dia del
+    següent mes del que ens interessa importar. Per exemple si volem importar les
+    telemesures del mes de Setembre de 2017 haurem d'introduir com a data el dia 1
+    d'Octubre.
 
 ## Comparativa de consums
 
@@ -381,7 +402,6 @@ A continuació es descriu cada un dels camps del fitxer:
     Comportament en percentatge entre el *Consum_diari_actual* i *Consum_diari_factura_any_anterior*.
     (Per exemple: un 14%, significa que el consum actual és un 13% superior al
     consum de la factura de l'any anterior)
-
 
 * **Data_inici_factura_anterior**
     Data d'inici de la factura anterior.
@@ -481,7 +501,7 @@ referències de cada proveïdor per aquest producte.
 
 ![](_static/contadores/Captura07.png)
 
-####Pestanya preus i proveïdors de la fitxa de producte
+#### Pestanya preus i proveïdors de la fitxa de producte
 
 * **Preu cost**: És el preu que s'utilitzarà a l'ordre de compra d'aquest
   producte
