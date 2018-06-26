@@ -149,3 +149,69 @@ provoquen. Els errors poden ser els següents:
 ![](_static/polizas/error_1.png)
 
 ![](_static/polizas/error_2.png)
+
+## Assistent de canvi a Operativa amb CCH
+
+### Funcionament
+
+Aquest assistent realitza els canvis necessaris a un contracte per passar dels
+estats de telegestió _No operativa_ o _Operativa sense CCH_ a **Operativa
+amb CCH**.
+L'assistent crearà una nova modificació contractual al contracte seleccionat amb
+aquest únic canvi.
+
+!!! Warning "Atenció"
+    Cal tenir present que per tal que un contracte passi a un estat de telegestió
+    **Operativa amb CCH** ha de tenir una periodicitat de **facturació mensual**. Per tant
+    si s'ha seleccionat un contracte amb facturació bimestral, l'assistent també
+    realitzarà el canvi a mensual. Si es dóna el cas, és necessari assegurar-se que
+    es té **facturat tot el període anterior**.
+
+!!! Info "Nota"
+    És possible utilitzar l'assistent per **múltiples contractes** al mateix temps. Per
+    fer-ho haurem de seleccionar de llistat de contractes tots els que ens interessa
+    modificar i executar l'assistent.
+
+#### Pas 1
+
+##### Opcions
+
+* **Canvi de lot:** Disposem de la casella **Mantenir el lot de facturació** la qual ens
+  permet decidir si el contracte es mourà de lot al fer la modificació o no. Si marquem
+  la casella, el contracte es mantindrà al lot actual, si no la marquem el contracte
+  passarà al lot de facturació actual segons la data d'activació.
+* **Data activació:** Tenim un seleccionable **Mes** en el qual podem seleccionar quin
+  mes ens interessa que es configuri com a data inicial de la nova modificació contractual.
+
+![](_static/polizas/WizardCambioOperativaConCCH.png)
+
+Una vegada tenim seleccionades aquestes opcions podem passar al següent pas amb el
+botó **Seleccionar data del canvi a Operativa amb CCH**. Aquesta acció revisarà l'estat
+de tots els comptadors seleccionats assegurant-se que tots són vàlids per passar per la
+modificació. Si hi ha algun comptador que no compleix els requisits s'informarà a la
+següent finestra.
+
+##### Requisits
+
+* **Inactiu:** És necessari que el comptador estigui actiu.
+* **Comptador de TG:** És necessari que el comptador sigui de telegestió.
+* **Connectat:** És necessari que el comptador estigui connectat.
+* **Contracte no telegestionat:** És necessari que el contracte **no** estigui en Operativa
+  amb CCH.
+* **Potència:** És necessari que la potència contractada sigui inferior a 15 KW.
+* **Tall:** És necessari que el contracte **no** estigui en estat de tall.
+
+#### Pas 2
+
+Caldrà revisar la informació que ens dóna l'assistent sobre els comptadors en els quals
+es portarà a terme el canvi i els que no. Podem executar finalment el canvi amb el botó
+**Canviar polisses a Operativa amb CCH**
+
+![](_static/polizas/Wizard2CambioOperativaConCCH.png)
+
+#### Pas 3
+
+Al fer el canvi a cada comptador, es crea un **cas D1** d'ATR informant del pas a telegestió
+Operativa amb CCH el qual s'haurà de tractar i processar com un cas ATR normal.
+
+![](_static/polizas/Wizard3CambioOperativaConCCH.png)
