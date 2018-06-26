@@ -3,7 +3,7 @@
 * [Documentació del mòdul de comptadors](#documentacio-del-modul-de-comptadors)
 * [Documentació de lectures per distribuïdores](#documentacio-de-lectures-per-distribuidores)
 
-# Documentació del mòdul de comptadors
+## Documentació del mòdul de comptadors
 
 A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
@@ -13,7 +13,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
 
 ![](_static/contadores/ComptadorGeneral.png)
 
-## Pestanya General de la fitxa de comptadors
+### Pestanya General de la fitxa de comptadors
 
 * **Nº de serie**: És el número que identifica el comptador i al que
   s'associen les lectures, és el que veu el lector quan va a camp
@@ -53,7 +53,7 @@ A la fitxa de un comptador s'hi pot accedir per dos llocs diferents:
     comptador*
 
 
-## Donar d'alta un Comptador
+### Donar d'alta un Comptador
 
 Ens situem a la fitxa de la pòlissa a la que volem afegir el comptador. Allà,
 anem a la pestanya _Comptadors_ i polsarem el botó _Nou_ tal i com s'indica
@@ -117,7 +117,7 @@ superior. Sempre ha de conincidir amb el número de série del comptador actiu.
 Una vegada s'ha donat d'alta el comptador s'ha d'introduïr les [lectures
 inicials del comptador](#introduccio-de-lectures).
 
-## Donar de baixa un comptador
+### Donar de baixa un comptador
 
 Existeixen 3 casos en els que s'hagi de donar de baixa un comptador:
 
@@ -125,7 +125,7 @@ Existeixen 3 casos en els que s'hagi de donar de baixa un comptador:
 2. Quan es realitza un canvi de comptador i es substitueix per un altre.
 3. Quan es produeix un [canvi de tarifa o periodes de lectura](#canviar-de-3-a-6-periodes-de-lectures-en-tarifes-30a-i-31a).
 
-## Lloguer de comptadors
+### Lloguer de comptadors
 
 ![](_static/contadores/comptadors_lloguer.png)
 
@@ -140,7 +140,7 @@ basant-se en els escandalls dels productes de GISCE-ERP. En la següent imatge
 es poden veure combinacions de diferents lloguers combinats. El preu d'un
 lloguer combinat s'autocaclcula com la suma dels seus productes base.
 
-## Canviar de 3 a 6 periodes de lectures en tarifes 3.0A i 3.1A
+### Canviar de 3 a 6 periodes de lectures en tarifes 3.0A i 3.1A
 
 Si fins una determinada data s'han estat prenent lectures d'una pòlissa amb
 tarifa 3.0A i 3.1A en tres periodes i es desitja fer el canvi a 6 periodes s'ha
@@ -171,7 +171,7 @@ dels dos comptadors.
     En el nou comptador, que es l'actiu, s'observa que ara ja introdueix
     lectures en 6 periodes.
 
-## Com es fa un canvi de comptador a mig període de facturació?
+### Com es fa un canvi de comptador a mig període de facturació?
 
 Suposem que el dia 13/10/2011 es canvia el comptador amb el **nº de sèrie**
 1000 per el comptador amb **nº de sèrie** 1001. Si i no hi ha cap més canvi de
@@ -185,7 +185,7 @@ tarifa ni de potència contractada no tindrem modificació contractual del dia
 
 --------------------------------------------------------------------------------
 
-# Documentació de lectures per distribuïdores
+## Documentació de lectures per distribuïdores
 
 Continguts:
 
@@ -194,7 +194,7 @@ Continguts:
 * [Comparativa de consums](#comparativa-de-consums)
 * [Compra i magatzem de comptadors](#compra-i-magatzem-de-comptadors)
 
-## Introducció de Lectures
+### Introducció de Lectures
 
 Existeixes diversos mètodes per l'entrada de lectures de comptadors. A partir
 de les lectures obtingudes per TPL, entrada manual per ruta, entrada de lectures
@@ -245,9 +245,9 @@ El procés es descriu a continuació:
 !!! Tip "Consell"
     Veure la [importació i exportació de lectures de TPL](tpl.md)
 
-## Importar full de lectures
+### Importar full de lectures
 
-### Introducció
+#### Introducció
 
 Aquest assistent ens permet carregar lectures massivament a partir d'un fitxer
 CSV
@@ -273,7 +273,7 @@ i diversos resums del procés realitzat:
 * comptadors sense lectura
 * comptadors que ja tenien lectura
 
-### Format del full de lectures
+#### Format del full de lectures
 
 El format és CSV ASCII de 26 camps separats per **;** (punt i coma) on els camps
  han d'estar ordenats i amb el format que es detalla a continuació. Els float
@@ -317,9 +317,9 @@ data concreta:
     tractarà com un comentari
 
 
-## Comparativa de consums
+### Comparativa de consums
 
-### Introducció
+#### Introducció
 
 Es tracta de comparar el consum actual, en base a les lectures introduïdes al
 ERP abans de facturar, amb els consums de les factures del mes anterior (n-1) i
@@ -340,7 +340,7 @@ Aquest és la divisió entre el consum i el número de dies d'aquest i així obt
 una homogenització del consum entre períodes diferents i poder fer-ne una comparació
 molt més acurada.
 
-### Com exportar un fitxer
+#### Com exportar un fitxer
 
 Per accedir a generar l'exportació cal anar a
 **Facturació > Lectures > Exportació comparativa de lectures**.
@@ -353,7 +353,7 @@ generarà el fitxer amb les comparatives.
 
 ![](_static/contadores/comparativa_lectures.png)
 
-### Camps del fitxer
+#### Camps del fitxer
 
 A continuació es descriu cada un dels camps del fitxer:
 
@@ -417,9 +417,9 @@ A continuació es descriu cada un dels camps del fitxer:
 
 ---------------------------------------------------------------------------------
 
-## Compra i magatzem de comptadors
+### Compra i magatzem de comptadors
 
-### Introducció
+#### Introducció
 
 En aquest manual s'explica el mòdul de magatzems de GISCE-ERP per a la gestió
 de comptadors. Concretament:
@@ -450,7 +450,7 @@ blockdiag {
     "Asignación de Nº de série" -> "Asociar a contador" [label = "install"];
 }
 
-### Producte comptador
+#### Producte comptador
 
 El primer pas per poder gestionar els comptadors correctament és donar-los
 d'alta a la base de dades de productes. Podem accedir a la fitxa de productes
@@ -481,7 +481,7 @@ referències de cada proveïdor per aquest producte.
 
 ![](_static/contadores/Captura07.png)
 
-####Pestanya preus i proveïdors de la fitxa de producte
+##### Pestanya preus i proveïdors de la fitxa de producte
 
 * **Preu cost**: És el preu que s'utilitzarà a l'ordre de compra d'aquest
   producte
@@ -493,34 +493,34 @@ Les dades de les pestanyes **Proveïments i Ubicacions**, **Descripcions** i
 **Empaquetament** són dades informatives del producte, per tant no és
 obligatori que estiguin omplertes.
 
-### Compra de comptadors
+#### Compra de comptadors
 
 Es descriu com realitzar l'ordre de compra dels comptadors i la recepció del
 material en el magatzem.
 
 ![](_static/contadores/Captura01.png)
 
-#### Mòdul de compres
+##### Mòdul de compres
 
 Per començar es selecciona el menú **Compres > Comandes de compra > Sol·licitud
 de presupostos**
 
 ![](_static/contadores/Captura02.png)
 
-#### Sol·licitud de pressupost
+##### Sol·licitud de pressupost
 
 Prement el botó **Nou**
 
 ![](_static/contadores/Captura03.png)
 
-#### Nova ordre de compra
+##### Nova ordre de compra
 
 creem una nova ordre de compra i primer omplim els camps tal com es veu a la
 imatge
 
 ![](_static/contadores/Captura04.png)
 
-#### Fitxa de sol·licitud de compra
+##### Fitxa de sol·licitud de compra
 
 S'ompliran com a mínim els camps de color blau:
 
@@ -548,7 +548,7 @@ de la llista de productes, el producte i la quantitat a sol·licitar.
 
 ![](_static/contadores/Captura05.png)
 
-#### Afegir productes a sol·licitud de pressupost
+##### Afegir productes a sol·licitud de pressupost
 
 Es selecciona el botó nou ![icona](_static/contadores/iconaNou.png) de l'apartat
 **línia de ordre de compra**
@@ -562,7 +562,7 @@ compra. Es marca en vermell els camps que ha d'omplir l'usuari.
 
 ![](_static/contadores/Captura08.png)
 
-#### Omplir línia de compra
+##### Omplir línia de compra
 
 * **Producte**: Amb la lupa es selecciona el producte desitjat. Poden
   utilitzar-se els filtres necessaris per filtrar (**categoria**,
@@ -577,7 +577,7 @@ partir dels preus de compra introduïts a la base de dades.
 
 ![](_static/contadores/Captura09.png)
 
-#### Ordre de compra a punt per confirmar
+##### Ordre de compra a punt per confirmar
 
 Un cop introduïdes totes les línies de sol·licitud de compra i confirmats els
 preus de compra es pot prèmer el el botó **Confirmar comanda de compra**
@@ -592,7 +592,7 @@ de la comanda**
 
 ![](_static/contadores/Captura10.png)
 
-#### Ordre de compra confirmada
+##### Ordre de compra confirmada
 
 Podem accedir posteriorment a les comandes confirmades a la opció de menú
 **Compres > Comandes de compra > Comanda de compra esperant aprovació** on es
@@ -601,7 +601,7 @@ proveïdor, confirmació de preus de compra, disponibilitat de productes, etc...
 
 ![](_static/contadores/Captura11.png)
 
-#### Menú de comandes de compra. Esperant aprovació
+##### Menú de comandes de compra. Esperant aprovació
 
 Podem veure el llistat de totes les ordres de compres
 que estan esperant la confirmació per part del proveïdor
@@ -609,7 +609,7 @@ que estan esperant la confirmació per part del proveïdor
 
 ![](_static/contadores/Captura12.png)
 
-#### Llistat de  comandes de compra pendents d'aprovació
+##### Llistat de  comandes de compra pendents d'aprovació
 
 Fent doble clic sobre l'ordre de compra, es mostrarà en format formulari.
 
@@ -625,30 +625,30 @@ des del menu **Compres > Comandes de compra > Comandes de compra en procés**
 
 ![](_static/contadores/Captura13.png)
 
-#### Menu de comandes de compra. En procés
+##### Menú de comandes de compra. En procés
 
 Obtindrem el llistat de totes les ordres de compra que
 han estat aprovades.
 
 ![](_static/contadores/Captura14.png)
 
-#### Llistat de comandes de compra en procés
+##### Llistat de comandes de compra en procés
 
 L'ordre de compra encara es pot cancel·lar. Per fer-ho accedim a l'ordre de
 compra i premem el botó **Cancel·la comanda de compra**
 
 ![](_static/contadores/Captura15.png)
 
-#### Cancel·lar ordre de compra en procés
+##### Cancel·lar ordre de compra en procés
 
-### Recepció de material amb número de sèrie
+#### Recepció de material amb número de sèrie
 
 Accedim a l'*ordre de compra en procés* per realizar-ne la recepció fent
 doble-click.
 
 ![](_static/contadores/Captura15.png)
 
-#### Ordre de compra a punt per rebre el material
+##### Ordre de compra a punt per rebre el material
 
 Quan arriba l'albarà amb el material al magatzem es procedeix a la seva
 recepció prement al botó de la part superior dreta **Paquet/Albarà**
@@ -658,14 +658,14 @@ següent:
 
 ![](_static/contadores/Captura16.png)
 
-#### Linies de paquets d'un albarà
+##### Línies de paquets d'un albarà
 
 Prement sobre la línia de recepció de paquets obtindrem finalment la fitxa per
 omplir les dades de la recepció del material.
 
 ![](_static/contadores/Captura17.png)
 
-#### Fitxa de recepció de material
+##### Fitxa de recepció de material
 
 Aquesta fitxa conté un seguit de camps a títol informatiu:
 
@@ -679,13 +679,13 @@ Aquesta fitxa conté un seguit de camps a títol informatiu:
 Fent doble-click sobre la línia del material, apareix la fitxa per fer la
 recepció :
 
-##### Fitxa recepció de línia de material
+###### Fitxa recepció de línia de material
 
 ![](_static/contadores/Captura18.png)
 
 Per fer la recepció del material, podem fer-ho segons diferents casos:
 
-### Cas 1: Tots els comptadors amb número de sèrie correlatius
+##### Cas 1: Tots els comptadors amb número de sèrie correlatius
 
 Suposem que els 10 comptadors d'una comanda tenen número de sèrie consecutius
 del 10000001 al 10000010.
@@ -696,14 +696,14 @@ veu en la imatge següent:
 
 ![](_static/contadores/Captura19.png)
 
-#### Fitxa recepció material dividida en 1 sèrie correlativa (Cas 1)
+###### Fitxa recepció material dividida en 1 sèrie correlativa (Cas 1)
 
 Per acabar, prement el botó **Productes rebuts** apareixerà el cuadre de diàleg
 següent:
 
 ![](_static/contadores/Captura20.png)
 
-#### Productes rebuts (Cas 1)
+###### Productes rebuts (Cas 1)
 
 Prement el botó **Crear albarà** es donarà el procés de recepció de material
 per acabat, passant a estat **realitzat**
@@ -711,9 +711,9 @@ per acabat, passant a estat **realitzat**
 
 ![](_static/contadores/Captura21.png)
 
-#### Fitxa recepció material en estat realitzat (Cas 1)
+###### Fitxa recepció material en estat realitzat (Cas 1)
 
-### Cas 2: Comptadors amb 2 grups de número de sèrie correlatius
+##### Cas 2: Comptadors amb 2 grups de número de sèrie correlatius
 
 Estem en aquest cas quan la recepció del material sigui parcial o bé que els
 números de sèrie no siguin correlatius.
@@ -732,14 +732,14 @@ la opció **Divideix línia de moviment**
 
 ![](_static/contadores/Captura22.png)
 
-#### Menú acció
+###### Menú acció
 
 A la casella blava haurem d'indicar quants comptadors tenen número consecutiu,
 (en el nostre exemple indicarem *6*) i prèmer el botó **Dividir**
 
 ![](_static/contadores/Captura23.png)
 
-#### Partició de línies
+###### Partició de línies
 
 El resultat serà que es crearan 2 línies a la
 [fitxa empaquetat/albarà](#fitxa-recepcio-de-linia-de-material). Apareixeràn
@@ -747,7 +747,7 @@ les dues línies al fer doble-click sobre la línia.
 
 ![](_static/contadores/Captura24.png)
 
-#### Recepció de material partida en dues línies (Cas 2)
+###### Recepció de material partida en dues línies (Cas 2)
 
 Un cop divit l'**Empaquetat/Albarà** es procedirà com en el
 [cas 1](#cas-1-tots-els-comptadors-amb-numero-de-serie-correlatius) per cada
