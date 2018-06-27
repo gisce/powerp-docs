@@ -152,8 +152,6 @@ provoquen. Els errors poden ser els següents:
 
 ## Assistent de canvi a Operativa amb CCH
 
-### Funcionament
-
 Aquest assistent realitza els canvis necessaris a un contracte per passar dels
 estats de telegestió _No operativa_ o _Operativa sense CCH_ a **Operativa
 amb CCH**.
@@ -174,7 +172,7 @@ aquest únic canvi.
 
 #### Pas 1
 
-##### Opcions
+**Opcions**
 
 * **Canvi de lot:** Disposem de la casella **Mantenir el lot de facturació** la qual ens
   permet decidir si el contracte es mourà de lot al fer la modificació o no. Si marquem
@@ -191,7 +189,7 @@ de tots els comptadors seleccionats assegurant-se que tots són vàlids per pass
 modificació. Si hi ha algun comptador que no compleix els requisits s'informarà a la
 següent finestra.
 
-##### Requisits
+**Requisits**
 
 * **Inactiu:** És necessari que el comptador estigui actiu.
 * **Comptador de TG:** És necessari que el comptador sigui de telegestió.
