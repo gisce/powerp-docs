@@ -422,7 +422,7 @@ S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
 * **Instal·lació**: Només s'inclouràn les **cel·les i elements de tall** que la
-  instal·lació sigui un CT.
+  instal·lació sigui un CT i que no siguin **Fusibles d'AT**..
 * **Actiu**:
     * La **cel·la** ha d'estar activa
     * Si no està activa, hi ha d'haver el camp **data baixa** amb una data
@@ -584,7 +584,6 @@ Any d'informació                 | Any del qual es genera aquest formulari
 S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
-* **Inventari**: La Cel·la ha de ser de fiabilitat
 * **Instal·lació**: La cel·la ha d'estat en un suport
 * **Tipus d'element**: No pot ser tele
 
