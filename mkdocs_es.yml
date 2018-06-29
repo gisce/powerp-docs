@@ -107,8 +107,8 @@ pages:
       - Sincronización CUPS: distri/sincronizacion_cups.md
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md
-    - Gestión de Ordenes de Trabajo: distri/ots/base.md
-    - Gestión de Ordenes de Trabajo:
+    - Gestión de OTs: distri/ots/base.md
+    - Gestión de OTs:
       - Materiales: distri/ots/materiales.md
       - Instalaciones: distri/ots/instalaciones.md
       - Tareas: distri/ots/tareas.md
