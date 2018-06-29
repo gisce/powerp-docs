@@ -107,6 +107,13 @@ pages:
       - Sincronización CUPS: distri/sincronizacion_cups.md
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md
+    - Gestión de Ordenes de Trabajo: distri/ots/base.md
+    - Gestión de Ordenes de Trabajo:
+      - Materiales: distri/ots/materiales.md
+      - Instalaciones: distri/ots/instalaciones.md
+      - Tareas: distri/ots/tareas.md
+      - Facturación de 3os: distri/ots/facturacion_terceros.md
+      - Facturación: distri/ots/facturacion.md
     - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md
