@@ -40,7 +40,7 @@ Amb el módul de telegestió, s'afegeixen els següents camps a l'apartat `TG in
     Aquest prefix ha de ser el mateix que afegeix el comptador als números de
     sèrie. (veure `nota prefix`_ )
 
-##### Fitxa producte d'un comptador de telegestió
+**Fitxa producte d'un comptador de telegestió**
 
 ![](_static/telegestion/FitxaProducteComptadorTG.png)
 
@@ -166,7 +166,7 @@ infraestructura.
 
 ![](_static/telegestion/MenuInfraestructuraTG.png)
 
-## Configuració de la càrrega reactiva
+### Configuració de la càrrega reactiva
 
 Hi ha dos maneres de configurar com volem la càrrega reactiva:
 
@@ -235,7 +235,9 @@ El procediment de lectura va de la següent forma:
 * Els fitxers que no pugui importar **no** els mourà. Si ningú els treu,
   donaran error el següent cop que es llegeixin
 
-### Configuració > Excepcions
+### Configuració d'excepcions
+
+**Configuració > Excepcions**
 
 Quan es validen les lectures es fan tot un seguit de comprovacions per
 assegurar-se que les lectures són correctes. En alguns casos, es vol que certes
@@ -269,12 +271,12 @@ Les excepcions que es gestionen actualment són:
     **tg_last_read_advice** que per defecte és de 2 dies. Es pot configurar per
     a què utilitzi un altre període.
 
-### Configuració > Excepcions Comptador
+**Configuració > Excepcions Comptador**
 
-En aquest llistat podem indicar els comptadors que validen sempre les seves
-lectures, encara que tinguin errors. Això ens serveix per comptadors de proves,
-comptadors no associats a cap polissa, comptadors de supervisió, comptadors no
-donats d'alta a l'ERP, etc...
+En el llistat **Configuració>Excepcions Comptador** podem indicar els
+comptadors que validen sempre les seves lectures, encara que tinguin errors.
+Això ens serveix per comptadors de proves, comptadors no associats a cap
+polissa, comptadors de supervisió, comptadors no donats d'alta a l'ERP, etc...
 
 * **Nº de Sèrie**: Número de sèrie del comptador tal com el veu el concentrador
   (amb prefix)
@@ -312,9 +314,7 @@ Permet un accés directe als casos generats pel sistema de telegestió (veure
 estructura dels casos del CRM , creant accessos directes als casos oberts i
 als casos propis per facilitar-ne la gestió.
 
-
-
-### Registre de lectura
+## Registre de lectura
 
 En el registre de lectures dels fitxers es mostren els fitxers que s'han intentat
 carregar i ens informa del resultat de la lectura. Si s'ha llegit correctament
@@ -335,12 +335,12 @@ passa, el missatge d'error i la línia o línies conflictives del fitxer.
 
 ![](_static/telegestion/partial_reading_error_info.png)
 
-### Registre de lectura > TG reader Errors
+**Registre de lectura > TG reader Errors**
 
 Llista els errors de lectura trobats per comptador. Aquests errors venen del
 propi fitxer enviat pel concentrador, p.e. comptador no trobat
 
-### TG Cierres
+## TG Cierres
 
 Registre dels tancaments diaris i mensuals amb accessos directes a:
 
@@ -370,11 +370,11 @@ Aquesta acció **NO realitza les comprovacions per validar lectures.**
     utilitzar el mètode descrit en l'apartat:
     [Validar TG Tancaments](#validar-tg-tancaments).
 
+**Formulari de validació d'un tancament**
+
 ![](_static/telegestion/MarcarTancamentValid.png)
 
-#### Formulari de validació d'un tancament
-
-Podem veure la informació completa en el detall d'un tancament:
+Podem veure la informació completa en el **detall d'un tancament**:
 
 ![](_static/telegestion/FitxaCierreTG.png)
 
@@ -397,7 +397,7 @@ En el detall hi trobem:
 * **R1,R2,R3 i R4**: Els 4 quadrants de reactiva
 * **Max**: Valor del maxímetre i data de registre del mateix (només per les
   mensuals)
-* **Vàlid**: Si està validad i quan es va validar
+* **Vàlid**: Si està validat i quan es va validar
 
 !!! Info "Nota"
     Els números de sèrie dels comptadors a GISCE-ERP són numèrics. A telegestió,
@@ -407,8 +407,7 @@ En el detall hi trobem:
     del producte associat al comptador de telegestió. (veure la [Fitxa producte
     d'un comptador de telegestió](#fitxa-producte-dun-comptador-de-telegestio))
 
-### Lectura des de TG (Botó)
-
+## Lectura des de TG (Botó)
 
 Ens permet importar les lectures de telegestió d'un comptador si en sabem el
 número de sèrie. Funciona igual que si el cridéssim des de la fitxa del
@@ -419,11 +418,11 @@ comptador.
 * **Forçar**: Entra la lectura encara que hi hagi una lectura posterior. Si no
   **no** deixa entrar la lectura
 
+**Formulari per introduïr data de importació de lectura**
+
 ![](_static/telegestion/ImportarLecturesTG.png)
 
-#### Formulari per introduïr data de importació de lectura
-
-### Validar TG Tancaments
+## Validar TG Tancaments
 
 La **Validació** consisteix en:
 
@@ -515,7 +514,7 @@ referència pertinent.
 Per posar un exemple d'ús de les referències, el següent punt explica [com anar
 a les lectures d'un comptador des d'un cas](telegestion.md#lectures-dun-comptador-des-dun-cas)
 
-### Lectures d'un comptador des d'un cas
+**Lectures d'un comptador des d'un cas**
 
 Per anar a les lectures d'un contador a partir d'un cas en concret, primer hem
 d'escollir el cas , obrir-lo i anar a la pestanya de **Informació extra**.
@@ -540,18 +539,16 @@ tancar la finestra actual del contador.
 
 ![](_static/telegestion/crm_lectura_contador.png)
 
-
-
 ## Automatització de tasques
 
-S'han creat dues tasques planificades (**Administració > Configuració
->Planificació > Accions planificades**) per ajudar a la telegestió.
-### TG Reader scheduler
+S'han creat dues tasques planificades **Administració > Configuració >
+Planificació > Accions planificades** per ajudar a la telegestió.
 
+**TG Reader scheduler**
 
 Aquesta planificació importa cada dia les lectures de l'FTP.
 
-### TG Validate scheduler
+**TG Validate scheduler**
 
 Permet programar la validació automàtica de totes les lectures.
 
@@ -560,7 +557,7 @@ Permet programar la validació automàtica de totes les lectures.
 Les corbes de càrrega horàries cal entregar-les a l'operador del sistema i a la
 comercialitzadora o client directe a mercat. Es fa mitjançant els següents fitxers:
 
-### Fitxers
+**Fitxers**
 
 | Fitxer                     | Entrega                                        |
 |----------------------------|------------------------------------------------|
@@ -574,7 +571,7 @@ Les corbes de càrrega horàries validades (CCH_VAL) cal entregar-les com a
 màxim **setmanalment** amb els fitxers P5D.
 L'ERP realitza un enviament diari.
 
-#### Generació dels fitxers P5D de forma manual
+**Generació dels fitxers P5D de forma manual**
 
 L'assistent per generar els fitxers P5D de forma manual es troba al menú
 `Infraestructura > Telegestió > Exportar CCH_VAL (P5D)`.
@@ -604,7 +601,7 @@ informació a `Infraestructura > Telegestió > Casos Telegestió > Tots els caso
 Per aquest tipus de situacions, es pot generar i enviar els F5D, de la següent
 forma:
 
-### Generació i enviament dels fitxers F5D de forma manual
+**Generació i enviament dels fitxers F5D de forma manual**
 
 L'assistent per generar els fitxers F5D de forma manual es troba al menú
 `Facturació > General > Lots de facturació`. Dins d'un lot de facturació:
@@ -670,11 +667,11 @@ permet modificar-les, cal anar a: `Administració > Configuració > Propietats`
 
 ## Sistema de tele gestió
 
-### Peticions
+### Tipus de peticions
 
 Existeixen dos tipus de peticions diferents, les síncrones i les asíncrones.
 
-#### Síncrones
+**Síncrones**
 
 Els dispositius que reben una petició síncrona la responen el més aviat possible omplint
 l’informe amb les dades que estiguin disponibles en el moment. Per aquest motiu, si la
@@ -687,7 +684,7 @@ desar-l'ho.
 
 ![](_static/telegestion/stg_peticions_sincrona.png)
 
-#### Asíncrones
+**Asíncrones**
 
 Les peticions asíncrones treballen de manera diferent i són les més fiables quan el nostre
 objectiu és obtenir dades útils i vàlides. Com bé indica el seu nom aquestes peticions no
@@ -739,7 +736,7 @@ de l’aplicació client de l’ERP.
 Al moment d’encendre els diferents assistents, es realitza una consulta al STG per saber quins
 informes són suportats i crear la llista des la qual es podrà seleccionar l’informe a enviar.
 
-#### Assistent de comptador
+**Assistent de comptador**
 
 S’accedeix a aquest assistent des de la vista d’un comptador concret o des de la llista de
 comptadors. Ens serveix per fer peticions directament i concretament al comptador seleccionat.
@@ -748,7 +745,7 @@ comptadors. Ens serveix per fer peticions directament i concretament al comptado
 
 ![](_static/telegestion/stg_assistent_comptador.png)
 
-#### Assistent d'un concentrador
+**Assistent d'un concentrador**
 
 S’accedeix a aquest assistent des de la vista d’un concentrador concret o des de la llista de
 concentradors. Ens serveix per fer peticions directament i concretament al concentrador
@@ -758,7 +755,7 @@ seleccionat.
 
 ![](_static/telegestion/stg_assistent_concentrador.png)
 
-#### Assistent de tots els concentradors
+**Assistent de tots els concentradors**
 
 S’accedeix a aquest assistent des de la llista de concentradors o des d’un concentrador concret.
 Aquest assistent ens serveix per fer peticions massives a tots els concentradors de tele gestió
@@ -768,3 +765,41 @@ que es farà la petició.
 ![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
 
 ![](_static/telegestion/stg_assistent_tots_concentradors.png)
+
+## Informe de disponibilitat de comptadors
+
+Aquest informe posa a la nostra disposició la informació de connexió dels diferents comptadors
+de telegestió del nostre sistema. Aquestes dades les aconseguim configurant els concentradors
+perquè generin i enviïn un informe PRIME S24 cada hora el qual conté l'estat de la connexió de
+tots els seus comptadors en el moment concret de la generació. Acumulant aquestes dades, l'ERP
+és capaç de fer-ne un històric per processar-lo posteriorment.
+
+Aquí podem veure un exemple de l'[**Informe**](_static/telegestion/ReportMetersAvailability.pdf) generat per cinc comptadors diferents.
+
+**Contingut de l'informe**
+
+!!! Nota "Nota"
+    Per cada comptador que s'hagi seleccionat al generar l'informe es repeteixen els punts
+    2, 3 i 4 de la següent llista.
+
+1. Període de temps que abasta l'informe. S'indica amb les dates inicial i final a la part
+superior de l'informe.
+
+2. Nom de telegestió del comptador al qual correspon la taula següent.
+
+3. Una taula de targetes de colors en la qual cada targeta fa referència a una hora concreta
+d'un dia de la setmana.
+    * Files: Cada fila representa un dia de la setmana. De dilluns fins diumenge.
+    * Columnes: Cada columna és una hora del dia. L'hora 0 és les 12 de la nit.
+
+4. Una llegenda indicant l'escala de colors utilitzada en les targetes de la taula. Cada color té
+assignat un rang de valors. Aquests valors són la quantitat de connexions establertes correctament
+per el comptador durant el període de temps que abasti l'informe.
+
+    !!! Tip "Exemple"
+        Si tenim un color amb el rang 0 fins a 10, les targetes que estiguin pintades d'aquest color
+        indicaran una baixa disponibilitat del comptador durant l'hora corresponent. Concretament
+        indica que el comptador només s'ha trobat connectat aquesta hora un màxim de 10 dies
+        diferents dintre el període de temps que abasti l'informe.
+
+![](_static/telegestion/ReportMetersAvailabilitySample.png)
