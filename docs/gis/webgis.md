@@ -39,7 +39,7 @@
     - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
 #### Capes de telegestio
 
-  Aquest grup de capes ens permet veure informacio sobre la telelgesio.
+  Aquest grup de capes permet veure informacio sobre la telelgesio.
 
   - Amb CCH: Apareixen els comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “Operativa con CCH”
     - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies
