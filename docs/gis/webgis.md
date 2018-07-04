@@ -33,13 +33,14 @@
  En aquest control es poden diferenciar en dos tipus:
 
  - Cartografia:
-    -  Només podem seelcionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
+    -  Només podem seleccionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
 
  - Capes sobreposades:
     - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
+
 #### Capes de telegestio
 
-  Aquest grup de capes ens permet veure informacio sobre la telelgesio.
+  Aquest grup de capes permet veure informació sobre la telegestió.
 
   - Amb CCH: Apareixen els comptadors amb el camp “TG Contador” actiu ,  “Conectado” actiu i “Póliza Telegestionada” “Operativa con CCH”
     - Envia lectures: Mostra tots els comptadors que la ultima lectura valida es de fa menys de tres dies
