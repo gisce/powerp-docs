@@ -273,7 +273,7 @@ Les excepcions que es gestionen actualment són:
 
 **Configuració > Excepcions Comptador**
 
-En el listat **Configuració>Excepcions Comptador** llistat podem indicar els
+En el llistat **Configuració>Excepcions Comptador** podem indicar els
 comptadors que validen sempre les seves lectures, encara que tinguin errors.
 Això ens serveix per comptadors de proves, comptadors no associats a cap
 polissa, comptadors de supervisió, comptadors no donats d'alta a l'ERP, etc...
@@ -765,3 +765,41 @@ que es farà la petició.
 ![](_static/telegestion/stg_boto_assistent_tots_concentradors.png)
 
 ![](_static/telegestion/stg_assistent_tots_concentradors.png)
+
+## Informe de disponibilitat de comptadors
+
+Aquest informe posa a la nostra disposició la informació de connexió dels diferents comptadors
+de telegestió del nostre sistema. Aquestes dades les aconseguim configurant els concentradors
+perquè generin i enviïn un informe PRIME S24 cada hora el qual conté l'estat de la connexió de
+tots els seus comptadors en el moment concret de la generació. Acumulant aquestes dades, l'ERP
+és capaç de fer-ne un històric per processar-lo posteriorment.
+
+Aquí podem veure un exemple de l'[**Informe**](_static/telegestion/ReportMetersAvailability.pdf) generat per cinc comptadors diferents.
+
+**Contingut de l'informe**
+
+!!! Nota "Nota"
+    Per cada comptador que s'hagi seleccionat al generar l'informe es repeteixen els punts
+    2, 3 i 4 de la següent llista.
+
+1. Període de temps que abasta l'informe. S'indica amb les dates inicial i final a la part
+superior de l'informe.
+
+2. Nom de telegestió del comptador al qual correspon la taula següent.
+
+3. Una taula de targetes de colors en la qual cada targeta fa referència a una hora concreta
+d'un dia de la setmana.
+    * Files: Cada fila representa un dia de la setmana. De dilluns fins diumenge.
+    * Columnes: Cada columna és una hora del dia. L'hora 0 és les 12 de la nit.
+
+4. Una llegenda indicant l'escala de colors utilitzada en les targetes de la taula. Cada color té
+assignat un rang de valors. Aquests valors són la quantitat de connexions establertes correctament
+per el comptador durant el període de temps que abasti l'informe.
+
+    !!! Tip "Exemple"
+        Si tenim un color amb el rang 0 fins a 10, les targetes que estiguin pintades d'aquest color
+        indicaran una baixa disponibilitat del comptador durant l'hora corresponent. Concretament
+        indica que el comptador només s'ha trobat connectat aquesta hora un màxim de 10 dies
+        diferents dintre el període de temps que abasti l'informe.
+
+![](_static/telegestion/ReportMetersAvailabilitySample.png)
