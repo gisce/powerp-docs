@@ -1,7 +1,7 @@
 # Visor web
 ## Autentificació
 
- El primer que ens trobem al entrar es la pantalla d'autentificació
+ El primer que trobem al entrar es la pantalla d'autentificació
 
  ![](_static/login.png)
 
@@ -22,11 +22,11 @@
 
 ### Control de cerca
 
- Esta situat a la parte superior esquerra i ens permet cercar elements al GIS.
+ Esta situat a la parte superior esquerra i permet cercar elements al GIS.
 
 ### Selector de capes
 
- El selector de capes es l'eina que ens permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
+ El selector de capes es l'eina que permet selecionar quines capes volem veure, al passar el per sobre el control o clicar sobre d'ell es mostrara un llistat de les capes disponibles.
 
  ![](_static/capes.png)
 
@@ -36,7 +36,7 @@
     -  Només podem seleccionar una capa base a l'hora i aquest sera el fons per el nostre GIS, per exemple un mapa cartografic o ortofotografies.
 
  - Capes sobreposades:
-    - Aquestes capes son les que podem sobreposar a la nostra capa base i en poem selecionar múltiples a l'hora.
+    - Aquestes capes es poden sobreposar a la nostra capa base i es poden selecionar múltiples a l'hora.
 
 #### Capes de telegestio
 
@@ -76,9 +76,9 @@
 
 ### Control de zoom
 
- Aquest control ens permet escollir el zoom del GIS , aquest va des de nivell 0 (tot el mon)  25 (màxim detall).
+ Aquest control permet escollir el zoom del GIS , aquest va des de nivell 0 (tot el mon)  25 (màxim detall).
 
- També podem canviar el nivel de zoom mitjançant el ratolí o en el cas d'usar dispositius tàctils amb el gest d'apmpliar/reduir.
+ També es pot canviar el nivel de zoom mitjançant el ratolí o en el cas d'usar dispositius tàctils amb el gest d'apmpliar/reduir.
 
 ### Control d'ubicació
 
@@ -86,7 +86,7 @@
 
  ![](_static/permet_ubicacio.png)
 
- Un cop premem el boto el navegador ens demanara si volem permetre el GIS coneixer la nostra ubicació
+ Un cop es prem el boto el navegador ens demanara si es vol permetre el GIS coneixer la nostra ubicació
 
  Seguidament podem veure la nostra ubicació. L'indicador mostrara el centre de la zona aproximada de l'ubicació i el cercle la zona aproximada.
 
@@ -114,7 +114,7 @@
 
   ![](_static/export_doc/nota.png)
 
-  * Àrea: Ens permet seleccionar l'area exportada del visor. Per defecte és el centre de la vista actual del mapa, pero podem definir manualment l'àrea d'impresió amb un asistent. Per a la selecció manual s'ha de clicar "Seleccionar manualment".
+  * Àrea: Permet seleccionar l'area exportada del visor. Per defecte és el centre de la vista actual del mapa, pero podem definir manualment l'àrea d'impresió amb un asistent. Per a la selecció manual s'ha de clicar "Seleccionar manualment".
   ![](_static/export_doc/area.png)
 
   ![](_static/export_doc/area2.png)
@@ -123,7 +123,7 @@
 
 ### Quadre de coordenades
 
- Aquest control esta situat a la cantonada inferior esquerra i ens permt verue les coordenades del punt on tenim el ratolí. També permet buscar una coordenada concreta, clicant sobre el control apareixerà un formulari per indicar la coordenada a bucar. Un Cop introduïda la coordenada prement retorn apereixerà un indicador de la situacio de la coordenada.
+ Aquest control esta situat a la cantonada inferior esquerra i permet verue les coordenades del punt está el ratolí. També permet buscar una coordenada concreta, clicant sobre el control apareixerà un formulari per indicar la coordenada a bucar. Un Cop introduïda la coordenada prement retorn apereixerà un indicador de la situacio de la coordenada.
 
  ![](_static/coordenades.png)
 
@@ -131,20 +131,20 @@
 
 ### Simulacions AT
 
-1. Seleccionar un tram de AT. Això farà aparèixer en pantalla una targeta amb la informació del tram i del botó "Simula".
+1. Seleccionar un tram de AT. Farà aparèixer en pantalla una targeta amb la informació del tram i del botó "Simula".
     ![](_static/sim_at/step_1.png)
 
-2. Prémer "Simula". Això obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrara els interruptors oberts (vermell) i tancats (verd).
+2. Prémer "Simula". Obrirà el llistat d'interruptors maniobrables **oberts** i en el mapa mostrará els interruptors oberts (vermell) i tancats (verd).
     ![](_static/sim_at/step_2.png)
 
     !!! Info "Nota"
         Si apareix el missatge "No hi ha nodes oberts" significa que no hi ha interruptors de AT oberts.
 
-3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa(1). També el podem modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
+3. Si es vol canviar l'estat d'un interruptor es pot fer prement l'interruptor al mapa(1). També es pot modificar l'estat del interruptor en el llistat d'interruptors(2), en el cas que no estigui tancat el podem buscar(3).
     ![](_static/sim_at/step_3.png)
 
     !!! Info "Nota"
-        A la capçalera del llistat d'interruptors podem veure el nombre d'interruptors oberts
+        A la capçalera del llistat d'interruptors es pot veure el nombre d'interruptors oberts
 
 
 4. Prémer el botó de "Simula" que haurà canviat a un simbol de "Play".
@@ -163,13 +163,13 @@
 1. Seleccionar el CT que volem simular.
     ![](_static/sim_bt/step_1.png)
 
-2. Prémer "Simula". Aixo obrirà el llistat d'interruptors maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
+2. Prémer "Simula". Obrirà el llistat d'interruptors maniobrables, també apareixeran els interruptors oberts(vermell) i tancats(verd) al mapa.
     ![](_static/sim_bt/step_2.png)
 
     !!! Info "Nota"
         Si apareix el missatge "No hi ha nodes oberts" significa que en aquest CT no hi ha interruptors oberts.
 
-3. Si volem canviar l'estat d'un interruptor ho podem fer prement l'interruptor al mapa. També el podem modificar l'estat del interruptor en el llistat d'interruptors, en el cas que no estigui tancat el podem buscar.
+3. Si es vol canviar l'estat d'un interruptor es pot prement l'interruptor al mapa. També el podem modificar l'estat del interruptor en el llistat d'interruptors, en el cas que no estigui tancat el podem buscar.
     ![](_static/sim_bt/step_3.png)
 
 4. Premer el botó de "Simula" que haura canviat a un simbol de "Play".
@@ -179,7 +179,7 @@
         - Es dibuixaran en vermell els trams desconnectats i els connectats en verd.
         - En la part interior de la targeta apareix el llistat de clients afectats.
 
-5. Per sortir de la simulació podem tancar o prémer "ESC".
+5. Per sortir de la simulació es pot tancar o prémer "ESC".
     ![](_static/sim_bt/step_5.png)
 
 ## Qualitat
@@ -274,7 +274,7 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
 
 1. Activar el mode actualització:
 
-    Per activar el mode actualització hem d'anar a "GIS>Mode actualització de dades"
+    Per activar el mode actualització trobem el menu "GIS>Mode actualització de dades"
 
     ![](_static/update/wizard_mode_update.png)
 
@@ -287,7 +287,7 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
 
     ![](_static/update/wizard_preparar.png)
 
-3. Fer actualitzacio de dades amb el Autocad:
+3. Actualitzacio de dades amb el Autocad:
 
     Realitzar la actualització de dades mitjançant les eines de l'Autocad
 
@@ -307,14 +307,14 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
 
     ![](_static/update/wizard_web.png)
 
-    Aquests assistents ens obriran la pagina web per a la carrega dels fitxers.
+    Aquests assistents obriran la pagina web per a la carrega dels fitxers.
 
     ![](_static/update/web_load.png)
 
     !!!Note "Format dels fitxers"
         Els fitxers només es poden carregar en format WINZIP
 
-    Un cop carregat el fitxer ens apareixerà la seguent pagina informant-nos de que s'iniciara una tasca en segon pla:
+    Un cop carregat el fitxer apareixerà la seguent pagina informant-nos de que s'iniciara una tasca en segon pla:
 
     ![](_static/update/carrega_shapes_background.png)
 
