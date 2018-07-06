@@ -10,11 +10,16 @@ En el formulari hem de d'omplir:
 
 1. Descripció de la sol·licitud
 2. Sol·licitant
-3. Inici
-4. Final
-5. Xarxa afectada (AT o BT depenent del tipus de descàrrec)
+3. Cap d'inatal·lació
+4. Centre de conttrol
+5. Inici
+6. Final
+7. Xarxa afectada (AT o BT depenent del tipus de descàrrec)
 
 Finalment hem d'enviar la sol·licitud al GIS per fer la simulació prement el boto "Enviar al GIS".
+
+!!! Info "Nota"
+    Només es pot assignar com a solicitant els contactes que estiguin com a tipus "Descarrec"
 
 ## Generar una incidència a partir d'un descàrrec
 
