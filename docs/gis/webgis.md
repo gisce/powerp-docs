@@ -127,6 +127,20 @@
 
  ![](_static/coordenades.png)
 
+## Crear rutes virtuals
+
+1. [Exportar els comptadors del lot]()
+
+2. Activar la capa de  Rutes\No comunica
+
+3. Premer el control de dibuix de la ruta i dibuixar l'area ruta! imatge 
+
+4. Si es vol es pot modificar l'area de l'area de la ruta amb el control !imatge
+
+5. Enviar la ruta usant el control
+
+6. S'obrirà un avis informant de que la ruta s'ha creat i es baixara el fitxer de ruta
+
 ## Simulacions
 
 ### Simulacions AT
