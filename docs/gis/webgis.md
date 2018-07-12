@@ -133,9 +133,9 @@
 
 2. Activar la capa de  Rutes\No comunica
 
-3. Premer el control de dibuix de la ruta i dibuixar l'area ruta! imatge 
+3. Premer el control de dibuix de la ruta i dibuixar l'area ruta! ![](_static/rutes_control.png)
 
-4. Si es vol es pot modificar l'area de l'area de la ruta amb el control !imatge
+4. Si es vol es pot modificar l'area de l'area de la ruta amb el control ![](_static/control_send_route.png)
 
 5. Enviar la ruta usant el control
 
