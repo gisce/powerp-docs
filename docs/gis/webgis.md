@@ -129,7 +129,7 @@
 
 ## Crear rutes virtuals
 
-1. [Exportar els comptadors del lot]()
+1. Exportar els comptadors del lot
 
 2. Activar la capa de  Rutes\No comunica
 
