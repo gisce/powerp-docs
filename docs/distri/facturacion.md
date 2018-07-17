@@ -26,7 +26,7 @@ donarà error per la facturació.
 
 ### Facturació en 4 pasos.
 
-#### 1 Obrir:
+1. Obrir:
 
 El botó obrir es el primer pas a realitzar per iniciar la facturació
 d'un determinat període. Si s'intenta obrir un lot sense haver tancat
@@ -35,7 +35,7 @@ l'anterior apareixerà un error indicant que existeix més d'un lot obert.
 Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
 al estat “obert”.
 
-#### 2 Validar:
+2. Validar:
 
 El botó validar comprova que totes les pòlisses del lot compleixin
 els requisitos per poderse facturar. Si la validació de la pòlissa es correcta
@@ -54,7 +54,7 @@ la opció “Saltar validació” que permet que encara que apareixi un missatge
 en la validació. Es marca aquesta opció i es prem el botó “validar aquesta”
 per que passi al estat “A punt de facturar”.
 
-#### 3 Facturar:
+3. Facturar:
 
 Una vegada totes les pòlisses estàn en estat “A punt de facturar” es prem el
 botó “Facturar” i comença el procés de facturació.
@@ -68,7 +68,7 @@ la barra de procés indicant el tant per cent de facturació realitzat. Quan es
 prem el botó actualitzar i el procés de facturació ha arribat al 100% el lot
 de facturació pasa al estat “Tancat”.
 
-#### 4 Obrir factures:
+4. Obrir factures:
 
 Una vegada revisades, per part del usuari, totes les factures generades en el
 lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
@@ -381,7 +381,11 @@ quin període temporal ens interessa.
 ![](_static/facturacion/relacio_de_consums_dates.png)
 
 
-## Exportació factures F1
+## Exportació de factures
+
+### Exportació de PDFs
+
+### Exportació de XML F1
 
 Per exportar les factures generades en format XML F1 per enviar a les
 comercialitzadores hem de fer servir l'assistent accessible des del formulari
@@ -389,7 +393,7 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 
 ![](_static/facturacion/export_f1_1.png)
 
-### Comportament de l'assistent
+#### Comportament de l'assistent
 
 ![](_static/facturacion/export_f1_2.png)
 
@@ -408,7 +412,7 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 
     Si està marcada aquesta opció generarà el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
 
-### Exportació de la facturació d'un període
+#### Exportació de la facturació d'un període
 
 Si volem exportar totes les factures d'una comercialitzadora (o de totes) que
 s'han generat a partir d'un lot de facturació, accedirem al lot que volguem, i
@@ -435,7 +439,7 @@ comercialitzadora.
 
 ![](_static/facturacion/F1_1.png)
 
-### Exportació manual de factures
+#### Exportació manual de factures
 
 També hi ha la opció d'exportar una o múltiples factures seleccionades manualment.
 
