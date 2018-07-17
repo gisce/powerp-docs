@@ -383,8 +383,6 @@ quin període temporal ens interessa.
 
 ## Exportació de factures
 
-### Exportació de PDFs
-
 ### Exportació de XML F1
 
 Per exportar les factures generades en format XML F1 per enviar a les
@@ -457,6 +455,32 @@ factures generades.
 
 En ambdós casos, es pot generar el CSV resum seleccionant la opció corresponent.
 
+
+### Exportació de PDFs
+
+A més de l'assistent per exportar amb format XML, es disposa d'un assistent per
+exportar a PDF.
+
+El funcionament és el mateix, tenim els mateixos filtres:
+
+- Per dates
+- Per comercialitzadora
+- Per lot de facturació
+
+I el podem trobar en els mateixos registres:
+
+- Lot de facturació
+- Factures
+
+Aquest assistent ens generarà un fitxer `.zip` que conté les diferents factures
+exportades en format PDF, utilitzant l'informe de factura sel·leccionat:
+
+![](_static/facturacion/export_pdf_1.png)
+
+!!! Note "Nota"
+    Aquest assistent també disposa de la funcionalitat `Generar Emails`, que
+    generarà un email amb cada comercialitzadora afectada i hi adjuntarà un
+    fitxer `zip` amb les corresponents factures.
 
 ## Facturació amb IESE a distribuidora
 
