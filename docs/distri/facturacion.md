@@ -24,55 +24,55 @@ Si una pòlissa es dona de baixa després de haver-se facturat s'ha de comprovar
 que no hagi passat al pròxim lot de facturació o sinó en el procés de validació
 donarà error per la facturació.
 
-### Facturació en 4 pasos.
+### Facturació en 4 passos
 
-1. Obrir:
+1. **Obrir**
 
-El botó obrir es el primer pas a realitzar per iniciar la facturació
-d'un determinat període. Si s'intenta obrir un lot sense haver tancat
-l'anterior apareixerà un error indicant que existeix més d'un lot obert.
+    El botó obrir es el primer pas a realitzar per iniciar la facturació
+    d'un determinat període. Si s'intenta obrir un lot sense haver tancat
+    l'anterior apareixerà un error indicant que existeix més d'un lot obert.
 
-Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
-al estat “obert”.
+    Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
+    al estat “obert”.
 
-2. Validar:
+2. **Validar**
 
-El botó validar comprova que totes les pòlisses del lot compleixin
-els requisitos per poderse facturar. Si la validació de la pòlissa es correcta
-pasa al estat “A punt de facturar”.
+    El botó validar comprova que totes les pòlisses del lot compleixin
+    els requisitos per poderse facturar. Si la validació de la pòlissa es correcta
+    pasa al estat “A punt de facturar”.
 
-Comprovacions que realiza:
+    Comprovacions que realiza:
 
-* Que els comptadors actius tinguin lectures inicials i finals en cada període.
-* Comprova si existen valores de lectures actuales inferiores a les inicials.
-  * En el caso que sea debido a un gir del comptador, després de comprovar
-    que el gir es correcte es pot marcar la casella “Saltar validació”
-    en la fitxa de la pòlissa a facturar.
+    * Que els comptadors actius tinguin lectures inicials i finals en cada període.
+    * Comprova si existen valores de lectures actuales inferiores a les inicials.
+        - En el caso que sea debido a un gir del comptador, després de comprovar
+          que el gir es correcte es pot marcar la casella “Saltar validació”
+          en la fitxa de la pòlissa a facturar.
 
-“Saltar validació” Al entrar en una pòlissa del lot de facturació apareix
-la opció “Saltar validació” que permet que encara que apareixi un missatge
-en la validació. Es marca aquesta opció i es prem el botó “validar aquesta”
-per que passi al estat “A punt de facturar”.
+    “Saltar validació” Al entrar en una pòlissa del lot de facturació apareix
+    la opció “Saltar validació” que permet que encara que apareixi un missatge
+    en la validació. Es marca aquesta opció i es prem el botó “validar aquesta”
+    per que passi al estat “A punt de facturar”.
 
-3. Facturar:
+3. **Facturar**
 
-Una vegada totes les pòlisses estàn en estat “A punt de facturar” es prem el
-botó “Facturar” i comença el procés de facturació.
+    Una vegada totes les pòlisses estàn en estat “A punt de facturar” es prem el
+    botó “Facturar” i comença el procés de facturació.
 
-Al final del procés de facturació s'hauran generat les factures de les pòlisses
-del lot en estat “Borrador”. A la vegada, totes les pòlisses del lot han passat
-al estat “Facturat”.
+    Al final del procés de facturació s'hauran generat les factures de les pòlisses
+    del lot en estat “Borrador”. A la vegada, totes les pòlisses del lot han passat
+    al estat “Facturat”.
 
-Actualitzar: Durante el procés de facturació si es prem aquest botó s'actualitza
-la barra de procés indicant el tant per cent de facturació realitzat. Quan es
-prem el botó actualitzar i el procés de facturació ha arribat al 100% el lot
-de facturació pasa al estat “Tancat”.
+    Actualitzar: Durante el procés de facturació si es prem aquest botó s'actualitza
+    la barra de procés indicant el tant per cent de facturació realitzat. Quan es
+    prem el botó actualitzar i el procés de facturació ha arribat al 100% el lot
+    de facturació pasa al estat “Tancat”.
 
-4. Obrir factures:
+4. **Obrir factures**
 
-Una vegada revisades, per part del usuari, totes les factures generades en el
-lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
-de factura i realitzar els assentaments comptables corresponents.
+    Una vegada revisades, per part del usuari, totes les factures generades en el
+    lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
+    de factura i realitzar els assentaments comptables corresponents.
 
 !!! Info "Nota"
     Des del menú de Lots de facturació pots accedir a les pòlisses directament
