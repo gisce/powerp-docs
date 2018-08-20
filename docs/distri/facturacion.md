@@ -482,6 +482,11 @@ exportades en format PDF, utilitzant l'informe de factura sel·leccionat:
     generarà un email amb cada comercialitzadora afectada i hi adjuntarà un
     fitxer `zip` amb les corresponents factures.
 
+    Utilitzarà el compte de poweremail assignat a la plantilla "_Facturació: enviament de factures_".
+
+    Si es requereix, consulteu més informació sobre [plantilles poweremail](../base/poweremail/#gestio-de-plantilles-poweremail)
+    i [comptes poweremail](../base/poweremail/#configuracio-de-comptes-poweremail).
+
 ## Facturació amb IESE a distribuidora
 
 Al instal·lar el mòdul de facturació amb IESE a distribuidora haurem de fer ús
