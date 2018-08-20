@@ -321,7 +321,7 @@ com el de la imatge que procedeix. Es poden importar els 3 fitxers alhora, peró
 importat anteriorment), ja que al ser l'inventari d'agregacions, l'ERP
 detectaría que REE no té cap agregació comunicada.
 
-![](_static/perfiles/import_acums.png)
+![](_static/perfiles/import_acums_files.png)
 
 Un cop importats els fitxers, l'ERP analitza i contrasta les agregacions a les
 dues bandes i treu una taula com la següent:
