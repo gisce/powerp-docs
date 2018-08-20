@@ -39,7 +39,7 @@ extra_css:
   - extra/css/images.css
   - extra/css/site.css
 
-pages:
+nav:
   - Home: index.md
   - Base:
     - Clients i Empreses: base/partners.md

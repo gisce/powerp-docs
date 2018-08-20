@@ -30,13 +30,13 @@ with open('mkdocs.yml', 'r') as mkdocs_conf:
     ca_conf = yaml.load_all(mkdocs_conf)
     ca_pages = []
     for conf in ca_conf:
-        ca_pages = get_pages(conf['pages'])
+        ca_pages = get_pages(conf['nav'])
 
 with open('mkdocs_es.yml', 'r') as mkdocs_conf:
     es_conf = yaml.load_all(mkdocs_conf)
     es_pages = []
     for conf in es_conf:
-        es_pages = get_pages(conf['pages'])
+        es_pages = get_pages(conf['nav'])
 
 missing_pages = set(es_pages) - set(ca_pages)
 if missing_pages:
@@ -52,5 +52,3 @@ if missing_pages:
     exit(-1)
 print('{green}{check} Both config files have the same pages'
       ' references{endcl}'.format(**locals()))
-
-

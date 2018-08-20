@@ -16,7 +16,7 @@ alt_configs = [
 ]
 
 NOT_CHECK = [
-    'pages', 'language', 'markdown_i18n', 'google_analytics'
+    'nav', 'language', 'markdown_i18n', 'google_analytics'
 ]
 
 anyerr = 0
