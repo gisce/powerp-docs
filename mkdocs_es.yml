@@ -42,7 +42,7 @@ extra_css:
   - extra/css/images.css
   - extra/css/site.css
 
-pages:
+nav:
   - Home: index.md
   - Base:
     - Clientes y Empresas: base/partners.md
