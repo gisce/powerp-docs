@@ -15,7 +15,7 @@ realitzar les facturacions masives, indica l'estat en que es troba el lot
 El lot de facturació inclou les pólisses que es facturaràn en aquest període.
 
 Una vegada facturada una pólissa activa en un lot de facturació
-automàticamente pasa al lot següent.
+automàticamente passa al lot següent.
 
 Una vegada facturada una pòlissa que està de baixa i inactiva en el moment
 de facturar-se ja no va al pròxim lot de facturació.
@@ -24,55 +24,55 @@ Si una pòlissa es dona de baixa després de haver-se facturat s'ha de comprovar
 que no hagi passat al pròxim lot de facturació o sinó en el procés de validació
 donarà error per la facturació.
 
-### Facturació en 4 pasos.
+### Facturació en 4 passos
 
-#### 1 Obrir:
+1. **Obrir**
 
-El botó obrir es el primer pas a realitzar per iniciar la facturació
-d'un determinat període. Si s'intenta obrir un lot sense haver tancat
-l'anterior apareixerà un error indicant que existeix més d'un lot obert.
+    El botó obrir es el primer pas a realitzar per iniciar la facturació
+    d'un determinat període. Si s'intenta obrir un lot sense haver tancat
+    l'anterior apareixerà un error indicant que existeix més d'un lot obert.
 
-Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
-al estat “obert”.
+    Una vegada obert un lot, les pòlisses a facturar passen del estat “borrador”
+    a l'estat “obert”.
 
-#### 2 Validar:
+2. **Validar**
 
-El botó validar comprova que totes les pòlisses del lot compleixin
-els requisitos per poderse facturar. Si la validació de la pòlissa es correcta
-pasa al estat “A punt de facturar”.
+    El botó validar comprova que totes les pòlisses del lot compleixin
+    els requisits per poder-se facturar. Si la validació de la pòlissa es correcta
+    passa l'estat “A punt de facturar”.
 
-Comprovacions que realiza:
+    Comprovacions que realitza:
 
-* Que els comptadors actius tinguin lectures inicials i finals en cada període.
-* Comprova si existen valores de lectures actuales inferiores a les inicials.
-  * En el caso que sea debido a un gir del comptador, després de comprovar
-    que el gir es correcte es pot marcar la casella “Saltar validació”
-    en la fitxa de la pòlissa a facturar.
+    * Que els comptadors actius tinguin lectures inicials i finals en cada període.
+    * Comprova si existen valores de lectures actuales inferiores a les inicials.
+        - En el caso que sea debido a un gir del comptador, després de comprovar
+          que el gir es correcte es pot marcar la casella “Saltar validació”
+          en la fitxa de la pòlissa a facturar.
 
-“Saltar validació” Al entrar en una pòlissa del lot de facturació apareix
-la opció “Saltar validació” que permet que encara que apareixi un missatge
-en la validació. Es marca aquesta opció i es prem el botó “validar aquesta”
-per que passi al estat “A punt de facturar”.
+    “Saltar validació” Al entrar en una pòlissa del lot de facturació apareix
+    la opció “Saltar validació” que permet que encara que apareixi un missatge
+    en la validació. Es marca aquesta opció i es prem el botó “validar aquesta”
+    per que passi a l'estat “A punt de facturar”.
 
-#### 3 Facturar:
+3. **Facturar**
 
-Una vegada totes les pòlisses estàn en estat “A punt de facturar” es prem el
-botó “Facturar” i comença el procés de facturació.
+    Una vegada totes les pòlisses estàn en estat “A punt de facturar” es prem el
+    botó “Facturar” i comença el procés de facturació.
 
-Al final del procés de facturació s'hauran generat les factures de les pòlisses
-del lot en estat “Borrador”. A la vegada, totes les pòlisses del lot han passat
-al estat “Facturat”.
+    Al final del procés de facturació s'hauran generat les factures de les pòlisses
+    del lot en estat “Borrador”. A la vegada, totes les pòlisses del lot han passat
+    a l'estat “Facturat”.
 
-Actualitzar: Durante el procés de facturació si es prem aquest botó s'actualitza
-la barra de procés indicant el tant per cent de facturació realitzat. Quan es
-prem el botó actualitzar i el procés de facturació ha arribat al 100% el lot
-de facturació pasa al estat “Tancat”.
+    Actualitzar: Durante el procés de facturació si es prem aquest botó s'actualitza
+    la barra de procés indicant el tant per cent de facturació realitzat. Quan es
+    prem el botó actualitzar i el procés de facturació ha arribat al 100% el lot
+    de facturació passa a l'estat “Tancat”.
 
-#### 4 Obrir factures:
+4. **Obrir factures**
 
-Una vegada revisades, per part del usuari, totes les factures generades en el
-lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
-de factura i realitzar els assentaments comptables corresponents.
+    Una vegada revisades, per part del usuari, totes les factures generades en el
+    lot de facturació pot apretar-se el botó “Obrir factures” per assignar el número
+    de factura i realitzar els assentaments comptables corresponents.
 
 !!! Info "Nota"
     Des del menú de Lots de facturació pots accedir a les pòlisses directament
@@ -136,7 +136,7 @@ S'accedeix al assistent en el que es indicarà:
 
 !!! Info "Nota"
     Aquesta factura manual es pot realitzar en qualsevol moment, i la/es
-    factura/es que realiza queden en estat _borrador_. Pots utilitzar aquesta
+    factura/es que realitza queden en estat _borrador_. Pots utilitzar aquesta
     opció per comprovar si el resultat de la facturació d'aquesta pòlissa es
     l'esperat. (p.e.  si hi ha hagut una _Modificació contractual_ en mig del
     període de facturació i s'han de realitzar 2 factures.) Després pots borrar
@@ -174,7 +174,7 @@ S'accedeix al assistent en el que es indicarà:
     ¿Com es paga un grupo de factures a la vegada?
 
 !!! Resposta
-    S'han de sel·leccionar les factures a cobrar bé a través d'un filtre o bé
+    S'han de seleccionar les factures a cobrar bé a través d'un filtre o bé
     seleccionant-les d'una llista. Després s'ha d'utilitzar l'assistent
     'acció / pagar grup de factures'.
 
@@ -187,7 +187,7 @@ S'accedeix al assistent en el que es indicarà:
 
 !!! Resposta
     Des de la pròpia factura es selecciona la opció '_Desfer pagament_',
-    això passarà la factura de l'estat 'realitzat' al estat 'obert'.
+    això passarà la factura de l'estat 'realitzat' a l'estat 'obert'.
 
 ![](_static/facturacion/accion_deshacer.png)
 
@@ -223,10 +223,10 @@ Si s'ha de tornar a fer una factura perquè al analitzarla quan està en estat
 1. Borrar la factura.
 2. Corregir les dades que han produït l'error per als correctes.
 3. Tornar al lot de facturació i es trobarà la pòlissa en estat
-   “a punt de facturar”. Si es troba en estat “oberta” s'ha de pasar al estat
+   “a punt de facturar”. Si es troba en estat “oberta” s'ha de passar a l'estat
    “a punt de facturar” amb el botó “validar” des de la pròpia pòlissa del lot.
 4. Polsar el botó “facturar aquesta” , una vegada facturades totes les pòlisses
-   prement el botó “Actualitzar” aquest passarà al estat “Tancat”
+   prement el botó “Actualitzar” aquest passarà a l'estat “Tancat”
 
 !!! Pregunta
 Com comprovo que estàn totes les pòlisses que he de facturar en el lot?
@@ -258,20 +258,20 @@ Una factura en estat “Obert” es pot modificar?
 !!! Resposta
 
 1. Una factura en estat obert es pot cancel·lar prement el botó “Cancelar”,
-   després pasar al estat “Borrador”.
+   després passar a l'estat “Borrador”.
 2. Una vegada en estat borrador els camps passen a ser editables i es poden
    fer les modificacions necessaries.
 3. Una vegada modificats els camps necesaris es pot obrir de nou la factura
-   amb el botó Validar passant al estat “Obert”
+   amb el botó Validar passant a l'estat “Obert”
 
 !!! Pregunta
 Una factura en estat “Realitzat” es pot modificar?
 
 !!! Resposta
 
-1. Si per error una factura ha passat al estat Realitzat, el primer que s'ha de
+1. Si per error una factura ha passat a l'estat Realitzat, el primer que s'ha de
    fer es cancel·lar el pagament tal com s'ha indicat anteriorment i passarà
-   al estat “Obert”
+   a l'estat “Obert”
 2. Seguir els pasos indicats en l'apartat anterior.
 
 ## Modificacions contractuals
@@ -283,7 +283,7 @@ contenen la mateixa informació que una pòlissa.
 Un procés de Modificació contractual té 3 passos dins d'una pòlissa:
 
 1. Botó “Modificació contractual”. Pulsar aquest botó fa que la pòlissa passi
-   d'estat “Activa” al estat “Modificació contractual”.
+   d'estat “Activa” a l'estat “Modificació contractual”.
    Per modificar els camps desitjats.
 2. Realitzar les modificacions en la pòlissa, todos els camps editables
    son susceptibles de Modificació, bàsicament seràn:
@@ -309,7 +309,7 @@ Com es realitza un augment de potència de 5,5 a 10,390?
 !!! Resposta
 
 1. Dins de la pòlissa, polsar el botó “Modificació contractual”. Això fa que
-   la pòlissa passi de estat “Activa” al estat “Modificació contractual”.
+   la pòlissa passi de estat “Activa” a l'estat “Modificació contractual”.
    S'ha de canviar la potència 5,5 per la nova 10,390 (apareixerà un quadre
    de diàleg advertint que la tarifa no concorda amb la nova potencia
    contractada), es canvia la tarifa a 2.1A , es prem el botó generar períodes
@@ -356,11 +356,11 @@ Els llistats resum de facturació mensuals es troben en l'apartat:
 * Tipus: Pot escollir-se entre Mensuals, Bimestrals o Totes
 
 * Serie: En el desplegable apareixen totes les sèries que es poden
-  sel·leccionar. En el caso de facturació de energía s'han de seleccionar:
+  seleccionar. En el caso de facturació de energía s'han de seleccionar:
   Seqüència F. Energia, Seqüència F. Energia Abonada o
   Seqüència F. Energia Rectificadora.
 
-* Informes: En aquest desplegable es poden sel·leccionar les diferents formes
+* Informes: En aquest desplegable es poden seleccionar les diferents formes
   de resums i agrupacions segons convingui.
 
 ## Certificat de consums
@@ -381,7 +381,9 @@ quin període temporal ens interessa.
 ![](_static/facturacion/relacio_de_consums_dates.png)
 
 
-## Exportació factures F1
+## Exportació de factures
+
+### Exportació de XML F1
 
 Per exportar les factures generades en format XML F1 per enviar a les
 comercialitzadores hem de fer servir l'assistent accessible des del formulari
@@ -389,7 +391,7 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 
 ![](_static/facturacion/export_f1_1.png)
 
-### Comportament de l'assistent
+#### Comportament de l'assistent
 
 ![](_static/facturacion/export_f1_2.png)
 
@@ -408,7 +410,7 @@ del lot de facturació, amb el botó _Exportar factures XML_.
 
     Si està marcada aquesta opció generarà el Resum de Facturació CSV (*Menú/Facturació/General/Informes de facturació/Informes resum facturació*)
 
-### Exportació de la facturació d'un període
+#### Exportació de la facturació d'un període
 
 Si volem exportar totes les factures d'una comercialitzadora (o de totes) que
 s'han generat a partir d'un lot de facturació, accedirem al lot que volguem, i
@@ -435,7 +437,7 @@ comercialitzadora.
 
 ![](_static/facturacion/F1_1.png)
 
-### Exportació manual de factures
+#### Exportació manual de factures
 
 També hi ha la opció d'exportar una o múltiples factures seleccionades manualment.
 
@@ -453,6 +455,37 @@ factures generades.
 
 En ambdós casos, es pot generar el CSV resum seleccionant la opció corresponent.
 
+
+### Exportació de PDFs
+
+A més de l'assistent per exportar amb format XML, es disposa d'un assistent per
+exportar a PDF.
+
+El funcionament és el mateix, tenim els mateixos filtres:
+
+- Per dates
+- Per comercialitzadora
+- Per lot de facturació
+
+I el podem trobar en els mateixos registres:
+
+- Lot de facturació
+- Factures
+
+Aquest assistent ens generarà un fitxer `.zip` que conté les diferents factures
+exportades en format PDF, utilitzant l'informe de factura seleccionat:
+
+![](_static/facturacion/export_pdf_1.png)
+
+!!! Note "Nota"
+    Aquest assistent també disposa de la funcionalitat `Generar Emails`, que
+    generarà un email amb cada comercialitzadora afectada i hi adjuntarà un
+    fitxer `zip` amb les corresponents factures.
+
+    Utilitzarà el compte de poweremail assignat a la plantilla "_Facturació: enviament de factures_".
+
+    Si es requereix, consulteu més informació sobre [plantilles poweremail](../base/poweremail/#gestio-de-plantilles-poweremail)
+    i [comptes poweremail](../base/poweremail/#configuracio-de-comptes-poweremail).
 
 ## Facturació amb IESE a distribuidora
 
