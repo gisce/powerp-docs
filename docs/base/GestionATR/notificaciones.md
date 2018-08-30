@@ -148,14 +148,12 @@ es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
 
 ![](../_static/atr/WizardNotificarPeticions.png)
 
-### Configuració de notificacións per B1-02
+### Configuració de notificacions per B1-02
 
-La següent configuració, és adicional a les anteriorment esmentades,
-si els B1-02 no estaven marcats per ser notificats no ho faran.
+El ERP afegeix una configuració extra per les notificacions dels casos B1-02,
+la qual permet configurar per a quins motius especifics es marcaran per notificar.
 
-
-La gestió de notificacions per els casos B1-02, ve configurada per la variable
-de configuració **sw_notify_motivos_baja** per defecte a ***all***.
+Aquesta configuració ve determinada per la variable de configuració **sw_notify_motivos_baja** per defecte a ***all***.
 
 |            **sw_notify_motivos_baja**           |                Gestió de notificacions               |
 |:-----------------------------------------------:|:----------------------------------------------------:|
