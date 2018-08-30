@@ -150,14 +150,19 @@ es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
 
 ### Configuració de notificacións per B1-02
 
+La següent configuració, és adicional a les anteriorment esmentades,
+si els B1-02 no estaven marcats per ser notificats no ho faran.
+
+
 La gestió de notificacions per els casos B1-02, ve configurada per la variable
-de configuració **sw_notify_motivos_baja**.
+de configuració **sw_notify_motivos_baja** per defecte a ***all***.
 
 |            **sw_notify_motivos_baja**           |                Gestió de notificacions               |
 |:-----------------------------------------------:|:----------------------------------------------------:|
-|                       all                       |                    Notifica sempre                   |
-| ['01', '02', ...] o [1, 2, ...] o [01, 02, ...] | Notifica només els casos amb els motius especificats |
-|              Qualsevol altre valor              |                    No notifica mai                   |
+|                       all                       |                    Marca per notificar sempre                   |
+| ['01', '02', ...] o [1, 2, ...] o [01, 02, ...] | Marca per notificar només els casos amb els motius especificats |
+|              Qualsevol altre valor              |                    No marca per notifica mai                   |
+
 
 La configuració de motius està basada en la **TABLA_10** de `gestionATR`:
 
