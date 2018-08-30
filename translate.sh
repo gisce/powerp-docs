@@ -1,4 +1,5 @@
 #!/bin/bash
+pip install -r requirements.txt
 if [ -f locales/messages.pot ]; then
     echo "Erasing old pot file (local cache)..."
     rm locales/messages.pot
