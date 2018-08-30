@@ -147,3 +147,25 @@ es troba en la cantonada d'abaix a la dreta de la finestra del ERP.
     notificació i no amb l'enviament.
 
 ![](../_static/atr/WizardNotificarPeticions.png)
+
+### Configuració de notificacións per B1-02
+
+La gestió de notificacions per els casos B1-02, ve configurada per la variable
+de configuració **sw_notify_motivos_baja**.
+
+|            **sw_notify_motivos_baja**           |                Gestió de notificacions               |
+|:-----------------------------------------------:|:----------------------------------------------------:|
+|                       all                       |                    Notifica sempre                   |
+| ['01', '02', ...] o [1, 2, ...] o [01, 02, ...] | Notifica només els casos amb els motius especificats |
+|              Qualsevol altre valor              |                    No notifica mai                   |
+
+La configuració de motius esta basada en la **TABLA_10** de `gestionATR`:
+
+|                 TABLA 10          |
+|:---------------------------------:|
+| Codi |         Descripció         |
+|:----:|:--------------------------:|
+|  01  |       Cese Actividad       |
+| 02   | Fin de contrato de energía |
+|  03  |     Corte de suministro    |
+| 04   | Baja por impago            |
