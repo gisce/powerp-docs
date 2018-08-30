@@ -159,13 +159,11 @@ de configuració **sw_notify_motivos_baja**.
 | ['01', '02', ...] o [1, 2, ...] o [01, 02, ...] | Notifica només els casos amb els motius especificats |
 |              Qualsevol altre valor              |                    No notifica mai                   |
 
-La configuració de motius esta basada en la **TABLA_10** de `gestionATR`:
+La configuració de motius està basada en la **TABLA_10** de `gestionATR`:
 
-|                 TABLA 10          |
-|:---------------------------------:|
 | Codi |         Descripció         |
 |:----:|:--------------------------:|
 |  01  |       Cese Actividad       |
-| 02   | Fin de contrato de energía |
+|  02  | Fin de contrato de energía |
 |  03  |     Corte de suministro    |
-| 04   | Baja por impago            |
+|  04  |       Baja por impago      |
