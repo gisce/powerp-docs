@@ -179,3 +179,11 @@ L'assistent obre una finestra amb el botó **Exportar**. Prement el botó es gen
 Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
+
+## Check regulatori
+
+- Als models involurats en els informes d'administracio publica existeix el camp **Criteri regulatori**. Aquest camp ens permet personalitzar els elements que apareixen als informes. Aquest te tres opcions:
+
+   - **Segons criteri**: Se usa el criterio descrito en el `BOE`. Es el valor por defecto y se puede consultar en fichero de la resolucion implicada.
+   - **Forçar inclusio**: El elemento selecionado se incluira al fichero aunque el criterio del `BOE` no lo incluya. Util para forzar elementos que no aparecen debido a algun campo y no se quiere cambiar el campo.
+   - **Forçar exclusio**: El elemento selecionado no aparecera en el fichero aunque el criterio. Util para excluir infrastrucruras que no se quiere que aparezcan.
