@@ -8,4 +8,4 @@ markdown-blockdiag>=0.3.0
 markdown-i18n>=2.1.1
 pygments
 # Due no pypi package: https://github.com/smartboyathome/Markdown-GridTables/issues/2
-https://github.com/mihkels/Markdown-GridTables/archive/master.zip
+https://github.com/jaumef/Markdown-GridTables/archive/master.zip
