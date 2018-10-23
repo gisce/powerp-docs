@@ -3,7 +3,7 @@ Markdown
 # Extensions
 markdown-checklist
 fontawesome-markdown
-mkdocs-material
+mkdocs-material>=3
 markdown-blockdiag>=0.3.0
 markdown-i18n>=3
 pygments
