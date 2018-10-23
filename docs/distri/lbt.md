@@ -63,8 +63,7 @@ Altrement s'aplicara el que que marca cuadre de baixa tensió del centre transfo
 * 7 subterrània (1 circuit)
 
 
-![Captura de la seleccio del tipus en el ERP]
-(_static/lbt/captura_tipus_linia_bt.png)
+![Captura de la seleccio del tipus en el ERP](_static/lbt/captura_tipus_linia_bt.png)
 
 
 El procés de càlcul actualitzarà els camps del model de línies BT següents:
@@ -130,8 +129,7 @@ línies aèries: **_Posada en façana_**: Si / NO
     (_abans era 0.55m_) del punt d’inserció d’un suport dels esmentats
     en l’apartat anterior.
 
-    ![Esquema visual de tensada sobre poste]
-    (_static/lbt/esquema_tensada_sobre_poste.png)
+    ![Esquema visual de tensada sobre poste](_static/lbt/esquema_tensada_sobre_poste.png)
 
     En cas que no es doni la condició anterior s’assignara com a cable en façana
 
@@ -141,21 +139,18 @@ línies aèries: **_Posada en façana_**: Si / NO
     Al menú de GIS > Carregador de fitxers SHP LAT i LBT
     per carregar els ZIPs sempre hi ha d’haver el de LBT i el de LAT
 
-    ![Mostra carrega de fitxers shp utilitzant el ERP]
-    (_static/lbt/carrega_fitxers_shp.png)
+    ![Mostra carrega de fitxers shp utilitzant el ERP](_static/lbt/carrega_fitxers_shp.png)
 
 !!! Info "Nota"
     **NOTA 4. Com actualitzar el tipus de línia en el ERP**
 
     Al menú de GIS > Assignar tipus LBT
 
-    ![Execució de l'acció d'assignar tipus LBT des del ERP]
-    (_static/lbt/assignar_tipus_lbt.png)
+    ![Execució de l'acció d'assignar tipus LBT des del ERP](_static/lbt/assignar_tipus_lbt.png)
 
     Aquest assistent recalcularà el tipus de línia de LBT
 
-    ![Execució del wizard per realitzar l'acció d'assignar el tipus LBT del ERP]
-    (_static/lbt/wizard_assignar_tipus.png)
+    ![Execució del wizard per realitzar l'acció d'assignar el tipus LBT del ERP](_static/lbt/wizard_assignar_tipus.png)
 
     Aquest procés actualitzarà automàticament els camps:
     **Tipus de línia**: aèria o subterrània

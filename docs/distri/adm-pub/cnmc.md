@@ -179,3 +179,11 @@ L'assistent obre una finestra amb el botó **Exportar**. Prement el botó es gen
 Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del **ZIP** generat.
 
 ![](../_static/cnmc/sips_4.png)
+
+## Check regulatori
+
+- Als models involucrats en els informes d'administracio pública existeix el camp **Criteri regulatori**. Aquest camp ens permet personalitzar els elements que apareixen als informes. Aquest te tres opcions:
+
+   - **Segons criteri**: Es fa servir el criteri descrit al [BOE](https://www.boe.es/boe/dias/2017/04/28/pdfs/BOE-A-2017-4666.pdf). Es el valor per defecte i es pot consutlar en el fitxer de la resolució implicada.
+   - **Forçar inclusio**: L'element selecionat s'incluira al fitxer tot i que el criteri del [BOE](https://www.boe.es/boe/dias/2017/04/28/pdfs/BOE-A-2017-4666.pdf) no l'inclogui. Util per forçar elements que no apareixen degut a algun valor d'un camp i no es vol canviar el valor del camp.
+   - **Forçar exclusio**: L'element selectionat no apareixera al fitxer tot i el criteri del [BOE](https://www.boe.es/boe/dias/2017/04/28/pdfs/BOE-A-2017-4666.pdf) l'inclogui. Util per excloure infrastructures que no es vol que apareguin.
