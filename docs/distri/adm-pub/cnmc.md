@@ -184,6 +184,6 @@ Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del
 
 - Als models involucrats en els informes d'administracio pública existeix el camp **Criteri regulatori**. Aquest camp ens permet personalitzar els elements que apareixen als informes. Aquest te tres opcions:
 
-   - **Segons criteri**: Se usa el criterio descrito en el `BOE`. Es el valor por defecto y se puede consultar en fichero de la resolucion implicada.
-   - **Forçar inclusio**: El elemento selecionado se incluira al fichero aunque el criterio del `BOE` no lo incluya. Util para forzar elementos que no aparecen debido a algun campo y no se quiere cambiar el campo.
-   - **Forçar exclusio**: El elemento selecionado no aparecera en el fichero aunque el criterio. Util para excluir infrastrucruras que no se quiere que aparezcan.
+   - **Segons criteri**: Es fa servir el criteri descrit al `BOE`. Es el valor per defecte i es pot consutlar en el fitxer de la resolució implicada.
+   - **Forçar inclusio**: L'element selecionat s'incluira al fitxer tot i que el criteri del `BOE` no l'inclogui. Util per forçar elements que no apareixen degut a algun valor d'un camp i no es vol canviar el valor del camp.
+   - **Forçar exclusio**: L'element selectionat no apareixera al fitxer tot i el criteri del `BOE` l'inclogui. Util per excloure infrastructures que no es vol que apareguin.
