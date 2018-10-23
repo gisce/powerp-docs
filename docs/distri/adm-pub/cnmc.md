@@ -182,7 +182,7 @@ Un cop a la darrera finestra, amb el botó **Obrir** s'accedeix al contingut del
 
 ## Check regulatori
 
-- Als models involurats en els informes d'administracio publica existeix el camp **Criteri regulatori**. Aquest camp ens permet personalitzar els elements que apareixen als informes. Aquest te tres opcions:
+- Als models involucrats en els informes d'administracio pública existeix el camp **Criteri regulatori**. Aquest camp ens permet personalitzar els elements que apareixen als informes. Aquest te tres opcions:
 
    - **Segons criteri**: Se usa el criterio descrito en el `BOE`. Es el valor por defecto y se puede consultar en fichero de la resolucion implicada.
    - **Forçar inclusio**: El elemento selecionado se incluira al fichero aunque el criterio del `BOE` no lo incluya. Util para forzar elementos que no aparecen debido a algun campo y no se quiere cambiar el campo.
