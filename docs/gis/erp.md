@@ -1,6 +1,6 @@
 # Cambiar la capa base del visor web
 
-- En las preferencias de usuario del ERP se puede elegir la capa base por defecto del web gis. Para hacerlo se debe:
+- A les preferencies d'usuari del ERP es poden escollir les capes per defecte del webgis. Per fer-ho s'ha de:
 
 1. Anar al menu superior a Usuari>Preferencies
 2. En la pestanya de GIS canviar al Capa Base per defecte al webgis
