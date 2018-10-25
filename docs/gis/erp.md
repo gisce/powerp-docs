@@ -7,7 +7,7 @@
 
 ![](_static/webgis_capa_base.png)
 
-Al tornar a entrar al webgis ens apareixera la capa base selecionada
+Al tornar a entrar al webgis ens apareixerà la capa base seleccionada
 
 # Consultar data de l'últim bolcat
 
