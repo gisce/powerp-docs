@@ -46,6 +46,7 @@ nav:
   - Home: index.md
   - Base:
     - Clientes y Empresas: base/partners.md
+    - Ubicaciones: base/ubicaciones.md
     - PowerEmail: base/poweremail.md
     - Atención al Cliente: base/atc.md
     - Gestión de pólizas: base/polizas.md

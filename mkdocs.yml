@@ -43,6 +43,7 @@ nav:
   - Home: index.md
   - Base:
     - Clients i Empreses: base/partners.md
+    - Ubicacions: base/ubicaciones.md
     - PowerEmail: base/poweremail.md
     - Atenció al Client: base/atc.md
     - Gestió de pòlisses: base/polizas.md
