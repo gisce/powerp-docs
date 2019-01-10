@@ -4,6 +4,51 @@
 
 Les llistes de preus....
 
+### Asistent per carregar llistes de preus
+
+Mitjançant l'assistent "Create pricelist from file" situat al menú **Productes -> Tarifes -> Create pricelist from file**
+es pot importar un fitxer CSV per tal de carregar automàticament llistes de preus i actualitzar-les creant noves versions.
+
+
+
+![](_static/llistes_preus/asistent.png)
+
+L'asistent te 3 camps:
+
+- **Fitxer de la tarifa**: fitcher csv a carregar. Conté una linia per cada tarifa d'acces a la qual se li volen definir els preus en la versio de la llista de preus.
+- **Data inici**: data inici de la versió de la llista de preus a actualitzar/crear.
+- **Data final**: data final de la versió de la llista de preus a actualitzar/crear. Si es deixa buit, la versió creada no tindrà data final.
+
+
+#### Format del fitxer CSV
+El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següents columnes:
+  - **Tarifa d'Accés**: nom de la tarifa d'accés per la qual es crearan les regles que en definiran els preus. Es crearà una regla per cada periode d'aquesta tarifa.
+  - **Llista de preus**: nom de la llista de preus a crear/actualitzar. El ERP buscarà una llista de preus amb aquest nom, si no la troba la crearà. Després buscarà una versió d'aquesta llista que comenci en la data inici introduïda en l'assistent. Si no la troba també la crearà. Totes les regles creades per la tarifa d'accés indicada s'afegiran en aquesta versió. A més, es farà que la tarifa d'acces sigui compatible amb aquesta llista de preus.
+  - **Llista de preus base**: nom de una llista de preus existent en la que basar-se. Les regles que es generin tindran com a llista de preus base aquesta llista. Si es deixa buit, les regles que es crein no es basaran en cap llista, simplement tindran el preu fixe indicat en el fitxer.
+  - Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada. Han d'estar ordenats creixentment (p1;p2;...) indicant primer els de energia i després els de potencia.
+
+##### Exemples
+
+- **Exemple** de una linea del fitxer **sense tarifa base (preu fix)**:
+    - `2.0A;Tarifa Fija Enero;;0,1326;38,043426`
+    
+    Aixó generaria:
+
+|   |   |
+|---|---|
+|![](_static/llistes_preus/exemple_preufix.png)|![](_static/llistes_preus/exemple_preufix_pot.png)|
+
+- **Exemple** de una linea del fitxer **amb tarifa base**:
+    - `2.0A;Tarifa Fija Enero;TARIFAS ELECTRICIDAD;0,1326;38,043426`
+    
+    Aixó generaria:
+
+|   |   |
+|---|---|
+|![](_static/llistes_preus/exemple_base.png)|![](_static/llistes_preus/exemple_base_pot.png)|
+
+
+
 
 ## Pool de lectures
 
