@@ -26,7 +26,7 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 - **Tarifa d'Accés**: nom de la tarifa d'accés per la qual es crearan les regles que en definiran els preus. Es crearà una regla per cada periode d'aquesta tarifa.
 - **Llista de preus**: nom de la llista de preus a crear/actualitzar. El ERP buscarà una llista de preus amb aquest nom, si no la troba la crearà. Després buscarà una versió d'aquesta llista que comenci en la data inici introduïda en l'assistent. Si no la troba també la crearà. Totes les regles creades per la tarifa d'accés indicada s'afegiran en aquesta versió. A més, es farà que la tarifa d'acces sigui compatible amb aquesta llista de preus.
 - **Llista de preus base**: nom de una llista de preus existent en la que basar-se. Les regles que es generin tindran com a llista de preus base aquesta llista. Si es deixa buit, les regles que es crein no es basaran en cap llista, simplement tindran el preu fixe indicat en el fitxer.
-- Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada. Han d'estar ordenats creixentment (p1;p2;...) indicant primer els de energia i després els de potencia.
+- Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada amb el preu que es vol cobrar. Han d'estar ordenats creixentment (p1;p2;...) indicant primer els de energia i després els de potencia.
 
 ##### Exemples
 
