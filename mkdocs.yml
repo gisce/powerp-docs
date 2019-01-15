@@ -97,6 +97,7 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
+    - Mesures: distri/medidas.md
     - Perfils: distri/perfiles.md
     - Descàrrecs: distri/descargos.md
     - GIS:
