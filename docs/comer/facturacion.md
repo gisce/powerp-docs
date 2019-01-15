@@ -6,7 +6,7 @@ Les llistes de preus....
 
 ### Asistent per carregar llistes de preus
 
-Mitjançant l'assistent "Create pricelist from file" situat al menú **Productes -> Tarifes -> Create pricelist from file**
+Mitjançant l'assistent "`Create pricelist from file`" situat al menú **Productes -> Tarifes -> Create pricelist from file**
 es pot importar un fitxer CSV per tal de carregar automàticament llistes de preus i actualitzar-les creant noves versions.
 
 
