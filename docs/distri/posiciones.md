@@ -2,7 +2,7 @@
 
 ## Calcul de TI
 
-Per el calul de TI s'usen els seguents parametres:
+Per el calcul de TI s'usen els seguents parametres:
 
 - Tensió: S'usa la `Tensió` de la posició
 - Situacio:
