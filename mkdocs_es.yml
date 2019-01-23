@@ -61,6 +61,7 @@ nav:
         - Operaciones: base/GestionATR/operaciones.md
         - Notificaciones: base/GestionATR/notificaciones.md
         - Automatitzación de procesos: base/GestionATR/automatizacion.md
+        - Portal ATR: base/GestionATR/atrhub.md
         - Apéndice: base/GestionATR/apendice.md
     - SOA: base/soa.md
   - Distribuidora:
