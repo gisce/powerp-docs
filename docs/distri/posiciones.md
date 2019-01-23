@@ -8,6 +8,6 @@ Per el calcul de TI s'usen els seguents parametres:
 - Situació:
 
     1. Si te assignat el `Parc` s'usa el camp Localització 
-    2. Sino s'usa el camp Tipus del tipus de `Subtestacio`
+    2. Sino s'utilitza el camp `Tipus` del tipus de `Subtestacio`
 
 - Tipus: S'usa el camp `Tecnologia` de la posicio
