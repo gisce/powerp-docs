@@ -1,6 +1,6 @@
 #Posicions
 
-## Calcul de TI
+## Càlcul de TI
 
 Per al càlcul de TI s'utilitzen els següents paràmetres:
 
