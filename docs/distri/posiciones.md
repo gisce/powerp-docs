@@ -10,4 +10,4 @@ Per al càlcul de TI s'utilitzen els següents paràmetres:
     1. Si té assignat el `Parc` s'utilitza el camp Localització 
     2. Sino s'utilitza el camp `Tipus` del tipus de `Subtestacio`
 
-- Tipus: S'usa el camp `Tecnologia` de la posicio
+- Tipus: S'utilitza el camp `Tecnologia` de la posició
