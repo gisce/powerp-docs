@@ -76,6 +76,7 @@ nav:
       - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - CUPS: distri/cups.md
+    - Posiciones: distri/posiciones.md
     - Pólizas: distri/polizas.md
     - Contadores: distri/contadores.md
     - Gestión ATR: distri/atr.md
