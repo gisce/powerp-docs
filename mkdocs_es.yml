@@ -134,6 +134,8 @@ nav:
     - Calidad individual: distri/calidad_individual.md
   - Comercializadora:
     - Inicio: comer/index.md
+    - Procesos:
+      - Proceso de Facturación: comer/processos_facturacio.md
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
     - Facturación: comer/facturacion.md
