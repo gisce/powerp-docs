@@ -54,9 +54,8 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 ## Importació fitxers F1
 
 
-El mòdul de Switching permet, de moment, processar els fitxers XML de
-facturació, ja sigui agrupats en un sol fitxer zip o individualment. Noves
-funcionalitats s'aniran incorporant properament.
+El mòdul de Switching permet, processar els fitxers XML de
+facturació, ja sigui agrupats en un sol fitxer zip o individualment.
 
 Aquest document descriu les funcionalitats del mòdul de Switching de facturació.
 
@@ -142,15 +141,13 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
     Ens mostrarà aquelles factures que han resultat ser divergents respecte la
     facturada per l'ERP.  A continuació s'explicarà el concepte de divergència.
 
-Accés a fitxers F1 d'un CUPS
-----------------------------
+### Accés a fitxers F1 d'un CUPS
 
 Cada vegada que es processa una línia d'importació s'emmagatzema la informació
 del CUPS al qual fa referència. Això ens permet accedir des d'un CUPS a tots els
 fitxers F1 (o línies d'importació) que hi fan referència. Veure `Figura 14`
 
-Procediment d'importació
-------------------------
+### Procediment d'importació
 
 Per tal d'importar un fitxer hem d'anar a `Facturació > General > Factures Proveidor > Importacions F1 > Importació fitxers F1`.
 
@@ -173,7 +170,7 @@ de la barra de progrés. Si anem refrescant el formulari podrem veure com es va 
 el progés. En aquest mateix formulari podem veure el nombre de fitxers xmls importats
 i quantes factures s'han creat.
 
-## Reimportacions d'un fitxer
+### Reimportacions d'un fitxer
 
 En alguns casos es pot donar que el fitxer que intentem importar no acaba el procés.
 Això passarà quan alguna de les validacions de nivell "Critical" no es passi correctament
@@ -199,7 +196,20 @@ Això reimportarà el fitxer i tornarà a passar les validacions amb les noves d
 Si aquest cop es passen totes les validacions el fitxer s'importarà correctament.
 Si torna a fallar algúna validació es crearà el nou error.
 
-# Passos que es realitzen en una importació
+
+#### Reimportació massiva
+
+Si es desitja reimportar molts F1 alhora en comptes de fer-ho un a un existeixen 2 opcions:
+
+- Des de el lot de importació utilitzar l'assistent `Reimportar ficheros F1 erróneos`: es reimportaran tots els F1 incorrectes d'aquest lot de importació.
+
+![](_static/f1/wizard_reimportacio_lot.png)
+- Des de el llistat de F1 s'utilitza l'assistent `Reimportar ficheros F1 erróneos`: es reimportaran tots els F1 seleccionats.
+
+![](_static/f1/wizard_reimportacio_llistat.png)
+
+
+### Passos que es realitzen en una importació
 
 En processar un fitxer xml, ja sigui provinent d'un zip o individualment, el
 mòdul realitza les següents accions:
@@ -360,8 +370,8 @@ El camp `actiu` es mostrarà en només lectura quan aquest no es pugi desactivar
 Altrament, es mostrarà modificable si es pot desactivar.
 
 
-Aprovar factures divergents
----------------------------
+### Aprovar factures divergents
+
 
 Per tal d'acceptar la divergència que s'ha produït i donar la factura per
 vàlida, cal visualitzar les factures divergents mitjançant el botó **LListat de
@@ -378,72 +388,63 @@ llistat que estiguin sel·leccionades, o bé totes si no se n'ha sel·leccionat
 cap.
 
 
-## Figures
+### Figures
 
-### Figura 2
+#### Figura 2
  ![](_static/f1/lot_tree.png)
 
   Figura 2: Llistat de lots d'importació.
 
-### Figura 3
+#### Figura 3
 ![](_static/f1/lot_form.png)
 
    Figura 3: Formulari d'un lot d'importació.
 
-### Figura 5
+#### Figura 5
 ![](_static/f1/linies_tree.png)
 
    Figura 5: Llistat de línies d'importació.
 
-### Figura 6
+#### Figura 6
 ![](_static/f1/linies_form.png)
 
    Figura 6: Formulari d'una línia d'importació correcte.
 
-### Figura 7
+#### Figura 7
 ![](_static/f1/factura_tree.png)
 
    Figura 7: Llistat de factures vinculades a la línia d'importació.
 
-### Figura 8
+#### Figura 8
 ![](_static/f1/linies_form_error.png)
 
    Figura 8: Formulari d'errors en la importacio d'una linia.
 
-### Figura 9
+#### Figura 9
 ![](_static/f1/wizard_xml.png)
 
    Figura 9: Importació d'un XML.
 
-### Figura 11
+#### Figura 11
 ![](_static/f1/fact_tree_div.png)
 
    Figura 11: Llistat de factures divergents associades a la línia
    d'importació.
 
-### Figura 12
+#### Figura 12
 ![](_static/f1/fact_tree_div_2.png)
 
    Figura 12: Llistat de factures divergents.
 
-### Figura 13
+#### Figura 13
 ![](_static/f1/fact_aprovar.png)
 
    Figura 13: Aprovar factures divergents
 
-### Figura 14
+#### Figura 14
 ![](_static/f1/cups.png)
 
    Figura 13: Accés a F1's des de CUPS
-
-
-## Importació fitxers Q1 (Revisar)
-
-El mòdul de Switching de lectures permet processar els fitxers XML de
-lectures (Q1), ja sigui agrupats en un sol fitxer zip o individualment.
-
-Aquest document descriu les funcionalitats del mòdul de Switching de lectures.
-
 
 ### Lot d'importació i línies
 
@@ -509,67 +510,6 @@ detallen a continuació.
     `Figura 8`. En aquest cas ens permet reimportar el fitxer xml
     individualment. Es pot veure el wizard que ens apareixerà en la
     `Figura 9`.
-
-### Accés a fitxers Q1 d'un CUPS
-
-Cada vegada que es processa una línia d'importació s'emmagatzema la informació
-del CUPS al qual fa referència. Això ens permet accedir des d'un CUPS a tots
-els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
-10`.
-
-###Figures
-
-### Figura 1
-![](_static/q1/menu_principal.png)
-
-   Figura 1: Ubicació del formulari d'importacions.
-
-### Figura 2
-![](_static/q1/lot_tree.png)
-
-   Figura 2: Llistat de lots d'importació.
-
-### Figura 3
-![](_static/q1/lot_form_inicial.png)
-
-   Figura 3: Formulari d'un lot d'importació.
-
-### Figura 4
-![](_static/q1/wiz_importar_q1.png)
-
-   Figura 4: Importació d'un zip.
-
-### Figura 5
-![](_static/q1/lot_form_importat.png)
-
-   Figura 5:   Llistat de línies d'importació.
-
-### Figura 6
-![](_static/q1/linia_tree_importat.png)
-
-   Figura 6: Llistat de línies d'importació.
-
-### Figura 7
-![](_static/q1/linia_form_correcte.png)
-
-   Figura 7: Formulari d'una línia d'importació correcte.
-
-### Figura 8
-![](_static/q1/linia_form_erroni.png)
-
-   Figura 8: Formulari d'una línia d'importació errònia.
-
-### Figura 9
-![](_static/q1/wiz_importar_xml.png)
-
-   Figura 9: Importació d'un XML.
-
-### Figura 10
-![](_static/q1/cups.png)
-
-   Figura 10: Accés a Q1's des de CUPS
-
-
 
 
 ## Impressió de factures

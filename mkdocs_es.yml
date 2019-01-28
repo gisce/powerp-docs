@@ -61,6 +61,7 @@ nav:
         - Operaciones: base/GestionATR/operaciones.md
         - Notificaciones: base/GestionATR/notificaciones.md
         - Automatitzación de procesos: base/GestionATR/automatizacion.md
+        - Portal ATR: base/GestionATR/atrhub.md
         - Apéndice: base/GestionATR/apendice.md
     - SOA: base/soa.md
   - Distribuidora:
@@ -76,6 +77,7 @@ nav:
       - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - CUPS: distri/cups.md
+    - Posiciones: distri/posiciones.md
     - Pólizas: distri/polizas.md
     - Contadores: distri/contadores.md
     - Gestión ATR: distri/atr.md
@@ -133,6 +135,8 @@ nav:
     - Calidad individual: distri/calidad_individual.md
   - Comercializadora:
     - Inicio: comer/index.md
+    - Procesos:
+      - Proceso de Facturación: comer/processos_facturacio.md
     - CUPS: comer/cups.md
     - Contratos: comer/contratos.md
     - Facturación: comer/facturacion.md
