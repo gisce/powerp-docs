@@ -54,6 +54,13 @@ llistat a:
 
 ![](_static/medidas/factures_cch_no_disponible.png)
 
+Per forçar el fix_cch, es pot utilitzar l'assistent FIX CCH Fact, seleccionant
+totes les factures que calguin, fer clic sobre **Acció > FIX CCH FACT again**
+
+![](_static/medidas/asistent_fix_cch_fact.png)
+
+
+
 ### Telemesura
 
 Les dades de telemesura ens poden venir de diversos orígens, genèricament es
@@ -121,3 +128,24 @@ agregacions. Tot generant els fitxers, és quan s'aniran omplint les dates i el
 consum d'aquestes.
 
 ![](_static/medidas/mesures_ree.png)
+
+Una vegada finalitzi la generació de cada fitxer de mesures, aquest vindrá com
+arxiu adjunt al període de mesures. Es pot accedir als fitxers directament
+per la llista de fitxers del període de mesures, situat a la dreta de la
+pantalla com la imatge que segueix, o utilitzant el botó **Adjunts**
+
+![](_static/medidas/adjunts.png)
+
+## Validacions fitxers REE
+
+Una vegada generats aquests fitxers, es pot validar que l'energía imputada en
+cadascún d'ells sigui coherent. El CLINME té o hauría de tenir a nivell de CUPS
+tota l'energía imputada en el CLMAG i el CLMAG5A, així que es bó, realitzar una
+comprovació de que està repartit equitativament. Aquest procés de validació
+agrega l'energía del CLINME i la compara amb el CLMAG o el CLMAG5A segons tipus
+de punt (ex: els tipus 3 estarán en el CLMAG). Per tant l'energía total de cada
+agregació hauría de ser la mateixa tant en el CLINME com en el CLMAG/CLMAG5A.
+Per realitzar aquesta validació, s'utilitza la pestanya
+**"Validacions Fitxers REE"**, i el botó **"Comprovar consums"**
+
+![](_static/medidas/validacions_fitxers.png)
