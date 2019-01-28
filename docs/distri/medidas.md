@@ -32,7 +32,7 @@ fitxers de mesures
 Abans de generar els fitxers de mesures, cal comprovar que les dades a incloure
 en aquests, estan preparades. Els orígens de dades són els que segueixen:
 
-### Telegestió:
+### Telegestió
 corbes provinents de contadors telegestionats, corbas reals, que s'hauran
 d'entregar sense forats.
 Aquestes corbes passen per un procés de validació i ajustament.
@@ -54,7 +54,7 @@ llistat a:
 
 ![](_static/medidas/factures_cch_no_disponible.png)
 
-### Telemesura:
+### Telemesura
 
 Les dades de telemesura ens poden venir de diversos orígens, genèricament es
 carreguen les corbes de telemesura mitjançant fitxers llegits directament del
@@ -62,7 +62,7 @@ comptador per tal de tenir la corba real. Aquesta explicació bé recollida en u
 altre apartat d'aquest manual. És important carregar aquestes corbes el més
 aviat millor.
 
-### Perfil:
+### Perfil
 Quan no es possible disposar de cap dels dos orígens anteriors, cal perfilar
 una corba horària mitjançant els coeficients que publica mensualment
 REE [Perfils de consum](https://www.ree.es/es/actividades/operacion-del-sistema-electrico/medidas-electricas)
