@@ -33,7 +33,7 @@ Abans de generar els fitxers de mesures, cal comprovar que les dades a incloure
 en aquests, estan preparades. Els orígens de dades són els que segueixen:
 
 ### Telegestió
-corbes provinents de contadors telegestionats, corbas reals, que s'hauran
+Són corbes provinents de contadors telegestionats, corbes reals, que s'hauran
 d'entregar sense forats.
 Aquestes corbes passen per un procés de validació i ajustament.
 
