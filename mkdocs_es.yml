@@ -77,7 +77,6 @@ nav:
       - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - CUPS: distri/cups.md
-    - Posiciones: distri/posiciones.md
     - Pólizas: distri/polizas.md
     - Contadores: distri/contadores.md
     - Gestión ATR: distri/atr.md
@@ -121,6 +120,7 @@ nav:
       - Instalaciones RE: distri/re.md
       - Expedientes: distri/expedientes.md
       - Despachos: distri/despachos.md
+      - Posiciones: distri/posiciones.md
       - Sincronización CUPS: distri/sincronizacion_cups.md
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md

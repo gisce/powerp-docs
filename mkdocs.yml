@@ -103,6 +103,7 @@ nav:
       - Instal·lacions RE: distri/re.md
       - Expedients: distri/expedientes.md
       - Despatxos: distri/despachos.md
+      - Posicions: distri/posiciones.md
       - Sincronització CUPS: distri/sincronizacion_cups.md
       - CINI - Generació Automàtica: distri/act_cinis.md
       - TI - Generació Automàtica: distri/act_tis.md
@@ -114,7 +115,6 @@ nav:
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Mesures: distri/medidas.md
-    - Posicions: distri/posiciones.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
