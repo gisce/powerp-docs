@@ -135,22 +135,22 @@ nav:
     - Telemedida: distri/telemedida.md
   - Comercializadora:
     - Inicio: comer/index.md
-    - Procesos:
-      - Proceso de Facturación: comer/processos_facturacio.md
-    - CUPS: comer/cups.md
-    - Contratos: comer/contratos.md
-    - Facturación: comer/facturacion.md
-    - Gestión impagados: comer/gestion_impago.md
-    - Gestión ATR: comer/atr.md
-    - Curvas i CCH: comer/curvas.md
-    - SIPS: comer/sips.md
-    - SOA: comer/soa.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
       - Tasas Municipales: comer/adm-pub/tasas_municipales.md
+    - Contratos: comer/contratos.md
+    - CUPS: comer/cups.md
+    - Curvas i CCH: comer/curvas.md
+    - Facturación: comer/facturacion.md
+    - Gestión ATR: comer/atr.md
+    - Gestión impagados: comer/gestion_impago.md
+    - SIPS: comer/sips.md
+    - SOA: comer/soa.md
+    - Procesos:
+      - Proceso de Facturación: comer/processos_facturacio.md
   - Facturación:
     - Validaciones: facturacion/validaciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
