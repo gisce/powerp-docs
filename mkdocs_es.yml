@@ -152,10 +152,10 @@ nav:
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
   - Facturación:
-    - Validaciones: facturacion/validaciones.md
+    - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
     - Gestión de pagaments i cobraments: facturacion/cobros.md
     - Gestión de lectures: facturacion/lecturas.md
     - Lotes: facturacion/lotes.md
     - Tipos de facturas: facturacion/tipos_facturas.md
-    - Acciones genéricas: facturacion/acciones.md
+    - Validaciones: facturacion/validaciones.md
