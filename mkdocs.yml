@@ -63,28 +63,6 @@ nav:
     - SOA: base/soa.md
   - Distribuidora:
     - Inici: distri/index.md
-    - SOA: distri/soa.md
-    - Telegestió: distri/telegestion.md
-    - Telemesura: distri/telemedida.md
-    - Manual d'ús de TPL - Índex: distri/tpl.md
-    - Manual d'ús de TPL:
-      - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
-      - Procés de treball: distri/tpl/proceso_de_trabajo.md
-      - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
-      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
-      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
-    - CUPS: distri/cups.md
-    - Posicions: distri/posiciones.md
-    - Pòlisses: distri/polizas.md
-    - Comptadors: distri/contadores.md
-    - Gestió ATR: distri/atr.md
-    - Reles: distri/reles.md
-    - Facturació: distri/facturacion.md
-    - Facturació:
-      - Peatges: distri/facturacion_peajes.md
-      - Règim especial: distri/facturacion_re.md
-      - Liquidació: distri/liquidacion_peajes.md
-      - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
@@ -99,9 +77,16 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
-    - Mesures: distri/medidas.md
-    - Perfils: distri/perfiles.md
+    - Comptadors: distri/contadores.md
+    - CUPS: distri/cups.md
     - Descàrrecs: distri/descargos.md
+    - Facturació: distri/facturacion.md
+    - Facturació:
+      - Peatges: distri/facturacion_peajes.md
+      - Règim especial: distri/facturacion_re.md
+      - Liquidació: distri/liquidacion_peajes.md
+      - Contractació: distri/facturacion_contratacion.md
+    - Gestió ATR: distri/atr.md
     - GIS:
       - GIS Web:
         - Visor web: gis/webgis.md
@@ -121,6 +106,17 @@ nav:
       - Sincronització CUPS: distri/sincronizacion_cups.md
       - CINI - Generació Automàtica: distri/act_cinis.md
       - TI - Generació Automàtica: distri/act_tis.md
+    - Manual d'ús de TPL - Índex: distri/tpl.md
+    - Manual d'ús de TPL:
+      - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
+      - Procés de treball: distri/tpl/proceso_de_trabajo.md
+      - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
+      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
+      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
+    - Mesures: distri/medidas.md
+    - Posicions: distri/posiciones.md
+    - Pòlisses: distri/polizas.md
+    - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
@@ -130,6 +126,10 @@ nav:
       - Generació d'incidències: distri/calidad/generacion_incidencias.md
       - Obtenció de resultats: distri/calidad/obtencion_resultados.md
     - Qualitat individual: distri/calidad_individual.md
+    - Reles: distri/reles.md
+    - SOA: distri/soa.md
+    - Telegestió: distri/telegestion.md
+    - Telemesura: distri/telemedida.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - Processos:
