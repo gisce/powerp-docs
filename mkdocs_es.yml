@@ -45,24 +45,24 @@ extra_css:
 nav:
   - Home: index.md
   - Base:
-    - Clientes y Empresas: base/partners.md
-    - PowerEmail: base/poweremail.md
-    - Atención al Cliente: base/atc.md
-    - Gestión de pólizas: base/polizas.md
-    - Gestión de contadores: base/contadores.md
-    - Equipos de telecomunicación: base/telecom.md
-    - Revisiones internas: base/revisiones.md
     - Administración Pública:
-        - AEAT: base/AdministracionPublica/aeat.md
+      - AEAT: base/AdministracionPublica/aeat.md
+    - Atención al Cliente: base/atc.md
+    - Clientes y Empresas: base/partners.md
+    - Equipos de telecomunicación: base/telecom.md
     - Gestión ATR:
-        - Introducción y conceptos: base/GestionATR/atr.md
-        - Funcionamiento general: base/GestionATR/funcionamiento.md
-        - Generación y envío de XMLs: base/GestionATR/gestionxml.md
-        - Operaciones: base/GestionATR/operaciones.md
-        - Notificaciones: base/GestionATR/notificaciones.md
-        - Automatitzación de procesos: base/GestionATR/automatizacion.md
-        - Portal ATR: base/GestionATR/atrhub.md
-        - Apéndice: base/GestionATR/apendice.md
+      - Introducción y conceptos: base/GestionATR/atr.md
+      - Funcionamiento general: base/GestionATR/funcionamiento.md
+      - Generación y envío de XMLs: base/GestionATR/gestionxml.md
+      - Operaciones: base/GestionATR/operaciones.md
+      - Notificaciones: base/GestionATR/notificaciones.md
+      - Automatitzación de procesos: base/GestionATR/automatizacion.md
+      - Portal ATR: base/GestionATR/atrhub.md
+      - Apéndice: base/GestionATR/apendice.md
+    - Gestión de contadores: base/contadores.md
+    - Gestión de pólizas: base/polizas.md
+    - PowerEmail: base/poweremail.md
+    - Revisiones internas: base/revisiones.md
     - SOA: base/soa.md
   - Distribuidora:
     - Inicio: distri/index.md
