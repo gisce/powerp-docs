@@ -61,6 +61,10 @@ nav:
     - PowerEmail: base/poweremail.md
     - Revisions internes: base/revisiones.md
     - SOA: base/soa.md
+    - Correos:
+        - Introducció i conceptes: base/correos-esp/correos.md
+        - Integració i funcionament: base/correos-esp/correos-funcionament-integracio.md
+        - Format de fitxers: base/correos-esp/formats-fitxers.md
   - Distribuidora:
     - Inici: distri/index.md
     - Administració Pública:
