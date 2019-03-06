@@ -87,6 +87,7 @@ nav:
       - Liquidació: distri/liquidacion_peajes.md
       - Contractació: distri/facturacion_contratacion.md
     - Gestió ATR: distri/atr.md
+    - Gestió d'Obres: distri/obras.md
     - GIS:
       - GIS Web:
         - Visor web: gis/webgis.md
