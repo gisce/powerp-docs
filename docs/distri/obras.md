@@ -86,11 +86,28 @@ que surten del magatzem i l'import dels productes que retornen.
 
 ### Gestió de costs de Treballs
 
+En la pestanya de gestió de Treballs (Tasques) podem visualitzar les hores
+treballades per treballador en un llistat de treballs realitzats.
+
+De forma més genèrica, podem veure l'estat de les tasques de la obra. Que permet
+veure el total d'hores previstes i les hores invertides per cada feina desglossada.
+
 ![](_static/obras/tasques.png)
+
+Per entrar les hores, es pot utilitzar l'assistent d'entrar hores
+(mitjançant el botó "Entrar Hores") o bé, accedir a les tasques de la obra
+mitjançant l'enllaç lateral i des del formulari de la tasca,
+introduïr les hores pertinents.
+
+!!! Info "Nota"
+    Per defecte, el preu hora serà el que tingui configurat l'usuari que realitza
+    la tasca (modificable _a posteriori_)
 
 ### Gestió de costs de Provïdors
 
 En la pestanya de Proveïdors es troba un enllaç a factures de proveïdor.
+
+![](_static/obras/facturas.png)
 
 Cal introduïr manualment les dades de les factures.
 El més important és introduïr els costs de les diferents línies (o una sola
