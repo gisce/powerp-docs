@@ -1,0 +1,23 @@
+#http://www.webgraphviz.com/
+
+digraph G {
+    orientation = portrait;
+    default_fontsize = 15;
+    span_height = 50;
+    node_width = 150;
+    node_height = 50;
+
+    Esborrany [label = "Esborrany"];
+    Oberta [label = "Oberta"];
+    Pendent [label = "Pendent"];
+    Finalitzada [label = "Finalitzada"];
+    Cancelada [label = "Cancelada"];
+
+    Esborrany -> Oberta [label = "Obrir"];
+    Oberta -> Pendent [label = "Pendent"];
+    Pendent -> Finalitzada [label = "Finalitzar"];
+    Finalitzada -> Oberta [label = "Re-obrir"];
+    Oberta -> Cancelada [label = "Cancelar"];
+    Pendent -> Cancelada [label = "Cancelar", folded];
+    Cancelada -> Esborrany [label = "Esborrany"];
+}
