@@ -332,6 +332,12 @@ Per tal d'actualitzar les dades del visor web s'ha de seguir el següent procés
 
     ![](_static/update/carrega_shapes_background.png)
 
+    !!! Tip "Consell"
+        Si després de carregar els shapes, detectem que les imatges del GIS surten
+        desactualitzades i/o que no es mostren correctament les últimes refomes
+        entrades, cal eliminar el caché del navegador.
+
+    ![](_static/update/borrar_cache_firefox.gif)
 
 5. Desactivar el mode actualització:
 
