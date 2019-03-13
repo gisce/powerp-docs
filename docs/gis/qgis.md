@@ -3,11 +3,11 @@
 El plugin de Qgisce usa el mateix usuari i contrasenya que el ERP.
 Per configurar-ho hem de:
 
-1. Obrir la finestra de configuracio del plugin, ja sigui prement en al logo de la cantonada inferior dreta o be mitjança el menu a `Connectors>Qgisce>Configuració`
+1. Obrir la finestra de configuració del plugin, ja sigui prement en al logo de la cantonada inferior dreta o be mitjança el menu a `Connectors>Qgisce>Configuració`
 2. Anar a ĺa primera pestanya de la finestra(Configuració de la conexió amb l'ERP)
 3. Canviar les dades
-4. Premer el botó de `Connectar` per provar les dades
-5. Premer el botó de `Desa`
+4. Premer el botó de `Connectar` per comprovar que les dades son correctes
+5. Premer el botó de `Desa` per guardar les dades
 
 ![1](_static/qgis/config_user_qgisce.png)
 
