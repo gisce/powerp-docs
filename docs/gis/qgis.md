@@ -1,6 +1,6 @@
 # Configuració del usuari
 
-El plugin de Qgisce suar el mateix usuari i contrasenya que el ERP.
+El plugin de Qgisce usa el mateix usuari i contrasenya que el ERP.
 Per configurar-ho hem de:
 1. Obrir la finestra de configuracio del plugin, ja sigui prement en al logo de la cantonada inferior dreta o be mitjança el menu a `Connectors>Qgisce>Configuració`
 2. Anar a ĺa primera pestanya de la finestra(Configuració de la conexió amb l'ERP)
