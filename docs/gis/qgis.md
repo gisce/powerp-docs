@@ -1,27 +1,14 @@
-# Introduccio 
-Qgis es un programa per el la gestió, consulta i anàlisis de dades GIS.
-El seu funcionament pot ser estès mitjançant plugins.
+# Configuració del usuari
 
-Es pot consultar el manual d'usuari de QGIS a la següent adreça:
-[http://www.qgis.org/es/docs/index.html](http://www.qgis.org/es/docs/index.html)
+El plugin de Qgisce suar el mateix usuari i contrasenya que el ERP.
+Per configurar-ho hem de:
+1. Obrir la finestra de configuracio del plugin, ja sigui prement en al logo de la cantonada inferior dreta o be mitjança el menu a `Connectors>Qgisce>Configuració`
+2. Anar a ĺa primera pestanya de la finestra(Configuració de la conexió amb l'ERP)
+3. Canviar les dades
+4. Premer el botó de `Connectar` per provar les dades
+5. Premer el botó de `Desa`
 
-
-# Instal·lació
-Per instal·lar el plugin de Qgis per accedir al Giscegis s'ha d'anar a:
-
-1. Connectors
-2. Gestiona i instal·la connectors
-![](_static/connectors.png)
-
-3. Anar a la secció de Configuracio
-4. Activar la opció "Comprova si hi ha actualitzacions al arrancar"
-5. Afegir un nou repositori de connectors amb les següents dades:
-    * Nom:Gisce
-    * URL: https://qgis-plugins.gisce.net/plugins/plugins.xml
-    * Activar la casella d'activat
-6. Tornar a carregar tots els rositoris mitjançant el boto
-7. Anar a la secció de "Tot" i buscar el plugin "TileLayer Plugin" i instal·lar-lo
-8. Buscar i instal·lar el plugin de "Giscegis"
+![1](_static/qgis/config_user_qgisce.png)
 
 # Canviar escala
 El QGIS ens permet canviar l'escala del visor. Aixo ho podem fer mitjançant següent el cuadre de text de la part inferior
@@ -44,19 +31,6 @@ Per configurar l'accés al servidor de Giscegis s'han de fer els següents passo
 
     !!! Info "Nota"
         El mapa s'exportara a la mateixa escala que hi ha al visor, per canviar la escala del visor veure el seguent [enllaç](#canviar-escala)
-
-# Actualitzar el plugin de Giscegis
-
-Quan hi hagi una actualitzacio del plugin del Qgis aquest ens informara.
-    ![1](_static/qgis_update.png)
-    
-
-Per actualitzar el plugin hem de:
-
-1. Clickar sobre l'enllaç
-2. Selecionar el plugin de Giscegis
-3. Premer actualtizar tot
-    ![1](_static/update_2.png)
 
 # Exportacio a PDF
 
