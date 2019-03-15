@@ -47,3 +47,16 @@ Aquest ens obrira un menu que ens permet escollir:
 ![](_static/qgis/export_menu.png)
 
 Un cop escollides les opcions premem guardar i podrem escollir on guardar el planell.
+
+# Veure Google Street View a Qgis
+
+1. Anar a `Connectors>Gestiona i instal·la connectors`
+2. Buscar `Street View` al llistat de plugins
+3. Instal·lar plugin que es diu `Street View`
+
+Un cop instal·lat el plugin, apareixera al menu la següent imatge:
+
+![](_static/qgis/streetview.png)
+
+
+Premer sobre el botó i despres sobre el punt del mapa on es vol veure Street View
