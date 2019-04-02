@@ -4,15 +4,58 @@
 
 Les llistes de preus....
 
+### Asistent per carregar llistes de preus
+
+Mitjançant l'assistent "`Create pricelist from file`" situat al menú **Productes -> Tarifes -> Create pricelist from file**
+es pot importar un fitxer CSV per tal de carregar automàticament llistes de preus i actualitzar-les creant noves versions.
+
+
+
+![](_static/llistes_preus/asistent.png)
+
+L'asistent te 3 camps:
+
+- **Fitxer de la tarifa**: fitcher csv a carregar. Conté una linia per cada tarifa d'acces a la qual se li volen definir els preus en la versio de la llista de preus.
+- **Data inici**: data inici de la versió de la llista de preus a actualitzar/crear.
+- **Data final**: data final de la versió de la llista de preus a actualitzar/crear. Si es deixa buit, la versió creada no tindrà data final.
+
+
+#### Format del fitxer CSV
+El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següents columnes:
+
+- **Tarifa d'Accés**: nom de la tarifa d'accés per la qual es crearan les regles que en definiran els preus. Es crearà una regla per cada periode d'aquesta tarifa.
+- **Llista de preus**: nom de la llista de preus a crear/actualitzar. El ERP buscarà una llista de preus amb aquest nom, si no la troba la crearà. Després buscarà una versió d'aquesta llista que comenci en la data inici introduïda en l'assistent. Si no la troba també la crearà. Totes les regles creades per la tarifa d'accés indicada s'afegiran en aquesta versió. A més, es farà que la tarifa d'acces sigui compatible amb aquesta llista de preus.
+- **Llista de preus base**: nom de una llista de preus existent en la que basar-se. Les regles que es generin tindran com a llista de preus base aquesta llista. Si es deixa buit, les regles que es crein no es basaran en cap llista, simplement tindran el preu fixe indicat en el fitxer.
+- Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada amb el preu que es vol cobrar. Han d'estar ordenats creixentment (p1;p2;...) indicant primer els de energia i després els de potencia.
+
+##### Exemples
+
+- **Exemple** de una linea del fitxer **sense tarifa base (preu fix)**:
+    - `2.0A;Tarifa Fija Enero;;0,1326;38,043426`
+    
+    Aixó generaria:
+
+![](_static/llistes_preus/exemple_preufix.png)
+![](_static/llistes_preus/exemple_preufix_pot.png)
+
+- **Exemple** de una linea del fitxer **amb tarifa base**:
+    - `2.0A;Tarifa Fija Enero;TARIFAS ELECTRICIDAD;0,1326;38,043426`
+    
+    Aixó generaria:
+
+![](_static/llistes_preus/exemple_base.png)
+![](_static/llistes_preus/exemple_base_pot.png)
+
+
+
 
 ## Pool de lectures
 
 ## Importació fitxers F1
 
 
-El mòdul de Switching permet, de moment, processar els fitxers XML de
-facturació, ja sigui agrupats en un sol fitxer zip o individualment. Noves
-funcionalitats s'aniran incorporant properament.
+El mòdul de Switching permet, processar els fitxers XML de
+facturació, ja sigui agrupats en un sol fitxer zip o individualment.
 
 Aquest document descriu les funcionalitats del mòdul de Switching de facturació.
 
@@ -98,15 +141,13 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
     Ens mostrarà aquelles factures que han resultat ser divergents respecte la
     facturada per l'ERP.  A continuació s'explicarà el concepte de divergència.
 
-Accés a fitxers F1 d'un CUPS
-----------------------------
+### Accés a fitxers F1 d'un CUPS
 
 Cada vegada que es processa una línia d'importació s'emmagatzema la informació
 del CUPS al qual fa referència. Això ens permet accedir des d'un CUPS a tots els
 fitxers F1 (o línies d'importació) que hi fan referència. Veure `Figura 14`
 
-Procediment d'importació
-------------------------
+### Procediment d'importació
 
 Per tal d'importar un fitxer hem d'anar a `Facturació > General > Factures Proveidor > Importacions F1 > Importació fitxers F1`.
 
@@ -129,7 +170,7 @@ de la barra de progrés. Si anem refrescant el formulari podrem veure com es va 
 el progés. En aquest mateix formulari podem veure el nombre de fitxers xmls importats
 i quantes factures s'han creat.
 
-## Reimportacions d'un fitxer
+### Reimportacions d'un fitxer
 
 En alguns casos es pot donar que el fitxer que intentem importar no acaba el procés.
 Això passarà quan alguna de les validacions de nivell "Critical" no es passi correctament
@@ -155,7 +196,20 @@ Això reimportarà el fitxer i tornarà a passar les validacions amb les noves d
 Si aquest cop es passen totes les validacions el fitxer s'importarà correctament.
 Si torna a fallar algúna validació es crearà el nou error.
 
-# Passos que es realitzen en una importació
+
+#### Reimportació massiva
+
+Si es desitja reimportar molts F1 alhora en comptes de fer-ho un a un existeixen 2 opcions:
+
+- Des de el lot de importació utilitzar l'assistent `Reimportar ficheros F1 erróneos`: es reimportaran tots els F1 incorrectes d'aquest lot de importació.
+
+![](_static/f1/wizard_reimportacio_lot.png)
+- Des de el llistat de F1 s'utilitza l'assistent `Reimportar ficheros F1 erróneos`: es reimportaran tots els F1 seleccionats.
+
+![](_static/f1/wizard_reimportacio_llistat.png)
+
+
+### Passos que es realitzen en una importació
 
 En processar un fitxer xml, ja sigui provinent d'un zip o individualment, el
 mòdul realitza les següents accions:
@@ -316,8 +370,8 @@ El camp `actiu` es mostrarà en només lectura quan aquest no es pugi desactivar
 Altrament, es mostrarà modificable si es pot desactivar.
 
 
-Aprovar factures divergents
----------------------------
+### Aprovar factures divergents
+
 
 Per tal d'acceptar la divergència que s'ha produït i donar la factura per
 vàlida, cal visualitzar les factures divergents mitjançant el botó **LListat de
@@ -334,72 +388,63 @@ llistat que estiguin sel·leccionades, o bé totes si no se n'ha sel·leccionat
 cap.
 
 
-## Figures
+### Figures
 
-### Figura 2
+#### Figura 2
  ![](_static/f1/lot_tree.png)
 
   Figura 2: Llistat de lots d'importació.
 
-### Figura 3
+#### Figura 3
 ![](_static/f1/lot_form.png)
 
    Figura 3: Formulari d'un lot d'importació.
 
-### Figura 5
+#### Figura 5
 ![](_static/f1/linies_tree.png)
 
    Figura 5: Llistat de línies d'importació.
 
-### Figura 6
+#### Figura 6
 ![](_static/f1/linies_form.png)
 
    Figura 6: Formulari d'una línia d'importació correcte.
 
-### Figura 7
+#### Figura 7
 ![](_static/f1/factura_tree.png)
 
    Figura 7: Llistat de factures vinculades a la línia d'importació.
 
-### Figura 8
+#### Figura 8
 ![](_static/f1/linies_form_error.png)
 
    Figura 8: Formulari d'errors en la importacio d'una linia.
 
-### Figura 9
+#### Figura 9
 ![](_static/f1/wizard_xml.png)
 
    Figura 9: Importació d'un XML.
 
-### Figura 11
+#### Figura 11
 ![](_static/f1/fact_tree_div.png)
 
    Figura 11: Llistat de factures divergents associades a la línia
    d'importació.
 
-### Figura 12
+#### Figura 12
 ![](_static/f1/fact_tree_div_2.png)
 
    Figura 12: Llistat de factures divergents.
 
-### Figura 13
+#### Figura 13
 ![](_static/f1/fact_aprovar.png)
 
    Figura 13: Aprovar factures divergents
 
-### Figura 14
+#### Figura 14
 ![](_static/f1/cups.png)
 
    Figura 13: Accés a F1's des de CUPS
-
-
-## Importació fitxers Q1 (Revisar)
-
-El mòdul de Switching de lectures permet processar els fitxers XML de
-lectures (Q1), ja sigui agrupats en un sol fitxer zip o individualment.
-
-Aquest document descriu les funcionalitats del mòdul de Switching de lectures.
-
 
 ### Lot d'importació i línies
 
@@ -465,67 +510,6 @@ detallen a continuació.
     `Figura 8`. En aquest cas ens permet reimportar el fitxer xml
     individualment. Es pot veure el wizard que ens apareixerà en la
     `Figura 9`.
-
-### Accés a fitxers Q1 d'un CUPS
-
-Cada vegada que es processa una línia d'importació s'emmagatzema la informació
-del CUPS al qual fa referència. Això ens permet accedir des d'un CUPS a tots
-els fitxers Q1 (o línies d'importació) que hi fan referència. Veure `Figura
-10`.
-
-###Figures
-
-### Figura 1
-![](_static/q1/menu_principal.png)
-
-   Figura 1: Ubicació del formulari d'importacions.
-
-### Figura 2
-![](_static/q1/lot_tree.png)
-
-   Figura 2: Llistat de lots d'importació.
-
-### Figura 3
-![](_static/q1/lot_form_inicial.png)
-
-   Figura 3: Formulari d'un lot d'importació.
-
-### Figura 4
-![](_static/q1/wiz_importar_q1.png)
-
-   Figura 4: Importació d'un zip.
-
-### Figura 5
-![](_static/q1/lot_form_importat.png)
-
-   Figura 5:   Llistat de línies d'importació.
-
-### Figura 6
-![](_static/q1/linia_tree_importat.png)
-
-   Figura 6: Llistat de línies d'importació.
-
-### Figura 7
-![](_static/q1/linia_form_correcte.png)
-
-   Figura 7: Formulari d'una línia d'importació correcte.
-
-### Figura 8
-![](_static/q1/linia_form_erroni.png)
-
-   Figura 8: Formulari d'una línia d'importació errònia.
-
-### Figura 9
-![](_static/q1/wiz_importar_xml.png)
-
-   Figura 9: Importació d'un XML.
-
-### Figura 10
-![](_static/q1/cups.png)
-
-   Figura 10: Accés a Q1's des de CUPS
-
-
 
 
 ## Impressió de factures

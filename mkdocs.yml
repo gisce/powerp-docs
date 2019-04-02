@@ -42,48 +42,28 @@ extra_css:
 nav:
   - Home: index.md
   - Base:
-    - Clients i Empreses: base/partners.md
-    - Ubicacions: base/ubicaciones.md
-    - PowerEmail: base/poweremail.md
-    - Atenció al Client: base/atc.md
-    - Gestió de pòlisses: base/polizas.md
-    - Gestió de comptadors: base/contadores.md
-    - Equips de telecomunicació: base/telecom.md
-    - Revisions internes: base/revisiones.md
     - Administració Pública:
-        - AEAT: base/AdministracionPublica/aeat.md
+      - AEAT: base/AdministracionPublica/aeat.md
+    - Atenció al Client: base/atc.md
+    - Clients i Empreses: base/partners.md
+    - Equips de telecomunicació: base/telecom.md
     - Gestió ATR:
-        - Introducció i conceptes: base/GestionATR/atr.md
-        - Funcionament general: base/GestionATR/funcionamiento.md
-        - Generació i enviament de XMLs: base/GestionATR/gestionxml.md
-        - Operacions: base/GestionATR/operaciones.md
-        - Notificacions: base/GestionATR/notificaciones.md
-        - Automatització de prosessos: base/GestionATR/automatizacion.md
-        - Apèndix: base/GestionATR/apendice.md
+      - Introducció i conceptes: base/GestionATR/atr.md
+      - Funcionament general: base/GestionATR/funcionamiento.md
+      - Generació i enviament de XMLs: base/GestionATR/gestionxml.md
+      - Operacions: base/GestionATR/operaciones.md
+      - Notificacions: base/GestionATR/notificaciones.md
+      - Automatització de prosessos: base/GestionATR/automatizacion.md
+      - Portal ATR: base/GestionATR/atrhub.md
+      - Apèndix: base/GestionATR/apendice.md
+    - Gestió de comptadors: base/contadores.md
+    - Gestió de pòlisses: base/polizas.md
+    - PowerEmail: base/poweremail.md
+    - Revisions internes: base/revisiones.md
     - SOA: base/soa.md
+    - Ubicacions: base/ubicaciones.md
   - Distribuidora:
     - Inici: distri/index.md
-    - SOA: distri/soa.md
-    - Telegestió: distri/telegestion.md
-    - Telemesura: distri/telemedida.md
-    - Manual d'ús de TPL - Índex: distri/tpl.md
-    - Manual d'ús de TPL:
-      - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
-      - Procés de treball: distri/tpl/proceso_de_trabajo.md
-      - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
-      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
-      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
-    - CUPS: distri/cups.md
-    - Pòlisses: distri/polizas.md
-    - Comptadors: distri/contadores.md
-    - Gestió ATR: distri/atr.md
-    - Reles: distri/reles.md
-    - Facturació: distri/facturacion.md
-    - Facturació:
-      - Peatges: distri/facturacion_peajes.md
-      - Règim especial: distri/facturacion_re.md
-      - Liquidació: distri/liquidacion_peajes.md
-      - Contractació: distri/facturacion_contratacion.md
     - Administració Pública:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
@@ -98,8 +78,16 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
-    - Perfils: distri/perfiles.md
+    - Comptadors: distri/contadores.md
+    - CUPS: distri/cups.md
     - Descàrrecs: distri/descargos.md
+    - Facturació: distri/facturacion.md
+    - Facturació:
+      - Peatges: distri/facturacion_peajes.md
+      - Règim especial: distri/facturacion_re.md
+      - Liquidació: distri/liquidacion_peajes.md
+      - Contractació: distri/facturacion_contratacion.md
+    - Gestió ATR: distri/atr.md
     - GIS:
       - GIS Web:
         - Visor web: gis/webgis.md
@@ -116,9 +104,20 @@ nav:
       - Instal·lacions RE: distri/re.md
       - Expedients: distri/expedientes.md
       - Despatxos: distri/despachos.md
+      - Posicions: distri/posiciones.md
       - Sincronització CUPS: distri/sincronizacion_cups.md
       - CINI - Generació Automàtica: distri/act_cinis.md
       - TI - Generació Automàtica: distri/act_tis.md
+    - Manual d'ús de TPL - Índex: distri/tpl.md
+    - Manual d'ús de TPL:
+      - Requeriments del sistema i instal·lació: distri/tpl/requisitos.md
+      - Procés de treball: distri/tpl/proceso_de_trabajo.md
+      - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
+      - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
+      - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
+    - Mesures: distri/medidas.md
+    - Pòlisses: distri/polizas.md
+    - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
     - Qualitat de servei:
       - Termes i Definicions: distri/calidad/terminos_y_definicion.md
@@ -128,27 +127,33 @@ nav:
       - Generació d'incidències: distri/calidad/generacion_incidencias.md
       - Obtenció de resultats: distri/calidad/obtencion_resultados.md
     - Qualitat individual: distri/calidad_individual.md
+    - Reles: distri/reles.md
+    - SOA: distri/soa.md
+    - Telegestió: distri/telegestion.md
+    - Telemesura: distri/telemedida.md
   - Comercialitzadora:
     - Inici: comer/index.md
-    - CUPS: comer/cups.md
-    - Contractes: comer/contratos.md
-    - Facturació: comer/facturacion.md
-    - Gestió impagats: comer/gestion_impago.md
-    - Gestió ATR: comer/atr.md
-    - Corbes i CCH: comer/curvas.md
-    - SIPS: comer/sips.md
-    - SOA: comer/soa.md
     - Administració Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
       - Taxes Municipals: comer/adm-pub/tasas_municipales.md
+    - Contractes: comer/contratos.md
+    - Corbes i CCH: comer/curvas.md
+    - CUPS: comer/cups.md
+    - Facturació: comer/facturacion.md
+    - Gestió ATR: comer/atr.md
+    - Gestió impagats: comer/gestion_impago.md
+    - SIPS: comer/sips.md
+    - SOA: comer/soa.md
+    - Processos:
+      - Procés de Facturació: comer/processos_facturacio.md
   - Facturació:
-    - Validacions: facturacion/validaciones.md
+    - Accions genèriques: facturacion/acciones.md
     - Gestió de canvi d'any: facturacion/cambio_ano.md
-    - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Gestió de lectures: facturacion/lecturas.md
+    - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Lots: facturacion/lotes.md
     - Tipus de factures: facturacion/tipos_facturas.md
-    - Accions genèriques: facturacion/acciones.md
+    - Validacions: facturacion/validaciones.md

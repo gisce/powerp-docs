@@ -45,48 +45,28 @@ extra_css:
 nav:
   - Home: index.md
   - Base:
-    - Clientes y Empresas: base/partners.md
-    - Ubicaciones: base/ubicaciones.md
-    - PowerEmail: base/poweremail.md
-    - Atención al Cliente: base/atc.md
-    - Gestión de pólizas: base/polizas.md
-    - Gestión de contadores: base/contadores.md
-    - Equipos de telecomunicación: base/telecom.md
-    - Revisiones internas: base/revisiones.md
     - Administración Pública:
-        - AEAT: base/AdministracionPublica/aeat.md
+      - AEAT: base/AdministracionPublica/aeat.md
+    - Atención al Cliente: base/atc.md
+    - Clientes y Empresas: base/partners.md
+    - Equipos de telecomunicación: base/telecom.md
     - Gestión ATR:
-        - Introducción y conceptos: base/GestionATR/atr.md
-        - Funcionamiento general: base/GestionATR/funcionamiento.md
-        - Generación y envío de XMLs: base/GestionATR/gestionxml.md
-        - Operaciones: base/GestionATR/operaciones.md
-        - Notificaciones: base/GestionATR/notificaciones.md
-        - Automatitzación de procesos: base/GestionATR/automatizacion.md
-        - Apéndice: base/GestionATR/apendice.md
+      - Introducción y conceptos: base/GestionATR/atr.md
+      - Funcionamiento general: base/GestionATR/funcionamiento.md
+      - Generación y envío de XMLs: base/GestionATR/gestionxml.md
+      - Operaciones: base/GestionATR/operaciones.md
+      - Notificaciones: base/GestionATR/notificaciones.md
+      - Automatitzación de procesos: base/GestionATR/automatizacion.md
+      - Portal ATR: base/GestionATR/atrhub.md
+      - Apéndice: base/GestionATR/apendice.md
+    - Gestión de contadores: base/contadores.md
+    - Gestión de pólizas: base/polizas.md
+    - PowerEmail: base/poweremail.md
+    - Revisiones internas: base/revisiones.md
     - SOA: base/soa.md
+    - Ubicaciones: base/ubicaciones.md
   - Distribuidora:
     - Inicio: distri/index.md
-    - SOA: distri/soa.md
-    - Telegestión: distri/telegestion.md
-    - Telemedida: distri/telemedida.md
-    - Manual de uso de TPL - Índice: distri/tpl.md
-    - Manual de uso de TPL:
-      - Requisitos del sistema e instalación: distri/tpl/requisitos.md
-      - Proceso de trabajo: distri/tpl/proceso_de_trabajo.md
-      - Descarga electrónica de Cierres y Curvas: distri/tpl/descarga_cierres_y_curvas.md
-      - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
-      - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
-    - CUPS: distri/cups.md
-    - Pólizas: distri/polizas.md
-    - Contadores: distri/contadores.md
-    - Gestión ATR: distri/atr.md
-    - Reles: distri/reles.md
-    - Facturación: distri/facturacion.md
-    - Facturación:
-      - Peajes: distri/facturacion_peajes.md
-      - Régimen especial: distri/facturacion_re.md
-      - Liquidación: distri/liquidacion_peajes.md
-      - Contratación: distri/facturacion_contratacion.md
     - Administración Pública:
       - REE: distri/adm-pub/ree.md
       - CNMC: distri/adm-pub/cnmc.md
@@ -101,8 +81,25 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
-    - Perfiles: distri/perfiles.md
+    - Calidad de servicio - Índice: distri/calidad.md
+    - Calidad de servicio:
+      - Términos y Definiciones: distri/calidad/terminos_y_definicion.md
+      - Marco de referencia del modelo de calidad: distri/calidad/marco_ref_modelo.md
+      - Modelo de calidad para la calidad interna y externa: distri/calidad/modelo_interna_y_externa.md
+      - Modelo de calidad para la calidad en uso: distri/calidad/modelo_en_uso.md
+      - Generación de incidencias: distri/calidad/generacion_incidencias.md
+      - Obtención de resultados: distri/calidad/obtencion_resultados.md
+    - Calidad individual: distri/calidad_individual.md
+    - Contadores: distri/contadores.md
+    - CUPS: distri/cups.md
     - Descargos: distri/descargos.md
+    - Facturación: distri/facturacion.md
+    - Facturación:
+      - Peajes: distri/facturacion_peajes.md
+      - Régimen especial: distri/facturacion_re.md
+      - Liquidación: distri/liquidacion_peajes.md
+      - Contratación: distri/facturacion_contratacion.md
+    - Gestión ATR: distri/atr.md
     - GIS:
       - GIS Web:
         - Visor Web: gis/webgis.md
@@ -119,39 +116,47 @@ nav:
       - Instalaciones RE: distri/re.md
       - Expedientes: distri/expedientes.md
       - Despachos: distri/despachos.md
+      - Posiciones: distri/posiciones.md
       - Sincronización CUPS: distri/sincronizacion_cups.md
       - CINI - Generación Automática: distri/act_cinis.md
       - TI - Generación Automática: distri/act_tis.md
-    - Calidad de servicio - Índice: distri/calidad.md
-    - Calidad de servicio:
-      - Términos y Definiciones: distri/calidad/terminos_y_definicion.md
-      - Marco de referencia del modelo de calidad: distri/calidad/marco_ref_modelo.md
-      - Modelo de calidad para la calidad interna y externa: distri/calidad/modelo_interna_y_externa.md
-      - Modelo de calidad para la calidad en uso: distri/calidad/modelo_en_uso.md
-      - Generación de incidencias: distri/calidad/generacion_incidencias.md
-      - Obtención de resultados: distri/calidad/obtencion_resultados.md
-    - Calidad individual: distri/calidad_individual.md
+    - Manual de uso de TPL - Índice: distri/tpl.md
+    - Manual de uso de TPL:
+      - Requisitos del sistema e instalación: distri/tpl/requisitos.md
+      - Proceso de trabajo: distri/tpl/proceso_de_trabajo.md
+      - Descarga electrónica de Cierres y Curvas: distri/tpl/descarga_cierres_y_curvas.md
+      - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
+      - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
+    - Medidas: distri/medidas.md
+    - Perfiles: distri/perfiles.md
+    - Pólizas: distri/polizas.md
+    - Reles: distri/reles.md
+    - SOA: distri/soa.md
+    - Telegestión: distri/telegestion.md
+    - Telemedida: distri/telemedida.md
   - Comercializadora:
     - Inicio: comer/index.md
-    - CUPS: comer/cups.md
-    - Contratos: comer/contratos.md
-    - Facturación: comer/facturacion.md
-    - Gestión impagados: comer/gestion_impago.md
-    - Gestión ATR: comer/atr.md
-    - Curvas i CCH: comer/curvas.md
-    - SIPS: comer/sips.md
-    - SOA: comer/soa.md
     - Administración Pública:
       - CNMC: comer/adm-pub/cnmc.md
       - AEAT: comer/adm-pub/aeat.md
       - Gencat: comer/adm-pub/gencat.md
       - Informes: comer/adm-pub/informes.md
       - Tasas Municipales: comer/adm-pub/tasas_municipales.md
+    - Contratos: comer/contratos.md
+    - CUPS: comer/cups.md
+    - Curvas i CCH: comer/curvas.md
+    - Facturación: comer/facturacion.md
+    - Gestión ATR: comer/atr.md
+    - Gestión impagados: comer/gestion_impago.md
+    - SIPS: comer/sips.md
+    - SOA: comer/soa.md
+    - Procesos:
+      - Proceso de Facturación: comer/processos_facturacio.md
   - Facturación:
-    - Validaciones: facturacion/validaciones.md
+    - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
     - Gestión de pagaments i cobraments: facturacion/cobros.md
     - Gestión de lectures: facturacion/lecturas.md
     - Lotes: facturacion/lotes.md
     - Tipos de facturas: facturacion/tipos_facturas.md
-    - Acciones genéricas: facturacion/acciones.md
+    - Validaciones: facturacion/validaciones.md
