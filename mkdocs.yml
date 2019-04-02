@@ -61,6 +61,7 @@ nav:
     - PowerEmail: base/poweremail.md
     - Revisions internes: base/revisiones.md
     - SOA: base/soa.md
+    - Ubicacions: base/ubicaciones.md
   - Distribuidora:
     - Inici: distri/index.md
     - Administració Pública:
