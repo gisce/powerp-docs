@@ -422,6 +422,7 @@ S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
 * **Instal·lació**: CT.
+* **Codi del Tipus d'element**: Diferent de `FUS_AT`
 * **CINI**: Diferent a **I26204\***, **I26304\*** o **I26404\*** (Fusibles d'AT).
 * **Actiu**:
     * La **cel·la** ha d'estar activa
