@@ -92,7 +92,7 @@ Es recomana que en el cas d'obtindre molts resultats realitzar una cerca per tip
 - Potencia(cal afegir kVA al final)
 - Adreça
 - Data posata den marxa
-- Tensio (Cal afegir kVA al final) 
+- Tensio (Cal afegir V al final) 
 
 ### Exemple de cerca
 - (Subestacio) Salt: Cerca totes les subescions de Salt
