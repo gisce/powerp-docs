@@ -99,6 +99,7 @@ nav:
       - CTS: distri/cts.md
       - CTS:
         - Cel·les i elements de tall: distri/celdas.md
+        - Saturacions de transformadors: distri/saturaciones.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
       - Instal·lacions RE: distri/re.md

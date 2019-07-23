@@ -111,6 +111,7 @@ nav:
       - CTS: distri/cts.md
       - CTS:
         - Celdas i elementos de corte: distri/celdas.md
+        - Saturacion de transformadores: distri/saturaciones.md
       - LAT: distri/lat.md
       - LBT: distri/lbt.md
       - Instalaciones RE: distri/re.md
