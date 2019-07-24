@@ -45,6 +45,9 @@ un anàlisi posterior. Aquest mòdul crea un model per emmagatzemar la
 Podem llistar i filtrar les saturacions en el llistat disponible a
 **Centres Transformadors > Manteniment > Transformadors> Saturacions Transformadors**
 
+Es mostraran les saturacions on es superi el llindar del 80% de color 
+vermell
+
 Des d'aquest llistat es poden cercar les saturacions segons diferents
  criteris:
  
@@ -79,6 +82,9 @@ concret mitjançant l'assistent **Centres Transformadors > Manteniment > Transfo
 * **Imprimir**: Genera un PDF amb tots Transformadors dels Centres 
   transformadors actius. Encara que no tinguin saturació disponible, 
   surten en l'informe
+
+Les saturacions on es supera el llindar del 80% es mostren en color 
+vermell
 
 # Saturacions de transformadors a partir de mesures de Telegestió
 
