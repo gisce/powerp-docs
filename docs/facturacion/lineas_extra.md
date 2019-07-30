@@ -56,6 +56,10 @@ dins el periode que es vol facturar.
 
 ![](_static/lineas_extra/manual_invoice_3.png)
 
+!!! warning "Atenció"
+    Cal tenir en compte que les dates inclouran totes les linies extra, peró a la hora de generar la factura es fara una segona validació i només facturara les que compleixin les condicións estipulades a l'apartat de
+    **Condicións de facturació**.
+
 ## Facturacio automatica
 
 ### Condicións de facturació
@@ -86,6 +90,9 @@ a ser incloses i s'afegiran a la factura si compleixen les següents condicions:
 la **factura referenciada** (***factura.ref***),
 ha de coincidir amb algun dels **diaris** (***journal_ids***)
 de **linia extra**.
+
+
+**Mètodes**: ***fact_via_lectures()*** &rarr; ***compute_extra_lines()***
 
 !!! warning "Atenció"
     Només es facturaran les linies extra on el total pendent
