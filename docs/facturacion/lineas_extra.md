@@ -62,6 +62,9 @@ dins el periode que es vol facturar.
 
 ## Facturacio automatica
 
+Referent als procesos de facturació automatica, la facturació de línies extra
+seguira les condicions de facturació definides en el següent apartat.
+
 ### Condicións de facturació
 
 Quan es genera una factura de manera **automàtica** o **manual**, l'**ERP**,
@@ -116,6 +119,6 @@ pendent a facturar i el preu per terme:
 
     - En la resta de casos, afegeix a la factura una linia amb...
 
-    !!! warning "Atenció"
-        Els impostos de la linia de la factura, es calcularan en funció
-        dels impostos definits a la línia extra.
+!!! warning "Atenció"
+    Els impostos de la linia de la factura, es calcularan en funció
+    dels impostos definits a la línia extra.
