@@ -48,11 +48,16 @@ fa una cerca de les línies extra relacionades amb el contracte amb les següent
 la **data desde**(***date_from***) i la **data fins**(***date_to***), es
 a dir amb data de factura entre els períodes de les línies extra.
 
+![](_static/lineas_extra/fact_under_line.png)
+
+![](_static/lineas_extra/under_period_extrem.png)
+
 - Línies extra amb **data fins**(***date_to***) anterior a
 la **data de la factura**(***date_invoice***) amb **pendent a
 facturar**(***total_amount_pending***) **diferent** de **0**, és a dir
 totes aquelles línies extra que no s'han acabat de facturar i fora de termini.
 
+![](_static/lineas_extra/past_linde.png)
 
 Un cop obtingudes les **línies extra** corresponents a les cerques
 anteriors, es fa un segon filtre segons les dades de la factura on anaven
