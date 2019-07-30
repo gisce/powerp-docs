@@ -24,7 +24,7 @@ date_from             | 2015-10-30
 date_line_to          | 2015-10-30
 quantity              | 1.000
 notes                 | Creada desde la factura de proveedor con id: 260                                                                              +
-                      | Fichero XML: ID_AGUAS DE BARBASTRO ENERGIA.xml
+                      | Fichero XML:
 amount_pending        | 0.000000
 
 
@@ -43,6 +43,8 @@ de seleccionar que es vol incloure les linies extra, un cop seleccionada la
 opció si tenim la variable de configuració ***fact_autofill_manual_wizard***
 activada es posaran automaticament les dates per incloure les linies extra
 pendents.
+
+![](_static/lineas_extra/config_autofill_manual.png)
 
 En cas de posar les dates manualment, es facturaran les linies extra que
 tinguin la **data d'inici** (***date_from***) o la **data final** (***date_to***)
