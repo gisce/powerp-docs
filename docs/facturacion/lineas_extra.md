@@ -38,15 +38,28 @@ la facturació de linies extra divergeix en aquestes dos maneres.
 
 ## Factura manual
 
-### Condicións de facturació
+Al realitzar una factura manual a través de l'assistent de factura manual, s'ha
+de seleccionar que es vol incloure les linies extra, un cop seleccionada la
+opció si tenim la variable de configuració ***fact_autofill_manual_wizard***
+activada es posaran automaticament les dates per incloure les linies extra
+pendents.
 
+En cas de posar les dates manualment, es facturaran les linies extra que
+tinguin la **data d'inici** (***date_from***) o la **data final** (***date_to***)
+dins el periode que es vol facturar.
+
+![](_static/lineas_extra/manual_invoice_1.png)
+
+![](_static/lineas_extra/manual_invoice_2.png)
+
+![](_static/lineas_extra/manual_invoice_3.png)
 
 ## Facturacio automatica
 
 ### Condicións de facturació
 
-Quan es genera una factura de manera **automàtica**, l'**ERP**, fa una cerca de les
-linies extra relacionades amb el contracte amb les següents condicions:
+Quan es genera una factura de manera **automàtica** o **manual**, l'**ERP**,
+fa una cerca de les linies extra relacionades amb el contracte amb les següents condicions:
 
 - Linies extra on la **data de la factura**(***date_invoice***) està **entre**
 la **data desde**(***date_from***) i la **data fins**(***date_to***), es
