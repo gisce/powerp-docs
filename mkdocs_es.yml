@@ -160,3 +160,4 @@ nav:
     - Lotes: facturacion/lotes.md
     - Tipos de facturas: facturacion/tipos_facturas.md
     - Validaciones: facturacion/validaciones.md
+    - Líneas Extra: facturacion/lineas_extra.md
