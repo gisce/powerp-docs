@@ -31,7 +31,8 @@ fitxers de mesures.
 
 Els fitxers de REE, s'entreguen per períodes **a mes complet**. Cada període de
 mesures és un mes en concret, el qual engloba les dates, el número de factures i
-de contractes i un control del procés de perfilació.
+de contractes i un control del procés de perfilació i d'ajust de telegestió i
+telemesura.
 
 ![](_static/medidas/periodes_mesures.png)
 
@@ -47,7 +48,7 @@ comprovar l'estat de les dades.
 ![](_static/medidas/dades_preparades.png)
 
 Cada origen de dades té una barra que indica el progrés i un botó per
-actualitzar-lo.
+actualitzar-lo. Si els origens no arriben al 100%, cal revisar-los.
 
 Els orígens de dades són els que segueixen:
 
@@ -83,8 +84,11 @@ totes les factures que calguin i fent clic sobre **Acció > FIX CCH FACT again**
 Les dades de telemesura ens poden venir de diversos orígens. Genèricament es
 carreguen les corbes de telemesura mitjançant fitxers llegits directament del
 comptador per tal de tenir la corba real. Aquesta explicació ve recollida en un
-altre apartat d'aquest manual. És important carregar aquestes corbes quan més
-aviat millor.
+altre apartat d'aquest manual. Aquestes corbes poden arribar pel sistema de
+telemesura o ser importades directament a l'ERP mitjançant fitxers d'intercanvi.
+És important carregar les corbes abans de facturar. Si el progrés no ha arribat
+al 100%, caldrà aplicar el **FIX CCH FACT** com s'explica a l'apartat de
+Telegestió.
 
 ### Perfil
 Quan no es possible disposar de cap dels dos orígens anteriors, cal perfilar
@@ -96,7 +100,11 @@ El perfilat es realitza de forma automàtica tan punt s'obre la factura.
     Les corbes del Tipus 3 (>50kWh) s'han d'entregar amb corba real.
 Per comprovar que totes les factures estan perfilades correctament, cal fixar-se
 en la barra de progrés del mateix període de mesures. Per actualitzar aquest
-progrés, es necessari utilitzar el botó **Actualitzar Progrés de Perfilació**
+progrés, es necessari utilitzar el botó **Actualitzar Progrés de Perfilació**.
+
+Si el perfilat no arriba al 100%, cal utilitzar el botó **Perfilar** del període
+de mesures, per tal que es perfilin totes les factures en estat esborrany del
+període.
 
 ![](_static/medidas/actualitzar_perfilacio.png)
 
