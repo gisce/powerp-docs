@@ -31,8 +31,8 @@ fitxers de mesures.
 
 Els fitxers de REE, s'entreguen per períodes **a mes complet**. Cada període de
 mesures és un mes en concret, el qual engloba les dates, el número de factures i
-de contractes i un control del procés de perfilació i d'ajust de telegestió i
-telemesura.
+de contractes i un control del procés de perfilació i d'ajust de corbes de
+telegestió i de telemesura.
 
 ![](_static/medidas/periodes_mesures.png)
 
