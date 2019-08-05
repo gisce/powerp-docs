@@ -82,7 +82,7 @@ ha de coincidir amb algun dels **diaris** (***journal_ids***)
 de **línia extra**.
 
 
-**Mètodes**: ***fact_via_lectures()*** &#8592; ***compute_extra_lines()***
+**Mètodes**: ***fact_via_lectures()*** &#8594; ***compute_extra_lines()***
 
 !!! warning "Atenció"
     Només es facturaran les línies extra on el total pendent
@@ -115,14 +115,14 @@ a la línia de la factura tot el que queda per facturar.
 
 ### Veure totes les línies extra
 
-***Menú &#8592; Facturació &#8592; General &#8592; Línies Extra***
+***Menú &#8594; Facturació &#8594; General &#8594; Línies Extra***
 
 
 ![](_static/lineas_extra/extra_general.png)
 
 ### Veure línies extres no facturades de contractes antics
 
-***Menú &#8592; Facturació &#8592; General &#8592; Línies Extra &#8592; Línies extra no facturades en contractes antics***
+***Menú &#8594; Facturació &#8594; General &#8594; Línies Extra &#8594; Línies extra no facturades en contractes antics***
 
 
 ![](_static/lineas_extra/extra_antics.png)
