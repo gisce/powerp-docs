@@ -49,7 +49,7 @@ Quan es genera una factura de manera **automàtica** o **manual**, l'**ERP**,
 fa una cerca de les línies extra relacionades amb el contracte amb les següents condicions:
 
 - Línies extra on la **data de la factura**(***date_invoice***) està **entre**
-la **data desde**(***date_from***) i la **data fins**(***date_to***), es
+la **data desde**(***date_from***) i la **data fins**(***date_to***), és
 a dir amb data de factura entre els períodes de les línies extra.
 
 ![](_static/lineas_extra/fact_under_line.png)
@@ -82,7 +82,7 @@ ha de coincidir amb algun dels **diaris** (***journal_ids***)
 de **línia extra**.
 
 
-**Mètodes**: ***fact_via_lectures()*** &rarr; ***compute_extra_lines()***
+**Mètodes**: ***fact_via_lectures()*** &#8592; ***compute_extra_lines()***
 
 !!! warning "Atenció"
     Només es facturaran les línies extra on el total pendent
@@ -101,7 +101,7 @@ pendent a facturar i el preu per terme:
 a la línia de la factura tot el que queda per facturar.
 
 - Si la **data de la factura** (***date_invoice***) és **posterior o igual**
-    a la **data de finalització de la línia extra** (***date_to***), s'afegira
+    a la **data de finalització de la línia extra** (***date_to***), s'afegirà
     també a la factura tot el pendent a facturar.
 
 - En la resta de casos, afegeix a la factura una línia amb el preu per
@@ -115,14 +115,14 @@ a la línia de la factura tot el que queda per facturar.
 
 ### Veure totes les línies extra
 
-***Menú &rarr; Facturació &rarr; General &rarr; Línies Extra***
+***Menú &#8592; Facturació &#8592; General &#8592; Línies Extra***
 
 
 ![](_static/lineas_extra/extra_general.png)
 
 ### Veure línies extres no facturades de contractes antics
 
-***Menú &rarr; Facturació &rarr; General &rarr; Línies Extra &rarr; Línies extra no facturades en contractes antics***
+***Menú &#8592; Facturació &#8592; General &#8592; Línies Extra &#8592; Línies extra no facturades en contractes antics***
 
 
 ![](_static/lineas_extra/extra_antics.png)
@@ -131,7 +131,7 @@ a la línia de la factura tot el que queda per facturar.
 
 
 Des de la vista ***Formulari*** d'un contracte, podem accedir a les línies
-extra del contracte a través del menú d'accions de la dreta ***Línies Extra***.
+extra del contracte a través del menú d'enllaços de la dreta ***Línies Extra***.
 
 
 ![](_static/lineas_extra/extra_contrato.png)
