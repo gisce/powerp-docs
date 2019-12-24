@@ -117,9 +117,9 @@ nav:
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Mesures:
       - Tractament i generació de fitxers: distri/medidas.md
-      - Fitxers desagregats: distri/ficheros_desagregados.md
-      - Eines: distri/herramientas_medidas.md
-      - Régim especial: distri/regimen_especial.md
+      - Fitxers desagregats: distri/medidas_ficheros_desagregados.md
+      - Eines: distri/medidas_herramientas.md
+      - Régim especial: distri/medidas_regimen_especial.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
