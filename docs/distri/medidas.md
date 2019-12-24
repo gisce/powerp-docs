@@ -110,10 +110,15 @@ període.
 
 * Factures del període:
 Dins de cada període de mesures descrit en el següent apartat, es disposa d'un
-llistat amb totes les factures del període ordenades i filtrables per orígen
-**(telemesura, telegestió, perfil)**. Aquestes últimes, en acabar el seu progrés
-de perfilació, es marquen com a estat: Finalitzat. Aquest llistat ajuda a revisar
-quines factures no s'ha perfilat encara.
+llistat amb totes les factures del període classificades i filtrables per orígen
+**(telemesura, telegestió, perfil)**. Cadascún d'aquests orígens, disposa d'un
+botó per actualitzar-ne el seu estat, es necessari per tant utilitzar-lo quan
+s'ha perfilat o ajustat la corba d'una factura. Les de tipus telegestió i
+telemesura comproven el "check" **CCH Disponible** de la factura, i les de
+perfil, s'actualitzen a l'estat Finalitzat en el propi procés de perfilació, per
+tant, si es vol arribar al 100%, s'han d'ajustar les de tipus telegestió i
+telemesura que no estiguin en estat Finalitzat (fix cch) i perfilar les de tipus
+perfil, que no estiguin en aquest estat.
 
 ![](_static/medidas/factures_periode.png)
 
@@ -136,8 +141,8 @@ fer-ho, tan sols cal fer-hi clic a sobre. La generació d'aquests no té cap ord
 en concret, però es convenient generar-los d'un a un. Cal recordar que REE
 espera primer l'entrega de l'AGCL per tal d'"obrir la pasarela d'entrega per
 aquell període en concret" i, seguidament, espera els altres fitxers. Si no es
-manté aquest ordre d'entrega, REE rebutja els fitxers ja que no s'ha publicat
-l'inventari d'agregacions d'aquell mes.
+manté aquest ordre d'entrega, es probable que REE rebutji els fitxers ja que no
+s'ha publicat l'inventari d'agregacions d'aquell mes.
 
 A la part esquerra es visualitzen les agregacions que imputen energía en aquest
 període en concret. Amb el botó **Generar Nivells d'Agregació**, es creen
@@ -155,6 +160,8 @@ pantalla com la imatge que segueix, o utilitzant el botó **Adjunts**.
 
 ## Validacions fitxers REE
 
+### Integritat de fitxers
+
 Una vegada generats aquests fitxers, es pot validar que l'energía imputada en
 cadascún d'ells sigui coherent. El CLINME té (o hauría de tenir) a nivell de
 CUPS tota l'energía imputada en el CLMAG i el CLMAG5A. Per tant, es aconsellable
@@ -166,3 +173,21 @@ com en el CLMAG/CLMAG5A. Per a realitzar aquesta validació, s'utilitza la
 pestanya **Validacions Fitxers REE** i el botó **Comprovar consums**.
 
 ![](_static/medidas/validacions_fitxers.png)
+
+### Validació d'entrega a REE
+
+Per tal de comprovar que el que s'ha entregat i processat a REE, es el mateix
+que tenim a l'ERP, es poden importar els fitxers d'inventari i acumulat per fer
+aquesta validació. Això pot anar bé per veure possibles agregacions estimades, o
+possibles agregacions que no s'hagin publicat. Els fitxers a importar són: AGCL,
+AGCLACUM i AGCLACUM5. Per fer-ho, cal utilitzar el botó Importar fitxers de
+validacions i seleccionar els fitxers tal com la imatge que segueix.
+
+![](_static/medidas/aclacums.png)
+
+Es poden importar els 3 fitxers alhora, o importar-los un a un. La única
+restricció es que mínim s'ha **d'importar o haver importat l'AGCL**, que és
+l'inventari d'agregacions. Un cop importats, es marquen les possibles
+diferencies entre les taules de nivells d'agregació i nivells d'agregació REE.
+
+![](_static/medidas/niveles_agragacion_ree.png)
