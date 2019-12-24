@@ -20,10 +20,14 @@ factura o CUPS. Aquests es calculen automàticament a l'obrir la factura.
 
 * Períodes de Mesures: Mostra l'estat i el progrés dels períodes de mesures.
 * Tancaments: Visualitza les dates d'entrega dels fitxers de REE (M+1, M+3...).
+* Fitxers Exportats: Generació i emmagatzematge de fitxers desagregats.
 * Casos de perfilació: Casos CRM que reporten el comportament al perfilar.
 * Casos de mesures: Casos CRM que reporten el comportament al generar els
 fitxers de mesures.
 * Crear períodes de Mesures: Assistent que permet crear els períodes segons any.
+* Generar informe de consums: Assistent per generar un informe del consum per tarifa
+* configuració: Configuració general del módul
+
 
 ![](_static/medidas/menu_general.png)
 
@@ -158,6 +162,12 @@ pantalla com la imatge que segueix, o utilitzant el botó **Adjunts**.
 
 ![](_static/medidas/adjunts.png)
 
+!!! Info "Generació AGCL"
+    Per la generació de l'AGCL, es pot fer servir l'AGCL de l'operador del
+    sistema del mes passat, que porta l'inventari d'agregacions
+
+![](_static/medidas/generacion_agcl.png)
+
 ## Validacions fitxers REE
 
 ### Integritat de fitxers
@@ -170,7 +180,10 @@ validació agrega l'energía del CLINME i la compara amb el CLMAG o el CLMAG5A
 segons el Tipus de punt (ex: els Tipus 3 estarán en el CLMAG). Per tant
 l'energía total de cada agregació hauria de ser la mateixa tant en el CLINME
 com en el CLMAG/CLMAG5A. Per a realitzar aquesta validació, s'utilitza la
-pestanya **Validacions Fitxers REE** i el botó **Comprovar consums**.
+pestanya **Validacions Fitxers REE** i el botó **Comprovar consums**. Es
+demanarà per quins fitxers es vol realitzar la comprovació per si es tenen
+varies versions generades. S'en indiquen la data de comprovació i els fitxers
+contrastats.
 
 ![](_static/medidas/validacions_fitxers.png)
 

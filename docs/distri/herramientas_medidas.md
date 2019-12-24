@@ -24,6 +24,19 @@ comercialitzadora.
 El fitxer es generará en **segon pla**, i s'inclourá com **adjunt en el propi
 període de mesures**.
 
+## Comparar consums amb altres mesos
+
+Per fer una comparativa del consum actual amb el consum d'altres mesos, es pot
+fer servir l'asistent **Comparar agregacions amb altres mesos** a cada període
+de mesures concret.
+
+* Període: automàticament i per defecte escull el mes anterior, pero es pot fer
+servir el que es vulgui.
+* % Diferéncia: es un tupall el cual serveix per mostrar només les agregacions
+ona la diferéncia l'igualin o el superin
+
+![](_static/medidas/comparar_aggs_otros_meses.png)
+
 ## Informe de consums
 
 En el menú **Mesures REE > Utilitats > Generar informde de consums**, es genera
