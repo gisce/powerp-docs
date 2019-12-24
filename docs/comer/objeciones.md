@@ -29,7 +29,7 @@ línies de consum de la factura, construïm una corba.
 ## Períodes d'objeccions
 
 Un període d'objeccions engloba les eines necessáries per el tractament
-d'aquestes, posant a disposició importadors, cálculs de consums, validacions de dades...
+d'aquestes, posant a disposició importadors, càlculs de consums, validacions de dades...
 Un període d'objeccions és a mes natural, són els períodes en que treballa REE.
 No cal crear cap període de forma manual, aquests es crean a l'importar un fitxer
 d'objeccions.
@@ -62,15 +62,15 @@ automáticament un i seguidament importa el fitxer
 
 ### Càlcul d'Objeccions
 
-De cada fitxer importat, n'associarem un cálcul que es treurá de les línies del fitxer
+De cada fitxer importat, n'associarem un càlcul que es treurá de les línies del fitxer
 vs el calculat del sistema.
 
 ### Automatisme d'objeccions
 
 Cada fitxer importat, té asociat un botó de **Contrastar consums**, s'utilitzará
 per posar a calcular un fitxer en concret. Al fer-ho, es demana sobre quin fitxer
-es vol realitzar el cálcul.
-El fitxer canviará d'estat a **Processant**, i un cop acabat el cálcul, l'estat
+es vol realitzar el càlcul.
+El fitxer canviará d'estat a **Processant**, i un cop acabat el càlcul, l'estat
 s'actualitzará a **Acabat** i s'actualitzará la data d'última comparació
 
 ![](_static/medidas/objeciones_func_basico_clinmeos.png)
@@ -86,7 +86,7 @@ fitxers d'objeccions.
 
 S'en creará un per distribuidora.
 Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automáticament
-obrirá una pestanya amb el cálcul generat préviament.
+obrirá una pestanya amb el càlcul generat préviament.
 
 * Es pot filtrar per:
   * % diferéncia
@@ -116,7 +116,7 @@ motiu a les línies que s'han calculat. Per fer-ho, les sel·leccionem i utilitz
 
 Per generar els fitxers OBJEINME i OBJEAGCL amb el contingut predefinit anteriorment,
 (recordar que s'inclourán només les línies que tinguin motiu) des del període en
-concret, fem: **Acció > Crear Objeccions**. S'ens demanará quina contrastació/cálcul
+concret, fem: **Acció > Crear Objeccions**. S'ens demanará quina contrastació/càlcul
 es vol utilitzar per crear el fitxer escollint els fitxers que hem importat i calculat.
 
 ![](_static/medidas/objeciones_generar.png)
@@ -128,7 +128,7 @@ pestanya **Seguiment de fitxers** del propi període, o amb el botó **Arxius ad
 ![](_static/medidas/objeciones_ficheros_generados.png)
 
 Com s'aprecia a la imatge, aquests, porten especificat els fitxers d'orígen per tenir
-traçabilitat sobre en quines dades i cálculs s'ha creat.
+traçabilitat sobre en quines dades i càlculs s'ha creat.
 
 ![](_static/medidas/objeciones_integridad.png)
 

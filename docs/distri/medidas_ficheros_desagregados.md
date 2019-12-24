@@ -19,7 +19,7 @@ mesures
 si están definits
 * Comprimir en .bz2: comprimeix el fitxer resultant en .bz2
 * Exporta per comercialitadora/es: Exporta només les corbes que pertanyen a
-la/les comercialitzadora/es seleccionada/es. Si **es deixa vuit**, es fará per
+la/les comercialitzadora/es seleccionada/es. Si **es deixa buit**, es fará per
 **totes**
 
 Els fitxers anirán adjunts al menú **Mesures REE > Fitxers Exportats > Fitxers de Mesures**.
