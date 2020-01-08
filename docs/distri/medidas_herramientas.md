@@ -11,7 +11,7 @@ El següent asistent, permet generar CLMAG, CLMAG5A o CLINME per una o vàries
 agregacions. Per utilitzar-lo, cal anar al període de mesures concret i
 utilitzar l'assistent: "Generar fitxer per agregació". Cal primer triar el tipus
 de fitxer que es vol generar, i després afegir-hi l'agregació o agregacions que
-es desitjin. Aixó pot anar bé per respondre possibles objeccions que ens posi la
+es desitjin. Això pot anar bé per respondre possibles objeccions que ens posi la
 comercialitzadora.
 
 !!! Info "Nota"
