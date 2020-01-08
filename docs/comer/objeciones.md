@@ -71,7 +71,7 @@ Cada fitxer importat, té asociat un botó de **Contrastar consums**, s'utilitza
 per posar a calcular un fitxer en concret. Al fer-ho, es demana sobre quin fitxer
 es vol realitzar el càlcul.
 El fitxer canviarà d'estat a **Processant**, i un cop acabat el càlcul, l'estat
-s'actualitzará a **Acabat** i s'actualitzará la data d'última comparació
+s'actualitzará a **Acabat** i s'actualitzarà la data d'última comparació
 
 ![](_static/medidas/objeciones_func_basico_clinmeos.png)
 
