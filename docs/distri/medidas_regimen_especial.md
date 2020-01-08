@@ -15,7 +15,7 @@ A continuació es mostren i s'en descriuen els detalls:
 amb la terminació 1F
 * Titular: Nom del Titular
 * Tipo: tipus d'instal·lació segons potència (1, 2, 3, 4 o 5)
-* Provincia: código REE de Provincia
+* Provincia: codi REE de Província
 * Potencias:
   * potencia Pico (kW)
   * potencia Nominal (kW)
