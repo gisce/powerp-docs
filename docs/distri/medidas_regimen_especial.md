@@ -59,7 +59,7 @@ els fitxers:
   cogeneració i residus tipus 3 i 5.
 
 !!! Info "Nota 1"
-    Un CIL es un CUPS de régim especial amb la terminació 001.
+    Un CIL es un CUPS de règim especial amb la terminació 001.
 
 !!! Info "Nota 2"
     Aquests fitxers es poden generar en format comprimit .bz2
