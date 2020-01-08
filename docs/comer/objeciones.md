@@ -62,7 +62,7 @@ automàticament un i seguidament importa el fitxer
 
 ### Càlcul d'Objeccions
 
-De cada fitxer importat, n'associarem un càlcul que es treurá de les línies del fitxer
+De cada fitxer importat, n'associarem un càlcul que es treurà de les línies del fitxer
 vs el calculat del sistema.
 
 ### Automatisme d'objeccions
