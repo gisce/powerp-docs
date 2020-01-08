@@ -11,7 +11,7 @@ A continuació es mostren i s'en descriuen els detalls:
 ![](_static/medidas/regimen_especial.png)
 
 * Nom: nom de la instal·lació
-* CUPS: cal destacar que els punts de suministre de régim especial, solen acabar
+* CUPS: cal destacar que els punts de subministre de règim especial, solen acabar
 amb la terminació 1F
 * Titular: Nombre del Titular
 * Tipo: tipo de instalación según potencia (1, 2, 3, 4 o 5)
