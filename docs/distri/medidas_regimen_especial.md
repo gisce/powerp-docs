@@ -1,4 +1,4 @@
-# Régim Especial
+# Règim Especial
 
 ## Instal·lacions
 
