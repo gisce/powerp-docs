@@ -56,7 +56,7 @@ Permet importar .zip, .bz2 i fitxers plans. Es poden també importar varis alhor
 no importar fitxers amb un nom diferent al de publicació, ja que es fa servir
 per calcular dates, versions...
 Si a l'importar un fitxer el període del qual forma part no existeix, s'en crea
-automáticament un i seguidament importa el fitxer
+automàticament un i seguidament importa el fitxer
 
 ![](_static/medidas/objeciones_importador.png)
 
