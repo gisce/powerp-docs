@@ -26,7 +26,7 @@ factura o CUPS. Aquests es calculen automàticament a l'obrir la factura.
 fitxers de mesures.
 * Crear períodes de Mesures: Assistent que permet crear els períodes segons any.
 * Generar informe de consums: Assistent per generar un informe del consum per tarifa
-* configuració: Configuració general del módul
+* Configuració: Configuració general del mòdul
 
 
 ![](_static/medidas/menu_general.png)
