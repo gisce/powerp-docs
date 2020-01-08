@@ -116,7 +116,7 @@ motiu a les línies que s'han calculat. Per fer-ho, les seleccionem i utilitzem:
 
 Per generar els fitxers OBJEINME i OBJEAGCL amb el contingut predefinit anteriorment,
 (recordar que s'inclouran només les línies que tinguin motiu) des del període en
-concret, fem: **Acció > Crear Objeccions**. S'ens demanará quina contrastació/càlcul
+concret, fem: **Acció > Crear Objeccions**. S'ens demanarà quina contrastació/càlcul
 es vol utilitzar per crear el fitxer escollint els fitxers que hem importat i calculat.
 
 ![](_static/medidas/objeciones_generar.png)
