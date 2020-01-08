@@ -127,7 +127,7 @@ pestanya **Seguiment de fitxers** del propi període, o amb el botó **Arxius ad
 
 ![](_static/medidas/objeciones_ficheros_generados.png)
 
-Com s'aprecia a la imatge, aquests, porten especificat els fitxers d'orígen per tenir
+Com s'aprecia a la imatge, aquests porten especificats els fitxers d'origen per tenir
 traçabilitat sobre en quines dades i càlculs s'ha creat.
 
 ![](_static/medidas/objeciones_integridad.png)
