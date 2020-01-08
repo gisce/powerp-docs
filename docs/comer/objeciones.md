@@ -89,7 +89,7 @@ Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automáticament
 obrirá una pestanya amb el càlcul generat préviament.
 
 * Es pot filtrar per:
-  * % diferéncia
+  * % diferència
   * diferéncia de consum (kWh)
   * Motiu d'objecció concret
   * Qualsevol motiu
