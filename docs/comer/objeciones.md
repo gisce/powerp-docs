@@ -139,7 +139,7 @@ acceptantla o rebutjantla. Es fa mitjançant un fitxer "acuse de recibo" anomena
 té indicat amb un camp si s'accepta o no la objecció.
 Per carregar-lo al sistema: **Respostes d'Objeccions > Carregar respostes**
 Si alguna objecció ha estat rebutjada, es pot tornar a enviar mitjançant un fitxer **REVAC**, així que
-un cop importat l'AOBJEAGCL, podem utilitzar el botó **Generar REVAC**, que generará un fitxer
+un cop importat l'AOBJEAGCL, podem utilitzar el botó **Generar REVAC**, que generarà un fitxer
 de resposta "d'acuse de recibo" amb les objeccions no acceptades.
 
 ![](_static/medidas/objeciones_revac.png)
