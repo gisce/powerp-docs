@@ -60,4 +60,4 @@ s'obre un cas. Entre les condicions que poden fer fallar la validació, hi ha pe
 * Consum perfilat no coincideix amb el facturat
 * Consum negatiu
 * Anuladora no troba consum perfilat per anular
-* El consum no superi el máxim teóric ((poténcia * 1000) * n_dies)
+* El consum supera el màxim teòric ((potència * 1000) * n_dies)
