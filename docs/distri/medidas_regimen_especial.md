@@ -19,7 +19,7 @@ amb la terminació 1F
 * Potencias:
   * potencia Pico (kW)
   * potència Nominal (kW)
-  * Potencia Nominal Máxima (kW)
+  * Potència Nominal Màxima (kW)
   * Potencia de Cortocircuito
 * Unitat de Programació
   * Representant: Nom del representant (cal tenir creat el partner)
