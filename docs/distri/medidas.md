@@ -177,7 +177,7 @@ cadascún d'ells sigui coherent. El CLINME té (o hauría de tenir) a nivell de
 CUPS tota l'energía imputada en el CLMAG i el CLMAG5A. Per tant, es aconsellable
 realitzar una comprovació de que està repartit equitativament. Aquest procés de
 validació agrega l'energía del CLINME i la compara amb el CLMAG o el CLMAG5A
-segons el Tipus de punt (ex: els Tipus 3 estarán en el CLMAG). Per tant
+segons el Tipus de punt (ex: els Tipus 3 estaran en el CLMAG). Per tant
 l'energía total de cada agregació hauria de ser la mateixa tant en el CLINME
 com en el CLMAG/CLMAG5A. Per a realitzar aquesta validació, s'utilitza la
 pestanya **Validacions Fitxers REE** i el botó **Comprovar consums**. Es
