@@ -135,7 +135,7 @@ traçabilitat sobre en quines dades i càlculs s'ha creat.
 ### Justificant de recepció
 
 Una vegada enviada i processada l'objecció, la distribuidora mitjançant REE, contesta
-acceptantla o rebutjantla. Es fa mitjançant un fitxer "acuse de recibo" anomenat **AOBJEAGCL**. Aquest,
+acceptant-la o rebutjant-la. Es fa mitjançant un fitxer "acuse de recibo" anomenat **AOBJEAGCL**. Aquest,
 té indicat amb un camp si s'accepta o no la objecció.
 Per carregar-lo al sistema: **Respostes d'Objeccions > Carregar respostes**
 Si alguna objecció ha estat rebutjada, es pot tornar a enviar mitjançant un fitxer **REVAC**, així que
