@@ -90,7 +90,7 @@ obrirà una pestanya amb el càlcul generat prèviament.
 
 * Es pot filtrar per:
   * % diferència
-  * diferéncia de consum (kWh)
+  * diferència de consum (kWh)
   * Motiu d'objecció concret
   * Qualsevol motiu
   * distribuidora
