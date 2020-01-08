@@ -14,7 +14,7 @@ A continuació es mostren i s'en descriuen els detalls:
 * CUPS: cal destacar que els punts de subministre de règim especial, solen acabar
 amb la terminació 1F
 * Titular: Nom del Titular
-* Tipo: tipo de instalación según potencia (1, 2, 3, 4 o 5)
+* Tipo: tipus d'instal·lació segons potència (1, 2, 3, 4 o 5)
 * Provincia: código REE de Provincia
 * Potencias:
   * potencia Pico (kW)
