@@ -18,7 +18,7 @@ amb la terminació 1F
 * Provincia: codi REE de Província
 * Potencias:
   * potencia Pico (kW)
-  * potencia Nominal (kW)
+  * potència Nominal (kW)
   * Potencia Nominal Máxima (kW)
   * Potencia de Cortocircuito
 * Unitat de Programació
