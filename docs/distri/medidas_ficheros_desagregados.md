@@ -1,7 +1,7 @@
 # Generació de fitxers de mesures desagregades
 
 El següent asistent, permet generar fitxers corba, i exportar-los al posible FTP
-de la/les comercialitzadores.
+de la/les comercialitzadora/es.
 
 ![](_static/medidas/f1.png)
 
