@@ -34,7 +34,7 @@ Un període d'objeccions és a mes natural, són els períodes en que treballa R
 No cal crear cap període de forma manual, aquests es crean a l'importar un fitxer
 d'objeccions.
 El diagrama de fluxe de les objeccions és el següent: **Importar fitxers de consums -
-Contrastar dades imputades vs calculades - Selecció i filtrat de objeccions
+Contrastar dades imputades vs calculades - Selecció i filtrat d'objeccions
 detectades - Generació de fitxer d'objeccions - envíament - cárrega de respostes
 - generació de fitxer d'objeccions de resposta**
 
