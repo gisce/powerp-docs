@@ -115,7 +115,11 @@ nav:
       - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
-    - Mesures: distri/medidas.md
+    - Mesures:
+      - Tractament i generació de fitxers: distri/medidas.md
+      - Fitxers desagregats: distri/medidas_ficheros_desagregados.md
+      - Eines: distri/medidas_herramientas.md
+      - Règim especial: distri/medidas_regimen_especial.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
@@ -145,6 +149,8 @@ nav:
     - Facturació: comer/facturacion.md
     - Gestió ATR: comer/atr.md
     - Gestió impagats: comer/gestion_impago.md
+    - Mesures:
+      - Objeccions: comer/objeciones.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
     - Processos:
