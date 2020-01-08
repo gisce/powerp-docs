@@ -84,7 +84,7 @@ fitxers d'objeccions.
 * cups a cups es crearà el fitxer OBJEINME
 * agregació a agregació és el fitxer OBJEAGCL
 
-S'en creará un per distribuidora.
+S'en crearà un per distribuidora.
 Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automáticament
 obrirá una pestanya amb el càlcul generat préviament.
 
