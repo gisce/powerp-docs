@@ -8,7 +8,7 @@ de la/les comercialitzadores.
 Aquest, es pot utilitzar des del menú: **Mesures REE > Fitxers Exportats > Exportar Curva**.
 A continuació es descriuen els detalls:
 
-* Codi REE: codi del distribuidor (automátic)
+* Codi REE: codi del distribuidor (automàtic)
 * Versió del fitxer: versió que s'inclourá un cop exportat el fitxer
 * Tipus de fitxer: entre ells F1, P1...
 * Dates: data inici i data final incloses (ex: 1 a 31)
