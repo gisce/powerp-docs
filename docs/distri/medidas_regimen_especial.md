@@ -16,7 +16,7 @@ amb la terminació 1F
 * Titular: Nom del Titular
 * Tipo: tipus d'instal·lació segons potència (1, 2, 3, 4 o 5)
 * Provincia: codi REE de Província
-* Potencias:
+* Potències:
   * potencia Pico (kW)
   * potència Nominal (kW)
   * Potència Nominal Màxima (kW)
