@@ -39,7 +39,7 @@ on a la diferència l'igualin o el superin
 
 ## Informe de consums
 
-En el menú **Mesures REE > Utilitats > Generar informde de consums**, es genera
+En el menú **Mesures REE > Utilitats > Generar informe de consums**, es genera
 un full de càlcul amb els consums agregats per tarifa. Per fer-ho, cal importar
 els CLINMEs i l'ACUM. Aquest últim s'utilitza per les tarifes 6.1 que van
 desagregades.
