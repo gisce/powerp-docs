@@ -55,7 +55,7 @@ Per importar-ne un, cal dirigir-se a: **Mesures REE > Objeccions > Importar Fitx
 Permet importar .zip, .bz2 i fitxers plans. Es poden també importar varis alhora. És recomanable
 no importar fitxers amb un nom diferent al de publicació, ja que es fa servir
 per calcular dates, versions...
-Si a l'importar un fitxer el període del cual forma part no existeix, s'en crea
+Si a l'importar un fitxer el període del qual forma part no existeix, s'en crea
 automáticament un i seguidament importa el fitxer
 
 ![](_static/medidas/objeciones_importador.png)
