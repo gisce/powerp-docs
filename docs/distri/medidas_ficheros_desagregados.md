@@ -38,4 +38,4 @@ Dades horàries d'energía de clients tipus 1 i 2.
 
 ## P1
 
-Dades horáries d'energía de clients tipus 1, 2, 3 i autoconsums tipus 4.
+Dades horàries d'energía de clients tipus 1, 2, 3 i autoconsums tipus 4.
