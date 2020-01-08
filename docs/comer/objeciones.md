@@ -28,7 +28,7 @@ línies de consum de la factura, construïm una corba.
 
 ## Períodes d'objeccions
 
-Un període d'objeccions engloba les eines necessáries per el tractament
+Un període d'objeccions engloba les eines necessàries pel tractament
 d'aquestes, posant a disposició importadors, càlculs de consums, validacions de dades...
 Un període d'objeccions és a mes natural, són els períodes en que treballa REE.
 No cal crear cap període de forma manual, aquests es crean a l'importar un fitxer
