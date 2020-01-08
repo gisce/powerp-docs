@@ -86,7 +86,7 @@ fitxers d'objeccions.
 
 S'en crearà un per distribuidora.
 Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automàticament
-obrirá una pestanya amb el càlcul generat préviament.
+obrirà una pestanya amb el càlcul generat prèviament.
 
 * Es pot filtrar per:
   * % diferència
