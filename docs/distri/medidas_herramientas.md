@@ -7,7 +7,7 @@ de mesures. A continuació es nomenen i s'en descriuen els detalls:
 
 Sovint pot ser útil generar un fitxer amb només una o vàries agregacions, i així
 no haver de generar-lo per totes, amb el temps d'espera que comportaria.
-El següent asistent, permet generar CLMAG, CLMAG5A o CLINME per una o varies
+El següent asistent, permet generar CLMAG, CLMAG5A o CLINME per una o vàries
 agregacions. Per utilitzar-lo, cal anar al període de mesures concret i
 utilitzar l'assistent: "Generar fitxer per agregació". Cal primer triar el tipus
 de fitxer que es vol generar, i després afegir-hi l'agregació o agregacions que
