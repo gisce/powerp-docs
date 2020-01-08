@@ -16,7 +16,7 @@ A continuació es descriuen els detalls:
 l'exportar grans volums de dades. Els fitxers aniran adjunts al menú Fitxers de
 mesures
 * Pujar al SFTP Server: exporta el fitxer a cada FTP de cada comercialitzadora
-si están definits
+si estan definits
 * Comprimir en .bz2: comprimeix el fitxer resultant en .bz2
 * Exporta per comercialitadora/es: Exporta només les corbes que pertanyen a
 la/les comercialitzadora/es seleccionada/es. Si **es deixa buit**, es fará per
