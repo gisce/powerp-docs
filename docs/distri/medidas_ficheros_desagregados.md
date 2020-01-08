@@ -13,7 +13,7 @@ A continuació es descriuen els detalls:
 * Tipus de fitxer: entre ells F1, P1...
 * Dates: data inici i data final incloses (ex: 1 a 31)
 * Exportar en background: realitzar la exportació en segon pla. Necessari a
-l'exportar grans volums de dades. Els fitxers anirán adjunts al menú Fitxers de
+l'exportar grans volums de dades. Els fitxers aniran adjunts al menú Fitxers de
 mesures
 * Pujar al SFTP Server: exporta el fitxer a cada FTP de cada comercialitzadora
 si están definits
