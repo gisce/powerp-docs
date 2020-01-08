@@ -81,7 +81,7 @@ Un cop acabada la contrastació, es podrán escollir i/o descartar aquelles
 objeccions que el sistema hagi precalculat, crear-ne de noves si cal i generar
 fitxers d'objeccions.
 
-* cups a cups es creará el fitxer OBJEINME
+* cups a cups es crearà el fitxer OBJEINME
 * agregació a agregació és el fitxer OBJEAGCL
 
 S'en creará un per distribuidora.
