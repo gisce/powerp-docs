@@ -121,7 +121,7 @@ es vol utilitzar per crear el fitxer escollint els fitxers que hem importat i ca
 
 ![](_static/medidas/objeciones_generar.png)
 
-Un cop realitzat, s'haurán creat i adjuntat al període els fitxers resultants, agrupats
+Un cop realitzat, s'hauran creat i adjuntat al període els fitxers resultants, agrupats
 per distribuidora. Per visualitzar-los o descarregar-los hi accedim desde la
 pestanya **Seguiment de fitxers** del propi període, o amb el botó **Arxius adjunts**
 
