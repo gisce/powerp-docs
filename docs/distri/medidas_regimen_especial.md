@@ -17,7 +17,7 @@ amb la terminació 1F
 * Tipo: tipus d'instal·lació segons potència (1, 2, 3, 4 o 5)
 * Provincia: codi REE de Província
 * Potències:
-  * potencia Pico (kW)
+  * potència Pic (kW)
   * potència Nominal (kW)
   * Potència Nominal Màxima (kW)
   * Potencia de Cortocircuito
