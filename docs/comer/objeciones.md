@@ -132,7 +132,7 @@ traçabilitat sobre en quines dades i càlculs s'ha creat.
 
 ![](_static/medidas/objeciones_integridad.png)
 
-### Acuse de recibo
+### Justificant de recepció
 
 Una vegada enviada i processada l'objecció, la distribuidora mitjançant REE, contesta
 acceptantla o rebutjantla. Es fa mitjançant un fitxer "acuse de recibo" anomenat **AOBJEAGCL**. Aquest,
