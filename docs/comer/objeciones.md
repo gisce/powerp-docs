@@ -82,7 +82,7 @@ objeccions que el sistema hagi precalculat, crear-ne de noves si cal i generar
 fitxers d'objeccions.
 
 * cups a cups es creará el fitxer OBJEINME
-* agregació a agregació es el fitxer OBJEAGCL
+* agregació a agregació és el fitxer OBJEAGCL
 
 S'en creará un per distribuidora.
 Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automáticament
