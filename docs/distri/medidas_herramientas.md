@@ -1,7 +1,7 @@
 # Eines per al tractament de fitxers de mesures
 
 Algunes eines ens ajuden i fan més fácil el tractament de fitxers d'intercanvi
-de mesures. A continuació es nombren i s'en descriuen els detalls:
+de mesures. A continuació es nomenen i s'en descriuen els detalls:
 
 ## Generar fitxer per Agregació
 
