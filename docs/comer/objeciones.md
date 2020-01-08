@@ -85,7 +85,7 @@ fitxers d'objeccions.
 * agregació a agregació és el fitxer OBJEAGCL
 
 S'en crearà un per distribuidora.
-Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automáticament
+Per fer-ho, s'utilitza el botó **consultar últim contrast**. Automàticament
 obrirá una pestanya amb el càlcul generat préviament.
 
 * Es pot filtrar per:
