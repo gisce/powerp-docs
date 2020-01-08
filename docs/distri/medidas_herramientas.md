@@ -21,7 +21,7 @@ comercialitzadora.
 
 ![](_static/medidas/ficheros_por_agregacion.png)
 
-El fitxer es generará en **segon pla**, i s'inclourá com **adjunt en el propi
+El fitxer es generarà en **segon pla**, i s'inclourà com a **adjunt en el propi
 període de mesures**.
 
 ## Comparar consums amb altres mesos
