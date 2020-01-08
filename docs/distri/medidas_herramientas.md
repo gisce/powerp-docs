@@ -54,7 +54,7 @@ i el punt.
 
 ## Casos de perfilació
 
-Al perfilar, es fan una série de validacions. Si alguna d'aquestes no es compleix,
+Al perfilar, es fan una sèrie de validacions. Si alguna d'aquestes no es compleix,
 s'obre un cas. Entre les condicions que poden fer fallar la validació, hi ha per exemple:
 
 * Consum perfilat no coincideix amb el facturat
