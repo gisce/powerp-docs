@@ -182,7 +182,7 @@ l'energía total de cada agregació hauria de ser la mateixa tant en el CLINME
 com en el CLMAG/CLMAG5A. Per a realitzar aquesta validació, s'utilitza la
 pestanya **Validacions Fitxers REE** i el botó **Comprovar consums**. Es
 demanarà per quins fitxers es vol realitzar la comprovació per si es tenen
-varies versions generades. S'en indiquen la data de comprovació i els fitxers
+varies versions generades. Se n'indiquen la data de comprovació i els fitxers
 contrastats.
 
 ![](_static/medidas/validacions_fitxers.png)
