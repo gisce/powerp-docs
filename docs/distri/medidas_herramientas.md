@@ -33,7 +33,7 @@ de mesures concret.
 * Període: automàticament i per defecte escull el mes anterior, pero es pot fer
 servir el que es vulgui.
 * % Diferència: és un tupall el qual serveix per a mostrar només les agregacions
-ona la diferéncia l'igualin o el superin
+on a la diferència l'igualin o el superin
 
 ![](_static/medidas/comparar_aggs_otros_meses.png)
 
