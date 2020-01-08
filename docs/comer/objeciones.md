@@ -1,6 +1,6 @@
 # Tractament del sistema d'Objeccions
 
-Amb la finalitat de generar fitxers de objeccions de forma semiautomàtica, s'utilitza
+Amb la finalitat de generar fitxers d'objeccions de forma semiautomàtica, s'utilitza
 el módul d'objeccions situat a: **Mesures REE > Objeccions**
 
 ## Fonts de dades i preparació
