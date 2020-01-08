@@ -49,7 +49,7 @@ desagregades.
 ## Casos de mesures
 
 Durant la generació dels fitxers de mesures, es pot detectar que falten consums
-en algun punt concret. Si és així, es crea un cas indicant-ne l'orígen de dades
+en algun punt concret. Si és així, es crea un cas indicant-ne l'origen de dades
 i el punt.
 
 ## Casos de perfilació
