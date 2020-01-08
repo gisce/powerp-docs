@@ -67,7 +67,7 @@ vs el calculat del sistema.
 
 ### Automatisme d'objeccions
 
-Cada fitxer importat, té asociat un botó de **Contrastar consums**, s'utilitzará
+Cada fitxer importat, té associat un botó de **Contrastar consums**, s'utilitzarà
 per posar a calcular un fitxer en concret. Al fer-ho, es demana sobre quin fitxer
 es vol realitzar el càlcul.
 El fitxer canviarà d'estat a **Processant**, i un cop acabat el càlcul, l'estat
