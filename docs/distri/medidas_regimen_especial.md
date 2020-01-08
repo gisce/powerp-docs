@@ -48,7 +48,7 @@ Les corbes importades es guarden a la pestaña corbes de cada instal·lació
 En el **Administració Pública > REE > Agregacions de Régim Especial** es generen
 els fitxers:
 
-* **MAGRE:** Dades horaries d'energia d'agregacions d'instal·lacions de
+* **MAGRE:** Dades horàries d'energia d'agregacions d'instal·lacions de
   producció d'energia elèctrica a partir de fonts d'energia renovables,
   cogeneració i residus tipus 3 i 5.
 * **INMERE:** Acumulat mensual d'energia de punts frontera d'instal·lacions de
