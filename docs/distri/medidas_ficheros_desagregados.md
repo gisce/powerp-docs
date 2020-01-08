@@ -32,7 +32,7 @@ Els fitxers anirán adjunts al menú **Mesures REE > Fitxers Exportats > Fitxers
 Dades horàries d'energía de clients tipus 1 i 2.
 
 !!! Info "Nota"
-    Es pot utilitzar el "check" per tots els tipus, i es generará un F1 amb
+    Es pot utilitzar el "check" per tots els tipus, i es generarà un F1 amb
     tots els tipus, peró no és el format per REE.
 
 
