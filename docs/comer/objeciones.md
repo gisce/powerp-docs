@@ -102,7 +102,7 @@ obrirà una pestanya amb el càlcul generat prèviament.
 
 Per objectar, s'ha d'especificar un motiu amb un codi definit per REE.
 **Totes** les línies que tinguin **motiu** s'inclouran en el fitxer d'Objeccions
-OBJEINME o OBJEAGCL. Per tant, per **definir qué objectem**, assignem i/o desasignem
+OBJEINME o OBJEAGCL. Per tant, per **definir què objectem**, assignem i/o desassignem
 motiu a les línies que s'han calculat. Per fer-ho, les seleccionem i utilitzem:
 **Acció > Assignar Motius**
 
