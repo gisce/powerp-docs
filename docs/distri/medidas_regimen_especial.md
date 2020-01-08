@@ -34,7 +34,7 @@ pot fer de diverses formes:
 * S02: Important fitxers corba de tipus S02.xml
 * ZiverQ: Important fitxers corba de tipus ZiverQ
 * Importar de les col·leccions TG i TM: Importa directament la corba del
-contador que ens ha arribat o hem importat del sistema de telegestió i/o
+comptador que ens ha arribat o hem importat del sistema de telegestió i/o
 telemesura
 
 ![](_static/medidas/regimen_especial_importar_curvas.png)
