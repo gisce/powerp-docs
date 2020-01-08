@@ -77,7 +77,7 @@ s'actualitzará a **Acabat** i s'actualitzarà la data d'última comparació
 
 ### Filtratge d'objeccions
 
-Un cop acabada la contrastació, es podrán escollir i/o descartar aquelles
+Un cop acabada la contrastació, es podran escollir i/o descartar aquelles
 objeccions que el sistema hagi precalculat, crear-ne de noves si cal i generar
 fitxers d'objeccions.
 
