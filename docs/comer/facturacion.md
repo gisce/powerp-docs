@@ -31,7 +31,8 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 ##### Exemples
 
 - **Exemple** de una linea del fitxer **sense tarifa base (preu fix)**:
-    - `2.0A;Tarifa Fija Enero;;0,1326;38,043426`
+    - `2.0A;Tarifa 2.0A Fija Enero;;0,1326;38,043426`
+    - `2.0DHA;Tarifa 2.0DHA Fija Enero;;0,1326;0,013192;38,043426`
     
     Aixó generaria:
 
@@ -39,7 +40,8 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 ![](_static/llistes_preus/exemple_preufix_pot.png)
 
 - **Exemple** de una linea del fitxer **amb tarifa base**:
-    - `2.0A;Tarifa Fija Enero;TARIFAS ELECTRICIDAD;0,1326;38,043426`
+    - `2.0A;Tarifa 2.0A Fija Enero;TARIFAS ELECTRICIDAD;0,1326;38,043426`
+    - `2.0DHA;Tarifa 2.0DHA Fija Enero;TARIFAS ELECTRICIDAD;0,1326;0,013192;38,043426`
     
     Aixó generaria:
 
