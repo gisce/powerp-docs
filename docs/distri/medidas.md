@@ -29,7 +29,7 @@ fitxers de mesures.
 * Configuració: Configuració general del mòdul
 
 
-![](_static/medidas/menu_general.png)
+![imagen](https://user-images.githubusercontent.com/49635897/222117640-04013d7d-4b49-4e26-a3f4-6c9c5cb990d3.png)
 
 ## Períodes de mesures
 
