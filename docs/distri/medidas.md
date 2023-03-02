@@ -12,6 +12,8 @@ Per tant, aquest mòdul inclou eines d'anàlisi, de generació, de processament 
 En el menú de Mesures REE que segueix a la imatge, s'hi troben els següents
 apartats.
 
+[ ![Menú General](_static/medidas/menu_general.png)](_static/medidas/menu_general.png)
+
 ### Mesures REE
 * **Perfils:** Permet visualitzar els perfils horaris generats a filtrar per
 factura o CUPS. Aquests es calculen automàticament a l'obrir la factura si el comptador
@@ -43,8 +45,6 @@ fitxers de mesures `INMECL` i `MAGCL`.
 
 ### Configuració
 * Variables de configuració: Configuració general del mòdul.
-
-[ ![Menú General](_static/medidas/menu_general.png)](_static/medidas/menu_general.png)
 
 ## Períodes de mesures
 
@@ -220,6 +220,8 @@ els nivells d'agregació del període després d'haver-los generat.
 
 ### Procediment per a generar els fitxers de mesures
 
+#### Mesures de Tipus 4 i 5
+
 En primer lloc, cal fer clic al botó **Generar nivells d'agregació**. Això farà que l'ERP crei a la consola de l'esquerra
 els nivells d'agregació que calculi que estan vigents en el període, a partir de l'històric de contractes existent. Aquests
 nivells d'agregació quedaran en blau (no validats), ja que no tindran les dates de vigència, el consum ni la generació omplerts.
@@ -267,6 +269,45 @@ Es segueix tenint la possibilitat de revisar-les i publicar-les novament en `M+7
     Podeu consultar les dates dels tancaments al llistat **Tancaments**, però és més accessible tenir-los
     controlats des de la pestanya **Calendari REE** que trobareu a tots els períodes de Mesures. Si els tancaments d'aquesta
     pestanya encara no tenen data, la podeu obtenir amb el botó **Obtenir calendari de REE**.
+
+#### Mesures de Tipus 1, 2 i 3
+
+Les mesures dels Tipus 1, 2 i 3 es comuniquen mitjançant fitxers desagregats (`F1`) i, a diferència dels fitxers de mesures
+dels tipus 4 i 5, s'han de comunicar de forma diària (en D+1 es publiquen les mesures del dia D) i de forma mensual (en M+1 
+es publiquen les mesures del mes M).
+
+!!! Info "Nota"
+    La mesura desagregada dels tipus 3 es publica des de l'1 de gener de 2023. Abans els tipus 3 comunicaven la seva mesura
+    de forma agregada, com els tipus 4 i 5, a través dels fitxers `INMECL` i `MAGCL` descrits a la secció anterior d'aquest
+    manual.
+
+Aquests fitxers `F1` es poden generar de diferents maneres:
+
+* Es pot programar un automatisme per a que cada dia es publiqui automàticament al Concentrador Secundari de Mesures la
+corba `F1` per a tots els CUPS de tipus 1, 2 i 3 que la tinguin disponible (completa i validada). Es pot revisar fins a
+quina data es té publicada la corba `F1` dels CUPS des del llistat **Infraestructura > Fitxers Exportats > Last F1 curve CUPS**.
+Si un CUPS no avança en la seva publicació, cal revisar el comptador per a comprovar que estigui ben configurat, que hagi
+rebut la corba horària i que aquesta estigui validada.
+
+[ ![Últims F1 publicats](_static/medidas/last_f1_curve.png)](_static/medidas/last_f1_curve.png)
+
+* Es pot generar un fitxer `F1` per a un CUPS en particular, des del comptador del seu contracte associat fent servir
+l'assistent **Export Curve to SFTP**. A l'assistent es pot ajustar el tipus de fitxer (habitualment `F1`), el rang de dates
+(totes dues incloses) i es compta amb opcions addicionals com comprimir en format ".bz2" (estàndard de ASEME), permetre
+decimals (REE no ho permet però per a exportar fitxers per a altres propòsits pot ser útil quan hi ha decimals a la corba
+en kWh), publicar directament al Concentrador Secundari de Mesures la corba exportada, etc.
+
+[ ![Exportar corba F1](_static/medidas/export_curve.png)](_static/medidas/export_curve.png)
+
+* Es pot generar un fitxer `F1` global per a tots els CUPS de tipus 1, 2 i 3. En aquest cas, l'assistent és el mateix que 
+el de l'opció anterior, però s'invoca des del menú *Infraestructura > Fitxers Exportats > Export Curve*.
+
+[ ![Exportar corba global F1](_static/medidas/export_curve_all.png)](_static/medidas/export_curve_all.png)
+
+!!! Info "Nota"
+    L'enviament automàtic de fitxers `F1` permet corba validada, però l'assistent per a exportar-los manualment requerirà
+    que a més d'estar validada, la corba tingui CCH Disponible. Això implica que el fitxer es podrà generar després d'haver
+    acabat de facturar el període a presentar.
 
 ### Procediments per a validar els fitxers de mesures
 
