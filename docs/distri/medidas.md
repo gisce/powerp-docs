@@ -151,7 +151,7 @@ cada període de mesures pel qual la factura contingui dies (per exemple, una fa
 al 3 de febrer, s'afegirà als períodes de mesures de gener i de febrer). Des de l'enllaç **Factures del periode** es
 poden llistar totes les factures asignades al període de mesures, el seu origen i el seu estat (`esborrany` si no estan
 preparades lse seves mesures i `finalitzat` si ja estan preparades). Les factures s'afegeixen sempre en estat `esborrany`
-als períodes de mesurse.
+als períodes de mesures.
 
 [ ![Factures del període](_static/medidas/factures_periode.png)](_static/medidas/factures_periode.png)
 
@@ -247,7 +247,7 @@ Mesures.
 
 Com a mínim de tant en tant, és recomanable generar el fitxer `AGRECL` adjuntant al seu assistent el fitxer `AGRECLOS` més
 recent que hagi publicat l'Operador del Sistema al Concentrador Secundari de Mesures pel període de mesures en qüestió. 
-Això farà que el fitxer no noḿes tingui
+Això farà que el fitxer no només tingui
 en compte durant la seva generació els canvis als nivells d'agregació respecte el periode anterior sino també l'inventari que
 consta a REE. Així s'evitarà que no s'hagi notificat alguna baixa o fins i tot s'evitarà notificar dos cops una que ja es va
 comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, però sí recomanable.
