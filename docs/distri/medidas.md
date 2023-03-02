@@ -98,7 +98,7 @@ automàticament a l'obrir la factura (si te comptador telegestionat). Aquest pro
 consisteix en emplenar els forats i ajustar el consum de la corba perquè doni
 el consum real.
 La mateixa factura indica si la corba té el fix fet, mitjançant el camp
-`CCH disponible`, a la pestanya `Energia`.
+`CCH disponible`, a la pestanya **Energia**.
 Per assegurar-se que no ha quedat cap corba sense ajustar-se, existeix un
 llistat a:
 **Facturació > General > Factures Client > Factures Client CCH no disponible**
@@ -209,7 +209,7 @@ s'han anat publicant al dia els fitxers `F5D` al Concentrador de Corbes.
 
 ### Fitxers històrics
 
-Finalment, també trobareu una pestanya `Històric` amb altres fitxers que ja són antics i que REE no suporta. No
+Finalment, també trobareu una pestanya **Històrics** amb altres fitxers que ja són antics i que REE no suporta. No
 és recomanable generar-los, a menys que es faci un cop ja s'han generat i publicat tots els fitxers vigents al Concentrador
 Secundari de Mesures, ja que el format d'aquests fitxers va quedar descontinuat per SIMEL i podria deixar malament
 els nivells d'agregació del període després d'haver-los generat.
@@ -254,7 +254,7 @@ comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, per�
 ![](_static/medidas/generacion_agrecl.png)
 
 Un cop finalitzi la generació de cada fitxer de mesures, aquest quedarà com a fitxer adjunt al període de mesures. 
-Es pot accedir als fitxers directament per la consola de la dreta, sota al pestanya `Fitxers REE tipus 3, 4 i 5` del 
+Es pot accedir als fitxers directament per la consola de la dreta, sota al pestanya **Fitxers REE tipus 3, 4 i 5** del
 període de mesures, o bé des de l'enllaç **Adjunts**, que és més pràctic per a poder descarregar-los de forma massiva si
 es seleccionen tots els que es vol descarregar i es fa servir l'acció de l'assistent **Attachment ZIP**, descarregant d'una
 única vegada en un fitxer comprimit tots els fitxers desitjats.
@@ -266,7 +266,7 @@ Es segueix tenint la possibilitat de revisar-les i publicar-les novament en `M+7
 
 !!! Info "Nota"
     Podeu consultar les dates dels tancaments al llistat **Tancaments**, però és més accessible tenir-los
-    controlats des de la pestanya `Calendario REE` que trobareu a tots els períodes de Mesures. Si els tancaments d'aquesta
+    controlats des de la pestanya **Calendari REE** que trobareu a tots els períodes de Mesures. Si els tancaments d'aquesta
     pestanya encara no tenen data, la podeu obtenir amb el botó **Obtenir calendari de REE**.
 
 ### Procediments per a validar els fitxers de mesures
@@ -295,10 +295,11 @@ tenir 0 kWh de diferència, tant a consum com a generació.
 
 #### Validació d'entrega a REE
 
-Per tal de comprovar que el que s'ha entregat i processat a REE, és el mateix
+Per tal de comprovar que el que s'ha entregat i processat a REE és el mateix
 que tenim a l'ERP, es poden importar els fitxers d'inventari i acumulat per fer
 aquesta validació. Això pot anar bé per veure possibles agregacions estimades, o
 possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAGLACUM` i `INMECLOS`. 
+Des de la pestanya **Acumulats** podreu veure dues consoles per a poder fer aquests contrastos.
 
 Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGLACUM** i **Importar fitxer INMECLOS**.
 Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una línea per a cada nivell d'agregació, mentre que
@@ -307,4 +308,4 @@ a l'hora de trobar un desquadrament entre els nostres nivells d'agregació i les
 
 ![](_static/medidas/aclacums.png)
 
-Es recomana fer servir la versió més recent publicada per l'Operador del Sistema per a ambdós fitxers.
+Es recomana també fer servir la versió més recent publicada per l'Operador del Sistema per a ambdós fitxers.
