@@ -44,8 +44,7 @@ fitxers de mesures `INMECL` i `MAGCL`.
 ### Configuració
 * Variables de configuració: Configuració general del mòdul.
 
-
-![](_static/medidas/menu_general.png)
+[ ![Menú General](_static/medidas/menu_general.png)](_static/medidas/menu_general.png)
 
 ## Períodes de mesures
 
@@ -54,7 +53,7 @@ mesures és un mes en concret, el qual engloba les dates, el número de factures
 de contractes i un control del procés de perfilació i d'ajust de corbes de
 telegestió i de telemesura.
 
-![](_static/medidas/periodes_mesures.png)
+[ ![Períodes de Mesures](_static/medidas/periodes_mesures.png)](_static/medidas/periodes_mesures.png)
 
 ### Preparació de les dades
 
@@ -65,7 +64,7 @@ Anant a un període de mesures es pot consultar i actualitzar l'estat de cada
 col·lecció de dades. Des de **Mesures REE > Períodes de Mesures** es pot
 comprovar l'estat de les dades.
 
-![](_static/medidas/dades_preparades.png)
+[ ![Dades preparades](_static/medidas/dades_preparades.png)](_static/medidas/dades_preparades.png)
 
 Cada origen de dades té una barra que indica el progrés i, a la seva dreta, un botó per
 actualitzar-lo. Així es pot saber el percentatge de preparació de les dades abans de generar
@@ -103,18 +102,18 @@ Per assegurar-se que no ha quedat cap corba sense ajustar-se, existeix un
 llistat a:
 **Facturació > General > Factures Client > Factures Client CCH no disponible**
 
-![](_static/medidas/factures_cch_no_disponible.png)
+[ ![Factures amc CCH no disponible](_static/medidas/factures_cch_no_disponible.png)](_static/medidas/factures_cch_no_disponible.png)
 
 Per a forçar l'ajust d'una o més factures, es pot utilitzar l'assistent `Ajustar CCH Fact (FIX)`, seleccionant
 totes les factures que calguin i fent clic sobre **Acció > Ajustar CCH Fact (FIX)**. 
 
-![](_static/medidas/asistent_fix_cch_fact.png)
+[ ![Assistent FIX CCH](_static/medidas/asistent_fix_cch_fact.png)](_static/medidas/asistent_fix_cch_fact.png)
 
 També es pot obtar per fer servir
 el botó **Ajustar CCH** des del període de mesures, que ja recorrerà totes les factures pendents d'origen `Telemesura`
 i `Telegestió` i intentarà ajustar-ne la corba des de les seves factures.
 
-![](_static/medidas/actualitzar_cch.png)
+[ ![Actualitzar Progrés TG i TM](_static/medidas/actualitzar_cch.png)](_static/medidas/actualitzar_cch.png)
 
 #### Telemesura
 
@@ -141,7 +140,7 @@ El perfilat es realitza de forma automàtica tan punt s'obre la factura.
 
 Si el perfilat no arriba al 100%, cal utilitzar el botó **Perfilar** com s'explica a l'apartat de Preparació de les dades.
 
-![](_static/medidas/actualitzar_perfilacio.png)
+[ ![Actualitzar progrés Perfilació](_static/medidas/actualitzar_perfilacio.png)](_static/medidas/actualitzar_perfilacio.png)
 
 ### Factures del període
 Dins de cada període de mesures descrit en el següent apartat, es disposa d'un llistat amb totes les factures del 
@@ -154,7 +153,7 @@ poden llistar totes les factures asignades al període de mesures, el seu origen
 preparades lse seves mesures i `finalitzat` si ja estan preparades). Les factures s'afegeixen sempre en estat `esborrany`
 als períodes de mesurse.
 
-![](_static/medidas/factures_periode.png)
+[ ![Factures del període](_static/medidas/factures_periode.png)](_static/medidas/factures_periode.png)
 
 Com s'explica a l'apartat de Preparació de les dades, cadascún d'aquests orígens, disposa d'un botó per actualitzar-ne el 
 seu progrés. És necessari per tant utilitzar-lo després d'haver perfilat o ajustat corbes de factures del període. 
@@ -178,7 +177,7 @@ estigui correcte, etc.). Un cop revisada i corregida l'errat,a es pot tornar a p
 Per tal de generar els fitxers de REE, cal dirigir-se a **Mesures REE > Períodes
 de mesures > Fitxers REE tipus 3, 4 i 5**. Aquest mòdul permet la generació i el tractament de diversos tipus de fitxers.
 
-![](_static/medidas/mesures_ree.png)
+[ ![Mesures REE](_static/medidas/mesures_ree.png)](_static/medidas/mesures_ree.png)
 
 ### Fitxers de Mesures
 
@@ -251,7 +250,7 @@ en compte durant la seva generació els canvis als nivells d'agregació respecte
 consta a REE. Així s'evitarà que no s'hagi notificat alguna baixa o fins i tot s'evitarà notificar dos cops una que ja es va
 comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, però sí recomanable.
 
-![](_static/medidas/generacion_agrecl.png)
+[ ![Generació AGRECL](_static/medidas/generacion_agrecl.png)](_static/medidas/generacion_agrecl.png)
 
 Un cop finalitzi la generació de cada fitxer de mesures, aquest quedarà com a fitxer adjunt al període de mesures. 
 Es pot accedir als fitxers directament per la consola de la dreta, sota al pestanya **Fitxers REE tipus 3, 4 i 5** del
@@ -259,7 +258,7 @@ període de mesures, o bé des de l'enllaç **Adjunts**, que és més pràctic p
 es seleccionen tots els que es vol descarregar i es fa servir l'acció de l'assistent **Attachment ZIP**, descarregant d'una
 única vegada en un fitxer comprimit tots els fitxers desitjats.
 
-![](_static/medidas/adjunts.png)
+[ ![Fitxers adjunts](_static/medidas/adjunts.png)](_static/medidas/adjunts.png)
 
 Recordeu que s'espera que les Mesures es publiquin en `M+2` a partir de gener de 2023. Antigament es publicaven a `M+3`.
 Es segueix tenint la possibilitat de revisar-les i publicar-les novament en `M+7`. 
@@ -291,7 +290,7 @@ Com a resultat, a la consola de nivells d'agregació, apareixerà una línea per
 l'energia publicada als fitxers `INMECL` i l'energia publicada al fitxer `MAGCL`. Per anar bé, totes les línies tindrien que
 tenir 0 kWh de diferència, tant a consum com a generació.
 
-![](_static/medidas/validacions_fitxers.png)
+[ ![Validacions de fitxers](_static/medidas/validacions_fitxers.png)](_static/medidas/validacions_fitxers.png)
 
 #### Validació d'entrega a REE
 
@@ -306,6 +305,6 @@ Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una 
 el fitxer `INMECLOS` generarà una per cada línia dels fitxers `INMECL`. El fitxer `INMECLOS` ens pot donar més detall
 a l'hora de trobar un desquadrament entre els nostres nivells d'agregació i les mesures que finalment ens imputa REE.
 
-![](_static/medidas/aclacums.png)
+[ ![Acumulats](_static/medidas/aclacums.png)](_static/medidas/aclacums.png)
 
 Es recomana també fer servir la versió més recent publicada per l'Operador del Sistema per a ambdós fitxers.
