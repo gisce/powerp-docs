@@ -16,11 +16,11 @@ apartats.
 
 ### Mesures REE
 * **Perfils:** Permet visualitzar els perfils horaris generats a filtrar per
-factura o CUPS. Aquests es calculen automàticament a l'obrir la factura si el comptador
+factura o CUPS. Aquests es calculen automàticament en obrir la factura si el comptador
 no té tecnologia de Telemesura ni de Telegestió.
 
 !!! Info "Nota"
-    Per tal de desactivar la perfilació automàtica al obrir les factures, cal ajustar la
+    Per tal de desactivar la perfilació automàtica en obrir les factures, cal ajustar la
     variable de configuració `profile_on_invoice_open` a `0`.
 
 * **Períodes de Mesures:** Mostra l'estat i el progrés dels períodes de mesures.
@@ -35,21 +35,21 @@ no té tecnologia de Telemesura ni de Telegestió.
 * **Generar Fitxers `CUPSDAT` i `CUPS45`:** Generació de fitxers d'inventari dels CUPS.
 
 ### Utilitats
-* **Crear períodes de mesures:** Assistent que permet crear els períodes de mesures dels 12 mesos d'un any.
+* **Crear Períodes de Mesures:** Assistent que permet crear els períodes de mesures dels 12 mesos d'un any.
 * **Generar informe de consums:** Assistent per a generar un informe de consum per tarifa a partir de fitxers `CLINMES` i `ACUM`.
 
 ### Casos
-* **Casos perfilació:** Casos CRM que reporten el comportament al perfilar factures.
-* **Casos mesures:** Casos CRM que reporten el comportament al generar els
+* **Casos de Perfilació:** Casos CRM que reporten el comportament al perfilar factures.
+* **Casos de Mesures:** Casos CRM que reporten el comportament al generar els
 fitxers de mesures `INMECL` i `MAGCL`.
 
 ### Configuració
-* Variables de configuració: Configuració general del mòdul.
+* **Variables de configuració:** Configuració general del mòdul.
 
 ## Períodes de mesures
 
 Els fitxers de REE, s'entreguen per períodes **a mes complet**. Cada període de
-mesures és un mes en concret, el qual engloba les dates, el número de factures i
+mesures és un mes en concret, el qual engloba les dates, el nombre de factures i
 de contractes i un control del procés de perfilació i d'ajust de corbes de
 telegestió i de telemesura.
 
@@ -93,7 +93,7 @@ en un altre apartat d'aquest manual.
 
 * **Procés d'ajust (FIX CCH):**
 El procés d'ajust de la corba s'anomena `fix_cch_fact`. Es fa
-automàticament a l'obrir la factura (si te comptador telegestionat). Aquest procés
+automàticament en obrir la factura (si te comptador telegestionat). Aquest procés
 consisteix en emplenar els forats i ajustar el consum de la corba perquè doni
 el consum real.
 La mateixa factura indica si la corba té el fix fet, mitjançant el camp
@@ -130,13 +130,13 @@ Si el progrés no ha arribat al 100%, caldrà aplicar el **FIX CCH FACT** com s'
 Quan no és possible disposar de cap dels dos orígens anteriors, cal perfilar
 una corba horària mitjançant els coeficients que publica mensualment
 REE [Perfils de consum](https://www.ree.es/es/actividades/operacion-del-sistema-electrico/medidas-electricas)
-El perfilat es realitza de forma automàtica tan punt s'obre la factura.
+El perfilat es realitza de forma automàtica tan bon punt s'obre la factura.
 
 !!! Info "Nota"
-    Les corbes del Tipus 1 i 2 (>450kWh) s'han d'entregar amb corba real.
+    Les corbes del Tipus 1 i 2 (més de 450 kW de potència màxima contractada) s'han d'entregar amb corba real.
     Per a comprovar que totes les factures estan perfilades correctament, cal fixar-se
     en la barra de progrés de `Perfilació`del mateix període de mesures. Recordeu que per a actualitzar aquest
-    progrés, es necessari utilitzar el botó **Actualitzar progrés de perfilació**.
+    progrés, és necessari utilitzar el botó **Actualitzar progrés de perfilació**.
 
 Si el perfilat no arriba al 100%, cal utilitzar el botó **Perfilar** com s'explica a l'apartat de Preparació de les dades.
 
@@ -146,17 +146,17 @@ Si el perfilat no arriba al 100%, cal utilitzar el botó **Perfilar** com s'expl
 Dins de cada període de mesures descrit en el següent apartat, es disposa d'un llistat amb totes les factures del 
 període classificades i filtrables per orígen **(`telemesura`, `telegestió` o `perfil`)**. Les factures s'afegiran al
 període de mesures en el moment d'obrir-se (sempre i quan els períodes de mesures estiguin creats, i aquests es creen com
-a part dels procediments de canvi d'any). Al obrir una factura, aquesta s'afegirà al llistat de factures del període de
+a part dels procediments de canvi d'any). En obrir una factura, aquesta s'afegirà al llistat de factures del període de
 cada període de mesures pel qual la factura contingui dies (per exemple, una factura de client amb consum de l'1 de gener
 al 3 de febrer, s'afegirà als períodes de mesures de gener i de febrer). Des de l'enllaç **Factures del periode** es
 poden llistar totes les factures asignades al període de mesures, el seu origen i el seu estat (`esborrany` si no estan
-preparades lse seves mesures i `finalitzat` si ja estan preparades). Les factures s'afegeixen sempre en estat `esborrany`
+preparades les seves mesures i `finalitzat` si ja estan preparades). Les factures s'afegeixen sempre en estat `esborrany`
 als períodes de mesures.
 
 [ ![Factures del període](_static/medidas/factures_periode.png)](_static/medidas/factures_periode.png)
 
-Com s'explica a l'apartat de Preparació de les dades, cadascún d'aquests orígens, disposa d'un botó per actualitzar-ne el 
-seu progrés. És necessari per tant utilitzar-lo després d'haver perfilat o ajustat corbes de factures del període. 
+Com s'explica a l'apartat de Preparació de les dades, cadascún d'aquests orígens, disposa d'un botó per actualitzar-ne el
+progrés. És necessari per tant utilitzar-lo després d'haver perfilat o ajustat corbes de factures del període. 
 Les factures de tipus `telegestió` i `telemesura` comproven el "check" `CCH disponible` de la factura, i les de tipus 
 `perfil`, s'actualitzen a l'estat  `Finalitzat` un cop han estat perfilades. Per tant, si es vol arribar al 100% 
 d'integritat de les dades, s'han d'ajustar  les factures en estat `esborrany` de tipus `telegestió` i `telemesura` 
@@ -170,7 +170,7 @@ del periode` i filtrar pel tipus d'origen i per estat `esborrany`. Un cop aplica
 una les factures, per a detectar i corregir problemes relacionats amb la configuració del contracte i/o del comptador
 (per exemple que hi hagi un comptador amb tecnologia PRIME que no tingui marcada la casella `Comptador TG`, que un
 comptador telemesurat o telegestionat no tingui registrador, que el producte de magatzem d'un comptador telegestionat no
-estigui correcte, etc.). Un cop revisada i corregida l'errat,a es pot tornar a provar d'ajustar la factura corresponent.
+estigui correcte, etc.). Un cop revisada i corregida l'errata, es pot tornar a provar d'ajustar la factura corresponent.
 
 ## Fitxers REE
 
@@ -203,7 +203,7 @@ tornar a presentar períodes de mesures antics, ja no cal generar-los.
 
 ### Fitxers de corba
 
-* **F5D**: Aquest assistent permet generar els fitxers `F5D` "tallats" a més natural. No és obligatori si ja
+* **F5D**: Aquest assistent permet generar els fitxers `F5D` "tallats" a mes natural. No és obligatori si ja
 s'han anat publicant al dia els fitxers `F5D` al Concentrador de Corbes.
 
 ### Fitxers històrics
@@ -222,10 +222,10 @@ els nivells d'agregació del període després d'haver-los generat.
 
 #### Mesures de Tipus 4 i 5
 
-En primer lloc, cal fer clic al botó **Generar nivells d'agregació**. Això farà que l'ERP crei a la consola de l'esquerra
+En primer lloc, cal fer clic al botó **Generar nivells d'agregació**. Això farà que l'ERP creï a la consola de l'esquerra
 els nivells d'agregació que calculi que estan vigents en el període, a partir de l'històric de contractes existent. Aquests
 nivells d'agregació quedaran en blau (no validats), ja que no tindran les dates de vigència, el consum ni la generació omplerts.
-Aquests valors s'ompliran tan bon punt s'hagin generat els propis fitxers de mesures, que actualitzaran els nivells d'agregació
+Aquests valors s'ompliran tan bon punt s'hagin generat els fitxers de mesures, que actualitzaran els nivells d'agregació
 durant el seu procés de generació.
 
 Cada fitxer de mesures porta associat un botó per tal de procedir a la seva generació. Per
@@ -240,8 +240,8 @@ Cal recordar també que REE espera primer l'entrega del fitxer `AGRECL` per tal 
 aquell període en concret i, seguidament, espera els altres fitxers (els `INMECL` i el `MAGCL`). El fitxer `AGRECL` és
 l'encarregat d'actualitzar l'inventari d'agregacions actives a REE i, si no es comunica o no s'espera a rebre la resposta de
 REE després d'enviar-lo, es podrien comunicar errors (.BAD2) als fitxers `INMECL` i `MAGCL` si s'hi ha comunicat consum d'una
-agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` és el darrer que generem (abans tenim
-que haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums i la generació mitjançant la generació
+agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` és el darrer que generem (abans cal
+haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums i la generació mitjançant la generació
 dels fitxers `INMECL` i `MAGCL`), però al mateix temps és també el primer fitxer que comunicarem al Concentrador Secundari de
 Mesures. 
 
@@ -255,7 +255,7 @@ comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, per�
 [ ![Generació AGRECL](_static/medidas/generacion_agrecl.png)](_static/medidas/generacion_agrecl.png)
 
 Un cop finalitzi la generació de cada fitxer de mesures, aquest quedarà com a fitxer adjunt al període de mesures. 
-Es pot accedir als fitxers directament per la consola de la dreta, sota al pestanya **Fitxers REE tipus 3, 4 i 5** del
+Es pot accedir als fitxers directament per la consola de la dreta, sota la pestanya **Fitxers REE tipus 3, 4 i 5** del
 període de mesures, o bé des de l'enllaç **Adjunts**, que és més pràctic per a poder descarregar-los de forma massiva si
 es seleccionen tots els que es vol descarregar i es fa servir l'acció de l'assistent **Attachment ZIP**, descarregant d'una
 única vegada en un fitxer comprimit tots els fitxers desitjats.
@@ -294,7 +294,7 @@ rebut la corba horària i que aquesta estigui validada.
 * Es pot generar un fitxer `F1` per a un CUPS en particular, des del comptador del seu contracte associat fent servir
 l'assistent **Export Curve to SFTP**. A l'assistent es pot ajustar el tipus de fitxer (habitualment `F1`), el rang de dates
 (totes dues incloses) i es compta amb opcions addicionals com comprimir en format ".bz2" (estàndard de ASEME), permetre
-decimals (REE no ho permet però per a exportar fitxers per a altres propòsits pot ser útil quan hi ha decimals a la corba
+decimals (REE no ho permet, però per a exportar fitxers per a altres propòsits pot ser útil quan hi ha decimals a la corba
 en kWh), publicar directament al Concentrador Secundari de Mesures la corba exportada, etc.
 
 [ ![Exportar corba F1](_static/medidas/export_curve.png)](_static/medidas/export_curve.png)
@@ -323,11 +323,11 @@ com en el `MAGCL` per a cada nivell d'agregació.
 
 Per a realitzar aquesta validació, s'utilitza la
 pestanya **INME vs MAG** i el botó **Comprovar consums**. Es
-demanarà per quins fitxers es vol realitzar la comprovació per si es tenen
-varies versions generades. Se n'indiquen la data de comprovació i els fitxers
+demanarà per a quins fitxers es vol realitzar la comprovació, per si es tenen
+diverses versions generades. Se n'indiquen la data de comprovació i els fitxers
 contrastats. Caldrà seleccionar un `MAGCL` i tots els `INMECL` (aconsellablement els de la versió més recent).
 
-Com a resultat, a la consola de nivells d'agregació, apareixerà una línea per a cada agregació i la seva comparativa entre
+Com a resultat, a la consola de nivells d'agregació, apareixerà una línia per a cada agregació i la seva comparativa entre
 l'energia publicada als fitxers `INMECL` i l'energia publicada al fitxer `MAGCL`. Per anar bé, totes les línies tindrien que
 tenir 0 kWh de diferència, tant a consum com a generació.
 
@@ -342,7 +342,7 @@ possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAG
 Des de la pestanya **Acumulats** podreu veure dues consoles per a poder fer aquests contrastos.
 
 Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGLACUM** i **Importar fitxer INMECLOS**.
-Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una línea per a cada nivell d'agregació, mentre que
+Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una línia per a cada nivell d'agregació, mentre que
 el fitxer `INMECLOS` generarà una per cada línia dels fitxers `INMECL`. El fitxer `INMECLOS` ens pot donar més detall
 a l'hora de trobar un desquadrament entre els nostres nivells d'agregació i les mesures que finalment ens imputa REE.
 
