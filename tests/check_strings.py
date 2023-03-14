@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from __future__ import division, print_function, unicode_literals
 from os.path import abspath, normpath, dirname, join, isfile
 from babel.messages import pofile
