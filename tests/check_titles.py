@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from __future__ import division, print_function, unicode_literals
 from os.path import abspath, normpath, dirname, join, isfile
 import yaml
@@ -8,8 +9,8 @@ import argparse
 red = "\033[0;31m"
 green = "\033[0;32m"
 endcl = "\033[0m"
-cross = u"\U00002717"
-check = u"\U00002713"
+cross = "✗"
+check = "✓"
 
 
 def get_pages(root):
@@ -39,6 +40,7 @@ with open('mkdocs_es.yml', 'r') as mkdocs_conf:
         es_pages = get_pages(conf['nav'])
 
 missing_pages = set(es_pages) - set(ca_pages)
+
 if missing_pages:
     print('{red}{cross} There are pages missing in the original config file!'
           '{endcl}'.format(**locals()))

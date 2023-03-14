@@ -1,3 +1,4 @@
+# -*- coding: UTF-8 -*-
 from __future__ import division, print_function, unicode_literals
 from os.path import abspath, normpath, dirname, join, isfile
 import yaml
@@ -8,8 +9,8 @@ red = "\033[0;31m"
 green = "\033[0;32m"
 yellow = "\033[0;33m"
 endcl = "\033[0m"
-cross = u"\U00002717"
-check = u"\U00002713"
+cross = "✗"
+check = "✓"
 
 alt_configs = [
     'es'
