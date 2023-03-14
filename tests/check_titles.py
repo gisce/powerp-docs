@@ -9,8 +9,8 @@ import argparse
 red = "\033[0;31m"
 green = "\033[0;32m"
 endcl = "\033[0m"
-cross = "✗"
-check = "✓"
+cross = "[ERROR]"
+check = "[OK]"
 
 
 def get_pages(root):
