@@ -21,7 +21,7 @@ apartats.
 
 [ ![Menú d'Objeccions](_static/medidas/objeciones_menu.png)](_static/medidas/objeciones_menu.png)
 
-* **Perfils:** Permet visualitzar els perfils horaris generats a filtrar per factura o CUPS. Aquests es calculen
+* **Perfils:** Permet visualitzar els perfils horaris generats a filtrar per factura o CUPS.
 
 ### Objeccions
 * **Períodes d'Objeccions:** Mostra l'estat i el progrés dels períodes de mesures.
@@ -77,7 +77,7 @@ En el tractament d'Objeccions s'utilitza un conjunt de fitxers específics:
 
 * **OBJECIL**: Objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de fonts d'energia
 renovables, cogeneració i residus (RECORE) tipus 3, 4 i 5.
-* **REOBJECIL**: Resposta a bjeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de 
+* **REOBJECIL**: Resposta a objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de 
 fonts d'energia renovables, cogeneració i residus (RECORE) tipus 3, 4 i 5.
 * **REVCIL**: Sol·licitut de revisió de la resolució d'objeccions de punts frontera d'instal·lacions de producció d'energia
 elèctrica a partir de fonts d'energia renovables, cogeneració i residus (RECORE) de tipus 3, 4 i 5.
@@ -202,7 +202,6 @@ es pot donar.
 La generació de fitxers crearà el següent:
 * Un fitxer `OBJEINCL` per a cada Distribuïdora per a la qual hi hagi com a mínim un CUPS amb motiu d'objecció.
 * Un fitxer `OBJEAGRECL` per a cada Distribuïdora per a la qual hi hagi com a mínim una agregació amb motiu d'objecció.
-agregació a agregació és el fitxer OBJEAGRECL
 
 !!! Nota "Nota"
     Els fitxers d'objeccions generats només contindran línies per a les quals hi hagi assignat un motiu d'objecció,
