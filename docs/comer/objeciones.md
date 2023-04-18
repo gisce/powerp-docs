@@ -115,7 +115,7 @@ Per importar-ne un, cal utilitzar l'assistent que trobareu a: **Mesures REE > Ob
 L'assistent permet importar fitxers plans o bé comprimits en format ".zip" o format ".bz2". També es permet importar més d'un
 fitxer simultàniament.
 
-[ ![](_static/medidas/objeciones_principal.png)](_static/medidas/objeciones_principal.png)
+[ ![](_static/medidas/objeciones_importador.png)](_static/medidas/objeciones_importador.png)
 
 És recomanable no importar fitxers amb un nom diferent al de publicació, ja que aquest es fa servir per a calcular dates
 i versions.
@@ -123,9 +123,14 @@ i versions.
 Si quan s'importa un fitxer, el període al qual pertany no existeix encara a l'ERP, el període es crea automàticament i 
 a continuació s'importa el fitxer.
 
-[ ![](_static/medidas/objeciones_importador.png)](_static/medidas/objeciones_importador.png)
+Un cop importat un fitxer per un període determinat, aquest ja apareixerà al llistat de Períodes d'Objeccions i s'hi
+podrà accedir fent-hi doble clic.
 
-Un cop importat un fitxer de mesures, es poden consultar les línies contingudes al mateix fent doble clic al fitxer des
+[ ![Menú d'Objeccions](_static/medidas/objeciones_listado.png)](_static/medidas/objeciones_listado.png)
+
+[ ![](_static/medidas/objeciones_principal.png)](_static/medidas/objeciones_principal.png)
+
+Des d'un Període d'Objeccions, es poden consultar les línies contingudes al mateix fent doble clic al fitxer des
 de la seva consola i prement el botó **Veure fitxer**.
 
 [ ![](_static/medidas/objeciones_ver_fichero.png)](_static/medidas/objeciones_ver_fichero.png)
