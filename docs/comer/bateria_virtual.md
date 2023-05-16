@@ -1,0 +1,1 @@
+# Bateria virtual
