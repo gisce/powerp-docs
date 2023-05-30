@@ -1,6 +1,6 @@
 # Mesures REE
 
-## Generació de fitxers de mesures desagregats
+## Generació de fitxers de mesures desagregades
 
 L'ERP incorpora eines per a poder generar i publicar fitxers de mesures de forma desagregada, és a dir no a nivell d'agregació
 sinó a nivell de CUPS.
@@ -11,10 +11,11 @@ Aquestes eines es poden trobar al menú: **Mesures REE > Fitxers Exportats**.
 
 A continuació se'n descriuen els detalls:
 
-### Mesures REE
+### Fitxers Exportats
 * **Exportar corba:** Aquest assistent és l'eina principal. Permet generar fitxers `F1` i `P1` en el format especificat per REE
 per a poder publicar les mesures horaries dels subministraments de Tipus 1, 2 i 3 (més de 50 kW de potència màxima contractada).
-* **Fitxers de Mesures:** Aquest llistat mostra els fitxers generats amb l'assistent **Exportar corba**.
+* **Fitxers de Mesures:** Aquest llistat mostra els fitxers generats automàticament per l'ERP. També en permet comprovar l'estat d'enviament.
+Així es pot comprovar si els `F1` automàtics es van publicant.
 * **Generar fitxer P1D:** Aquest assistent permet generar fitxers `P1D`, tant diaris com utilitzant un rang de dates incloses.
 * **Casos Telemesures:** Aquest llistat permet revisar els casos CRM oberts a l'hora de generar fitxers, detectant així CUPS pels
 quals no s'hagin pogut obtenir els consums horaris. És útil si els fitxers s'han generat en segon pla.
@@ -23,8 +24,8 @@ publicat el fitxer `F1`.
 * **Darrera corba MCIL dels CUPS**: Aquest llistat permet revisar els CUPS de Tipus 3, 4 i 5 amb RECORE o amb autoconsum amb excedents
 sense compensació simplificada per a comprovar fins a quin dia tenen publicat el fitxer `MCIL345`.
 * **Darrera corba CCH_VAL dels CUPS**: Aquest llistat permet revisar els CUPS per a comprovar fins a quin dia tenen
-publicat el fitxer `P5D` (els Tipus 5) o `P1D` (els Tipus 1, 2, 3 i 4 amb autoconsum).
-* **Fitxers generats**: Aquest llistat permet revisar els fitxers de mesures generats.
+publicat el fitxer `P5D` (els Tipus 5) o `P1D` (els Tipus 1, 2, 3 i autoconsums de Tipus 4).
+* **Fitxers Generats**: Aquest llistat permet revisar els fitxers de mesures desagregades generats en segon pla.
 * **Llançar automatisme de F1**: Aquest assistent permet llançar de forma manual l'automatisme que genera i publica els fitxers `F1`
 diaris pels CUPS de Tipus 1, 2 i 3. És útil si algun CUPS no s'ha publicat i, després de revisar i corregir problemes al comptador o
 a la corba horària, es vol posar al dia sense tenir que esperar a que l'automatisme ho faci l'endemà.
@@ -39,28 +40,42 @@ es troba als comptadors telemesurats i telegestionats. Però de totes maneres, �
 
 [ ![Generar Fitxers F1](_static/medidas/f1.png)](_static/medidas/f1.png)
 
-* Codi REE: codi del distribuidor (automàtic)
-* Versió del fitxer: versió que s'inclourá un cop exportat el fitxer
-* Tipus de fitxer: entre ells F1, P1...
-* Dates: data inici i data final incloses (ex: 1 a 31)
-* Exportar en background: realitzar la exportació en segon pla. Necessari a
-l'exportar grans volums de dades. Els fitxers aniran adjunts al menú Fitxers de
-mesures
-* Pujar al SFTP Server: exporta el fitxer a cada FTP de cada comercialitzadora
-si estan definits
-* Comprimir en .bz2: comprimeix el fitxer resultant en .bz2
-* Exporta per comercialitadora/es: Exporta només les corbes que pertanyen a
-la/les comercialitzadora/es seleccionada/es. Si **es deixa buit**, es farà per
-**totes**
+L'assistent compta amb els següents paràmetres:
 
-Els fitxers anirán adjunts al menú **Mesures REE > Fitxers Exportats > Fitxers de Mesures**.
-
-[ ![Fitxers Generats](_static/medidas/ficheros_desagregados_generados.png)](_static/medidas/ficheros_desagregados_generados.png)
+* **Codi REE:** Codi de REE del distribuïdor emissor. S'omple automàticament.
+* **Versió:** Indica el número de versió del nom del fitxer. Si es generen successius fitxers `F1` un mateix dia, cal anar
+incrementant en 1 el número de versió cada nou fitxer, per a que tinguin noms diferents.
+* **Tipus de fitxer:** Es pot triar entre fitxer `F1` i `P1`.
+* **Dates:** Ajusten el periode de mesures a presentar. Les dates són incloses, per exemple: des de 2023/05/01 fins 2023/05/31.
+* **Exportar en segon pla:** Permet realitzar la generació de fitxers en segon pla, deixant l'ERP lliure per a seguir-hi treballant.
+Un cop acabada la generació de fitxers, aquests apareixeran al llistat `Fitxers Generats`.
+* **Pujar a servidor SFTP:** Si s'activa aquesta opció, cada fitxer F1 es publicarà a l'FTP de la seva Comercialitzadora, si
+els servidors SFTP estan degudament configurats a l'ERP.
+* **Comprimir fitxers en BZ2:** Si s'activa aquesta opció, els fitxers es comprimiran en format ".bz2", que és l'estàndar de
+ASEME. Si no s'activa, els fitxers tindran format de fitxer pla.
+* **Resum:** Aquesta opció només es pot utilitzar si els fitxers s'exporten en segon pla. El resum apareixerà al llistat 
+`Casos Telemesures` i indicarà el que mostra l'assistent per consola quan es generen els fitxers sense exportar-los en segon pla.
+* **Exporta per comercialitadora/es:** Exporta només les corbes que pertanyen a la/les comercialitzadora/es seleccionada/es. 
+Si es deixa buit, es farà per a totes,
 
 !!! Info "Nota"
     Existeixen una sèrie d'opcions addicionals que REE no contempla però que s'han anat implementant per a ús particular.
-    Una permet generar els fitxers per a tots els Tipus de CUPS i no només els de Tipus 1, 2 i 3. Una altra permet utilitzar
+    Una permet generar els fitxers per a tots els Tipus de CUPS i no només pels de Tipus 1, 2 i 3. Una altra permet utilitzar
     corba CCH_VAL si no en troba de CCH_FACT. I una darrera permet decimals en els valors d'energia.
+
+
+Els fitxers generats es opden revisar des del llistat **Infraestructura > Fitxers Exportats > Fitxers de Mesures**.
+
+[ ![Fitxers Generats](_static/medidas/ficheros_desagregados_generados.png)](_static/medidas/ficheros_desagregados_generados.png)
+
+A més de poder comprovar la publicació automàtica de `F1` des del llistat **Mesures REE > Fitxers Exportats > Fitxers Generats**,
+també es pot anar al llistat **Mesures REE > Fitxers Exportats > Darrera corba F1 dels CUPS**, que es mostra a la següent figura.
+
+[ ![Darrers F1 publicats](_static/medidas/last_f1_curve_cups.png)](_static/medidas/last_f1_curve_cups.png)
+
+Revisant aquest últmi llistat de forma freqüent, es poden detectar problemes amb la recepció o validació de corba horària dels CUPS 
+que no avancin la seva data de darrera publicació i després d'arreglar el problema es pot llançar manualment l'automatisme o bé
+generar un `F1` manualment amb l'assistent `Exportar corba`.
 
 ## Fitxers P1
 

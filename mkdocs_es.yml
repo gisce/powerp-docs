@@ -129,7 +129,7 @@ nav:
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Medidas:
       - Tratamiento y generación de ficheros: distri/medidas.md
-      - Ficheros desagregados: distri/medidas_ficheros_desagregados.md
+      - Medidas desagregadas: distri/medidas_ficheros_desagregados.md
       - Herramientas: distri/medidas_herramientas.md
       - Régimen especial: distri/medidas_regimen_especial.md
     - Perfiles: distri/perfiles.md
