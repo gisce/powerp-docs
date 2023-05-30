@@ -5,7 +5,7 @@
 L'ERP incorpora eines per a poder generar i publicar fitxers de mesures de forma desagregada, és a dir no a nivell d'agregació
 sinó a nivell de CUPS.
 
-Aquestes eines es poden trobar al menú: **Mesures REE > Fitxers Exportats > Exportar Curva**.
+Aquestes eines es poden trobar al menú: **Mesures REE > Fitxers Exportats**.
 
 [ ![Menú General](_static/medidas/menu_desagregados.png)](_static/medidas/menu_desagregados.png)
 
@@ -31,7 +31,13 @@ a la corba horària, es vol posar al dia sense tenir que esperar a que l'automat
 
 ## Fitxers F1
 
+Els fitxers `F1` comuniquen a l'Operador del Sistema les dades horàries d'energia de punts frontera de clients de Tipus 1, 2 i 3.
 
+L'ERP ja incorpora automatismes que, si es configuren, permeten que cada matí es generin i enviïn els fitxers diaris amb la corba que
+es troba als comptadors telemesurats i telegestionats. Però de totes maneres, és possible generar els fitxers de forma manual amb l'assistent
+**Mesures REE > Fitxers Exportats > Exportar Corba**.
+
+[ ![Generar Fitxers F1](_static/medidas/f1.png)](_static/medidas/f1.png)
 
 * Codi REE: codi del distribuidor (automàtic)
 * Versió del fitxer: versió que s'inclourá un cop exportat el fitxer
@@ -49,28 +55,48 @@ la/les comercialitzadora/es seleccionada/es. Si **es deixa buit**, es farà per
 
 Els fitxers anirán adjunts al menú **Mesures REE > Fitxers Exportats > Fitxers de Mesures**.
 
-![](_static/medidas/menu_desagregados.png)
-![](_static/medidas/ficheros_desagregados_generados.png)
-
-
-
-Dades horàries d'energía de clients tipus 1 i 2.
+[ ![Fitxers Generats](_static/medidas/ficheros_desagregados_generados.png)](_static/medidas/ficheros_desagregados_generados.png)
 
 !!! Info "Nota"
-    Es pot utilitzar el "check" per tots els tipus, i es generarà un F1 amb
-    tots els tipus, però no és el format per REE.
-
+    Existeixen una sèrie d'opcions addicionals que REE no contempla però que s'han anat implementant per a ús particular.
+    Una permet generar els fitxers per a tots els Tipus de CUPS i no només els de Tipus 1, 2 i 3. Una altra permet utilitzar
+    corba CCH_VAL si no en troba de CCH_FACT. I una darrera permet decimals en els valors d'energia.
 
 ## Fitxers P1
 
-Dades horàries d'energía de clients tipus 1, 2, 3 i autoconsums tipus 4.
+Els fitxers `P1` comuniquen a l'Operador del Sistema les dades horàries d'energia de punts de mesura de clients de Tipus 1, 2, 3
+i autoconsums de clients de Tipus 4.
 
+És possible generar els fitxers amb l'assistent **Mesures REE > Fitxers Exportats > Exportar Corba**, seleccionant en aquest cas
+com a tipus de fitxer l'opció `P1`.
+
+[ ![Generar Fitxers P1](_static/medidas/p1.png)](_static/medidas/p1.png)
+
+!!! Info "Nota"
+    La generació de fitxers `P1` compta amb menys opcions addicionals que la generació de fitxers `F1`.
+    La única opció addicional que permet és la de publicar corba sense validar enlloc de només la validada.
 
 ## Fitxers P1D
 
-Dades horàries d'energía de clients tipus 1, 2, 3 i autoconsums tipus 4.
+Els fitxers `P1` comuniquen a l'Operador del Sistema, sense paràmetres de dates, les dades horàries d'energia de punts de mesura 
+de clients de Tipus 1, 2, 3 i autoconsums de clients de Tipus 4.
 
+Anàlogament a l'automatització dels fitxers `F1`, és possible configurar i activar un automatisme a l'ERP de Distribuïdora per a que
+cada matí publiqui els fitxers `P1D` a l'SFTP de corbes per a que arribin a la CNMC. Però també es poden generar els fitxers de forma
+manual amb l'assistent **Mesures REE > Fitxers Exportats > Generar Fitxer P1D**.
+
+Aquest assistent és molt senzill i només cal configurar les dates (si no s'introdueix data inicial, es publicaran els `P1D` de tots els
+CUPS des de la seva data de darrera publicació fins ara) i si es vol comprimir en format ".bz2" o no.
+
+[ ![Generar Fitxers P1D](_static/medidas/p1d.png)](_static/medidas/p1d.png)
+
+!!! Info "Nota"
+    El format del `P1D` és el mateix que el del `P1`, però permetent enviar dades
+    de més d'un dia en un mateix fitxer.
 
 ## Fitxers MCIL345 i MEDIDAS
 
-Dades horàries d'energía de clients tipus 1, 2, 3 i autoconsums tipus 4.
+Hi ha dos fitxers més que habitualment s'envien a l'Operador del Sistema i a la CNMC, comunicant les dades horàries d'energia
+per codi CIL: els fitxers `MCIL345` i `MEDIDAS`.
+
+Aquests fitxers es tracten amb detall a l'apartat dels manuals `RECORE (Règim Especial)`.
