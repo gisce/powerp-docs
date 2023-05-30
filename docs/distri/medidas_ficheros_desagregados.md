@@ -73,7 +73,7 @@ també es pot anar al llistat **Mesures REE > Fitxers Exportats > Darrera corba 
 
 [ ![Darrers F1 publicats](_static/medidas/last_f1_curve_cups.png)](_static/medidas/last_f1_curve_cups.png)
 
-Revisant aquest últmi llistat de forma freqüent, es poden detectar problemes amb la recepció o validació de corba horària dels CUPS 
+Revisant aquest últim llistat de forma freqüent, es poden detectar problemes amb la recepció o validació de corba horària dels CUPS 
 que no avancin la seva data de darrera publicació i després d'arreglar el problema es pot llançar manualment l'automatisme o bé
 generar un `F1` manualment amb l'assistent `Exportar corba`.
 
@@ -114,4 +114,4 @@ CUPS des de la seva data de darrera publicació fins ara) i si es vol comprimir 
 Hi ha dos fitxers més que habitualment s'envien a l'Operador del Sistema i a la CNMC, comunicant les dades horàries d'energia
 per codi CIL: els fitxers `MCIL345` i `MEDIDAS`.
 
-Aquests fitxers es tracten amb detall a l'apartat dels manuals `RECORE (Règim Especial)`.
+Aquests fitxers es tracten amb detall a l'apartat dels manuals **Mesures de generació**.
