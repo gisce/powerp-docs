@@ -64,7 +64,7 @@ Si es deixa buit, es farà per a totes,
     corba CCH_VAL si no en troba de CCH_FACT. I una darrera permet decimals en els valors d'energia.
 
 
-Els fitxers generats es opden revisar des del llistat **Infraestructura > Fitxers Exportats > Fitxers de Mesures**.
+Els fitxers generats es poden revisar des del llistat **Infraestructura > Fitxers Exportats > Fitxers de Mesures**.
 
 [ ![Fitxers Generats](_static/medidas/ficheros_desagregados_generados.png)](_static/medidas/ficheros_desagregados_generados.png)
 
