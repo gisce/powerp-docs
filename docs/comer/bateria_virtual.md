@@ -85,7 +85,7 @@ Un cop tenim la pòlissa assignada a una bateria, al anar a la subpestanya de Ba
 
 Quan hi ha més excedent per compensar que consum a facturar, l'import de consum és 0, i es genera una línia de descompte pendent a descomptar, que s'afegeix a la bateria virtual de la qual n'és orígen aquell contracte.
 
-![](_static/bat_virtual/Captura%20de%20pantalla%20de%202023-05-29%2011-19-49.png)
+![](_static/bat_virtual/factura_bateria_virtual.png)
 
 En el llistat de descomptes de la bateria virtual es poden veure els descomptes generats, i quan s'apliquen. 
 
