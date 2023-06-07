@@ -158,6 +158,7 @@ nav:
     - SOA: comer/soa.md
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
+    - Batería Virtual: comer/bateria_virtual.md
   - Facturación:
     - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
