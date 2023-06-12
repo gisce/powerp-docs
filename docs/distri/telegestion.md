@@ -2,10 +2,15 @@
 
 ## Glosari
 **PUNT FRONTERA**: Punt on acaba la xarxa de distribució i comença una altra xarxa: de transport, de subministrament, etc.
+
 **REGISTRADOR**: Equip de mesura que permet calcular el consum d'energia i potència, així com l'energia bolcada a xarxa. Es col·loquen a qualsevol punt frontera: repetidors, generadors, punts frontera de xarxa de distribució, etc.
+
 **COMPTADOR**: Registrador que està en un punt frontera d’un subministrament i, per tant, sempre està vinculat a un contracte d’electricitat.
+
 **CONCENTRADOR**: Dispositiu de xarxa que permet comunicar-se amb un registrador de telegestió des d'un lloc remot per recollir dades o donar ordres.
+
 **CT**: Centre de transformació, que passa l'electricitat d'alta tensió a mitja o baixa tensió.
+
 **PRIME**: Protocol que fan servir els concentradors i els registradors per a comunicar-se entre ells a través del cablejat elèctric.
 
 ## Comptadors de telegestió
