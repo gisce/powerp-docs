@@ -155,6 +155,7 @@ nav:
     - SOA: comer/soa.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
+    - Bateria Virtual: comer/bateria_virtual.md
   - Facturació:
     - Accions genèriques: facturacion/acciones.md
     - Gestió de canvi d'any: facturacion/cambio_ano.md
