@@ -338,10 +338,10 @@ tenir 0 kWh de diferència, tant a consum com a generació.
 Per tal de comprovar que el que s'ha entregat i processat a REE és el mateix
 que tenim a l'ERP, es poden importar els fitxers d'inventari i acumulat per fer
 aquesta validació. Això pot anar bé per veure possibles agregacions estimades, o
-possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAGLACUM` i `INMECLOS`. 
+possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAGCLACUM` i `INMECLOS`.
 Des de la pestanya **Acumulats** podreu veure dues consoles per a poder fer aquests contrastos.
 
-Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGLACUM** i **Importar fitxer INMECLOS**.
+Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGCLACUM** i **Importar fitxer INMECLOS**.
 Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una línia per a cada nivell d'agregació, mentre que
 el fitxer `INMECLOS` generarà una per cada línia dels fitxers `INMECL`. El fitxer `INMECLOS` ens pot donar més detall
 a l'hora de trobar un desquadrament entre els nostres nivells d'agregació i les mesures que finalment ens imputa REE.
