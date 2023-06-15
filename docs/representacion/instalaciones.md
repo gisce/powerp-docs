@@ -41,4 +41,4 @@ També es poden crear o eliminar Instal·lacions, així com accedir a cadascuna 
 
 !!! Info "Nota"
     Per tal de crear una Instal·lació, abans eś necessari que la seva **Unitat de Programació**, la seva **Unitat d'Oferta**
-    i el seu **Titular** ja s'hagin creat prèviament a l'ERP, ja que tots tres són camps obligatoris d'una instal·lació de generació.
+    i el seu **Titular** ja s'hagin creat prèviament a l'ERP, ja que tots tres són camps obligatoris en una instal·lació de generació.

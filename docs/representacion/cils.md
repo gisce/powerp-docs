@@ -50,9 +50,9 @@ publicada als fitxers `MHCIL`. Per entendre bé la funció dels desviaments cal 
 s'importen fitxers `REGANECU` a l'ERP, els seus registres apareixen en aquest llistat, on es poden filtrar per dates, Unitat de Programació,
 segment i/o maduresa
 
-[ ![Llistat de registres REGANEC](_static/cils/liquidaciones_listado.png)](_static/cils/liquidaciones_listado.png)
+[ ![Llistat de registres REGANECU](_static/cils/liquidaciones_listado.png)](_static/cils/liquidaciones_listado.png)
 
-A cada línia de fitxer `REGANECU` importada es poden consultar tots els camps que recullen, per ordre d'aparició al fitxer carregat.
+A cada línia de fitxer `REGANECU` importada es poden consultar tots els camps que es recullen, per ordre d'aparició al fitxer carregat.
 
 [ ![Formulari de registres REGANECU](_static/cils/liquidaciones_formulario.png)](_static/cils/liquidaciones_formulario.png)
 
