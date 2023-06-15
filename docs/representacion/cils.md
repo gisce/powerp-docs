@@ -2,7 +2,7 @@
 
 ## Gestió dels CIL
 
-Aquest mòdul serveix per a la creació i el manteniment de CILs dins l'ERP de Representació a Mercat. Per tant, aquest mòdul 
+Aquest mòdul serveix per a la creació i el manteniment dels **CIL** dins l'ERP de Representació a Mercat. Per tant, aquest mòdul 
 inclou eines per a crear, modificar i eliminar els CIL quan sigui necessari.
 
 ## Menú de Gestió de CILS
