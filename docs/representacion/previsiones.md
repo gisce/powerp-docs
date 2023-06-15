@@ -44,7 +44,7 @@ Això s'explica amb més detall a l'apartat [Ofertes a Mercat de generació](../
 
 [ ![Llistat de Previsions Publicades](_static/previsiones/prevision_publicada.png)](_static/previsiones/prevision_publicada.png)
 
-!!! Info "Nota"
+!!! Info "Nota 3"
     Aquest llistat és idèntic al de les previsions de generació amb una diferència: cada codi de previsió només pot tenir un
     únic registre per hora amb la casella "Publicada" marcada. Per tant, si es fan múltiples ofertes per un mateix dia,
     al llistat quedaran les previsions que s'han tingut en compte a l'oferta generada més recent de cada dia.
