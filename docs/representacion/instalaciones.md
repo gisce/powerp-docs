@@ -5,7 +5,7 @@
 Aquest mòdul serveix per a la creació i el manteniment d'**Unitats d'Oferta**, d'**Unitats de Programació** i d'**Instal·lacions**
 de generació. Per tant, aquest mòdul  inclou eines per a crear, modificar i eliminar tots aquests elements, quan sigui necessari.
 
-## Menú de Gestió de CILS
+## Menú de Gestió d'Instalacions
 
 En el menú de Gestió d'Instal·lacions que segueix a la imatge, s'hi troben els següents apartats.
 
