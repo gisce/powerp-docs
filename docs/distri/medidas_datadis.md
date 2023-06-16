@@ -15,9 +15,9 @@ En el menú de DATADIS que segueix a la imatge, s'hi troben els següents aparta
 ### Mesures
 * **Fitxers de mesures DATADIS generats:** Llistat de fitxers de mesures que s'han generat amb l'assistent que incorpora
 aquest mòdul. Els fitxers apareixen ordenats descendentment per data i és possible descarregar-los per a revisar-los i/o
-publicar-los al Concentrador de DATADIS d'ASEME. És possible filtrar pel nom del fitxer i per dates, si es requereix. També
+publicar-los al **Concentrador de DATADIS** d'ASEME. És possible filtrar pel nom del fitxer i per dates, si es requereix. També
 és possible descarregar múltiples fitxers amb una única acció si es sel·leccionen els fitxers a descarregar en el llistat i
-s'utilitza l'acció "Attachment Zip".
+s'utilitza l'acció **Attachment Zip**.
 
 [ ![Llistat Fitxers DATADIS](_static/medidas_datadis/datadis_listado.png)](_static/medidas_datadis/datadis_listado.png)
 
@@ -33,10 +33,11 @@ Existeixen tres tipus de fitxers de mesures:
    dia, província i tipus d'autoconsum.
 
 !!! Info "Nota 1"
-    DATADIS demana publicar cada mes **abans del dia 15** els tres fitxers ans esmentats pels periodes **M-2**, **M-3**, **M_7** i **M-9**.
-    També demana publicar cada setmana **entre divendres i diumenge** els fitxers `DATADIS_CLMAG` i `DATADIS_CLMAG5A` pels periodes **M-0** i **M-1**.
+    DATADIS demana publicar **cada mes abans del dia 15** els fitxers `DATADIS_CLMAG`, `DATADIS_CLMAG5A` i `DATADIS_AUTOCONSUMO` pels periodes 
+    **M-2**, **M-3**, **M-7** i **M-9**.
+    També demana publicar **cada setmana entre divendres i diumenge** els fitxers `DATADIS_CLMAG` i `DATADIS_CLMAG5A` pels periodes **M-0** i **M-1**.
 
-* **Generador de fitxers DATADIS:** Aquest assistent permet introduïr un rang de dates (ambdues dates incloses) per a generar
+* **Generador de fitxers DATADIS:** Aquest assistent permet introduïr un rang de dates (ambdues incloses) per a generar
 un fitxer de mesures per a publicar a DATADIS. L'assistent és capaç de generar qualsevol dels tres fitxers existents, simplement
 triant quin es vol generar al sel·leccionable `Tipus de fitxer`.
 
@@ -53,20 +54,20 @@ fitxers es generaran en format de fitxer pla.
 ### WebService
 
 A més a més dels fitxers de mesures `DATADIS_CLMAG`, `DATADIS_CLMAG5A` i `DATADIS_AUTOCONSUM`, el mòdul de DATADIS permet publicar
-dades a través d'una API WebService que ha disposat DATADIS per a tal de compartir la informació entre Distribuïdores.
+dades a través d'una **API WebService** que ha disposat DATADIS per a tal de compartir la informació entre Distribuïdores.
 
-Aquestes dades són els contractes, els maxímetres i els autoconsums dels quals disposa la pròpia Distribuïdora. A diferència dels
-fitxers de mesures, l'enviament de dades a través de l'API WebService està completament automatitzat i tan sols cal configurar
-les credencials d'accés (usuari i contrasenya) a l'ERP i activar l'automatisme encarregat de cada tipu de dades a publicar, per a que
-l'ERP vagi enviant la informació a DATADIS.
+Aquestes dades són els **contractes**, els **maxímetres** i els **autoconsums** dels quals disposa la pròpia Distribuïdora. A diferència dels
+fitxers de mesures, l'enviament de dades a través de l'API WebService està completament **automatitzat** i tan sols cal configurar
+les **credencials d'accés** (usuari i contrasenya) a l'ERP i activar l'automatisme encarregat de cada tipus de dades a publicar, per a que
+l'ERP vagi enviant la informació a través de l'API.
 
 No obstant, encara que tot funcioni de forma automàtica, és possible revisar tant els contractes que encara no han enviat la seva informació a
 DATADIS com també les peticions enviades i el seu estat (`Error`, `Enviat` o `Validat`).
 
 [ ![Llistat API WebService DATADIS](_static/medidas_datadis/api_listado.png)](_static/medidas_datadis/api_listado.png)
 
-Si en el moment de crear una sol·licitut d'enviament, aquesta falla, quedarà en estat `Error`, mentre que si s'arriba a publicar
-sense problemes, quedarà en estat `Enviat`. 
+Si en el moment de crear-se una sol·licitut d'enviament aquesta falla, queda en estat `Error`; mentre que si s'arriba a publicar-se
+sense problemes, queda en estat `Enviat`. 
 
 És possible utilitzar l'assistent **Accions al Sistema DATADIS** tenint una o més sol·licituts d'enviament de dades sel·leccionades,
 tant per a publicar les sol·licituts com per, si ja estan en estat `Enviat`, consultar-ne l'estat i saber si DATADIS ja les ha processat,
@@ -80,7 +81,8 @@ A continuació s'enumeren tots els llistats de sol·licituts d'enviament de dade
 * **Totes les Peticions:** Llistat on es mostren totes les sol·licituts d'enviament de dades contractuals, independentment del seu estat.
 * **Peticions sense processar:** Llistat on es mostren totes les sol·licituts d'enviament de dades contractuals que encara no tenen estat `Validat`.
 * **Peticions processades:** Llistat on es mostren totes les sol·licituts d'enviament de dades contractuals que ja tenen estat `Validat`.
-* **Pòlisses sense enviar WebService DATADIS:** Llistat de contractes dels quals encara no s'ha fet enviament de dades a DATADIS.
+* **Pòlisses sense enviar WebService DATADIS:** Llistat de contractes dels quals encara no s'ha fet enviament de dades a DATADIS. Per anar bé,
+en aquest llistat només hi hauria d'haver contractes de `RECORE` o bé contractes molt antics. La resta s'haurien d'informar a DATADIS.
 
 #### Maxímetres
 * **Totes les Peticions:** Llistat on es mostren totes les sol·licituts d'enviament de maxímetres, independentment del seu estat.
