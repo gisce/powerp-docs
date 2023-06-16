@@ -168,3 +168,10 @@ nav:
     - Tipos de facturas: facturacion/tipos_facturas.md
     - Validaciones: facturacion/validaciones.md
     - Líneas Extra: facturacion/lineas_extra.md
+  - Representación:
+    - Gestión de los CIL: representacion/cils.md
+    - Instalaciones de generación: representacion/instalaciones.md
+    - Previsiones de generación: representacion/previsiones.md
+    - Ofertas a Mercado de generación: representacion/ofertas.md
+    - Contratos de representación: representacion/contratos.md
+    - Facturación: representacion/facturacion.md
