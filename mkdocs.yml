@@ -116,7 +116,12 @@ nav:
       - Descàrrega electrònica de Tancaments i Corbes: distri/tpl/descarga_cierres_y_curvas.md
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
-    - Mesures: distri/medidas.md
+    - Mesures:
+      - Tractament i generació de fitxers: distri/medidas.md
+      - Mesures desagregades: distri/medidas_ficheros_desagregados.md
+      - Mesures de generació: distri/medidas_generacion.md
+      - Eines: distri/medidas_herramientas.md
+      - DATADIS: distri/medidas_datadis.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
@@ -146,10 +151,13 @@ nav:
     - Facturació: comer/facturacion.md
     - Gestió ATR: comer/atr.md
     - Gestió impagats: comer/gestion_impago.md
+    - Mesures:
+      - Objeccions: comer/objeciones.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
+    - Bateria Virtual: comer/bateria_virtual.md
   - Facturació:
     - Accions genèriques: facturacion/acciones.md
     - Gestió de canvi d'any: facturacion/cambio_ano.md
@@ -158,3 +166,11 @@ nav:
     - Lots: facturacion/lotes.md
     - Tipus de factures: facturacion/tipos_facturas.md
     - Validacions: facturacion/validaciones.md
+    - Línies Extra: facturacion/lineas_extra.md
+  - Representació:
+    - Gestió dels CIL: representacion/cils.md
+    - Instal·lacions de generació: representacion/instalaciones.md
+    - Previsions de generació: representacion/previsiones.md
+    - Ofertes a Mercat de generació: representacion/ofertas.md
+    - Contractes de representació: representacion/contratos.md
+    - Facturació: representacion/facturacion.md
