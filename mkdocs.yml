@@ -120,6 +120,7 @@ nav:
       - Mesures desagregades: distri/medidas_ficheros_desagregados.md
       - Mesures de generació: distri/medidas_generacion.md
       - Eines: distri/medidas_herramientas.md
+      - DATADIS: distri/medidas_datadis.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
