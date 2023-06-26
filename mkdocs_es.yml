@@ -130,9 +130,10 @@ nav:
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Medidas:
       - Tratamiento y generación de ficheros: distri/medidas.md
-      - Ficheros desagregados: distri/medidas_ficheros_desagregados.md
+      - Medidas desagregadas: distri/medidas_ficheros_desagregados.md
+      - Medidas de generación: distri/medidas_generacion.md
       - Herramientas: distri/medidas_herramientas.md
-      - Régimen especial: distri/medidas_regimen_especial.md
+      - DATADIS: distri/medidas_datadis.md
     - Perfiles: distri/perfiles.md
     - Pólizas: distri/polizas.md
     - Reles: distri/reles.md
@@ -159,6 +160,7 @@ nav:
     - SOA: comer/soa.md
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
+    - Batería Virtual: comer/bateria_virtual.md
   - Facturación:
     - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
@@ -168,3 +170,10 @@ nav:
     - Tipos de facturas: facturacion/tipos_facturas.md
     - Validaciones: facturacion/validaciones.md
     - Líneas Extra: facturacion/lineas_extra.md
+  - Representación:
+    - Gestión de los CIL: representacion/cils.md
+    - Instalaciones de generación: representacion/instalaciones.md
+    - Previsiones de generación: representacion/previsiones.md
+    - Ofertas a Mercado de generación: representacion/ofertas.md
+    - Contratos de representación: representacion/contratos.md
+    - Facturación: representacion/facturacion.md
