@@ -81,6 +81,7 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
+    - Autoconsumo: distri/Autoconsum/creacio_autoconsum.md
     - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md

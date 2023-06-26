@@ -78,6 +78,7 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
+    - Autoconsum: distri/Autoconsum/creacio_autoconsum.md
     - Comptadors: distri/contadores.md
     - CUPS: distri/cups.md
     - Descàrrecs: distri/descargos.md
