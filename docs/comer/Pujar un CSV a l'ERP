@@ -3,7 +3,7 @@
 Ara mateix tenim l’opció de pujar un csv amb un llistat concret (de pòlisses, num de factura…) i que aquest es mostri a una pestanya concreta de l’ERP.
 
 Aquesta eina la podem trobar a: Menú → Facturació → Mostrar llistat des de csv
-menú → Gestió de pòlisses → Mostrar llistat des de csv
+menú → Gestió de pòlisses → Mostrar llistat des de csv.
 
 ![](_static/csv/csv.png)
 
@@ -17,7 +17,7 @@ El Model és el llistat on volem que aparegui el llistat que pugem el csv, tenim
     • Fitxers F1ns importats
     • Pòlisses en lot
 
-Cada un dels models té unes opcions concretes de llistats de csv, que és el camp Filtre (Informació que ha de contenir el fitxer csv)
+Cada un dels models té unes opcions concretes de llistats de csv, que és el camp Filtre (Informació que ha de contenir el fitxer csv).
 
 --------------------------
 | **Model** | **Filtre** |
@@ -37,8 +37,8 @@ En el cas que el CSV contingui altra informació que no sigui exclusivament la d
 
 Hi ha dues opcions:
 
-1. revisar el csv a partir d’un programa tipus excel o visual Code per treure manualment les dades que fan que no s’importi el llistat en CSV
-2. Forçar la importació a partir del xec que apareix a l’assistent
+1. revisar el csv a partir d’un programa tipus excel o visual Code per treure manualment les dades que fan que no s’importi el llistat en CSV.
+2. Forçar la importació a partir del xec que apareix a l’assistent.
 
 ![](_static/csv/csv_4.png)
 
