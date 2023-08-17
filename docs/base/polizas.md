@@ -6,7 +6,7 @@ Les tarifes d'accés que venen definides amb l'ERP són les que marca la legisla
 vigent.
 
 - 2.0TD (0 - 15 kW)
-- 3.0TD (més de 15 kW)- 
+- 3.0TD (més de 15 kW) 
 - 6.1TD (tensió entre 1 kV i 30 kV)
 - 6.2TD (tensió entre 30 kV i 72,5 kV)
 - 6.3TD (tensió entre 72,5 kV kV i 145 kV)
