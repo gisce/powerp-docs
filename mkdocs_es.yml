@@ -140,6 +140,11 @@ nav:
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
     - Telemedida: distri/telemedida.md
+    - Trabajos:
+      - Crear trabajo: distri/trabajos/crear_obra.md
+      - Crear trabajador: distri/trabajos/crear_trabajador.md
+      - Crear tipo de hora: distri/trabajos/crear_tipo_hora.md
+      - Imputar horas: distri/trabajos/asistente_horas.md
   - Comercializadora:
     - Inicio: comer/index.md
     - Administración Pública:
