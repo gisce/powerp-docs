@@ -1,6 +1,7 @@
 site/
 *.idea
 .idea/
+.vscode/
 *.pyc
 *.pot
 *.mo
