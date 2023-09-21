@@ -142,6 +142,8 @@ nav:
         - Crear treballador: distri/trabajos/crear_trabajador.md
         - Crear tipus d'hora: distri/trabajos/crear_tipo_hora.md
         - Imputar hores: distri/trabajos/asistente_horas.md
+    - Oficina Virtual:
+      - Secció solicituds: distri/oficina_virtual/solicituds_OV.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - Administració Pública:
