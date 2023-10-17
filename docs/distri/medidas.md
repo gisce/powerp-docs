@@ -237,13 +237,21 @@ la primera versió, 1 per a la següent, etc.). Si s'envien diversos fitxers amb
 el versionat més alt.
 
 Cal recordar també que REE espera primer l'entrega del fitxer `AGRECL` per tal de "obrir la pasarela d'entrega" per
-aquell període en concret i, seguidament, espera els altres fitxers (els `INMECL` i el `MAGCL`). El fitxer `AGRECL` és
-l'encarregat d'actualitzar l'inventari d'agregacions actives a REE i, si no es comunica o no s'espera a rebre la resposta de
-REE després d'enviar-lo, es podrien comunicar errors (.BAD2) als fitxers `INMECL` i `MAGCL` si s'hi ha comunicat consum d'una
-agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` és el darrer que generem (abans cal
-haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums i la generació mitjançant la generació
-dels fitxers `INMECL` i `MAGCL`), però al mateix temps és també el primer fitxer que comunicarem al Concentrador Secundari de
-Mesures. 
+aquell període en concret i, seguidament, espera els altres fitxers (els `INMECL` i el `MAGCL`) per a comunicar les mesures
+pròpiament. El fitxer `AGRECL` és l'encarregat d'actualitzar l'inventari d'agregacions actives a REE i, si no es comunica
+o no s'espera a rebre la resposta de REE després d'enviar-lo, es podrien comunicar errors (.BAD2) als fitxers `INMECL` i
+`MAGCL` si s'hi ha comunicat consum d'una agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` 
+és el darrer que generem (abans cal haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums
+i la generació mitjançant la generació dels fitxers `INMECL` i `MAGCL`), però al mateix temps és també el primer fitxer
+que comunicarem al Concentrador Secundari de Mesures. I és molt important assegurar-se de que totes les línies que conté
+el fitxer `AGRECL` es processen correctament, abans de procedir a publicar els fitxers `INMECL` i `MAGCL`.
+
+!!! Info "Nota"
+    Cal assenyalar que, si un nivell d'agregació no té consum durant un periode, el fitxer `AGRECL` ha de comunicar
+    la baixa del nivell d'agregació (i l'alta si més endavant torna a tenir consum). Això és així perquè si no es comunica
+    a l'Operador del Sistema que el nivell d'agregació es troba de baixa en un periode, i no s'envia mesura d'aquest
+    nivell d'agregació en aquest periode, l'Operador del Sistema estimarà la mesura i això no seria correcte (hauria de
+    quedar la mesura a 0 durant el periode inactiu del nivell d'agregació).
 
 Com a mínim de tant en tant, és recomanable generar el fitxer `AGRECL` adjuntant al seu assistent el fitxer `AGRECLOS` més
 recent que hagi publicat l'Operador del Sistema al Concentrador Secundari de Mesures pel període de mesures en qüestió. 

@@ -61,7 +61,7 @@ fitxers de mesures, l'enviament de dades a través de l'API WebService està com
 les **credencials d'accés** (usuari i contrasenya) a l'ERP i activar l'automatisme encarregat de cada tipus de dades a publicar, per a que
 l'ERP vagi enviant la informació a través de l'API.
 
-No obstant, encara que tot funcioni de forma automàtica, és possible revisar tant els contractes que encara no han enviat la seva informació a
+No obstant, encara que tot funcioni de forma automàtica, també és possible revisar tant els contractes que encara no han enviat la seva informació a
 DATADIS com també les peticions enviades i el seu estat (`Error`, `Enviat` o `Validat`).
 
 [ ![Llistat API WebService DATADIS](_static/medidas_datadis/api_listado.png)](_static/medidas_datadis/api_listado.png)
