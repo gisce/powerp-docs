@@ -175,7 +175,7 @@ estigui correcte, etc.). Un cop revisada i corregida l'errata, es pot tornar a p
 ## Fitxers REE
 
 Per tal de generar els fitxers de REE, cal dirigir-se a **Mesures REE > Períodes
-de mesures > Fitxers REE tipus 3, 4 i 5**. Aquest mòdul permet la generació i el tractament de diversos tipus de fitxers.
+de mesures > Fitxers REE tipus 4 i 5**. Aquest mòdul permet la generació i el tractament de diversos tipus de fitxers.
 
 [ ![Mesures REE](_static/medidas/mesures_ree.png)](_static/medidas/mesures_ree.png)
 
@@ -263,7 +263,7 @@ comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, per�
 [ ![Generació AGRECL](_static/medidas/generacion_agrecl.png)](_static/medidas/generacion_agrecl.png)
 
 Un cop finalitzi la generació de cada fitxer de mesures, aquest quedarà com a fitxer adjunt al període de mesures. 
-Es pot accedir als fitxers directament per la consola de la dreta, sota la pestanya **Fitxers REE tipus 3, 4 i 5** del
+Es pot accedir als fitxers directament per la consola de la dreta, sota la pestanya **Fitxers REE tipus 4 i 5** del
 període de mesures, o bé des de l'enllaç **Adjunts**, que és més pràctic per a poder descarregar-los de forma massiva si
 es seleccionen tots els que es vol descarregar i es fa servir l'acció de l'assistent **Attachment ZIP**, descarregant d'una
 única vegada en un fitxer comprimit tots els fitxers desitjats.
@@ -316,6 +316,22 @@ el de l'opció anterior, però s'invoca des del menú *Infraestructura > Fitxers
     L'enviament automàtic de fitxers `F1` permet corba validada, però l'assistent per a exportar-los manualment requerirà
     que a més d'estar validada, la corba tingui CCH Disponible. Això implica que el fitxer es podrà generar després d'haver
     acabat de facturar el període a presentar.
+
+Tot i que aquestes mesures es publiquen de forma desagregada, tot i així és possible realitzar comprovacions sobre les mateixes.
+Si s'accedeix a la pestanya **Fitxers REE tipus 1, 2 i 3**, es pot observar a l'esquerra una consola on es mostra el consum i
+la generació de tots els CUPS de més de 50 kW de potència màxima contractada que es troben actius durant el període de mesures
+que s'està revisant. Per a actualitzar aquestes dades, n'hi ha prou amb fer servir l'assistent **Calcular consum i generació dels
+tipus 1, 2 i 3**.
+
+[ ![Consum i generació dels subministraments de Tipus 1, 2 i 3](_static/medidas/mesures_tipus_123.png)](_static/medidas/mesures_tipus_123.png)
+
+!!! Info "Nota"
+    Les dades de consum i generació dels subministraments de tipus 1, 2 i 3 s'obtenen de la corba de càrrega horària `CCH_FACT`
+    present als comptadors dels contractes dels subministraments en qüestió. L'assistent **Calcular consum i generaicó dels tipus
+    1, 2 i 3** actualitzarà els valors pels CUPS trobats i també informarà de possibles problemes (com consum que no s'ha pogut
+    trobar o corbes amb més o menys registres horaris dels que toca segons el mes.)
+
+[ ![Calcular consum i generació dels subministraments de Tipus 1, 2 i 3](_static/medidas/mesures_tipus_123_wizard.png)](_static/medidas/mesures_tipus_123_wizard.png)
 
 ### Procediments per a validar els fitxers de mesures
 
