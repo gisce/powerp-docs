@@ -9,10 +9,9 @@ En els següents enllaços es troba la informació referent al SII de la
 pàgina oficial de l'AEAT (Agència Estatal d'Administració Tributària):
 
 - [Informació general](http://www.agenciatributaria.es/AEAT.internet/G417/informacion.shtml)
-- [Normativa](http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Modelos__Procedimientos_y_Servicios/Ayuda_P_G417____IVA__Llevanza_de_libros_registro__SII_/Informacion_general/Nuevo_sistema_de_gestion_del_IVA_basado_en_el_Suministro_Inmediato_de_Informacion.shtml) referent
-- [Ajuda tècnica](http://www.agenciatributaria.es/AEAT.internet/G417/tecnica.shtml) per a la implantació del sistema
+- [Normativa referent](http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Modelos__Procedimientos_y_Servicios/Ayuda_P_G417____IVA__Llevanza_de_libros_registro__SII_/Informacion_general/Nuevo_sistema_de_gestion_del_IVA_basado_en_el_Suministro_Inmediato_de_Informacion.shtml) 
+- [Ajuda tècnica per a la implantació del sistema](http://www.agenciatributaria.es/AEAT.internet/G417/tecnica.shtml) 
 - [Preguntes freqüents](http://www.agenciatributaria.es/AEAT.internet/Inicio/Ayuda/Modelos__Procedimientos_y_Servicios/Ayuda_P_G417____IVA__Llevanza_de_libros_registro__SII_/Informacion_general/Preguntas_frecuentes/Preguntas_frecuentes.shtml)
-
 
 ## 2. Enviaments
 
@@ -61,7 +60,7 @@ Els passos a seguir són:
 2. Es selecciona el botó "Accions"
 3. Es selecciona l'acció "Enviar Factura SII"
 
-![](../_static/aeat/enviar_factura_desde_facturas.png)
+![](../_static/aeat/enviar_factura_SII.png)
 
 ### 2.4. Possibles estats dels enviaments
 
@@ -81,7 +80,7 @@ la vegada i no pot processar-les totes.
 Per accedir al llistat de registres del SII s'ha d'anar al menú
 **"Comptabilitat i finances / SII / Registres SII"**.
 
-![](../_static/aeat/menu_sii.png)
+![](../_static/aeat/menu_SII.png)
 
 En el llistat es mostren per defecte els registres actius i es pot filtrar per
 els següents camps:
@@ -143,7 +142,7 @@ Des d'una factura també es pot:
 7 . Enviar-la de forma manual    
 8 . Veure els registres del SII associats a aquesta factura
 
-![](../_static/aeat/campos_sii_factura.png)
+![](../_static/aeat/camps_SII_factura.png)
 
 ### 3.2. En una posició fiscal
 
@@ -155,7 +154,7 @@ crea una factura amb aquesta posició fiscal se li assigna aquesta clau.
 - **Enviar Factures Emeses/Rebudes**: aquest camp indica si les factures que es
 creïn amb aquesta posició fiscal s'enviaran al SII.
 
-![](../_static/aeat/campos_sii_posicion_fiscal.png)
+![](../_static/aeat/camps_SII_posicion_fiscal.png)
 
 ### 3.3. En un diari financer
 
@@ -210,9 +209,7 @@ blockdiag {
 
 ### Opció 2: Connexió directe
 
-Aquesta opció permet estalviar la necessitat d'utilitzar un servidor intermediari,
-però permet que qualsevol usuari amb permisos d'administrador en el servidor de
-l'ERP tingui accés directe al certificat oficial de l'empresa per l'AEAT.
+Aquesta opció permet estalviar la necessitat d'utilitzar un servidor intermediari, però permet que qualsevol usuari amb permisos d'administrador en el servidor de l'ERP tingui accés directe al certificat oficial de l'empresa per l'AEAT.
 
 blockdiag {
     span_width = 150;

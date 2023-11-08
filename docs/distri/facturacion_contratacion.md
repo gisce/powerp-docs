@@ -24,7 +24,6 @@ En la cabecera aparecen 4 campos:
 * **Nombre**: El nombre se usa como diferenciador de la contratación en el caso de haber más de una para la misma póliza. Se puede indicar "Modificación", "Alta nueva", "Cambio de titular" “Reducción de potencia”, por ejemplo.
 * **Referencia**: La referencia es un campo informativo que permite codificar las facturas, de forma interna (poner referencias externas para usos informativo).
 
-
 #### Anteriores
 
 ![](_static/facturacion_contratacion/3.png)
@@ -77,7 +76,6 @@ Esto se puede configurar dentro del menú Gestión de pólizas/ Configuración /
 
 Facturar a comercializadora: Si se marca esta opción se genera la/s factura/s a nombre de la comercializadora, y ésta ya repercutirá el coste al cliente.
 
-
 #### Facturas
 
 ![](_static/facturacion_contratacion/8.png)
@@ -113,7 +111,6 @@ En este apartado se anotaran todas las observaciones sobre la contratación,
 Existe un formato de impresión llamado “Factura genérica” que imprime una factura con encabezamiento personalizable.
 
 Para que el informe de la factura de contratos en pdf tenga el encabezado correcto cada empresa se debe:
-
 
 1. Ir a Menu/Administración/Usuarios/Arbol de la compañía/ compañías
 Entrar en la compañía y en la pestaña **Información general** debe rellenarse los campos **Cabecera del informe** y **pie de pagina 1 de los informes**.

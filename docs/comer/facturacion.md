@@ -1,15 +1,9 @@
 # Facturació comer
 
-## Llistes de preus
-
-Les llistes de preus....
-
 ### Asistent per carregar llistes de preus
 
 Mitjançant l'assistent "`Create pricelist from file`" situat al menú **Productes -> Tarifes -> Create pricelist from file**
 es pot importar un fitxer CSV per tal de carregar automàticament llistes de preus i actualitzar-les creant noves versions.
-
-
 
 ![](_static/llistes_preus/asistent.png)
 
@@ -26,12 +20,12 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 - **Tarifa d'Accés**: nom de la tarifa d'accés per la qual es crearan les regles que en definiran els preus. Es crearà una regla per cada periode d'aquesta tarifa.
 - **Llista de preus**: nom de la llista de preus a crear/actualitzar. El ERP buscarà una llista de preus amb aquest nom, si no la troba la crearà. Després buscarà una versió d'aquesta llista que comenci en la data inici introduïda en l'assistent. Si no la troba també la crearà. Totes les regles creades per la tarifa d'accés indicada s'afegiran en aquesta versió. A més, es farà que la tarifa d'acces sigui compatible amb aquesta llista de preus.
 - **Llista de preus base**: nom de una llista de preus existent en la que basar-se. Les regles que es generin tindran com a llista de preus base aquesta llista. Si es deixa buit, les regles que es crein no es basaran en cap llista, simplement tindran el preu fixe indicat en el fitxer.
-- Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada amb el preu que es vol cobrar. Han d'estar ordenats creixentment (p1;p2;...) indicant primer els de energia i després els de potencia.
+- Després d'aquestes 3 columnes hi ha de haver **una columna per cada periode de energia i potencia** existent en la tarifa d'acces indicada amb el preu que es vol cobrar. Han d'estar ordenats creixentment (P1;P2;...) indicant primer els de energia i després els de potencia.
 
 ##### Exemples
 
 - **Exemple** de una linea del fitxer **sense tarifa base (preu fix)**:
-    - `2.0A;Tarifa 2.0A Fija Enero;;0,1326;38,043426`
+    - `2.0TD;Tarifa 2.0TD Enero;;0,1326;0,237;0,295;38,043426;2,841`
     - `2.0DHA;Tarifa 2.0DHA Fija Enero;;0,1326;0,013192;38,043426`
     
     Aixó generaria:
@@ -48,13 +42,13 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 ![](_static/llistes_preus/exemple_base.png)
 ![](_static/llistes_preus/exemple_base_pot.png)
 
+El procés de facturació a l’ERP es pot esquematitzar de la següent manera:
 
-
+![](_static/llistes_preus/esquema%20proces.jpg)
 
 ## Pool de lectures
 
 ## Importació fitxers F1
-
 
 El mòdul de Switching permet, processar els fitxers XML de
 facturació, ja sigui agrupats en un sol fitxer zip o individualment.
@@ -83,6 +77,7 @@ un altra cop les lectures per facturar amb els nous valors.
 
 ### Lot d'importació i línies
 
+![](_static/processos/LOT_FACTURACIO.jpg)
 
 Denominem com a **lot d'importació** aquell conjunt de fitxers XML generats per
 un mateix emisor i que ens convé tenir agrupats. El lot d'importació ens
@@ -119,8 +114,8 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
 * **Llistat de fitxers:**
 
     Ens permet mostrar els fitxers xml que hi ha associats al lot d'importació
-    després d'importar-los individualment o a través d'un fitxer zip. En prémer es
-    mostra el llistat de línies d'improtació. Veure `Figura 5`. El llistat
+    després d'importar-los individualment o a través d'un fitxer zip. En prémer 
+    es mostra el llistat de línies d'improtació. Veure `Figura 5`. El llistat
     ens mostra informació relacionada amb cadascun dels fitxers xml processats.
 
     En prémer en una línia d'importació podrem veure un resum de la informació
@@ -129,9 +124,8 @@ Llistat de factures i Llistat de fitxers que es detallen a continuació.
     informació de les factures (veure `Figura 7`).
 
     Si la importació ha estat errònia, el que veurem és el que es mostra en la
-    `Figura 8`. En aquest cas ens permet reimportar el fitxer xml
-    individualment. Es pot veure el wizard que ens apareixerà en la
-    `Figura 9`.
+    `Figura 8`. En aquest cas ens permet reimportar el fitxer xml individualment. 
+    Es pot veure el wizard que ens apareixerà en la `Figura 9`.
 
 * **Llistat de factures:**
 
