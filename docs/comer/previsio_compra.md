@@ -1,7 +1,7 @@
 # Previsions de Compra
 
 La previsió de compra serveix per a poder comprar a mercat l'energia per la cartera de clients d'una Comercialitzadora,
-intentant reduïr la desviació entre l'energia comprada i l'energia demandada dins el possible.
+intentant reduïr, dins el possible, la desviació entre l'energia comprada i l'energia demandada.
 
 La manera més fiable de poder fer la previsió de consum a futur, és basar-se en l'històric de consum de la pròpia cartera
 de clients, a través de les corbes reals que les Distribuïdores publiquen (fitxers `F1`, `P1`, `F5D`, `P5D`).
