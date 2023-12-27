@@ -51,6 +51,20 @@ fitxers es generaran en format de fitxer pla.
     d'utilitzar la corba `Validada`, enlloc de `Facturada`, ja que molt provablement hi haurà subministraments que encara
     no s'hauran facturat i no tindran la corba `CCH_FACT` completa, així que s'utilitza la `CCH_VAL`.
 
+!!! Info "Nota 3"
+    Des de desembre de 2023, és possible generar fitxers `DATADIS_CLMAG` i `DATADIS_CLMAG5A` en format diari, a més a més de en
+    format mensual. Per a fer-ho, n'hi ha prou amb sel·leccionar com a tipus `Diari` al selector de la part superior de l'assistent
+    i introduïr la mateixa data com a data inicial i com a data final. D'aquesta manera, es poden generar els fitxers diaris
+    corresponents al dia `D-2` tal com ASEME va especificar a finals de 2023. És recomanable generar fitxers diaris pel període
+    `M-0` utilitzant la corba `Validada` enlloc de la `Facturada` donat que molt provablement la CCH encara no estarà ajustada a
+    tancaments, al tractar-se de mesures de tan sols uns dies enrere.
+
+* **Fitxers generant-se en cua:** Aquest llistat permet comprovar quantes tasques està duent a terme la cua encarregada de generar
+fitxers. Ja que la cua és compartida entre diversos processos, amb aquest llistat es pot comprovar si l'ERP està generant en segon
+pla algun fitxer. Es tracta doncs d'una eina útil a l'hora de saber si els fitxers haurien d'haver acabat de processar-se o no.
+
+[ ![Assistent Fitxers DATADIS](_static/medidas_datadis/datadis_queues.png)](_static/medidas_datadis/datadis_queues.png)
+
 ### WebService
 
 A més a més dels fitxers de mesures `DATADIS_CLMAG`, `DATADIS_CLMAG5A` i `DATADIS_AUTOCONSUM`, el mòdul de DATADIS permet publicar
