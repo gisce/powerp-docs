@@ -160,6 +160,8 @@ nav:
       - Objeccions: comer/objeciones.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
+    - Previsió de Compra:
+      - Introducció: comer/previsio_compra.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
     - Bateria Virtual: comer/bateria_virtual.md
