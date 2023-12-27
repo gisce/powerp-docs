@@ -59,6 +59,12 @@ fitxers es generaran en format de fitxer pla.
     `M-0` utilitzant la corba `Validada` enlloc de la `Facturada` donat que molt provablement la CCH encara no estarà ajustada a
     tancaments, al tractar-se de mesures de tan sols uns dies enrere.
 
+Si durant la generació d'un fitxer de mesures es detecten errors, per exemple al intentar obtenir alguna de les dades requerides,
+en acabar la generació del fitxer, a més de generar-se i adjuntar-se aquest al llistat de **Fitxers de mesures DATADIS generats**,
+també es generarà i adjuntarà al llistat un fitxer amb el mateix nom però afegint la terminació `.errors.txt` al final, on es podran
+revisar els errors del fitxer. D'aquesta manera, es poden revisar i corregir dades a l'ERP i tornar a generar els fitxers fins que
+aquests es generin sense errors.
+
 * **Fitxers generant-se en cua:** Aquest llistat permet comprovar quantes tasques està duent a terme la cua encarregada de generar
 fitxers. Ja que la cua és compartida entre diversos processos, amb aquest llistat es pot comprovar si l'ERP està generant en segon
 pla algun fitxer. Es tracta doncs d'una eina útil a l'hora de saber si els fitxers haurien d'haver acabat de processar-se o no.
