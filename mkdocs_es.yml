@@ -133,6 +133,7 @@ nav:
       - Medidas desagregadas: distri/medidas_ficheros_desagregados.md
       - Medidas de generación: distri/medidas_generacion.md
       - Herramientas: distri/medidas_herramientas.md
+      - Anexo VII: distri/medidas_anexo_VII.md
       - DATADIS: distri/medidas_datadis.md
       - ESCILA: distri/medidas_escila.md
     - Perfiles: distri/perfiles.md
