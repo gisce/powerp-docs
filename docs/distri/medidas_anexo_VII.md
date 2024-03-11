@@ -1,6 +1,6 @@
 # Mesures ANEXO VII
 
-Aquest mòdul implementa la generació a l'ERP de distribuïdora de fitxers per a complementar `Anexo VII` de la CNMC.
+Aquest mòdul implementa la generació a l'ERP de distribuïdora de fitxers per a complimentar l'`Anexo VII` de la CNMC.
 
 Aquests són **informes de corbes de càrrega horària (CCH)**, agrupats per les diferents tarifes d'accés, que la Distribuïdora enviarà a la "Comisión Nacional de los Mercados y la Competencia (CNMC)" amb una periodicitat anual. Els fitxers recullen les dades de tot l'any anterior.
 
@@ -25,7 +25,7 @@ Aquí se'ns obrirà un assistent per a poder generar el fitxer.
 
 A l'assistent podem ajustar el següent:
 
-- **Any**: L'any pel qual volem realitzar el fitxer. Ha de ser el que surt per defecte, que serà l'any anterior al vigent en el moment de presnetar l'Anexo VII.
+- **Any**: L'any pel qual volem realitzar el fitxer. Ha de ser el que surt per defecte, que serà l'any anterior al vigent en el moment de presentar l'Anexo VII.
 
 - **Contractes**: El tipus de tarifa d'accés el que volem generar el fitxer. Caldrà generar un fitxer per cada tarifa d'accés per la qual tinguem contractes.
 
