@@ -34,7 +34,7 @@ Aquí trovarem els fitxers generats en segon pla.
 
 [ ![Llista de fitxers generats de forma asíncrona](_static/medidas_escila/list_async_files.png)](_static/medidas_escila/list_async_files.png)
 
-Seleccionat un d'ells sens obrirà un formulari el qual ens permetrà descarregar el fitxer.
+Seleccionat un d'ells se'ns obrirà un formulari el qual ens permetrà descarregar el fitxer.
 
 [ ![Formulari del fitxer ESCILA](_static/medidas_escila/async_form_escila.png)](_static/medidas_escila/async_form_escila.png)
 
