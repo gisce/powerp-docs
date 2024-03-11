@@ -10,7 +10,7 @@ Els fitxers generats són descarregats pels usuaris i aquests són els encarrega
 
 En el menú ESCILA es troba dintre de `Administració pública`. Aquí trobarem els apartats necessaris per a la generació dels fitxers i la seva descàrrega.
 
-[ ![Menú ESCIAL](_static/medidas_escila/menu_escila.png)](_static/medidas_escila/menu_escila.png)
+[ ![Menú ESCILA](_static/medidas_escila/menu_escila.png)](_static/medidas_escila/menu_escila.png)
 
 ## Qüestionari d'autoconsum en ESCILA
 
