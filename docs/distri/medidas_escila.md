@@ -42,6 +42,7 @@ apartat.
 
 [ ![Assistent ESCIAL de descarga de fitxers](_static/medidas_escila/wizard_escila_download.png)](_static/medidas_escila/wizard_escila_download.png)
 
+
 ## Llistat de fitxers generats ESCILA
 
 Aquí trobarem els fitxers CSV del qüestionari ESCILA que s'hagin generat en segon pla. 

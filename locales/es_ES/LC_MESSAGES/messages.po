@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-03-11 12:52+0100\n"
-"PO-Revision-Date: 2024-03-11 13:13+0100\n"
+"POT-Creation-Date: 2024-03-11 18:00+0100\n"
+"PO-Revision-Date: 2024-03-11 18:05+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -22815,6 +22815,84 @@ msgstr "<a href=\"../_static/medidas/aclacums.png\"> <img alt=\"Acumulados\" src
 msgid "Es recomana també fer servir la versió més recent publicada per l'Operador del Sistema per a ambdós fitxers."
 msgstr "Se recomienda también utilizar la versión más reciente publicada por el Operador del Sistema para ambos archivos."
 
+msgid "Mesures ANEXO VII"
+msgstr "Medidas ANEXO VII"
+
+msgid "Aquest mòdul implementa la generació a l'ERP de distribuïdora de fitxers per a complimentar l'<code>Anexo VII</code> de la CNMC."
+msgstr "Este módulo implementa la generación en el ERP de distribuidora de ficheros para cumplimentar el <code>Anexo VII</code> de la CNMC."
+
+msgid "Aquests són <strong>informes de corbes de càrrega horària (CCH)</strong>, agrupats per les diferents tarifes d'accés, que la Distribuïdora enviarà a la \"Comisión Nacional de los Mercados y la Competencia (CNMC)\" amb una periodicitat anual. Els fitxers recullen les dades de tot l'any anterior."
+msgstr "Estos son <strong>informes de curvas de carga horaria (CCH)</strong>, agrupados por las diferentes tarifas de acceso, que la Distribuidora enviará a la Comisión Nacional de los Mercados y la Competencia (CNMC) con una periodicidad anual. Los ficheros recogen los datos de todo el año anterior."
+
+msgid "Aquesta funcionalitat es generarà sempre en segon pla i crearà un fitxer <code>.csv</code> una cop estigui llest."
+msgstr "Esta funcionalidad se generará siempre en segundo plano y creará un fichero <code>.csv</code> una vez esté listo."
+
+msgid "L'usuari serà l'encarregat de publicar l'Anexo VII a la CNMC, omplint-lo amb les dades extretes dels fitxers generats per l'ERP."
+msgstr "El usuario será el encargado de publicar el Anexo VII en la CNMC, rellenándolo con los datos extraídos de los ficheros generados por el ERP."
+
+msgid "Menú ANEXO VII"
+msgstr "Menú ANEXO VII"
+
+msgid ""
+"El menú Anexo VII es troba dintre del menú principal <code>Administració pública &gt; CNMC &gt; Actualització peatjes d'accés</code>. Aquí trobarem els apartats necessaris per a la\n"
+"generació dels fitxers i la seva descàrrega."
+msgstr ""
+"El menú Anexo VII se encuentra dentro del menú principal <code>Administración pública &gt; CNMC &gt; Actualización peajes de acceso</code>. Aquí encontraremos los apartados necesarios para la\n"
+"generación de los ficheros y su descarga."
+
+msgid "Fitxers generats Anexo VII"
+msgstr "Ficheros generados Anexo VII"
+
+msgid "Anexo VII"
+msgstr "Anexo VII"
+
+msgid "<a href=\"../_static/medidas_anexo_VII/menu_anexo_VII.png\"> <img alt=\"Menú Anexo VII\" src=\"../_static/medidas_anexo_VII/menu_anexo_VII.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_anexo_VII/menu_anexo_VII.png\"> <img alt=\"Menú Anexo VII\" src=\"../_static/medidas_anexo_VII/menu_anexo_VII.png\" /></a>"
+
+msgid "Aquí se'ns obrirà un assistent per a poder generar el fitxer."
+msgstr "Aquí se nos abrirá un asistente para poder generar el fichero."
+
+msgid "A l'assistent podem ajustar el següent:"
+msgstr "En el asistente podemos ajustar lo siguiente:"
+
+msgid ""
+"\n"
+"<p><strong>Any</strong>: L'any pel qual volem realitzar el fitxer. Ha de ser el que surt per defecte, que serà l'any anterior al vigent en el moment de presentar l'Anexo VII.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Año</strong>: El año para el que queremos realizar el fichero. Debe ser el que sale por defecto, que será el año anterior al vigente en el momento de presentar el Anexo VII.</P>\n"
+
+msgid ""
+"\n"
+"<p><strong>Contractes</strong>: El tipus de tarifa d'accés el que volem generar el fitxer. Caldrà generar un fitxer per cada tarifa d'accés per la qual tinguem contractes.</p>\n"
+msgstr ""
+"\n"
+"<p><strong>Contratos</strong>: El tipo de tarifa de acceso para el  que queremos generar el fichero. Habrá que generar un fichero por cada tarifa de acceso de la que tengamos contratos.</p>\n"
+
+msgid "<a href=\"../_static/medidas_anexo_VII/wizard_anexo_VII_download.png\"> <img alt=\"Assistent Anexo VII de descàrrega de fitxers\" src=\"../_static/medidas_anexo_VII/wizard_anexo_VII_download.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_anexo_VII/wizard_anexo_VII_download.png\"> <img alt=\"Asistente Anexo VII de descarga de ficheros\" src=\"../_static/medidas_anexo_VII/wizard_anexo_VII_download.png\" /></a>"
+
+msgid "Llistat de fitxers generats ANEXO VII"
+msgstr "Listado de ficheros generados ANEXO VII"
+
+msgid "Aquí trobarem els fitxers CSV del fitxer Anexo VII que s'hagin generat."
+msgstr "Aquí encontraremos los ficheros CSV del archivo Anexo VII que se hayan generado."
+
+msgid "<a href=\"../_static/medidas_anexo_VII/list_async_files.png\"> <img alt=\"Llistat de fitxers generats de forma asíncrona\" src=\"../_static/medidas_anexo_VII/list_async_files.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_anexo_VII/list_async_files.png\"> <img alt=\"Listado de ficheros generados de forma asíncrona\" src=\"../_static/medidas_anexo_VII/list_async_files.png\" /></a>"
+
+msgid "Seleccionat un d'ells, se'ns obrirà un formulari el qual ens permetrà descarregar el fitxer."
+msgstr "Seleccionado uno de ellos, se nos abrirá un formulario que nos permitirá descargar el fichero."
+
+msgid "<a href=\"../_static/medidas_anexo_VII/async_form_anexo_VII.png\"> <img alt=\"Formulari del fitxer Anexo VII\" src=\"../_static/medidas_anexo_VII/async_form_anexo_VII.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_anexo_VII/async_form_anexo_VII.png\"> <img alt=\"Formulario del fichero Anexo VII\" src=\"../_static/medidas_anexo_VII/async_form_anexo_VII.png\" /></a>"
+
+msgid "També tenim l'opció a través d'un assistent comú, de poder descarregar tots els fitxers seleccionats a l'hora en format <code>zip</code>."
+msgstr "También tenemos la opción a través de un asistente común, de poder descargar todos los ficheros seleccionados a la vez en formato <code>zip</code>."
+
+msgid "<a href=\"../_static/medidas_anexo_VII/wizard_download_all.png\"> <img alt=\"Botó per descarregar zip Anexo VII\" src=\"../_static/medidas_anexo_VII/wizard_download_all.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_anexo_VII/wizard_download_all.png\"> <img alt=\"Botón para descargar zip Anexo VII\" src=\"../_static/medidas_anexo_VII/wizard_download_all.png\" /></a>"
+
 msgid "Mòdul de Mesures DATADIS"
 msgstr "Módulo de Medidas DATADIS"
 
@@ -23228,9 +23306,6 @@ msgstr "<a href=\"../_static/medidas_escila/menu_escila.png\"> <img alt=\"Menú 
 msgid "Qüestionari d'autoconsum ESCILA"
 msgstr "Cuestionario de autoconsumo ESCILA"
 
-msgid "A l'assistent podem ajustar el següent:"
-msgstr "En el asistente podemos ajustar lo siguiente:"
-
 msgid "El rang de dates en les quals volem generar el fitxer. Per defecte, ja ve ajustat amb les dates de l'any anterior."
 msgstr "El rango de fechas para el que queremos generar los ficheros. Por defecto, ya está ajustado con las fechas del año anterior."
 
@@ -23294,14 +23369,8 @@ msgstr "Aquí encontraremos los ficheros CSV del cuestionario ESCILA que se haya
 msgid "<a href=\"../_static/medidas_escila/list_async_files.png\"> <img alt=\"Llista de fitxers generats de forma asíncrona\" src=\"../_static/medidas_escila/list_async_files.png\" /></a>"
 msgstr "<a href=\"../_static/medidas_escila/list_async_files.png\"> <img alt=\"Lista de ficheros generados de forma asíncrona\" src=\"../_static/medidas_escila/list_async_files.png\" /></a>"
 
-msgid "Seleccionat un d'ells, se'ns obrirà un formulari el qual ens permetrà descarregar el fitxer."
-msgstr "Seleccionado uno de ellos, se nos abrirá un formulario que nos permitirá descargar el fichero."
-
 msgid "<a href=\"../_static/medidas_escila/async_form_escila.png\"> <img alt=\"Formulari del fitxer ESCILA\" src=\"../_static/medidas_escila/async_form_escila.png\" /></a>"
 msgstr "<a href=\"../_static/medidas_escila/async_form_escila.png\"> <img alt=\"Formulario del fichero ESCILA\" src=\"../_static/medidas_escila/async_form_escila.png\" /></a>"
-
-msgid "També tenim l'opció a través d'un assistent comú, de poder descarregar tots els fitxers seleccionats a l'hora en format <code>zip</code>."
-msgstr "También tenemos la opción a través de un asistente común, de poder descargar todos los ficheros seleccionados a la vez en formato <code>zip</code>."
 
 msgid "<a href=\"../_static/medidas_escila/wizard_download_all.png\"> <img alt=\"Bóto per la descargar zip ESCILA\" src=\"../_static/medidas_escila/wizard_download_all.png\" /></a>"
 msgstr "<a href=\"../_static/medidas_escila/wizard_download_all.png\"> <img alt=\"Boton para la descarga zip ESCILA\" src=\"../_static/medidas_escila/wizard_download_all.png\" /></a>"
@@ -45682,9 +45751,6 @@ msgstr "<a href=\"../_static/previsiones/prevision_importados.png\"> <img alt=\"
 #~ "d1emuimwz3Yu1D3OoM9+bNm+l0enl52WS48Xhc9+H6HSoAnL3YAa7dfptMJtPpdD6fp5TqbDGfz+v9p3LbK6oTc57nRVHUifndu3fT6XQymbSbcH0PEwDOWewAl1LK87wOcFVVLRaLlFJRFBcXF7PZbD6frx8k7bfOml2otfY+68vLy6qq6gCX505tBoDjChzg2odk1R24lNJ4PK6qqk5vde+tvQuV7poAVzfhyrKcTCZVVU0mk7IsHQYHACcQOMDVmiSRUmr26zXnLui9vbp2H64+m6E+C9UxcABwMrEDXJ0V6n12TStuuVzqvR1buw83elAfG6f9BgDHlkWPOE2PrbYd3aK/"
 #~ "wAHaOCO1jnHtPacCHAAcVfgAV2vvKrXb9GTacU10A4CTOZMAV9v1Ws7pNfZuV0QT3QDgZM4qwAEA/Al8ZRcAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAwAhwAQDACHABAMAIcAEAw/wMFEgQv05Q1rQAAAABJRU5ErkJggg==\" />"
 #~ msgstr " "
-
-#~ msgid "Aquest ens obre un assistent en el qual podrem seleccionar:"
-#~ msgstr "Éste nos abre un asistente en el que podremos seleccionar:"
 
 #~ msgid ""
 #~ "<strong>Només si es generen en primer pla</strong>:\n"
