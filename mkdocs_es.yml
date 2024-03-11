@@ -134,6 +134,7 @@ nav:
       - Medidas de generación: distri/medidas_generacion.md
       - Herramientas: distri/medidas_herramientas.md
       - DATADIS: distri/medidas_datadis.md
+      - ESCILA: distri/medidas_escila.md
     - Perfiles: distri/perfiles.md
     - Pólizas: distri/polizas.md
     - Reles: distri/reles.md
