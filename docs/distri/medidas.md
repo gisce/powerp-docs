@@ -1,8 +1,8 @@
 # Mesures REE
 
-## Mòdul de Mesures REE
+## Generació de fitxers de mesures agregades
 
-Aquest mòdul serveix per a la generació de fitxers d'intercanvi de mesures amb
+El mòdul de **Mesures REE** serveix per a la generació de fitxers d'intercanvi de mesures amb
 REE, ja siguin aquestes d'origen Telegestió, Telemesura o Perfilat.
 
 Per tant, aquest mòdul inclou eines d'anàlisi, de generació, de processament i de validació d'aquests fitxers.
