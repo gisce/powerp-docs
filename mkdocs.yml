@@ -117,7 +117,7 @@ nav:
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Mesures:
-      - Tractament i generació de fitxers: distri/medidas.md
+      - Mesures agregades: distri/medidas.md
       - Mesures desagregades: distri/medidas_ficheros_desagregados.md
       - Mesures de generació: distri/medidas_generacion.md
       - Eines: distri/medidas_herramientas.md

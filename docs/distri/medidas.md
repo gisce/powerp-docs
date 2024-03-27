@@ -1,8 +1,8 @@
 # Mesures REE
 
-## Mòdul de Mesures REE
+## Generació de fitxers de mesures agregades
 
-Aquest mòdul serveix per a la generació de fitxers d'intercanvi de mesures amb
+El mòdul de **Mesures REE** serveix per a la generació de fitxers d'intercanvi de mesures amb
 REE, ja siguin aquestes d'origen Telegestió, Telemesura o Perfilat.
 
 Per tant, aquest mòdul inclou eines d'anàlisi, de generació, de processament i de validació d'aquests fitxers.
@@ -163,7 +163,8 @@ d'integritat de les dades, s'han d'ajustar  les factures en estat `esborrany` de
 (ajustant la CCH) i perfilar les factures en estat `esborrany` de tipus `perfil`.
 
 !!! Info "Nota"
-    Les factures amb 0 kWh d'energia sempre quedaran en estat `esborrany` ja que no es perfilaran ni s'ajustaran.
+    Les factures amb 0 kWh d'energia antigament quedaven en estat `esborrany` ja que no es perfilaven ni s'ajustaven. Però
+    a partir de 2023, sí es perfilen i ajusten i ja no haurien de quedar en estat `esborrany`.
 
 Si no s'aconsegueix de cap manera arribar al 100% d'alguna de les barres de progrés, es pot accedir al llistat `Factures 
 del periode` i filtrar pel tipus d'origen i per estat `esborrany`. Un cop aplicat el filtre, es poden revisar una per 
