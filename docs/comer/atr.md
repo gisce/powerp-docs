@@ -90,3 +90,24 @@ raò per la qual ha fallat. A més, ens permetrà obrir els casos creats si prem
 botò de **Obrir casos generats**.
 
 ![Figura 11](_static/atr/wizard_modcon_fin.png)
+
+## Adjuntar documentació ATR
+
+Per adjuntar documentació a un procés ATR, s'ha d'anar al formulari del procés ATR al
+qual hi volem adjuntar els documents i utilitzar l'assistent "Adjuntar document al pas ATR"
+
+![image](https://user-images.githubusercontent.com/294235/125628312-7b2a3925-bfb0-4c97-b467-5485ccea4849.png)
+
+En aquest assistent ens demanarà a quin pas el volem adjuntar, Quin tipus de document i el document.
+
+Quan anem a triar el document ens sortirant els documents adjunts que ja tinguem vinculats amb aquest contracte,
+si no és cap del que hi ha al llistat, en podem crear un de nou.
+
+![image](https://user-images.githubusercontent.com/294235/125629166-e138ac52-7fcd-49a5-8b75-94d6e6ddf4a9.png)
+
+I finalment apretem el botó "Adjuntar document"
+
+![image](https://user-images.githubusercontent.com/294235/125629290-2b1a6b83-fd29-4b29-811f-6db8ab158b7b.png)
+
+![image](https://user-images.githubusercontent.com/294235/125629387-fe3165a7-5535-42f5-8be2-b485bd725d41.png)
+
