@@ -104,7 +104,7 @@ Les mesures dels RECORE s'informen amb dos fitxers diferents:
   cogeneració i residus tipus 3, 4 i 5. Es comunica a REE de forma diària des de l'1 de gener de 2023.
 * **MEDIDAS:** Dades horàries d'energia per codi CIL d'instal·lacions de
   producció d'energia elèctrica a partir de fonts d'energia renovables,
-  cogeneració i residus tipus 3 i 5. Es comunica a REE i a la CNMC de forma mensual en mes M+1. Però a REE va 
+  cogeneració i residus tipus 3, 4 i 5. Es comunica a REE i a la CNMC de forma mensual en mes M+1. Però a REE va 
   ser substituit pel `MCIL345` des de l'1 de gener de 2023.
 
 !!! Info "Nota"

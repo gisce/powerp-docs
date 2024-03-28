@@ -5,7 +5,7 @@
 L'ERP incorpora eines per a poder generar i publicar fitxers de mesures de forma desagregada, és a dir no a nivell d'agregació
 sinó a nivell de CUPS.
 
-Aquestes eines es poden trobar al menú: **Mesures REE > Fitxers Exportats**.
+Aquestes eines es poden trobar al menú: **Infraestructura > Fitxers Exportats**.
 
 [ ![Menú General](_static/medidas/menu_desagregados.png)](_static/medidas/menu_desagregados.png)
 
@@ -36,7 +36,7 @@ Els fitxers `F1` comuniquen a l'Operador del Sistema les dades horàries d'energ
 
 L'ERP ja incorpora automatismes que, si es configuren, permeten que cada matí es generin i enviïn els fitxers diaris amb la corba que
 es troba als comptadors telemesurats i telegestionats. Però de totes maneres, és possible generar els fitxers de forma manual amb l'assistent
-**Mesures REE > Fitxers Exportats > Exportar Corba**.
+**Infraestructura > Fitxers Exportats > Exportar Corba**.
 
 [ ![Generar Fitxers F1](_static/medidas/f1.png)](_static/medidas/f1.png)
 
@@ -68,8 +68,8 @@ Els fitxers generats es poden revisar des del llistat **Infraestructura > Fitxer
 
 [ ![Fitxers Generats](_static/medidas/ficheros_desagregados_generados.png)](_static/medidas/ficheros_desagregados_generados.png)
 
-A més de poder comprovar la publicació automàtica de `F1` des del llistat **Mesures REE > Fitxers Exportats > Fitxers Generats**,
-també es pot anar al llistat **Mesures REE > Fitxers Exportats > Darrera corba F1 dels CUPS**, que es mostra a la següent figura.
+A més de poder comprovar la publicació automàtica de `F1` des del llistat **Infraestructura > Fitxers Exportats > Fitxers Generats**,
+també es pot anar al llistat **Infraestructura > Fitxers Exportats > Darrera corba F1 dels CUPS**, que es mostra a la següent figura.
 
 [ ![Darrers F1 publicats](_static/medidas/last_f1_curve_cups.png)](_static/medidas/last_f1_curve_cups.png)
 
@@ -82,7 +82,7 @@ generar un `F1` manualment amb l'assistent `Exportar corba`.
 Els fitxers `P1` comuniquen a l'Operador del Sistema les dades horàries d'energia de punts de mesura de clients de Tipus 1, 2, 3
 i autoconsums de clients de Tipus 4.
 
-És possible generar els fitxers amb l'assistent **Mesures REE > Fitxers Exportats > Exportar Corba**, seleccionant en aquest cas
+És possible generar els fitxers amb l'assistent **Infraestructura > Fitxers Exportats > Exportar Corba**, seleccionant en aquest cas
 com a tipus de fitxer l'opció `P1`.
 
 [ ![Generar Fitxers P1](_static/medidas/p1.png)](_static/medidas/p1.png)
@@ -98,7 +98,7 @@ de clients de Tipus 1, 2, 3 i autoconsums de clients de Tipus 4.
 
 Anàlogament a l'automatització dels fitxers `F1`, és possible configurar i activar un automatisme a l'ERP de Distribuïdora per a que
 cada matí publiqui els fitxers `P1D` a l'SFTP de corbes per a que arribin a la CNMC. Però també es poden generar els fitxers de forma
-manual amb l'assistent **Mesures REE > Fitxers Exportats > Generar Fitxer P1D**.
+manual amb l'assistent **Infraestructura > Fitxers Exportats > Generar Fitxer P1D**.
 
 Aquest assistent és molt senzill i només cal configurar les dates (si no s'introdueix data inicial, es publicaran els `P1D` de tots els
 CUPS des de la seva data de darrera publicació fins ara) i si es vol comprimir en format ".bz2" o no.
