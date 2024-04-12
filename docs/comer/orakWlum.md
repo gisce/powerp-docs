@@ -24,7 +24,7 @@ disponibles.
 
 Cada un dels submenús anteriors conté llistats per a revisar els elements existents i també assistents per a actuar-hi.
 
-# Pèrdues del sistema
+## Pèrdues del sistema
 
 Les ofertes de compra publicades a mercat han d'expressar el consum **elevat en barres de central** i en **MWh amb un únic
 decimal**
@@ -70,11 +70,10 @@ Amb tot aquest conjunt d'eines senzilles, es pot tenir un registre clar i precí
 a **orakWlum**. Tot i que les previsions de consum i els històrics ja descarreguen i importen les pèrdues dels dies en qüestió
 automàticament, s'aconsella fer una primera importació massiva per any per si cal revisar les pèrdues d'algun dia en concret.
 
-# Previsions de consum
+## Previsions de consum
 
 
 
-# Històrics de consum
-
+## Històrics de consum
 
 
