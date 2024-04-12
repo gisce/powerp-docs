@@ -1,6 +1,6 @@
 # Introducció a l'aprovisionament d'energia
 
-En aquesta secció introductòria s'expliquen al detall tant les **Previsions de compra** com els **Històrics de consum**,
+En aquesta secció introductòria s'expliquen amb detall tant les **Previsions de compra** com els **Històrics de consum**,
 conceptes clau que cal tenir clars abans d'entendre el funcionament de **orakWlum**, l'eina d'aprovisionament d'energia
 de l'ERP de Comercialitzadora.
 
