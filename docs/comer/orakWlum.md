@@ -72,8 +72,42 @@ automàticament, s'aconsella fer una primera importació massiva per any per si 
 
 ## Previsions de consum
 
+Per a generar una **previsió de consum** tan sols és necessari fer servir l'assistent **orakWlum > Previsions de consum > 
+Generar Previsió de Consum**. 
 
+A l'assistent podreu triar la **data** per a la qual voleu generar la previsió i podeu assignar un **nom** descriptiu a 
+la mateixa (si no l'especifiqueu, s'assignarà un nom per defecte). També es pot controlar **l'algoritme** de predicció a fer 
+servir i quines **fonts** de consum històric es volen fer servir per a la previsió (per defecte vindran activades totes) i 
+podreu triar també si voleu que la previsió es generi **en segon pla** o no (per defecte es generarà de manera asíncrona, 
+en segon pla, per a poder seguir treballant amb l'ERP mentrestant es va processant el càlcul.
+
+[ ![Generar previsió](_static/orakWlum/generar_previsio.png)](_static/orakWlum/generar_previsio.png)
+
+!!! Info "Nota 3"
+    Les fonts disponibles són les pròpies corbes i perfils existents a l'ERP de Comercialitzadora, i aquestes poden variar
+    segons els mòduls que hi hagi instal·lats o no al propi ERP. Per defecte, es fan servir totes les fonts disponibles.
+
+!!! Info "Nota 4"
+    Els algoritmes disponibles depenen també dels mòduls instal·lats que hi hagi a l'ERP. Hi ha un altre capítol dels
+    manuals dedicat a aquests i al seu funcionament.
 
 ## Històrics de consum
 
+Per a generar un **històric de consum** tan sols és necessari fer servir l'assistent **orakWlum > Històrics de consum > 
+Generar Històric de Consum**. 
 
+A l'assistent podreu triar la **data** per a la qual voleu generar l'històric i podeu assignar un **nom** descriptiu al  
+mateix (si no l'especifiqueu, s'assignarà un nom per defecte). També es pot controlar quines **fonts** de consum històric es 
+volen fer servir per a l'històric (per defecte vindran activades totes) i podreu triar també si voleu que l'històric
+es generi **en segon pla** o no (per defecte es generarà de manera asíncrona, en segon pla, per a poder seguir treballant
+amb l'ERP mentrestant es va processant el càlcul.
+
+[ ![Generar històric](_static/orakWlum/generar_historic.png)](_static/orakWlum/generar_historic.png)
+
+!!! Info "Nota 5"
+    Els històrics de consum no poden fer servir perfilats com a fonts de consum històric. Utilitzaran exclussivament les
+    corbes publicades per les Distribuïdores.
+
+!!! Info "Nota 6"
+    Els històrics de consum no fan servir cap algoritme de predicció. Obtindran les mesures reals de cada CUPS de la font
+    més ferma possible (prioritzant `F1` i `F5D` per sobre de `P1` i `P5D`) i en sumaran el consum.
