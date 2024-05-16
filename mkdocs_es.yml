@@ -167,9 +167,17 @@ nav:
     - SOA: comer/soa.md
     - Previsión de Compra:
       - Introducción: comer/previsio_compra.md
+      - orakWlum: comer/orakWlum.md
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
     - Batería Virtual: comer/bateria_virtual.md
+  - Representación:
+      - Gestión de los CIL: representacion/cils.md
+      - Instalaciones de generación: representacion/instalaciones.md
+      - Previsiones de generación: representacion/previsiones.md
+      - Ofertas a Mercado de generación: representacion/ofertas.md
+      - Contratos de representación: representacion/contratos.md
+      - Facturación: representacion/facturacion.md
   - Facturación:
     - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
@@ -179,10 +187,3 @@ nav:
     - Tipos de facturas: facturacion/tipos_facturas.md
     - Validaciones: facturacion/validaciones.md
     - Líneas Extra: facturacion/lineas_extra.md
-  - Representación:
-    - Gestión de los CIL: representacion/cils.md
-    - Instalaciones de generación: representacion/instalaciones.md
-    - Previsiones de generación: representacion/previsiones.md
-    - Ofertas a Mercado de generación: representacion/ofertas.md
-    - Contratos de representación: representacion/contratos.md
-    - Facturación: representacion/facturacion.md

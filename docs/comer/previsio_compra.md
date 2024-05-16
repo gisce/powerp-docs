@@ -1,4 +1,10 @@
-# Previsions de Compra
+# Introducció a l'aprovisionament d'energia
+
+En aquesta secció introductòria s'expliquen amb detall tant les **Previsions de compra** com els **Històrics de consum**,
+conceptes clau que cal tenir clars abans d'entendre el funcionament de **orakWlum**, l'eina d'aprovisionament d'energia
+de l'ERP de Comercialitzadora.
+
+## Previsions de Compra
 
 La previsió de compra serveix per a poder comprar a mercat l'energia per la cartera de clients d'una Comercialitzadora,
 intentant reduïr, dins el possible, la desviació entre l'energia comprada i l'energia demandada.
@@ -22,7 +28,7 @@ determinar la quantitat d'energia a comprar per a cada hora del dia d'una data a
 manuals. A l'hora de generar una previsió de compra, a més de triar la data a futur per la qual es generarà, també es pot
 indicar quin dels algoritmes disponibles es vol emprar.
 
-# Històrics de consum
+## Històrics de consum
 
 A més a més de poder generar previsions de consum a futur com a suport a l'hora de comprar l'energia al mercat, **orakWlum**
 també permet generar històrics de consum. Aquests no apliquen cap algoritme ni càlcul, sinó que el que fan és recollir 
