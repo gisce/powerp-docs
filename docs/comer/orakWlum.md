@@ -174,6 +174,8 @@ anteriorment quan es va crear la mateixa.
 
 ## Històrics de consum
 
+### Generació d'històrics
+
 Per a generar un **històric de consum** tan sols és necessari fer servir l'assistent **orakWlum > Històrics de consum > 
 Generar Històric de Consum**. 
 
@@ -192,3 +194,80 @@ amb l'ERP mentrestant es va processant el càlcul.
 !!! Info "Nota 7"
     Els històrics de consum no fan servir cap algoritme de predicció. Obtindran les mesures reals de cada CUPS de la font
     més ferma possible (prioritzant `F1` i `F5D` per sobre de `P1` i `P5D`) i en sumaran el consum.
+
+Si heu posat a generar l'històric de consum en segon pla, podeu tancar l'assistent. Apareixerà al llistat **Històrics de
+consum** un cop s'hagi acabat de processar. 
+
+[ ![Llistat historics](_static/orakWlum/llistat_historics.png)](_static/orakWlum/llistat_historics.png)
+
+També podeu utilitzar el llistat **Històrics de consum en curs** per a comprovar
+el número de tasques en execució que hi ha a la cua corresponent, per a comprovar si hi ha tasques en curs o no.
+
+[ ![Tasques en curs historics](_static/orakWlum/tasques_historics.png)](_static/orakWlum/tasques_historics.png)
+
+Accedint a un **històric de consum**, al seu formulari podem comprovar tota la informació relacionada amb el mateix:
+- Data de l'històric.
+- Nom de l'històric.
+- Consum total en kWh (amb i sense pèrdues).
+- Versió dels coeficients de pèrdues d'ESIOS utilitzats.
+- Total de CUPS actius en la data de l'històric.
+- Total de CUPS amb històric.
+- Percentatge d'integritat, indicant els CUPS que tenen mesura històrica..
+- Fonts de consum utilitzades.
+
+[ ![Formulari historics](_static/orakWlum/formulari_historics.png)](_static/orakWlum/formulari_historics.png)
+
+També és possible comprovar el consum de cada una de les hores del dia, amb i sense pèrdues, anant a les pestanyes
+**Consum en Barres de Central** i **Consum**, respectivament.
+
+[ ![Formulari historics BC](_static/orakWlum/formulari_historics_bc.png)](_static/orakWlum/formulari_historics_bc.png)
+
+Per últim, es poden comprovar totes les fonts utilitzades en els històrics, per si es volgués consultar l'origen de la
+mesura d'alguns CUPS en concret. Per a fer-ho podeu fer servir l'enllaç **Línies de Consum Històric**.
+
+[ ![Línies historics link](_static/orakWlum/linies_historics_link.png)](_static/orakWlum/linies_historics_link.png)
+
+L'enllaç obrirà en una nova pestanya de l'ERP un llistat amb totes les fonts utilitzades. En aquest llistat, podreu ordenar
+i filtrar per múltiples camps útils, com són el **CUPS**, la **tarifa d'accés**, el **tipus de punt** o l'**origen** de 
+la mesura.
+
+[ ![Línies historics llistat](_static/orakWlum/linies_historics_llistat.png)](_static/orakWlum/linies_historics_llistat.png)
+
+D'aquesta manera podeu saber quina mesura s'ha fet servir com a històric de consum per a cada CUPS a cada hora, si és
+necessari.
+
+### Exportació d'històrics
+
+Un **històric de consum** pot exportar-se des de l'ERP per a poder-lo revisar o per a treballar-hi des de Excel.
+
+Per a fer-ho, es pot utilitzar l'assistent **Exportar Històric de Consum**. En aquest podrem triar dos formats d'exportació:
+- Resum en Excel.
+- Detall en CSV.
+
+[ ![Exportar historic](_static/orakWlum/historic_exportar.png)](_static/orakWlum/historic_exportar.png)
+
+El format de **resum** és útil la majoria de vegades, ja que inclou tota la informació bàsica de l'històric, la que
+es pot consultar des de la vista de formulari del mateix. El fitxer Excel resultant ja inclou diverses pestanyes per a
+mostrar la informació d'una manera clara i ordenada.
+
+[ ![Resum historic](_static/orakWlum/historics_resum.png)](_static/orakWlum/historics_resum.png)
+
+El format de **detall** és útil per a revisar les mesures dels CUPS, ja que inclou tota la informació de les línies de consum
+emprades al generar l'històric.
+
+[ ![Detall historic](_static/orakWlum/historics_detall.png)](_static/orakWlum/historics_detall.png)
+
+### Reprocessat d'històrics
+
+Un **històric de consum** es pot tornar a calcular, sobreescrivint els càlculs anteriors. Això té sentit, per exemple,
+quan s'ha creat un històric per una data molt recent i, conforme passen els dies, rebem més fitxers de corba de les distribuïdores, 
+així que interessa tornar a calcular l'històric per veure si el percentatge d'integritat augmenta.
+
+Per a tornar a calcular un històric, es pot fer servir l'assistent **Reprocessar Històric de Consum**. El reprocessat no
+crea un nou històric, sinó que el recalcularà utilitzant la mateixa data i les mateixes fonts utilitzades anteriorment 
+quan es va crear el mateix.
+
+!!! Info "Nota 8"
+    El reprocessat d'històrics sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
+    reflectits a l'històric de consum recalculat. Novament, es pot fer servir el llistat **Històrics de consum en curs**
+    per a saber si la cua d'històrics de orakWlum té tasques en curs, per saber si ha acabat o no.
