@@ -165,6 +165,7 @@ nav:
     - Previsió de Compra:
       - Introducció: comer/previsio_compra.md
       - orakWlum: comer/orakWlum.md
+      - Algoritmes predictius: comer/algoritmos_orakWlum.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
     - Bateria Virtual: comer/bateria_virtual.md
