@@ -1,11 +1,9 @@
 # **Generació fitxes autoconsum**
 ## **La fitxa autoconsum**
 
-La fitxa d'autoconsum es genera en esborrany quan generem el M1 01
-d'autoconsum i s'activarà amb el M1 05.
-
-En alguns casos aquesta fitxa no es fa automàticament i cal crear la fitxa
+Aquí us expliquem com crear la fitxa
 d'autoconsum, el generador i associar el generador al CUPS manualment:
+
 Anar a Menú de l'ERP a l'apartat d'autoconsum:
 
 ![](../_static/autoconsum/1a_auto.png)
