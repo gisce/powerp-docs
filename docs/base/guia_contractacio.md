@@ -4,7 +4,7 @@
 
 ![](_static/manual_erp/4a_menu.png)
 
-Anar al llistat de contractes situat a Gestió de "Pòlisses / Pòlisses" (fer doble clic a “Pòlisses”).
+Anar al llistat de contractes situat a **Gestió de Pòlisses / Pòlisses** (fer doble clic a `Pòlisses`).
 
 Al llistat que s'obre, cal utilitzar l'apartat de filtres per cercar el contracte.
 Segons la informació que doni el client, podem utilitzar un filtre o un un altre. Els més comuns són els següents:
@@ -23,7 +23,7 @@ hi hauria d'haver més d'un contracte actiu assignat a un mateix CUPS.
 En fer doble clic en un contracte des d'un llistat de contractes, se'ns obre una vista detallada amb tota la informació
 del contracte:
 
-La informació d‟un contracte s‟agrupa en pestanyes. Les més rellevants són:
+La informació d‟un contracte s'agrupa en pestanyes. Les més rellevants són:
 
 * **General**: Conté la informació referent al mercat elèctric. Per exemple, la tarifa d'accés, les potències contractades,
 el tipus de contracte, etc.
