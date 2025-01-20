@@ -44,7 +44,7 @@ El fitxer ha de ser en format CSV **separat per ";"** i ha de tenir les següent
 
 El procés de facturació a l’ERP es pot esquematitzar de la següent manera:
 
-![](_static/llistes_preus/esquema%20proces.jpg)
+![](_static/llistes_preus/esquema_proces.jpg)
 
 ## Pool de lectures
 
