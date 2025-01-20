@@ -47,7 +47,7 @@ consum a les fonts d'orakWlum.
 En el següent exemple, es vol generar una previsió de consum per al 21 d'abril del 2022 (marcat en groc al calendari). 
 orakWlum calcularà quin és el dijous equivalent de fa un any i obtindrà dels històrics de consum d’aquesta data el consum a 
 proposar. En aquest exemple, la data objectiu serà el 22 d'abril del 2022 (marcat en groc al calendari). Els CUPS que no tinguin 
-històric de consum en aquesta data, s'estimaran amb la mitjana horari d'acord amb la tarifa, tal com s'explica al diagrama de 
+històric de consum en aquesta data, s'estimaran amb la mitjana horària d'acord amb la tarifa, tal com s'explica al diagrama de
 la secció anterior d'aquest document.
 
 [ ![Exemple M-12](_static/orakWlum/m12_example_calendar.png)](_static/orakWlum/m12_example_calendar.png)
@@ -111,7 +111,7 @@ històrics corresponents als CUPS en aquestes dates.
 
 [ ![Exemple Gauss](_static/orakWlum/gauss_example_calendar.png)](_static/orakWlum/gauss_example_calendar.png)
 
-Els CUPS que no hagin pogut obtenir una mostra de consum històric, s'estimaran amb la mitjana horari d'acord amb la tarifa, 
+Els CUPS que no hagin pogut obtenir una mostra de consum històric, s'estimaran amb la mitjana horària d'acord amb la tarifa,
 tal com s'explica al diagrama de la secció anterior d'aquest document.
 
 ### Avantatges
@@ -124,3 +124,41 @@ tal com s'explica al diagrama de la secció anterior d'aquest document.
 
 * Temps de càlcul molt més elevat que l'algoritme **M-12** al tenir que obtenir moltes més dades i normalitzar-les, abans 
 d'obtenir el consum proposat.
+
+## MVH (Millor Valor Horari)
+
+Aquest algorisme es basa en la idea de l'algoritme **Gauss** però eliminant la necessitat de consultar una per una totes
+les col·leccions de dades de consum històric. Enlloc d'això, un cop sel·leccionats els dies candidats a consultar, es farà
+la consulta únicament en una nova col·lecció anomenada `mvh` (Millor Valor Horari). El fet d'eliminar les múltiples
+consultes, fa que sigui més lleuger que l'algoritme **Gauss** mantenint una bona qualitat en les mesures obtingudes.
+
+L'objectiu principal de l'algoritme **MVH** és que no sigui `orakWlum` qui s'encarregui de recórrer totes les fonts de
+consum històric per a determinar la millor mesura horària de cada CUPS, sino que això ho hagi fet ja un procés independent
+que es pugui llançar manualment o mitjançant algun automatisme, recalculant el millor valor horari de tots els CUPS actius
+pel Comercialitzador donat un rang de dates. El resultat, és un algoritme robust però més lleuger en temps computacional
+que l'algoritme **Gauss**.
+
+A més de comptar amb la personalització de la tipologia de dia de la setmana i del màxim de dies que es permet tirar enrere
+en el temps a l'hora de generar la llista de dies candidats, amb l'algoritme **MVH** apareixen nous paràmetres:
+
+* En primer lloc la quantitat de dies candidats es volen consultar a la col·lecció `mvh` (mostra màxima) i quin pes
+  s'assignarà a la mesura de cada día. Un exemple seria la configuració per defecte: 3 dies candidats, assignant al valor
+  proposat un 70% del dia més proper, un 20% del segon dia més proper i un 10% del dia menys proper.
+* En segon lloc, un multiplicador global que, un cop obtinguda la previsió de consum hora a hora, farà que aquesta creixi
+  o decreixi, en funció de com es configuri el paràmetre. Aquest paràmetre per defecte està assignat a 100%, per a que no
+  afecti al consum proposat. Si es vol activar, cal configurar-ho a les variables de l'ERP. És especialment útil, per a
+  que les previsions compensin automàticament el desviament observat entre la previsió i la realitat.
+
+Com amb els altres algoritmes, els CUPS que no hagin pogut obtenir una mostra de consum històric, s'estimaran amb la mitjana
+horària d'acord amb la tarifa, tal com s'explica al diagrama de la secció anterior d'aquest document.
+
+### Avantatges
+
+* Bona relació entre temps de càlcul i fiabilitat de la previsió de consum final.
+* Compensació automàtica del desviament, si es configura el multiplicador per a que el corregeixi un cop s'ha generat
+  la previsió.
+
+### Limitacions
+
+* Requereix que s'hagi calculat prèviament el millor valor horari (`mvh`) pels dies que es faran servir com a candidats
+  a l'hora d'obtenir dades de consum històric.
