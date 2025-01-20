@@ -14,9 +14,11 @@ vigent.
 
 ## Pòlisses/contractes
 
-En el model de la pòlissa es troben els camps que indiquen a quin client pertany, quina tarifa té actualment, comercialitzadora, poténcia contractada, tipus de facturació, data de la próxima facturació, históric de comptadors i les seves lectures, etc
+En el model de la pòlissa es troben els camps que indiquen a quin client pertany, quina tarifa té actualment,
+comercialitzadora, poténcia contractada, tipus de facturació, data de la próxima facturació, históric de comptadors,
+les seves lectures, etc.
 
-En el menú principal podem trobar el llistat de pólisses a "_Menú → Gestió de Pólisses_"
+En el menú principal podem trobar el llistat de pólisses a **Menú → Gestió de Pólisses**.
 
 ![](_static/polizas/menu.png)
 
@@ -24,7 +26,7 @@ En el menú principal podem trobar el llistat de pólisses a "_Menú → Gestió
 
 Per donar d'alta una pòlissa s'ha d'emplenar una sèrie de camps amb el fi que la facturació funcioni correctament.
 
-Es selecciona el botó "_Nou_" de la barra de botons i es procedeix a completar les dades de les diferents pestanyes.
+Es selecciona el botó **Nou** de la barra de botons i es procedeix a completar les dades de les diferents pestanyes.
 
 #### Pestanya General
 
