@@ -9,11 +9,11 @@ Anar al llistat de contractes situat a Gestió de "Pòlisses / Pòlisses" (fer d
 Al llistat que s'obre, cal utilitzar l'apartat de filtres per cercar el contracte.
 Segons la informació que doni el client, podem utilitzar un filtre o un un altre. Els més comuns són els següents:
 
-1. Titular: Cercar els contractes per nom del seu titular. Es pot cercar només per una part del nom o pel nom complet.
-2. NIF titular: Cercar els contractes pel NIF/CIF del seu titular.
-3. Adreça CUPS: Cercar els contractes per adreça del punt de subministrament, és a dir, la direcció on es subministra llum.
-4. Contracte: Cercar els contractes pel número de contracte que es va assignar al client en el moment de la seva alta.
-5. CUPS: Cercar els contractes pel nombre de CUPS. Igual que el número de contracte, és un identificador únic ja que no
+1. **Titular**: Cercar els contractes per nom del seu titular. Es pot cercar només per una part del nom o pel nom complet.
+2. **NIF titular**: Cercar els contractes pel NIF/CIF del seu titular.
+3. **Adreça CUPS**: Cercar els contractes per adreça del punt de subministrament, és a dir, la direcció on es subministra llum.
+4. **Contracte**: Cercar els contractes pel número de contracte que es va assignar al client en el moment de la seva alta.
+5. **CUPS**: Cercar els contractes pel nombre de CUPS. Igual que el número de contracte, és un identificador únic ja que no
 hi hauria d'haver més d'un contracte actiu assignat a un mateix CUPS.
 
 ## Camps d'un contracte
@@ -25,11 +25,11 @@ del contracte:
 
 La informació d‟un contracte s‟agrupa en pestanyes. Les més rellevants són:
 
-* General: Conté la informació referent al mercat elèctric. Per exemple, la tarifa d'accés, les potències contractades,
+* **General**: Conté la informació referent al mercat elèctric. Per exemple, la tarifa d'accés, les potències contractades,
 el tipus de contracte, etc.
-* Facturació: Conté la informació sobre el producte ofertat al client (Tarifa Comercialitzadora) i les dades de pagament
+* **Facturació**: Conté la informació sobre el producte ofertat al client (Tarifa Comercialitzadora) i les dades de pagament
 (IBAN i propietari del compte bancari).
-* Contactes: Informa de l'adreça de notificació (adreça on es envien les factures) i les dades fiscals per a la factura
+* **Contactes**: Informa de l'adreça de notificació (adreça on es envien les factures) i les dades fiscals per a la factura
 (raó fiscal i adreça fiscal).
  
 Quan es fa clic a una de les pestanyes, es mostra tota la informació a la pantalla principal del contracte.
