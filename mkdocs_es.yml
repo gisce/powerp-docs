@@ -65,6 +65,9 @@ nav:
     - Revisiones internas: base/revisiones.md
     - SOA: base/soa.md
     - Ubicaciones: base/ubicaciones.md
+    - Guia Contratos: base/guia_contractacio.md
+    - Menus ERP: base/menu_erp.md
+    - Importar CSV: base/pujar_csv_erp.md
   - Distribuidora:
     - Inicio: distri/index.md
     - Administración Pública:

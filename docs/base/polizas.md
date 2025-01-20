@@ -5,41 +5,28 @@
 Les tarifes d'accés que venen definides amb l'ERP són les que marca la legislació
 vigent.
 
-- 2.0A (0 - 10 kW)
-- 2.1A (10 - 15 kW)
-- 2.0DHA (0 - 10 kW) amb discriminació horària
-- 2.1DHA (10 - 15 kW) amb discriminació horària
-- 2.0DHS (0 - 10 kW) amb discriminació horària "supervalle"
-- 2.1DHS (10 - 15 kW) amb discriminació horària "supervalle"
-- 3.0A (més de 15 kW)
-- 3.1A
-- 3.1A LB
-- 6.1A
-- 6.1B
-- 6.2
-- 6.3
-- 6.4
-- 6.5
+- 2.0TD (0 - 15 kW)
+- 3.0TD (més de 15 kW) 
+- 6.1TD (tensió entre 1 kV i 30 kV)
+- 6.2TD (tensió entre 30 kV i 72,5 kV)
+- 6.3TD (tensió entre 72,5 kV kV i 145 kV)
+- 6.4TD (tensió igual o superiors a 145 kV)
 
 ## Pòlisses/contractes
 
-En el model de la pòlissa es troben els camps que indiquen a quin client pertany,
-quina tarifa té actualment, comercialitzadora, poténcia contractada, tipus de
-facturació, data de la próxima facturació, históric de comptadors i les seves
-lectures, ...
+En el model de la pòlissa es troben els camps que indiquen a quin client pertany, quina tarifa té actualment,
+comercialitzadora, poténcia contractada, tipus de facturació, data de la próxima facturació, históric de comptadors,
+les seves lectures, etc.
 
-En el menú principal podem trobar el llistat de pólisses a "_Menú → Gestió de
-Pólisses_"
+En el menú principal podem trobar el llistat de pólisses a **Menú → Gestió de Pólisses**.
 
 ![](_static/polizas/menu.png)
 
 ### Donar d'Alta una pòlissa
 
-Per donar d'alta una pòlissa s'ha d'emplenar una sèrie de camps amb el fi que la
-facturació funcioni correctament.
+Per donar d'alta una pòlissa s'ha d'emplenar una sèrie de camps amb el fi que la facturació funcioni correctament.
 
-Es selecciona el botó "_Nou_" de la barra de botons i es procedeix a completar
-les dades de les diferents pestanyes.
+Es selecciona el botó **Nou** de la barra de botons i es procedeix a completar les dades de les diferents pestanyes.
 
 #### Pestanya General
 
