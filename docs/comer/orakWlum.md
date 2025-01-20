@@ -93,6 +93,17 @@ en segon pla, per a poder seguir treballant amb l'ERP mentrestant es va processa
     Els algoritmes disponibles depenen també dels mòduls instal·lats que hi hagi a l'ERP. Hi ha un altre capítol dels
     manuals dedicat a aquests i al seu funcionament.
 
+!!! Info "Nota 5"
+    Hi ha una opció per a generar una previsió de consum quart-horària, ja que en un futur el mercat diari de l'energia
+    anirà amb integració quart-horària i no en horària com fins ara. Aquesta opció fa que, un cop s'ha generat la previsió
+    horària, aquesta es converteixi en quart-horària, repartint el consum de cada hora entre els seus quatre quarts d'hora
+    corresponents.
+
+!!! Info "Nota 6"
+    Al seleccionable de l'algoritme es pot triar l'opció "Importada". Si es fa, la selecció de fonts desapareix i apareix
+    un selector per a poder carregar un fitxer en format CSV amb la previsió. Aquesta opció serveix per a poder importar
+    a orakWlum previsions de consum generades amb eines externes, si es desitja.
+
 Si heu posat a generar la previsió de consum en segon pla, podeu tancar l'assistent. Apareixerà al llistat **Previsions de
 consum** un cop s'hagi acabat de processar. 
 
@@ -167,7 +178,7 @@ Per a tornar a calcular una previsió, es pot fer servir l'assistent **Reprocess
 crea una nova previsió, sinó que la recalcularà utilitzant la mateixa data, el mateix algoritme i les mateixes fonts utilitzades
 anteriorment quan es va crear la mateixa.
 
-!!! Info "Nota 5"
+!!! Info "Nota 7"
     El reprocessat de previsions sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a la previsió de consum recalculada. Novament, es pot fer servir el llistat **Previsions de consum en curs**
     per a saber si la cua de previsions de orakWlum té tasques en curs, per saber si ha acabat o no.
@@ -187,11 +198,11 @@ amb l'ERP mentrestant es va processant el càlcul.
 
 [ ![Generar històric](_static/orakWlum/generar_historic.png)](_static/orakWlum/generar_historic.png)
 
-!!! Info "Nota 6"
+!!! Info "Nota 8"
     Els històrics de consum no poden fer servir perfilats com a fonts de consum històric. Utilitzaran exclussivament les
     corbes publicades per les Distribuïdores.
 
-!!! Info "Nota 7"
+!!! Info "Nota 9"
     Els històrics de consum no fan servir cap algoritme de predicció. Obtindran les mesures reals de cada CUPS de la font
     més ferma possible (prioritzant `F1` i `F5D` per sobre de `P1` i `P5D`) i en sumaran el consum.
 
@@ -267,7 +278,7 @@ Per a tornar a calcular un històric, es pot fer servir l'assistent **Reprocessa
 crea un nou històric, sinó que el recalcularà utilitzant la mateixa data i les mateixes fonts utilitzades anteriorment 
 quan es va crear el mateix.
 
-!!! Info "Nota 8"
+!!! Info "Nota 10"
     El reprocessat d'històrics sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a l'històric de consum recalculat. Novament, es pot fer servir el llistat **Històrics de consum en curs**
     per a saber si la cua d'històrics de orakWlum té tasques en curs, per saber si ha acabat o no.
