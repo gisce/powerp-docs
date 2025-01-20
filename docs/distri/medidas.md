@@ -1,8 +1,8 @@
 # Mesures REE
 
-## Mòdul de Mesures REE
+## Generació de fitxers de mesures agregades
 
-Aquest mòdul serveix per a la generació de fitxers d'intercanvi de mesures amb
+El mòdul de **Mesures REE** serveix per a la generació de fitxers d'intercanvi de mesures amb
 REE, ja siguin aquestes d'origen Telegestió, Telemesura o Perfilat.
 
 Per tant, aquest mòdul inclou eines d'anàlisi, de generació, de processament i de validació d'aquests fitxers.
@@ -163,7 +163,8 @@ d'integritat de les dades, s'han d'ajustar  les factures en estat `esborrany` de
 (ajustant la CCH) i perfilar les factures en estat `esborrany` de tipus `perfil`.
 
 !!! Info "Nota"
-    Les factures amb 0 kWh d'energia sempre quedaran en estat `esborrany` ja que no es perfilaran ni s'ajustaran.
+    Les factures amb 0 kWh d'energia antigament quedaven en estat `esborrany` ja que no es perfilaven ni s'ajustaven. Però
+    a partir de 2023, sí es perfilen i ajusten i ja no haurien de quedar en estat `esborrany`.
 
 Si no s'aconsegueix de cap manera arribar al 100% d'alguna de les barres de progrés, es pot accedir al llistat `Factures 
 del periode` i filtrar pel tipus d'origen i per estat `esborrany`. Un cop aplicat el filtre, es poden revisar una per 
@@ -175,7 +176,7 @@ estigui correcte, etc.). Un cop revisada i corregida l'errata, es pot tornar a p
 ## Fitxers REE
 
 Per tal de generar els fitxers de REE, cal dirigir-se a **Mesures REE > Períodes
-de mesures > Fitxers REE tipus 3, 4 i 5**. Aquest mòdul permet la generació i el tractament de diversos tipus de fitxers.
+de mesures > Fitxers REE tipus 4 i 5**. Aquest mòdul permet la generació i el tractament de diversos tipus de fitxers.
 
 [ ![Mesures REE](_static/medidas/mesures_ree.png)](_static/medidas/mesures_ree.png)
 
@@ -237,13 +238,21 @@ la primera versió, 1 per a la següent, etc.). Si s'envien diversos fitxers amb
 el versionat més alt.
 
 Cal recordar també que REE espera primer l'entrega del fitxer `AGRECL` per tal de "obrir la pasarela d'entrega" per
-aquell període en concret i, seguidament, espera els altres fitxers (els `INMECL` i el `MAGCL`). El fitxer `AGRECL` és
-l'encarregat d'actualitzar l'inventari d'agregacions actives a REE i, si no es comunica o no s'espera a rebre la resposta de
-REE després d'enviar-lo, es podrien comunicar errors (.BAD2) als fitxers `INMECL` i `MAGCL` si s'hi ha comunicat consum d'una
-agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` és el darrer que generem (abans cal
-haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums i la generació mitjançant la generació
-dels fitxers `INMECL` i `MAGCL`), però al mateix temps és també el primer fitxer que comunicarem al Concentrador Secundari de
-Mesures. 
+aquell període en concret i, seguidament, espera els altres fitxers (els `INMECL` i el `MAGCL`) per a comunicar les mesures
+pròpiament. El fitxer `AGRECL` és l'encarregat d'actualitzar l'inventari d'agregacions actives a REE i, si no es comunica
+o no s'espera a rebre la resposta de REE després d'enviar-lo, es podrien comunicar errors (.BAD2) als fitxers `INMECL` i
+`MAGCL` si s'hi ha comunicat consum d'una agregació que encara no figura a l'inventari de REE. Així doncs, el fitxer `AGRECL` 
+és el darrer que generem (abans cal haver generat els nivells d'agregació i haver-los omplert amb les dates, els consums
+i la generació mitjançant la generació dels fitxers `INMECL` i `MAGCL`), però al mateix temps és també el primer fitxer
+que comunicarem al Concentrador Secundari de Mesures. I és molt important assegurar-se de que totes les línies que conté
+el fitxer `AGRECL` es processen correctament, abans de procedir a publicar els fitxers `INMECL` i `MAGCL`.
+
+!!! Info "Nota"
+    Cal assenyalar que, si un nivell d'agregació no té consum durant un periode, el fitxer `AGRECL` ha de comunicar
+    la baixa del nivell d'agregació (i l'alta si més endavant torna a tenir consum). Això és així perquè si no es comunica
+    a l'Operador del Sistema que el nivell d'agregació es troba de baixa en un periode, i no s'envia mesura d'aquest
+    nivell d'agregació en aquest periode, l'Operador del Sistema estimarà la mesura i això no seria correcte (hauria de
+    quedar la mesura a 0 durant el periode inactiu del nivell d'agregació).
 
 Com a mínim de tant en tant, és recomanable generar el fitxer `AGRECL` adjuntant al seu assistent el fitxer `AGRECLOS` més
 recent que hagi publicat l'Operador del Sistema al Concentrador Secundari de Mesures pel període de mesures en qüestió. 
@@ -255,7 +264,7 @@ comunicar amb anterioritat. L'ús d'un fitxer `AGRECLOS` no és obligatori, per�
 [ ![Generació AGRECL](_static/medidas/generacion_agrecl.png)](_static/medidas/generacion_agrecl.png)
 
 Un cop finalitzi la generació de cada fitxer de mesures, aquest quedarà com a fitxer adjunt al període de mesures. 
-Es pot accedir als fitxers directament per la consola de la dreta, sota la pestanya **Fitxers REE tipus 3, 4 i 5** del
+Es pot accedir als fitxers directament per la consola de la dreta, sota la pestanya **Fitxers REE tipus 4 i 5** del
 període de mesures, o bé des de l'enllaç **Adjunts**, que és més pràctic per a poder descarregar-los de forma massiva si
 es seleccionen tots els que es vol descarregar i es fa servir l'acció de l'assistent **Attachment ZIP**, descarregant d'una
 única vegada en un fitxer comprimit tots els fitxers desitjats.
@@ -309,6 +318,22 @@ el de l'opció anterior, però s'invoca des del menú *Infraestructura > Fitxers
     que a més d'estar validada, la corba tingui CCH Disponible. Això implica que el fitxer es podrà generar després d'haver
     acabat de facturar el període a presentar.
 
+Tot i que aquestes mesures es publiquen de forma desagregada, tot i així és possible realitzar comprovacions sobre les mateixes.
+Si s'accedeix a la pestanya **Fitxers REE tipus 1, 2 i 3**, es pot observar a l'esquerra una consola on es mostra el consum i
+la generació de tots els CUPS de més de 50 kW de potència màxima contractada que es troben actius durant el període de mesures
+que s'està revisant. Per a actualitzar aquestes dades, n'hi ha prou amb fer servir l'assistent **Calcular consum i generació dels
+tipus 1, 2 i 3**.
+
+[ ![Consum i generació dels subministraments de Tipus 1, 2 i 3](_static/medidas/mesures_tipus_123.png)](_static/medidas/mesures_tipus_123.png)
+
+!!! Info "Nota"
+    Les dades de consum i generació dels subministraments de tipus 1, 2 i 3 s'obtenen de la corba de càrrega horària `CCH_FACT`
+    present als comptadors dels contractes dels subministraments en qüestió. L'assistent **Calcular consum i generaicó dels tipus
+    1, 2 i 3** actualitzarà els valors pels CUPS trobats i també informarà de possibles problemes (com consum que no s'ha pogut
+    trobar o corbes amb més o menys registres horaris dels que toca segons el mes.)
+
+[ ![Calcular consum i generació dels subministraments de Tipus 1, 2 i 3](_static/medidas/mesures_tipus_123_wizard.png)](_static/medidas/mesures_tipus_123_wizard.png)
+
 ### Procediments per a validar els fitxers de mesures
 
 #### Comprovació de la integritat dels fitxers
@@ -338,10 +363,10 @@ tenir 0 kWh de diferència, tant a consum com a generació.
 Per tal de comprovar que el que s'ha entregat i processat a REE és el mateix
 que tenim a l'ERP, es poden importar els fitxers d'inventari i acumulat per fer
 aquesta validació. Això pot anar bé per veure possibles agregacions estimades, o
-possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAGLACUM` i `INMECLOS`. 
+possibles agregacions que no s'hagin publicat. Els fitxers a importar són: `MAGCLACUM` i `INMECLOS`.
 Des de la pestanya **Acumulats** podreu veure dues consoles per a poder fer aquests contrastos.
 
-Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGLACUM** i **Importar fitxer INMECLOS**.
+Per a fer les comparatives, es poden fer servir els botons **Importar fitxer MAGCLACUM** i **Importar fitxer INMECLOS**.
 Recomanem treballar més amb el fitxer `MAGCLACUM`, ja que només generarà una línia per a cada nivell d'agregació, mentre que
 el fitxer `INMECLOS` generarà una per cada línia dels fitxers `INMECL`. El fitxer `INMECLOS` ens pot donar més detall
 a l'hora de trobar un desquadrament entre els nostres nivells d'agregació i les mesures que finalment ens imputa REE.

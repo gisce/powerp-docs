@@ -80,6 +80,7 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
+    - Autoconsum: distri/Autoconsum/creacio_autoconsum.md
     - Comptadors: distri/contadores.md
     - CUPS: distri/cups.md
     - Descàrrecs: distri/descargos.md
@@ -118,10 +119,13 @@ nav:
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Mesures:
-      - Tractament i generació de fitxers: distri/medidas.md
-      - Fitxers desagregats: distri/medidas_ficheros_desagregados.md
+      - Mesures agregades: distri/medidas.md
+      - Mesures desagregades: distri/medidas_ficheros_desagregados.md
+      - Mesures de generació: distri/medidas_generacion.md
       - Eines: distri/medidas_herramientas.md
-      - Règim especial: distri/medidas_regimen_especial.md
+      - Anexo VII: distri/medidas_anexo_VII.md
+      - DATADIS: distri/medidas_datadis.md
+      - ESCILA: distri/medidas_escila.md
     - Pòlisses: distri/polizas.md
     - Perfils: distri/perfiles.md
     - Qualitat de servei - Índex: distri/calidad.md
@@ -137,6 +141,11 @@ nav:
     - SOA: distri/soa.md
     - Telegestió: distri/telegestion.md
     - Telemesura: distri/telemedida.md
+    - Treballs:
+        - Crear obra: distri/trabajos/crear_obra.md
+        - Crear treballador: distri/trabajos/crear_trabajador.md
+        - Crear tipus d'hora: distri/trabajos/crear_tipo_hora.md
+        - Imputar hores: distri/trabajos/asistente_horas.md
   - Comercialitzadora:
     - Inici: comer/index.md
     - Administració Pública:
@@ -155,8 +164,20 @@ nav:
       - Objeccions: comer/objeciones.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
+    - Previsió de Compra:
+      - Introducció: comer/previsio_compra.md
+      - orakWlum: comer/orakWlum.md
+      - Algoritmes predictius: comer/algoritmos_orakWlum.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
+    - Bateria Virtual: comer/bateria_virtual.md
+  - Representació:
+      - Gestió dels CIL: representacion/cils.md
+      - Instal·lacions de generació: representacion/instalaciones.md
+      - Previsions de generació: representacion/previsiones.md
+      - Ofertes a Mercat de generació: representacion/ofertas.md
+      - Contractes de representació: representacion/contratos.md
+      - Facturació: representacion/facturacion.md
   - Facturació:
     - Accions genèriques: facturacion/acciones.md
     - Gestió de canvi d'any: facturacion/cambio_ano.md

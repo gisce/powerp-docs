@@ -23,13 +23,16 @@ apartats.
 
 * **Perfils:** Permet visualitzar els perfils horaris generats a filtrar per factura o CUPS.
 
+!!! Info "Nota"
+    Per tal d'activar la perfilació automàtica en obrir les factures de proveïdor, cal ajustar la
+    variable de configuració `profile_on_invoice_open` a `1`.
+
 ### Objeccions
 * **Períodes d'Objeccions:** Mostra l'estat i el progrés dels períodes de mesures.
 * **Importar Fitxers d'Objeccions:** Assistent per a carregar fitxers `INMECLOS` i `MAGCLACUM` per a poder-ne contrastar
 el consum.
 
 ### Casos
-automàticament en obrir la factura de proveïdor si així està configurat a l'ERP.
 * **Casos de Perfilació:** Casos CRM que reporten el comportament al perfilar factures de proveïdor.
 * **Casos d'Objeccions:** Casos CRM que reporten el comportament al contrastar consums.
 

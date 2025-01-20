@@ -75,6 +75,12 @@ Energia activa anual consumida   | Energia activa anual facturada el 2014
 Energia reactiva anual consumida | Energia reactiva anual facturada el 2014
 Potencia facturada               | Potencia facturada el mes 12 any circular o si la pòlisa està de baixa, l'últim mes facturat
 Número de lecturas any circular  | Número de lectures d'activa efectuadas en l'any de la circular.
+Energia activa produïda          | Energia activa anual produïda en kWh/any.
+Energia reactiva produïda        | Energia reactiva anual produïda en kWh/any.
+Energia autoconsumida            | Energia activa autoconsumida anual en kWh.
+Energia excedentària             | Energia activa excedentària anual en kWh.
+Factures total                   | Nombre total de factures de peatges d'accés.
+Factures estimades               | Nombre total de factures de peatges d'accés amb lectura estimada.
 
 ### Format Comptadors CSV
 

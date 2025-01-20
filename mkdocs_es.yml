@@ -83,6 +83,7 @@ nav:
       - CNE: distri/adm-pub/cne.md
       - AEAT: distri/adm-pub/aeat.md
       - Gencat: distri/adm-pub/gencat.md
+    - Autoconsumo: distri/Autoconsum/creacio_autoconsum.md
     - Calidad de servicio - Índice: distri/calidad.md
     - Calidad de servicio:
       - Términos y Definiciones: distri/calidad/terminos_y_definicion.md
@@ -130,16 +131,24 @@ nav:
       - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Medidas:
-      - Tratamiento y generación de ficheros: distri/medidas.md
-      - Ficheros desagregados: distri/medidas_ficheros_desagregados.md
+      - Medidas agregadas: distri/medidas.md
+      - Medidas desagregadas: distri/medidas_ficheros_desagregados.md
+      - Medidas de generación: distri/medidas_generacion.md
       - Herramientas: distri/medidas_herramientas.md
-      - Régimen especial: distri/medidas_regimen_especial.md
+      - Anexo VII: distri/medidas_anexo_VII.md
+      - DATADIS: distri/medidas_datadis.md
+      - ESCILA: distri/medidas_escila.md
     - Perfiles: distri/perfiles.md
     - Pólizas: distri/polizas.md
     - Reles: distri/reles.md
     - SOA: distri/soa.md
     - Telegestión: distri/telegestion.md
     - Telemedida: distri/telemedida.md
+    - Trabajos:
+      - Crear trabajo: distri/trabajos/crear_obra.md
+      - Crear trabajador: distri/trabajos/crear_trabajador.md
+      - Crear tipo de hora: distri/trabajos/crear_tipo_hora.md
+      - Imputar horas: distri/trabajos/asistente_horas.md
   - Comercializadora:
     - Inicio: comer/index.md
     - Administración Pública:
@@ -158,8 +167,20 @@ nav:
       - Objeciones: comer/objeciones.md
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
+    - Previsión de Compra:
+      - Introducción: comer/previsio_compra.md
+      - orakWlum: comer/orakWlum.md
+      - Algoritmos predictivos: comer/algoritmos_orakWlum.md
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
+    - Batería Virtual: comer/bateria_virtual.md
+  - Representación:
+      - Gestión de los CIL: representacion/cils.md
+      - Instalaciones de generación: representacion/instalaciones.md
+      - Previsiones de generación: representacion/previsiones.md
+      - Ofertas a Mercado de generación: representacion/ofertas.md
+      - Contratos de representación: representacion/contratos.md
+      - Facturación: representacion/facturacion.md
   - Facturación:
     - Acciones genéricas: facturacion/acciones.md
     - Gestión de cambio de año: facturacion/cambio_ano.md
