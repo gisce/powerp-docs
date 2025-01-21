@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-01-20 19:28+0100\n"
-"PO-Revision-Date: 2025-01-20 19:36+0100\n"
+"POT-Creation-Date: 2025-01-21 14:05+0100\n"
+"PO-Revision-Date: 2025-01-21 14:19+0100\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -11239,7 +11239,7 @@ msgid "<img alt=\"\" src=\"../_static/estat_pendent/estat_pendent_4.png\" />"
 msgstr "<img alt=\"\" src=\"../_static/estat_pendent/estat_pendent_4.png\" />"
 
 msgid "Procés Bo Social"
-msgstr "Porceso Bono Social"
+msgstr "Proceso Bono Social"
 
 msgid "El fluxograma derivat del <a href=\"https://www.boe.es/buscar/doc.php?id=BOE-A-2017-11505\">Real Decret 897/2017</a> és el següent:"
 msgstr "El flujograma derivado del <a href=\"https://www.boe.es/buscar/doc.php?id=BOE-A-2017-11505\">Real Decreto 897/2017</a> es el siguiente:"
@@ -40253,6 +40253,125 @@ msgid ""
 msgstr ""
 "\n"
 "<p>Propias</p>\n"
+
+msgid "Secció de Sol·licituds de l'Oficina Virtual"
+msgstr "Sección de Solicitudes de la Oficina Virtual"
+
+msgid ""
+"Dins de l'Oficina Virtual, els usuaris de la nostra xarxa poden demanar-nos sol·licituds a través d'una secció,\n"
+"independentment de la Comercialitzadora que tinguin contractada."
+msgstr "Dentro de la Oficina Virtual, los usuarios de nuestra red pueden enviarnos solicitudes a través de una sección, independientemente de la Comercializadora que tengan contratada."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/solicitudes.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/solicitudes.png\" />"
+
+msgid ""
+"Aquesta secció és editable: podem canviar el missatge, els tipus, i els adjunts. Per a fer-ho, s'ha d'accedir al mòdul\n"
+"de CRM de l'ERP."
+msgstr "Esta sección es editable: podemos cambiar el mensaje, los tipos y los adjuntos. Para hacerlo, es necesario acceder al módulo de CRM del ERP."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/secciones.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/secciones.png\" />"
+
+msgid ""
+"A dins de les seccions, si filtrem a <strong>secció pare</strong> per \n"
+"<code>Sol·licituds</code>, tindreu el llistat de totes les sol·licituds\n"
+"que hi ha, i podreu entrar a la que vulgueu per a editar-la, o crear-ne de noves."
+msgstr "Dentro de las secciones, si filtramos en <strong>sección padre</strong> por <code>Solicitudes</code>, obtendremos el listado de todas las solicitudes disponibles, y podremos acceder a la que deseemos para editarla o crear nuevas."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/llistat_solicituds.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/llistat_solicituds.png\" />"
+
+msgid "Configuració de les Sol·licituds"
+msgstr "Configuración de las Solicitudes"
+
+msgid ""
+"Podem crear o editar cada secció de les sol·licituds. Primerament, es pot establir quin nom volem que apareguin a \n"
+"l'Oficina Virtual (recordeu que s'ha de traduir als altres idiomes que tingueu carregats a l'ERP)."
+msgstr "Podemos crear o editar cada sección de las solicitudes. En primer lugar, se puede establecer el nombre que queremos que aparezca en la Oficina Virtual (recordad que debe traducirse a los demás idiomas que tengáis cargados en el ERP)."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/Sección_del_caso.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/Sección_del_caso.png\" />"
+
+msgid "El camp <strong>Seqüència</strong> és per establir l'ordre dins del desplegable de l'Oficina Virtual."
+msgstr "El campo <strong>Secuencia</strong> sirve para establecer el orden dentro del desplegable de la Oficina Virtual."
+
+msgid "El <strong>Codi de secció</strong> és per completar el nom de la secció."
+msgstr "El <strong>Código de sección</strong> sirve para completar el nombre de la sección."
+
+msgid "La casella <strong>Actiu</strong> serveix per a què la secció aparegui o no al desplegable de l'Oficina Virtual."
+msgstr "La casilla <strong>Activo</strong> sirve para que la sección aparezca o no en el desplegable de la Oficina Virtual."
+
+msgid ""
+"La <strong>Secció pare</strong> serveix per classificar i trobar fàcilment cada sol·licitud, permetent ordenarles de forma \n"
+"jerarquitzada."
+msgstr "La <strong>Sección padre</strong> sirve para clasificar y encontrar fácilmente cada solicitud, permitiendo ordenarlas de forma jerarquizada."
+
+msgid "A la <strong>Descripció OV</strong> es pot escriure una descripció per a què surti a l'Oficina Virtual."
+msgstr "En la <strong>Descripción OV</strong> se puede escribir una descripción para que aparezca en la Oficina Virtual."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/parts_seccions.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/parts_seccions.png\" />"
+
+msgid "Com adjuntar els formularis"
+msgstr "Cómo adjuntar los formularios"
+
+msgid "Per a adjuntar els formularis que volem que hi hagi a cada sol·licitud, hem d'anar al mòdul de CRM, a <strong>Section Attachments</strong>:"
+msgstr "Para adjuntar los formularios que queremos que estén disponibles en cada solicitud, debemos ir al módulo de CRM, a <strong>Section Attachments</strong>:"
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/secction_atachment.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/secction_atachment.png\" />"
+
+msgid ""
+"Un cop hem guardat la sol·licitud, accedim aquí per a poder adjuntar el document. Hem d'omplir el nom de l'adjunt,\n"
+"triar a <strong>File Type</strong> de quin tipus d'adjunt es tracta (obligatori omplir per enviar, opcional o informatiu),\n"
+"i a la \n"
+"<strong>Secció Relacional Adjunta</strong>, hem de buscar la sol·licitud on volem que hi hagi aquest adjunt."
+msgstr ""
+"Una vez hemos guardado la solicitud, accedemos aquí para poder adjuntar el documento.\n"
+"Debemos completar el nombre del adjunto, seleccionar en <strong>File Type</strong> el tipo de adjunto (obligatorio para enviar, opcional o informativo), y en la <strong>Sección Relacional Adjunta</strong>, buscar la solicitud en la que queremos que esté disponible este adjunto."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts.png\" />"
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_II.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_II.png\" />"
+
+msgid ""
+"Finalment, anem a la icona dels adjunts, que ens obrirà una nova finestra on posarem el nom del document adjunt,\n"
+"i a les <strong>Dades</strong> podem anar a buscar el fitxer que s'adjuntarà al cas (sol·licitud)."
+msgstr "Finalmente, vamos al icono de los adjuntos, que abrirá una nueva ventana donde indicaremos el nombre del documento adjunto. En el apartado <strong>Datos</strong>, podemos seleccionar el fichero que se adjuntará al caso (solicitud)."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_III.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_III.png\" />"
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_IV.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/pels_adjunts_IV.png\" />"
+
+msgid ""
+"Un cop afegit el document adjunt, l'usuari ja el podrà descarregar des de l'Oficina Virtual, omplir-lo, i tornar-lo a\n"
+"carregar ja signat. Un cop faci això, en el llistat de casos <strong>Sol·licitud</strong> veureu dos adjunts: el document per signar,\n"
+"i el que ha omplert l'usuari."
+msgstr ""
+"Una vez añadido el documento adjunto, el usuario podrá descargarlo desde la Oficina Virtual, rellenarlo y volver a cargarlo ya firmado.\n"
+"Cuando haga esto, en el listado de casos de <strong>Solicitud</strong> se verán dos adjuntos: el documento para firmar y el que el usuario ha rellenado."
+
+msgid "On anar a buscar les sol·licituds omplertes"
+msgstr "Dónde buscar las solicitudes completadas"
+
+msgid ""
+"Quan els usuaris utilitzin l'Oficina Virtual per a comunicar una sol·licitud, els formularis que omplin i ens tornin\n"
+"a adjuntar els trobarem al mòdul <strong>CRM</strong>, als casos d’atenció client."
+msgstr "Cuando los usuarios utilicen la Oficina Virtual para comunicar una solicitud, los formularios que completen y nos devuelvan adjuntos se encontrarán en el módulo <strong>CRM</strong>, en los casos de atención al cliente."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/casos_ATC.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/casos_ATC.png\" />"
+
+msgid "Des d’aquí podreu gestionar aquestes peticions dels usuaris."
+msgstr "Desde aquí podréis gestionar estas solicitudes de los usuarios."
+
+msgid "<img alt=\"\" src=\"../../_static/solicituds_OV/casos_ATC_II.png\" />"
+msgstr "<img alt=\"\" src=\"../../_static/solicituds_OV/casos_ATC_II.png\" />"
 
 msgid "Descàrrega electrònica de Tancaments i Curves"
 msgstr "Descarga electrónica de Cierres y Curvas"
