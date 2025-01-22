@@ -27,11 +27,6 @@ previsió i la capacitat instal·lada de la instal·lació a la que pertany la p
 [ ![Importació de Previsions](_static/previsiones/prevision_importacion.png)](_static/previsiones/prevision_importacion.png)
 
 !!! Info "Nota 1"
-    L'ERP permet configurar un servidor SFTP on es poden deixar les previsions de generació dia a dia, per tal que un
-    automatisme les llegeixi i carregui sense que l'usuari ho hagi de fer manualment. Si l'automatisme no es configura, caldrà
-    importar totes les previsions de generació amb aquest assistent.
-
-!!! Info "Nota 2"
     Les instal·lacions de generació que no tinguin `Codi de previsiò` comptaran com que la seva previsió de generació
     és sempre 0 kWh a totes les hores. Per tant és important que totes les instal·lacions per a les quals s'importin previsions
     de generació, tinguin el `Codi de previsió` degudament informat a la seva fitxa dins l'ERP.
@@ -44,7 +39,7 @@ Això s'explica amb més detall a l'apartat [Ofertes a Mercat de generació](../
 
 [ ![Llistat de Previsions Publicades](_static/previsiones/prevision_publicada.png)](_static/previsiones/prevision_publicada.png)
 
-!!! Info "Nota 3"
+!!! Info "Nota 2"
     Aquest llistat és idèntic al de les previsions de generació amb una diferència: cada codi de previsió només pot tenir un
     únic registre per hora amb la casella "Publicada" marcada. Per tant, si es fan múltiples ofertes per un mateix dia,
     al llistat quedaran les previsions que s'han tingut en compte a l'oferta generada més recent de cada dia.
@@ -56,3 +51,11 @@ així com revisar-ne la data d'importació i l'estat final de la mateixa. Aquí 
 automàtica com els fitxers carregats manualment amb l'assistent.
 
 [ ![Llistat de Previsions](_static/previsiones/prevision_importados.png)](_static/previsiones/prevision_importados.png)
+
+## Automatismes
+
+L'ERP permet configurar un servidor SFTP on es poden deixar les previsions de generació dia a dia, per tal que un
+automatisme les llegeixi i carregui sense que l'usuari ho hagi de fer manualment. 
+
+Si l'automatisme no es configura, caldrà importar totes les previsions de generació amb l'assistent mostrat en els apartats
+anteriors.

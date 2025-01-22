@@ -45,7 +45,35 @@ publicada als fitxers `MHCIL`. Per entendre bé la funció dels desviaments cal 
 
 [ ![Llistat de desviaments](_static/cils/desvios_listado.png)](_static/cils/desvios_listado.png)
 
-#### REGANECU
+#### MCILQH
+* **Dades quart-horàries d'energia per CIL:** Llistat per a consultar les dades de generació dels CIL, publicades per l'Operador del Sistema
+mitjançant els fitxers `MCILQH`. Si s'importen fitxers `MCILQH` a l'ERP, els seus registres quart-horaris apareixen en aquest llistat, on es
+poden filtrar per dates, CIL i/o maduresa.
+
+[ ![Llistat de registres MCILQH](_static/cils/mcilqh_listado.png)](_static/cils/mcilqh_listado.png)
+
+A cada quart d'hora del llistat s'enregistra el CIL al qual pertany la mesura, l'hora (local i UTC), la maduresa i la versió del fitxer.
+Els fitxers `MCILQH` publiquen les mesures d'energia **Activa Exportada** (expressada en kWh), **Activa Importada** (expressada en kWh)
+i d'energia **Reactiva** dels quadrants 1, 2, 3 i 4 (expressades en kVArh).
+
+[ ![Formulari de registres MCILQH](_static/cils/mcilqh_formulario.png)](_static/cils/mcilqh_formulario.png)
+
+* **Importar fitxers MCILQH:** Assistent per a importar a l'ERP fitxers de mesures de generació `MCILQH` emesos per l'Operador del Sistema. Suporta
+fitxers individuals en format de fitxer pla o bé un fitxer comprimit en ZIP amb múltiples fitxers en format fitxer pla.
+
+[ ![Importació de fitxers MCILQH](_static/cils/mcilqh_importacion.png)](_static/cils/mcilqh_importacion.png)
+
+!!! Info "Nota"
+    L'Operador del Sistema va començar a publicar la generació als Representants amb fitxers MCILQH a partir de l'1 de desembre
+    de 2024, passant a imputar la generació i el desviament en format quart-horari enlloc de horari.
+
+* **Desviaments:** Llistat per a consultar quant s'ha desviat la previsió de generació de les instal·lacions de la seva generació real,
+publicada als fitxers `MCILQH`. Per entendre bé la funció dels desviaments cal consultar els apartats [Ofertes a Mercat de generació](../ofertas) i
+[Facturació](../facturacion).
+
+[ ![Llistat de desviaments](_static/cils/desvios_listado.png)](_static/cils/desvios_listado.png)
+
+#### REGANECU/REGANECUQH
 * **Liquidacions:** Llistat per a consultar les liquidacions de l'Operador del Sistema, publicades mitjançant els fitxers `REGANECU`. Si
 s'importen fitxers `REGANECU` a l'ERP, els seus registres apareixen en aquest llistat, on es poden filtrar per dates, Unitat de Programació,
 segment i/o maduresa
@@ -60,3 +88,8 @@ A cada línia de fitxer `REGANECU` importada es poden consultar tots els camps q
 fitxers individuals en format de fitxer pla o bé un fitxer comprimit en ZIP amb múltiples fitxers en format fitxer pla.
 
 [ ![Importació de fitxers REGANECU](_static/cils/reganecu_importacion.png)](_static/cils/reganecu_importacion.png)
+
+!!! Info "Nota"
+    Des de novembre de 2024, l'Operador del Sistema publica als participants es liquidacions mitjançant fitxers `REGANECUQH`. Aquests
+    fitxers s'importen amb el mateix assistent que els fitxers `REGANECU` i els registres es guarden a la mateixa col·lecció. Per a poder
+    distingir els registres horaris dels quart-horaris, es pot filtrar pel camp 
