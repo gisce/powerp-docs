@@ -8,7 +8,7 @@ Per a fer-ho, tan sols cal triar una data i un **algoritme de predicció** d'ent
 segons l'algoritme utilitzat, ja que cadascun d'ells empra diferents estratègies i variaran les dades històriques utilitzades
 per a calcular la predicció.
 
-[ ![Tria d'algoritme de predicció](_static/orakWlum/algorithm_select.png)](_static/orakWlum/algorithm_select.png)
+[ ![Tria d'algoritme de predicció](../_static/orakWlum/algorithm_select.png)](../_static/orakWlum/algorithm_select.png)
 
 Un cop creada la previsió de consum, aquesta es calcularà utilitzant l'algoritme predictiu triat.
 
@@ -27,7 +27,7 @@ D'aquesta manera, es garanteix que s'obté el consum per a tots els CUPS, encara
 En el diagrama següent es mostra com un conjunt de CUPS van obtenint la previsió de consum a partir de l'històric o, per 
 al cas dels CUPS que no disposin d'aquest, de la mitjana de consum de la resta de CUPS amb la mateixa tarifa d'accés.
 
-[ ![Obtenció de Consum Històric](_static/orakWlum/exemple_cups_fetch.png)](_static/orakWlum/exemple_cups_fetch.png)
+[ ![Obtenció de Consum Històric](../_static/orakWlum/exemple_cups_fetch.png)](../_static/orakWlum/exemple_cups_fetch.png)
 
 Inicialment, cap dels CUPS no disposa de consum històric. A mesura que es recorren per ordre de prioritat les fonts de 
 consum històric (F5D, F1, P1, etc.) cada cop hi ha més CUPS que han obtingut consum (conjunt blau) mentre que va minvant 
@@ -50,7 +50,7 @@ proposar. En aquest exemple, la data objectiu serà el 22 d'abril del 2022 (marc
 històric de consum en aquesta data, s'estimaran amb la mitjana horària d'acord amb la tarifa, tal com s'explica al diagrama de
 la secció anterior d'aquest document.
 
-[ ![Exemple M-12](_static/orakWlum/m12_example_calendar.png)](_static/orakWlum/m12_example_calendar.png)
+[ ![Exemple M-12](../_static/orakWlum/m12_example_calendar.png)](../_static/orakWlum/m12_example_calendar.png)
 
 Aquest algorisme és molt lleuger, permet fer prediccions per a milers de CUPS en uns segons i funciona especialment bé quan 
 el conjunt de CUPS té una estacionalitat molt marcada, és a dir, quan els CUPS tenen un perfil de consum molt diferent segons 
@@ -109,7 +109,7 @@ de la dreta, es tenen en compte els dimarts, dimecres i dijous anteriors a la da
 candidats. Un cop seleccionats aquests dies candidats, orakWlum els recorrerà de més recent a més antic consultant els consums 
 històrics corresponents als CUPS en aquestes dates.
 
-[ ![Exemple Gauss](_static/orakWlum/gauss_example_calendar.png)](_static/orakWlum/gauss_example_calendar.png)
+[ ![Exemple Gauss](../_static/orakWlum/gauss_example_calendar.png)](../_static/orakWlum/gauss_example_calendar.png)
 
 Els CUPS que no hagin pogut obtenir una mostra de consum històric, s'estimaran amb la mitjana horària d'acord amb la tarifa,
 tal com s'explica al diagrama de la secció anterior d'aquest document.

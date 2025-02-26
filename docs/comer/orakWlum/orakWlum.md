@@ -14,7 +14,7 @@ propi ERP.
 Trobareu totes les eines de **orakWlum** al menú principal amb el mateix nom, i a continuació s'indiquen els llistats i assistents
 disponibles.
 
-[ ![Menú d'orakWlum](_static/orakWlum/menu_orakWlum.png)](_static/orakWlum/menu_orakWlum.png)
+[ ![Menú d'orakWlum](../_static/orakWlum/menu_orakWlum.png)](../_static/orakWlum/menu_orakWlum.png)
 
 * **Manteniment:** Eines auxiliars de orakWlum, com per exemple l'importador de **pèrdues de ESIOS**.
 
@@ -38,7 +38,7 @@ El menú de **Manteniment** compta amb dos assistents:
 històrics. L'assistent permet triar l'any, la tarifa d'accés i el subsistema pel qual es volen importar les pèrdues, però
 també és possible importar-ho tot amb una sola acció si es tria l'opció `Tots`/`Totes` als camps corresponents.
 
-[ ![Importar pèrdues](_static/orakWlum/importar_perdues.png)](_static/orakWlum/importar_perdues.png)
+[ ![Importar pèrdues](../_static/orakWlum/importar_perdues.png)](../_static/orakWlum/importar_perdues.png)
 
 !!! Info "Nota 1"
     Per tal de poder descarregar les pèrdues des de `ESIOS` serà necessari disposar d'un `token d'autenticació`, que caldrà
@@ -48,19 +48,19 @@ Un cop importades les pèrdues, si es vol es poden revisar al llistat **Coeficie
 de pèrdues, la tarifa d'accés i el subsistema al que corresponen i la versió de la publicació que s'ha importat (**orakWlum**
 sempre importarà la versió més recent publicada a `ESIOS`.). 
 
-[ ![Llistat pèrdues](_static/orakWlum/llistat_perdues.png)](_static/orakWlum/llistat_perdues.png)
+[ ![Llistat pèrdues](../_static/orakWlum/llistat_perdues.png)](../_static/orakWlum/llistat_perdues.png)
 
 També es pot veure la data/hora de la importació i el fitxer
 d'`ESIOS` del qual s'han importat.
 
-[ ![Formulari pèrdues](_static/orakWlum/formulari_perdues.png)](_static/orakWlum/formulari_perdues.png)
+[ ![Formulari pèrdues](../_static/orakWlum/formulari_perdues.png)](../_static/orakWlum/formulari_perdues.png)
 
 * **Actualitzar coeficients de pèrdues:** Com que els coeficients de pèrdues es van actualitzant amb cada publicació de
 `ESIOS`, **orakWlum** permet actualitzar els registres de les mateixes a l'ERP de Comercialitzadora. Per a fer-ho, podeu
 utilitzar aquest assistent indicant la data per a la qual voleu actualitzar a la versió més recent les pèrdues de la tarifa
 d'accés i el subsistema indicat.
 
-[ ![Actualitzar pèrdues](_static/orakWlum/actualitzar_perdues.png)](_static/orakWlum/actualitzar_perdues.png)
+[ ![Actualitzar pèrdues](../_static/orakWlum/actualitzar_perdues.png)](../_static/orakWlum/actualitzar_perdues.png)
 
 !!! Info "Nota 2"
     Les previsions de consum, com que es solen generar a futur, sempre faran servir la versió `A2` de les pèrdues, però
@@ -83,7 +83,7 @@ servir i quines **fonts** de consum històric es volen fer servir per a la previ
 podreu triar també si voleu que la previsió es generi **en segon pla** o no (per defecte es generarà de manera asíncrona, 
 en segon pla, per a poder seguir treballant amb l'ERP mentrestant es va processant el càlcul.
 
-[ ![Generar previsió](_static/orakWlum/generar_previsio.png)](_static/orakWlum/generar_previsio.png)
+[ ![Generar previsió](../_static/orakWlum/generar_previsio.png)](../_static/orakWlum/generar_previsio.png)
 
 !!! Info "Nota 3"
     Les fonts disponibles són les pròpies corbes i perfils existents a l'ERP de Comercialitzadora, i aquestes poden variar
@@ -107,12 +107,12 @@ en segon pla, per a poder seguir treballant amb l'ERP mentrestant es va processa
 Si heu posat a generar la previsió de consum en segon pla, podeu tancar l'assistent. Apareixerà al llistat **Previsions de
 consum** un cop s'hagi acabat de processar. 
 
-[ ![Llistat previsions](_static/orakWlum/llistat_previsions.png)](_static/orakWlum/llistat_previsions.png)
+[ ![Llistat previsions](../_static/orakWlum/llistat_previsions.png)](../_static/orakWlum/llistat_previsions.png)
 
 També podeu utilitzar el llistat **Previsions de consum en curs** per a comprovar
 el número de tasques en execució que hi ha a la cua corresponent, per a comprovar si hi ha tasques en curs o no.
 
-[ ![Tasques en curs previsions](_static/orakWlum/tasques_previsions.png)](_static/orakWlum/tasques_previsions.png)
+[ ![Tasques en curs previsions](../_static/orakWlum/tasques_previsions.png)](../_static/orakWlum/tasques_previsions.png)
 
 Accedint a una **previsió de consum**, al seu formulari podem comprovar tota la informació relacionada amb la mateixa:
 - Data de la previsió.
@@ -125,23 +125,23 @@ Accedint a una **previsió de consum**, al seu formulari podem comprovar tota la
 - Percentatge de CUPS amb consum obtingut de fonts de consum reals (sense perfilació ni estimació).
 - Fonts de consum utilitzades.
 
-[ ![Formulari previsions](_static/orakWlum/formulari_previsions.png)](_static/orakWlum/formulari_previsions.png)
+[ ![Formulari previsions](../_static/orakWlum/formulari_previsions.png)](../_static/orakWlum/formulari_previsions.png)
 
 També és possible comprovar el consum de cada una de les hores del dia, amb i sense pèrdues, anant a les pestanyes
 **Consum en Barres de Central** i **Consum**, respectivament.
 
-[ ![Formulari previsions BC](_static/orakWlum/formulari_previsions_bc.png)](_static/orakWlum/formulari_previsions_bc.png)
+[ ![Formulari previsions BC](../_static/orakWlum/formulari_previsions_bc.png)](../_static/orakWlum/formulari_previsions_bc.png)
 
 Per últim, es poden comprovar totes les fonts utilitzades en les previsions, per si es volgués consultar l'origen de la
 mesura d'alguns CUPS en concret. Per a fer-ho podeu fer servir l'enllaç **Línies de Previsió de Consum**.
 
-[ ![Línies previsions link](_static/orakWlum/linies_previsions_link.png)](_static/orakWlum/linies_previsions_link.png)
+[ ![Línies previsions link](../_static/orakWlum/linies_previsions_link.png)](../_static/orakWlum/linies_previsions_link.png)
 
 L'enllaç obrirà en una nova pestanya de l'ERP un llistat amb totes les fonts utilitzades. En aquest llistat, podreu ordenar
 i filtrar per múltiples camps útils, com són el **CUPS**, la **tarifa d'accés**, el **tipus de punt** o l'**origen** de 
 la mesura.
 
-[ ![Línies previsions llistat](_static/orakWlum/linies_previsions_llistat.png)](_static/orakWlum/linies_previsions_llistat.png)
+[ ![Línies previsions llistat](../_static/orakWlum/linies_previsions_llistat.png)](../_static/orakWlum/linies_previsions_llistat.png)
 
 D'aquesta manera podeu saber quina mesura s'ha fet servir com a històric de consum per a cada CUPS a cada hora, si és
 necessari.
@@ -154,18 +154,18 @@ Per a fer-ho, es pot utilitzar l'assistent **Exportar Previsió de Consum**. En 
 - Resum en Excel.
 - Detall en CSV.
 
-[ ![Exportar previsió](_static/orakWlum/previsio_exportar.png)](_static/orakWlum/previsio_exportar.png)
+[ ![Exportar previsió](../_static/orakWlum/previsio_exportar.png)](../_static/orakWlum/previsio_exportar.png)
 
 El format de **resum** és útil la majoria de vegades, ja que inclou tota la informació bàsica de la previsió, la mateixa que
 es pot consultar des de la vista de formulari de la mateixa. El fitxer Excel resultant ja inclou diverses pestanyes per a
 mostrar la informació d'una manera clara i ordenada.
 
-[ ![Resum previsió](_static/orakWlum/previsions_resum.png)](_static/orakWlum/previsions_resum.png)
+[ ![Resum previsió](../_static/orakWlum/previsions_resum.png)](../_static/orakWlum/previsions_resum.png)
 
 El format de **detall** és útil per a revisar les mesures dels CUPS, ja que inclou tota la informació de les línies de consum
 emprades al generar la previsió.
 
-[ ![Detall previsió](_static/orakWlum/previsions_detall.png)](_static/orakWlum/previsions_detall.png)
+[ ![Detall previsió](../_static/orakWlum/previsions_detall.png)](../_static/orakWlum/previsions_detall.png)
 
 ### Reprocessat de previsions
 
@@ -196,7 +196,7 @@ volen fer servir per a l'històric (per defecte vindran activades totes) i podre
 es generi **en segon pla** o no (per defecte es generarà de manera asíncrona, en segon pla, per a poder seguir treballant
 amb l'ERP mentrestant es va processant el càlcul.
 
-[ ![Generar històric](_static/orakWlum/generar_historic.png)](_static/orakWlum/generar_historic.png)
+[ ![Generar històric](../_static/orakWlum/generar_historic.png)](../_static/orakWlum/generar_historic.png)
 
 !!! Info "Nota 8"
     Els històrics de consum no poden fer servir perfilats com a fonts de consum històric. Utilitzaran exclussivament les
@@ -209,12 +209,12 @@ amb l'ERP mentrestant es va processant el càlcul.
 Si heu posat a generar l'històric de consum en segon pla, podeu tancar l'assistent. Apareixerà al llistat **Històrics de
 consum** un cop s'hagi acabat de processar. 
 
-[ ![Llistat historics](_static/orakWlum/llistat_historics.png)](_static/orakWlum/llistat_historics.png)
+[ ![Llistat historics](../_static/orakWlum/llistat_historics.png)](../_static/orakWlum/llistat_historics.png)
 
 També podeu utilitzar el llistat **Històrics de consum en curs** per a comprovar
 el número de tasques en execució que hi ha a la cua corresponent, per a comprovar si hi ha tasques en curs o no.
 
-[ ![Tasques en curs historics](_static/orakWlum/tasques_historics.png)](_static/orakWlum/tasques_historics.png)
+[ ![Tasques en curs historics](../_static/orakWlum/tasques_historics.png)](../_static/orakWlum/tasques_historics.png)
 
 Accedint a un **històric de consum**, al seu formulari podem comprovar tota la informació relacionada amb el mateix:
 - Data de l'històric.
@@ -226,23 +226,23 @@ Accedint a un **històric de consum**, al seu formulari podem comprovar tota la 
 - Percentatge d'integritat, indicant els CUPS que tenen mesura històrica..
 - Fonts de consum utilitzades.
 
-[ ![Formulari historics](_static/orakWlum/formulari_historics.png)](_static/orakWlum/formulari_historics.png)
+[ ![Formulari historics](../_static/orakWlum/formulari_historics.png)](../_static/orakWlum/formulari_historics.png)
 
 També és possible comprovar el consum de cada una de les hores del dia, amb i sense pèrdues, anant a les pestanyes
 **Consum en Barres de Central** i **Consum**, respectivament.
 
-[ ![Formulari historics BC](_static/orakWlum/formulari_historics_bc.png)](_static/orakWlum/formulari_historics_bc.png)
+[ ![Formulari historics BC](../_static/orakWlum/formulari_historics_bc.png)](../_static/orakWlum/formulari_historics_bc.png)
 
 Per últim, es poden comprovar totes les fonts utilitzades en els històrics, per si es volgués consultar l'origen de la
 mesura d'alguns CUPS en concret. Per a fer-ho podeu fer servir l'enllaç **Línies de Consum Històric**.
 
-[ ![Línies historics link](_static/orakWlum/linies_historics_link.png)](_static/orakWlum/linies_historics_link.png)
+[ ![Línies historics link](../_static/orakWlum/linies_historics_link.png)](../_static/orakWlum/linies_historics_link.png)
 
 L'enllaç obrirà en una nova pestanya de l'ERP un llistat amb totes les fonts utilitzades. En aquest llistat, podreu ordenar
 i filtrar per múltiples camps útils, com són el **CUPS**, la **tarifa d'accés**, el **tipus de punt** o l'**origen** de 
 la mesura.
 
-[ ![Línies historics llistat](_static/orakWlum/linies_historics_llistat.png)](_static/orakWlum/linies_historics_llistat.png)
+[ ![Línies historics llistat](../_static/orakWlum/linies_historics_llistat.png)](../_static/orakWlum/linies_historics_llistat.png)
 
 D'aquesta manera podeu saber quina mesura s'ha fet servir com a històric de consum per a cada CUPS a cada hora, si és
 necessari.
@@ -255,18 +255,18 @@ Per a fer-ho, es pot utilitzar l'assistent **Exportar Històric de Consum**. En 
 - Resum en Excel.
 - Detall en CSV.
 
-[ ![Exportar historic](_static/orakWlum/historic_exportar.png)](_static/orakWlum/historic_exportar.png)
+[ ![Exportar historic](../_static/orakWlum/historic_exportar.png)](../_static/orakWlum/historic_exportar.png)
 
 El format de **resum** és útil la majoria de vegades, ja que inclou tota la informació bàsica de l'històric, la que
 es pot consultar des de la vista de formulari del mateix. El fitxer Excel resultant ja inclou diverses pestanyes per a
 mostrar la informació d'una manera clara i ordenada.
 
-[ ![Resum historic](_static/orakWlum/historics_resum.png)](_static/orakWlum/historics_resum.png)
+[ ![Resum historic](../_static/orakWlum/historics_resum.png)](../_static/orakWlum/historics_resum.png)
 
 El format de **detall** és útil per a revisar les mesures dels CUPS, ja que inclou tota la informació de les línies de consum
 emprades al generar l'històric.
 
-[ ![Detall historic](_static/orakWlum/historics_detall.png)](_static/orakWlum/historics_detall.png)
+[ ![Detall historic](../_static/orakWlum/historics_detall.png)](../_static/orakWlum/historics_detall.png)
 
 ### Reprocessat d'històrics
 
