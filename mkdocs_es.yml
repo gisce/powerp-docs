@@ -174,6 +174,7 @@ nav:
       - Introducción: comer/orakWlum/previsio_compra.md
       - orakWlum: comer/orakWlum/orakWlum.md
       - Algoritmos predictivos: comer/orakWlum/algoritmos_orakWlum.md
+      - Agregados de consumo: comer/orakWlum/agregados_orakWlum.md
     - Procesos:
       - Proceso de Facturación: comer/processos_facturacio.md
     - Batería Virtual: comer/bateria_virtual.md
