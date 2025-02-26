@@ -168,9 +168,10 @@ nav:
     - SIPS: comer/sips.md
     - SOA: comer/soa.md
     - Previsió de Compra:
-      - Introducció: comer/previsio_compra.md
-      - orakWlum: comer/orakWlum.md
-      - Algoritmes predictius: comer/algoritmos_orakWlum.md
+      - Introducció: comer/orakWlum/previsio_compra.md
+      - orakWlum: comer/orakWlum/orakWlum.md
+      - Algoritmes predictius: comer/orakWlum/algoritmos_orakWlum.md
+      - Agregats de consum: comer/orakWlum/agregados_orakWlum.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
     - Bateria Virtual: comer/bateria_virtual.md
