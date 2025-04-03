@@ -398,7 +398,7 @@ condicions:
   l'any sol·licitat, a 31 de Desembre. ( p.e. per l'any 2014 data_APM <
   01/01/2015) o bé estar buida.
 * **Data de baixa del transformador**: Data de baixa ha de ser superior a
-  l'ultim dia de l'any.    
+  l'ultim dia de l'any.
   ( p.e. per l'any 2014, data_baixa > 31/12/2014) o bé estar buida.
 * **Reductor**: Ha de tenir desmarcat el checkbox **reductor**.
 
@@ -422,6 +422,7 @@ S'inclouràn les **cel·les i elements de tall** que compleixin les següents
 condicions:
 
 * **Instal·lació**: CT.
+* **Codi del Tipus d'element**: Diferent de `FUS_AT`
 * **CINI**: Diferent a **I26204\***, **I26304\*** o **I26404\*** (Fusibles d'AT).
 * **Actiu**:
     * La **cel·la** ha d'estar activa
@@ -431,7 +432,7 @@ condicions:
   sol·licitat, a 31 de Desembre. ( p.e. per l'any 2014 data_APM < 01/01/2015) o
   bé estar buida.
 * **Data de baixa de la cel·la**: Data de baixa ha de ser superior a l'ultim dia
-  de l'any.    
+  de l'any.
   ( p.e. per l'any 2014, data_baixa > 31/12/2014) o bé estar buida.
 
 Per obtenir el codi del transformador, aquest ha de complir els
@@ -466,10 +467,10 @@ condicions:
     * Si no està activa, hi ha d'haver el camp **data baixa** amb una data
       entrada.
 * **Data APM de la subestació**: Data de posta en marxa anterior al final de
-  l'any sol·licitat, a 31 de Desembre o bé estar buida.    
+  l'any sol·licitat, a 31 de Desembre o bé estar buida.
   ( p.e. per l'any 2014 data_APM < 01/01/2015)
 * **Data de baixa de la subestació**: Data de baixa ha de ser superior a l'ultim
-  dia de l'any o bé estar buida.    
+  dia de l'any o bé estar buida.
   ( p.e. per l'any 2014, data_baixa > 31/12/2014)
 
 El formulari F13 està format pels següents camps:
@@ -497,10 +498,10 @@ condicions:
     * Si no està actiu, hi ha d'haver el camp **data baixa** amb una data
       entrada.
 * **Data APM del parc**: Data de posta en marxa anterior al final de l'any
-  sol·licitat, a 31 de Desembre o bé estar buida.    
+  sol·licitat, a 31 de Desembre o bé estar buida.
   ( p.e. per l'any 2014 data_APM < 01/01/2015)
 * **Data de baixa del parc**: Data de baixa ha de ser superior a l'ultim dia de
-  l'any o bé estar buida.    
+  l'any o bé estar buida.
   ( p.e. per l'any 2014, data_baixa > 31/12/2014)
 
 El formulari F13 bis està format pels següents camps:
@@ -531,10 +532,10 @@ condicions:
     * Si no està activa, hi ha d'haver el camp **data baixa** amb una data
       entrada.
 * **Data APM de la posició**: Data de posta en marxa anterior al final de l'any
-  sol·licitat, a 31 de Desembre o bé estar  buida.    
+  sol·licitat, a 31 de Desembre o bé estar  buida.
   ( p.e. per l'any 2014 data_APM < 01/01/2015)
 * **Data baixa de la posició**: Data de baixa ha de ser superior a l'ultim dia
-  de l'any o bé estar buida.    
+  de l'any o bé estar buida.
   ( p.e. per l'any 2014, data_baixa > 31/12/2014)
 
 El formulari F13 C està format pels següents camps:
@@ -651,7 +652,7 @@ Els camps són:
 
 Exemple:
 
->`R1-000;ES9658748563012408ZF;I224511A;234dew56sd`    
+>`R1-000;ES9658748563012408ZF;I224511A;234dew56sd`
 > On cada camp està separat per ';'
 
 Aquest fitxer contindrà el mateix numero de línies com clients té la
