@@ -188,6 +188,7 @@ nav:
     - Gestió de lectures: facturacion/lecturas.md
     - Gestió de pagaments i cobraments: facturacion/cobros.md
     - Lots: facturacion/lotes.md
+    - Anul·lació/Refacturació: facturacion/refacturacion.md
     - Tipus de factures: facturacion/tipos_facturas.md
     - Validacions: facturacion/validaciones.md
     - Línies Extra: facturacion/lineas_extra.md
