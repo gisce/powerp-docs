@@ -115,22 +115,32 @@ el número de tasques en execució que hi ha a la cua corresponent, per a compro
 [ ![Tasques en curs previsions](../_static/orakWlum/tasques_previsions.png)](../_static/orakWlum/tasques_previsions.png)
 
 Accedint a una **previsió de consum**, al seu formulari podem comprovar tota la informació relacionada amb la mateixa:
+
 - Data de la previsió.
 - Algoritme utilitzat per a calcular-la.
 - Nom de la previsió.
 - Consum total en kWh (amb i sense pèrdues).
+- Representació gràfica del consum al llarg del dia.
+
+[ ![Formulari previsions](../_static/orakWlum/formulari_previsions_1.png)](../_static/orakWlum/formulari_previsions_1.png)
+
+A la part més inferior de la vista de formulari d'una **previsió de consum**, podrem consultar altres dades rellevants,
+com són:
+
 - Versió dels coeficients de pèrdues d'ESIOS utilitzats.
 - Total de CUPS actius en la data de la previsió.
 - Total de CUPS amb consum estimat.
 - Percentatge de CUPS amb consum obtingut de fonts de consum reals (sense perfilació ni estimació).
+- Total d'energia obtinguda amb estimació.
+- Percentatge d'energia obtinguda de fonts reals.
 - Fonts de consum utilitzades.
 
-[ ![Formulari previsions](../_static/orakWlum/formulari_previsions.png)](../_static/orakWlum/formulari_previsions.png)
+[ ![Formulari previsions](../_static/orakWlum/formulari_previsions_2.png)](../_static/orakWlum/formulari_previsions_2.png)
 
 També és possible comprovar el consum de cada una de les hores del dia, amb i sense pèrdues, anant a les pestanyes
 **Consum en Barres de Central** i **Consum**, respectivament.
 
-[ ![Formulari previsions BC](../_static/orakWlum/formulari_previsions_bc.png)](../_static/orakWlum/formulari_previsions_bc.png)
+[ ![Formulari previsions](../_static/orakWlum/formulari_previsions_3.png)](../_static/orakWlum/formulari_previsions_3.png)
 
 Per últim, es poden comprovar totes les fonts utilitzades en les previsions, per si es volgués consultar l'origen de la
 mesura d'alguns CUPS en concret. Per a fer-ho podeu fer servir l'enllaç **Línies de Previsió de Consum**.
@@ -163,9 +173,15 @@ mostrar la informació d'una manera clara i ordenada.
 [ ![Resum previsió](../_static/orakWlum/previsions_resum.png)](../_static/orakWlum/previsions_resum.png)
 
 El format de **detall** és útil per a revisar les mesures dels CUPS, ja que inclou tota la informació de les línies de consum
-emprades al generar la previsió.
+emprades al generar la previsió. Al tractar-se d'un fitxer de mida més gran, aquest s'exporta comprimit en ZIP.
 
 [ ![Detall previsió](../_static/orakWlum/previsions_detall.png)](../_static/orakWlum/previsions_detall.png)
+
+Les exportacions es poden fer de forma síncrona o en segon pla. Si s'opta per la primera opció, l'ERP realitzarà l'exportació
+i retornarà el fitxer al propi assistent. Si s'opta per a exportar en segon pla (opció per defecte), es podrà recuperar el
+fitxer del llistat **Exportacions de Previsions**.
+
+[ ![Exportació en segon pla](../_static/orakWlum/exportacio_en_segon_pla.png)](../_static/orakWlum/exportacio_en_segon_pla.png)
 
 ### Reprocessat de previsions
 
@@ -182,6 +198,8 @@ anteriorment quan es va crear la mateixa.
     El reprocessat de previsions sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a la previsió de consum recalculada. Novament, es pot fer servir el llistat **Previsions de consum en curs**
     per a saber si la cua de previsions de orakWlum té tasques en curs, per saber si ha acabat o no.
+
+[ ![Reprocessar previsió](../_static/orakWlum/reprocessar_previsio.png)](../_static/orakWlum/reprocessar_previsio.png)
 
 ## Històrics de consum
 
