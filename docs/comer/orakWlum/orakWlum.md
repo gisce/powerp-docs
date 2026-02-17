@@ -300,3 +300,32 @@ quan es va crear el mateix.
     El reprocessat d'històrics sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a l'històric de consum recalculat. Novament, es pot fer servir el llistat **Històrics de consum en curs**
     per a saber si la cua d'històrics de orakWlum té tasques en curs, per saber si ha acabat o no.
+
+## Comparatives
+
+Les **comparatives** són un nou element que es pot crear des de orakWlum i la seva finalitat és poder comparar dues previsions
+qualsevols per a quantificar-ne les diferències de consum.
+
+L'objectiu de les **comparatives** es poder analitzar les diferències entre previsions, i pot ser útil a l'hora de validar
+que una previsió és correcte (per exemple, comparant-la amb una previsió del mateix dia de la setmana, però d'un temps enrere).
+
+### Generació de previsions
+
+Per a generar una **comparativa** tan sols és necessari fer servir l'assistent **orakWlum > Comparatives >
+Generar Comparativa**. 
+
+A l'assistent podreu triar les dues previsions (la segona restarà quart d'hora a quart d'hora els seus consums als de la primera).
+
+[ ![Generar comparativa](../_static/orakWlum/generar_comparativa.png)](../_static/orakWlum/generar_comparativa.png)
+
+Un cop creada una **comparativa**, aquesta es pot revisar des del llistat **Comparatives**.
+
+A la vista de llistat es podrà veure el nom i les diferències totals de consum en MW, amb i sense elevar en barres de central.
+
+[ ![Llistat comparativa](../_static/orakWlum/llistat_comparativa.png)](../_static/orakWlum/llistat_comparativa.png)
+
+A la vista de formulari es podrà veure una gràfica i també hi ha dues pestanyes per a poder veure la diferència de consum,
+quart d'hora a quart d'hora, amb i sense elevar en barres de central, de forma similar a les vistes de fomrulari de les
+previsions.
+
+[ ![Formulari comparativa](../_static/orakWlum/formulari_comparativa.png)](../_static/orakWlum/formulari_comparativa.png)
