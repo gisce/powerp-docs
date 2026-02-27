@@ -63,24 +63,24 @@ una corba horària per a quantificar aquesta energia.
 En el tractament d'Objeccions s'utilitza un conjunt de fitxers específics:
 
 ### Agregats
-* **MAGCLACUM**: Acumulat mensual d'energia d'agregacions de clients tipus 3, 4 i 5.
-* **OBJEAGRECL**: Objeccions d'agregacions de clients tipus 3, 4 i 5.
-* **REOBJEAGRECL**: Resposta a objeccions d'agregacions de clients tipus 3, 4 i 5.
-* **AOBJEAGRECL**: Justificant de recepció a objeccions d'agregacions de clients tipus 3, 4 i 5.
-* **REVAGRE**: Sol·licitut de revisió de la resolució d'objeccions d'agregacions de clients tipus 3, 4 i 5.
+* **MAGCLACUM**: Acumulat mensual d'energia d'agregacions de clients tipus 4 i 5.
+* **OBAGRECL**: Objeccions d'agregacions de clients tipus 4 i 5.
+* **REOBAGRECL**: Resposta a objeccions d'agregacions de clients tipus 4 i 5.
+* **AOBAGRECL**: Justificant de recepció a objeccions d'agregacions de clients tipus 4 i 5.
+* **REVAGRE**: Sol·licitut de revisió de la resolució d'objeccions d'agregacions de clients tipus 4 i 5.
 
 ### Desagregats
-* **INMECLOS**: Acumulat mensual d'energia de clients tipus 3, 4 i 5 desagregats
-* **OBJEINCL**: Objeccions de clients tipus 3, 4 i 5 desagregats.
-* **REOBJEINCL**: Resposta a objeccions de clients tipus 3, 4 i 5 desagregats.
+* **INMECLOS**: Acumulat mensual d'energia de clients tipus 4 i 5 desagregats
+* **OBJEINCL**: Objeccions de clients tipus 4 i 5 desagregats.
+* **REOBJEINCL**: Resposta a objeccions de clients tipus 4 i 5 desagregats.
 
-* **OBJE2**: Objeccions de clients tipus 1 i 2.
-* **REOBJE2**: Resposta a objeccions de clients tipus 1 i 2.
-* **REVCL**: Sol·licitut de revisió de la resolució d'objeccions de clients tipus 1 i 2.
+* **OBCUPS**: Objeccions de clients tipus 1, 2 i 3.
+* **REOBCUPS**: Resposta a objeccions de clients tipus 1, 2 i 3.
+* **REVCL**: Sol·licitut de revisió de la resolució d'objeccions de clients tipus 1, 2 i 3.
 
-* **OBJECIL**: Objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de fonts d'energia
+* **OBCIL**: Objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de fonts d'energia
 renovables, cogeneració i residus (RECORE) tipus 3, 4 i 5.
-* **REOBJECIL**: Resposta a objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de 
+* **REOBCIL**: Resposta a objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de
 fonts d'energia renovables, cogeneració i residus (RECORE) tipus 3, 4 i 5.
 * **REVCIL**: Sol·licitut de revisió de la resolució d'objeccions de punts frontera d'instal·lacions de producció d'energia
 elèctrica a partir de fonts d'energia renovables, cogeneració i residus (RECORE) de tipus 3, 4 i 5.
@@ -204,7 +204,7 @@ es pot donar.
 
 La generació de fitxers crearà el següent:
 * Un fitxer `OBJEINCL` per a cada Distribuïdora per a la qual hi hagi com a mínim un CUPS amb motiu d'objecció.
-* Un fitxer `OBJEAGRECL` per a cada Distribuïdora per a la qual hi hagi com a mínim una agregació amb motiu d'objecció.
+* Un fitxer `OBAGRECL` per a cada Distribuïdora per a la qual hi hagi com a mínim una agregació amb motiu d'objecció.
 
 !!! Nota "Nota"
     Els fitxers d'objeccions generats només contindran línies per a les quals hi hagi assignat un motiu d'objecció,
@@ -227,10 +227,10 @@ per a que arribin a l'Operador del Sistema i aquest publiqui les objeccions a le
 ### Carregar fitxers de resposta a les objeccions
 
 Un cop enviat i processat un fitxer d'objecció, la Distribuïdora respon a l'Operador del Sistema acceptant-la o
-rebutjant-la. Es fa mitjançant un fitxer de "justificant de recepció" anomenat `AOBJEAGRECL`. Aquest, té indicat en un
+rebutjant-la. Es fa mitjançant un fitxer de "justificant de recepció" anomenat `AOBAGRECL`. Aquest, té indicat en un
 dels camps si s'accepta o no l'objecció.
 
-Per a carregar-lo al sistema, es pot importar el fitxer `AOBJEAGRECL` amb el botó **Carregar Respostes** que trobareu a
+Per a carregar-lo al sistema, es pot importar el fitxer `AOBAGRECL` amb el botó **Carregar Respostes** que trobareu a
 la pestanya **Respostes d'Objeccions** en el període.
 
 [ ![](_static/medidas/objeciones_revac.png)](_static/medidas/objeciones_revac.png)
@@ -238,5 +238,5 @@ la pestanya **Respostes d'Objeccions** en el període.
 ### Generar fitxer d'objeccions de resposta
 
 Si alguna objecció ha estat rebutjada, es pot tornar a enviar mitjançant un fitxer `REVAGRE`, així que
-un cop importat el fitxer `AOBJEAGRECL`, es pot utilitzar el botó **Generar REVAGRE**, que generarà un fitxer
+un cop importat el fitxer `AOBAGRECL`, es pot utilitzar el botó **Generar REVAGRE**, que generarà un fitxer
 de resposta de "justificació de recepció" amb les objeccions no acceptades.
