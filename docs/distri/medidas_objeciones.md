@@ -1,20 +1,22 @@
 # Tractament d'Objeccions
 
-Els fitxers d'objeccions a la part de la Distribuïdora són els acusaments de rebuda que reben aquestes per part de les Comercialitzadores.
-En aquests acusaments, se'ls comunica que les mesures que han imputat a les Comercialitzadores no són correctes.
-L'Operador del Sistema recull i valida aquestes objeccions rebudes de la Comercialitzadora i les fa arribar a la Distribuïdora
+Els fitxers d'objeccions a la part de la Distribuïdora són els acusaments de rebuda que reben aquestes per part d'altres
+participants (Comercialitzadores o Representants, principalment).
+En aquests acusaments, se'ls comunica que les mesures que han imputat als participants emissors no són correctes.
+
+L'Operador del Sistema recull i valida aquestes objeccions rebudes dels participants i les fa arribar a la Distribuïdora
 objectada, la qual haurà de revisar les objeccions i donar-los resposta.
 
 Amb la finalitat de facilitar donar resposta a aquests fitxers d'objeccions, la Distribuïdora
 primer haurà de carregar els acusaments de rebuda (o fitxers) als períodes de mesures corresponents pel que 
-la Comercialitzadora ha objectat. Per fer-ho, dins l'ERP, caldrà anar a:
+el participant ha objectat. Per fer-ho, dins l'ERP, caldrà anar a:
 
 **Mesures REE > Períodes de Mesures > XX/XXXX (període MES/ANY)**
 
 ## Períodes de Mesures
 
-Un cop haguem seleccionat el període de mesures pel qual se'ns ha objectat, per gestionar les objeccions que hem rebut de 
-les Comercialitzadores, anirem a la pestanya "Objeccions" tal com es veu a la captura de pantalla:
+Un cop haguem seleccionat el període de mesures pel qual se'ns ha objectat, per gestionar les objeccions que hem rebut
+dels participants, anirem a la pestanya "Objeccions" tal com es veu a la captura de pantalla:
 
 [ ![Objeccions a Distribuidora](_static/medidas_objeciones/objeciones_distribuidora.png)](_static/medidas_objeciones/objeciones_distribuidora.png)
 
@@ -34,7 +36,11 @@ En aquesta mateixa finestra podrem començar a respondre-la emplenant els camps 
 [ ![Objeccions a Distribuidora](_static/medidas_objeciones/objeciones_respuesta.png)](_static/medidas_objeciones/objeciones_respuesta.png)
 
 * **Respondre l'objecció:** Un cop emplenats els camps per generar la resposta: 'Acceptada' (S/N), 'Motiu' (0/1/2) i 'Comentari' (amb les observacions 
-que creiem necessàries), premerem el botó "OK" i en sortir de l'assistent farem clic a 'Generar REXXX' (Pel nostre exemple, 'Generar REOBAGRECL').
+que creiem necessàries), premerem el botó "OK" i en sortir de l'assistent, desarem els canvis al període de mesures i farem clic a 'Generar REXXX' (Pel nostre exemple, 'Generar REOBAGRECL').
+
+!!! Info "Important"
+    Abans de generar el fitxer de resposta a les objeccions, cal haver desat els canvis al Període de Mesures, per a que
+    es persisteixin les respostes introduïdes per l'usuari.
 
 [ ![Objeccions a Distribuidora](_static/medidas_objeciones/objeciones_respondida.png)](_static/medidas_objeciones/objeciones_respondida.png)
 
@@ -55,20 +61,15 @@ i els seus formats els podreu trobar al document oficial de REE: **'Ficheros par
 Un resum dels fitxers d'objeccions que ens podem trobar:
 
 ### Agregats
-* **OBAGRECL**: Objeccions d'agregacions (clients tipus 4/5)
-* **REOBAGRECL**: Resposta a objeccions d'agregacions (clients tipus 4/5)
-* **AOBAGRECL**: Justificant de recepció a objeccions d'agregacions (clients tipus 4/5)
-* **REVAGRE**: Sol·licitud de revisió de la resolució d'objeccions d'agregacions (clients tipus 4/5)
+* **AOBAGRECL**: Acusament de rebuda d'objeccions d'agregacions (clients tipus 4 i 5)
+* **REOBAGRECL**: Resposta a objeccions d'agregacions (clients tipus 4 i 5)
 
 ### Desagregats
-* **OBJEINCL**: Objeccions (clients tipus 4/5 desagregats)
-* **REOBJEINCL**: Resposta a objeccions (clients tipus 4/5 desagregats)
-* **OBCUPS**: Objeccions (clients tipus 1/2 i 3)
-* **REOBCUPS**: Resposta a objeccions (clients tipus 1/2 i 3)
-* **REVCL**: Sol·licitud de revisió de la resolució d'objeccions (clients tipus 1/2 i 3)
-* **OBCIL**: Objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de fonts d'energia
-renovables, cogeneració i residus (RECORE tipus 3/4 i 5)
+* **OBJEINCL**: Objeccions (clients tipus 4 i 5 desagregats)
+* **REOBJEINCL**: Resposta a objeccions (clients tipus 4 i 5 desagregats)
+* **AOBCUPS**: Acusament de rebuda d'objeccions (clients tipus 1, 2 i 3)
+* **REOBCUPS**: Resposta a objeccions (clients tipus 1, 2 i 3)
+* **AOBCIL**: Acusament de rebuda d'objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de fonts d'energia
+renovables, cogeneració i residus (RECORE tipus 3, 4 i 5)
 * **REOBCIL**: Resposta a objeccions de punts frontera d'instal·lacions de producció d'energia elèctrica a partir de
-fonts d'energia renovables, cogeneració i residus (RECORE tipus 3/4 i 5)
-* **REVCIL**: Sol·licitud de revisió de la resolució d'objeccions de punts frontera d'instal·lacions de producció d'energia
-elèctrica a partir de fonts d'energia renovables, cogeneració i residus (RECORE de tipus 3/4 i 5)
+fonts d'energia renovables, cogeneració i residus (RECORE tipus 3, 4 i 5)
