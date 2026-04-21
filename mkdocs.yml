@@ -173,6 +173,7 @@ nav:
       - orakWlum: comer/orakWlum/orakWlum.md
       - Algoritmes predictius: comer/orakWlum/algoritmos_orakWlum.md
       - Agregats de consum: comer/orakWlum/agregados_orakWlum.md
+      - Eines de OMIE: comer/orakWlum/orakWlum_omie.md
     - Processos:
       - Procés de Facturació: comer/processos_facturacio.md
     - Bateria Virtual: comer/bateria_virtual.md
