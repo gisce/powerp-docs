@@ -141,6 +141,8 @@ tan sols heu de contactar amb nosaltres a través d'un SAC per a comunicar-ho.
 
 ## Eines auxiliars
 
+### Casacions i Programes
+
 A l'ERP hi ha un menú **OMIE** amb diversos llistats i assistents. Aquest menú és genèric i, per tant, útil tant per a
 Comercialitzadores com per a Representants a mercat. A continuació s'en detalla la utilitat.
 
@@ -157,3 +159,31 @@ Comercialitzadores com per a Representants a mercat. A continuació s'en detalla
 Aquestes eines permeten revisar casacions descarregades a l'ERP directament, sense accedir-hi des de les previsions de
 consum de **orakWlum**. I amb l'assistent, també és possible descarregar-ne qualsevol simplement especificant la unitat
 d'oferta i la sessió que desitgeu.
+
+### Assistent per a modificar els preus d'oferta
+
+A l'ERP de Comercialtizadora existeix un assistent per a poder revisar i modificar els preus d'oferta d'OMIE. 
+El trobareu a **OMIE > Revisar preus de mercat**.
+
+[ ![Revisar preus OMIE](../_static/orakWlum/revisar_precios_omie.png)](../_static/orakWlum/revisar_precios_omie.png)
+
+Al invocar-lo podreu triar si voleu revisar els preus de compra o els de venda (es guarden per separat a l'ERP). Un cop
+triat això es pot clicar "Carregar preus" per a visualitzar els valors actuals que hi ha a l'ERP pel preu de cada quart
+d'hora del dia, expressat en €/MWh.
+
+[ ![Modificar preus OMIE](../_static/orakWlum/modificar_precios_omie.png)](../_static/orakWlum/modificar_precios_omie.png)
+
+En aquesta vista es pot modificar el valor dels preus que es vulguin canviar i desar els canvis amb el botó **Modificar preus**.
+A continuació apareixerà un camp d'informació on figuraran tots els canvis introduïts per l'usuari respecte als preus actuals.
+
+[ ![Confirmar preus OMIE](../_static/orakWlum/confirmar_precios_omie.png)](../_static/orakWlum/confirmar_precios_omie.png)
+
+Un cop revisat que tot és correcte, es pot prèmer el botó **Desar preus** per a persistir els canvis.
+
+!!! Info "Nota 6"
+    Abans de carregar els preus en el primer pas, es pot activar l'opció **Actualitzar preus des de fitxer**. Això farà
+    aparèixer un espai a l'assistent per a importar un fitxer d'Excel on figuri a la primera línia els 100 valors pels preus
+    de cada quart d'hora del dia, de forma ordenada. Així es pot actualitzar de forma més àgil els preus, si és necessari.
+
+Tingueu en compte que si no es desen els canvis, els preus es mantenen amb el valor existent a l'ERP, encara que
+n'hagueu importat de nous amb un fitxer Excel o que n'hagueu modificat algun valor manualment.
