@@ -125,6 +125,40 @@ tal com s'explica al diagrama de la secció anterior d'aquest document.
 * Temps de càlcul molt més elevat que l'algoritme **M-12** al tenir que obtenir moltes més dades i normalitzar-les, abans 
 d'obtenir el consum proposat.
 
+## Winsor (M-12 Robust)
+
+Donat que l'algoritme **Gauss** pot ser molt costós en temps computacional, aquest algoritme híbrid neix de la necessitat
+de tenir una versió més robusta de l'algoritme **M-12** però amb un procés de mostreig més lleuger. La seva estratègia és,
+donat que agafar la mateixa data de l'any anterior pot provocar problemes si aquesta tenia un consum atípic, agafar més
+dies candidats a la mostra, aplicant una mitjana amb `winsor` per a descartar valors atípics per sobre i per sota,
+establint el valor dels percentils.
+
+En el següent exemple, es vol generar una previsió de consum per al 21 d'abril del 2022 (marcat en groc al calendari).
+orakWlum calcularà quin és el dijous equivalent de fa un any i obtindrà dels històrics de consum d’aquesta data i dels mateixos
+dies de la setmana de setmanes anteriors i posteriors, el consum a proposar. En aquest exemple, la data objectiva serà el 22
+d'abril del 2022 (marcat en groc al calendari) i amb una configuració de `2 setmanes de propagació` des del dia de l'any anterior,
+queda una mostra de 5 dies candidats. Els CUPS que trobin mostra entre els dies candidats, hi aplicaran el filtre `winsor`
+(per defecte amb valors `[0.15,0.85]`) per a descartar dades atípiques i, a continuació, aplicaran una mitjana aritmètica
+sobre la mostra filtrada. Els CUPS que no tinguin històric de consum en aquesta data, s'estimaran amb la mitjana horària
+d'acord amb la tarifa, tal com s'explica al diagrama de la secció anterior d'aquest document.
+
+[ ![Exemple Winsor](../_static/orakWlum/winsor_example_calendar.png)](../_static/orakWlum/winsor_example_calendar.png)
+
+Aquest algorisme permet fer prediccions permet fer prediccions per a milers de CUPS en uns pocs minuts i funciona especialment
+bé quan el conjunt de CUPS té una estacionalitat molt marcada, és a dir, quan els CUPS tenen un perfil de consum molt diferent segons
+l'època de l'any (per exemple, els associats a hotels o zones turístiques).
+
+### Avantatges
+
+* Bon compromís entre velocitat i robustesa.
+* Més personalització que **M-12**, en poder ajustar el nombre de dies mínims per a considerar vàlida la mostra d'un CUPS,
+el nombre de setmanes a propagar el mostreig des de la data equivalent de l'any anterior i els valors de percentil a utilitzar
+a l'aplicar `winsor` sobre la mostra.
+
+### Limitacions
+
+* Sensible a canvis recents en el perfil de consum dels CUPS, donat que es fa la mostra amb dades de fa molts mesos.
+
 ## MVH (Millor Valor Horari)
 
 Aquest algorisme es basa en la idea de l'algoritme **Gauss** però eliminant la necessitat de consultar una per una totes
