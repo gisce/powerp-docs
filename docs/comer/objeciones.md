@@ -151,21 +151,21 @@ Per a cada fitxer de consum importat, es pot realitzar un càlcul que mostrarà 
 Aquest contrast compararà a cada línia l'energia que imputa la Distribuïdora amb l'energia que hi ha present a les corbes
 horàries (`F5D` o `perfilades`). 
 
-!!! Nota "Nota"
-    L'estratègia a l'hora de trobar el consum "real" de l'ERP per a fer la comparativa amb el consum imputat, és diferent
-    segons el tipus de contrast:
-    - Contrast amb fitxer `INMECLOS`: Es troben consums de `F5D` i `perfils` i es fan servir els que sumin un total més
-      proper a l'energia imputada per la Distribuïdora.
-    - Contrast amb fitxer `MAGCLACUM`: Primer s'intentarà trobar consums de `F5D` i, si no n'hi ha, s'intentarà trobar
-      consum de `perfils`.
-    - Contrast amb fitxer `ACUM`: Primer s'intentarà trobar consums de `F1`; si no n'hi ha, s'intentarà trobar consums
-      de `F5D` i, si tampoc se'n troben, s'intentarà trobar consums de `perfils`.
+
+L'estratègia a l'hora de trobar el consum "real" de l'ERP per a fer la comparativa amb el consum imputat, és diferent
+segons el tipus de contrast:
+- Contrast amb fitxer `INMECLOS`: Es troben consums de `F5D` i `perfils` i es fan servir els que sumin un total més
+  proper a l'energia imputada per la Distribuïdora.
+- Contrast amb fitxer `MAGCLACUM`: Primer s'intentarà trobar consums de `F5D` i, si no n'hi ha, s'intentarà trobar
+  consum de `perfils`.
+- Contrast amb fitxer `ACUM`: Primer s'intentarà trobar consums de `F1`; si no n'hi ha, s'intentarà trobar consums
+  de `F5D` i, si tampoc se'n troben, s'intentarà trobar consums de `perfils`.
 
 A la consola de fitxers `INMECLOS`, `MAGCLACUM` i `ACUM`, trobareu un botó de **Contrastar consums**, que us permetrà triar
 per a quin fitxer de la consola voleu realitzar el càlcul (si només n'hi ha un, ja es seleccionarà automàticament aquest).
 
 Un cop confirmeu l'acció a l'assistent, el fitxer canviarà el seu estat a `Processant` i, un cop acabat el càlcul, aquest
-s'actualitzarà a `Finalitzat`. 
+s'actualitzarà a `Finalitzat`.
 
 [ ![](_static/medidas/objeciones_func_basico_clinmeos.png)](_static/medidas/objeciones_func_basico_clinmeos.png)
 

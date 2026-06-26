@@ -109,8 +109,7 @@ consum** un cop s'hagi acabat de processar.
 
 [ ![Llistat previsions](../_static/orakWlum/llistat_previsions.png)](../_static/orakWlum/llistat_previsions.png)
 
-També podeu utilitzar el llistat **Previsions de consum en cua** per a comprovar
-les previsions i el seu estat de processament.
+També podeu utilitzar el llistat **Previsions de consum en cua** per a comprovar les previsions i el seu estat de processament.
 
 [ ![Tasques en curs previsions](../_static/orakWlum/tasques_previsions.png)](../_static/orakWlum/tasques_previsions.png)
 
