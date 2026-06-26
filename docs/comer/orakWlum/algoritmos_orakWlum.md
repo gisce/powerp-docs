@@ -34,6 +34,11 @@ consum històric (F5D, F1, P1, etc.) cada cop hi ha més CUPS que han obtingut c
 el nombre de CUPS que no l’han obtingut (conjunt vermell). En acabar el recorregut de les fonts, s'obté el consum per els 
 CUPS que encara no en tenen mitjançant la mitjana per hora dels CUPS de la mateixa tarifa que sí que han obtingut consum.
 
+!!! Info "Nota 1"
+    Hi ha un ajust a l'ERP que permet estimar els CUPS pels quals no s'ha trobat consum històric utilitzant la mitjana
+    dels CUPS que sí han trobat consum i que es troben aproximadament al mateix nivell de potència màxima contractada.
+    És una solució més robusta que per tarifa d'accés.
+
 Un cop feta l'obtenció del consum de cada hora per a tots els CUPS, s'agrupen aquests consums per hora i es genera així 
 la previsió.
 

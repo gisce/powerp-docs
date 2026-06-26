@@ -29,8 +29,8 @@ apartats.
 
 ### Objeccions
 * **Períodes d'Objeccions:** Mostra l'estat i el progrés dels períodes de mesures.
-* **Importar Fitxers d'Objeccions:** Assistent per a carregar fitxers `INMECLOS` i `MAGCLACUM` per a poder-ne contrastar
-el consum.
+* **Importar Fitxers d'Objeccions:** Assistent per a carregar fitxers `INMECLOS`, `MAGCLACUM` i `ACUM` per a poder-ne
+contrastar el consum.
 
 ### Casos
 * **Casos de Perfilació:** Casos CRM que reporten el comportament al perfilar factures de proveïdor.
@@ -74,6 +74,7 @@ En el tractament d'Objeccions s'utilitza un conjunt de fitxers específics:
 * **OBJEINCL**: Objeccions de clients tipus 4 i 5 desagregats.
 * **REOBJEINCL**: Resposta a objeccions de clients tipus 4 i 5 desagregats.
 
+* **ACUM**: Acumulat mensual d'energia de clients tipus 1, 2 i 3 desagregats
 * **OBCUPS**: Objeccions de clients tipus 1, 2 i 3.
 * **REOBCUPS**: Resposta a objeccions de clients tipus 1, 2 i 3.
 * **REVCL**: Sol·licitut de revisió de la resolució d'objeccions de clients tipus 1, 2 i 3.
@@ -92,7 +93,7 @@ recent del document `Ficheros para el intercambio de información de medida` que
 
 Els períodes d'objeccions són sempre a mes natural, i són els períodes amb els que treballa REE.
 No cal crear cap període d'objeccions de forma manual, aquests es creen automàticament en cas de no existir encara, en el
-moment en que s'importa un fitxer d'objeccions `INMECLOS` o `MAGCLACUM`.
+moment en que s'importa un fitxer d'objeccions `INMECLOS`, `MAGCLACUM` o `ACUM`.
 
 El tractament de les objeccions es realitza seguint el següent ordre d'accions: 
 
@@ -113,6 +114,7 @@ El sistema d'objeccions permet importar els següents fitxers:
 
 * **INMECLOS**
 * **MAGCLACUM**
+* **ACUM**
 
 Per importar-ne un, cal utilitzar l'assistent que trobareu a: **Mesures REE > Objeccions > Importar Fitxers d'Objeccions**.
 L'assistent permet importar fitxers plans o bé comprimits en format ".zip" o format ".bz2". També es permet importar més d'un
@@ -149,15 +151,22 @@ Per a cada fitxer de consum importat, es pot realitzar un càlcul que mostrarà 
 Aquest contrast compararà a cada línia l'energia que imputa la Distribuïdora amb l'energia que hi ha present a les corbes
 horàries (`F5D` o `perfilades`). 
 
-!!! Nota "Nota"
-    En cas d'existir les dues corbes, `F5D` i `perfils`, l'estratègia del contrast és utilitzar la més propera
-    a l'energia imputada per la Distribuïdora.
 
-A la consola de fitxers `INMECLOS` i `MAGCLACUM`, trobareu un botó de **Contrastar consums**, que us permetrà triar per a
-quin fitxer de la consola voleu realitzar el càlcul (si només n'hi ha un, ja es seleccionarà automàticament aquest). 
+L'estratègia a l'hora de trobar el consum "real" de l'ERP per a fer la comparativa amb el consum imputat, és diferent
+segons el tipus de contrast:
+
+* Contrast amb fitxer `INMECLOS`: Es troben consums de `F5D` i `perfils` i es fan servir els que sumin un total més
+  proper a l'energia imputada per la Distribuïdora.
+* Contrast amb fitxer `MAGCLACUM`: Primer s'intentarà trobar consums de `F5D` i, si no n'hi ha, s'intentarà trobar
+  consum de `perfils`.
+* Contrast amb fitxer `ACUM`: Primer s'intentarà trobar consums de `F1`; si no n'hi ha, s'intentarà trobar consums
+  de `F5D` i, si tampoc se'n troben, s'intentarà trobar consums de `perfils`.
+
+A la consola de fitxers `INMECLOS`, `MAGCLACUM` i `ACUM`, trobareu un botó de **Contrastar consums**, que us permetrà triar
+per a quin fitxer de la consola voleu realitzar el càlcul (si només n'hi ha un, ja es seleccionarà automàticament aquest).
 
 Un cop confirmeu l'acció a l'assistent, el fitxer canviarà el seu estat a `Processant` i, un cop acabat el càlcul, aquest
-s'actualitzarà a `Finalitzat`. 
+s'actualitzarà a `Finalitzat`.
 
 [ ![](_static/medidas/objeciones_func_basico_clinmeos.png)](_static/medidas/objeciones_func_basico_clinmeos.png)
 
@@ -170,9 +179,9 @@ Un cop finalitzat el contrast, es poden escollir i/o descartar els motius d'obje
 assignar-ne de nous si es creu oportú.
 
 Per a revisar els motius d'objecció i modificar-los, cal utilitzar el botó **Consultar últim contrast** de la consola de fitxers
-`INMECLOS` o `MAGCLACUM` i triar el fitxer pel qual es vol consultar el contrast (si només n'hi ha un, aquest ja es selecciona
-automàticament). Això obrirà una vista de llistat amb totes les línies del fitxer, on podreu filtrar i ordenar pels codis 
-d'agregació de REE i/o per les diferències d'energia.
+`INMECLOS`, `MAGCLACUM` o `ACUM` i triar el fitxer pel qual es vol consultar el contrast (si només n'hi ha un, aquest ja es
+selecciona automàticament). Això obrirà una vista de llistat amb totes les línies del fitxer, on podreu filtrar i ordenar pels
+codis d'agregació de REE i/o per les diferències d'energia.
 
 [ ![](_static/medidas/objeciones_integridad.png)](_static/medidas/objeciones_integridad.png)
 
@@ -189,6 +198,10 @@ objectant les línies que es consideri. Un cop fet això, es pot fer servir l'as
 període de mesures per a que els motius d'objecció dels CUPS del contrast del fitxer `INMECLOS` seleccionat es traslladin 
 també a les agregacions del contrast del fitxer `MAGCLACUM` seleccionat. El camp d'informació de l'assistent dóna més detalls
 sobre com es tracta aquesta unió de motius i permet també un parell d'ajustos opcionals.
+
+!!! Nota "Nota"
+    El contrast amb fitxers `ACUM` generen línies pels CUPS de tipus 1, 2 i 3, així que cal objectar aquestes línies de
+    forma independent als altres contrastos.
 
 Un cop ha acabat aquest procés, ja es pot procedir a generar els fitxers d'objeccions pròpiament. Però es recomana revisar per
 darrer cop els motius d'objecció assignats.
