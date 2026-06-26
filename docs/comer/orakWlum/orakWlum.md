@@ -109,8 +109,8 @@ consum** un cop s'hagi acabat de processar.
 
 [ ![Llistat previsions](../_static/orakWlum/llistat_previsions.png)](../_static/orakWlum/llistat_previsions.png)
 
-També podeu utilitzar el llistat **Previsions de consum en curs** per a comprovar
-el número de tasques en execució que hi ha a la cua corresponent, per a comprovar si hi ha tasques en curs o no.
+També podeu utilitzar el llistat **Previsions de consum en cua** per a comprovar
+les previsions i el seu estat de processament.
 
 [ ![Tasques en curs previsions](../_static/orakWlum/tasques_previsions.png)](../_static/orakWlum/tasques_previsions.png)
 
@@ -143,15 +143,12 @@ També és possible comprovar el consum de cada una de les hores del dia, amb i 
 [ ![Formulari previsions](../_static/orakWlum/formulari_previsions_3.png)](../_static/orakWlum/formulari_previsions_3.png)
 
 Per últim, es poden comprovar totes les fonts utilitzades en les previsions, per si es volgués consultar l'origen de la
-mesura d'alguns CUPS en concret. Per a fer-ho podeu fer servir l'enllaç **Línies de Previsió de Consum**.
+mesura d'alguns CUPS en concret. Per a fer-ho podeu descarregar l'adjunt de consums utilitzats que apareixerà a la previsió,
+un cop hagi acabat de processar-se.
 
-[ ![Línies previsions link](../_static/orakWlum/linies_previsions_link.png)](../_static/orakWlum/linies_previsions_link.png)
-
-L'enllaç obrirà en una nova pestanya de l'ERP un llistat amb totes les fonts utilitzades. En aquest llistat, podreu ordenar
-i filtrar per múltiples camps útils, com són el **CUPS**, la **tarifa d'accés**, el **tipus de punt** o l'**origen** de 
-la mesura.
-
-[ ![Línies previsions llistat](../_static/orakWlum/linies_previsions_llistat.png)](../_static/orakWlum/linies_previsions_llistat.png)
+!!! Info "Nota 7"
+    Cada cop que es processa la previsió, es genera un nou adjunt per a tenir traça dels consums utilitzats. Per a
+    consultar les fonts del càlcul més recent, simplement consulteu l'adjunt més nou.
 
 D'aquesta manera podeu saber quina mesura s'ha fet servir com a històric de consum per a cada CUPS a cada hora, si és
 necessari.
@@ -194,7 +191,7 @@ Per a tornar a calcular una previsió, es pot fer servir l'assistent **Reprocess
 crea una nova previsió, sinó que la recalcularà utilitzant la mateixa data, el mateix algoritme i les mateixes fonts utilitzades
 anteriorment quan es va crear la mateixa.
 
-!!! Info "Nota 7"
+!!! Info "Nota 8"
     El reprocessat de previsions sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a la previsió de consum recalculada. Novament, es pot fer servir el llistat **Previsions de consum en curs**
     per a saber si la cua de previsions de orakWlum té tasques en curs, per saber si ha acabat o no.
@@ -216,11 +213,11 @@ amb l'ERP mentrestant es va processant el càlcul.
 
 [ ![Generar històric](../_static/orakWlum/generar_historic.png)](../_static/orakWlum/generar_historic.png)
 
-!!! Info "Nota 8"
+!!! Info "Nota 9"
     Els històrics de consum no poden fer servir perfilats com a fonts de consum històric. Utilitzaran exclussivament les
     corbes publicades per les Distribuïdores.
 
-!!! Info "Nota 9"
+!!! Info "Nota 10"
     Els històrics de consum no fan servir cap algoritme de predicció. Obtindran les mesures reals de cada CUPS de la font
     més ferma possible (prioritzant `F1` i `F5D` per sobre de `P1` i `P5D`) i en sumaran el consum.
 
@@ -229,7 +226,7 @@ consum** un cop s'hagi acabat de processar.
 
 [ ![Llistat historics](../_static/orakWlum/llistat_historics.png)](../_static/orakWlum/llistat_historics.png)
 
-També podeu utilitzar el llistat **Històrics de consum en curs** per a comprovar
+També podeu utilitzar el llistat **Històrics de consum en cua** per a comprovar
 el número de tasques en execució que hi ha a la cua corresponent, per a comprovar si hi ha tasques en curs o no.
 
 [ ![Tasques en curs historics](../_static/orakWlum/tasques_historics.png)](../_static/orakWlum/tasques_historics.png)
@@ -296,7 +293,7 @@ Per a tornar a calcular un històric, es pot fer servir l'assistent **Reprocessa
 crea un nou històric, sinó que el recalcularà utilitzant la mateixa data i les mateixes fonts utilitzades anteriorment 
 quan es va crear el mateix.
 
-!!! Info "Nota 10"
+!!! Info "Nota 11"
     El reprocessat d'històrics sempre s'executa en segon pla, així que cal esperar una estona per a veure els canvis
     reflectits a l'històric de consum recalculat. Novament, es pot fer servir el llistat **Històrics de consum en curs**
     per a saber si la cua d'històrics de orakWlum té tasques en curs, per saber si ha acabat o no.
