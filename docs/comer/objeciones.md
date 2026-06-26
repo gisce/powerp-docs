@@ -154,11 +154,12 @@ horàries (`F5D` o `perfilades`).
 
 L'estratègia a l'hora de trobar el consum "real" de l'ERP per a fer la comparativa amb el consum imputat, és diferent
 segons el tipus de contrast:
-- Contrast amb fitxer `INMECLOS`: Es troben consums de `F5D` i `perfils` i es fan servir els que sumin un total més
+
+* Contrast amb fitxer `INMECLOS`: Es troben consums de `F5D` i `perfils` i es fan servir els que sumin un total més
   proper a l'energia imputada per la Distribuïdora.
-- Contrast amb fitxer `MAGCLACUM`: Primer s'intentarà trobar consums de `F5D` i, si no n'hi ha, s'intentarà trobar
+* Contrast amb fitxer `MAGCLACUM`: Primer s'intentarà trobar consums de `F5D` i, si no n'hi ha, s'intentarà trobar
   consum de `perfils`.
-- Contrast amb fitxer `ACUM`: Primer s'intentarà trobar consums de `F1`; si no n'hi ha, s'intentarà trobar consums
+* Contrast amb fitxer `ACUM`: Primer s'intentarà trobar consums de `F1`; si no n'hi ha, s'intentarà trobar consums
   de `F5D` i, si tampoc se'n troben, s'intentarà trobar consums de `perfils`.
 
 A la consola de fitxers `INMECLOS`, `MAGCLACUM` i `ACUM`, trobareu un botó de **Contrastar consums**, que us permetrà triar
