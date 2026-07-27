@@ -31,6 +31,7 @@ Aquestes eines no es fan servir des de 2022 i, en algun moment, desapareixeran d
 * **Importar Corba (S02):** Aquest assistent permet importar una corba a una instal·lació de RECORE a partir d'un fitxer en format
 `S02` del protocol `PRIME`.
 * **Importar Corba (ZIV):** Aquest assistent permet importar una corba a una instal·lació de RECORE a partir d'un fitxer en format `Ziverq`.
+* **CUPS sense corbes**: Aquest llistat mostra les instal·lacions de RECORE que no tenen la corba importada donat un rang de dates.
 
 ### Casos RE
 * **Tots els casos RE:** Aquest llistat mostra els casos RE que s'hagin obert al importar corbes de generació a instal·lacions de RECORE.
