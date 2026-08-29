@@ -2,7 +2,7 @@
 Markdown
 # Extensions
 markdown-checklist
-pymdown-extensions==4.11
+pymdown-extensions==10.0
 fontawesome-markdown
 mkdocs-material==4.1.2
 markdown-blockdiag>=0.3.0
