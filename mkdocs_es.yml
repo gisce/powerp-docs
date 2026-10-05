@@ -132,6 +132,8 @@ nav:
       - Archivos de intercambio para GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Archivos de intercambio entre GISCE-TPL y GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Medidas:
+      - Inventarios de CUPS: distri/medidas_inventarios_cups.md
+      - Inventarios de Autoconsumo: distri/medidas_autoconsumo.md
       - Medidas agregadas: distri/medidas.md
       - Medidas desagregadas: distri/medidas_ficheros_desagregados.md
       - Medidas de generación: distri/medidas_generacion.md

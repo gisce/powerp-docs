@@ -120,6 +120,8 @@ nav:
       - Fitxers d'intercanvi per GISCE-TPL: distri/tpl/intercambio_tpl.md
       - Fitxers d'intercanvi entre GISCE-TPL i GISCE-ERP: distri/tpl/intercambio_tpl_erp.md
     - Mesures:
+      - Inventaris de CUPS: distri/medidas_inventarios_cups.md
+      - Inventaris d'Autoconsum: distri/medidas_autoconsumo.md
       - Mesures agregades: distri/medidas.md
       - Mesures desagregades: distri/medidas_ficheros_desagregados.md
       - Mesures de generació: distri/medidas_generacion.md
