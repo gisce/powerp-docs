@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2026-07-27 20:02+0200\n"
-"PO-Revision-Date: 2026-07-27 20:40+0200\n"
+"POT-Creation-Date: 2026-10-05 12:31+0200\n"
+"PO-Revision-Date: 2026-10-05 12:45+0200\n"
 "Last-Translator: Gisce <devel@gisce.net>\n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -24896,6 +24896,135 @@ msgstr "Si se desea, se puede acceder al listado de lotes de cada tarifa de acce
 msgid "<a href=\"../_static/medidas_anexo_VII/recalcular_lotes.png\"> <img alt=\"Recalcular lots\" src=\"../_static/medidas_anexo_VII/recalcular_lotes.png\" /></a>"
 msgstr "<a href=\"../_static/medidas_anexo_VII/recalcular_lotes.png\"> <img alt=\"Recalcular lotes\" src=\"../_static/medidas_anexo_VII/recalcular_lotes.png\" /></a>"
 
+msgid "Inventaris d'Autoconsum"
+msgstr "Inventarios de Autoconsumo"
+
+msgid ""
+"Els fitxers d'inventari d'Autoconsum serveixen per a informar a l'Operador del Sistema de l'històric d'autoconsums que\n"
+"té una distribuïdora. És amb aquests fitxers que l'Operador del Sistema valida i actualitza els seus propis inventaris."
+msgstr "Los ficheros de inventario de Autoconsumo sirven para informar al Operador del Sistema del histórico de autoconsumos que tiene una distribuidora. Es mediante estos ficheros que el Operador del Sistema valida y actualiza sus propios inventarios."
+
+msgid ""
+"Per tant, és recomanable mantenir els inventaris al dia, ja que en ells s'informa entre altres coses la\n"
+"modalitat dels autoconsums, els CUPS associats als mateixos, si hi ha sistemes d'emmagatzematge connectats, etc. Si no\n"
+"s'informen, els fitxers de mesures poden retornar errors <code>BAD2</code> si es detecta energia activa sortint però a l'Operador\n"
+"del Sistema no consta que el CUPS en qüestió disposi d'autoconsum d'algun tipus."
+msgstr ""
+"Por tanto, es recomendable mantener los inventarios al día, ya que en ellos se informa, entre otras cosas, de la modalidad de los autoconsumos, los CUPS asociados a los mismos, si hay sistemas de almacenamiento conectados, etc. Si no se informan, los ficheros de medidas pueden devolver errores <code>BAD2</code> si se detecta energía activa saliente pero al Operador del Sistema no le consta que el CUPS en "
+"cuestión disponga de autoconsumo de algún tipo."
+
+msgid "Els fitxers s'han de generar i s'han de publicar al Concentrador Secundari."
+msgstr "Los ficheros deben generarse y publicarse en el Concentrador Secundario."
+
+msgid "Generar els fitxers d'autoconsum"
+msgstr "Generar los ficheros de autoconsumo"
+
+msgid ""
+"Generar fitxers d'inventari d'autoconsum a l'ERP de distribuïdora és molt senzill. Només cal invocar l'assistent\n"
+"<strong>Generar Fitxers d'Autoconsum</strong>."
+msgstr "Generar ficheros de inventario de autoconsumo en el ERP de distribuidora es muy sencillo. Solo hay que invocar el asistente <strong>Generar Ficheros de Autoconsumo</strong>."
+
+msgid "El trobareu al menú <strong>Infraestructura > Fitxers d'Inventaris i CCH > Generació de Fitxers</strong>."
+msgstr "Lo encontraréis en el menú <strong>Infraestructura > Ficheros de Inventarios y CCH > Generación de Ficheros</strong>."
+
+msgid ""
+"Haureu de triar quin tipus de fitxer voleu generar (hi ha una opció per a generar-los tots), el rang de dates i si\n"
+"voleu el fitxer comprimit en BZ2 o no."
+msgstr "Deberéis elegir qué tipo de fichero queréis generar (hay una opción para generarlos todos), el rango de fechas y si queréis el fichero comprimido en BZ2 o no."
+
+msgid "<a href=\"../_static/medidas_inventarios/generar_fichero_inventario_autoconsumo.png\"> <img alt=\"Generar fichero de inventario\" src=\"../_static/medidas_inventarios/generar_fichero_inventario_autoconsumo.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_inventarios/generar_fichero_inventario_autoconsumo.png\"> <img alt=\"Generar fichero de inventario\" src=\"../_static/medidas_inventarios/generar_fichero_inventario_autoconsumo.png\" /></a>"
+
+msgid ""
+"Un cop fet això, es pot llançar la generació del fitxer (que trigarà més o menys segons la mida de la cartera\n"
+"d'autoconsums de la distribuïdora). En acabar la generació, el fitxer apareixerà a l'assistent per a poder ser\n"
+"descarregat."
+msgstr "Una vez hecho esto, se puede iniciar la generación del fichero (que tardará más o menos en función del tamaño de la cartera de autoconsumos de la distribuidora). Al finalizar la generación, el fichero aparecerá en el asistente para poder descargarlo."
+
+msgid "<a href=\"../_static/medidas_inventarios/fichero_inventario_autoconsumo_generado.png\"> <img alt=\"Descargar fichero de inventario generado\" src=\"../_static/medidas_inventarios/fichero_inventario_autoconsumo_generado.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_inventarios/fichero_inventario_autoconsumo_generado.png\"> <img alt=\"Descargar fichero de inventario generado\" src=\"../_static/medidas_inventarios/fichero_inventario_autoconsumo_generado.png\" /></a>"
+
+msgid ""
+"Si s'utilitza l'opció <strong>TOTS</strong> per a generar els fitxers, el retorn serà un fitxer comprimit en format ZIP que\n"
+"contindrà els fitxers que s'hagin pogut generar i un fitxer de text pla informant dels errors trobats."
+msgstr "Si se utiliza la opción <strong>TODOS</strong> para generar los ficheros, el resultado será un fichero comprimido en formato ZIP que contendrá los ficheros que se hayan podido generar y un fichero de texto plano informando de los errores encontrados."
+
+msgid ""
+"L'assistent inclourà als fitxers els canvis (altes i baixes) compreses entre el rang de dates. Però és recomanable\n"
+"publicar inventaris complets, utilitzant un rang de dates entre l'1 de gener de 2020 (quan va entrar en vigor\n"
+"l'autoconsum al sector elèctric) i la data actual."
+msgstr "El asistente incluirá en los ficheros los cambios (altas y bajas) comprendidos entre el rango de fechas. Sin embargo, es recomendable publicar inventarios completos, utilizando un rango de fechas entre el 1 de enero de 2020 (cuando entró en vigor el autoconsumo en el sector eléctrico) y la fecha actual."
+
+msgid "Tipus d'inventaris"
+msgstr "Tipos de inventarios"
+
+msgid ""
+"La Distribuïdora pot generar diferents tipus d'inventari d'autoconsum (segons els tipus d'informació a comunicar).\n"
+"Els fitxers d'inventari d'autoconsum i els seus formats els podreu trobar al document oficial de REE:\n"
+"<strong>'Ficheros para el intercambio de información de medida'</strong>."
+msgstr "La Distribuidora puede generar diferentes tipos de inventario de autoconsumo (según los tipos de información que se deban comunicar). Los ficheros de inventario de autoconsumo y sus formatos se pueden encontrar en el documento oficial de REE: <strong>'Ficheros para el intercambio de información de medida'</strong>."
+
+msgid "A continuació es presenten els tipus de fitxers d'inventari d'autoconsum existents:"
+msgstr "A continuación se presentan los tipos de ficheros de inventario de autoconsumo existentes:"
+
+msgid "Inventaris de la distribuïdora"
+msgstr "Inventarios de la distribuidora"
+
+msgid ""
+"Els inventaris d'autoconsum de distribuïdora són els que la mateixa distribuïdora generar i publica al Concentrador\n"
+"Secundari, informant a l'Operador del Sistema dels seus CAU, així com dels CUPS, CIL i emmagatzematges associats als\n"
+"mateixos."
+msgstr "Los inventarios de autoconsumo de distribuidora son los que la propia distribuidora genera y publica en el Concentrador Secundario, informando al Operador del Sistema de sus CAU, así como de los CUPS, CIL y almacenamientos asociados a los mismos."
+
+msgid "<strong>AUTOCONSUMO</strong>: Notifica l'alta, baixa o modificació de les instal·lacions d'autoconsum."
+msgstr "<strong>AUTOCONSUMO</strong>: Notifica el alta, baja o modificación de las instalaciones de autoconsumo."
+
+msgid "<strong>CUPSDAT</strong>: Notifica les relacions entre els CUPS i les instal·lacions d'autoconsum."
+msgstr "<strong>CUPSDAT</strong>: Notifica las relaciones entre los CUPS y las instalaciones de autoconsumo."
+
+msgid "<strong>CUPSDAT</strong>: Notifica les relacions entre les instal·lacions de generació i les instal·lacions d'autoconsum."
+msgstr "<strong>CUPSDAT</strong>: Notifica las relaciones entre las instalaciones de generación y las instalaciones de autoconsumo."
+
+msgid "<strong>CUPSDAT</strong>: Notifica les relacions entre les instal·lacions d'emmagatzematge i les instal·lacions d'autoconsum."
+msgstr "<strong>CUPSDAT</strong>: Notifica las relaciones entre las instalaciones de almacenamiento y las instalaciones de autoconsumo."
+
+msgid ""
+"Abans de publicar un fitxer <strong>CUPSCAU</strong>, \n"
+"<strong>CILCAU</strong> o \n"
+"<strong>ALMACENACAU</strong> cal assegurar-se de que l'Operador del Sistema\n"
+"ja ha processat correctament un \n"
+"<strong>AUTOCONSUMO</strong> amb tota la informació vigent. Si no es fa així, és possible que els\n"
+"fitxers retornin error \n"
+"<code>BAD2</code> pels CUPS, CIL o emmagatzematges associats a un CAU que encara no figura a l'inventari\n"
+"d'autoconsums de l'Operador del Sistema. Per això, recomanem publicar primer el fitxer \n"
+"<strong>AUTOCONSUMO</strong> i, un cop\n"
+"rebut el seu \n"
+"<code>OK</code>, publicar la resta de fitxers d'inventari d'autoconsum."
+msgstr ""
+"Antes de publicar un fichero <strong>CUPSCAU</strong>, <strong>CILCAU</strong> o <strong>ALMACENACAU</strong>, hay que asegurarse de que el Operador del Sistema ya ha procesado correctamente un <strong>AUTOCONSUMO</strong> con toda la información vigente. Si no se hace así, es posible que los ficheros devuelvan un error <code>BAD2</code> para los CUPS, CIL o almacenamientos asociados a un CAU que todavía "
+"no figure en el inventario de autoconsumos del Operador del Sistema. Por ello, recomendamos publicar primero el fichero <strong>AUTOCONSUMO</strong> y, una vez recibido su <code>OK</code>, publicar el resto de ficheros de inventario de autoconsumo."
+
+msgid "Inventaris de l'Operador del Sistema"
+msgstr "Inventarios del Operador del Sistema"
+
+msgid ""
+"Els inventaris d'autoconsum de l'Operador del Sistema són els que l'Operador del Sistema manté al seu sistema,\n"
+"actualitzant-ne les dades a partir dels inventaris d'autoconsum que rep de les distribuïdores. Es van republicant\n"
+"setmanalment (normalment, cada divendres) i es poden consultar des del directori d'entrada del Concentrador Secundari."
+msgstr "Los inventarios de autoconsumo del Operador del Sistema son los que el Operador del Sistema mantiene en su sistema, actualizando sus datos a partir de los inventarios de autoconsumo que recibe de las distribuidoras. Se vuelven a publicar semanalmente (normalmente, cada viernes) y se pueden consultar desde el directorio de entrada del Concentrador Secundario."
+
+msgid "<strong>AUTOCONSUMOOS</strong>: Publicació de l'inventari de les instal·lacions d'autoconsum"
+msgstr "<strong>AUTOCONSUMOOS</strong>: Publicación del inventario de las instalaciones de autoconsumo"
+
+msgid "<strong>CUPSCAUOS</strong>: Publicació de les relacions entre els CUPS i les instal·lacions d'autoconsum."
+msgstr "<strong>CUPSCAUOS</strong>: Publicación de las relaciones entre los CUPS y las instalaciones de autoconsumo."
+
+msgid "<strong>CILCAUOS</strong>: Publicació de les relacions entre les instal·lacions de generació i les instal·lacions d'autoconsum."
+msgstr "<strong>CILCAUOS</strong>: Publicación de las relaciones entre las instalaciones de generación y las instalaciones de autoconsumo."
+
+msgid "<strong>ALMACENACAUOS</strong>: Publicació de les relacions entre les instal·lacions d'emmagatzematge i les instal·lacions d'autoconsum."
+msgstr "<strong>ALMACENACAUOS</strong>: Publicación de las relaciones entre las instalaciones de almacenamiento y las instalaciones de autoconsumo."
+
 msgid "Mòdul de Mesures DATADIS"
 msgstr "Módulo de Medidas DATADIS"
 
@@ -26317,6 +26446,100 @@ msgstr "La anuladora no encuentra consumo perfilado para anular"
 
 msgid "El consum supera el màxim teòric ((potència * 1000) * n_dies)"
 msgstr "El consumo no supere el máximo teórico ((potencia * 1000) * n_días)"
+
+msgid "Inventaris de CUPS"
+msgstr "Inventarios de CUPS"
+
+msgid ""
+"Els fitxers d'inventari de CUPS serveixen per a informar a l'Operador del Sistema de l'històric de CUPS que té una\n"
+"distribuïdora. És amb aquests fitxers que l'Operador del Sistema valida i actualitza els seus propis inventaris. "
+msgstr "Los ficheros de inventario de CUPS sirven para informar al Operador del Sistema del histórico de CUPS que tiene una distribuidora. Es mediante estos ficheros que el Operador del Sistema valida y actualiza sus propios inventarios."
+
+msgid ""
+"Per tant, és recomanable mantenir els inventaris al dia, ja que en ells s'informa entre altres coses la \n"
+"comercialitzadora activa en cada període, si hi ha autoconsums associats, la propietat de l'equip de mesura, etc. Si no\n"
+"s'informen, els fitxers de mesures poden retornar errors <code>BAD2</code> si a l'Operador del Sistema no consten els CUPS pels\n"
+"quals es publica la mesura."
+msgstr "Por tanto, es recomendable mantener los inventarios al día, ya que en ellos se informa, entre otras cosas, de la comercializadora activa en cada periodo, si hay autoconsumos asociados, la propiedad del equipo de medida, etc. Si no se informan, los ficheros de medidas pueden devolver errores <code>BAD2</code> si al Operador del Sistema no le constan los CUPS para los que se publica la medida."
+
+msgid "Generar els fitxers d'inventari"
+msgstr "Generar los ficheros de inventario"
+
+msgid ""
+"Generar fitxers d'inventari a l'ERP de distribuïdora és molt senzill. Només cal invocar l'assistent \n"
+"<strong>Generar Fitxers CUPSDAT i CUPS45</strong>. "
+msgstr "Generar ficheros de inventario en el ERP de distribuidora es muy sencillo. Solo hay que invocar el asistente <strong>Generar Ficheros CUPSDAT y CUPS45</strong>."
+
+msgid "Haureu de triar quin tipus de fitxer voleu generar, la data límit i si voleu el fitxer comprimit en BZ2 o no."
+msgstr "Deberéis elegir qué tipo de fichero queréis generar, la fecha límite y si queréis el fichero comprimido en BZ2 o no."
+
+msgid "<a href=\"../_static/medidas_inventarios/generar_fichero_inventario_cups.png\"> <img alt=\"Generar fichero de inventario\" src=\"../_static/medidas_inventarios/generar_fichero_inventario_cups.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_inventarios/generar_fichero_inventario_cups.png\"> <img alt=\"Generar fichero de inventario\" src=\"../_static/medidas_inventarios/generar_fichero_inventario_cups.png\" /></a>"
+
+msgid ""
+"Un cop fet això, es pot llançar la generació del fitxer (que trigarà més o menys segons la mida de la cartera de CUPS de\n"
+"la distribuïdora). En acabar la generació, el fitxer apareixerà a l'assistent per a poder ser descarregat."
+msgstr "Una vez hecho esto, se puede iniciar la generación del fichero (que tardará más o menos en función del tamaño de la cartera de CUPS de la distribuidora). Al finalizar la generación, el fichero aparecerá en el asistente para poder descargarlo."
+
+msgid "<a href=\"../_static/medidas_inventarios/fichero_inventario_generado.png\"> <img alt=\"Descargar fichero de inventario generado\" src=\"../_static/medidas_inventarios/fichero_inventario_generado.png\" /></a>"
+msgstr "<a href=\"../_static/medidas_inventarios/fichero_inventario_generado.png\"> <img alt=\"Descargar fichero de inventario generado\" src=\"../_static/medidas_inventarios/fichero_inventario_generado.png\" /></a>"
+
+msgid ""
+"Els fitxers contenen un històric de 12 mesos dels CUPS, així que la data límit serveix per a determinar des de\n"
+"quina data es retrocedeix fins a 12 mesos. Per defecte, es suggerirà sempre la data vigent com a data d'inventari."
+msgstr "Los ficheros contienen un histórico de 12 meses de los CUPS, por lo que la fecha límite sirve para determinar desde qué fecha se retrocede hasta 12 meses. Por defecto, siempre se sugerirá la fecha vigente como fecha de inventario."
+
+msgid ""
+"La Distribuïdora pot generar diferents tipus d'inventari (segons els tipus de punt de mesura). Els fitxers d'inventari \n"
+"i els seus formats els podreu trobar al document oficial de REE: <strong>'Ficheros para el intercambio de información de medida'</strong>."
+msgstr "La Distribuidora puede generar diferentes tipos de inventario (según los tipos de punto de medida). Los ficheros de inventario y sus formatos se pueden encontrar en el documento oficial de REE: <strong>'Ficheros para el intercambio de información de medida'</strong>."
+
+msgid "A continuació es presenten els tipus de fitxers d'inventari existents:"
+msgstr "A continuación se presentan los tipos de ficheros de inventario existentes:"
+
+msgid ""
+"Els inventaris de distribuïdora són els que la mateixa distribuïdora generar i publica al Concentrador Secundari, \n"
+"informant dels seus CUPS a l'Operador del Sistema."
+msgstr "Los inventarios de distribuidora son los que la propia distribuidora genera y publica en el Concentrador Secundario, informando de sus CUPS al Operador del Sistema."
+
+msgid "<strong>CUPS45</strong>: Notifica l'inventari de punts frontera de client de tipus 4 i 5."
+msgstr "<strong>CUPS45</strong>: Notifica el inventario de puntos frontera de cliente de tipo 4 y 5."
+
+msgid "<strong>CUPSDAT</strong>: Notifica l'alta, baixa, modificacions o correccions de punts frontera de client tipus 1, 2 i 3."
+msgstr "<strong>CUPSDAT</strong>: Notifica el alta, baja, modificaciones o correcciones de puntos frontera de cliente de tipo 1, 2 y 3."
+
+msgid ""
+"Els inventaris de l'Operador del Sistema són els que l'Operador del Sistema manté al seu sistema, actualitzant-ne les \n"
+"dades a partir dels inventaris que rep de les distribuïdores. Es van republicant periòdicament i es poden consultar des\n"
+"del directori d'entrada del Concentrador Secundari."
+msgstr "Los inventarios del Operador del Sistema son los que el Operador del Sistema mantiene en su sistema, actualizando sus datos a partir de los inventarios que recibe de las distribuidoras. Se vuelven a publicar periódicamente y se pueden consultar desde el directorio de entrada del Concentrador Secundario."
+
+msgid "<strong>CUPS45OS</strong>: Publicació de l'inventari de punts frontera de client tipus 4 i 5."
+msgstr "<strong>CUPS45OS</strong>: Publicación del inventario de puntos frontera de cliente de tipo 4 y 5."
+
+msgid "<strong>CUPSDATOS</strong>: Publicació de l'inventari de punts frontera de client tipus 1, 2 i 3."
+msgstr "<strong>CUPSDATOS</strong>: Publicación del inventario de puntos frontera de cliente de tipo 1, 2 y 3."
+
+msgid ""
+"L'ERP de distribuïdora compta amb automatismes per a publicar automàticament al Concentrador Secundari els fitxers\n"
+"<strong>CUPSDAT</strong> i \n"
+"<strong>CUPS45</strong> si així es desitja. D'aquesta manera, el manteniment dels inventaris passa a ser desatès i\n"
+"només cal revisar de tant en tant a l'entrada del Concentrador Secundari que no hi hagi errors en la publicació."
+msgstr ""
+"El ERP de distribuidora dispone de automatismos para publicar automáticamente en el Concentrador Secundario los ficheros <strong>CUPSDAT</strong> y <strong>CUPS45</strong> si así se desea. De este modo, el mantenimiento de los inventarios pasa a realizarse de forma desatendida y solo es necesario revisar de vez en cuando en la entrada del Concentrador Secundario que no haya errores en la publicación."
+
+msgid ""
+"Degut a un error en la manera de processar els fitxers, l'Operador del Sistema considera que totes les línies dels\n"
+"fitxers <strong>CUPSDAT</strong> són canvis, abans de comparar si al seu inventari \n"
+"<strong>CUPSDATOS</strong> té la mateixa informació o si\n"
+"aquesta és diferent. Això fa que els fitxers \n"
+"<strong>CUPSDAT</strong> rebin resposta amb error \n"
+"<code>BAD2</code> de forma habitual. \n"
+"Això és molest i ja s'ha informat de forma reiterada a l'Operador del Sistema, però per ara no hi ha correcció a \n"
+"la manera en que fan el processat."
+msgstr ""
+"Debido a un error en la forma de procesar los ficheros, el Operador del Sistema considera que todas las líneas de los ficheros <strong>CUPSDAT</strong> son cambios, antes de comparar si en su inventario <strong>CUPSDATOS</strong> tiene la misma información o si esta es diferente. Esto hace que los ficheros <strong>CUPSDAT</strong> reciban respuesta con error <code>BAD2</code> de forma habitual. Esto "
+"resulta molesto y ya se ha informado de forma reiterada al Operador del Sistema, pero por ahora no se ha corregido la forma en que realizan el procesado."
 
 msgid ""
 "Els fitxers d'objeccions a la part de la Distribuïdora són els acusaments de rebuda que reben aquestes per part d'altres\n"
@@ -47966,9 +48189,6 @@ msgstr "Si el automatismo no se configura, será necesario importar todas las pr
 #~ "Las facturas con 0 kWh de energía antiguamente quedaban en estado <code>borrador</code> ya que no se perfilaban ni ajustaban. Pero\n"
 #~ "a partir de 2023, sí se perfilan y ajustan y ya no deberían quedar en estado\n"
 #~ "<code>borrador</code>."
-
-#~ msgid "Fitxers d'inventari"
-#~ msgstr "Ficheros de intercambio"
 
 #~ msgid ""
 #~ "Es manté per històric un botó per a generar els fitxers d'inventari antics a mes natural.\n"
