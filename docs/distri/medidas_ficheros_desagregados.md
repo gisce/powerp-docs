@@ -114,6 +114,27 @@ Revisant aquest últim panell de forma freqüent, es poden detectar problemes am
 que no avancin la seva data de darrera publicació i després d'arreglar el problema es pot llançar manualment l'automatisme o bé
 generar un `F1` o `F1QH` manualment amb l'assistent `Generar fitxer F1/F1QH`.
 
+### Validació d'entrega a REE
+
+Per tal de comprovar que el que s'ha entregat i processat a REE és el mateix que tenim a l'ERP, es poden importar
+fitxers de mesures acumulats per fer aquesta validació. Això pot anar bé per trobar diferències entre la corba de
+càrrega d'un CUPS i la seva mesura segons REE, o directament per a trobar CUPS que no hagin publicat la mesura.
+El fitxer a importar és l'anomenat `ACUM` de tipus `CLE`.
+
+Des de la pestanya **Acumulats** dels Períodes de Mesures podreu veure una consola per a poder fer aquest contrast,
+important un fitxer `ACUM`. Podeu accedir als períodes de mesures des del menú **Mesures REE > Períodes de Mesures**.
+
+Per a fer la comparativa, es pot fer servir el botó **Importar fitxer ACUM**.
+
+[ ![Importar ACUM](_static/medidas/importar_acum.png)](_static/medidas/importar_acum.png)
+
+El contrast generarà una línia per a cada CUPS, podent trobar desquadraments entre els consums presents a l'ERP i
+les mesures que finalment ens imputa REE.
+
+[ ![Contrast ACUM](_static/medidas/contraste_acum.png)](_static/medidas/contraste_acum.png)
+
+Es recomana també fer servir la versió més recent publicada per l'Operador del Sistema pel fitxer `ACUM`.
+
 ## Fitxers P1D
 
 Els fitxers `P1D` comuniquen, sense paràmetres de dates, les dades horàries d'energia de punts de mesura de clients de Tipus 1,
