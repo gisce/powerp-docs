@@ -55,6 +55,11 @@ que disposen de corba quart-horària (habitualment, els telemesurats). Es fitxer
 les dades horàries d'energia de punts frontera de clients de Tipus 3 que no disposen de corba quart-horària (habitualment,
 els telegestionats).
 
+!!! Info "Nota"
+    Si disposeu de CUPS de tipus 1, 2 o 3 que tinguin associats autoconsums, serveis auxiliars o són subministraments
+    d'alta tensió amb lectura en baixa, és recomanable que publiqueu els F1QH definitius, tal com es descriu més avall,
+    en un apartat específic d'aquest manual.
+
 L'ERP ja incorpora automatismes que, si es configuren, permeten que cada matí es generin i enviïn els fitxers diaris amb la corba que
 es troba als comptadors telemesurats i telegestionats. Però de totes maneres, és possible generar els fitxers de forma manual amb l'assistent
 **Infraestructura > Fitxers d'Inventaris i CCH > Generació de Fitxers > Generar Fitxer F1/F1QH**.
@@ -113,6 +118,51 @@ A més a més, també es pot revisar la publicació des del panell de **Publicac
 Revisant aquest últim panell de forma freqüent, es poden detectar problemes amb la recepció o validació de corba dels CUPS
 que no avancin la seva data de darrera publicació i després d'arreglar el problema es pot llançar manualment l'automatisme o bé
 generar un `F1` o `F1QH` manualment amb l'assistent `Generar fitxer F1/F1QH`.
+
+### Publicació de fitxers F1QH definitius
+
+Donat que els Procediments d'Operació de REE indiquen que la facturació de subministraments amb `Alta Tensió`, `Autoconsum`
+i/o `Serveis Auxiliars` fan servir la corba de càrrega horària (i no la quart-horària), la publicació regular de fitxers
+`F1QH` pot no reflectir la realitat de la mesura dels subministraments, ja que la corba quart-horària romandrà sempre
+inalterada pel procés de facturació, així que mai s'elevarà a pèrdues ni tampoc se li aplicarà el balanç net horari.
+
+Per aquesta raó, si una distribuïdora disposa de CUPS amb alta tensió i lectura en baixa, amb autoconsum associat, i/o
+amb serveis auxiliars, és recomanable publicar el que a GISCE anomenem **F1QH definitiu**. Aquest fitxer es pot generar
+a partir d'una corba que es prepara a partir de la corba real en el moment de facturar. Si el subministrament no té
+alta tensió amb lectura en baixa, autoconsum ni serveis auxiliars, simplement es crearà a partir de la corba de
+càrrega quart-horària del comptador. En cas contrari, s'aplica un mecanisme d'interpolació per a generar la corba
+de càrrega quart-horària definitiva a partir de la corba de càrrega horària tal com la deixa el facturador en acabar el
+seu procés (elevada a pèrdues i/o amb el balanç net horari aplicat, segons correspon per la naturalesa del CUPS). Aquest
+procés és automàtic, així que no cal fer res pera que a l'ERP es vagin creant aquestes corbes definitives.
+
+Podeu revisar aquestes corbes des d'una factura de client, amb l'assistent **Mostrar corba**. Si el CUPS de la factura
+correspon a un punt de subministrament de tipus 1, 2 o 3 us apareixerà l'opció de consultar el seu `F1QH`.
+
+[ ![Assistent per a mostrar corbes des de factures](_static/medidas/asistente_mostrar_curva_factura.png)](_static/medidas/asistente_mostrar_curva_factura.png)
+
+[ ![Corba F1QH definitiva](_static/medidas/curva_f1qh_definitivo.png)](_static/medidas/curva_f1qh_definitivo.png)
+
+Per a exportar-les en forma de fitxers, podeu anar al lot de facturació i utilitzar l'assistent **Exportar Corba Facturada**.
+Aquest assistent deixa triar els fitxers a exportar, podent seleccionar l'opció `Fitxers F1QH` i també es pot marcar la
+casella per a publicar automàticament els fitxers generats allà on correspongui (en el cas dels fitxers `F1QH`, es
+publicaran al Concentrador Secundari de Mesures que tingueu configurat a l'ERP de distribuïdora).
+
+[ ![Assistent per a exportar corba facturada](_static/medidas/exportar_f1qh_definitivo.png)](_static/medidas/exportar_f1qh_definitivo.png)
+
+L'exportació trigarà uns instants (el temps d'espera és directament proporcional a la cartera de CUPS de Tipus 1, 2 o 3
+amb tecnologia quart-horària al comptador). Un cop enllestida la generació, al lot de facturació quedarà adjunt un fitxer
+ZIP amb les corbes, per a que ho pugueu descarregar, revisar i publicar al Concentrador Secundari.
+
+També hi ha un llistat anomenat **Mesures exportades des de factura** on podreu veure els fitxers generats amb aquest
+assistent, per si en un futur heu de tornar a descarregar-ne algun en concret, poder-lo trobar fàcilment amb els filtres
+per dates de creació i nom de fitxer.
+
+[ ![Llistat de fitxers de mesures exportats des de factura](_static/medidas/ficheros_curva_exportados.png)](_static/medidas/ficheros_curva_exportados.png)
+
+!!! Info "Nota"
+    Des de GISCE recomanem generar i publicar els F1QH definitius del període M-7 cada mes, per a garantir que l'Operador
+    del Sistema tindrà sempre la mesura més real possible pels Tipus 1, 2 i 3 abans de que es publiqui el Tancament
+    Provisional, evitant possibles Objeccions.
 
 ### Validació d'entrega a REE
 
