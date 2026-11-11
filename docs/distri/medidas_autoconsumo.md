@@ -52,9 +52,9 @@ Secundari, informant a l'Operador del Sistema dels seus CAU, així com dels CUPS
 mateixos.
 
 * **AUTOCONSUMO**: Notifica l'alta, baixa o modificació de les instal·lacions d'autoconsum.
-* **CUPSDAT**: Notifica les relacions entre els CUPS i les instal·lacions d'autoconsum.
-* **CUPSDAT**: Notifica les relacions entre les instal·lacions de generació i les instal·lacions d'autoconsum.
-* **CUPSDAT**: Notifica les relacions entre les instal·lacions d'emmagatzematge i les instal·lacions d'autoconsum.
+* **CUPSCAU**: Notifica les relacions entre els CUPS i les instal·lacions d'autoconsum.
+* **CILCAU**: Notifica les relacions entre les instal·lacions de generació i les instal·lacions d'autoconsum.
+* **ALMACENACAU**: Notifica les relacions entre les instal·lacions d'emmagatzematge i les instal·lacions d'autoconsum.
 
 !!! Info "Nota 3"
     Abans de publicar un fitxer **CUPSCAU**, **CILCAU** o **ALMACENACAU** cal assegurar-se de que l'Operador del Sistema
